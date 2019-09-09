@@ -1,2 +1,1 @@
-# ontology
-The Health IT Ontology.
+# HITO—The Health IT Ontology
