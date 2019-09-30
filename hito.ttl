@@ -34,6 +34,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "classified Feature EHRHL7FM"@en .
 
 
+###  http://hitontology.eu/ontology/classifiedFunction
+:classifiedFunction rdf:type owl:ObjectProperty ;
+                    rdfs:domain :EnterpriseFunctionNL ;
+                    rdfs:range :ClassifiedEnterpriseFunction ;
+                    rdfs:label "classified function"@en .
+
+
 ###  http://hitontology.eu/ontology/classifiedOutcomeCriteria
 :classifiedOutcomeCriteria rdf:type owl:ObjectProperty ;
                            rdfs:domain :OutcomeCriteriaFreeText ;
@@ -62,11 +69,39 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "classified User Group SNOMEDCT"@en .
 
 
+###  http://hitontology.eu/ontology/usedInOrganizationalUnit
+:usedInOrganizationalUnit :rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :OrganizationalUnitNL ;
+                    rdfs:label "used in organizational unit"@en .
+
+
+###  http://hitontology.eu/ontology/userGroup
+:userGroup :rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :ClassifiedUserGroup ;
+                    rdfs:label "user group"@en .
+
+
+###  http://hitontology.eu/ontology/communityStatus
+:communityStatus rdf:type owl:ObjectProperty ;
+                    rdfs:domain :MedflossProduct ;
+                    rdfs:range :CommunityStatus ;
+                    rdfs:label "communityStatus"@en .
+
+
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystem
 :evaluatesApplicationSystem rdf:type owl:ObjectProperty ;
                             rdfs:domain :Study ;
                             rdfs:range :ApplicationSystemFreeText ;
                             rdfs:label "evaluates Application System"@en .
+
+
+###  http://hitontology.eu/ontology/enterpriseFunctionFromCatalogue
+:enterpriseFunctionFromCatalogue rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ClassifiedEnterpriseFunction ;
+                    rdfs:range :FunctionCatalogue ;
+                    rdfs:label "enterprise function from catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemBasedOnProduct
@@ -95,6 +130,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                                       rdfs:domain :Study ;
                                       rdfs:range :OrganizationalUnitFreeText ;
                                       rdfs:label "evaluates Application System Used In Unit"@en .
+
+
+###  http://hitontology.eu/ontology/featureFromCatalogue
+:featureFromCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:domain :FeatureClassified ;
+                           rdfs:range :FeatureCatalogue ;
+                           rdfs:label "classified Feature EHRHL7FM"@en .
 
 
 ###  http://hitontology.eu/ontology/hasDOI
@@ -132,11 +174,102 @@ xsd:gYear rdf:type rdfs:Datatype .
                 rdfs:label "has Study Method"@en .
 
 
+###  http://hitontology.eu/ontology/homepage
+:homepage rdf:type owl:ObjectProperty ;
+                    rdfs:domain :MedflossProduct ;
+                    rdfs:range :Homepage ;
+                    rdfs:label "homepage"@en .
+
+
+###  http://hitontology.eu/ontology/license
+:license rdf:type owl:ObjectProperty ;
+                    rdfs:domain :MedflossProduct ;
+                    rdfs:range :License ;
+                    rdfs:label "license"@en .
+
+
 ###  http://hitontology.eu/ontology/offersFeature
 :offersFeature rdf:type owl:ObjectProperty ;
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureFreeText ;
                rdfs:label "offers Feature"@en .
+
+
+###  http://hitontology.eu/ontology/popularity
+:popularity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :MedflossProduct ;
+                    rdfs:range :Popularity ;
+                    rdfs:label "popularity"@en .
+
+
+###  http://hitontology.eu/ontology/programmingLanguage
+:programmingLanguage rdf:type owl:ObjectProperty ;
+                    rdfs:domain :MedflossProduct ;
+                    rdfs:range :ProgrammingLanguage ;
+                    rdfs:label "programming language"@en .
+
+
+###  http://hitontology.eu/ontology/runsOnOs
+:runsOnOs rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :OperatingSystem ;
+                    rdfs:label "runs on OS"@en .
+
+
+###  http://hitontology.eu/ontology/usesDbs
+:usesDbs rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :DatabaseSystem ;
+                    rdfs:label "uses database system"@en .
+
+
+###  http://hitontology.eu/ontology/usesStandard
+:usesStandard rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :Standard ;
+                    rdfs:label "uses standard"@en .
+
+
+###  http://hitontology.eu/ontology/suitableForOrganizationalUnit
+:suitableForOrganizationalUnit rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :OrganizationalUnitFreeText ;
+                    rdfs:label "suitable for organizational unit"@en .
+
+
+###  http://hitontology.eu/ontology/supportsClient
+:supportsClient rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :Client ;
+                    rdfs:label "supports client"@en .
+
+
+###  http://hitontology.eu/ontology/supportedByFeature
+:supportedByFeature rdf:type owl:ObjectProperty ;
+                    rdfs:domain :EnterpriseFunctionNL ;
+                    rdfs:range :Feature ;
+                    rdfs:label "supported by feature"@en .
+
+
+###  http://hitontology.eu/ontology/supportsEnterpriseFunction
+:supportsEnterpriseFunction rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :EnterpriseFunctionNL ;
+                    rdfs:label "supports enterprise function"@en .
+
+
+###  http://hitontology.eu/ontology/supportsLanguage
+:supportsLanguage rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :Language ;
+                    rdfs:label "supports language"@en .
+
+
+###  http://hitontology.eu/ontology/productPart
+:productPart rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :SoftwareProduct ;
+                    rdfs:label "software product part "@en .
 
 
 ###  http://hitontology.eu/ontology/publishedInJournal
@@ -196,6 +329,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Certification
 :Certification rdf:type owl:Class ;
+                     rdfs:subClassOf :Standard ;
                      rdfs:label "Certification"@en .
 
 
@@ -211,11 +345,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/CommercialSoftwareProduct
 :CommercialSoftwareProduct rdf:type owl:Class ;
+                     rdfs:subClassOf :SoftwareProduct ;
                      rdfs:label "Commercial Software Product"@en .
 
 
 ###  http://hitontology.eu/ontology/CommunicationStandard
 :CommunicationStandard rdf:type owl:Class ;
+                     rdfs:subClassOf :Standard ;
                      rdfs:label "Communication Standard"@en .
 
 
@@ -298,6 +434,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/MedflossProduct
 :MedflossProduct rdf:type owl:Class ;
+                      rdfs:subClassOf :SoftwareProduct ;
                       rdfs:label "Medical Free/Libre Open Source Software Product"@en .
 
 ###  http://hitontology.eu/ontology/NonExperimentalStudy
@@ -378,6 +515,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Terminology
 :Terminology rdf:type owl:Class ;
+                     rdfs:subClassOf :Standard ;
                      rdfs:label "Terminology"@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
