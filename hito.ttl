@@ -194,15 +194,60 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "Application System Free Text"@en .
 
 
+###  http://hitontology.eu/ontology/Certification
+:Certification rdf:type owl:Class ;
+                     rdfs:label "Certification"@en .
+
+
+###  http://hitontology.eu/ontology/Client
+:Client rdf:type owl:Class ;
+                     rdfs:label "Client"@en .
+
+
+###  http://hitontology.eu/ontology/CommunityStatus
+:CommunityStatus rdf:type owl:Class ;
+          rdfs:label "Community Status"@en .
+
+
+###  http://hitontology.eu/ontology/CommercialSoftwareProduct
+:CommercialSoftwareProduct rdf:type owl:Class ;
+                     rdfs:label "Commercial Software Product"@en .
+
+
+###  http://hitontology.eu/ontology/CommunicationStandard
+:CommunicationStandard rdf:type owl:Class ;
+                     rdfs:label "Communication Standard"@en .
+
+
+###  http://hitontology.eu/ontology/DatabaseSystem
+:DatabaseSystem rdf:type owl:Class ;
+          rdfs:label "Database System"@en .
+
+
 ###  http://hitontology.eu/ontology/DOI
 :DOI rdf:type owl:Class ;
      rdfs:label "DOI"@en .
+
+
+###  http://hitontology.eu/ontology/ClassifiedEnterpriseFunction
+:ClassifiedEnterpriseFunction rdf:type owl:Class ;
+                      rdfs:label "Classified Enterprise Function"@en .
+
+
+###  http://hitontology.eu/ontology/EnterpriseFunctionNL
+:EnterpriseFunctionNL rdf:type owl:Class ;
+                      rdfs:label "Enterprise Function Natural Language"@en .
 
 
 ###  http://hitontology.eu/ontology/ExperimentalStudyRCT
 :ExperimentalStudyRCT rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Experimental Study RCT"@en .
+
+
+###  http://hitontology.eu/ontology/FeatureCatalogue
+:FeatureCatalogue rdf:type owl:Class ;
+                   rdfs:label "Feature Catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureClassified
@@ -220,6 +265,16 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:label "First Author"@en .
 
 
+###  http://hitontology.eu/ontology/FunctionCatalogue
+:FunctionCatalogue rdf:type owl:Class ;
+                   rdfs:label "Function Catalogue"@en .
+
+
+###  http://hitontology.eu/ontology/Homepage
+:Homepage rdf:type owl:Class ;
+          rdfs:label "Homepage"@en .
+
+
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
          rdfs:label "Journal"@en .
@@ -231,10 +286,29 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:label "Lab Study"@en .
 
 
+###  http://hitontology.eu/ontology/Language
+:Language rdf:type owl:Class ;
+          rdfs:label "Language"@en .
+
+
+###  http://hitontology.eu/ontology/License
+:License rdf:type owl:Class ;
+          rdfs:label "License"@en .
+
+
+###  http://hitontology.eu/ontology/MedflossProduct
+:MedflossProduct rdf:type owl:Class ;
+                      rdfs:label "Medical Free/Libre Open Source Software Product"@en .
+
 ###  http://hitontology.eu/ontology/NonExperimentalStudy
 :NonExperimentalStudy rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Non Experimental Study"@en .
+
+
+###  http://hitontology.eu/ontology/OperationSystem
+:OperationSystem rdf:type owl:Class ;
+       rdfs:label "OperationSystem"@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
@@ -257,9 +331,19 @@ xsd:gYear rdf:type rdfs:Datatype .
                          rdfs:label "Outcome Criteria Free Text"@en .
 
 
+###  http://hitontology.eu/ontology/Popularity
+:Popularity rdf:type owl:Class ;
+          rdfs:label "Popularity"@en .
+
+
 ###  http://hitontology.eu/ontology/PMID
 :PMID rdf:type owl:Class ;
       rdfs:label "PMID"@en .
+
+
+###  http://hitontology.eu/ontology/ProgrammingLanguage
+:ProgrammingLanguage rdf:type owl:Class ;
+          rdfs:label "ProgrammingLanguage"@en .
 
 
 ###  http://hitontology.eu/ontology/QuasiExperimentalStudy
@@ -271,6 +355,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/SoftwareProduct
 :SoftwareProduct rdf:type owl:Class ;
                  rdfs:label "Software Product"@en .
+
+
+###  http://hitontology.eu/ontology/Standard
+:Standard rdf:type owl:Class ;
+       rdfs:label "Standard"@en .
 
 
 ###  http://hitontology.eu/ontology/Study
@@ -287,6 +376,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 :StudyMethodFreeText rdf:type owl:Class ;
                      rdfs:label "Study Method Free Text"@en .
 
+###  http://hitontology.eu/ontology/Terminology
+:Terminology rdf:type owl:Class ;
+                     rdfs:label "Terminology"@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;
