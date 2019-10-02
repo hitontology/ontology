@@ -12,28 +12,28 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Use Case 1"@en ;
      ov:defines :ApplicationSystemClassified; 
-     ov:defines :ApplicationSystemFreeText; 
+     ov:defines :ApplicationSystemCitation; 
      ov:defines :DOI; 
      ov:defines :ExperimentalStudyRCT; 
      ov:defines :FeatureCatalogue; 
      ov:defines :FeatureClassified; 
-     ov:defines :FeatureFreeText; 
+     ov:defines :FeatureCitation; 
      ov:defines :FirstAuthor; 
      ov:defines :Journal; 
      ov:defines :LabStudy; 
      ov:defines :NonExperimentalStudy; 
      ov:defines :OrganizationalUnitClassified; 
-     ov:defines :OrganizationalUnitFreeText; 
+     ov:defines :OrganizationalUnitCitation; 
      ov:defines :OutcomeCriteriaClassified; 
-     ov:defines :OutcomeCriteriaFreeText; 
+     ov:defines :OutcomeCriteriaCitation; 
      ov:defines :PMID; 
      ov:defines :QuasiExperimentalStudy; 
      ov:defines :SoftwareProduct; 
      ov:defines :Study; 
      ov:defines :StudyMethodClassified; 
-     ov:defines :StudyMethodFreeText; 
+     ov:defines :StudyMethodCitation; 
      ov:defines :UserGroupClassified; 
-     ov:defines :UserGroupFreeText; 
+     ov:defines :UserGroupCitation; 
      ov:defines :ValidationStudy.   	
 
 :uc2 rdf:type owl:Ontology ;
@@ -71,14 +71,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedApplicationSystem
 :classifiedApplicationSystem rdf:type owl:ObjectProperty ;
-                             rdfs:domain :ApplicationSystemFreeText ;
+                             rdfs:domain :ApplicationSystemCitation ;
                              rdfs:range :ApplicationSystemClassified ;
                              rdfs:label "classified Application System"@en .
 
 
 ###  http://hitontology.eu/ontology/classifiedFeatureEHRHL7FM
 :classifiedFeatureEHRHL7FM rdf:type owl:ObjectProperty ;
-                           rdfs:domain :FeatureFreeText ;
+                           rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "classified Feature EHRHL7FM"@en .
 
@@ -92,28 +92,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedOutcomeCriteria
 :classifiedOutcomeCriteria rdf:type owl:ObjectProperty ;
-                           rdfs:domain :OutcomeCriteriaFreeText ;
+                           rdfs:domain :OutcomeCriteriaCitation ;
                            rdfs:range :OutcomeCriteriaClassified ;
                            rdfs:label "classified Outcome Criteria"@en .
 
 
 ###  http://hitontology.eu/ontology/classifiedStudyMethod
 :classifiedStudyMethod rdf:type owl:ObjectProperty ;
-                       rdfs:domain :StudyMethodFreeText ;
+                       rdfs:domain :StudyMethodCitation ;
                        rdfs:range :StudyMethodClassified ;
                        rdfs:label "classified Study Method"@en .
 
 
 ###  http://hitontology.eu/ontology/classifiedUnitSNOMEDCT
 :classifiedUnitSNOMEDCT rdf:type owl:ObjectProperty ;
-                        rdfs:domain :OrganizationalUnitFreeText ;
+                        rdfs:domain :OrganizationalUnitCitation ;
                         rdfs:range :OrganizationalUnitClassified ;
                         rdfs:label "classified Unit SNOMEDCT"@en .
 
 
 ###  http://hitontology.eu/ontology/classifiedUserGroupSNOMEDCT
 :classifiedUserGroupSNOMEDCT rdf:type owl:ObjectProperty ;
-                             rdfs:domain :UserGroupFreeText ;
+                             rdfs:domain :UserGroupCitation ;
                              rdfs:range :UserGroupClassified ;
                              rdfs:label "classified User Group SNOMEDCT"@en .
 
@@ -142,7 +142,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystem
 :evaluatesApplicationSystem rdf:type owl:ObjectProperty ;
                             rdfs:domain :Study ;
-                            rdfs:range :ApplicationSystemFreeText ;
+                            rdfs:range :ApplicationSystemCitation ;
                             rdfs:label "evaluates Application System"@en .
 
 
@@ -163,21 +163,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemHavingFeature
 :evaluatesApplicationSystemHavingFeature rdf:type owl:ObjectProperty ;
                                          rdfs:domain :Study ;
-                                         rdfs:range :FeatureFreeText ;
+                                         rdfs:range :FeatureCitation ;
                                          rdfs:label "evaluates Application System Having Feature"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemHavingUserGroup
 :evaluatesApplicationSystemHavingUserGroup rdf:type owl:ObjectProperty ;
                                            rdfs:domain :Study ;
-                                           rdfs:range :UserGroupFreeText ;
+                                           rdfs:range :UserGroupCitation ;
                                            rdfs:label "evaluates Application System Having User Group"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemUsedInUnit
 :evaluatesApplicationSystemUsedInUnit rdf:type owl:ObjectProperty ;
                                       rdfs:domain :Study ;
-                                      rdfs:range :OrganizationalUnitFreeText ;
+                                      rdfs:range :OrganizationalUnitCitation ;
                                       rdfs:label "evaluates Application System Used In Unit"@en .
 
 
@@ -205,7 +205,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/hasOutcomeCriteria
 :hasOutcomeCriteria rdf:type owl:ObjectProperty ;
                     rdfs:domain :Study ;
-                    rdfs:range :OutcomeCriteriaFreeText ;
+                    rdfs:range :OutcomeCriteriaCitation ;
                     rdfs:label "has Outcome Criteria"@en .
 
 
@@ -219,7 +219,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/hasStudyMethod
 :hasStudyMethod rdf:type owl:ObjectProperty ;
                 rdfs:domain :Study ;
-                rdfs:range :StudyMethodFreeText ;
+                rdfs:range :StudyMethodCitation ;
                 rdfs:label "has Study Method"@en .
 
 
@@ -240,7 +240,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/offersFeature
 :offersFeature rdf:type owl:ObjectProperty ;
                rdfs:domain :SoftwareProduct ;
-               rdfs:range :FeatureFreeText ;
+               rdfs:range :FeatureCitation ;
                rdfs:label "offers Feature"@en .
 
 
@@ -282,7 +282,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/suitableForOrganizationalUnit
 :suitableForOrganizationalUnit rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :OrganizationalUnitFreeText ;
+                    rdfs:range :OrganizationalUnitCitation ;
                     rdfs:label "suitable for organizational unit"@en .
 
 
@@ -371,9 +371,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "Application System Classified"@en .
 
 
-###  http://hitontology.eu/ontology/ApplicationSystemFreeText
-:ApplicationSystemFreeText rdf:type owl:Class ;
-                           rdfs:label "Application System Free Text"@en .
+###  http://hitontology.eu/ontology/ApplicationSystemCitation
+:ApplicationSystemCitation rdf:type owl:Class ;
+                           rdfs:label "Application System Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/Certification
@@ -440,9 +440,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                    rdfs:label "Feature Classified"@en .
 
 
-###  http://hitontology.eu/ontology/FeatureFreeText
-:FeatureFreeText rdf:type owl:Class ;
-                 rdfs:label "Feature Free Text"@en .
+###  http://hitontology.eu/ontology/FeatureCitation
+:FeatureCitation rdf:type owl:Class ;
+                 rdfs:label "Feature Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/FirstAuthor
@@ -502,9 +502,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                               rdfs:label "Organizational Unit Classified"@en .
 
 
-###  http://hitontology.eu/ontology/OrganizationalUnitFreeText
-:OrganizationalUnitFreeText rdf:type owl:Class ;
-                            rdfs:label "Organizational Unit Free Text"@en .
+###  http://hitontology.eu/ontology/OrganizationalUnitCitation
+:OrganizationalUnitCitation rdf:type owl:Class ;
+                            rdfs:label "Organizational Unit Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaClassified
@@ -512,9 +512,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "Outcome Criteria Classified"@en .
 
 
-###  http://hitontology.eu/ontology/OutcomeCriteriaFreeText
-:OutcomeCriteriaFreeText rdf:type owl:Class ;
-                         rdfs:label "Outcome Criteria Free Text"@en .
+###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
+:OutcomeCriteriaCitation rdf:type owl:Class ;
+                         rdfs:label "Outcome Criteria Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/Popularity
@@ -558,9 +558,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                        rdfs:label "Study Method Classified"@en .
 
 
-###  http://hitontology.eu/ontology/StudyMethodFreeText
-:StudyMethodFreeText rdf:type owl:Class ;
-                     rdfs:label "Study Method Free Text"@en .
+###  http://hitontology.eu/ontology/StudyMethodCitation
+:StudyMethodCitation rdf:type owl:Class ;
+                     rdfs:label "Study Method Citation"@en .
 
 ###  http://hitontology.eu/ontology/Terminology
 :Terminology rdf:type owl:Class ;
@@ -572,9 +572,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                      rdfs:label "User Group Classified"@en .
 
 
-###  http://hitontology.eu/ontology/UserGroupFreeText
-:UserGroupFreeText rdf:type owl:Class ;
-                   rdfs:label "User Group Free Text"@en .
+###  http://hitontology.eu/ontology/UserGroupCitation
+:UserGroupCitation rdf:type owl:Class ;
+                   rdfs:label "User Group Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/ValidationStudy
@@ -858,7 +858,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Emergency_Department_Information_System_EDIS
 :Emergency_Department_Information_System_EDIS rdf:type owl:NamedIndividual ,
-                                                       :ApplicationSystemFreeText ;
+                                                       :ApplicationSystemCitation ;
                                               :classifiedApplicationSystem :Outpatient_Management_System ;
                                               rdfs:comment "Emergency Department Information System (EDIS)" ;
                                               rdfs:label "Emergency Department Information System EDIS"@en .
@@ -866,7 +866,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Emergency_Department_provider_electronic_documentation_system
 :Emergency_Department_provider_electronic_documentation_system rdf:type owl:NamedIndividual ,
-                                                                        :ApplicationSystemFreeText ;
+                                                                        :ApplicationSystemCitation ;
                                                                :classifiedApplicationSystem :Outpatient_Management_System ;
                                                                rdfs:label "Emergency Department provider electronic documentation system"@en .
 
@@ -928,7 +928,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Gastroenterology
 :Gastroenterology rdf:type owl:NamedIndividual ,
-                           :OrganizationalUnitFreeText ;
+                           :OrganizationalUnitCitation ;
                   rdfs:label "gastroenterology"@en .
 
 
@@ -1035,7 +1035,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/ICNP_as_classification_system
 :ICNP_as_classification_system rdf:type owl:NamedIndividual ,
-                                        :FeatureFreeText ;
+                                        :FeatureCitation ;
                                :classifiedFeatureEHRHL7FM :StandardTerminologyAndTerminologyServices ;
                                rdfs:label "ICNP as classification system"@en .
 
@@ -2259,14 +2259,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/PACS_interface
 :PACS_interface rdf:type owl:NamedIndividual ,
-                         :FeatureFreeText ;
+                         :FeatureCitation ;
                 :classifiedFeatureEHRHL7FM :ManageResults ;
                 rdfs:label "PACS interface"@en .
 
 
 ###  http://hitontology.eu/ontology/PDMS
 :PDMS rdf:type owl:NamedIndividual ,
-               :ApplicationSystemFreeText ;
+               :ApplicationSystemCitation ;
       :classifiedApplicationSystem :Patient_Data_Management_System_PDMS ;
       rdfs:label "PDMS"@en .
 
@@ -2433,7 +2433,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/RIS-PACS_system
 :RIS-PACS_system rdf:type owl:NamedIndividual ,
-                          :ApplicationSystemFreeText ;
+                          :ApplicationSystemCitation ;
                  :classifiedApplicationSystem :Picture_Archiving_and_Communication_System_PACS ,
                                               :Radiology_Information_System ;
                  rdfs:label "RIS-PACS system"@en .
@@ -2485,7 +2485,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Rheumatology
 :Rheumatology rdf:type owl:NamedIndividual ,
-                       :OrganizationalUnitFreeText ;
+                       :OrganizationalUnitCitation ;
               rdfs:label "rheumatology"@en .
 
 
@@ -2755,7 +2755,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/adaption_of_nursing_care_plans_during_care_planning
 :adaption_of_nursing_care_plans_during_care_planning rdf:type owl:NamedIndividual ,
-                                                              :FeatureFreeText ;
+                                                              :FeatureCitation ;
                                                      :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                                                 :SupportOrders ;
                                                      rdfs:label "adaption of nursing care plans during care planning"@en .
@@ -2763,21 +2763,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/adherence_to_recommendations
 :adherence_to_recommendations rdf:type owl:NamedIndividual ,
-                                       :OutcomeCriteriaFreeText ;
+                                       :OutcomeCriteriaCitation ;
                               :classifiedOutcomeCriteria :Process_quality ;
                               rdfs:label "adherence to recommendations"@en .
 
 
 ###  http://hitontology.eu/ontology/administrative_staff
 :administrative_staff rdf:type owl:NamedIndividual ,
-                               :UserGroupFreeText ;
+                               :UserGroupCitation ;
                       :classifiedUserGroupSNOMEDCT :Administrative_healthcare_staff_occupation ;
                       rdfs:label "administrative staff"@en .
 
 
 ###  http://hitontology.eu/ontology/admission_overview
 :admission_overview rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ,
                                                :ManageClinicalWorkflowTasking ;
                     rdfs:label "admission overview"@en .
@@ -2785,21 +2785,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/agreement_management
 :agreement_management rdf:type owl:NamedIndividual ,
-                               :FeatureFreeText ;
+                               :FeatureCitation ;
                       :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                       rdfs:label "agreement management"@en .
 
 
 ###  http://hitontology.eu/ontology/allowing_to_reuse_earlier_anamnestic_data
 :allowing_to_reuse_earlier_anamnestic_data rdf:type owl:NamedIndividual ,
-                                                    :FeatureFreeText ;
+                                                    :FeatureCitation ;
                                            :classifiedFeatureEHRHL7FM :ManagePatientHistory ;
                                            rdfs:label "allowing to reuse earlier anamnestic data"@en .
 
 
 ###  http://hitontology.eu/ontology/altering_prescribing_habits_by_alternative_drugs
 :altering_prescribing_habits_by_alternative_drugs rdf:type owl:NamedIndividual ,
-                                                           :FeatureFreeText ;
+                                                           :FeatureCitation ;
                                                   :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                                              :MedicationOrderEfficiencies ;
                                                   rdfs:label "altering prescribing habits by alternative drugs"@en .
@@ -2807,35 +2807,35 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/amount_medication_errors
 :amount_medication_errors rdf:type owl:NamedIndividual ,
-                                   :OutcomeCriteriaFreeText ;
+                                   :OutcomeCriteriaCitation ;
                           :classifiedOutcomeCriteria :Process_quality ;
                           rdfs:label "amount medication errors"@en .
 
 
 ###  http://hitontology.eu/ontology/amount_of_adverse_drug_events
 :amount_of_adverse_drug_events rdf:type owl:NamedIndividual ,
-                                        :OutcomeCriteriaFreeText ;
+                                        :OutcomeCriteriaCitation ;
                                :classifiedOutcomeCriteria :Process_quality ;
                                rdfs:label "amount of adverse drug events"@en .
 
 
 ###  http://hitontology.eu/ontology/amount_of_errors_in_order_transcription
 :amount_of_errors_in_order_transcription rdf:type owl:NamedIndividual ,
-                                                  :OutcomeCriteriaFreeText ;
+                                                  :OutcomeCriteriaCitation ;
                                          :classifiedOutcomeCriteria :Process_quality ;
                                          rdfs:label "amount of errors in order transcription"@en .
 
 
 ###  http://hitontology.eu/ontology/amount_of_medication_orders
 :amount_of_medication_orders rdf:type owl:NamedIndividual ,
-                                      :OutcomeCriteriaFreeText ;
+                                      :OutcomeCriteriaCitation ;
                              :classifiedOutcomeCriteria :Usage_pattern ;
                              rdfs:label "amount of medication orders"@en .
 
 
 ###  http://hitontology.eu/ontology/analytical_turnaround_time
 :analytical_turnaround_time rdf:type owl:NamedIndividual ,
-                                     :OutcomeCriteriaFreeText ;
+                                     :OutcomeCriteriaCitation ;
                             owl:sameAs :laboratoy_turnaround_time ;
                             :classifiedOutcomeCriteria :Process_efficiency ;
                             rdfs:label "analytical turnaround time"@en .
@@ -2843,14 +2843,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/analyze_accuracy_and_inter-observer_variability_of_new_tool
 :analyze_accuracy_and_inter-observer_variability_of_new_tool rdf:type owl:NamedIndividual ,
-                                                                      :OutcomeCriteriaFreeText ;
+                                                                      :OutcomeCriteriaCitation ;
                                                              :classifiedOutcomeCriteria :Process_quality ;
                                                              rdfs:label "analyze accuracy and inter-observer variability of new tool" .
 
 
 ###  http://hitontology.eu/ontology/anamnesis_supported_by_offering_flexible_forms_for_data_entry
 :anamnesis_supported_by_offering_flexible_forms_for_data_entry rdf:type owl:NamedIndividual ,
-                                                                        :FeatureFreeText ;
+                                                                        :FeatureCitation ;
                                                                :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                                                                           :ManageClinicalHistory ,
                                                                                           :ManageProblemList ;
@@ -2859,27 +2859,27 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/app
 :app rdf:type owl:NamedIndividual ,
-              :FeatureFreeText ;
+              :FeatureCitation ;
      :classifiedFeatureEHRHL7FM :SupportRemoteHealthcareServices ;
      rdfs:label "app" .
 
 
 ###  http://hitontology.eu/ontology/appointment_letters
 :appointment_letters rdf:type owl:NamedIndividual ,
-                              :FeatureFreeText ;
+                              :FeatureCitation ;
                      rdfs:label "appointment letters"@en .
 
 
 ###  http://hitontology.eu/ontology/audit_trail
 :audit_trail rdf:type owl:NamedIndividual ,
-                      :FeatureFreeText ;
+                      :FeatureCitation ;
              :classifiedFeatureEHRHL7FM :Audit ;
              rdfs:label "audit trail"@en .
 
 
 ###  http://hitontology.eu/ontology/automated_calculation_of_ventilation_times
 :automated_calculation_of_ventilation_times rdf:type owl:NamedIndividual ,
-                                                     :FeatureFreeText ;
+                                                     :FeatureCitation ;
                                             :classifiedFeatureEHRHL7FM :SupportForMedicationOrderingEfficiencies ,
                                                                        :SupportForMedicationRecommendations ,
                                                                        :SupportOrders ;
@@ -2888,14 +2888,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automated_coding_semi-automated_coding_of_diagnoses_and_procedures_from_previously_documented_clinical_data_accordding_to_German_DRG
 :automated_coding_semi-automated_coding_of_diagnoses_and_procedures_from_previously_documented_clinical_data_accordding_to_German_DRG rdf:type owl:NamedIndividual ,
-                                                                                                                                               :FeatureFreeText ;
+                                                                                                                                               :FeatureCitation ;
                                                                                                                                       :classifiedFeatureEHRHL7FM :StandardTerminologyAndTerminologyServices ;
                                                                                                                                       rdfs:label "automated coding semi-automated coding of diagnoses and procedures from previously documented clinical data accordding to German DRG"@en .
 
 
 ###  http://hitontology.eu/ontology/automatic_alignment_of_baseline_and_follow-up_CTA
 :automatic_alignment_of_baseline_and_follow-up_CTA rdf:type owl:NamedIndividual ,
-                                                            :FeatureFreeText ;
+                                                            :FeatureCitation ;
                                                    :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                               :ManageResultsOfDiagnosticTests ;
                                                    rdfs:label "automatic alignment of baseline and follow-up CTA" .
@@ -2903,7 +2903,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automatic_and_paperless_operations
 :automatic_and_paperless_operations rdf:type owl:NamedIndividual ,
-                                             :FeatureFreeText ;
+                                             :FeatureCitation ;
                                     :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                                :ManageOrdersForDiagnositcScreeningTests ,
                                                                :ManageResults ,
@@ -2915,14 +2915,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automatic_creation_of_a_nursing_transfer_report
 :automatic_creation_of_a_nursing_transfer_report rdf:type owl:NamedIndividual ,
-                                                          :FeatureFreeText ;
+                                                          :FeatureCitation ;
                                                  :classifiedFeatureEHRHL7FM :ProduceASummaryRecordOfCare ;
                                                  rdfs:label "automatic creation of a nursing transfer report"@en .
 
 
 ###  http://hitontology.eu/ontology/automatic_data_collection
 :automatic_data_collection rdf:type owl:NamedIndividual ,
-                                    :FeatureFreeText ;
+                                    :FeatureCitation ;
                            :classifiedFeatureEHRHL7FM :MedicationOrderEfficiencies ,
                                                       :SupportForMedicationOrderingEfficiencies ;
                            rdfs:label "automatic data collection"@en .
@@ -2930,13 +2930,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automatic_documentation_of_medication
 :automatic_documentation_of_medication rdf:type owl:NamedIndividual ,
-                                                :FeatureFreeText ;
+                                                :FeatureCitation ;
                                        rdfs:label "automatic documentation of medication"@en .
 
 
 ###  http://hitontology.eu/ontology/automatic_forwarded_processed_images
 :automatic_forwarded_processed_images rdf:type owl:NamedIndividual ,
-                                               :FeatureFreeText ;
+                                               :FeatureCitation ;
                                       :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                                  :ManageOrdersForDiagnositcScreeningTests ,
                                                                  :ManageResults ,
@@ -2946,7 +2946,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automatic_segmentation_of_baseline_CTA
 :automatic_segmentation_of_baseline_CTA rdf:type owl:NamedIndividual ,
-                                                 :FeatureFreeText ;
+                                                 :FeatureCitation ;
                                         :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                    :ManageResultsOfDiagnosticTests ;
                                         rdfs:label "automatic segmentation of baseline CTA" .
@@ -2954,7 +2954,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/automatic_transfer_of_laboratory_data
 :automatic_transfer_of_laboratory_data rdf:type owl:NamedIndividual ,
-                                                :FeatureFreeText ;
+                                                :FeatureCitation ;
                                        :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                   :ManageResultsOfDiagnosticTests ;
                                        rdfs:label "automatic transfer of laboratory data"@en .
@@ -2962,21 +2962,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/availability
 :availability rdf:type owl:NamedIndividual ,
-                       :OutcomeCriteriaFreeText ;
+                       :OutcomeCriteriaCitation ;
               :classifiedOutcomeCriteria :Software_quality ;
               rdfs:label "'availability'"@en .
 
 
 ###  http://hitontology.eu/ontology/bed_management
 :bed_management rdf:type owl:NamedIndividual ,
-                         :FeatureFreeText ;
+                         :FeatureCitation ;
                 :classifiedFeatureEHRHL7FM :ManageResourceAvailability ;
                 rdfs:label "bed management"@en .
 
 
 ###  http://hitontology.eu/ontology/bedside_CPOE_for_orders_between_physicians_and_nurses
 :bedside_CPOE_for_orders_between_physicians_and_nurses rdf:type owl:NamedIndividual ,
-                                                                :FeatureFreeText ;
+                                                                :FeatureCitation ;
                                                        :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                                                   :SupportForMedicationOrderingEfficiencies ,
                                                                                   :SupportOrders ;
@@ -2985,7 +2985,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/booking_form
 :booking_form rdf:type owl:NamedIndividual ,
-                       :FeatureFreeText ;
+                       :FeatureCitation ;
               :classifiedFeatureEHRHL7FM :ManageOrders ,
                                          :SupportOrders ;
               rdfs:label "booking form"@en .
@@ -2993,7 +2993,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/booking_of_examinations
 :booking_of_examinations rdf:type owl:NamedIndividual ,
-                                  :FeatureFreeText ;
+                                  :FeatureCitation ;
                          :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                     :ManageOrdersForDiagnositcScreeningTests ,
                                                     :SupportOrders ,
@@ -3003,14 +3003,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/cancelled_prescriptions
 :cancelled_prescriptions rdf:type owl:NamedIndividual ,
-                                  :OutcomeCriteriaFreeText ;
+                                  :OutcomeCriteriaCitation ;
                          :classifiedFeatureEHRHL7FM :Process_quality ;
                          rdfs:label "cancelled prescriptions"@en .
 
 
 ###  http://hitontology.eu/ontology/capturing_data_for_all_patient_visits
 :capturing_data_for_all_patient_visits rdf:type owl:NamedIndividual ,
-                                                :FeatureFreeText ;
+                                                :FeatureCitation ;
                                        :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                                                   :ManageClinicalHistory ,
                                                                   :ManagePatientHistory ;
@@ -3019,42 +3019,42 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/cardiology_ward
 :cardiology_ward rdf:type owl:NamedIndividual ,
-                          :OrganizationalUnitFreeText ;
+                          :OrganizationalUnitCitation ;
                  :classifiedUnitSNOMEDCT :Cardiology_department_environment ;
                  rdfs:label "cardiology ward"@en .
 
 
 ###  http://hitontology.eu/ontology/clerical_staff
 :clerical_staff rdf:type owl:NamedIndividual ,
-                         :UserGroupFreeText ;
+                         :UserGroupCitation ;
                 :classifiedUserGroupSNOMEDCT :Clerical_occupation_occupation ;
                 rdfs:label "clerical staff"@en .
 
 
 ###  http://hitontology.eu/ontology/clerks
 :clerks rdf:type owl:NamedIndividual ,
-                 :UserGroupFreeText ;
+                 :UserGroupCitation ;
         :classifiedUserGroupSNOMEDCT :Clerk_occupation ;
         rdfs:label "clerks"@en .
 
 
 ###  http://hitontology.eu/ontology/clinical_audit
 :clinical_audit rdf:type owl:NamedIndividual ,
-                         :StudyMethodFreeText ;
+                         :StudyMethodCitation ;
                 :classifiedStudyMethod :Qualitative ;
                 rdfs:label "clinical audit"@en .
 
 
 ###  http://hitontology.eu/ontology/clinical_documentation
 :clinical_documentation rdf:type owl:NamedIndividual ,
-                                 :FeatureFreeText ;
+                                 :FeatureCitation ;
                         :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                         rdfs:label "clinical documentation"@en .
 
 
 ###  http://hitontology.eu/ontology/clinical_documentation_system
 :clinical_documentation_system rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemFreeText ;
+                                        :ApplicationSystemCitation ;
                                owl:sameAs :electronic_medical_record_system ;
                                :classifiedApplicationSystem :Medical_Documentation_System ;
                                rdfs:label "clinical documentation system"@en .
@@ -3062,42 +3062,42 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/clinical_utility
 :clinical_utility rdf:type owl:NamedIndividual ,
-                           :OutcomeCriteriaFreeText ;
+                           :OutcomeCriteriaCitation ;
                   :classifiedOutcomeCriteria :Software_quality ;
                   rdfs:label "clinical utility"@en .
 
 
 ###  http://hitontology.eu/ontology/comparision_of_remote_and_on_site_consultations
 :comparision_of_remote_and_on_site_consultations rdf:type owl:NamedIndividual ,
-                                                          :OutcomeCriteriaFreeText ;
+                                                          :OutcomeCriteriaCitation ;
                                                  :classifiedOutcomeCriteria :Process_quality ;
                                                  rdfs:label "comparision of remote and on site consultations"@en .
 
 
 ###  http://hitontology.eu/ontology/comparision_of_workflow
 :comparision_of_workflow rdf:type owl:NamedIndividual ,
-                                  :OutcomeCriteriaFreeText ;
+                                  :OutcomeCriteriaCitation ;
                          :classifiedOutcomeCriteria :Process_efficiency ;
                          rdfs:label "comparision of workflow"@en .
 
 
 ###  http://hitontology.eu/ontology/comparision_with_on_site_echocardiographic_machines
 :comparision_with_on_site_echocardiographic_machines rdf:type owl:NamedIndividual ,
-                                                              :OutcomeCriteriaFreeText ;
+                                                              :OutcomeCriteriaCitation ;
                                                      :classifiedOutcomeCriteria :Process_quality ;
                                                      rdfs:label "comparision with on site echocardiographic machines"@en .
 
 
 ###  http://hitontology.eu/ontology/compatibility_with_data_formats
 :compatibility_with_data_formats rdf:type owl:NamedIndividual ,
-                                          :OutcomeCriteriaFreeText ;
+                                          :OutcomeCriteriaCitation ;
                                  :classifiedOutcomeCriteria :Hardware_quality ;
                                  rdfs:label "compatibility with data formats"@en .
 
 
 ###  http://hitontology.eu/ontology/complete_test_results
 :complete_test_results rdf:type owl:NamedIndividual ,
-                                :FeatureFreeText ;
+                                :FeatureCitation ;
                        :classifiedFeatureEHRHL7FM :ManageResults ,
                                                   :ManageResultsOfDiagnosticTests ;
                        rdfs:label "complete test results"@en .
@@ -3105,28 +3105,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/comprising_a_set_of_nursing_care_standards
 :comprising_a_set_of_nursing_care_standards rdf:type owl:NamedIndividual ,
-                                                     :FeatureFreeText ;
+                                                     :FeatureCitation ;
                                             :classifiedFeatureEHRHL7FM :SupportforStandardCarePlansGuidelinesProtocols ;
                                             rdfs:label "comprising a set of nursing care standards"@en .
 
 
 ###  http://hitontology.eu/ontology/computerized_decision_aid
 :computerized_decision_aid rdf:type owl:NamedIndividual ,
-                                    :ApplicationSystemFreeText ;
+                                    :ApplicationSystemCitation ;
                            :classifiedApplicationSystem :Decision_Support_System ;
                            rdfs:label "computerized decision aid" .
 
 
 ###  http://hitontology.eu/ontology/computerized_decision_support_system_CDSS
 :computerized_decision_support_system_CDSS rdf:type owl:NamedIndividual ,
-                                                    :ApplicationSystemFreeText ;
+                                                    :ApplicationSystemCitation ;
                                            rdfs:comment "computerized decision support system (CDSS)" ;
                                            rdfs:label "computerized decision support system CDSS"@en .
 
 
 ###  http://hitontology.eu/ontology/computerized_order_entry
 :computerized_order_entry rdf:type owl:NamedIndividual ,
-                                   :FeatureFreeText ;
+                                   :FeatureCitation ;
                           :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                      :MedicationOrderEfficiencies ,
                                                      :SupportForMedicationOrderingEfficiencies ,
@@ -3136,7 +3136,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/computerized_physician_order_entry_system_with_basic_clinical_decision_support_CPOE-CDSS
 :computerized_physician_order_entry_system_with_basic_clinical_decision_support_CPOE-CDSS rdf:type owl:NamedIndividual ,
-                                                                                                   :ApplicationSystemFreeText ;
+                                                                                                   :ApplicationSystemCitation ;
                                                                                           :classifiedApplicationSystem :Decision_Support_System ,
                                                                                                                        :Provider_or_Physician_Order_Entry_System_POE ;
                                                                                           rdfs:comment "computerized physician order entry system with basic clinical decision support (CPOE-CDSS)" ;
@@ -3145,21 +3145,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/computerized_prescribing_system
 :computerized_prescribing_system rdf:type owl:NamedIndividual ,
-                                          :ApplicationSystemFreeText ;
+                                          :ApplicationSystemCitation ;
                                  :classifiedApplicationSystem :Provider_or_Physician_Order_Entry_System_POE ;
                                  rdfs:label "computerized prescribing system"@en .
 
 
 ###  http://hitontology.eu/ontology/computerized_provider_order_entry_system
 :computerized_provider_order_entry_system rdf:type owl:NamedIndividual ,
-                                                   :ApplicationSystemFreeText ;
+                                                   :ApplicationSystemCitation ;
                                           :classifiedApplicationSystem :Provider_or_Physician_Order_Entry_System_POE ;
                                           rdfs:label "computerized provider order entry system"@en .
 
 
 ###  http://hitontology.eu/ontology/consolidated_list_of_results_for_jurisdiction
 :consolidated_list_of_results_for_jurisdiction rdf:type owl:NamedIndividual ,
-                                                        :FeatureFreeText ;
+                                                        :FeatureCitation ;
                                                :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                           :ManageResultsOfDiagnosticTests ;
                                                rdfs:label "consolidated list of results for jurisdiction"@en .
@@ -3167,14 +3167,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/consultation_referrals
 :consultation_referrals rdf:type owl:NamedIndividual ,
-                                 :FeatureFreeText ;
+                                 :FeatureCitation ;
                         :classifiedFeatureEHRHL7FM :ManageOrdersForReferral ;
                         rdfs:label "consultation referrals"@en .
 
 
 ###  http://hitontology.eu/ontology/content_analysis
 :content_analysis rdf:type owl:NamedIndividual ,
-                           :StudyMethodFreeText ;
+                           :StudyMethodCitation ;
                   owl:sameAs :document_analysis ;
                   :classifiedStudyMethod :Qualitative ;
                   rdfs:label "content analysis"@en .
@@ -3182,28 +3182,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/cost_analysis
 :cost_analysis rdf:type owl:NamedIndividual ,
-                        :StudyMethodFreeText ;
+                        :StudyMethodCitation ;
                :classifiedStudyMethod :Quantitative ;
                rdfs:label "cost analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/cost_benefit
 :cost_benefit rdf:type owl:NamedIndividual ,
-                       :OutcomeCriteriaFreeText ;
+                       :OutcomeCriteriaCitation ;
               :classifiedOutcomeCriteria :Information_processing_costs ;
               rdfs:label "cost benefit"@en .
 
 
 ###  http://hitontology.eu/ontology/creation_and_storage_of_nursing_diagnoses_and_nursing_outcomes
 :creation_and_storage_of_nursing_diagnoses_and_nursing_outcomes rdf:type owl:NamedIndividual ,
-                                                                         :FeatureFreeText ;
+                                                                         :FeatureCitation ;
                                                                 :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                                                                 rdfs:label "creation and storage of nursing diagnoses and nursing outcomes"@en .
 
 
 ###  http://hitontology.eu/ontology/creation_of_data_relation_to_triage
 :creation_of_data_relation_to_triage rdf:type owl:NamedIndividual ,
-                                              :FeatureFreeText ;
+                                              :FeatureCitation ;
                                      :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                 :ManageHealthcareResourceScheduling ,
                                                                 :SupportCareCoordinationAndReporting ,
@@ -3213,7 +3213,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/creation_of_nursing_care_plans
 :creation_of_nursing_care_plans rdf:type owl:NamedIndividual ,
-                                         :FeatureFreeText ;
+                                         :FeatureCitation ;
                                 :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ,
                                                            :ManageOrders ,
                                                            :SupportOrders ;
@@ -3222,20 +3222,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/data_analysis_out_of_intervention
 :data_analysis_out_of_intervention rdf:type owl:NamedIndividual ,
-                                            :StudyMethodFreeText ;
+                                            :StudyMethodCitation ;
                                    rdfs:label "data analysis out of intervention"@en .
 
 
 ###  http://hitontology.eu/ontology/data_entries_in_real_time
 :data_entries_in_real_time rdf:type owl:NamedIndividual ,
-                                    :OutcomeCriteriaFreeText ;
+                                    :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :Usage_pattern ;
                            rdfs:label "data entries in real time"@en .
 
 
 ###  http://hitontology.eu/ontology/data_reuse_and_data_transfer_for_accounting_purposes_to_the_administration_subsystem
 :data_reuse_and_data_transfer_for_accounting_purposes_to_the_administration_subsystem rdf:type owl:NamedIndividual ,
-                                                                                               :FeatureFreeText ;
+                                                                                               :FeatureCitation ;
                                                                                       :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ,
                                                                                                                  :SupportForCommunicationBetweenOrganizations ;
                                                                                       rdfs:label "data reuse and data transfer for accounting purposes to the administration subsystem"@en .
@@ -3243,7 +3243,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/data_storage_repository
 :data_storage_repository rdf:type owl:NamedIndividual ,
-                                  :FeatureFreeText ;
+                                  :FeatureCitation ;
                          :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                                     :ManageHealthcareResourceAvailabilityInformation ;
                          rdfs:label "data storage repository"@en .
@@ -3251,28 +3251,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/data_transmission_speed
 :data_transmission_speed rdf:type owl:NamedIndividual ,
-                                  :OutcomeCriteriaFreeText ;
+                                  :OutcomeCriteriaCitation ;
                          :classifiedOutcomeCriteria :Hardware_quality ;
                          rdfs:label "data transmission speed"@en .
 
 
 ###  http://hitontology.eu/ontology/decision_making
 :decision_making rdf:type owl:NamedIndividual ,
-                          :OutcomeCriteriaFreeText ;
+                          :OutcomeCriteriaCitation ;
                  :classifiedOutcomeCriteria :Process_quality ;
                  rdfs:label "decision making"@en .
 
 
 ###  http://hitontology.eu/ontology/decisional_conflict_scale
 :decisional_conflict_scale rdf:type owl:NamedIndividual ,
-                                    :StudyMethodFreeText ;
+                                    :StudyMethodCitation ;
                            :classifiedStudyMethod :Qualitative ;
                            rdfs:label "decisional conflict scale" .
 
 
 ###  http://hitontology.eu/ontology/decisions_support_functions
 :decisions_support_functions rdf:type owl:NamedIndividual ,
-                                      :FeatureFreeText ;
+                                      :FeatureCitation ;
                              :classifiedFeatureEHRHL7FM :SupportOfPatientSpecificDosingAndWarnings ,
                                                         :SupportOrders ;
                              rdfs:label "decisions support functions"@en .
@@ -3280,42 +3280,42 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/decrease_decisional_conflict
 :decrease_decisional_conflict rdf:type owl:NamedIndividual ,
-                                       :OutcomeCriteriaFreeText ;
+                                       :OutcomeCriteriaCitation ;
                               :classifiedOutcomeCriteria :Process_quality ;
                               rdfs:label "decrease_decisional_conflict" .
 
 
 ###  http://hitontology.eu/ontology/demographics_survey
 :demographics_survey rdf:type owl:NamedIndividual ,
-                              :StudyMethodFreeText ;
+                              :StudyMethodCitation ;
                      :classifiedStudyMethod :Quantitative ;
                      rdfs:label "demographics survey" .
 
 
 ###  http://hitontology.eu/ontology/dermatology
 :dermatology rdf:type owl:NamedIndividual ,
-                      :OrganizationalUnitFreeText ;
+                      :OrganizationalUnitCitation ;
              :classifiedUnitSNOMEDCT :Dermatology_department_environment ;
              rdfs:label "dermatology"@en .
 
 
 ###  http://hitontology.eu/ontology/descriptive_statistics
 :descriptive_statistics rdf:type owl:NamedIndividual ,
-                                 :StudyMethodFreeText ;
+                                 :StudyMethodCitation ;
                         :classifiedStudyMethod :Quantitative ;
                         rdfs:label "descriptive statistics"@en .
 
 
 ###  http://hitontology.eu/ontology/discharge_summaries
 :discharge_summaries rdf:type owl:NamedIndividual ,
-                              :FeatureFreeText ;
+                              :FeatureCitation ;
                      :classifiedFeatureEHRHL7FM :ProduceASummaryRecordOfCare ;
                      rdfs:label "discharge summaries"@en .
 
 
 ###  http://hitontology.eu/ontology/display_of_warnings_when_appropiate
 :display_of_warnings_when_appropiate rdf:type owl:NamedIndividual ,
-                                              :FeatureFreeText ;
+                                              :FeatureCitation ;
                                      :classifiedFeatureEHRHL7FM :MedicationAndAllergyInteractionChecking ,
                                                                 :MedicationOrderEfficiencies ,
                                                                 :SupportOfPatientSpecificDosingAndWarnings ;
@@ -3324,14 +3324,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/document_analysis
 :document_analysis rdf:type owl:NamedIndividual ,
-                            :StudyMethodFreeText ;
+                            :StudyMethodCitation ;
                    :classifiedStudyMethod :Qualitative ;
                    rdfs:label "document analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/dropdown_menu_of_predefined_order_sentences_triggered_on_drug_selection
 :dropdown_menu_of_predefined_order_sentences_triggered_on_drug_selection rdf:type owl:NamedIndividual ,
-                                                                                  :FeatureFreeText ;
+                                                                                  :FeatureCitation ;
                                                                          :classifiedFeatureEHRHL7FM :ManageOrderSetTemplates ,
                                                                                                     :ManageOrders ,
                                                                                                     :MedicationOrderEfficiencies ,
@@ -3343,7 +3343,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/drug_dictionary
 :drug_dictionary rdf:type owl:NamedIndividual ,
-                          :FeatureFreeText ;
+                          :FeatureCitation ;
                  :classifiedFeatureEHRHL7FM :MedicationOrderEfficiencies ,
                                             :SupportForMedicationRecommendations ,
                                             :SupportOfPatientSpecificDosingAndWarnings ;
@@ -3373,20 +3373,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/electronic_medical_record_system
 :electronic_medical_record_system rdf:type owl:NamedIndividual ,
-                                           :ApplicationSystemFreeText ;
+                                           :ApplicationSystemCitation ;
                                   :classifiedApplicationSystem :Medical_Documentation_System ;
                                   rdfs:label "electronic medical record system"@en .
 
 
 ###  http://hitontology.eu/ontology/electronic_medication-administration_system
 :electronic_medication-administration_system rdf:type owl:NamedIndividual ,
-                                                      :ApplicationSystemFreeText ;
+                                                      :ApplicationSystemCitation ;
                                              rdfs:label "electronic medication-administration system"@en .
 
 
 ###  http://hitontology.eu/ontology/electronic_medication_administration_tool
 :electronic_medication_administration_tool rdf:type owl:NamedIndividual ,
-                                                    :FeatureFreeText ;
+                                                    :FeatureCitation ;
                                            :classifiedFeatureEHRHL7FM :ManageMedicationAdministration ,
                                                                       :ManageMedicationImmunizationAndTreatmentAdministration ,
                                                                       :ManageOrders ,
@@ -3397,49 +3397,49 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/electronic_patient_record_system_EPR
 :electronic_patient_record_system_EPR rdf:type owl:NamedIndividual ,
-                                               :ApplicationSystemFreeText ;
+                                               :ApplicationSystemCitation ;
                                       rdfs:comment "electronic patient record system (EPR)" ;
                                       rdfs:label "electronic patient record system EPR"@en .
 
 
 ###  http://hitontology.eu/ontology/electronic_patient_worklist
 :electronic_patient_worklist rdf:type owl:NamedIndividual ,
-                                      :FeatureFreeText ;
+                                      :FeatureCitation ;
                              :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ;
                              rdfs:label "electronic patient worklist"@en .
 
 
 ###  http://hitontology.eu/ontology/electronic_prescribing_system
 :electronic_prescribing_system rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemFreeText ;
+                                        :ApplicationSystemCitation ;
                                :classifiedApplicationSystem :Provider_or_Physician_Order_Entry_System_POE ;
                                rdfs:label "electronic prescribing system"@en .
 
 
 ###  http://hitontology.eu/ontology/electronic_signature
 :electronic_signature rdf:type owl:NamedIndividual ,
-                               :FeatureFreeText ;
+                               :FeatureCitation ;
                       :classifiedFeatureEHRHL7FM :ManageRecordEntryAmendedCorrectedAndAugmentedState ;
                       rdfs:label "electronic signature"@en .
 
 
 ###  http://hitontology.eu/ontology/email_notification_of_new_results
 :email_notification_of_new_results rdf:type owl:NamedIndividual ,
-                                            :FeatureFreeText ;
+                                            :FeatureCitation ;
                                    :classifiedFeatureEHRHL7FM :SupportForCommunicationBetweenOrganizations ;
                                    rdfs:label "email notification of new results"@en .
 
 
 ###  http://hitontology.eu/ontology/emergency_department
 :emergency_department rdf:type owl:NamedIndividual ,
-                               :OrganizationalUnitFreeText ;
+                               :OrganizationalUnitCitation ;
                       :classifiedUnitSNOMEDCT :Accident_and_Emergency_department_environment ;
                       rdfs:label "emergency department"@en .
 
 
 ###  http://hitontology.eu/ontology/emergency_testing
 :emergency_testing rdf:type owl:NamedIndividual ,
-                            :FeatureFreeText ;
+                            :FeatureCitation ;
                    :classifiedFeatureEHRHL7FM :ManageOrders ,
                                               :ManageOrdersForDiagnositcScreeningTests ,
                                               :ManageResults ,
@@ -3449,14 +3449,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/endocrinology
 :endocrinology rdf:type owl:NamedIndividual ,
-                        :OrganizationalUnitFreeText ;
+                        :OrganizationalUnitCitation ;
                :classifiedUnitSNOMEDCT :Endocrinology_department_environment ;
                rdfs:label "endocrinology"@en .
 
 
 ###  http://hitontology.eu/ontology/enterprise_wide_resource_planning_system_ERP
 :enterprise_wide_resource_planning_system_ERP rdf:type owl:NamedIndividual ,
-                                                       :ApplicationSystemFreeText ;
+                                                       :ApplicationSystemCitation ;
                                               :classifiedApplicationSystem :Enterprise_Resource_Planning_System ;
                                               rdfs:comment "enterprise wide resource planning system (ERP)" ;
                                               rdfs:label "enterprise wide resource planning system ERP"@en .
@@ -3464,14 +3464,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/export_function_to_the_billing_system
 :export_function_to_the_billing_system rdf:type owl:NamedIndividual ,
-                                                :FeatureFreeText ;
+                                                :FeatureCitation ;
                                        :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                                        rdfs:label "export function to the billing system"@en .
 
 
 ###  http://hitontology.eu/ontology/facilitating_calculations_of_drug_doses_and_fluid_balances
 :facilitating_calculations_of_drug_doses_and_fluid_balances rdf:type owl:NamedIndividual ,
-                                                                     :FeatureFreeText ;
+                                                                     :FeatureCitation ;
                                                             :classifiedFeatureEHRHL7FM :SupportForMedicationOrderingEfficiencies ,
                                                                                        :SupportOfPatientSpecificDosingAndWarnings ,
                                                                                        :SupportOrders ;
@@ -3480,14 +3480,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/focus_groups
 :focus_groups rdf:type owl:NamedIndividual ,
-                       :StudyMethodFreeText ;
+                       :StudyMethodCitation ;
               :classifiedStudyMethod :Qualitative ;
               rdfs:label "focus groups"@en .
 
 
 ###  http://hitontology.eu/ontology/following_of_the_perioerpative_process
 :following_of_the_perioerpative_process rdf:type owl:NamedIndividual ,
-                                                 :FeatureFreeText ;
+                                                 :FeatureCitation ;
                                         :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                    :ManageClinicalWorkflowTasking ,
                                                                    :SupportCareCoordinationAndReporting ;
@@ -3496,7 +3496,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/forward_into_archive
 :forward_into_archive rdf:type owl:NamedIndividual ,
-                               :FeatureFreeText ;
+                               :FeatureCitation ;
                       :classifiedFeatureEHRHL7FM :ManageResults ,
                                                  :ManageResultsOfDiagnosticTests ;
                       rdfs:label "forward into archive"@en .
@@ -3504,69 +3504,69 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/free-text_nursing_report_writing
 :free-text_nursing_report_writing rdf:type owl:NamedIndividual ,
-                                           :FeatureFreeText ;
+                                           :FeatureCitation ;
                                   rdfs:label "free-text nursing report writing"@en .
 
 
 ###  http://hitontology.eu/ontology/front_office_operators
 :front_office_operators rdf:type owl:NamedIndividual ,
-                                 :UserGroupFreeText ;
+                                 :UserGroupCitation ;
                         owl:sameAs :secretaries ;
                         rdfs:label "front office operators"@en .
 
 
 ###  http://hitontology.eu/ontology/functionality
 :functionality rdf:type owl:NamedIndividual ,
-                        :OutcomeCriteriaFreeText ;
+                        :OutcomeCriteriaCitation ;
                :classifiedOutcomeCriteria :Software_quality ;
                rdfs:label "'functionality'"@en .
 
 
 ###  http://hitontology.eu/ontology/gastroenterology_ward
 :gastroenterology_ward rdf:type owl:NamedIndividual ,
-                                :OrganizationalUnitFreeText ;
+                                :OrganizationalUnitCitation ;
                        :classifiedUnitSNOMEDCT :Gastroenterology_department_environment ;
                        rdfs:label "gastroenterology ward"@en .
 
 
 ###  http://hitontology.eu/ontology/general_internal_medicine
 :general_internal_medicine rdf:type owl:NamedIndividual ,
-                                    :OrganizationalUnitFreeText ;
+                                    :OrganizationalUnitCitation ;
                            :classifiedUnitSNOMEDCT :General_medical_department_environment ;
                            rdfs:label "general internal medicine"@en .
 
 
 ###  http://hitontology.eu/ontology/general_internal_medicine_ward
 :general_internal_medicine_ward rdf:type owl:NamedIndividual ,
-                                         :OrganizationalUnitFreeText ;
+                                         :OrganizationalUnitCitation ;
                                 :classifiedUnitSNOMEDCT :General_medical_department_environment ;
                                 rdfs:label "general internal medicine ward"@en .
 
 
 ###  http://hitontology.eu/ontology/genetic_counseling
 :genetic_counseling rdf:type owl:NamedIndividual ,
-                             :OrganizationalUnitFreeText ;
+                             :OrganizationalUnitCitation ;
                     :classifiedUnitSNOMEDCT :Genetics_department_environment ;
                     rdfs:label "genetic counseling" .
 
 
 ###  http://hitontology.eu/ontology/geriatry_ward
 :geriatry_ward rdf:type owl:NamedIndividual ,
-                        :OrganizationalUnitFreeText ;
+                        :OrganizationalUnitCitation ;
                :classifiedUnitSNOMEDCT :Care_of_the_elderly_department_environment ;
                rdfs:label "geriatry ward"@en .
 
 
 ###  http://hitontology.eu/ontology/glycaemic_control
 :glycaemic_control rdf:type owl:NamedIndividual ,
-                            :OutcomeCriteriaFreeText ;
+                            :OutcomeCriteriaCitation ;
                    :classifiedOutcomeCriteria :Health-related_outcome ;
                    rdfs:label "glycaemic control"@en .
 
 
 ###  http://hitontology.eu/ontology/graphical_user_interface_to_document_care
 :graphical_user_interface_to_document_care rdf:type owl:NamedIndividual ,
-                                                    :FeatureFreeText ;
+                                                    :FeatureCitation ;
                                            :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                                                       :ManagePatientHistory ;
                                            rdfs:label "graphical user interface to document care"@en .
@@ -3574,21 +3574,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/gynaecology
 :gynaecology rdf:type owl:NamedIndividual ,
-                      :OrganizationalUnitFreeText ;
+                      :OrganizationalUnitCitation ;
              :classifiedUnitSNOMEDCT :Gynecology_department_environment ;
              rdfs:label "gynaecology"@en .
 
 
 ###  http://hitontology.eu/ontology/health_centers
 :health_centers rdf:type owl:NamedIndividual ,
-                         :OrganizationalUnitFreeText ;
+                         :OrganizationalUnitCitation ;
                 :classifiedUnitSNOMEDCT :Health_center ;
                 rdfs:label "health centers"@en .
 
 
 ###  http://hitontology.eu/ontology/hospitals
 :hospitals rdf:type owl:NamedIndividual ,
-                    :OrganizationalUnitFreeText ;
+                    :OrganizationalUnitCitation ;
            :classifiedUnitSNOMEDCT :Hospital_environment ;
            rdfs:label "hospitals"@en .
 
@@ -3880,21 +3880,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/image_quality
 :image_quality rdf:type owl:NamedIndividual ,
-                        :OutcomeCriteriaFreeText ;
+                        :OutcomeCriteriaCitation ;
                :classifiedOutcomeCriteria :Software_quality ;
                rdfs:label "image quality"@en .
 
 
 ###  http://hitontology.eu/ontology/implementation_of_the_application_system
 :implementation_of_the_application_system rdf:type owl:NamedIndividual ,
-                                                   :OutcomeCriteriaFreeText ;
+                                                   :OutcomeCriteriaCitation ;
                                           :classifiedOutcomeCriteria :User_satisfaction ;
                                           rdfs:label "implementation of the application system"@en .
 
 
 ###  http://hitontology.eu/ontology/import_interfaces_for_laboratory_microbiology_radiology_reports
 :import_interfaces_for_laboratory_microbiology_radiology_reports rdf:type owl:NamedIndividual ,
-                                                                          :FeatureFreeText ;
+                                                                          :FeatureCitation ;
                                                                  :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                             :ManageResultsOfDiagnosticTests ;
                                                                  rdfs:label "import interfaces for laboratory microbiology radiology reports"@en .
@@ -3902,28 +3902,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/in-patient_admissions_and_discharges
 :in-patient_admissions_and_discharges rdf:type owl:NamedIndividual ,
-                                               :FeatureFreeText ;
+                                               :FeatureCitation ;
                                       :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                                       rdfs:label "'in-patient admissions and discharges'"@en .
 
 
 ###  http://hitontology.eu/ontology/infectiology
 :infectiology rdf:type owl:NamedIndividual ,
-                       :OrganizationalUnitFreeText ;
+                       :OrganizationalUnitCitation ;
               :classifiedUnitSNOMEDCT :Infectious_diseases_department_environment ;
               rdfs:label "infectiology"@en .
 
 
 ###  http://hitontology.eu/ontology/inferential_statistics
 :inferential_statistics rdf:type owl:NamedIndividual ,
-                                 :StudyMethodFreeText ;
+                                 :StudyMethodCitation ;
                         :classifiedStudyMethod :Quantitative ;
                         rdfs:label "inferential statistics"@en .
 
 
 ###  http://hitontology.eu/ontology/information_about_the_operation_activity
 :information_about_the_operation_activity rdf:type owl:NamedIndividual ,
-                                                   :FeatureFreeText ;
+                                                   :FeatureCitation ;
                                           :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                      :ManageClinicalWorkflowTasking ,
                                                                      :SupportCareCoordinationAndReporting ;
@@ -3932,41 +3932,41 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/information_sourrounding_patient_age_and_gestational_age_to_guide_toward_available_options
 :information_sourrounding_patient_age_and_gestational_age_to_guide_toward_available_options rdf:type owl:NamedIndividual ,
-                                                                                                     :FeatureFreeText ;
+                                                                                                     :FeatureCitation ;
                                                                                             :classifiedFeatureEHRHL7FM :SupportForPatientContextDrivenAssessments ;
                                                                                             rdfs:label "Information surrounding patient age and gestational age to guide toward available options" .
 
 
 ###  http://hitontology.eu/ontology/information_technology_IT_manager
 :information_technology_IT_manager rdf:type owl:NamedIndividual ,
-                                            :UserGroupFreeText ;
+                                            :UserGroupCitation ;
                                    rdfs:label "information technology IT manager"@en .
 
 
 ###  http://hitontology.eu/ontology/integration_of_patient_specific_data
 :integration_of_patient_specific_data rdf:type owl:NamedIndividual ,
-                                               :FeatureFreeText ;
+                                               :FeatureCitation ;
                                       :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                                       rdfs:label "integration of patient specific data"@en .
 
 
 ###  http://hitontology.eu/ontology/intensive_care_unit
 :intensive_care_unit rdf:type owl:NamedIndividual ,
-                              :OrganizationalUnitFreeText ;
+                              :OrganizationalUnitCitation ;
                      :classifiedUnitSNOMEDCT :Intensive_care_unit_environment ;
                      rdfs:label "intensive care unit"@en .
 
 
 ###  http://hitontology.eu/ontology/intent_to_treat_analysis
 :intent_to_treat_analysis rdf:type owl:NamedIndividual ,
-                                   :StudyMethodFreeText ;
+                                   :StudyMethodCitation ;
                           :classifiedStudyMethod :Qualitative ;
                           rdfs:label "intent to treat analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/interactive_consultation_between_two_or_more_centers
 :interactive_consultation_between_two_or_more_centers rdf:type owl:NamedIndividual ,
-                                                               :FeatureFreeText ;
+                                                               :FeatureCitation ;
                                                       :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                  :ManageResultsOfDiagnosticTests ,
                                                                                  :SupportForCommunicationBetweenOrganizations ,
@@ -3976,7 +3976,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/interfaced_to_the_RIS
 :interfaced_to_the_RIS rdf:type owl:NamedIndividual ,
-                                :FeatureFreeText ;
+                                :FeatureCitation ;
                        :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                   :ManageOrdersForDiagnositcScreeningTests ,
                                                   :ManageResults ,
@@ -3986,63 +3986,63 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/interviews
 :interviews rdf:type owl:NamedIndividual ,
-                     :StudyMethodFreeText ;
+                     :StudyMethodCitation ;
             :classifiedStudyMethod :Qualitative ;
             rdfs:label "interviews"@en .
 
 
 ###  http://hitontology.eu/ontology/invoicing_and_registration_overview
 :invoicing_and_registration_overview rdf:type owl:NamedIndividual ,
-                                              :FeatureFreeText ;
+                                              :FeatureCitation ;
                                      :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                                      rdfs:label "invoicing and registration overview"@en .
 
 
 ###  http://hitontology.eu/ontology/job_satisfaction
 :job_satisfaction rdf:type owl:NamedIndividual ,
-                           :OutcomeCriteriaFreeText ;
+                           :OutcomeCriteriaCitation ;
                   :classifiedOutcomeCriteria :User_satisfaction ;
                   rdfs:label "job satisfaction"@en .
 
 
 ###  http://hitontology.eu/ontology/knowledge_questionnaire
 :knowledge_questionnaire rdf:type owl:NamedIndividual ,
-                                  :StudyMethodFreeText ;
+                                  :StudyMethodCitation ;
                          :classifiedStudyMethod :Qualitative ;
                          rdfs:label "knowledge questionnaire" .
 
 
 ###  http://hitontology.eu/ontology/laboratory
 :laboratory rdf:type owl:NamedIndividual ,
-                     :OrganizationalUnitFreeText ;
+                     :OrganizationalUnitCitation ;
             :classifiedUnitSNOMEDCT :Laboratory_environment ;
             rdfs:label "laboratory"@en .
 
 
 ###  http://hitontology.eu/ontology/laboratory_information_system
 :laboratory_information_system rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemFreeText ;
+                                        :ApplicationSystemCitation ;
                                :classifiedApplicationSystem :Laboratory_Information_System ;
                                rdfs:label "laboratory information system"@en .
 
 
 ###  http://hitontology.eu/ontology/laboratory_staff
 :laboratory_staff rdf:type owl:NamedIndividual ,
-                           :UserGroupFreeText ;
+                           :UserGroupCitation ;
                   :classifiedUserGroupSNOMEDCT :Laboratory_technician_occupation ;
                   rdfs:label "laboratory staff"@en .
 
 
 ###  http://hitontology.eu/ontology/laboratoy_turnaround_time
 :laboratoy_turnaround_time rdf:type owl:NamedIndividual ,
-                                    :OutcomeCriteriaFreeText ;
+                                    :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :Process_efficiency ;
                            rdfs:label "laboratoy turnaround time"@en .
 
 
 ###  http://hitontology.eu/ontology/list_to_track_the_status_of_pending_samples
 :list_to_track_the_status_of_pending_samples rdf:type owl:NamedIndividual ,
-                                                      :FeatureFreeText ;
+                                                      :FeatureCitation ;
                                              :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                         :ManageResultsOfDiagnosticTests ,
                                                                         :SupportForCommunicationBetweenOrganizations ;
@@ -4051,7 +4051,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/mandatory_reporting
 :mandatory_reporting rdf:type owl:NamedIndividual ,
-                              :FeatureFreeText ;
+                              :FeatureCitation ;
                      :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                 :SupportCareCoordinationAndReporting ;
                      rdfs:label "mandatory reporting"@en .
@@ -4059,14 +4059,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/medical_center
 :medical_center rdf:type owl:NamedIndividual ,
-                         :OrganizationalUnitFreeText ;
+                         :OrganizationalUnitCitation ;
                 :classifiedUnitSNOMEDCT :Medical_center_environment ;
                 rdfs:label "medical center" .
 
 
 ###  http://hitontology.eu/ontology/medication-specific_order_set
 :medication-specific_order_set rdf:type owl:NamedIndividual ,
-                                        :FeatureFreeText ;
+                                        :FeatureCitation ;
                                :classifiedFeatureEHRHL7FM :ManageMedicationOrders ,
                                                           :ManageOrderSetTemplates ,
                                                           :ManageOrders ,
@@ -4079,7 +4079,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/medication_control_based_on_national_drug_database
 :medication_control_based_on_national_drug_database rdf:type owl:NamedIndividual ,
-                                                             :FeatureFreeText ;
+                                                             :FeatureCitation ;
                                                     :classifiedFeatureEHRHL7FM :MedicationAndAllergyInteractionChecking ,
                                                                                :SupportForMedicationInteractionAndAllergyChecking ,
                                                                                :SupportOfPatientSpecificDosingAndWarnings ;
@@ -4088,7 +4088,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/medication_orders_appear_on_the_patients_electronic_record_once_the_pharmacist_has_approved_them
 :medication_orders_appear_on_the_patients_electronic_record_once_the_pharmacist_has_approved_them rdf:type owl:NamedIndividual ,
-                                                                                                           :FeatureFreeText ;
+                                                                                                           :FeatureCitation ;
                                                                                                   :classifiedFeatureEHRHL7FM :ManageMedicationOrders ,
                                                                                                                              :ManageOrders ,
                                                                                                                              :MedicationAndAllergyInteractionChecking ;
@@ -4097,7 +4097,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/medication_selection_from_menu_in_wich_medication_from_the_ward_stock_or_the_pharmacy_is_shown
 :medication_selection_from_menu_in_wich_medication_from_the_ward_stock_or_the_pharmacy_is_shown rdf:type owl:NamedIndividual ,
-                                                                                                         :FeatureFreeText ;
+                                                                                                         :FeatureCitation ;
                                                                                                 :classifiedFeatureEHRHL7FM :ManageHealthcareResourceAvailabilityInformation ,
                                                                                                                            :ManageMedicationOrders ,
                                                                                                                            :ManageOrders ,
@@ -4110,28 +4110,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/neonatal_intensive_care
 :neonatal_intensive_care rdf:type owl:NamedIndividual ,
-                                  :OrganizationalUnitFreeText ;
+                                  :OrganizationalUnitCitation ;
                          :classifiedUnitSNOMEDCT :Neonatal_intensive_care_unit_environment ;
                          rdfs:label "neonatal intensive care"@en .
 
 
 ###  http://hitontology.eu/ontology/nephrology
 :nephrology rdf:type owl:NamedIndividual ,
-                     :OrganizationalUnitFreeText ;
+                     :OrganizationalUnitCitation ;
             :classifiedUnitSNOMEDCT :Nephrology_department_environment ;
             rdfs:label "nephrology"@en .
 
 
 ###  http://hitontology.eu/ontology/not_inferior_to_a_consulting_visit
 :not_inferior_to_a_consulting_visit rdf:type owl:NamedIndividual ,
-                                             :OutcomeCriteriaFreeText ;
+                                             :OutcomeCriteriaCitation ;
                                     :classifiedOutcomeCriteria :Process_quality ;
                                     rdfs:label "not inferior to a consulting visit" .
 
 
 ###  http://hitontology.eu/ontology/nurse_altering_if_patients_medication_is_overdue
 :nurse_altering_if_patients_medication_is_overdue rdf:type owl:NamedIndividual ,
-                                                           :FeatureFreeText ;
+                                                           :FeatureCitation ;
                                                   :classifiedFeatureEHRHL7FM :ManageMedicationAdministration ,
                                                                              :ManageMedicationImmunizationAndTreatmentAdministration ,
                                                                              :ManageMedicationOrders ;
@@ -4140,14 +4140,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nurses
 :nurses rdf:type owl:NamedIndividual ,
-                 :UserGroupFreeText ;
+                 :UserGroupCitation ;
         :classifiedUnitSNOMEDCT :Professional_nurse_occupation ;
         rdfs:label "nurses"@en .
 
 
 ###  http://hitontology.eu/ontology/nursing_anamnesis
 :nursing_anamnesis rdf:type owl:NamedIndividual ,
-                            :FeatureFreeText ;
+                            :FeatureCitation ;
                    :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                               :ManageClinicalHistory ,
                                               :ManageProblemList ;
@@ -4156,7 +4156,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursing_care_planning_supported_by_pre-defined_nursing_care_standards
 :nursing_care_planning_supported_by_pre-defined_nursing_care_standards rdf:type owl:NamedIndividual ,
-                                                                                :FeatureFreeText ;
+                                                                                :FeatureCitation ;
                                                                        :classifiedFeatureEHRHL7FM :SupportForContextSensitiveCarePlansGuidelinesProtocols ,
                                                                                                   :SupportForPatientContextDrivenAssessments ,
                                                                                                   :SupportForStandardAssessments ,
@@ -4166,21 +4166,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursing_diagnosis_based_on_the_NANDA_taxonomy
 :nursing_diagnosis_based_on_the_NANDA_taxonomy rdf:type owl:NamedIndividual ,
-                                                        :FeatureFreeText ;
+                                                        :FeatureCitation ;
                                                :classifiedFeatureEHRHL7FM :StandardTerminologyAndTerminologyServices ;
                                                rdfs:label "nursing diagnosis based on the NANDA taxonomy"@en .
 
 
 ###  http://hitontology.eu/ontology/nursing_documentation_forms
 :nursing_documentation_forms rdf:type owl:NamedIndividual ,
-                                      :FeatureFreeText ;
+                                      :FeatureCitation ;
                              :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                              rdfs:label "nursing documentation forms"@en .
 
 
 ###  http://hitontology.eu/ontology/nursing_documentation_system
 :nursing_documentation_system rdf:type owl:NamedIndividual ,
-                                       :ApplicationSystemFreeText ;
+                                       :ApplicationSystemCitation ;
                               owl:sameAs :nursing_information_system ;
                               :classifiedApplicationSystem :Nursing_Management_and_Documentation_System ;
                               rdfs:label "nursing documentation system"@en .
@@ -4188,7 +4188,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursing_evaluation
 :nursing_evaluation rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ,
                                                :ManageProblemList ;
                     rdfs:label "nursing evaluation"@en .
@@ -4196,69 +4196,69 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursing_information_system
 :nursing_information_system rdf:type owl:NamedIndividual ,
-                                     :ApplicationSystemFreeText ;
+                                     :ApplicationSystemCitation ;
                             :classifiedApplicationSystem :Nursing_Management_and_Documentation_System ;
                             rdfs:label "nursing information system"@en .
 
 
 ###  http://hitontology.eu/ontology/observations
 :observations rdf:type owl:NamedIndividual ,
-                       :StudyMethodFreeText ;
+                       :StudyMethodCitation ;
               :classifiedStudyMethod :Qualitative ;
               rdfs:label "observations"@en .
 
 
 ###  http://hitontology.eu/ontology/offline_mode
 :offline_mode rdf:type owl:NamedIndividual ,
-                       :FeatureFreeText ;
+                       :FeatureCitation ;
               :classifiedFeatureEHRHL7FM :SupportRemoteHealthcareServices ;
               rdfs:label "offline mode"@en .
 
 
 ###  http://hitontology.eu/ontology/online_data_acquisition_of_cital_signs_from_ventilators
 :online_data_acquisition_of_cital_signs_from_ventilators rdf:type owl:NamedIndividual ,
-                                                                  :FeatureFreeText ;
+                                                                  :FeatureCitation ;
                                                          :classifiedFeatureEHRHL7FM :ManageResults ;
                                                          rdfs:label "online data acquisition of cital signs from ventilators"@en .
 
 
 ###  http://hitontology.eu/ontology/online_data_acquisition_of_vital_signs_from_monitoring_devices
 :online_data_acquisition_of_vital_signs_from_monitoring_devices rdf:type owl:NamedIndividual ,
-                                                                         :FeatureFreeText ;
+                                                                         :FeatureCitation ;
                                                                 :classifiedFeatureEHRHL7FM :ManageResults ;
                                                                 rdfs:label "online data acquisition of vital signs from monitoring devices"@en .
 
 
 ###  http://hitontology.eu/ontology/online_data_acquisition_of_vital_signs_from_other_medical_devices
 :online_data_acquisition_of_vital_signs_from_other_medical_devices rdf:type owl:NamedIndividual ,
-                                                                            :FeatureFreeText ;
+                                                                            :FeatureCitation ;
                                                                    :classifiedFeatureEHRHL7FM :ManageResults ;
                                                                    rdfs:label "online data acquisition of vital signs from other medical devices"@en .
 
 
 ###  http://hitontology.eu/ontology/operating_room_management
 :operating_room_management rdf:type owl:NamedIndividual ,
-                                    :FeatureFreeText ;
+                                    :FeatureCitation ;
                            :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ;
                            rdfs:label "operating room management"@en .
 
 
 ###  http://hitontology.eu/ontology/operating_room_module
 :operating_room_module rdf:type owl:NamedIndividual ,
-                                :FeatureFreeText ;
+                                :FeatureCitation ;
                        rdfs:label "operating room module"@en .
 
 
 ###  http://hitontology.eu/ontology/operation_management_system
 :operation_management_system rdf:type owl:NamedIndividual ,
-                                      :ApplicationSystemFreeText ;
+                                      :ApplicationSystemCitation ;
                              :classifiedApplicationSystem :Operation_Management_System ;
                              rdfs:label "operation management system"@en .
 
 
 ###  http://hitontology.eu/ontology/operation_theater_activities
 :operation_theater_activities rdf:type owl:NamedIndividual ,
-                                       :FeatureFreeText ;
+                                       :FeatureCitation ;
                               :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                          :ManageClinicalWorkflowTasking ,
                                                          :SupportCareCoordinationAndReporting ;
@@ -4267,21 +4267,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/operational_performance
 :operational_performance rdf:type owl:NamedIndividual ,
-                                  :OutcomeCriteriaFreeText ;
+                                  :OutcomeCriteriaCitation ;
                          :classifiedOutcomeCriteria :Process_efficiency ;
                          rdfs:label "operational performance"@en .
 
 
 ###  http://hitontology.eu/ontology/orthopedy
 :orthopedy rdf:type owl:NamedIndividual ,
-                    :OrganizationalUnitFreeText ;
+                    :OrganizationalUnitCitation ;
            :classifiedUnitSNOMEDCT :Orthopedic_department_environment ;
            rdfs:label "orthopedy"@en .
 
 
 ###  http://hitontology.eu/ontology/outpatient_appointements
 :outpatient_appointements rdf:type owl:NamedIndividual ,
-                                   :FeatureFreeText ;
+                                   :FeatureCitation ;
                           :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ,
                                                      :SupportForCommunicationBetweenOrganizations ;
                           rdfs:label "outpatient appointements"@en .
@@ -4289,27 +4289,27 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/overriden_warning_messages
 :overriden_warning_messages rdf:type owl:NamedIndividual ,
-                                     :OutcomeCriteriaFreeText ;
+                                     :OutcomeCriteriaCitation ;
                             :classifiedOutcomeCriteria :Process_quality ;
                             rdfs:label "overriden warning messages"@en .
 
 
 ###  http://hitontology.eu/ontology/participations_in_learning_sessions
 :participations_in_learning_sessions rdf:type owl:NamedIndividual ,
-                                              :StudyMethodFreeText ;
+                                              :StudyMethodCitation ;
                                      rdfs:label "participations in learning sessions"@en .
 
 
 ###  http://hitontology.eu/ontology/patient_administration
 :patient_administration rdf:type owl:NamedIndividual ,
-                                 :FeatureFreeText ;
+                                 :FeatureCitation ;
                         :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                         rdfs:label "patient administration"@en .
 
 
 ###  http://hitontology.eu/ontology/patient_administration_system_PAS
 :patient_administration_system_PAS rdf:type owl:NamedIndividual ,
-                                            :ApplicationSystemFreeText ;
+                                            :ApplicationSystemCitation ;
                                    :classifiedApplicationSystem :Patient_Administration_System ;
                                    rdfs:comment "patient administration system (PAS)" ;
                                    rdfs:label "patient administration system PAS"@en .
@@ -4317,14 +4317,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patient_care_delivery
 :patient_care_delivery rdf:type owl:NamedIndividual ,
-                                :OutcomeCriteriaFreeText ;
+                                :OutcomeCriteriaCitation ;
                        :classifiedOutcomeCriteria :Process_quality ;
                        rdfs:label "patient care delivery"@en .
 
 
 ###  http://hitontology.eu/ontology/patient_data_management_system_PDMS
 :patient_data_management_system_PDMS rdf:type owl:NamedIndividual ,
-                                              :ApplicationSystemFreeText ;
+                                              :ApplicationSystemCitation ;
                                      :classifiedApplicationSystem :Patient_Data_Management_System_PDMS ;
                                      rdfs:comment "patient data management system (PDMS)" ;
                                      rdfs:label "patient data management system PDMS"@en .
@@ -4332,14 +4332,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patient_management_plans
 :patient_management_plans rdf:type owl:NamedIndividual ,
-                                   :FeatureFreeText ;
+                                   :FeatureCitation ;
                           :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                           rdfs:label "patient management plans"@en .
 
 
 ###  http://hitontology.eu/ontology/patient_page_containing_details_of_any_single_sample
 :patient_page_containing_details_of_any_single_sample rdf:type owl:NamedIndividual ,
-                                                               :FeatureFreeText ;
+                                                               :FeatureCitation ;
                                                       :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                  :ManageResultsOfDiagnosticTests ;
                                                       rdfs:label "patient page containing details of any single sample"@en .
@@ -4347,7 +4347,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patient_page_containing_the_history_of_all_tests_performed
 :patient_page_containing_the_history_of_all_tests_performed rdf:type owl:NamedIndividual ,
-                                                                     :FeatureFreeText ;
+                                                                     :FeatureCitation ;
                                                             :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                        :ManageResultsOfDiagnosticTests ;
                                                             rdfs:label "patient page containing the history of all tests performed"@en .
@@ -4355,7 +4355,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patient_registration
 :patient_registration rdf:type owl:NamedIndividual ,
-                               :FeatureFreeText ;
+                               :FeatureCitation ;
                       :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                  :ManageOrdersForDiagnositcScreeningTests ,
                                                  :SupportForCommunicationBetweenOrganizations ;
@@ -4364,56 +4364,56 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patient_waiting_times
 :patient_waiting_times rdf:type owl:NamedIndividual ,
-                                :OutcomeCriteriaFreeText ;
+                                :OutcomeCriteriaCitation ;
                        :classifiedOutcomeCriteria :Process_efficiency ;
                        rdfs:label "patient waiting times"@en .
 
 
 ###  http://hitontology.eu/ontology/pediatric_intensive_care
 :pediatric_intensive_care rdf:type owl:NamedIndividual ,
-                                   :OrganizationalUnitFreeText ;
+                                   :OrganizationalUnitCitation ;
                           :classifiedUnitSNOMEDCT :Pediatric_intensive_care_unit_environment ;
                           rdfs:label "pediatric intensive care"@en .
 
 
 ###  http://hitontology.eu/ontology/pediatrics
 :pediatrics rdf:type owl:NamedIndividual ,
-                     :OrganizationalUnitFreeText ;
+                     :OrganizationalUnitCitation ;
             :classifiedUnitSNOMEDCT :Pediatric_department_environment ;
             rdfs:label "pediatrics"@en .
 
 
 ###  http://hitontology.eu/ontology/performance_analysis
 :performance_analysis rdf:type owl:NamedIndividual ,
-                               :StudyMethodFreeText ;
+                               :StudyMethodCitation ;
                       :classifiedOutcomeCriteria :Process_efficiency ;
                       rdfs:label "performance analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/pharmacists
 :pharmacists rdf:type owl:NamedIndividual ,
-                      :UserGroupFreeText ;
+                      :UserGroupCitation ;
              :classifiedUserGroupSNOMEDCT :Pharmacist_occupation ;
              rdfs:label "pharmacists"@en .
 
 
 ###  http://hitontology.eu/ontology/physicians
 :physicians rdf:type owl:NamedIndividual ,
-                     :UserGroupFreeText ;
+                     :UserGroupCitation ;
             :classifiedUserGroupSNOMEDCT :Physician_occupation ;
             rdfs:label "physicians"@en .
 
 
 ###  http://hitontology.eu/ontology/picture_archival_and_communication_system
 :picture_archival_and_communication_system rdf:type owl:NamedIndividual ,
-                                                    :ApplicationSystemFreeText ;
+                                                    :ApplicationSystemCitation ;
                                            :classifiedApplicationSystem :Picture_Archiving_and_Communication_System_PACS ;
                                            rdfs:label "picture archival and communication system"@en .
 
 
 ###  http://hitontology.eu/ontology/planned_activities
 :planned_activities rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ,
                                                :ManageCommunication ;
                     rdfs:label "planned activities"@en .
@@ -4421,7 +4421,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/planning_scheduling_and_analysis_of_operations
 :planning_scheduling_and_analysis_of_operations rdf:type owl:NamedIndividual ,
-                                                         :FeatureFreeText ;
+                                                         :FeatureCitation ;
                                                 :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                            :ManageNonMedicationPatientCareOrders ,
                                                                            :ManageOrders ,
@@ -4431,7 +4431,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/planning_view
 :planning_view rdf:type owl:NamedIndividual ,
-                        :FeatureFreeText ;
+                        :FeatureCitation ;
                :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                           :ManageClinicalWorkflowTasking ,
                                           :ManageNonMedicationPatientCareOrders ,
@@ -4442,28 +4442,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/point_and_click_data_entry
 :point_and_click_data_entry rdf:type owl:NamedIndividual ,
-                                     :FeatureFreeText ;
+                                     :FeatureCitation ;
                             :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                             rdfs:label "point and click data entry"@en .
 
 
 ###  http://hitontology.eu/ontology/point_of_care_testing_device_POCT
 :point_of_care_testing_device_POCT rdf:type owl:NamedIndividual ,
-                                            :ApplicationSystemFreeText ;
+                                            :ApplicationSystemCitation ;
                                    rdfs:comment "point of care testing device (POCT)" ;
                                    rdfs:label "point of care testing device POCT"@en .
 
 
 ###  http://hitontology.eu/ontology/possibility_to_continue_prescribing_while_safety_alert
 :possibility_to_continue_prescribing_while_safety_alert rdf:type owl:NamedIndividual ,
-                                                                 :FeatureFreeText ;
+                                                                 :FeatureCitation ;
                                                         :classifiedFeatureEHRHL7FM :MedicationAlertOverrides ;
                                                         rdfs:label "possibility to continue prescribing while safety alert"@en .
 
 
 ###  http://hitontology.eu/ontology/pre-processing
 :pre-processing rdf:type owl:NamedIndividual ,
-                         :FeatureFreeText ;
+                         :FeatureCitation ;
                 :classifiedFeatureEHRHL7FM :ManageResults ,
                                            :ManageResultsOfDiagnosticTests ;
                 rdfs:label "pre-processing" .
@@ -4471,7 +4471,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/predefined_order_sentences_allow_for_group_of_related_orders_to_be_selected_with_single_click
 :predefined_order_sentences_allow_for_group_of_related_orders_to_be_selected_with_single_click rdf:type owl:NamedIndividual ,
-                                                                                                        :FeatureFreeText ;
+                                                                                                        :FeatureCitation ;
                                                                                                :classifiedFeatureEHRHL7FM :ManageOrderSetTemplates ,
                                                                                                                           :ManageOrders ,
                                                                                                                           :MedicationOrderEfficiencies ,
@@ -4483,7 +4483,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/predefined_order_sentences_searchable_by_category_quick_lists
 :predefined_order_sentences_searchable_by_category_quick_lists rdf:type owl:NamedIndividual ,
-                                                                        :FeatureFreeText ;
+                                                                        :FeatureCitation ;
                                                                :classifiedFeatureEHRHL7FM :ManageOrderSetTemplates ,
                                                                                           :ManageOrders ,
                                                                                           :MedicationOrderEfficiencies ,
@@ -4495,7 +4495,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/predefined_order_sentences_with_details_of_drug_strength_dose_and_form
 :predefined_order_sentences_with_details_of_drug_strength_dose_and_form rdf:type owl:NamedIndividual ,
-                                                                                 :FeatureFreeText ;
+                                                                                 :FeatureCitation ;
                                                                         :classifiedFeatureEHRHL7FM :ManageOrderSetTemplates ,
                                                                                                    :ManageOrders ,
                                                                                                    :MedicationOrderEfficiencies ,
@@ -4507,62 +4507,62 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/predifining_nursing_problems_goals_and_tasks
 :predifining_nursing_problems_goals_and_tasks rdf:type owl:NamedIndividual ,
-                                                       :FeatureFreeText ;
+                                                       :FeatureCitation ;
                                               rdfs:label "predifining nursing problems goals and tasks"@en .
 
 
 ###  http://hitontology.eu/ontology/prescribe_longhand
 :prescribe_longhand rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageOrders ;
                     rdfs:label "prescribe longhand"@en .
 
 
 ###  http://hitontology.eu/ontology/process_analysis
 :process_analysis rdf:type owl:NamedIndividual ,
-                           :StudyMethodFreeText ;
+                           :StudyMethodCitation ;
                   :classifiedStudyMethod :Qualitative ;
                   rdfs:label "process analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/psychiatry_ward
 :psychiatry_ward rdf:type owl:NamedIndividual ,
-                          :OrganizationalUnitFreeText ;
+                          :OrganizationalUnitCitation ;
                  :classifiedUnitSNOMEDCT :Psychiatry_department_environment ;
                  rdfs:label "psychiatry ward"@en .
 
 
 ###  http://hitontology.eu/ontology/quality_assessment_of_CT_scans
 :quality_assessment_of_CT_scans rdf:type owl:NamedIndividual ,
-                                         :StudyMethodFreeText ;
+                                         :StudyMethodCitation ;
                                 :classifiedStudyMethod :Qualitative ;
                                 rdfs:label "quality assessment of CT scans" .
 
 
 ###  http://hitontology.eu/ontology/quality_of_documentation
 :quality_of_documentation rdf:type owl:NamedIndividual ,
-                                   :OutcomeCriteriaFreeText ;
+                                   :OutcomeCriteriaCitation ;
                           :classifiedOutcomeCriteria :Information_quality ;
                           rdfs:label "quality of documentation"@en .
 
 
 ###  http://hitontology.eu/ontology/quality_of_information_processing
 :quality_of_information_processing rdf:type owl:NamedIndividual ,
-                                            :OutcomeCriteriaFreeText ;
+                                            :OutcomeCriteriaCitation ;
                                    :classifiedOutcomeCriteria :Information_quality ;
                                    rdfs:label "quality of information processing"@en .
 
 
 ###  http://hitontology.eu/ontology/quality_of_real_time_synchronized_viewing
 :quality_of_real_time_synchronized_viewing rdf:type owl:NamedIndividual ,
-                                                    :OutcomeCriteriaFreeText ;
+                                                    :OutcomeCriteriaCitation ;
                                            :classifiedOutcomeCriteria :Process_quality ;
                                            rdfs:label "quality of real time synchronized viewing"@en .
 
 
 ###  http://hitontology.eu/ontology/questionnaires
 :questionnaires rdf:type owl:NamedIndividual ,
-                         :StudyMethodFreeText ;
+                         :StudyMethodCitation ;
                 owl:sameAs :survey_with_open_questions ;
                 :classifiedStudyMethod :Qualitative ;
                 rdfs:label "questionnaires"@en .
@@ -4570,28 +4570,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/questionnaires_quantitative
 :questionnaires_quantitative rdf:type owl:NamedIndividual ,
-                                      :StudyMethodFreeText ;
+                                      :StudyMethodCitation ;
                              :classifiedStudyMethod :Quantitative ;
                              rdfs:label "questionnaires quantitative"@en .
 
 
 ###  http://hitontology.eu/ontology/radiologists
 :radiologists rdf:type owl:NamedIndividual ,
-                       :UserGroupFreeText ;
+                       :UserGroupCitation ;
               :classifiedUserGroupSNOMEDCT :Radiologist_occupation ;
               rdfs:label "radiologists"@en .
 
 
 ###  http://hitontology.eu/ontology/radiology
 :radiology rdf:type owl:NamedIndividual ,
-                    :OrganizationalUnitFreeText ;
+                    :OrganizationalUnitCitation ;
            :classifiedUnitSNOMEDCT :Radiology_department_environment ;
            rdfs:label "radiology"@en .
 
 
 ###  http://hitontology.eu/ontology/read_bar_code_label
 :read_bar_code_label rdf:type owl:NamedIndividual ,
-                              :FeatureFreeText ;
+                              :FeatureCitation ;
                      :classifiedFeatureEHRHL7FM :ManageOrders ,
                                                 :ManageOrdersForDiagnositcScreeningTests ;
                      rdfs:label "read bar code label"@en .
@@ -4599,14 +4599,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/real-time_data_entering
 :real-time_data_entering rdf:type owl:NamedIndividual ,
-                                  :FeatureFreeText ;
+                                  :FeatureCitation ;
                          :classifiedFeatureEHRHL7FM :ManageClinicalDocumentation ;
                          rdfs:label "real-time data entering"@en .
 
 
 ###  http://hitontology.eu/ontology/real-time_voice_communication
 :real-time_voice_communication rdf:type owl:NamedIndividual ,
-                                        :FeatureFreeText ;
+                                        :FeatureCitation ;
                                :classifiedFeatureEHRHL7FM :SupportForCommunicationBetweenOrganizations ,
                                                           :SupportRemoteHealthcareServices ;
                                rdfs:label "real-time voice communication"@en .
@@ -4614,28 +4614,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/recommendation_pop-up_window
 :recommendation_pop-up_window rdf:type owl:NamedIndividual ,
-                                       :FeatureFreeText ;
+                                       :FeatureCitation ;
                               :classifiedFeatureEHRHL7FM :SupportOfPatientSpecificDosingAndWarnings ;
                               rdfs:label "recommendation pop-up window"@en .
 
 
 ###  http://hitontology.eu/ontology/reduction_of_prescribing_errors
 :reduction_of_prescribing_errors rdf:type owl:NamedIndividual ,
-                                          :OutcomeCriteriaFreeText ;
+                                          :OutcomeCriteriaCitation ;
                                  :classifiedOutcomeCriteria :Process_quality ;
                                  rdfs:label "reduction of prescribing errors"@en .
 
 
 ###  http://hitontology.eu/ontology/registration_of_inpatients
 :registration_of_inpatients rdf:type owl:NamedIndividual ,
-                                     :FeatureFreeText ;
+                                     :FeatureCitation ;
                             :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ;
                             rdfs:label "registration of inpatients"@en .
 
 
 ###  http://hitontology.eu/ontology/reminding_and_documentation_of_nursing_tasks
 :reminding_and_documentation_of_nursing_tasks rdf:type owl:NamedIndividual ,
-                                                       :FeatureFreeText ;
+                                                       :FeatureCitation ;
                                               :classifiedFeatureEHRHL7FM :ManageClinicalHistory ,
                                                                          :ManageClinicalWorkflowTasking ;
                                               rdfs:label "reminding and documentation of nursing tasks"@en .
@@ -4643,13 +4643,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/report_functionalities
 :report_functionalities rdf:type owl:NamedIndividual ,
-                                 :FeatureFreeText ;
+                                 :FeatureCitation ;
                         rdfs:label "report functionalities"@en .
 
 
 ###  http://hitontology.eu/ontology/reports_on_tests_performed
 :reports_on_tests_performed rdf:type owl:NamedIndividual ,
-                                     :FeatureFreeText ;
+                                     :FeatureCitation ;
                             :classifiedFeatureEHRHL7FM :ManageResults ,
                                                        :ManageResultsOfDiagnosticTests ;
                             rdfs:label "reports on tests performed"@en .
@@ -4657,7 +4657,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/request_form_assigned_a_timeslot_room_and_staff
 :request_form_assigned_a_timeslot_room_and_staff rdf:type owl:NamedIndividual ,
-                                                          :FeatureFreeText ;
+                                                          :FeatureCitation ;
                                                  :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                             :ManageClinicalWorkflowTasking ,
                                                                             :ManageNonMedicationPatientCareOrders ,
@@ -4668,13 +4668,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/respiratory_tabs
 :respiratory_tabs rdf:type owl:NamedIndividual ,
-                           :FeatureFreeText ;
+                           :FeatureCitation ;
                   rdfs:label "respiratory tabs"@en .
 
 
 ###  http://hitontology.eu/ontology/retrieval_of_administrative_data
 :retrieval_of_administrative_data rdf:type owl:NamedIndividual ,
-                                           :FeatureFreeText ;
+                                           :FeatureCitation ;
                                   :classifiedFeatureEHRHL7FM :ManageNonMedicationPatientCareOrders ,
                                                              :ManageOrders ;
                                   rdfs:label "retrieval of administrative data"@en .
@@ -4682,21 +4682,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/retrieval_of_patient_registers
 :retrieval_of_patient_registers rdf:type owl:NamedIndividual ,
-                                         :FeatureFreeText ;
+                                         :FeatureCitation ;
                                 :classifiedFeatureEHRHL7FM :ManageOrders ;
                                 rdfs:label "retrieval of patient registers"@en .
 
 
 ###  http://hitontology.eu/ontology/retrieval_of_the_national_coding_system_for_diagnosis_and_medical_procedures
 :retrieval_of_the_national_coding_system_for_diagnosis_and_medical_procedures rdf:type owl:NamedIndividual ,
-                                                                                       :FeatureFreeText ;
+                                                                                       :FeatureCitation ;
                                                                               :classifiedFeatureEHRHL7FM :StandardTerminologyAndTerminologyServices ;
                                                                               rdfs:label "retrieval of the national coding system for diagnosis and medical procedures"@en .
 
 
 ###  http://hitontology.eu/ontology/review_screening_and_testing_options
 :review_screening_and_testing_options rdf:type owl:NamedIndividual ,
-                                               :FeatureFreeText ;
+                                               :FeatureCitation ;
                                       :classifiedFeatureEHRHL7FM :SupportForPatientContextDrivenAssessments ,
                                                                  :SupportOrdersForDiagnosticScreeningTests ;
                                       rdfs:label "review screening and testing options" .
@@ -4704,14 +4704,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/rheumatology_ward
 :rheumatology_ward rdf:type owl:NamedIndividual ,
-                            :OrganizationalUnitFreeText ;
+                            :OrganizationalUnitCitation ;
                    :classifiedUnitSNOMEDCT :Rheumatology_department_environment ;
                    rdfs:label "rheumatology ward"@en .
 
 
 ###  http://hitontology.eu/ontology/safety_alerts_for_accepted_medication_are_seen_by_pharmacists_who_can_contact_physicians_or_nurses
 :safety_alerts_for_accepted_medication_are_seen_by_pharmacists_who_can_contact_physicians_or_nurses rdf:type owl:NamedIndividual ,
-                                                                                                             :FeatureFreeText ;
+                                                                                                             :FeatureCitation ;
                                                                                                     :classifiedFeatureEHRHL7FM :MedicationAlertOverrides ,
                                                                                                                                :SupportForCommunicationBetweenOrganizations ;
                                                                                                     rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
@@ -4719,7 +4719,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/safety_alerts_in_case_of_allergies
 :safety_alerts_in_case_of_allergies rdf:type owl:NamedIndividual ,
-                                             :FeatureFreeText ;
+                                             :FeatureCitation ;
                                     :classifiedFeatureEHRHL7FM :MedicationAndAllergyInteractionChecking ,
                                                                :SupportForMedicationInteractionAndAllergyChecking ;
                                     rdfs:label "safety alerts in case of allergies"@en .
@@ -4727,7 +4727,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/safety_alerts_in_case_of_drug-drug_interactions
 :safety_alerts_in_case_of_drug-drug_interactions rdf:type owl:NamedIndividual ,
-                                                          :FeatureFreeText ;
+                                                          :FeatureCitation ;
                                                  :classifiedFeatureEHRHL7FM :MedicationAndAllergyInteractionChecking ,
                                                                             :SupportForMedicationInteractionAndAllergyChecking ;
                                                  rdfs:label "safety alerts in case of drug-drug interactions"@en .
@@ -4735,14 +4735,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/safety_alerts_in_case_of_overdosing
 :safety_alerts_in_case_of_overdosing rdf:type owl:NamedIndividual ,
-                                              :FeatureFreeText ;
+                                              :FeatureCitation ;
                                      :classifiedFeatureEHRHL7FM :SupportOfPatientSpecificDosingAndWarnings ;
                                      rdfs:label "safety alerts in case of overdosing"@en .
 
 
 ###  http://hitontology.eu/ontology/safety_alerts_in_real_time
 :safety_alerts_in_real_time rdf:type owl:NamedIndividual ,
-                                     :FeatureFreeText ;
+                                     :FeatureCitation ;
                             :classifiedFeatureEHRHL7FM :MedicationAndAllergyInteractionChecking ,
                                                        :SupportForMedicationInteractionAndAllergyChecking ,
                                                        :SupportOfPatientSpecificDosingAndWarnings ;
@@ -4751,21 +4751,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/scan_bar_codes_on_the_patients_wristband
 :scan_bar_codes_on_the_patients_wristband rdf:type owl:NamedIndividual ,
-                                                   :FeatureFreeText ;
+                                                   :FeatureCitation ;
                                           :classifiedFeatureEHRHL7FM :ManageMedicationAdministration ;
                                           rdfs:label "scan bar codes on the patients wristband"@en .
 
 
 ###  http://hitontology.eu/ontology/scenarios
 :scenarios rdf:type owl:NamedIndividual ,
-                    :StudyMethodFreeText ;
+                    :StudyMethodCitation ;
            :classifiedStudyMethod :Qualitative ;
            rdfs:label "scenarios"@en .
 
 
 ###  http://hitontology.eu/ontology/scheduling
 :scheduling rdf:type owl:NamedIndividual ,
-                     :FeatureFreeText ;
+                     :FeatureCitation ;
             :classifiedFeatureEHRHL7FM :ManageAdministrativeTransactionProcessing ,
                                        :ManageClinicalWorkflowTasking ;
             rdfs:label "scheduling"@en .
@@ -4773,7 +4773,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/scheduling_and_resource_allocation
 :scheduling_and_resource_allocation rdf:type owl:NamedIndividual ,
-                                             :FeatureFreeText ;
+                                             :FeatureCitation ;
                                     :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ,
                                                                :ManageResourceAvailability ;
                                     rdfs:label "scheduling and resource allocation"@en .
@@ -4781,33 +4781,33 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/secondary_use_of_clinical_data
 :secondary_use_of_clinical_data rdf:type owl:NamedIndividual ,
-                                         :StudyMethodFreeText ;
+                                         :StudyMethodCitation ;
                                 :classifiedStudyMethod :Quantitative ;
                                 rdfs:label "secondary use of clinical data"@en .
 
 
 ###  http://hitontology.eu/ontology/secondary_use_of_operational_data
 :secondary_use_of_operational_data rdf:type owl:NamedIndividual ,
-                                            :StudyMethodFreeText ;
+                                            :StudyMethodCitation ;
                                    :classifiedStudyMethod :Quantitative ;
                                    rdfs:label "secondary use of operational data"@en .
 
 
 ###  http://hitontology.eu/ontology/secretaries
 :secretaries rdf:type owl:NamedIndividual ,
-                      :UserGroupFreeText ;
+                      :UserGroupCitation ;
              rdfs:label "secretaries"@en .
 
 
 ###  http://hitontology.eu/ontology/semi-automatic_aorta_dilatation_quantification_software
 :semi-automatic_aorta_dilatation_quantification_software rdf:type owl:NamedIndividual ,
-                                                                  :ApplicationSystemFreeText ;
+                                                                  :ApplicationSystemCitation ;
                                                          rdfs:label "semi-automatic aorta dilatation quantification software" .
 
 
 ###  http://hitontology.eu/ontology/semi-automatic_assessment_of_thoracic_aorta_diameters
 :semi-automatic_assessment_of_thoracic_aorta_diameters rdf:type owl:NamedIndividual ,
-                                                                :FeatureFreeText ;
+                                                                :FeatureCitation ;
                                                        :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                   :ManageResultsOfDiagnosticTests ;
                                                        rdfs:label "semi-automatic assessment of thoracic aorta diameters" .
@@ -4815,14 +4815,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/shift_to_shift_continuity
 :shift_to_shift_continuity rdf:type owl:NamedIndividual ,
-                                    :OutcomeCriteriaFreeText ;
+                                    :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :Process_quality ;
                            rdfs:label "shift to shift continuity"@en .
 
 
 ###  http://hitontology.eu/ontology/simplified_language
 :simplified_language rdf:type owl:NamedIndividual ,
-                              :FeatureFreeText ;
+                              :FeatureCitation ;
                      :classifiedFeatureEHRHL7FM :ManageCommunication ,
                                                 :SupportForPatientContextDrivenAssessments ;
                      rdfs:label "simplified language" .
@@ -4830,21 +4830,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/social_repercussions
 :social_repercussions rdf:type owl:NamedIndividual ,
-                               :OutcomeCriteriaFreeText ;
+                               :OutcomeCriteriaCitation ;
                       :classifiedOutcomeCriteria :User_satisfaction ;
                       rdfs:label "social repercussions"@en .
 
 
 ###  http://hitontology.eu/ontology/software_stability
 :software_stability rdf:type owl:NamedIndividual ,
-                             :OutcomeCriteriaFreeText ;
+                             :OutcomeCriteriaCitation ;
                     :classifiedOutcomeCriteria :Software_quality ;
                     rdfs:label "software stability"@en .
 
 
 ###  http://hitontology.eu/ontology/some_warnings_can_not_be_overridden
 :some_warnings_can_not_be_overridden rdf:type owl:NamedIndividual ,
-                                              :FeatureFreeText ;
+                                              :FeatureCitation ;
                                      :classifiedFeatureEHRHL7FM :ManageMedicationAdministration ,
                                                                 :ManageMedicationImmunizationAndTreatmentAdministration ,
                                                                 :MedicationAlertOverrides ,
@@ -4854,7 +4854,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/speech_recognition
 :speech_recognition rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageResults ,
                                                :ManageResultsOfDiagnosticTests ,
                                                :SupportOrders ,
@@ -4864,7 +4864,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/standardized_prescriptions_and_medication_protocols
 :standardized_prescriptions_and_medication_protocols rdf:type owl:NamedIndividual ,
-                                                              :FeatureFreeText ;
+                                                              :FeatureCitation ;
                                                      :classifiedFeatureEHRHL7FM :ManageMedicationOrders ,
                                                                                 :ManageOrderSetTemplates ,
                                                                                 :ManageOrders ,
@@ -4877,14 +4877,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/strengths_and_weaknesses_of_intervention
 :strengths_and_weaknesses_of_intervention rdf:type owl:NamedIndividual ,
-                                                   :OutcomeCriteriaFreeText ;
+                                                   :OutcomeCriteriaCitation ;
                                           :classifiedOutcomeCriteria :Process_quality ;
                                           rdfs:label "strengths and weaknesses of intervention"@en .
 
 
 ###  http://hitontology.eu/ontology/support_for_digital_photography
 :support_for_digital_photography rdf:type owl:NamedIndividual ,
-                                          :FeatureFreeText ;
+                                          :FeatureCitation ;
                                  :classifiedFeatureEHRHL7FM :ManageResults ,
                                                             :ManageResultsOfDiagnosticTests ;
                                  rdfs:label "support for digital photography"@en .
@@ -4892,7 +4892,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/support_nursing_care_planning_for_certain_patient_cases
 :support_nursing_care_planning_for_certain_patient_cases rdf:type owl:NamedIndividual ,
-                                                                  :FeatureFreeText ;
+                                                                  :FeatureCitation ;
                                                          :classifiedFeatureEHRHL7FM :SupportForContextSensitiveCarePlansGuidelinesProtocols ,
                                                                                     :SupportForPatientContextDrivenAssessments ,
                                                                                     :SupportForStandardAssessments ,
@@ -4902,35 +4902,35 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/supporting_all_phases_of_the_nursing_process
 :supporting_all_phases_of_the_nursing_process rdf:type owl:NamedIndividual ,
-                                                       :FeatureFreeText ;
+                                                       :FeatureCitation ;
                                               :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ;
                                               rdfs:label "supporting all phases of the nursing process"@en .
 
 
 ###  http://hitontology.eu/ontology/surgeons
 :surgeons rdf:type owl:NamedIndividual ,
-                   :UserGroupFreeText ;
+                   :UserGroupCitation ;
           :classifiedUserGroupSNOMEDCT :Surgeon_occupation ;
           rdfs:label "surgeons"@en .
 
 
 ###  http://hitontology.eu/ontology/surgery
 :surgery rdf:type owl:NamedIndividual ,
-                  :OrganizationalUnitFreeText ;
+                  :OrganizationalUnitCitation ;
          :classifiedUnitSNOMEDCT :Surgical_department_environment ;
          rdfs:label "surgery"@en .
 
 
 ###  http://hitontology.eu/ontology/surgery_management
 :surgery_management rdf:type owl:NamedIndividual ,
-                             :FeatureFreeText ;
+                             :FeatureCitation ;
                     :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ;
                     rdfs:label "surgery management"@en .
 
 
 ###  http://hitontology.eu/ontology/surgery_request
 :surgery_request rdf:type owl:NamedIndividual ,
-                          :FeatureFreeText ;
+                          :FeatureCitation ;
                  :classifiedFeatureEHRHL7FM :ManageNonMedicationPatientCareOrders ,
                                             :ManageOrders ;
                  rdfs:label "surgery request"@en .
@@ -4938,14 +4938,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/survey
 :survey rdf:type owl:NamedIndividual ,
-                 :StudyMethodFreeText ;
+                 :StudyMethodCitation ;
         :classifiedStudyMethod :Quantitative ;
         rdfs:label "survey"@en .
 
 
 ###  http://hitontology.eu/ontology/survey_with_open_questions
 :survey_with_open_questions rdf:type owl:NamedIndividual ,
-                                     :StudyMethodFreeText ;
+                                     :StudyMethodCitation ;
                             :classifiedStudyMethod :Qualitative ,
                                                    :Quantitative ;
                             rdfs:label "survey with open questions"@en .
@@ -4953,14 +4953,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/tablet_based_application
 :tablet_based_application rdf:type owl:NamedIndividual ,
-                                   :FeatureFreeText ;
+                                   :FeatureCitation ;
                           :classifiedFeatureEHRHL7FM :SupportRemoteHealthcareServices ;
                           rdfs:label "tablet-based application" .
 
 
 ###  http://hitontology.eu/ontology/technicians
 :technicians rdf:type owl:NamedIndividual ,
-                      :UserGroupFreeText ;
+                      :UserGroupCitation ;
              owl:sameAs :technologists ;
              :classifiedUserGroupSNOMEDCT :Medical_technician_occupation ;
              rdfs:label "technicians"@en .
@@ -4968,83 +4968,83 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/technologists
 :technologists rdf:type owl:NamedIndividual ,
-                        :UserGroupFreeText ;
+                        :UserGroupCitation ;
                :classifiedUnitSNOMEDCT :Medical_technician_occupation ;
                rdfs:label "technologists"@en .
 
 
 ###  http://hitontology.eu/ontology/teleconsultation_system
 :teleconsultation_system rdf:type owl:NamedIndividual ,
-                                  :ApplicationSystemFreeText ;
+                                  :ApplicationSystemCitation ;
                          :classifiedApplicationSystem :Teleradiology_system ;
                          rdfs:label "teleconsultation system"@en .
 
 
 ###  http://hitontology.eu/ontology/theatre_planning_manager
 :theatre_planning_manager rdf:type owl:NamedIndividual ,
-                                   :UserGroupFreeText ;
+                                   :UserGroupCitation ;
                           rdfs:label "theatre planning manager"@en .
 
 
 ###  http://hitontology.eu/ontology/time_for_producing_images
 :time_for_producing_images rdf:type owl:NamedIndividual ,
-                                    :OutcomeCriteriaFreeText ;
+                                    :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :Process_efficiency ;
                            rdfs:label "time for producing images"@en .
 
 
 ###  http://hitontology.eu/ontology/time_measurement
 :time_measurement rdf:type owl:NamedIndividual ,
-                           :StudyMethodFreeText ;
+                           :StudyMethodCitation ;
                   :classifiedStudyMethod :Quantitative ;
                   rdfs:label "time measurement"@en .
 
 
 ###  http://hitontology.eu/ontology/time_of_ventilation
 :time_of_ventilation rdf:type owl:NamedIndividual ,
-                              :OutcomeCriteriaFreeText ;
+                              :OutcomeCriteriaCitation ;
                      :classifiedOutcomeCriteria :Process_quality ;
                      rdfs:label "time of ventilation"@en .
 
 
 ###  http://hitontology.eu/ontology/time_spent
 :time_spent rdf:type owl:NamedIndividual ,
-                     :OutcomeCriteriaFreeText ;
+                     :OutcomeCriteriaCitation ;
             :classifiedOutcomeCriteria :Process_efficiency ;
             rdfs:label "time spent"@en .
 
 
 ###  http://hitontology.eu/ontology/time_to_produce_test_results
 :time_to_produce_test_results rdf:type owl:NamedIndividual ,
-                                       :OutcomeCriteriaFreeText ;
+                                       :OutcomeCriteriaCitation ;
                               :classifiedOutcomeCriteria :Process_efficiency ;
                               rdfs:label "time to produce test results"@en .
 
 
 ###  http://hitontology.eu/ontology/tools_for_quality_control
 :tools_for_quality_control rdf:type owl:NamedIndividual ,
-                                    :FeatureFreeText ;
+                                    :FeatureCitation ;
                            :classifiedFeatureEHRHL7FM :ManageResults ;
                            rdfs:label "tools for quality control"@en .
 
 
 ###  http://hitontology.eu/ontology/translated_into_Spanish
 :translated_into_Spanish rdf:type owl:NamedIndividual ,
-                                  :FeatureFreeText ;
+                                  :FeatureCitation ;
                          :classifiedFeatureEHRHL7FM :SupportForPatientContextDrivenAssessments ;
                          rdfs:label "translated into Spanish" .
 
 
 ###  http://hitontology.eu/ontology/triggering_the_CDSS_to_query_the_tidal_volume
 :triggering_the_CDSS_to_query_the_tidal_volume rdf:type owl:NamedIndividual ,
-                                                        :FeatureFreeText ;
+                                                        :FeatureCitation ;
                                                :classifiedFeatureEHRHL7FM :SupportForMedicationOrderingEfficiencies ;
                                                rdfs:label "triggering the CDSS to query the tidal volume"@en .
 
 
 ###  http://hitontology.eu/ontology/unit-specific_oder_set
 :unit-specific_oder_set rdf:type owl:NamedIndividual ,
-                                 :FeatureFreeText ;
+                                 :FeatureCitation ;
                         :classifiedFeatureEHRHL7FM :ManageMedicationOrders ,
                                                    :ManageOrderSetTemplates ,
                                                    :ManageOrders ,
@@ -5058,21 +5058,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/university_hospital
 :university_hospital rdf:type owl:NamedIndividual ,
-                              :OrganizationalUnitFreeText ;
+                              :OrganizationalUnitCitation ;
                      :classifiedUnitSNOMEDCT :Hospital_environment ;
                      rdfs:label "university hospital"@en .
 
 
 ###  http://hitontology.eu/ontology/use_of_clinical_pathways
 :use_of_clinical_pathways rdf:type owl:NamedIndividual ,
-                                   :FeatureFreeText ;
+                                   :FeatureCitation ;
                           :classifiedFeatureEHRHL7FM :SupportforStandardCarePlansGuidelinesProtocols ;
                           rdfs:label "use of clinical pathways"@en .
 
 
 ###  http://hitontology.eu/ontology/use_of_interactive_pointers_and_specific_calculation_tools
 :use_of_interactive_pointers_and_specific_calculation_tools rdf:type owl:NamedIndividual ,
-                                                                     :FeatureFreeText ;
+                                                                     :FeatureCitation ;
                                                             :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                                        :ManageResultsOfDiagnosticTests ;
                                                             rdfs:label "use of interactive pointers and specific calculation tools"@en .
@@ -5080,70 +5080,70 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/user_acceptance
 :user_acceptance rdf:type owl:NamedIndividual ,
-                          :OutcomeCriteriaFreeText ;
+                          :OutcomeCriteriaCitation ;
                  :classifiedOutcomeCriteria :User_satisfaction ;
                  rdfs:label "user acceptance"@en .
 
 
 ###  http://hitontology.eu/ontology/user_adoption
 :user_adoption rdf:type owl:NamedIndividual ,
-                        :OutcomeCriteriaFreeText ;
+                        :OutcomeCriteriaCitation ;
                :classifiedOutcomeCriteria :User_satisfaction ;
                rdfs:label "user adoption"@en .
 
 
 ###  http://hitontology.eu/ontology/user_directory_to_control_any_access
 :user_directory_to_control_any_access rdf:type owl:NamedIndividual ,
-                                               :FeatureFreeText ;
+                                               :FeatureCitation ;
                                       :classifiedFeatureEHRHL7FM :RegistryAndDirectoryServices ;
                                       rdfs:label "user directory to control any access"@en .
 
 
 ###  http://hitontology.eu/ontology/user_interaction_satisfaction
 :user_interaction_satisfaction rdf:type owl:NamedIndividual ,
-                                        :OutcomeCriteriaFreeText ;
+                                        :OutcomeCriteriaCitation ;
                                :classifiedOutcomeCriteria :User_satisfaction ;
                                rdfs:label "user interaction satisfaction"@en .
 
 
 ###  http://hitontology.eu/ontology/user_opinion
 :user_opinion rdf:type owl:NamedIndividual ,
-                       :OutcomeCriteriaFreeText ;
+                       :OutcomeCriteriaCitation ;
               :classifiedOutcomeCriteria :User_satisfaction ;
               rdfs:label "user opinion"@en .
 
 
 ###  http://hitontology.eu/ontology/users_view_on_training
 :users_view_on_training rdf:type owl:NamedIndividual ,
-                                 :OutcomeCriteriaFreeText ;
+                                 :OutcomeCriteriaCitation ;
                         :classifiedOutcomeCriteria :User_satisfaction ;
                         rdfs:label "users view on training"@en .
 
 
 ###  http://hitontology.eu/ontology/users_view_on_usability
 :users_view_on_usability rdf:type owl:NamedIndividual ,
-                                  :OutcomeCriteriaFreeText ;
+                                  :OutcomeCriteriaCitation ;
                          :classifiedOutcomeCriteria :User_satisfaction ;
                          rdfs:label "users view on usability"@en .
 
 
 ###  http://hitontology.eu/ontology/users_view_on_usefulness
 :users_view_on_usefulness rdf:type owl:NamedIndividual ,
-                                   :OutcomeCriteriaFreeText ;
+                                   :OutcomeCriteriaCitation ;
                           :classifiedOutcomeCriteria :User_satisfaction ;
                           rdfs:label "users view on usefulness"@en .
 
 
 ###  http://hitontology.eu/ontology/users_view_on_user_support
 :users_view_on_user_support rdf:type owl:NamedIndividual ,
-                                     :OutcomeCriteriaFreeText ;
+                                     :OutcomeCriteriaCitation ;
                             :classifiedOutcomeCriteria :User_satisfaction ;
                             rdfs:label "users view on user support"@en .
 
 
 ###  http://hitontology.eu/ontology/view_of_the_status_of_patients_in_operation
 :view_of_the_status_of_patients_in_operation rdf:type owl:NamedIndividual ,
-                                                      :FeatureFreeText ;
+                                                      :FeatureCitation ;
                                              :classifiedFeatureEHRHL7FM :ManageCareCoordinationAndReporting ,
                                                                         :ManageClinicalWorkflowTasking ,
                                                                         :SupportCareCoordinationAndReporting ;
@@ -5152,7 +5152,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/visualization_of_diameter_progression
 :visualization_of_diameter_progression rdf:type owl:NamedIndividual ,
-                                                :FeatureFreeText ;
+                                                :FeatureCitation ;
                                        :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                   :ManageResultsOfDiagnosticTests ;
                                        rdfs:label "visualization of diameter progression" .
@@ -5160,7 +5160,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/visualization_of_synchronized_DICOM_images
 :visualization_of_synchronized_DICOM_images rdf:type owl:NamedIndividual ,
-                                                     :FeatureFreeText ;
+                                                     :FeatureCitation ;
                                             :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                        :ManageResultsOfDiagnosticTests ;
                                             rdfs:label "visualization of synchronized DICOM images"@en .
@@ -5168,21 +5168,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/waiting_list_for_the_final_operation_schedule
 :waiting_list_for_the_final_operation_schedule rdf:type owl:NamedIndividual ,
-                                                        :FeatureFreeText ;
+                                                        :FeatureCitation ;
                                                :classifiedFeatureEHRHL7FM :ManageClinicalWorkflowTasking ;
                                                rdfs:label "waiting list for the final operation schedule"@en .
 
 
 ###  http://hitontology.eu/ontology/ward_management
 :ward_management rdf:type owl:NamedIndividual ,
-                          :FeatureFreeText ;
+                          :FeatureCitation ;
                  :classifiedFeatureEHRHL7FM :ManageResourceAvailability ;
                  rdfs:label "ward management"@en .
 
 
 ###  http://hitontology.eu/ontology/warnings_for_delayed_reporting_of_results
 :warnings_for_delayed_reporting_of_results rdf:type owl:NamedIndividual ,
-                                                    :FeatureFreeText ;
+                                                    :FeatureCitation ;
                                            :classifiedFeatureEHRHL7FM :ManageResults ,
                                                                       :ManageResultsOfDiagnosticTests ;
                                            rdfs:label "warnings for delayed reporting of results"@en .
@@ -5190,21 +5190,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/women_of_reproductive_age
 :women_of_reproductive_age rdf:type owl:NamedIndividual ,
-                                    :UserGroupFreeText ;
+                                    :UserGroupCitation ;
                            :classifiedUserGroupSNOMEDCT :Woman_person ;
                            rdfs:label "women of reproductive health" .
 
 
 ###  http://hitontology.eu/ontology/work_changes
 :work_changes rdf:type owl:NamedIndividual ,
-                       :OutcomeCriteriaFreeText ;
+                       :OutcomeCriteriaCitation ;
               :classifiedOutcomeCriteria :Process_efficiency ;
               rdfs:label "work changes"@en .
 
 
 ###  http://hitontology.eu/ontology/writing_of_nursing_letters
 :writing_of_nursing_letters rdf:type owl:NamedIndividual ,
-                                     :FeatureFreeText ;
+                                     :FeatureCitation ;
                             :classifiedFeatureEHRHL7FM :ProduceASummaryRecordOfCare ;
                             rdfs:label "writing of nursing letters"@en .
 
