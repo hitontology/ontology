@@ -10,7 +10,8 @@
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
 
 :uc1 rdf:type owl:Ontology ;
-     rdfs:label "Use Case 1"@en ;
+     rdfs:label "Evaluation Studies"@en ;
+     rdfs:comment "finding evidence in health IT evaluation studies"@en ;
      ov:defines :ApplicationSystemClassified; 
      ov:defines :ApplicationSystemCitation; 
      ov:defines :DOI; 
@@ -37,7 +38,8 @@
      ov:defines :ValidationStudy.   	
 
 :uc2 rdf:type owl:Ontology ;
-     rdfs:label "Use Case 2"@en ;
+     rdfs:label "MEDFLOSS"@en ;
+     rdfs:comment "selecting medical free/libre open source software"@en ;
      ov:defines :Certification; 
      ov:defines :EnterpriseFunctionClassified; 
      ov:defines :Client; 
@@ -56,6 +58,10 @@
      ov:defines :ProgrammingLanguage; 
      ov:defines :Standard; 
      ov:defines :Terminology. 
+
+:uc3 rdf:type owl:Ontology ;
+     rdfs:label "commercial software"@en ;
+     rdfs:comment "selecting commercial software"@en .
 
 #################################################################
 #    Datatypes
