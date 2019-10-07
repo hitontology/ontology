@@ -39,13 +39,13 @@
 :uc2 rdf:type owl:Ontology ;
      rdfs:label "Use Case 2"@en ;
      ov:defines :Certification; 
-     ov:defines :ClassifiedEnterpriseFunction; 
+     ov:defines :EnterpriseFunctionClassified; 
      ov:defines :Client; 
      ov:defines :CommercialSoftwareProduct; 
      ov:defines :CommunicationStandard; 
      ov:defines :CommunityStatus; 
      ov:defines :DatabaseSystem; 
-     ov:defines :EnterpriseFunctionNL; 
+     ov:defines :EnterpriseFunctionCitation; 
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
      ov:defines :Language; 
@@ -85,8 +85,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedFunction
 :classifiedFunction rdf:type owl:ObjectProperty ;
-                    rdfs:domain :EnterpriseFunctionNL ;
-                    rdfs:range :ClassifiedEnterpriseFunction ;
+                    rdfs:domain :EnterpriseFunctionCitation ;
+                    rdfs:range :EnterpriseFunctionClassified ;
                     rdfs:label "classified function"@en .
 
 
@@ -121,7 +121,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/usedInOrganizationalUnit
 :usedInOrganizationalUnit :rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :OrganizationalUnitNL ;
+                    rdfs:range :OrganizationalUnitCitation ;
                     rdfs:label "used in organizational unit"@en .
 
 
@@ -148,7 +148,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionFromCatalogue
 :enterpriseFunctionFromCatalogue rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ClassifiedEnterpriseFunction ;
+                    rdfs:domain :EnterpriseFunctionClassified ;
                     rdfs:range :FunctionCatalogue ;
                     rdfs:label "enterprise function from catalogue"@en .
 
@@ -295,7 +295,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/supportedByFeature
 :supportedByFeature rdf:type owl:ObjectProperty ;
-                    rdfs:domain :EnterpriseFunctionNL ;
+                    rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :Feature ;
                     rdfs:label "supported by feature"@en .
 
@@ -303,7 +303,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/supportsEnterpriseFunction
 :supportsEnterpriseFunction rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :EnterpriseFunctionNL ;
+                    rdfs:range :EnterpriseFunctionCitation ;
                     rdfs:label "supports enterprise function"@en .
 
 
@@ -414,14 +414,14 @@ xsd:gYear rdf:type rdfs:Datatype .
      rdfs:label "DOI"@en .
 
 
-###  http://hitontology.eu/ontology/ClassifiedEnterpriseFunction
-:ClassifiedEnterpriseFunction rdf:type owl:Class ;
-                      rdfs:label "Classified Enterprise Function"@en .
+###  http://hitontology.eu/ontology/EnterpriseFunctionClassified
+:EnterpriseFunctionClassified rdf:type owl:Class ;
+                      rdfs:label "Enterprise Function Classified"@en .
 
 
-###  http://hitontology.eu/ontology/EnterpriseFunctionNL
-:EnterpriseFunctionNL rdf:type owl:Class ;
-                      rdfs:label "Enterprise Function Natural Language"@en .
+###  http://hitontology.eu/ontology/EnterpriseFunctionCitation
+:EnterpriseFunctionCitation rdf:type owl:Class ;
+                      rdfs:label "Enterprise Function Citation"@en .
 
 
 ###  http://hitontology.eu/ontology/ExperimentalStudyRCT
