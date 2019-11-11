@@ -50,231 +50,80 @@ Also referred to as a taxonomy, this Classification scheme is anchored on the un
 
 2.3	Healthcare provider decision support
 2.3.1	Provide prompts and alerts based according to protocol
-2.3.2
-Provide according to protocol
+2.3.2	Provide checklist according to protocol
+2.3.3	Screen clients by risk or other health status
+
+2.4	Telemedicine
+2.4.1	Consultations between remote client and healthcare provider
+2.4.3	Transmission of medical data to healthcare provider
+2.4.4	Consultations for case management between healthcare providers
+
+2.5	Healthcare provider communication
+2.5.1	Communication from healthcare provider(s) to supervisor
+2.5.2	Communication and performance feedback to healthcare provider(s)
+2.5.3	Transmit routine news and workflow notifications to healthcare provider(s)
+2.5.4	Transmit non-routine health event alerts to healthcare providers
+2.5.5	Peer group for healthcare providers
+
+2.6	Referral coordination
+2.6.1	Coordinate emergency response and transport
+2.6.2	Manage referrals between points of service within health sector
+2.6.3	Manage referrals between health and other sectors
+
+2.7	Health worker activity planning and scheduling
+2.7.1	Identify client(s) in need of services
+2.7.2	Schedule healthcare provider's activities
 
 2.8.1	Provide training content to healthcare provider(s)
+2.8.2	Assess capacity of healthcare provider
 
-capacity of
-2.8.2 Assess healthcare provider
+2.9	Prescription and medication management
+2.9.1	Transmit or track prescription orders
+2.9.2	Track client's medication consumption
+2.9.3	Report effects adverse drug
 
-Communication and 
-2.5.2 performance feedback to
-healthcare provider
-
-Transmit routine news and
-
-2.9
-
-Prescription
-and medication
-management
-
-2.9.1
-
-Transmit or track
-prescription orders
-
-2.5.3 workflow notifications to
-healthcare provider(s)
-
-2.5.4
-
-Transmit non-routine
-health event alerts to
-healthcare providers
-
-group for healthcare
-2.5.5 Peer
-providers
-
-2.6
-
-Referral
-coordination
-
-2.6.1
-
-Coordinate emergency
-response and transport
-Manage referrals between
-
-2.6.2 points of service within
-health sector
-
-referrals between
-2.6.3 Manage
-health and other sectors
-
-2.7
-
-Health worker
-activity planning
-and scheduling
-
-2.7.1
-
-Identify clients in need
-of services
-
-2.7.2
-
-Schedule healthcare
-provider's activities
-
-client's medication
-2.9.2 Track
-consumption
-adverse drug
-2.9.3 Report
-effects
-
-2.10
-
-Laboratory and
-Diagnostics
-Imaging
-Manangement
-
-diagnostic result
-2.10.1 Transmit
-to healthcare provider
-and track
-2.10.2 Transmit
-diagnostic orders
-diagnostic results
-2.10.3 Capture
-from digital devices
-
-2.10.4 Track biological specimens
-
-data by provider
-
-of medical
-2.4.3 Transmission
-data to healtcare provider
-Consultations for case
-
-2.4.4 management between
-healthcare providers
+2.10	Laboratory and Diagnostics Imaging Manangement
+2.10.1	Transmit to healthcare provider and track
+2.10.2	Transmit diagnostic orders diagnostic results
+2.10.3	Capture from digital devices
+2.10.4	Track biological specimens
 
 
-checklist
-3.0
-Health System Managers
-3.1
+3.0	Health System Managers
 
-Human resource
-management
+3.1	Human resource management
+3.1.1	List health workforce cadres and related identification information
+3.1.2	Monitor performance of healthcare provider(s)
+3.1.3	Manage certification/registration of healthcare provider(s)
+3.1.4	Record training credentials of healthcare provider(s)
 
-3.1.1
+3.3	Public health event notification
 
-List health workforce
-cadres and related
-identification information
+3.6	Equipment and asset management
 
-3.1.2
+3.3.1	Notification of public health events from point of diagnosis
+3.6.1	Monitor status of health equipment
 
-Monitor performance of
-healthcare provider(s)
-
-3.1.3
-
-Manage certification/
-registration of healthcare
-provider(s)
-
-3.1.4
-
-Record training credentials
-of healthcare provider(s)
-
-3.3
-
-Public health
-event notification
-
-3.6
-
-Equipment and
-asset management
-
-3.3.1
-
-Notification of public
-health events from
-point of diagnosis
-
-3.6.1
-
-Monitor status of
-health equipment
-
-3.4
-
-Civil Registration
-and Vital Statistic
-
-3.4.1
-
-Notify birth event
-
+3.4	Civil Registration and Vital Statistic
+3.4.1	Notify birth event
 3.4.2 Register birth event
 3.4.3 Certify birth event
 
-3.2
-
-Supply chain
-management
-
-3.2.1
-
-Manage inventory and
-distribution of health
-commodities
-
-stock levels of
-3.2.2 Notify
-health commodities
-
-3.2.3
-
-Monitor cold-chain
-sensitive commodities
-
-licensed drugs
-3.2.4 Register
-and health commodities
-procurement
-3.2.5 Manage
-of commodities
-
-3.2.6
-
-Report counterfeit or
-substandard drugs
-by clients
+3.2	Supply chain management
+3.2.1	Manage inventory and distribution of health commodities stock levels of
+3.2.2	Notify health commodities
+3.2.3	Monitor cold-chain sensitive commodities licensed drugs
+3.2.4	Register and health commodities procurement
+3.2.5	Manage of commodities
+3.2.6	Report counterfeit or substandard drugs by clients
 
 3.4.4 Notify death event
-
 Track regulation and
+3.6.2 licensing of medical equipment
 
-3.6.2 licensing of medical
-equipment
-
-3.7
-
-Facility
-management
-
-3.7.1
-
-List health facilities and
-related information
-
-3.7.2
-
-Assess health facilities
+3.7	Facility management
+3.7.1	List health facilities and related information
+3.7.2	Assess health facilities
 
 2.3.3
 
@@ -468,77 +317,6 @@ health services
 Transmit or manage
 incentives to client(s) for
 health services
-
-2.2
-
-Client health
-records
-
-2.2.1
-
-Longitudinal tracking
-of clients’ health status
-and services
-
-client’s structured
-2.2.2 Manage
-clinical records
-Manage client’s
-
-2.5
-
-Healthcare
-provider
-communication
-
-2.5.1
-
-Communication from
-healthcare provider(s) to
-supervisor
-
-healthcare provider(s)
-
-2.2.4
-
-Routine health indicator
-data collection and
-management
-
-2.3
-
-Healthcare
-provider decision
-support
-
-2.3.1
-
-Provide prompts and
-alerts based according
-to protocol
-
-Provide checklist
-2.3.2 according
-to protocol
-
-2.3.3
-
-Screen clients by risk or
-other health status
-
-2.4
-
-Telemedicine
-
-2.4.1
-
-Consultations between
-remote client and
-healthcare provider
-
-Healthcare
-provider training
-
 3.1
 
 Human resource
