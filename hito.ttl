@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ov: <http://open.vocab.org/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
 @base <http://hitontology.eu/ontology> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
@@ -316,7 +317,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/supportsLanguage
 :supportsLanguage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :Language ;
+                    rdfs:range dbo:Language;
                     rdfs:label "supports language"@en .
 
 
@@ -475,11 +476,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :LabStudy rdf:type owl:Class ;
           rdfs:subClassOf :Study ;
           rdfs:label "Lab Study"@en .
-
-
-###  http://hitontology.eu/ontology/Language
-:Language rdf:type owl:Class ;
-          rdfs:label "Language"@en .
 
 
 ###  http://hitontology.eu/ontology/License
