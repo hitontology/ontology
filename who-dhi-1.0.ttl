@@ -1,0 +1,3572 @@
+:WhoDhi10 a hito:FunctionCatalogue;
+rdfs:label "Classification of Digital Health Interventions v1.0"@en;
+rdfs:comment "A shared language to describe the uses of digital technology for health."@en.
+rdfs:comment "The classification of digital health interventions (DHIs) categorizes the different ways in which digital and mobile technologies are being used to support health system needs.
+Targeted primarily at public health audiences, this Classification framework aims to promote an accessible and bridging language for health program planners to articulate functionalities of digital health implementations.
+Also referred to as a taxonomy, this Classification scheme is anchored on the unit of a “digital health intervention,” which represents a discrete functionality of the digital technology to achieve health sector objectives."@en.
+
+1.0	Clients
+
+1.1	Targeted client communication
+1.1.1	Transmit health event alerts to specific population group(s)
+1.1.2	Transmit targeted health information to client based on health status or demographics
+1.1.3	Transmit targeted alerts and reminders to client(s)
+1.1.4	Transmit diagnostics result, or availability of result, to clients
+
+1.2	Untargeted client communication
+1.2.1	Transmit untargeted health information to an undefined population
+1.2.2	Transmit untargeted health event alerts to undefined group
+
+1.3	Client to client communication
+1.3.1	Peer group for clients
+
+1.4	Personal health tracking
+1.4.1	Access by client to own medical records
+1.4.2	Self monitoring of health or diagnostic data by client
+1.4.3	Active data capture/documentation by client
+
+1.5	Citizen based reporting
+1.5.1	Reporting of health system feedback by clients
+1.5.2	Reporting of public health events by client
+
+1.6	On-demand information services to clients
+1.6.1	Client look-up of health information
+
+1.7	Client financial transactions
+1.7.1	Transmit or manage out of pocket payments by client
+1.7.2	Transmit or manage vouchers to client for health services
+1.7.3	Transmit or manage incentives to clients for health services
+
+2.0	Healthcare Providers
+2.1	Client identification and registration
+2.1.1	Verify client unique identity
+2.1.2	Enrol client for health services/clinical care plan
+
+2.2	Client health records
+2.2.1	Longitudinal tracking of client’s health status and services
+2.2.2	Manage client's structured clinical records
+2.2.3	Manage client’s unstructured clinical records
+2.2.4	Routine health indicator data collection and management
+
+2.3	Healthcare provider decision support
+2.3.1	Provide prompts and alerts based according to protocol
+2.3.2
+Provide according to protocol
+
+2.8.1	Provide training content to healthcare provider(s)
+
+capacity of
+2.8.2 Assess healthcare provider
+
+Communication and 
+2.5.2 performance feedback to
+healthcare provider
+
+Transmit routine news and
+
+2.9
+
+Prescription
+and medication
+management
+
+2.9.1
+
+Transmit or track
+prescription orders
+
+2.5.3 workflow notifications to
+healthcare provider(s)
+
+2.5.4
+
+Transmit non-routine
+health event alerts to
+healthcare providers
+
+group for healthcare
+2.5.5 Peer
+providers
+
+2.6
+
+Referral
+coordination
+
+2.6.1
+
+Coordinate emergency
+response and transport
+Manage referrals between
+
+2.6.2 points of service within
+health sector
+
+referrals between
+2.6.3 Manage
+health and other sectors
+
+2.7
+
+Health worker
+activity planning
+and scheduling
+
+2.7.1
+
+Identify clients in need
+of services
+
+2.7.2
+
+Schedule healthcare
+provider's activities
+
+client's medication
+2.9.2 Track
+consumption
+adverse drug
+2.9.3 Report
+effects
+
+2.10
+
+Laboratory and
+Diagnostics
+Imaging
+Manangement
+
+diagnostic result
+2.10.1 Transmit
+to healthcare provider
+and track
+2.10.2 Transmit
+diagnostic orders
+diagnostic results
+2.10.3 Capture
+from digital devices
+
+2.10.4 Track biological specimens
+
+data by provider
+
+of medical
+2.4.3 Transmission
+data to healtcare provider
+Consultations for case
+
+2.4.4 management between
+healthcare providers
+
+
+checklist
+3.0
+Health System Managers
+3.1
+
+Human resource
+management
+
+3.1.1
+
+List health workforce
+cadres and related
+identification information
+
+3.1.2
+
+Monitor performance of
+healthcare provider(s)
+
+3.1.3
+
+Manage certification/
+registration of healthcare
+provider(s)
+
+3.1.4
+
+Record training credentials
+of healthcare provider(s)
+
+3.3
+
+Public health
+event notification
+
+3.6
+
+Equipment and
+asset management
+
+3.3.1
+
+Notification of public
+health events from
+point of diagnosis
+
+3.6.1
+
+Monitor status of
+health equipment
+
+3.4
+
+Civil Registration
+and Vital Statistic
+
+3.4.1
+
+Notify birth event
+
+3.4.2 Register birth event
+3.4.3 Certify birth event
+
+3.2
+
+Supply chain
+management
+
+3.2.1
+
+Manage inventory and
+distribution of health
+commodities
+
+stock levels of
+3.2.2 Notify
+health commodities
+
+3.2.3
+
+Monitor cold-chain
+sensitive commodities
+
+licensed drugs
+3.2.4 Register
+and health commodities
+procurement
+3.2.5 Manage
+of commodities
+
+3.2.6
+
+Report counterfeit or
+substandard drugs
+by clients
+
+3.4.4 Notify death event
+
+Track regulation and
+
+3.6.2 licensing of medical
+equipment
+
+3.7
+
+Facility
+management
+
+3.7.1
+
+List health facilities and
+related information
+
+3.7.2
+
+Assess health facilities
+
+2.3.3
+
+Screen clients by risk or
+other health status
+
+2.4
+
+Telemedicine
+
+2.4.1
+
+Consultations between
+remote client and
+healthcare provider
+
+3.5.1
+
+Register and verify client
+insurance membership
+
+insurance billing and
+3.5.2 Track
+claims submission
+
+3.5.3
+
+Track and manage
+insurance reimbursement
+Transmit routine payroll
+
+Transmit or manage
+
+3.5.5 incentives to healthcare
+provider(s)
+
+budget and
+3.5.6 Manage
+expenditures
+
+For questions or feedback, please contact
+Dr. Garrett Mehl | mehlg@who.int
+
+Tigest Tamrat | tamratt@who.int
+
+Healthcare
+provider training
+4.0
+Data Services
+4.1
+
+Data collection,
+management,
+and use
+
+4.1.1
+
+Non routine data collection
+and management
+
+4.1.2
+
+Data storage and
+aggregation
+
+4.1.3
+
+Data synthesis and
+visualization
+
+4.1.4
+
+Automated analysis of
+data to generate new
+information or predictions
+on future events
+
+3.5.4 payment to healthcare
+provider(s)
+
+2.5.1
+
+Communication from
+healthcare provider to
+supervisor
+
+2.8
+
+Remote monitoring of
+
+3.4.6 Certify death event
+
+Health
+financing
+
+Healthcare
+provider
+communication
+
+2.4.2 client health or diagnostic
+
+3.4.5 Register death event
+
+3.5
+
+2.5
+
+4.2
+
+Data
+coding
+
+4.3
+
+Location
+mapping
+
+4.2.1
+
+Parse unstructured data
+into structured data
+
+4.3.1
+
+Map location of health
+facilities/structures
+
+4.2.2 curate coded datasets or
+
+Merge, de-duplicate, and
+
+location of
+4.3.2 Map
+health events
+
+4.2.3 Classify disease codes
+
+location of
+4.3.3 Map
+clients and households
+
+terminologies
+
+location of
+4.3.4 Map
+healthcare provider(s)
+
+4.4
+
+Data exchange and
+interoperability
+
+4.4.1
+
+Data exchange
+across systems
+
+
+2.0
+Healthcare Providers
+
+2.1.1
+
+Verify client
+unique identity
+
+1.7
+
+Client financial
+transactions
+
+2.1.2
+
+Enrol client for health
+services/clinical care plan
+
+1.7.1
+
+Transmit or manage out
+of pocket payments by
+client(s)
+
+1.7.2
+
+Transmit or manage
+vouchers to client(s) for
+health services
+
+1.7.3
+
+Transmit or manage
+incentives to client(s) for
+health services
+
+2.2
+
+Client health
+records
+
+2.2.1
+
+Longitudinal tracking
+of clients’ health status
+and services
+
+client’s structured
+2.2.2 Manage
+clinical records
+Manage client’s
+
+2.5
+
+Healthcare
+provider
+communication
+
+2.5.1
+
+Communication from
+healthcare provider(s) to
+supervisor
+
+healthcare provider(s)
+
+2.2.4
+
+Routine health indicator
+data collection and
+management
+
+2.3
+
+Healthcare
+provider decision
+support
+
+2.3.1
+
+Provide prompts and
+alerts based according
+to protocol
+
+Provide checklist
+2.3.2 according
+to protocol
+
+2.3.3
+
+Screen clients by risk or
+other health status
+
+2.4
+
+Telemedicine
+
+2.4.1
+
+Consultations between
+remote client and
+healthcare provider
+
+Healthcare
+provider training
+
+3.1
+
+Human resource
+management
+
+3.3
+
+Public health
+event notification
+
+3.6
+
+Equipment and
+asset management
+
+2.8.1
+
+Provide training content to
+healthcare provider(s)
+
+3.1.1
+
+List health workforce
+cadres and related
+identification information
+
+3.3.1
+
+Notification of public
+health events from
+point of diagnosis
+
+3.6.1
+
+Monitor status of
+health equipment
+
+3.6.2
+
+Track regulation and
+licensing of medical
+equipment
+
+capacity of
+2.8.2 Assess
+healthcare provider(s)
+
+Transmit routine news and
+
+2.9
+
+Prescription
+and medication
+management
+
+2.9.1
+
+Transmit or track
+prescription orders
+
+2.5.3 workflow notifications to
+healthcare provider(s)
+Transmit non-routine
+
+2.5.4 health event alerts to
+
+healthcare provider(s)
+
+Peer group for healthcare
+2.5.5 providers
+
+2.2.3 unstructured
+
+clinical records
+
+2.8
+
+Communication and
+
+2.5.2 performance feedback to
+
+2.6
+
+Referral
+coordination
+
+2.6.1
+
+Coordinate emergency
+response and transport
+
+2.6.3
+
+Track client's medication
+2.9.2 consumption
+
+2.10
+
+Laboratory and
+Diagnostics
+Imaging
+Manangement
+
+diagnostic result
+2.10.1 Transmit
+to healthcare provider
+
+health sector
+
+and track
+2.10.2 Transmit
+diagnostic orders
+
+Manage referrals between
+health and other sectors
+
+2.7
+
+Health worker
+activity planning
+and scheduling
+
+2.7.1
+
+Identify client(s) in need
+of services
+
+2.7.2
+
+Schedule healthcare
+provider's activities
+
+3.1.2
+
+Monitor performance of
+healthcare provider(s)
+
+Capture diagnostic results
+2.10.3 from
+digital devices
+
+2.10.4 Track biological specimens
+
+3.4
+
+Civil Registration
+and Vital Statistic
+
+3.4.1
+
+Notify birth event
+
+3.1.3
+
+Manage certification/
+registration of healthcare
+provider(s)
+
+3.1.4
+
+Record training credentials
+of healthcare provider(s)
+
+3.4.2 Register birth event
+
+3.2
+
+Supply chain
+management
+
+3.4.4 Notify death event
+
+3.2.1
+
+Manage inventory and
+distribution of health
+commodities
+
+3.4.6 Certify death event
+
+3.2.2
+
+Notify stock levels of
+health commodities
+
+3.4.3 Certify birth event
+
+2.9.3 Report adverse drug events
+
+Manage referrals between
+
+2.6.2 points of service within
+
+3.0
+Health System Managers
+
+Monitor cold-chain
+3.2.3 sensitive
+commodities
+Register licensed drugs
+3.2.4 and
+health commodities
+
+3.2.5
+
+Manage procurement
+of commodities
+Report counterfeit or
+
+3.2.6 substandard drugs
+by clients
+
+3.4.5 Register death event
+
+3.5
+
+Health
+financing
+
+3.5.1
+
+Register and verify client
+insurance membership
+
+4.0
+Data Services
+4.1
+
+Data collection,
+management,
+and use
+
+4.1.1
+
+Non-routine data
+collection and
+management
+
+4.1.2
+
+Data storage and
+aggregation
+
+3.7
+
+Facility
+management
+
+4.1.3
+
+Data synthesis and
+visualization
+
+3.7.1
+
+List health facilities and
+related information
+
+4.1.4
+
+3.7.2
+
+Assess health facilities
+
+Automated analysis of
+data to generate new
+information or predictions
+on future events
+
+4.2
+
+Data
+coding
+
+4.3
+
+Location
+mapping
+
+4.2.1
+
+Parse unstructured data
+into structured data
+
+4.3.1
+
+Map location of health
+facilities/structures
+
+4.2.2
+
+Merge, de-duplicate, and
+curate coded datasets or
+terminologies
+
+location of
+4.3.2 Map
+health events
+
+disease codes or
+4.2.3 Classify
+cause of mortality
+
+Map location of
+4.3.3 clients
+and households
+Map location of
+4.3.4 healthcare
+providers
+
+4.4
+
+Data exchange and
+interoperability
+
+4.4.1
+
+Data exchange
+across systems
+
+Track insurance billing and
+3.5.2 claims
+submission
+
+3.5.3
+
+Track and manage
+insurance reimbursement
+Transmit routine payroll
+
+3.5.4 payment to healthcare
+provider(s)
+
+Transmit or manage
+
+3.5.5 incentives to healthcare
+provider(s)
+
+budget and
+3.5.6 Manage
+expenditures
+
+Remote monitoring of
+
+2.4.2 client health or diagnostic
+data by provider
+
+Transmission of medical
+2.4.3 data
+to healthcare provider
+Consultations for case
+
+2.4.4 management between
+healthcare provider(s)
+
+How to use it?
+
+The digital health interventions are organized into the following overarching groupings
+based on the targeted primary user:
+Interventions for clients: Clients are members of the public who are potential
+or current users of health services, including health promotion activities.
+Caregivers of clients receiving health services are also included in this group.
+Interventions for healthcare providers: Healthcare providers are members
+of the health workforce who deliver health services.
+Interventions for health system or resource managers: Health system
+and resource managers are involved in the administration and oversight of
+public health systems. Interventions within this category reflect managerial
+functions related to supply chain management, health financing, human
+resource management.
+Interventions for data services: This consists of crosscutting functionality to
+support a wide range of activities related to data collection, management, use,
+and exchange.
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 1
+
+Each digital health intervention is accompanied by associated synonyms and other
+commonly used terms. The framework also includes programmatic examples of these
+terms based on cited descriptions from project documentation.
+
+Why was it
+created?
+
+The diverse communities working in digital health—including government stakeholders,
+technologists, clinicians, implementers, network operators, researchers, donors—
+have lacked a mutually understandable language with which to assess and articulate
+functionality. A shared and standardized vocabulary was recognized as necessary to
+identify gaps and duplication, evaluate effectiveness, and facilitate alignment across
+different digital health implementations.
+In particular, four primary use cases prompted the development of this classification
+scheme:
+• synthesizing evidence and research;
+• conducting national inventories and landscape analyses;
+• developing guidance resources to inform planning;
+• articulating required digital functionality based on identified
+		health system challenges and needs.
+Although frameworks such as the Control Objectives for Information and Related
+Technologies (COBIT) [1], Health Level Seven (HL7) [2], and International Standards
+Organization (ISO) [3] exist, these frameworks provide highly technical terms for use
+by computer scientists and software developers in health. This new classification
+scheme offers a simplified language to help support a dialogue between public health
+practitioners and technology-oriented audiences.
+
+How does this
+link to other
+classifications?
+
+This classification of Digital Health Interventions (DHIs) should be used in tandem
+with the of list Health System Challenges (HSC) in order to articulate how technology
+is addressing identified health needs, such as lack of service utilisation. The HSC
+framework provides an overview of needs and challenges faced in health systems,
+in order to assist program planners to express what they expect to achieve through
+implementation of a digital health intervention. For example, one may implement a
+digital health intervention, such as “targeted communication to clients”, in order to
+address a health system challenge, such as “lack of service utilisation,” to achieve an
+overarching eHealth outcome of “improving clients’ access to knowledge resources and
+support for better management of their health”[5].
+The classification of DHIs also highlights functionalities that fit within various System
+Categories, such as Logistics Management Information Systems (LMIS) or Electronic
+Medical Records (EMR). System Categories represent the types of ICT applications
+and information systems designed to deliver one or more digital health interventions.
+A digital health intervention such as “notify stock levels of health commodities”
+would fit into the System Category of LMIS. Linking digital health interventions to
+system categories is critical as these serve as the starting point for interoperability
+considerations.
+
+page 2
+
+figure 1. Linkages across Health System Challenges, Digital Health Interventions,
+and System Categories
+Health System
+Challenge (HSC)
+Need or problem to be addressed
+
+Insufficient
+supply of
+commodities
+
+Digital Health Intervention (DHI)
+Digital functionality for addressing
+the Health System Challenge
+
+3.2.1
+
+3.2.2 Notify stock levels of health commodities
+
+2.3.1
+
+Healthcare provider’s
+poor adherence to
+clinical guidelines
+
+Loss to
+follow-up
+of clients
+
+Provide prompts and alerts based
+according to protocol
+
+2.3.2 Provide checklist according to protocol
+and performance
+2.5.2 Communication
+feedback to healthcare provider(s)
+
+2.7.2
+
+Lack of access
+to information
+or data
+
+Manage inventory and distribution
+of health commodities
+
+System Category
+
+ICT system that delivers one or more
+of the Digital Health Interventions
+
+» Logistics
+Management
+Information
+System
+
+» Telemedicine
+systems
+» Decision support
+systems
+
+Schedule healthcare provider’s activities
+
+health indicator data collection
+2.2.4 Routine
+and management
+
+4.1.2
+
+Data storage and aggregation
+
+4.1.3
+
+Data synthesis and visualizations
+
+1.1.3
+
+Transmit targeted alerts and reminders
+to client(s)
+
+2.2.1
+
+Longitudinal tracking of clients’ health
+status and services
+
+» Health Management
+Information System
+(HMIS)
+» Electronic
+Medical Record
+» Identification
+registries
+and directories
+» Client
+communication
+system
+» Electronic
+Medical Record
+
+How was it
+developed?
+
+This Classification scheme reflects emerging uses of digital technologies for health.
+The taxonomy leverages mobile health (mHealth) categorizations from the mHealth
+Technical Evidence Review Group (mTERG) and Labrique et al.[4], and expands on these
+terms to to be inclusive of eHealth and broader capabilities that have relevance in
+the health sector. WHO convened a series of technical consultations to further refine
+these terminologies and definitions. Public feedback was solicited through the Health
+Data Collaborative Digital Health and Interoperability Working Group. Additionally, a
+desk review was conducted to align with reference frameworks [1-3], and to establish
+examples of DHI in current use.
+
+How it will
+evolve?
+
+This reference Classification will evolve as new digital functionalities emerge. The WHO
+Secretariat will periodically update and version this Classification based on technical
+consultations and public feedback. Subsequent releases of this Classification will be
+available at http://who.int/reproductivehealth/topics/mhealth/en/.
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 3
+
+Health System Challenges
+1
+
+Information
+
+3
+
+Quality
+
+6
+
+Efficiency
+
+1.1
+
+Lack of population
+denominator
+
+3.1
+
+Poor patient experience
+
+6.1
+
+Inadequate workflow
+management
+
+1.2
+
+Delayed reporting
+of events
+
+3.2
+
+Insufficient health
+worker competence
+
+3.2.1
+
+1.3
+
+Lack of quality/
+reliable data
+
+3.3
+
+Manage inventory and distribution
+Low
+quality
+health
+of
+health
+commodities
+
+6.2
+
+Lack of or inappropriate
+referrals
+
+commodities
+
+6.3
+
+3.4
+
+Low health worker
+motivation
+
+Poor planning and
+coordination
+
+1.4
+
+Communication
+roadblocks
+
+6.4
+
+Delayed provision of care
+
+1.5
+
+Lack of access to
+information or data
+
+3.5
+
+Insufficient continuity
+of care
+
+6.5
+
+Inadequate access to
+transportation
+
+1.6
+
+Insufficient utilization of
+data and information
+
+3.6
+
+Inadequate supportive
+supervision
+
+3.7
+
+7
+
+Cost
+
+Lack of unique identifier
+
+Poor adherence to
+guidelines
+
+7.1
+
+High cost of manual
+processes
+
+7.2
+
+Lack of effective resource
+allocation
+
+1.7
+
+2
+
+Availability
+
+4
+
+Acceptability
+
+2.1
+
+Insufficient supply
+of commodities
+
+4.1
+
+Lack of alignment with
+local norms
+
+7.3
+
+Client-side expenses
+
+2.2
+
+Insufficient supply
+of services
+
+7.4
+
+4.2
+
+Lack of coordinated payer
+mechanism
+
+2.3
+
+Insufficient supply
+of equipment
+
+Programs which do not
+address individual beliefs
+and practices
+
+8
+
+Accountability
+
+2.4
+
+Insufficient supply of
+qualified health workers
+
+8.1
+
+Insufficient patient
+engagement
+
+page 4
+
+5
+
+Utilization
+
+5.1
+
+Low demand for services
+
+5.2
+
+Geographic inaccessibility
+
+8.2
+
+Unaware of service
+entitlement
+
+5.3
+
+Low adherence to
+treatments
+
+8.3
+
+Absence of community
+feedback mechanisms
+
+5.4
+
+Loss to follow up
+
+8.4
+
+Lack of transparency in
+commodity transactions
+
+8.5
+
+Poor accountability
+between the levels of
+the health sector
+
+8.6
+
+Inadequate understanding
+of beneficiary populations
+
+System Categories
+A
+
+Census, population
+information &
+data warehouse*
+
+I
+
+Emergency response
+system*
+
+R
+
+Laboratory and diagnostics
+information system*
+
+B
+
+Civil registration
+and vital statistics
+
+J
+
+Environmental
+monitoring system*
+
+S
+
+Learning and
+training system
+
+C
+
+Client applications
+
+K
+
+Facility management
+information system
+
+T
+
+Logistics management
+information system (LMIS)
+
+D
+
+Client communication
+system
+
+L
+
+Geographic information
+system (GIS)
+
+U
+
+Pharmacy information
+system*
+
+E
+
+Clinical terminology
+and classifications*
+
+M
+
+V
+
+Public health and disease
+surveillance system*
+
+F
+
+Community-based
+information system
+
+Health finance and
+insurance information
+system*
+
+N
+
+W
+
+Research information
+system
+
+G
+
+Data interchange
+interoperability
+and accessibility*
+
+Health management
+information system (HMIS)
+
+O
+
+Human resource
+information system
+
+X
+
+Shared Health Record
+and health information
+respositories*
+
+H
+
+Electronic medical record*
+
+P
+
+Identification registries
+and directories*
+
+Y
+
+Telemedicine
+
+Q
+
+Knowledge management
+system*
+
+*Adapted from the International Standards Organization [3]
+
+References
+1.
+
+COBIT 5 Illustrative Governance and Management Processes. ISACA; 2017 (https://www.isaca.org/Knowledge-Center/Blog/Lists/Posts/Post.
+aspx?ID=193, accessed 20 November 2017 )
+
+2. HL7 EHR System Functional Model: A Major Development Towards Consensus on Electronic Health Record System Functionality. Ann Arbor:
+Health Level Seven; 2004 (https://www.hl7.org/documentcenter/public/wg/ehr/EHR-SWhitePaper.pdf, accessed 7 March 2018)
+3. Health informatics -- Capacity-based eHealth architecture roadmap -- Part 2: Architectural components and maturity model ISO/TR 14639-2:2014.
+Geneva: International Standards Organization (ISO); 2014 (https://www.iso.org/obp/ui/#iso:std:54903:en, accessed 7 March 2018)
+4. Labrique AB, Vasudevan L, Kochi E, Fabricant R, Mehl G. mHealth innovations as health system strengthening tools: 12 common applications and a
+visual framework. Global Health: Science and Practice. 2013 Aug 1;1(2):160-71.
+5. National eHealth strategy toolkit. Geneva: World Health Organization, International Telecommunication Union; 2012 (https://www.itu.int/dms_
+pub/itu-d/opb/str/D-STR-E_HEALTH.05-2012-PDF-E.pdf, accessed 2 March 2018).
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 5
+
+1.0
+Clients
+1.1
+
+Targeted client
+communication
+
+1.3
+
+Client to client
+communication
+
+1.1.1
+
+Transmit health event
+alerts to specific
+population group(s)
+
+1.3.1
+
+Peer group for clients
+
+1.1.2
+
+Transmit targeted health
+information to client(s)
+based on health status or
+demographics
+
+1.4
+
+Personal health
+tracking
+
+1.4.1
+
+Access by client to own
+medical records
+
+1.6
+
+On-demand
+information
+services to clients
+
+1.6.1
+
+Client look-up of health
+information
+
+1.7
+
+Client financial
+transactions
+
+1.7.1
+
+Transmit or manage out
+of pocket payments by
+client(s)
+
+1.1.3
+
+Transmit targeted alerts
+and reminders to client(s)
+
+1.4.2
+
+1.1.4
+
+Transmit diagnostics
+result, or availability of
+result, to client(s)
+
+Self monitoring of health
+or diagnostic data by client
+
+1.4.3
+
+Active data capture/
+documentation by client
+
+1.7.2
+
+Transmit or manage
+vouchers to client(s) for
+health services
+
+1.2
+
+Untargeted client
+communication
+
+1.5
+
+Citizen based
+reporting
+
+1.7.3
+
+Transmit or manage
+incentives to client(s) for
+health services
+
+1.2.1
+
+Transmit untargeted
+health information to an
+undefined population
+
+1.5.1
+
+Reporting of health system
+feedback by clients
+
+1.5.2
+
+1.2.2
+
+Transmit untargeted
+health event alerts to
+undefined group
+
+Reporting of public health
+events by clients
+
+page 6
+
+2.0
+Healthcare Providers
+2.1
+
+Client
+identification and
+registration
+
+2.1.1
+
+Verify client
+unique identity
+
+2.1.2
+
+Enrol client for health
+services/clinical care plan
+
+2.2
+
+Client health
+records
+
+2.2.1
+
+Longitudinal tracking
+of clients’ health status
+and services
+
+2.2.2
+
+Manage client’s structured
+clinical records
+
+2.2.3
+
+Manage client’s
+unstructured
+clinical records
+Routine health indicator
+
+2.5
+
+Healthcare
+provider
+communication
+
+2.5.1
+
+Communication from
+healthcare provider(s) to
+supervisor
+
+2.3
+
+Healthcare
+provider decision
+support
+
+2.3.1
+
+Provide prompts and
+alerts based according
+to protocol
+
+checklist
+2.3.2 Provide
+according to protocol
+
+2.3.3
+
+Screen clients by risk or
+other health status
+
+2.4
+
+Telemedicine
+
+2.4.1
+
+Consultations between
+remote client and
+healthcare provider
+
+Healthcare
+provider training
+
+2.8.1
+
+Provide training content to
+healthcare provider(s)
+
+capacity of
+2.8.2 Assess
+healthcare provider(s)
+
+Communication and
+
+2.5.2 performance feedback to
+healthcare provider(s)
+
+Transmit routine news and
+
+2.9
+
+Prescription
+and medication
+management
+
+2.9.1
+
+Transmit or track
+prescription orders
+
+2.5.3 workflow notifications to
+healthcare provider(s)
+
+2.5.4
+
+Transmit non-routine
+health event alerts to
+healthcare provider(s)
+
+group for healthcare
+2.5.5 Peer
+providers
+
+2.6
+
+Referral
+coordination
+
+2.6.1
+
+Coordinate emergency
+response and transport
+
+2.6.2
+
+Manage referrals between
+points of service within
+health sector
+
+2.2.4 data collection and
+management
+
+2.8
+
+referrals between
+2.6.3 Manage
+health and other sectors
+
+2.7
+
+Health worker
+activity planning
+and scheduling
+
+2.7.1
+
+Identify client(s) in need
+of services
+
+2.7.2
+
+Schedule healthcare
+provider's activities
+
+client's medication
+2.9.2 Track
+consumption
+
+2.9.3 Report adverse drug events
+
+2.10
+
+Laboratory and
+Diagnostics
+Imaging
+Manangement
+
+diagnostic result
+2.10.1 Transmit
+to healthcare provider
+and track
+2.10.2 Transmit
+diagnostic orders
+diagnostic results
+2.10.3 Capture
+from digital devices
+
+2.10.4 Track biological specimens
+
+Remote monitoring of
+
+2.4.2 client health or diagnostic
+
+data by healthcare provider
+
+of medical
+2.4.3 Transmission
+data to healthcare provider
+Consultations for case
+
+2.4.4 management between
+healthcare provider(s)
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 7
+
+3.0
+Health System Managers
+3.1
+
+Human resource
+management
+
+3.3
+
+Public health
+event notification
+
+3.6
+
+Equipment and
+asset management
+
+3.1.1
+
+List health workforce
+cadres and related
+identification information
+
+3.3.1
+
+Notification of public
+health events from
+point of diagnosis
+
+3.6.1
+
+Monitor status of
+health equipment
+
+3.1.2
+
+Monitor performance of
+healthcare provider(s)
+
+3.1.3
+
+Manage certification/
+registration of healthcare
+provider(s)
+
+3.1.4
+
+Record training credentials
+of healthcare provider(s)
+
+3.4
+
+Civil Registration
+and Vital Statistic
+
+3.4.1
+
+Notify birth event
+
+3.4.2 Register birth event
+3.4.3 Certify birth event
+
+3.2
+
+Supply chain
+management
+
+3.2.1
+
+Manage inventory and
+distribution of health
+commodities
+
+stock levels of
+3.2.2 Notify
+health commodities
+cold-chain
+3.2.3 Monitor
+sensitive commodities
+
+3.2.4
+
+Register licensed drugs
+and health commodities
+
+3.2.5
+
+Manage procurement
+of commodities
+
+3.2.6
+
+Report counterfeit or
+substandard drugs
+by clients
+
+3.4.4 Notify death event
+3.4.5 Register death event
+3.4.6 Certify death event
+
+3.5
+
+Health
+financing
+
+3.5.1
+
+Register and verify client
+insurance membership
+
+insurance billing and
+3.5.2 Track
+claims submission
+
+3.5.3
+
+Track and manage
+insurance reimbursement
+Transmit routine payroll
+
+3.5.4 payment to healthcare
+provider(s)
+
+Transmit or manage
+
+3.5.5 incentives to healthcare
+provider(s)
+
+budget and
+3.5.6 Manage
+expenditures
+
+page 8
+
+Track regulation and
+
+3.6.2 licensing of medical
+equipment
+
+3.7
+
+Facility
+management
+
+3.7.1
+
+List health facilities and
+related information
+
+3.7.2
+
+Assess health facilities
+
+4.0
+Data Services
+4.1
+
+Data collection,
+management,
+and use
+
+4.1.1
+
+Non-routine data
+collection and
+management
+
+4.1.2
+
+Data storage and
+aggregation
+
+4.1.3
+
+Data synthesis and
+visualization
+
+4.1.4
+
+Automated analysis of
+data to generate new
+information or predictions
+on future events
+
+4.2
+
+Data
+coding
+
+4.3
+
+Location
+mapping
+
+4.2.1
+
+Parse unstructured data
+into structured data
+
+4.3.1
+
+Map location of health
+facilities/structures
+
+Merge, de-duplicate, and
+
+location of
+4.3.2 Map
+health events
+
+4.2.2 curate coded datasets or
+terminologies
+
+4.2.3
+
+Classify disease codes or
+cause of mortality
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+location of
+4.3.3 Map
+clients and households
+location of
+4.3.4 Map
+healthcare providers
+
+4.4
+
+Data exchange and
+interoperability
+
+4.4.1
+
+Data exchange
+across systems
+
+page 9
+
+page 10
+
+1.1
+
+Communication between clients
+as peers within an organized
+network/group.
+
+Client to client
+communication
+
+1.3
+
+Transmission of untargeted
+health promotion content “in
+which in which relatively large,
+undifferentiated audiences receive
+identical messages.” [1] This
+includes message blasts usually
+conducted to a mobile phone user
+bank. The communication can be
+unidirectional and bidirectional.
+
+Untargeted client
+communication
+
+1.2
+
+Transmission of targeted
+health information “in which
+separate audience segments
+(often demographic categories)
+benefit from a shared message.”
+[1] Targeted communication
+can also be further customized
+according to an individual’s specific
+needs, resulting in “tailored client
+communication,” whereby message
+content is matched to the needs
+and preferences of an individual
+[1]. The communication can be
+unidirectional and bidirectional, but
+initial contact is from the health
+system; as opposed to on-demand
+information service where the
+client initiates the first contact to
+the health system.
+
+- Peer learning, peer group, peer-to-peer groups,
+peer network, peer support
+
+1.3.1 Peer group for clients
+
+1.2.2 Transmit untargeted
+health event alerts to
+undefined group
+
+- Mass messaging campaign or communication
+to an undefined target group
+- Health messaging to undefined target group
+regardless of demographic characteristics or
+health status
+- Public health event notification;
+disease notification
+- Mass messaging campaign
+
+- Laboratory results management,
+tests results management
+
+1.1.4 Transmit diagnostics
+result, or availability
+of result, to client(s)
+
+1.2.1 Transmit untargeted
+health information to
+an undefined population
+
+- Alerts for preventive services
+and wellness
+- Notifications and reminders for appointments,
+medication adherence, or follow-up services
+- Communication for retention in care,
+continuity of care
+
+1.1.3 Transmit targeted
+alerts and reminders
+to client(s)
+
+1.1.2 Transmit targeted health
+information to client(s)
+based on health status or
+demographics
+
+- Public health event notification; disease
+notification to specific or pre-identified
+populations
+- Notification of health events to specific
+populations based on demographic
+characteristics
+- Health promotion messaging
+- Health education, behavior change
+communication, health promotion
+communication, client-centered messaging;
+- Health communication based on a known
+client’s health status or clinical history
+
+1.1.1 Transmit health event
+alerts to specific
+population group(s)
+
+Targeted client
+communication
+
+Synonyms
+
+Interventions
+
+Category
+
+1.0 Clients
+
+Project Khuluma: “Peer-led support groups for HIV-infected adolescents to communicate amongst themselves on topics they want
+to discuss.” [8]
+
+Ebola awareness through SMS: “As part of a massive public awareness effort, Senegal’s Ministry of Health sent 4 million SMS
+messages to the general public warning of the dangers of Ebola and how to prevent it.” [11]
+
+WAHA Maternal Health mHealth Program: “Two SMS campaigns were launched, targeting the inhabitants of the Tambacounda
+district... The second campaign targets all people, so that they are regularly informed of available medical services within the district.” [10]
+
+Alive & Thrive: “...sent weekly text and voice messages to the phone of microcredit group leader to share messages on breastfeeding
+with microcredit group.” [8]
+MomConnect: “...sends stage-based, personalized short message service (SMS) texts to each mom in the registry.” [8]
+EngageTB: “Clients who are TB Negative will receive messages about behavior change to help them avoid the spread of TB and or
+being infected by TB.” [8]
+Mobile Information For Maternal Health: “A mobile interactive voice response system that provides pregnant women with
+information on the stage of her pregnancy and suggestions to keep her and her baby healthy via twice weekly phone calls.” [8]
+mDiabetes: “...an SMS-based information service for people with diabetes during Ramadan fasting.” [9]
+EngageTB: “ Once a client has been confirmed as TB positive, the Lab Technicians will register the client back into the application
+and enable the client to receive reminders about Directly Observed Therapy (DOT).” [8]
+mTIKA: “...send SMS reminders to families when their children are due for immunization services.” [8]
+Moby App: “... sends automated SMS reminders to clients, reminding them of upcoming appointments, missed appointments, and
+approaching delivery dates so women can prepare to deliver in a health facility.” [8]
+Wired Mothers: “Women receive appointment reminders, educational messaging and can call their primary care providers to
+discuss non-acute issues.” [8]
+txtAlert: “This version of txtAlert delivers CD4 count results to patients who have been tested for HIV but may not return to the
+clinic to collect their CD4 counts results...” [8]
+
+U-Report Ebola Response in Uganda: “The following SMS alerts were carefully drafted and sent to Kibaale, and the surrounding
+districts Hoima, Kiboga, Mubende, Ntoroko, Bundibugyo, Kabarole Kyenjojo, Kyegegwa, Kyankwanzi, and Ibanda. SMS Alert 1: There
+is an Ebola outbreak in Kibaale. Today and tomorrow I am going to send u some SMSs to give u more info about how to recognise
+Ebola & how to prevent it...” [7]
+
+Illustrative examples*
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 11
+
+Digital approaches to facilitate
+financial transactions for clients.
+These digital financial transactions
+can be used to facilitate conditional
+cash transfers and payments
+related to health service delivery.
+
+Client financial
+transactions
+
+1.7
+
+Health information accessible to
+the general public triggered by
+the client. This could be available
+via websites, helplines, USSD/
+SMS menus, or client applications,
+among other channels, that may
+inform decision-making.
+
+On demand information
+services to clients
+
+1.6
+
+Digital platforms, including social
+media, that enable clients to report
+on public health events, as well as
+experiences, issues, and satisfaction
+with health services.
+
+Citizen based reporting
+
+1.5
+
+The use of mobile applications
+by clients, phone based sensors,
+health records, and wearables for
+clients to monitor their own health
+status. This can include wearable
+sensors, web-tools, and apps that
+allow clients to review and track
+their health status.
+
+- Mobile money payments directly made by client
+(this can include payments for any health
+services such as emergency transportation,
+health fees, etc)
+- Health voucher issuance (e.g. for mosquito
+nets, for transport, etc) and redemption
+services
+
+- Cash transfers to clients conditional on
+health related behaviours
+
+1.7.2 Transmit or manage
+vouchers to client for
+health services
+
+1.7.3 Transmit or manage
+incentives to clients
+for health services
+
+- Client searches or looks up information on a
+health topic
+- Decision support for clients
+
+- Public reporting on health system issues, such
+as the availability and quality of services
+received, interaction with health worker,
+satisfaction with services
+- Accountability monitoring, accountability
+reporting
+- Crowdsourced feedback, patient/client
+feedback, quality of care feedback
+- Surveillance notification, disease notification,
+client reporting
+
+- Self-access to client health record; patient’s
+own access to their health record.
+- Ability for clients to track their health history
+and clinical record
+- Personal health monitoring, self-tracking
+self-care, self-monitoring
+- Sensors and wearables for personal health
+monitoring
+- Client’s health data is collected based on a
+machine a client uses on their own
+- Personal health monitoring, self-tracking
+self-care, self-monitoring, journaling;
+capture patient originated data, client
+documentation of health status and activities
+
+Synonyms
+
+1.7.1 Transmit or manage
+out of pocket payments
+by client
+
+1.6.1 Client look-up of
+health information
+
+1.5.2 Reporting of public
+health events by clients
+
+1.5.1 Reporting of health
+system feedback by
+clients
+
+1.4.3 Active data capture/
+documentation by client
+
+1.4.2 Self monitoring of
+health or diagnostic
+data by client
+
+1.4.1 Access by client to own
+medical records
+
+1.4
+
+Personal health
+tracking
+
+Interventions
+
+Category
+
+mHealth for Safer Deliveries: “use mobile banking instead of cash to pay for transportation to the health facility when the woman is in
+labor or in case of complications.” [8]
+Changamka Maternal Health SmartCard: ” The maternal health smartcard is a pre-paid card that allows the bearer to obtain antenatal,
+delivery, and postnatal services at listed prices in participating maternity facilities.” [8]
+Mobile Finance to Reimburse Sexual and Reproductive Vouchers: “Voucher program’s transmits SMS money transfer to reimburse
+social franchise service providers for FP services to clients.” [8]
+Airtel Insurance with MicroEnsure: “ Airtel rewards loyal customers (who registered for the product by dialing a shortcode) with free
+insurance as long as they spent a minimum amount of airtime...through monthly SMS communication.” [8]
+Tanzania National eVoucher Scheme: “Web platform that allows clinic workers to issue vouchers for long-lasting insecticide-treated
+nets, redeemed at nearby retailers.” [8]
+Interactive Alerts/Zindagi Mehfooz: “A vaccine registry system that uses SMS reminders to caregivers and conditional cash transfers to
+caregivers ... The amount of cash the caregiver is eligible to win increases with each subsequent vaccine their child completes.” [8]
+
+Hesperian Health Wiki: “An online source of clear, actionable, and thorough health information accessible via computer or mobile
+device.” [8]
+EngageTB: “ The software enables clients do TB self-screening and access the basic health information related to TB via short messages
+(SMS) through their phones by sending a code word “TB” to a network neutral toll free short code, and a list of health facilities that have
+the capability to conduct laboratory tests to confirm TB.” [8]
+m4RH: “A set of text messages on family planning methods that users in can access via their mobile phones.” [8]
+
+EbolaTxT: "Citizens can report suspected Ebola cases via SMS." [8]
+
+U-Report: “ Youth can send alerts to key stakeholders about the issues being faced in their communities, and feeds back useful
+information to the U-Reporters.” [8]
+MomConnect: “Allow women to engage with the health system through help desk tools and feedback services.” [8]
+
+CycleTel Humsafar: “...she enters the date of her last period and the service informs her of her fertile days during the cycle. She receives
+alerts on her “unsafe days” throughout the month.” [8]
+
+Wearables and fitness trackers: “...tracks every part of your day—including activity, exercise, food, weight and sleep.” [13]
+Medopad Patient Monitoring: “...you can monitor vital signs, log symptoms, share information with your care providers and more.” [14]
+
+Digital Weighing Card: “This project is therefore seeking to provide a digital copy of every child weighing card, such that, it can be
+accessed via mobile phone whenever needed and updated by Community health Workers at any point in time.” [12]
+
+Illustrative examples*
+
+1.0 Clients
+
+page 12
+
+Digitized job aids that combine
+an individual’s health information
+with the health-care provider’s
+knowledge and clinical protocols
+in order to assist health-care
+providers in making diagnosis and
+treatment decisions [2].
+
+Healthcare provider
+decision support
+
+2.3
+
+Digitized record used to capture,
+store, access and share health
+information on a client or grouping
+of clients [2].
+
+Client health records
+
+2.2
+
+Client identity verification and
+enrollment into health services.
+
+2.3.3 Screen clients by risk or
+other health status
+
+2.3.2 Provide checklist
+according to protocol
+
+2.3.1 Provide prompts and
+alerts based according
+to protocol
+
+2.2.3 Manage client’s
+unstructured clinical
+records (e.g. notes,
+images, documents)
+2.2.4 Routine health indicator
+data collection and
+management
+
+2.2.2 Manage client’s
+structured clinical
+records
+
+2.2.1 Longitudinal tracking
+of clients’ health status
+and services
+
+2.1.2 Enrol client for
+health services/
+clinical care plan
+
+- Clinical decision support, job aid--linked to
+clients digital health record
+- Provision of alerts for abnormal findings/lab
+values, “IF THEN statements,”
+- Process algorithms to support service delivery
+according to care plans, guidelines, and
+protocols
+- Job aid and assessment tools to support
+service delivery—may or may not be linked to a
+digital health record
+- Decision trees to support service delivery
+according to care plans, guidelines, and
+protocols
+- Tools for screening, risk assessment, triage
+and client prioritization;
+- Job aid to support service delivery according
+to care plans, guidelines, and protocols
+
+- Clinical record of an individual with
+information that spans across multiple
+clinical domains.
+- Electronic medical record, personal health
+record
+- Electronic medical record and personal
+health records with that are not based on
+structured data, and instead including notes,
+images, documents
+- Data collection for Health Management
+Information System (HMIS)
+- Client health data collection
+
+- Domain-specific registers; eRegistries;
+eRegister, digital register, digital service
+record, immunization registry
+- Digitized registers for longitudinal health
+program, including tracking of migrant
+populations’ benefits and health status
+- Case management logs within specific target
+populations, including migrant populations
+
+- Register client/patient for health services
+
+- Biometrics, client registry
+
+2.1.1 Verify client
+unique identity
+
+2.1
+
+Client identification
+and registration
+
+Synonyms
+
+Interventions
+
+Category
+
+2.0 Healthcare Providers
+
+OpenSRP: “...contains electronic forms with embedded logic and decision-support, including checklists and algorithms for risk
+assessment.” [8]
+Emergency Triage Assessment and Treatment (ETAT): “Using the app with the ETAT protocol, health workers scan through the queues at
+the health centers assessing each child’s for the level of acuity and identifying children who need immediate assessment.” [8]
+ePartogram: “...syncs data within a facility and automatically prioritizes laboring clients based on clinical algorithms, helping supervisors
+allocate staffing appropriately.”
+CommCare Mobile Job Aid for Sahiyas: “It is built on a complex decision- and logic-processing platform that can support these CHWs to
+deliver timely services.” [8]
+
+cIMCI: “HSAs are guided step by step through the process of registering sick children, listening to their complaints, performing an
+examination, delivering diagnosis, and administering treatment...” [8]
+ASHA-Links: “ The application included a decision tree to guide ASHAs through assessments and a combination of text prompts, audio
+recordings, and images to assist in identifying, managing, and referring complications.” [8]
+
+Catholic Relief Services (CRS) Senegal [CommCare] mHealth Pilot: “The app was developed to collect data on childhood illnesses and
+manage child diarrhea cases that is accessible via a central database.” [8]
+SEDA Automated Health Data Exchange System (SEDA): “Data [facility-level indicators] are aggregated in a web-based central system
+to visualize and manage decision support. Aggregate-level data reported into the mobile system from health facilities are automatically
+uploaded into DHIS2 once validated.” [8]
+DHIS2: “...used as national health information systems for data management and analysis purposes, for health program monitoring and
+evaluation.” [15]
+Catholic Relief Services (CRS) Senegal [CommCare] mHealth Pilot: “The app could provide appropriate messaging and steps for CHWs
+to increase the quality of health services or reference to the next level health post.” [8]
+ePartogram: “The application uses validated clinical algorithms based on WHO guidelines to alert providers when critical observations
+need to be made and if they are abnormal.” [8]
+Mobile App for Management of HIV in Pregnancy: “Clinical and administrative flags are generated on both patient-specific and clinic
+population-specific bases for missed appointments, concerning laboratory analysis values, and missing information.” [8]
+
+Unpublished example: Records are unstructured and designed to be readable by people rather than machine readable, distinct from
+structured medical records which are coded in question/answer format.
+
+MP3 Youth: “Participant’s biometrics are collected using Mobiotrics, a smartphone-based system for identification and follow-up at the
+different service delivery point.” [8]
+eCompliance: “A portable biometric identification system operated by CHWs that is capable of identifying patients by their fingerprint
+and compiling patient adherence data for tuberculosis drug treatment (DOTS).” [8]
+MomConnect: “ Register each pregnancy at a government health facility...” [8]
+iCMM: “The first component of the iCCM application captures all elements of the village register used by the HSA. The application
+has built-in functionalities that support HSAs to register children between the ages of two and 59 months only and adhere to standard
+protocols.” [8]
+mTIKA: “...allows the health worker to digitally register children, track their immunization records, connect with nonadherent families
+before vaccination sessions end.” [8]
+MobyApp: “Each pregnant woman starting ANC, regardless of HIV status, is registered into a phone-based electronic record. This phonebased app is then used to prompt the nurse to provide (and record) a step by-step assessment of the mother and record all findings in
+the mother’s health record.” [8]
+CommCare Mobile Job Aid for Sahiyas: “...electronic data collection to track and support the registration, follow-up, and completion of
+care for pregnant women, postpartum mothers, and children up to the age of two years.” [8]
+OpenSmart Register Platform (OpenSRP): “a client registry for enumeration and managing continuity of care...” [8]
+District Health Information Systems 2 (DHIS2) Tracker: “...lets you store information about individuals and track these persons over time
+using a flexible set of identifiers.” [15]
+OpenMedical Record System (OpenMRS): “…a software platform and a reference application which enables design of a customized
+medical records system.” [16]
+Epic Systems: “...provide a full picture of health and membership information for your members and a secure web portal for providers to
+interact with and view managed care information.”[17]
+
+Illustrative examples*
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 13
+
+Digital approaches to support
+communication and coordination
+mechanisms to facilitate referrals,
+both within the health sector and
+to other health-related sectors
+
+Referral coordination
+
+2.6
+
+Communication and transmission
+of information among healthcare
+providers, supervisors, and health
+system managers.
+
+Healthcare provider
+communication
+
+2.5
+
+Provision of health-care services
+at a distance [2]. The delivery of
+health care services, where patients
+and providers are separated by
+distance [3].
+
+Telemedicine
+
+2.4
+
+Category
+
+- Telemonitoring, virtual monitoring.
+- Provider is able to monitor client’s health
+through an implanted sensor/diagnostic
+equipment.
+- Store and forward
+- Asynchronous telemedicine
+
+2.4.2 Remote monitoring
+of client health or
+diagnostic data by
+provider
+
+2.6.3 Manage referrals
+between health and other
+sectors (social services,
+police, justice, economic
+support schemes)
+
+2.6.2 Manage referrals
+between points of service
+within health sector
+
+2.6.1 Coordinate emergency
+response and transport
+
+- Intersectoral referral management
+
+- Public health related updates to health
+workers
+- Emergency alerts to healthcare providers
+- Mass messaging to healthcare providers
+- Peer support, peer learning, closed user groups
+- Communication mechanisms for healthcare
+providers to discuss among themselves
+- Ambulance systems, emergency response
+management
+- Care coordination
+- Clinical task linking
+- Referral management
+
+2.5.4 Transmit non-routine
+health event alerts to
+healthcare provider(s)
+
+2.5.5 Peer group for
+healthcare providers
+
+- Alerts and reminders to healthcare provider
+- Motivational communication healthcare
+provider
+- Transmission of workflow updates to
+healthcare provider
+
+- Supportive supervision, coaching/mentoring,
+audit and feedback
+- Communication to healthcare provider based
+on their performance
+
+2.5.3 Transmit routine
+news and workflow
+notifications to
+healthcare provider(s)
+
+2.5.2 Communication and
+performance feedback to
+healthcare provider(s)
+
+2.5.1 Communication from
+healthcare provider(s) to
+supervisor
+
+- Inter-provider communication, closed usergroup, health, health worker to health worker
+communication.
+- Consulting other health care providers,
+particularly specialists, for patient case
+management; seeking second opinion for
+patient case management
+
+- Remote consultation, tele consultation, client
+based telemedicine, hotlines, call centers,
+helpline
+- Real-time telemedicine, interactive
+telemedicine, synchronous telemedicine
+- Client calls a health worker or hotline to
+receive clinical guidance on health issue
+
+2.4.1 Consultations between
+remote client and
+healthcare provider
+
+2.4.3 Transmission of medical
+data (e.g. images, notes,
+and videos) to healthcare
+provider
+2.4.4 Consultations for case
+management between
+healthcare providers
+
+Synonyms
+
+Interventions
+
+Mobile-based Early Detection and Prevention of Oral Cancer (mEPOC): “CHWs can communicate with the specialists through open
+Medical Record System (OpenMRS) and refer patients for treatment in a timely manner.” [8]
+ePartogram: “It also strengthens the referral pathway between peripheral and referral facilities by enabling electronic transmission of
+data between facilities...” [8]
+Unnamed project: Referrals do not only take place within the health sector, but also between the health sector and other non-health
+services. For example in cases of gender based violence referrals may be made between social services, police, justice services and health
+services. In cases of traffic crashes referrals are needed between police, emergency services and health services. In cases of malnutrition
+referrals may be needed between health and food support services. In cases where health and poverty and closely inter-related,
+referrals may be needed between economic strengthening, social services and health services. Digital systems may provide features for
+supporting and tracking these referrals.
+
+mHealth for Safer Deliveries: “...use text or voice communication to notify a health facility that a woman is in transit to ensure the facility
+is prepared.” [8]
+
+Health Enablement and Learning Platform (HELP): “...includes a group chat feature which allows CHWs to share knowledge and
+communicate directly with supervisors, and a toll-free help desk enables end-users to access support when they need it.” [8]
+
+mHERO: “...a two-way, mobile phone-based communication system that uses basic text messaging, or SMS, to connect ministries of
+health and health workers.” [8]
+Health Enablement and Learning Platform (HELP): “...includes a group chat feature which allows CHWs to share knowledge and
+communicate directly with supervisors, and a toll-free help desk enables end-users to access support when they need it.” [8]
+CommCare for performance feedback in Madhya Pradesh: “To communicate detailed performance feedback, we set up a call center,
+placing weekly calls to the community nutrition experts and relaying feedback on performance metrics. Phone calls provided a way to
+discuss and receive feedback from the community nutrition experts regarding any work-related issues, personal needs, or technical
+difficulties...” [20]
+eLMIS Bangladesh: “This system generates SMS alerts, sent in the name of the Ministry of Health and Family Welfare (MOHFW)/
+Procurement and Logistics Management Cell (PLMC) for action reminder - time to report; tracking report submission against timeline;
+and alerts for potential stock imbalance/stock out of FP commodities.” [8]
+Text message reminders to Kenyan health workers: “...a one-way communication of text message reminders about paediatric malaria
+case management sent to health workers’ personal mobile phones. All health workers doing outpatient consultations in the intervention
+group received text messages about malaria case-management for 6 months.” [21]
+mHERO: “...a two-way, mobile phone-based communication system that uses basic text messaging, or SMS, to connect ministries of
+health and health workers to communicate critical messages to health workers during a crisis or emergency response.” [8]
+
+Mobile-based Early Detection and Prevention of Oral Cancer (mEPOC): “Information collected in the mobile phones is uploaded to
+OpenMRS A specialist in remote locations sends the recommendation through SMS.” [8]
+Peek Vision: “A health worker with minimal training can use Peek to gather detailed clinical information. Images are graded and patients
+diagnosed, either through an automated process, or via cascading of digital images to a network of experts around the world.” [8]
+
+Africa Teledermatology Project: “The Africa Teledermatology Project operates in six African countries, using cameras and laptop PCs
+to capture and send images of patients to specialists in other African countries, Austria and the United States providing diagnostic and
+treatment support local physicians, dermatologists, and health care workers in hospitals and clinics in underserved regions.”[19]
+
+Body Sensor Networks for Mobile Health Monitoring: “...patients’ biosignals are measured by means of body worn sensors which
+communicate wirelessly with a handheld device. Alarms and biosignals can be transmitted over wireless communication links to a
+remote location, and a remote health professional can view the biosignals via a web application.” [18]
+
+VillageReach Chipatala cha pa Foni (CCPF): “A toll-free health hotline that is staffed by trained health workers who provide information,
+advice and referrals over the phone.” [8]
+Ligne Verte: “By dialing a toll-free number, callers speak to a trained educator and get accurate information about birth spacing, the
+correct use of family planning methods, how to avoid unwanted pregnancies, and locating the nearest partner clinic.” [8]
+
+Illustrative examples*
+
+2.0 Healthcare Providers
+
+page 14
+
+2.10.4 Track biological
+specimens
+
+2.10.3 Capture diagnostic
+results from digital
+devices
+
+Laboratory and
+diagnostics imaging
+management
+
+Digital approaches to manage and
+exchange laboratory and diagnostic
+orders and results.
+
+2.10.2 Transmit and track
+diagnostic orders
+
+2.10.1 Transmit client
+diagnostic result to
+healthcare provider
+
+2.9.3 Report adverse
+drug events
+
+2.9.2 Track client’s
+medication consumption
+
+2.9.1 Transmit or track
+prescription orders
+
+2.8.2 Assess capacity of
+healthcare provider(s)
+
+2.10
+
+Digital approaches to facilitate
+the management of prescriptions,
+including tracking prescription
+orders and monitoring physical
+consumption of medication.
+
+Prescription and
+medication management
+
+2.9
+
+The management and provision
+of education and training content
+in electronic form for health
+professionals [2]. In contrast
+to decision support, healthcare
+provider training does not need to
+be used at the point of care.
+
+Healthcare provider
+training
+
+2.8
+
+Automated scheduling and
+planning tools to assist in
+prioritizing provider followup. Digital work planning and
+scheduling tools can take the
+form of reminders to healthcare
+providers on upcoming/overdue
+services and other mechanisms
+to flag clients that need to be
+prioritized for service delivery [4].
+
+2.8.1 Provide training content
+and reference material
+to healthcare provider(s)
+
+2.7
+
+- Tracking of blood donations
+
+- Point of care diagnostics
+- Diagnostic accessories added to digital
+devices
+
+- Laboratory results management
+- Tests results communication between
+healthcare providers
+- Laboratory test requisition and management
+
+- Tracking medication orders
+- Tools to place prescription orders or track the
+status of prescriptions and refills
+- Monitoring adherence to medications and
+drugs
+- Monitoring/observing whether patients have
+taken their prescribed medications
+- Reporting contraindications, drug
+interactions, adverse effects
+
+- Quizzes and and interactive exercises to assess
+knowledge and competence
+
+- mLearning, eLearning, virtual learning
+- Educational videos, multimedia learning and
+access to clinical guidance
+- Training reinforcement and refreshers
+
+- Work planning
+- Prioritization of daily activities/tasks
+- Task management
+
+- Automated scheduling of client’s health
+appointments
+
+2.7.1 Schedule client
+appointments based on
+clinical care plan
+2.7.2 Schedule healthcare
+provider’s activities
+
+Scheduling and
+activity planning for
+healthcare providers
+
+Synonyms
+
+Interventions
+
+Category
+
+Bahmni-OpenELIS: “When a patient is registered in Bahmni using the registration module, the patient name and demographic
+information is synced automatically to the lab system. When the patient goes to the lab, the lab technician collecting the sample can look
+up the patient and add tests for that patient.” [22]
+FioNet:”...a mobile, in vitro diagnostic device that interprets commercially available RDTs for infectious diseases...; airFio is a secure cloud
+database that stores point -of-care data transmitted by Deki over local mobile phone networks.” [8]
+GXAlert: A system which attaches a 3G USB modem to GeneXpert machines and ensures real-time reporting of results to a
+centralized database.” [8]
+Mobile Phone Microscopy for the diagnosis of Parasitic Worm Infections: “Converts iPhone into a field microscope for point-of-care
+diagnosis of soil-transmitted helminths in school-aged children.” [8]
+Unnamed example: Biological products such as blood donations and specimens are collected, tested and transported to the point of
+use. Digital systems can support the identification and tracking of these products from the point of collection, through quality control
+procedures, to the point of use.
+
+Project Mwana-SMS for Early Infant Diagnosis of HIV: “When test results are ready, the central SMS system sends a message alerting
+the clinic workers.” [8]
+
+Texting-based reporting of adverse drug reactions to ensure patient safety: “Text messages received by any of the three mobile phone
+companies were directed to a central system. The system was accessible 24 hours a day and 7 days a week and was configured to set an
+alert if there was a cluster of similar adverse drug reactions (ADRs) from one or more drugs or one drug repeatedly reported for several
+ADRs entering the system.” [23]
+
+SIMpill® Medication Adherences Solution: “When the patient opens his bottle of medication, an automatic SMS message is sent from
+the bottle’s SIM card to the patient’s health facility, which records that the medication has been taken. “ [8]
+
+Bahmni: “Pharmacy management enables a healthcare facility to effectively dispense medications to patients, monitor & manage stock
+and suppliers and in billing and accounting for drugs and services.” [22]
+
+Projecting Health: “Frontline healthcare workers are equipped with educational videos for conducting video screenings and leading
+group discussions on issues raised in the videos.” [8]
+iDEA: Interactive Distance Education Application: “Providing health workers with mobile-based video instruction and reference
+materials...”[8]
+Safe Delivery App: “The App contains three animated clinical instruction films...can also be used as a reference tool during clinical
+work...” [8]
+OppiaMobile: “...mobile learning platform for delivering learning content, video, and quizzes.”[8]
+Mobile Academy: “... an interactive voice response (IVR) training course designed to refresh CHWs’ knowledge of simple steps families
+can take to improve the health of mothers and babies, and to improve their ability to clearly communicate them.” [8]
+Safe Delivery App: “ The App features push messages with quiz questions spurring the health worker to use the application to update
+their knowledge.” [8]
+
+mCARE: “...integrated mobile phone and server-based software system for CHWs that helps them to digitally manage their daily
+workflow.” [8]
+CommCare for home-based care: “...provides CHWs a checklist of activities which are expected to be performed during each home visit,
+as well as reminders of appointments.” [8]
+
+OpenSRP: “The platform integrates scheduling and service reminder tools...” [8]
+
+Illustrative examples*
+
+2.0 Healthcare Providers
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 15
+
+Digital approaches for alerting and
+compiling information on nonroutine public health events.
+
+Public health event
+notification
+
+3.3
+
+Digital approaches for monitoring
+and reporting stock levels,
+consumption and distribution of
+medical commodities. This can
+include the use of communication
+systems (e.g. SMS) and data
+dashboards to manage and
+report on supply levels of medical
+commodities.
+
+Supply chain
+management
+
+3.2
+
+Digital approaches to manage
+the health workforce, including
+the use of databases to record
+training levels, certifications, and
+identification of health workers.
+
+Human resource
+management
+
+3.1
+
+Category
+- Health worker registry; provider registry
+- Documentation of healthcare providers’
+demographics, identification, health facility
+assignment, and other identifier information
+- Remote monitoring of healthcare providers
+- Workforce management
+- Audit and feedback
+- Supervision, supportive supervision
+- Clinical task tracking
+
+3.1.1 List health workforce
+cadres and related
+identification
+information
+
+- Logistics management
+- Procurement management
+- Counterfeit drug notification
+- Monitoring drug authenticity and quality
+- Pharmacovigilance
+
+3.2.5 Manage procurement of
+commodities
+
+3.2.6 Report counterfeit or
+substandard drugs by
+clients
+
+- Public health surveillance
+- Surveillance from laboratory systems
+- Disease surveillance
+
+- Drug regulation and registration
+
+3.2.4 Register licensed drugs
+and health commodities
+
+3.3.1 Notification of public
+health events from point
+of diagnosis
+
+- Sensors to monitor temperature and stability
+of vaccines
+
+- Stockout prevention and monitoring
+- Alerts and notifications of stock levels
+- Restocking coordination
+
+3.2.3 Monitor cold-chain
+sensitive commodities
+
+3.2.2 Notify stock levels of
+health commodities
+
+Stock monitoring of health commodities
+Logistics management
+Stock management
+Commodity security
+
+- Track or manage preservice and/or in-service
+training received by a health worker
+
+3.1.4 Record training
+information on
+healthcare provider(s)
+3.2.1 Manage inventory and
+distribution of health
+commodities
+-
+
+- Management of health worker registration
+- Certification or licensure with regulatory
+authority such as a professional council
+
+3.1.3 Manage registration/
+certification of
+healthcare provider(s)
+
+3.1.2 Monitor performance of
+healthcare provider(s)
+
+Synonyms
+
+Interventions
+
+3.0 Health System Managers
+
+International Quality Short Messaging System (IQSMS): “Healthcare workers’ send preformatted commodity reports on key HIV stock
+status to a central server via SMS. The tool enables districts to full order of all commodities as quantified by the system and based on
+what has been consumed.” [8]
+eLMIS Bangladesh: “...electronic Logistics Management Information System (eLMIS) collects data on consumption and availability of FP
+commodities, which is consolidated and entered for [viewing on] an interactive dashboard.” [8]
+cStock: “HSAs sent a toll-free SMS using their personal mobile phones reporting current stock levels and medicines received...” [8]
+iCCM: “Health workers can report stock levels and then submitted the data to cStock, a program to improve the tracking of
+inventories...” [8]
+cStock: “... automatically calculated resupply quantities and notified staff at health centers, who check their stock levels and advise HSAs
+whether stock was available for pick up or alerted health facilities and district managers that there was insufficient stock.”[8]
+Informed Push Model: “Logistics professionals enter logistics data into CommTrack on tablets at the moment of delivery, and
+CommTrack automatically calculates delivery quantities based on previous consumption.” [8]
+Electronic Data Logging Thermometers: “Continuous monitoring through data logging thermometers link with alarm capabilities and
+email notification.” [25]
+Accredited Drug Dispensing Outlet (ADDO): The app also includes “an SMS-based information exchange module, which allows ADDO
+and pharmacy personnel to send and receive information, for example, on accreditation requirements or drug recalls.” [8]
+i-Import: “An online platform to track all pharmaceutical import applications and approvals made by Ethiopia’s pharmaceutical
+regulator...It also electronically integrates with procurement data from PFSA, the procurement and supply arm of the the Ministry of
+Health.”[26]
+mPedigree: “...allows buyers to verify the authenticity of medicines for free by text messaging a unique scratch-off code found on the
+product to a universal number. This request is routed to mPedigree’s servers and consumers receive a quick response to authenticate
+their purchase.” [8]
+Mobile Product Authentication: “Consumers send an SMS to the Sproxil server of a one-time-use scratch card code listed on the
+pharmaceutical products and receive reply SMS determining drug authenticity.” [8]
+mSOS Ebola (KEMRI Laboratory module): “Results on the laboratory confirmation of the patient serum samples were updated using
+the mSOS Ebola web portal, and text messages were automatically delivered to senior management and policy decisionmakers at the
+MOH.” [8]
+GXAlert: “Automatically send SMS text or email alerts to MOH officials when a new MDR positive or Rif positive case is detected.” [8]
+
+iCCM: The application includes a “routine supervision checklist on few key indicators of performance by the Health Surveillance
+Assistants (HSAs)...and a dashboard that enables users to see at a glance the status of the work being done by HSA.” [8]
+Health Enablement and Learning Platform (HELP): “Community Health Extension Workers (CHEWs)receive weekly reports on worker
+performance and are able to target those in need of additional support.” [8]
+mHealth for Community-Based Family Planning Services: “A system for the field team to monitor data and provide feedback to CHWs
+on a weekly basis...” [8]
+iHRIS Qualify: “...enables a licensing or certification authority, such as a nursing council, to track complete data on a health worker cadre
+from pre-service training through attrition. It captures information about health professionals in that cadre from the time they enter preservice training through registration, certification, and/or licensure.” [24]
+iHRIS Train: “Consolidates health worker training attendance and related data from several training organizations into a centralized
+database that can be queried and used to generate reports for further analysis.” [24]
+
+iHRIS Manage: “... supports Ministry of Health and other service delivery organizations to track, manage, deploy, and map their health
+workforce.” [24]
+
+Illustrative examples*
+
+page 16
+
+Digital approaches that enable
+administrative functions related to
+the management of facilities.
+
+Facility management
+
+3.7
+
+Digital approaches to track and
+manage the maintenance of health
+equipment. This can include the
+use of databases, as well as sensors
+and feedback mechanisms for
+monitoring health equipment.
+
+Equipment and asset
+management
+
+3.6
+
+Digital approaches to manage
+financial transactions for health
+system related expenses. These
+digital financial transactions can
+be used for payments to health
+workforce, insurance/payers, as well
+as administrative management of
+budget and expenditures.
+
+Health financing
+
+3.5
+
+Digital approaches to support the
+registration of births and deaths,
+issue birth and death certificates,
+and compile and disseminate vital
+statistics, including cause of death
+information [5].
+
+Civil Registration and
+Vital Statistics (CRVS)
+
+3.4
+
+Category
+
+-
+
+- Death surveillance; mortality surveillance
+-
+
+Issuance of death certificate
+Eligibility verification for insurance
+Determination of insurance coverage
+Recording and verifying that a client is a
+member of a scheme or entitled to benefits
+- Social protection
+- Social protection, administrative transaction
+processing; claims management
+- Claims and encounter reports for
+reimbursement
+- Insurance financial transactions
+- Health worker routine payments
+- Payroll management
+
+3.4.3 Certify birth event
+
+3.4.5 Register death event
+
+3.4.6 Certify death event
+3.5.1 Register and verify client
+insurance membership
+
+3.5.3 Track and manage
+insurance reimbursement
+
+3.7.2 Assess health facilities
+
+3.7.1 List health facilities and
+related information
+
+3.6.2 Track regulation
+and licensing of
+medical equipment
+
+3.6.1 Monitor status
+and maintenance of
+health equipment
+
+3.5.6 Manage budget and
+expenditures
+
+3.5.4 Transmit or manage
+routine payroll payment
+to healthcare provider(s)
+3.5.5 Transmit or manage
+incentives to healthcare
+provider (s)
+
+3.5.2 Track insurance billing
+and claims submission
+
+3.4.4 Notify death event
+
+- Birth event alert
+- Birth registration (can include registration
+for health system purposes, as well as
+registration to civil registrar)
+
+3.4.1 Notify birth event
+3.4.2 Register birth event
+
+- Register health facilities
+- List unique IDs and locations of health
+facilities
+- Health facility registry
+- Assess performance and capacity of services
+provided at health facilities
+- Regulate and monitor services provided at
+health facilities
+- Supervision of health facilities
+
+- Listing of available equipment and physical
+assets, e.g. hospital beds
+- Tracking maintenance of equipment
+- Physical asset management
+- Regulation of physical assets
+
+- Financial incentives for health worker
+motivation
+- Conditional payments, performance-based
+financing for health workers, results based
+financing
+- Financial management
+- Resource planning
+
+Civil Registration and Vital Statistics (CRVS)
+Issuance of birth certificate
+Death surveillance
+Death event alert
+
+Synonyms
+
+Interventions
+
+Accredited Drug Dispensing Outlet (ADDO): “Web-based database of information on private sector drug outlets’ premises and
+personnel, including facility registration, personnel qualifications and certifications, inspections, and payments of associated fees.” [8]
+Supportive supervision for TB in Nigeria: “...a standard, integrated TB supervision checklist to assess and monitor diagnostic laboratories
+and DOTS services in the public and private sectors.” [8]
+
+Kenya Master Health Facility List: “An application with all health facilities and community units in Kenya. Each health facility and
+community unit is identified with unique code and their details describing the geographical location, administrative location, ownership,
+type and the services offered.” [35]
+
+Unpublished example: Countries have regulatory and licensing procedures for equipment used in the health sector. Digital systems can
+help track equipment through the regulatory process and manage information about the regulatory status of different types and brands
+of equipment.
+
+PlanRep: “A planning and reporting database used by Local Government Authorities (LGAs) and designed to incorporate the Strategic
+Plan (Medium-Term Expenditure Framework), revenue projection, budgets, funds received, and track expenditure and physical
+implementation.” [34]
+Unpublished example: Mechanisms to regularly update a list of available physical assets within health facilities and track their
+maintenance needs.
+
+mHealth for Community-Based Family Planning Services: “...pay-for-performance system with monthly performance targets with realtime performance tracking on the CHW phone and program dashboard.”[8]
+
+Accredited Drug Dispensing Outlet (ADDO): “The application included a mobile payment component for premises and personnel
+fees...”[8]
+
+Ghanaian NHIA e-claims: “The National Health Insurance Authority (NHIA) is introducing electronic payment of claims (e-claims) to 47
+health care providers across the country to ease delays associated with payment of claims.” [33]
+Bahmni: “Manage patient information across registration, point of care, investigations, and billing.” [22]
+
+mTika: “Health Assistants can receive birth notifications from clients via SMS.” [8]
+Mobile birth registration initiative in Tanzania: “Health providers can register newborns by entering the child’s information in a mobile
+phone application and sending it to a central database at the Registration, Insolvency and Trusteeship Agency (RITA), which is the
+Government Agency responsible for Birth Registration in Tanzania.” [27]
+Mobile birth registration initiative in Tanzania: “Once health providers register the newborn with RITA, they can issue birth certificates
+to the child’s parents at the same clinical visit.” [27]
+117 Call Alert System: “The telephone number ‘117’ could be used at no charge to the caller from any major mobile telecommunication
+network in the country. Calls were made to alert authorities of sick persons requiring isolation and Ebola testing (live alerts), and deaths
+from any cause (death alerts), which under national policy required safe and dignified burials performed by trained teams.” [28]
+MOVE-IT: “Health workers can use SMS on mobile phones to notify a death event.” [29]
+Innovative Mobile-phone Technology for Community Health Operation (ImTeCHO): “Accredited Social Health Activists (ASHAs) can
+record infant deaths using a mobile phone application.” [30]
+SmartVA system: “Health care providers can collect and analyze verbal autopsy data using a mobile phone application.” [31]
+mTIBA: “Funds will be placed in specialized health wallets through M-Pesa and their use will be restricted to spending at healthcare
+providers who form part of a nationwide M-TIBA network...the treatment data is then checked by a medical person. If the treatment has
+been approved, Theresa’s payment request is immediately accepted and the money is transferred to the healthcare provider.” [32]
+
+Illustrative examples*
+
+3.0 Health System Managers
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+page 17
+
+- Dirty data management
+- Automated data cleaning
+- Maintenance and versioning of health
+informatics terminology standards
+- Terminology services
+- Semantic interoperability
+- Recording cause of death
+- ICD coding, clinical coding for reporting and
+insurance
+- Mapping local terminology, codes, and
+formats
+- Global Positioning System (GPS) mapping
+
+4.2.1 Parse unstructured data
+into structured data
+
+The capability of two or more
+systems to communicate and
+exchange data through specified
+data formats and communication
+protocols. [6]
+
+Data exchange and
+interoperability
+
+4.4
+
+The use of geolocation coordinates
+to map objects and events.
+
+Location mapping
+
+4.3
+
+Digital approaches to code data
+and manage the use of
+standardized datasets.
+
+Data coding
+
+4.2
+
+4.4.1 Data exchange
+across systems
+
+4.3.4 Map location of
+healthcare providers
+
+4.3.3 Map location of
+clients and
+households
+
+4.3.2 Map location of
+health event
+
+4.3.1 Map location of
+health facilities/
+structures
+
+4.2.3 Classify disease codes
+and cause of mortality
+
+-
+
+Data mediation
+Interoperability and accessibility
+Information exchange
+Interoperability layer
+Data orchestration
+
+Geospatial visualization
+GPS mapping
+Demarcation of catchment areas
+Mapping coverage areas
+Geospatial visualization
+GPS mapping
+Mapping of health worker route to track the
+services provided
+
+- Predictive analytics
+- Machine learning
+- Artificial intelligence
+
+4.1.4 Automated analysis
+of data to generate
+new information
+or predictions on
+future events
+
+-
+
+- Reporting dashboards, report generation
+- Presentations of data
+- Business intelligence
+
+4.1.3 Data synthesis and
+visualizations
+
+4.2.2 Merge, de-duplicate and
+curate coded datasets or
+terminologies
+
+- Data warehouse, repository
+
+4.1.2 Data storage and
+aggregation
+
+Digital approaches to data
+collection, management,
+analysis, storage. This can include
+standalone interventions focusing
+exclusively on data collection
+and management, as well as
+data services to support other
+interventions, such as data
+visualization within supply chain
+management.
+
+Data collection,
+management,
+and use
+
+- Electronic data collection, digital data
+collection
+- Mobile based surveys, using applications such
+as OpenDataKit (ODK), Enketo, FormHub, etc
+
+4.1.1 Non-routine data
+collection and
+management
+
+4.1
+
+Synonyms
+
+Interventions
+
+Category
+
+4.0 Data Services
+
+Vaccination Tracking System: “Support enhancements to Immunization Plus Days (IPD) processes by recording the vaccination
+team positions (the “tracks”) at regular interval. The use of GIS maps and GPS tracking has been identified as a valuable tool to locate
+settlements, help prepare microplans and to monitor the activity of vaccination teams.” [39]
+OpenHIM: “It provides secure communications and data governance as well as support for routing, orchestrating and translating
+requests as they flow between systems.” [36]
+
+mWater: “A mobile platform for mapping sites such as water sources, sharing test results and performing surveys.” [8]
+GIS Mapping of Health Facilities: “The portal displayed the location of each facility location on Google Maps. It allows a user to conduct
+searches for facilities by district, public or private sector ownership, and services.” [8]
+mSOS: “Patient-level information on the suspected cases, response action conducted, [where the case was identified], and laboratory
+confirmation were displayed on the password-protected web portal dashboard.” [8]
+mSpray: “Team leaders enter data on their tablets while standing at each house, which is sent to the cloud server as soon as a data
+connection is established. The spatially-integrated spray data is then visualized on the tablet by the team leaders showing the location
+and type of spray point.” [8]
+
+Bahmni: “The clinicians can capture diagnosis of patients and manage their old diagnosis. In the backend these diagnoses can be
+mapped to ICD-10 codes for reporting purposes.” [22]
+
+Unpublished example: This tool will develop a set of automated algorithms for cleaning and linking unstructured information (e.g.
+medical notes) to structured datasets.
+Open Concept Lab: “This toolset will include a web application to search, export, subscribe, and map to standardized terminology and
+indicators...and functionality to collaboratively create, export, and subscribe to subsets of terms and indicators that represent particular
+specialty areas.” [38]
+
+PMI Africa Indoor Residual Spraying (AIRS): “Staff were initially tasked to record data on smartphones from roughly 12,000 households
+and electronically submit to a cloud-based system accessible to the M&E manager at the home office.” [8]
+Hang-Up and Track: “ODK form collected distribution data on the number of sleeping places and the amount of LLINs given and
+installed...” [8]
+mHBB: “Mobile phone-based methods for collection of HBB training and quality improvement data among facility-based birth
+attendants. 12 existing HBB paper forms were digitized for use on Android mobile phones using ODK.” [8]
+Anesthesiological Data Warehouse Project: “A web interface that will allow users to input and access pre-, peri- and postoperative
+anaesthesiology data.” [36]
+cStock: “District- and central-level managers could monitor supply chain performance, using over 10 indicators displayed on a webbased dashboard.” [8]
+DHIS2: “Get the complete overview through the pivot table feature, spot trends in your data with charting and visualize your
+geographical data aspects using the GIS functionality.” [15]
+Simplified, Effective, Labour Monitoring-to-Action (SELMA) tool: “Prediction models will be developed to identify women at risk of
+intrapartum-related perinatal death or morbidity (primary outcomes) throughout the course of labour.” [37]
+
+Illustrative examples*
+
+References for definitions and illustrative examples of digital health interventions
+1. Hawkins, R. P., et al. (2008). Understanding tailoring in communicating about health. Health Education Research, 23(3), 454–466.
+http://doi.org/10.1093/her/cyn004
+2. National eHealth strategy toolkit. Geneva: World Health Organization, International Telecommunication Union; 2012 (https://www.itu.
+int/dms_pub/itu-d/opb/str/D-STR-E_HEALTH.05-2012-PDF-E.pdf, accessed 2 September 2015).
+3. Global diffusion of eHealth: making universal health coverage achievable. Report of the third global survey on eHealth. Geneva: World
+Health Organization; 2016. Licence: CC BY-NC-SA 3.0 IGO
+4. Labrique, AB., Vasudevan, L., Kochi, E., Fabricant, R., & Mehl, G. (2013). mHealth innovations as health system strengthening tools: 12
+common applications and a visual framework. Global Health, Science and Practice, 1(2), 160–71. http://doi.org/10.9745/GHSP-D-13-00031
+5. Civil registration and vital statistics (CRVS). Geneva: World Health Organization; 2017 (http://www.who.int/healthinfo/civil_registration/
+en/. accessed 17 May 2017)
+6. ISO/TR 14639-1:2012(en) Health informatics — Capacity-based eHealth architecture roadmap — Part 1: Overview of national eHealth
+initiatives. Geneva: International Standards Organization. (https://inen.isolutions.iso.org/obp/ui#iso:std:iso:tr:14639:-1:ed-1:v1:en,
+accessed 21 November 2017)
+7. U-Report utilized in Ebola response in 2012. Kampala: U-Report Uganda; 2017 (http://www.ureport.ug/story/185/, accessed 24
+November 2017).
+8. mHealth Compendium Database. Baltimore: K4Health; 2017. (http://www.mhealthknowledge.org/resources/mhealth-compendiumdatabase, accessed 19 November 2017).
+9. Be He@lthy Be Mobile Annual Report 2016. Geneva: World Health Organization, International Telecommunication Union; 2016 (http://
+www.who.int/ncds/prevention/be-healthy-be-mobile/51127-WHO-ITU-BHBM-Annual-Report-2016.pdf?ua=1, accessed 16 November 2017).
+10. Government of Senegal boosts Ebola awareness through SMS campaign. Geneva: World Health Organization; 2014 (http://www.who.
+int/features/2014/senegal-ebola-sms/en/, accessed 16 November 2017).
+11. Senegal: Official inauguration of our maternal health program in Tambacounda - WAHA International. Dakar: WAHA International;
+2015 (https://waha-international.org/senegal-official-inauguration-of-our-maternal-health-program-in-tambacounda/, accessed 16
+November 2017).
+12. Digital Weighing(CWC) Card. Kumasi: Child Health Information and Monitoring Foundation; 2017 (http://www.chimf.org/node/177,
+accessed 24 November 2017).
+13. Fitbit Official Site for Activity Trackers & More. San Francisco: Fitbit; 2017 (https://www.fitbit.com/home, accessed 24 November 2017).
+14. Medopad | Our solutions [website]. London: Medopad; 2017 [cited 24 November 2017]. Available from: http://www.medopad.com/
+solutions
+15. DHIS 2 Overview [website]. Oslo: DHIS2; 2017 (https://www.dhis2.org/overview, accessed 24 November 2017).
+16. About OpenMRS | OpenMRS [website]. OpenMRS; 2017 (http://openmrs.org/about/, accessed 24 November 2017).
+17. Software [webiste]. Verona: Epic; 2017 (http://www.epic.com/software#ManagedCare, accessed 24 November 2017).
+18. Jones V, Gay V, Leijdekkers P. Body sensor networks for mobile health monitoring: Experience in Europe and Australia. In Digital
+Society, 2010. Fourth International Conference on International Conference on Digital Society (pp. 204-209). IEEE (http://ieeexplore.
+ieee.org/abstract/document/5432796/, accessed 22 November 2017).
+19. Africa Teledermatology Project [website]. Washington DC: Center for Health Market Innovations; 2017 (http://
+healthmarketinnovations.org/program/africa-teledermatology-project, accessed 24 November 2017).
+20. Kaphle S, Matheke-Fischer M, Lesh N. Effect of Performance Feedback on Community Health Workers’ Motivation and Performance in
+Madhya Pradesh, India: A Randomized Controlled Trial. JMIR public health and surveillance. 2016 Jul;2(2).
+21. Zurovac D, Sudoi RK, Akhwale WS, Ndiritu M, Hamer DH, Rowe AK, Snow RW. The effect of mobile phone text-message reminders on
+Kenyan health workers’ adherence to malaria treatment guidelines: a cluster randomised trial. The Lancet. 2011 Sep 2;378(9793):795803.
+22. Feature List [website]. Bahmni™ Coalition. 2017; (https://www.bahmni.org/feature-list/, accessed 24 November 2017).
+23. Vergeire-Dalmacion G, Castillo-Carandang NT, Juban NR, Amarillo ML, Tagle MP, Baja ES. Texting-Based Reporting of Adverse Drug
+Reactions to Ensure Patient Safety: A Feasibility Study. JMIR public health and surveillance. 2015 Jul;1(2).
+24. iHRIS Health Workforce Software. Chapel Hill: iHRIS; 2017. Available from: (https://www.ihris.org/ihris-suite/health-workforce-software/,
+accessed 24 November 2017).
+25. Accurate Cold Chain Temperature Monitoring Using Digital Data Logger Thermometers. Gaithersburg: National Institute of Standards
+and Technology; (https://www.nist.gov/sites/default/files/documents/2017/04/28/NIC-2012-Accurate-Cold-Chain-TemperatureMonitoring-Using-Digital-Data-Logger-Thermometers.pdf, accessed 24 November 2017).
+
+page 18
+
+26. Online Platform Modernizes Ethiopia’s Import Permit Process. Boston: John Snow, Inc.; 2017 (http://www.jsi.com/JSIInternet/
+Newsroom/newsitem/display.cfm?a=1&id=2272, accessed 24 November 2017).
+27. In the United Republic of Tanzania, a new solution for birth registration. Dar es Salaam: UNICEF; 2017 (https://www.unicef.org/
+infobycountry/tanzania_71827.html, accessed 24 November 2017).
+28. Alpren C, Jalloh MF, Kaiser R, Diop M, Kargbo SA, Castle E, Dafae F, Hersey S, Redd JT, Jambai A. The 117 call alert system in Sierra Leone:
+from rapid Ebola notification to routine death reporting. BMJ global health. 2017 Sep 1;2(3):e000392.
+29. Move it: Report on Monitoring of Vital Events using Information Technology. Geneva: World Health Organization; 2013 (http://www.
+who.int/healthinfo/civil_registration/crvs_report_it_2013.pdf, accessed 23 November 2017).
+30. Modi D, Patel J, Desai S, Shah P. Accessing completeness of pregnancy, delivery, and death registration by Accredited Social Health
+Activists [ASHA] in an innovative mHealth project in the tribal areas of Gujarat: A cross-sectional study. Journal of postgraduate
+medicine. 2016 Jul;62(3):170.
+31. SmartVA Analyze Application [website]. Seattle: Institute for Health Metrics and Evaluation; 2017 (http://www.healthdata.org/
+node/858, accessed 24 November 2017).
+32. M-TIBA is truly leapfrogging healthcare in Kenya. Nairobi: PharmAccess Foundation; 2017 (https://www.pharmaccess.org/update/mtiba-is-truly-leapfrogging-healthcare-in-kenya/, accessible 24 November 2017).
+33. Yeboah I. NHIA introduces e-payment of claims. Graphic Online. 03 October 2013 (https://www.graphic.com.gh/news/general-news/
+nhia-introduces-e-payment-of-claims.html, accessed 24 November 2017).
+34. PlanRep for Prime Minister’s Office, Regional and Local Government [website]. Dar es Salaam: University of Dar es Salaam Computing
+Center; 2017 (http://ucc.co.tz/?q=content/planrep-prime-minister%E2%80%99s-office-regional-and-local-government, accessed 24
+November 2017).
+35. Kenya Master Health Facility List. Nairobi: Republic of Kenya Ministry of Health; 2017 (http://kmhfl.health.go.ke/#/home, accessed 23
+November 2017).
+36. Current Projects [website]. Cape Town: Jembi Health Systems; 2017 (https://www.jembi.org/project-category/current-project/, accessed
+24 November 2017).
+37. Souza JP, Oladapo OT, Bohren MA, Mugerwa K, Fawole B, Moscovici L, Alves D, Perdona G, Oliveira-Ciabati L, Vogel JP, Tunçalp Ö. The
+development of a simplified, effective, labour monitoring-to-action (SELMA) tool for better outcomes in labour difficulty (BOLD):
+study protocol. Reproductive health. 2015 May 26;12(1):49.
+38. About Open Concept Lab. Open Concept Lab; 2017 (https://www.openconceptlab.org/about/, accessed 24 November 2017).
+39. Vaccination Tracking System. Geneva: Novel-T; 2017 (http://www.novel-t.ch/en/project/vaccination-tracking-system, accessed 23
+November 2017).
+
+Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
+
+
+Manish Kumar, MEASURE Evaluation
+© World Health Organization 2018
+Some rights reserved. This work is available under
+the Creative Commons Attribution-NonCommercialShareAlike 3.0 IGO Licence (CCBY-NC-SA 3.0 IGO;
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+igo).
+Suggested citation. Classification of digital health
+interventions. Geneva: World Health Organization;
+2018(WHO/RHR/18.06). Licence: CC BY-NC-SA 3.0 IGO.
+.
