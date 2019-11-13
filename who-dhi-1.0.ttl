@@ -37,6 +37,7 @@ Also referred to as a taxonomy, this Classification scheme is anchored on the un
 1.7.2	Transmit or manage vouchers to client for health services
 1.7.3	Transmit or manage incentives to clients for health services
 
+
 2.0	Healthcare Providers
 2.1	Client identification and registration
 2.1.1	Verify client unique identity
@@ -97,18 +98,6 @@ Also referred to as a taxonomy, this Classification scheme is anchored on the un
 3.1.3	Manage certification/registration of healthcare provider(s)
 3.1.4	Record training credentials of healthcare provider(s)
 
-3.3	Public health event notification
-
-3.6	Equipment and asset management
-
-3.3.1	Notification of public health events from point of diagnosis
-3.6.1	Monitor status of health equipment
-
-3.4	Civil Registration and Vital Statistic
-3.4.1	Notify birth event
-3.4.2 Register birth event
-3.4.3 Certify birth event
-
 3.2	Supply chain management
 3.2.1	Manage inventory and distribution of health commodities stock levels of
 3.2.2	Notify health commodities
@@ -117,337 +106,36 @@ Also referred to as a taxonomy, this Classification scheme is anchored on the un
 3.2.5	Manage of commodities
 3.2.6	Report counterfeit or substandard drugs by clients
 
-3.4.4 Notify death event
-Track regulation and
-3.6.2 licensing of medical equipment
+3.3	Public health event notification
+3.3.1	Notification of public health events from point of diagnosis
+
+3.4	Civil Registration and Vital Statistic
+3.4.1	Notify birth event
+3.4.2	Register birth event
+3.4.3	Certify birth event
+3.4.4	Notify death event
+3.4.5	Register death event
+3.4.6	Certify death event
+
+3.5	Health financing
+3.5.1	Register and verify client insurance membership
+3.5.2	Track insurance billing and claims submission
+3.5.3	Track and manage insurance reimbursement
+3.5.4	Transmit routine payroll payment to healthcare provider(s)
+3.5.5	Transmit or manage incentives to healthcare provider(s)
+3.5.6	Manage budget and expenditures
+
+3.6	Equipment and asset management
+3.6.1	Monitor status of health equipment
+3.6.2	Track regulation and licensing of medical equipment
 
 3.7	Facility management
 3.7.1	List health facilities and related information
 3.7.2	Assess health facilities
 
-2.3.3
 
-Screen clients by risk or
-other health status
-
-2.4
-
-Telemedicine
-
-2.4.1
-
-Consultations between
-remote client and
-healthcare provider
-
-3.5.1
-
-Register and verify client
-insurance membership
-
-insurance billing and
-3.5.2 Track
-claims submission
-
-3.5.3
-
-Track and manage
-insurance reimbursement
-Transmit routine payroll
-
-Transmit or manage
-
-3.5.5 incentives to healthcare
-provider(s)
-
-budget and
-3.5.6 Manage
-expenditures
-
-For questions or feedback, please contact
-Dr. Garrett Mehl | mehlg@who.int
-
-Tigest Tamrat | tamratt@who.int
-
-Healthcare
-provider training
-4.0
-Data Services
-4.1
-
-Data collection,
-management,
-and use
-
-4.1.1
-
-Non routine data collection
-and management
-
-4.1.2
-
-Data storage and
-aggregation
-
-4.1.3
-
-Data synthesis and
-visualization
-
-4.1.4
-
-Automated analysis of
-data to generate new
-information or predictions
-on future events
-
-3.5.4 payment to healthcare
-provider(s)
-
-2.5.1
-
-Communication from
-healthcare provider to
-supervisor
-
-2.8
-
-Remote monitoring of
-
-3.4.6 Certify death event
-
-Health
-financing
-
-Healthcare
-provider
-communication
-
-2.4.2 client health or diagnostic
-
-3.4.5 Register death event
-
-3.5
-
-2.5
-
-4.2
-
-Data
-coding
-
-4.3
-
-Location
-mapping
-
-4.2.1
-
-Parse unstructured data
-into structured data
-
-4.3.1
-
-Map location of health
-facilities/structures
-
-4.2.2 curate coded datasets or
-
-Merge, de-duplicate, and
-
-location of
-4.3.2 Map
-health events
-
-4.2.3 Classify disease codes
-
-location of
-4.3.3 Map
-clients and households
-
-terminologies
-
-location of
-4.3.4 Map
-healthcare provider(s)
-
-4.4
-
-Data exchange and
-interoperability
-
-4.4.1
-
-Data exchange
-across systems
-
-
-2.0
-Healthcare Providers
-
-2.1.1
-
-Verify client
-unique identity
-
-1.7
-
-Client financial
-transactions
-
-2.1.2
-
-Enrol client for health
-services/clinical care plan
-
-1.7.1
-
-Transmit or manage out
-of pocket payments by
-client(s)
-
-1.7.2
-
-Transmit or manage
-vouchers to client(s) for
-health services
-
-1.7.3
-
-Transmit or manage
-incentives to client(s) for
-health services
-3.1
-
-Human resource
-management
-
-3.3
-
-Public health
-event notification
-
-3.6
-
-Equipment and
-asset management
-
-2.8.1
-
-Provide training content to
-healthcare provider(s)
-
-3.1.1
-
-List health workforce
-cadres and related
-identification information
-
-3.3.1
-
-Notification of public
-health events from
-point of diagnosis
-
-3.6.1
-
-Monitor status of
-health equipment
-
-3.6.2
-
-Track regulation and
-licensing of medical
-equipment
 
 capacity of
-2.8.2 Assess
-healthcare provider(s)
-
-Transmit routine news and
-
-2.9
-
-Prescription
-and medication
-management
-
-2.9.1
-
-Transmit or track
-prescription orders
-
-2.5.3 workflow notifications to
-healthcare provider(s)
-Transmit non-routine
-
-2.5.4 health event alerts to
-
-healthcare provider(s)
-
-Peer group for healthcare
-2.5.5 providers
-
-2.2.3 unstructured
-
-clinical records
-
-2.8
-
-Communication and
-
-2.5.2 performance feedback to
-
-2.6
-
-Referral
-coordination
-
-2.6.1
-
-Coordinate emergency
-response and transport
-
-2.6.3
-
-Track client's medication
-2.9.2 consumption
-
-2.10
-
-Laboratory and
-Diagnostics
-Imaging
-Manangement
-
-diagnostic result
-2.10.1 Transmit
-to healthcare provider
-
-health sector
-
-and track
-2.10.2 Transmit
-diagnostic orders
-
-Manage referrals between
-health and other sectors
-
-2.7
-
-Health worker
-activity planning
-and scheduling
-
-2.7.1
-
-Identify client(s) in need
-of services
-
-2.7.2
-
-Schedule healthcare
-provider's activities
 
 3.1.2
 
@@ -455,6 +143,42 @@ Monitor performance of
 healthcare provider(s)
 
 Capture diagnostic results
+
+Track regulation and
+
+Transmit routine payroll
+
+
+
+Healthcare provider training
+Healthcare provider communication
+
+4.0	Data Services
+4.1	Data collection, management, and use
+4.1.1	Non routine data collection and management
+4.1.2	Data storage and aggregation
+4.1.3	Data synthesis and visualization
+4.1.4	Automated analysis of data to generate new information or predictions on future events
+
+4.2	Data coding
+4.2.1	Parse unstructured data into structured data
+4.2.2	curate coded datasets or terminologies
+4.2.3	Classify disease codes
+
+4.3	Location mapping
+4.3.1	Map location of health facilities/structures
+4.3.2	Map location of health events
+4.3.3	Map location of clients and households
+4.3.4	Map location of healthcare provider(s)
+
+Merge, de-duplicate, and
+
+4.4	Data exchange and interoperability
+4.4.1	Data exchange across systems
+
+3.1	Human resource management
+3.3	Public health event notification
+3.6	Equipment and asset management
 2.10.3 from
 digital devices
 
@@ -487,7 +211,6 @@ of healthcare provider(s)
 Supply chain
 management
 
-3.4.4 Notify death event
 
 3.2.1
 
@@ -495,7 +218,6 @@ Manage inventory and
 distribution of health
 commodities
 
-3.4.6 Certify death event
 
 3.2.2
 
@@ -513,9 +235,10 @@ Manage referrals between
 3.0
 Health System Managers
 
+3.5	Health financing
+3.5.1	Register and verify client insurance membership
 Monitor cold-chain
-3.2.3 sensitive
-commodities
+3.2.3	sensitive commodities
 Register licensed drugs
 3.2.4 and
 health commodities
@@ -529,31 +252,11 @@ Report counterfeit or
 3.2.6 substandard drugs
 by clients
 
-3.4.5 Register death event
 
-3.5
 
-Health
-financing
-
-3.5.1
-
-Register and verify client
-insurance membership
-
-4.0
-Data Services
-4.1
-
-Data collection,
-management,
-and use
-
-4.1.1
-
-Non-routine data
-collection and
-management
+4.0	Data Services
+4.1	Data collection, management, and use
+4.1.1	Non-routine data collection and management
 
 4.1.2
 
@@ -578,6 +281,7 @@ related information
 4.1.4
 
 3.7.2
+3.5
 
 Assess health facilities
 
@@ -641,36 +345,9 @@ Track insurance billing and
 3.5.2 claims
 submission
 
-3.5.3
-
-Track and manage
-insurance reimbursement
-Transmit routine payroll
-
-3.5.4 payment to healthcare
-provider(s)
-
-Transmit or manage
-
-3.5.5 incentives to healthcare
-provider(s)
-
-budget and
-3.5.6 Manage
-expenditures
 
 Remote monitoring of
 
-2.4.2 client health or diagnostic
-data by provider
-
-Transmission of medical
-2.4.3 data
-to healthcare provider
-Consultations for case
-
-2.4.4 management between
-healthcare provider(s)
 
 How to use it?
 
@@ -865,370 +542,92 @@ Secretariat will periodically update and version this Classification based on te
 consultations and public feedback. Subsequent releases of this Classification will be
 available at http://who.int/reproductivehealth/topics/mhealth/en/.
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
 
-page 3
-
-Health System Challenges
-1
-
-Information
-
-3
-
-Quality
-
-6
-
-Efficiency
-
-1.1
-
-Lack of population
-denominator
-
-3.1
-
-Poor patient experience
-
-6.1
-
-Inadequate workflow
-management
-
-1.2
-
-Delayed reporting
-of events
-
-3.2
-
-Insufficient health
-worker competence
-
-3.2.1
-
-1.3
-
-Lack of quality/
-reliable data
-
-3.3
-
-Manage inventory and distribution
-Low
-quality
-health
-of
-health
-commodities
-
-6.2
-
-Lack of or inappropriate
-referrals
-
-commodities
-
-6.3
-
-3.4
-
-Low health worker
-motivation
-
-Poor planning and
-coordination
-
-1.4
-
-Communication
-roadblocks
-
-6.4
-
-Delayed provision of care
-
-1.5
-
-Lack of access to
-information or data
-
-3.5
-
-Insufficient continuity
-of care
-
-6.5
-
-Inadequate access to
-transportation
-
-1.6
-
-Insufficient utilization of
-data and information
-
-3.6
-
-Inadequate supportive
-supervision
-
-3.7
-
-7
-
-Cost
-
-Lack of unique identifier
-
-Poor adherence to
-guidelines
-
-7.1
-
-High cost of manual
-processes
-
-7.2
-
-Lack of effective resource
-allocation
-
-1.7
-
-2
-
-Availability
-
-4
-
-Acceptability
-
-2.1
-
-Insufficient supply
-of commodities
-
-4.1
-
-Lack of alignment with
-local norms
-
-7.3
-
-Client-side expenses
-
-2.2
-
-Insufficient supply
-of services
-
-7.4
-
-4.2
-
-Lack of coordinated payer
-mechanism
-
-2.3
-
-Insufficient supply
-of equipment
-
-Programs which do not
-address individual beliefs
-and practices
-
-8
-
-Accountability
-
-2.4
-
-Insufficient supply of
-qualified health workers
-
-8.1
-
-Insufficient patient
-engagement
-
-page 4
-
-5
-
-Utilization
-
-5.1
-
-Low demand for services
-
-5.2
-
-Geographic inaccessibility
-
-8.2
-
-Unaware of service
-entitlement
-
-5.3
-
-Low adherence to
-treatments
-
-8.3
-
-Absence of community
-feedback mechanisms
-
-5.4
-
-Loss to follow up
-
-8.4
-
-Lack of transparency in
-commodity transactions
-
-8.5
-
-Poor accountability
-between the levels of
-the health sector
-
-8.6
-
-Inadequate understanding
-of beneficiary populations
-
-System Categories
-A
-
-Census, population
-information &
-data warehouse*
-
-I
-
-Emergency response
-system*
-
-R
-
-Laboratory and diagnostics
-information system*
-
-B
-
-Civil registration
-and vital statistics
-
-J
-
-Environmental
-monitoring system*
-
-S
-
-Learning and
-training system
-
-C
-
-Client applications
-
-K
-
-Facility management
-information system
-
-T
-
-Logistics management
-information system (LMIS)
-
-D
-
-Client communication
-system
-
-L
-
-Geographic information
-system (GIS)
-
-U
-
-Pharmacy information
-system*
-
-E
-
-Clinical terminology
-and classifications*
-
-M
-
-V
-
-Public health and disease
-surveillance system*
-
-F
-
-Community-based
-information system
-
-Health finance and
-insurance information
-system*
-
-N
-
-W
-
-Research information
-system
-
-G
-
-Data interchange
-interoperability
-and accessibility*
-
-Health management
-information system (HMIS)
-
-O
-
-Human resource
-information system
-
-X
-
-Shared Health Record
-and health information
-respositories*
-
-H
-
-Electronic medical record*
-
-P
-
-Identification registries
-and directories*
-
-Y
-
-Telemedicine
-
-Q
-
-Knowledge management
-system*
+Health System Challenges
+
+1	Information
+1.1	Lack of population denominator
+1.2	Delayed reporting of events
+1.3	Lack of quality/reliable data
+1.4	Communication roadblocks
+1.5	Lack of access to information or data
+1.6	Insufficient utilization of data and information
+1.7	Lack of unique identifier
+
+2	Availability
+2.1	Insufficient supply of commodities
+2.2	Insufficient supply of services
+2.3	Insufficient supply of equipment
+2.4	Insufficient supply of qualified health workers
+
+3	Quality
+3.1	Poor patient experience
+3.2	Insufficient health worker competence
+3.3	Low quality health commodities
+3.4	Low health worker motivation
+3.5	Insufficient continuity of care
+3.6	Inadequate supportive supervision
+3.7	Poor adherence to guidelines
+
+4	Acceptability
+4.1	Lack of alignment with local norms
+4.2	Programs which do not address individual beliefs and practices
+
+5	Utilization
+5.1	Low demand for services
+5.2	Geographic inaccessibility
+5.3	Low adherence to treatments
+5.4	Loss to follow up
+
+6	Efficiency
+6.1	Inadequate workflow management
+6.2	Lack of or inappropriate referrals
+6.3	Poor planning and coordination
+6.4	Delayed provision of care
+6.5	Inadequate access to transportation
+
+7	Cost
+7.1	High cost of manual processes
+7.2	Lack of effective resource allocation
+7.3	Client-side expenses
+7.4	Lack of coordinated payer mechanism
+
+8	Accountability
+8.1	Insufficient patient engagement
+8.2	Unaware of service entitlement
+8.3	Absence of community feedback mechanisms
+8.4	Lack of transparency in commodity transactions
+8.5	Poor accountability between the levels of the health sector
+8.6	Inadequate understanding of beneficiary populations
+
+
+
+System Categories
+A	Census, population information & data warehouse*
+B	Civil registration and vital statistics
+C	Client applications
+D	Client communication system
+E	Clinical terminology and classifications*
+F	Community-based information system
+G	Data interchange interoperability and accessibility*
+H	Electronic medical record*
+I	Emergency response system*
+J	Environmental monitoring system*
+K	Facility management information system
+L	Geographic information system (GIS)
+M	Health finance and insurance information system*
+N	Health management information system (HMIS)
+O	Human resource information system
+P	Identification registries and directories*
+Q	Knowledge management system*
+R	Laboratory and diagnostics information system*
+S	Learning and training system
+T	Logistics management information system (LMIS)
+U	Pharmacy information system*
+V	Public health and disease surveillance system*
+W	Research information system
+X	Shared Health Record and health information respositories*
+Y	Telemedicine
 
 *Adapted from the International Standards Organization [3]
 
@@ -1247,137 +646,6 @@ visual framework. Global Health: Science and Practice. 2013 Aug 1;1(2):160-71.
 5. National eHealth strategy toolkit. Geneva: World Health Organization, International Telecommunication Union; 2012 (https://www.itu.int/dms_
 pub/itu-d/opb/str/D-STR-E_HEALTH.05-2012-PDF-E.pdf, accessed 2 March 2018).
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
-page 5
-
-1.0
-Clients
-1.1
-
-Targeted client
-communication
-
-1.3
-
-Client to client
-communication
-
-1.1.1
-
-Transmit health event
-alerts to specific
-population group(s)
-
-1.3.1
-
-Peer group for clients
-
-1.1.2
-
-Transmit targeted health
-information to client(s)
-based on health status or
-demographics
-
-1.4
-
-Personal health
-tracking
-
-1.4.1
-
-Access by client to own
-medical records
-
-1.6
-
-On-demand
-information
-services to clients
-
-1.6.1
-
-Client look-up of health
-information
-
-1.7
-
-Client financial
-transactions
-
-1.7.1
-
-Transmit or manage out
-of pocket payments by
-client(s)
-
-1.1.3
-
-Transmit targeted alerts
-and reminders to client(s)
-
-1.4.2
-
-1.1.4
-
-Transmit diagnostics
-result, or availability of
-result, to client(s)
-
-Self monitoring of health
-or diagnostic data by client
-
-1.4.3
-
-Active data capture/
-documentation by client
-
-1.7.2
-
-Transmit or manage
-vouchers to client(s) for
-health services
-
-1.2
-
-Untargeted client
-communication
-
-1.5
-
-Citizen based
-reporting
-
-1.7.3
-
-Transmit or manage
-incentives to client(s) for
-health services
-
-1.2.1
-
-Transmit untargeted
-health information to an
-undefined population
-
-1.5.1
-
-Reporting of health system
-feedback by clients
-
-1.5.2
-
-1.2.2
-
-Transmit untargeted
-health event alerts to
-undefined group
-
-Reporting of public health
-events by clients
-
-page 6
 
 2.0
 Healthcare Providers
@@ -2903,9 +2171,8 @@ workforce, insurance/payers, as well
 as administrative management of
 budget and expenditures.
 
-Health financing
+3.5	Health financing
 
-3.5
 
 Digital approaches to support the
 registration of births and deaths,
