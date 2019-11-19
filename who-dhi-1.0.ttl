@@ -541,112 +541,10 @@ Illustrative examples*
 
 page 12
 
-Digitized job aids that combine
-an individual’s health information
-with the health-care provider’s
-knowledge and clinical protocols
-in order to assist health-care
-providers in making diagnosis and
-treatment decisions [2].
 
 Healthcare provider
 decision support
 
-2.3
-
-Digitized record used to capture,
-store, access and share health
-information on a client or grouping
-of clients [2].
-
-Client health records
-
-2.2
-
-Client identity verification and
-enrollment into health services.
-
-2.3.3 Screen clients by risk or
-other health status
-
-2.3.2 Provide checklist
-according to protocol
-
-2.3.1 Provide prompts and
-alerts based according
-to protocol
-
-2.2.3 Manage client’s
-unstructured clinical
-records (e.g. notes,
-images, documents)
-2.2.4 Routine health indicator
-data collection and
-management
-
-2.2.2 Manage client’s
-structured clinical
-records
-
-2.2.1 Longitudinal tracking
-of clients’ health status
-and services
-
-2.1.2 Enrol client for
-health services/
-clinical care plan
-
-- Clinical decision support, job aid--linked to
-clients digital health record
-- Provision of alerts for abnormal findings/lab
-values, “IF THEN statements,”
-- Process algorithms to support service delivery
-according to care plans, guidelines, and
-protocols
-- Job aid and assessment tools to support
-service delivery—may or may not be linked to a
-digital health record
-- Decision trees to support service delivery
-according to care plans, guidelines, and
-protocols
-- Tools for screening, risk assessment, triage
-and client prioritization;
-- Job aid to support service delivery according
-to care plans, guidelines, and protocols
-
-- Clinical record of an individual with
-information that spans across multiple
-clinical domains.
-- Electronic medical record, personal health
-record
-- Electronic medical record and personal
-health records with that are not based on
-structured data, and instead including notes,
-images, documents
-- Data collection for Health Management
-Information System (HMIS)
-- Client health data collection
-
-- Domain-specific registers; eRegistries;
-eRegister, digital register, digital service
-record, immunization registry
-- Digitized registers for longitudinal health
-program, including tracking of migrant
-populations’ benefits and health status
-- Case management logs within specific target
-populations, including migrant populations
-
-- Register client/patient for health services
-
-- Biometrics, client registry
-
-2.1.1 Verify client
-unique identity
-
-2.1
-
-Client identification
-and registration
 
 Synonyms
 
@@ -711,53 +609,15 @@ interact with and view managed care information.”[17]
 
 Illustrative examples*
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
-page 13
-
-Digital approaches to support
-communication and coordination
-mechanisms to facilitate referrals,
-both within the health sector and
-to other health-related sectors
-
-Referral coordination
-
-2.6
-
-Communication and transmission
-of information among healthcare
-providers, supervisors, and health
-system managers.
-
-Healthcare provider
-communication
-
-2.5
-
-Provision of health-care services
-at a distance [2]. The delivery of
-health care services, where patients
-and providers are separated by
-distance [3].
-
-Telemedicine
 
 2.4
 
 Category
 
-- Telemonitoring, virtual monitoring.
-- Provider is able to monitor client’s health
-through an implanted sensor/diagnostic
-equipment.
-- Store and forward
-- Asynchronous telemedicine
 
-2.4.2 Remote monitoring
-of client health or
-diagnostic data by
-provider
+
+
+
 
 2.6.3 Manage referrals
 between health and other
@@ -818,20 +678,8 @@ healthcare provider(s)
 healthcare provider(s) to
 supervisor
 
-- Inter-provider communication, closed usergroup, health, health worker to health worker
-communication.
-- Consulting other health care providers,
-particularly specialists, for patient case
-management; seeking second opinion for
-patient case management
 
-- Remote consultation, tele consultation, client
-based telemedicine, hotlines, call centers,
-helpline
-- Real-time telemedicine, interactive
-telemedicine, synchronous telemedicine
-- Client calls a health worker or hotline to
-receive clinical guidance on health issue
+
 
 2.4.1 Consultations between
 remote client and
@@ -903,85 +751,12 @@ correct use of family planning methods, how to avoid unwanted pregnancies, and l
 
 Illustrative examples*
 
-2.0 Healthcare Providers
 
-page 14
 
-2.10.4 Track biological
-specimens
-
-2.10.3 Capture diagnostic
-results from digital
-devices
-
-Laboratory and
-diagnostics imaging
-management
-
-Digital approaches to manage and
-exchange laboratory and diagnostic
-orders and results.
-
-2.10.2 Transmit and track
-diagnostic orders
-
-2.10.1 Transmit client
-diagnostic result to
-healthcare provider
-
-2.9.3 Report adverse
-drug events
-
-2.9.2 Track client’s
-medication consumption
-
-2.9.1 Transmit or track
-prescription orders
-
-2.8.2 Assess capacity of
-healthcare provider(s)
+Laboratory and diagnostics imaging management
 
 2.10
-
-Digital approaches to facilitate
-the management of prescriptions,
-including tracking prescription
-orders and monitoring physical
-consumption of medication.
-
-Prescription and
-medication management
-
-2.9
-
-The management and provision
-of education and training content
-in electronic form for health
-professionals [2]. In contrast
-to decision support, healthcare
-provider training does not need to
-be used at the point of care.
-
-Healthcare provider
-training
-
-2.8
-
-Automated scheduling and
-planning tools to assist in
-prioritizing provider followup. Digital work planning and
-scheduling tools can take the
-form of reminders to healthcare
-providers on upcoming/overdue
-services and other mechanisms
-to flag clients that need to be
-prioritized for service delivery [4].
-
-2.8.1 Provide training content
-and reference material
-to healthcare provider(s)
-
-2.7
+2.9The management and provision of education and training content in electronic form for health professionals [2]. In contrast to decision support, healthcare provider training does not need to be used at the point of care.
 
 - Tracking of blood donations
 
@@ -1085,43 +860,9 @@ Illustrative examples*
 
 2.0 Healthcare Providers
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
 page 15
-
-Digital approaches for alerting and
-compiling information on nonroutine public health events.
-
 Public health event
 notification
-
-3.3
-
-Digital approaches for monitoring
-and reporting stock levels,
-consumption and distribution of
-medical commodities. This can
-include the use of communication
-systems (e.g. SMS) and data
-dashboards to manage and
-report on supply levels of medical
-commodities.
-
-Supply chain
-management
-
-3.2
-
-Digital approaches to manage
-the health workforce, including
-the use of databases to record
-training levels, certifications, and
-identification of health workers.
-
-Human resource
-management
-
-3.1
 
 Category
 - Health worker registry; provider registry
@@ -1258,53 +999,8 @@ Illustrative examples*
 
 page 16
 
-Digital approaches that enable
-administrative functions related to
-the management of facilities.
+Digital approaches that enable administrative functions related to the management of facilities.
 
-Facility management
-
-3.7
-
-Digital approaches to track and
-manage the maintenance of health
-equipment. This can include the
-use of databases, as well as sensors
-and feedback mechanisms for
-monitoring health equipment.
-
-Equipment and asset
-management
-
-3.6
-
-Digital approaches to manage
-financial transactions for health
-system related expenses. These
-digital financial transactions can
-be used for payments to health
-workforce, insurance/payers, as well
-as administrative management of
-budget and expenditures.
-
-3.5	Health financing
-
-
-Digital approaches to support the
-registration of births and deaths,
-issue birth and death certificates,
-and compile and disseminate vital
-statistics, including cause of death
-information [5].
-
-Civil Registration and
-Vital Statistics (CRVS)
-
-3.4
-
-Category
-
--
 
 - Death surveillance; mortality surveillance
 -
@@ -1472,29 +1168,18 @@ formats
 4.2.1 Parse unstructured data
 into structured data
 
-The capability of two or more
-systems to communicate and
-exchange data through specified
-data formats and communication
-protocols. [6]
+The capability of two or more systems to communicate and exchange data through specified data formats and communication protocols. [6]
 
 Data exchange and
 interoperability
 
 4.4
 
-The use of geolocation coordinates
-to map objects and events.
+The use of geolocation coordinates to map objects and events.
 
 Location mapping
 
 4.3
-
-Digital approaches to code data
-and manage the use of
-standardized datasets.
-
-Data coding
 
 4.2
 
@@ -1539,44 +1224,11 @@ services provided
 - Machine learning
 - Artificial intelligence
 
-4.1.4 Automated analysis
-of data to generate
-new information
-or predictions on
-future events
-
--
-
 - Reporting dashboards, report generation
 - Presentations of data
 - Business intelligence
 
-4.1.3 Data synthesis and
-visualizations
-
-4.2.2 Merge, de-duplicate and
-curate coded datasets or
-terminologies
-
 - Data warehouse, repository
-
-4.1.2 Data storage and
-aggregation
-
-Digital approaches to data
-collection, management,
-analysis, storage. This can include
-standalone interventions focusing
-exclusively on data collection
-and management, as well as
-data services to support other
-interventions, such as data
-visualization within supply chain
-management.
-
-Data collection,
-management,
-and use
 
 - Electronic data collection, digital data
 collection
