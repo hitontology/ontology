@@ -865,26 +865,15 @@ Public health event
 notification
 
 Category
-- Health worker registry; provider registry
-- Documentation of healthcare providers’
-demographics, identification, health facility
-assignment, and other identifier information
-- Remote monitoring of healthcare providers
-- Workforce management
-- Audit and feedback
-- Supervision, supportive supervision
-- Clinical task tracking
+
 
 3.1.1 List health workforce
 cadres and related
 identification
 information
 
-- Logistics management
-- Procurement management
-- Counterfeit drug notification
-- Monitoring drug authenticity and quality
-- Pharmacovigilance
+
+
 
 3.2.5 Manage procurement of
 commodities
@@ -893,11 +882,9 @@ commodities
 substandard drugs by
 clients
 
-- Public health surveillance
-- Surveillance from laboratory systems
-- Disease surveillance
 
-- Drug regulation and registration
+
+
 
 3.2.4 Register licensed drugs
 and health commodities
@@ -906,12 +893,9 @@ and health commodities
 health events from point
 of diagnosis
 
-- Sensors to monitor temperature and stability
-of vaccines
 
-- Stockout prevention and monitoring
-- Alerts and notifications of stock levels
-- Restocking coordination
+
+
 
 3.2.3 Monitor cold-chain
 sensitive commodities
@@ -919,13 +903,9 @@ sensitive commodities
 3.2.2 Notify stock levels of
 health commodities
 
-Stock monitoring of health commodities
-Logistics management
-Stock management
-Commodity security
 
-- Track or manage preservice and/or in-service
-training received by a health worker
+
+
 
 3.1.4 Record training
 information on
@@ -935,9 +915,6 @@ distribution of health
 commodities
 -
 
-- Management of health worker registration
-- Certification or licensure with regulatory
-authority such as a professional council
 
 3.1.3 Manage registration/
 certification of
@@ -1002,102 +979,8 @@ Illustrative examples*
 Digital approaches that enable administrative functions related to the management of facilities.
 
 
-- Death surveillance; mortality surveillance
--
 
-Issuance of death certificate
-Eligibility verification for insurance
-Determination of insurance coverage
-Recording and verifying that a client is a
-member of a scheme or entitled to benefits
-- Social protection
-- Social protection, administrative transaction
-processing; claims management
-- Claims and encounter reports for
-reimbursement
-- Insurance financial transactions
-- Health worker routine payments
-- Payroll management
 
-3.4.3 Certify birth event
-
-3.4.5 Register death event
-
-3.4.6 Certify death event
-3.5.1 Register and verify client
-insurance membership
-
-3.5.3 Track and manage
-insurance reimbursement
-
-3.7.2 Assess health facilities
-
-3.7.1 List health facilities and
-related information
-
-3.6.2 Track regulation
-and licensing of
-medical equipment
-
-3.6.1 Monitor status
-and maintenance of
-health equipment
-
-3.5.6 Manage budget and
-expenditures
-
-3.5.4 Transmit or manage
-routine payroll payment
-to healthcare provider(s)
-3.5.5 Transmit or manage
-incentives to healthcare
-provider (s)
-
-3.5.2 Track insurance billing
-and claims submission
-
-3.4.4 Notify death event
-
-- Birth event alert
-- Birth registration (can include registration
-for health system purposes, as well as
-registration to civil registrar)
-
-3.4.1 Notify birth event
-3.4.2 Register birth event
-
-- Register health facilities
-- List unique IDs and locations of health
-facilities
-- Health facility registry
-- Assess performance and capacity of services
-provided at health facilities
-- Regulate and monitor services provided at
-health facilities
-- Supervision of health facilities
-
-- Listing of available equipment and physical
-assets, e.g. hospital beds
-- Tracking maintenance of equipment
-- Physical asset management
-- Regulation of physical assets
-
-- Financial incentives for health worker
-motivation
-- Conditional payments, performance-based
-financing for health workers, results based
-financing
-- Financial management
-- Resource planning
-
-Civil Registration and Vital Statistics (CRVS)
-Issuance of birth certificate
-Death surveillance
-Death event alert
-
-Synonyms
-
-Interventions
 
 Accredited Drug Dispensing Outlet (ADDO): “Web-based database of information on private sector drug outlets’ premises and
 personnel, including facility registration, personnel qualifications and certifications, inspections, and payments of associated fees.” [8]
@@ -1144,26 +1027,8 @@ mTIBA: “Funds will be placed in specialized health wallets through M-Pesa and 
 providers who form part of a nationwide M-TIBA network...the treatment data is then checked by a medical person. If the treatment has
 been approved, Theresa’s payment request is immediately accepted and the money is transferred to the healthcare provider.” [32]
 
-Illustrative examples*
 
-3.0 Health System Managers
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
-page 17
-
-- Dirty data management
-- Automated data cleaning
-- Maintenance and versioning of health
-informatics terminology standards
-- Terminology services
-- Semantic interoperability
-- Recording cause of death
-- ICD coding, clinical coding for reporting and
-insurance
-- Mapping local terminology, codes, and
-formats
-- Global Positioning System (GPS) mapping
 
 4.2.1 Parse unstructured data
 into structured data
@@ -1203,37 +1068,6 @@ structures
 4.2.3 Classify disease codes
 and cause of mortality
 
--
-
-Data mediation
-Interoperability and accessibility
-Information exchange
-Interoperability layer
-Data orchestration
-
-Geospatial visualization
-GPS mapping
-Demarcation of catchment areas
-Mapping coverage areas
-Geospatial visualization
-GPS mapping
-Mapping of health worker route to track the
-services provided
-
-- Predictive analytics
-- Machine learning
-- Artificial intelligence
-
-- Reporting dashboards, report generation
-- Presentations of data
-- Business intelligence
-
-- Data warehouse, repository
-
-- Electronic data collection, digital data
-collection
-- Mobile based surveys, using applications such
-as OpenDataKit (ODK), Enketo, FormHub, etc
 
 4.1.1 Non-routine data
 collection and
@@ -1370,19 +1204,3 @@ study protocol. Reproductive health. 2015 May 26;12(1):49.
 39. Vaccination Tracking System. Geneva: Novel-T; 2017 (http://www.novel-t.ch/en/project/vaccination-tracking-system, accessed 23
 November 2017).
 
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
-
-Manish Kumar, MEASURE Evaluation
-© World Health Organization 2018
-Some rights reserved. This work is available under
-the Creative Commons Attribution-NonCommercialShareAlike 3.0 IGO Licence (CCBY-NC-SA 3.0 IGO;
-https://creativecommons.org/licenses/by-nc-sa/3.0/
-igo).
-Suggested citation. Classification of digital health
-interventions. Geneva: World Health Organization;
-2018(WHO/RHR/18.06). Licence: CC BY-NC-SA 3.0 IGO.
-.
-
-Healthcare provider training
-Healthcare provider communication
