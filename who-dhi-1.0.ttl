@@ -259,28 +259,12 @@ visual framework. Global Health: Science and Practice. 2013 Aug 1;1(2):160-71.
 5. National eHealth strategy toolkit. Geneva: World Health Organization, International Telecommunication Union; 2012 (https://www.itu.int/dms_
 pub/itu-d/opb/str/D-STR-E_HEALTH.05-2012-PDF-E.pdf, accessed 2 March 2018).
 
-1.1	Communication between clients as peers within an organized network/group.
-1.2	Transmission of untargeted health promotion content “in which in which relatively large, undifferentiated audiences receive identical messages.” [1] This includes message blasts usually conducted to a mobile phone user bank. The communication can be unidirectional and bidirectional.
-
-1.2	Transmission of targeted health information “in which separate audience segments (often demographic categories) benefit from a shared message.” [1] Targeted communication can also be further customized according to an individual’s specific needs, resulting in “tailored client communication,” whereby message content is matched to the needs and preferences of an individual [1]. The communication can be unidirectional and bidirectional, but initial contact is from the health system; as opposed to on-demand information service where the client initiates the first contact to the health system. - Peer learning, peer group, peer-to-peer groups, peer network, peer support
 
 1.3.1 Peer group for clients
 
 1.2.2 Transmit untargeted
 health event alerts to
 undefined group
-
-- Mass messaging campaign or communication
-to an undefined target group
-- Health messaging to undefined target group
-regardless of demographic characteristics or
-health status
-- Public health event notification;
-disease notification
-- Mass messaging campaign
-
-- Laboratory results management,
-tests results management
 
 1.1.4 Transmit diagnostics
 result, or availability
@@ -290,12 +274,6 @@ of result, to client(s)
 health information to
 an undefined population
 
-- Alerts for preventive services
-and wellness
-- Notifications and reminders for appointments,
-medication adherence, or follow-up services
-- Communication for retention in care,
-continuity of care
 
 1.1.3 Transmit targeted
 alerts and reminders
@@ -305,19 +283,6 @@ to client(s)
 information to client(s)
 based on health status or
 demographics
-
-- Public health event notification; disease
-notification to specific or pre-identified
-populations
-- Notification of health events to specific
-populations based on demographic
-characteristics
-- Health promotion messaging
-- Health education, behavior change
-communication, health promotion
-communication, client-centered messaging;
-- Health communication based on a known
-client’s health status or clinical history
 
 1.1.1 Transmit health event
 alerts to specific
@@ -365,105 +330,8 @@ U-Report Ebola Response in Uganda: “The following SMS alerts were carefully dr
 districts Hoima, Kiboga, Mubende, Ntoroko, Bundibugyo, Kabarole Kyenjojo, Kyegegwa, Kyankwanzi, and Ibanda. SMS Alert 1: There
 is an Ebola outbreak in Kibaale. Today and tomorrow I am going to send u some SMSs to give u more info about how to recognise
 Ebola & how to prevent it...” [7]
+Digital approaches to facilitate financial transactions for clients. These digital financial transactions can be used to facilitate conditional cash transfers and payments related to health service delivery. 
 
-Illustrative examples*
-
-Worl d H e a lt h O r ga n iz atio n C las s if ic atio n​ ​o f​ ​D igital​ ​H ealt h​ ​I nt ervent ions
-
-page 11
-
-Digital approaches to facilitate
-financial transactions for clients.
-These digital financial transactions
-can be used to facilitate conditional
-cash transfers and payments
-related to health service delivery.
-
-Client financial
-transactions
-
-1.7
-
-Health information accessible to
-the general public triggered by
-the client. This could be available
-via websites, helplines, USSD/
-SMS menus, or client applications,
-among other channels, that may
-inform decision-making.
-
-On demand information
-services to clients
-
-1.6
-
-Digital platforms, including social
-media, that enable clients to report
-on public health events, as well as
-experiences, issues, and satisfaction
-with health services.
-
-Citizen based reporting
-
-1.5
-
-The use of mobile applications
-by clients, phone based sensors,
-health records, and wearables for
-clients to monitor their own health
-status. This can include wearable
-sensors, web-tools, and apps that
-allow clients to review and track
-their health status.
-
-- Mobile money payments directly made by client
-(this can include payments for any health
-services such as emergency transportation,
-health fees, etc)
-- Health voucher issuance (e.g. for mosquito
-nets, for transport, etc) and redemption
-services
-
-- Cash transfers to clients conditional on
-health related behaviours
-
-1.7.2 Transmit or manage
-vouchers to client for
-health services
-
-1.7.3 Transmit or manage
-incentives to clients
-for health services
-
-- Client searches or looks up information on a
-health topic
-- Decision support for clients
-
-- Public reporting on health system issues, such
-as the availability and quality of services
-received, interaction with health worker,
-satisfaction with services
-- Accountability monitoring, accountability
-reporting
-- Crowdsourced feedback, patient/client
-feedback, quality of care feedback
-- Surveillance notification, disease notification,
-client reporting
-
-- Self-access to client health record; patient’s
-own access to their health record.
-- Ability for clients to track their health history
-and clinical record
-- Personal health monitoring, self-tracking
-self-care, self-monitoring
-- Sensors and wearables for personal health
-monitoring
-- Client’s health data is collected based on a
-machine a client uses on their own
-- Personal health monitoring, self-tracking
-self-care, self-monitoring, journaling;
-capture patient originated data, client
-documentation of health status and activities
 
 Synonyms
 
@@ -632,7 +500,7 @@ within health sector
 2.6.1 Coordinate emergency
 response and transport
 
-- Intersectoral referral management
+intersectoral referral management
 
 - Public health related updates to health
 workers
@@ -644,8 +512,6 @@ providers to discuss among themselves
 - Ambulance systems, emergency response
 management
 - Care coordination
-- Clinical task linking
-- Referral management
 
 2.5.4 Transmit non-routine
 health event alerts to
@@ -758,41 +624,16 @@ Laboratory and diagnostics imaging management
 2.10
 2.9The management and provision of education and training content in electronic form for health professionals [2]. In contrast to decision support, healthcare provider training does not need to be used at the point of care.
 
-- Tracking of blood donations
+tracking of blood donations
 
-- Point of care diagnostics
-- Diagnostic accessories added to digital
-devices
+point of care diagnostics;diagnostic accessories added to digital devices
 
-- Laboratory results management
-- Tests results communication between
-healthcare providers
-- Laboratory test requisition and management
 
-- Tracking medication orders
-- Tools to place prescription orders or track the
-status of prescriptions and refills
-- Monitoring adherence to medications and
-drugs
-- Monitoring/observing whether patients have
-taken their prescribed medications
-- Reporting contraindications, drug
-interactions, adverse effects
+monitoring adherence to medications and drugs;monitoring/observing whether patients have taken their prescribed medications
+reporting contraindications, drug interactions, adverse effects
 
-- Quizzes and and interactive exercises to assess
-knowledge and competence
 
-- mLearning, eLearning, virtual learning
-- Educational videos, multimedia learning and
-access to clinical guidance
-- Training reinforcement and refreshers
-
-- Work planning
-- Prioritization of daily activities/tasks
-- Task management
-
-- Automated scheduling of client’s health
-appointments
+- Automated scheduling of client’s health appointments
 
 2.7.1 Schedule client
 appointments based on
@@ -861,7 +702,7 @@ Illustrative examples*
 2.0 Healthcare Providers
 
 page 15
-Public health event
+public health event;
 notification
 
 Category
