@@ -1,0 +1,7 @@
+:Bahmni a hito:SoftwareProduct;
+	rdfs:label “Bahmni”;
+	hito:supportsLanguage dbr:English_language;
+	hito:supportsClient :WebBased;
+	hito:supportsEnterpriseFunction :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting.
+	hito:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
+
