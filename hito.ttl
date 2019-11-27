@@ -415,7 +415,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                      rdfs:label "Certification"@en .
 
 ###  http://hitontology.eu/ontology/Classification
-:Classification rdf:type owl:Class ,
+:Classification rdf:type owl:Class ;
          	rdfs:label "Classification"@en .
 
 
