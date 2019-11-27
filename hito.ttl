@@ -13,6 +13,7 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
      rdfs:comment "finding evidence in health IT evaluation studies"@en ;
+     ov:defines :ApplicationSystemCatalogue;
      ov:defines :ApplicationSystemClassified; 
      ov:defines :ApplicationSystemCitation; 
      ov:defines :DOI; 
@@ -73,6 +74,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://hitontology.eu/ontology/applicationSystemCatalogue
+:applicationSystemCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:domain :ApplicationSystemClassified ;
+                           rdfs:range :ApplicationSystemCatalogue ;
+                           rdfs:label "application system catalogue"@en .
+
 
 ###  http://hitontology.eu/ontology/classifiedApplicationSystem
 :classifiedApplicationSystem rdf:type owl:ObjectProperty ;
@@ -384,6 +392,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://hitontology.eu/ontology/ApplicationSystemCatalogue
+:ApplicationSystemCatalogue rdf:type owl:Class ;
+                             rdfs:label "Application System Catalogue"@en .
+
 
 ###  http://hitontology.eu/ontology/ApplicationSystemClassified
 :ApplicationSystemClassified rdf:type owl:Class ;
