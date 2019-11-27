@@ -1,0 +1,953 @@
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hito: <> .
+
+hito:AccessByClientToOwnMedicalRecords
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:PersonalHealthTracking ;
+    a hito:FeatureClassified ;
+    rdfs:label "Access by client to own medical records"@en ;
+    skos:altLabel "ability for clients to track their health history"@en, "patient’s own access to their health record"@en, "self-access to client health record"@en .
+
+hito:ActiveDataCapturedocumentationByClient
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:PersonalHealthTracking ;
+    a hito:FeatureClassified ;
+    rdfs:label "Active data capture/documentation by client"@en ;
+    skos:altLabel "capture patient originated data"@en, "client documentation of health status and activities"@en, "journaling"@en, "personal health monitoring"@en, "self-care"@en, "self-monitoring"@en, "self-tracking"@en .
+
+hito:AssessCapacityOfHealthcareProvider
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderTraining ;
+    a hito:FeatureClassified ;
+    rdfs:label "Assess capacity of healthcare provider"@en ;
+    skos:altLabel "quizzes and and interactive exercises to assess knowledge and competence"@en .
+
+hito:AssessHealthFacilities
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:FacilityManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Assess health facilities"@en ;
+    skos:altLabel "assess performance and capacity of services provided at health facilities"@en, "regulate and monitor services provided at health facilities"@en, "supervision of health facilities"@en .
+
+hito:AutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCollectionManagementAndUse ;
+    a hito:FeatureClassified ;
+    rdfs:label "Automated analysis of data to generate new information or predictions on future events"@en ;
+    skos:altLabel "artificial intelligence"@en, "machine learning"@en, "predictive analytics"@en .
+
+hito:CaptureFromDigitalDevices
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:LaboratoryAndDiagnosticsImagingManangement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Capture from digital devices"@en ;
+    skos:altLabel "diagnostic accessories added to digital devices"@en, "point of care diagnostics"@en .
+
+hito:CensusPopulationInformationDataWarehouse
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Census, population information & data warehouse"@en .
+
+hito:CertifyBirthEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Certify birth event"@en ;
+    skos:altLabel "Civil Registration and Vital Statistics (CRVS)"@en, "issuance of birth certificate"@en .
+
+hito:CertifyDeathEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Certify death event"@en ;
+    skos:altLabel "issuance of death certificate"@en .
+
+hito:CitizenBasedReporting
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Digital platforms, including social media, that enable clients to report on public health events, as well as experiences, issues, and satisfaction with health services."@en ;
+    rdfs:label "Citizen based reporting"@en .
+
+hito:CivilRegistrationAndVitalStatistic
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to support the registration of births and deaths, issue birth and death certificates, and compile and disseminate vital statistics, including cause of death information. "@en ;
+    rdfs:label "Civil Registration and Vital Statistic"@en .
+
+hito:CivilRegistrationAndVitalStatistics
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Civil registration and vital statistics"@en .
+
+hito:ClassifyDiseaseCodesOrCauseOfMortality
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCoding ;
+    a hito:FeatureClassified ;
+    rdfs:label "Classify disease codes or cause of mortality"@en ;
+    skos:altLabel "ICD coding"@en, "clinical coding for reporting and insurance"@en, "mapping local terminology, codes, and formats"@en, "recording cause of death"@en .
+
+hito:ClientApplications
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Client applications"@en .
+
+hito:ClientCommunicationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Client communication system"@en .
+
+hito:ClientFinancialTransactions
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Digital approaches to facilitate financial transactions for clients. These digital financial transactions can be used to facilitate conditional cash transfers and payments related to health service delivery."@en ;
+    rdfs:label "Client financial transactions"@en .
+
+hito:ClientHealthRecords
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digitized job aids that combine an individual’s health information with the health-care provider’s knowledge and clinical protocols in order to assist health-care providers in making diagnosis and treatment decisions. "@en ;
+    rdfs:label "Client health records"@en .
+
+hito:ClientIdentificationAndRegistration
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Client identity verification and enrollment into health services."@en ;
+    rdfs:label "Client identification and registration"@en .
+
+hito:ClientLookupOfHealthInformation
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:OndemandInformationServicesToClients ;
+    a hito:FeatureClassified ;
+    rdfs:label "Client look-up of health information"@en ;
+    skos:altLabel "client searches or looks up information on a health topic"@en, "decision support for clients"@en .
+
+hito:ClientToClientCommunication
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Communication between clients as peers within an organized network/group."@en ;
+    rdfs:label "Client to client communication"@en .
+
+hito:ClinicalTerminologyAndClassifications
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Clinical terminology and classifications"@en .
+
+hito:CommunicationAndPerformanceFeedbackToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Communication and performance feedback to healthcare provider(s)"@en ;
+    skos:altLabel "audit and feedback"@en, "coaching/mentoring"@en, "communication to healthcare provider based on their performance"@en, "supportive supervision"@en .
+
+hito:CommunicationFromHealthcareProvidersToSupervisor
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:HealthcareProviderCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Communication from healthcare provider(s) to supervisor"@en .
+
+hito:CommunitybasedInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Community-based information system"@en .
+
+hito:ConsultationsBetweenRemoteClientAndHealthcareProvider
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:Telemedicine ;
+    a hito:FeatureClassified ;
+    rdfs:label "Consultations between remote client and healthcare provider"@en ;
+    skos:altLabel "call centers"@en, "client based telemedicine"@en, "client calls a health worker or hotline to receive clinical guidance on health issue"@en, "helpline"@en, "hotlines"@en, "interactive telemedicine"@en, "real-time telemedicine"@en, "remote consultation"@en, "synchronous telemedicine"@en, "tele consultation"@en .
+
+hito:ConsultationsForCaseManagementBetweenHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:Telemedicine ;
+    a hito:FeatureClassified ;
+    rdfs:label "Consultations for case management between healthcare providers"@en ;
+    skos:altLabel "closed usergroup"@en, "consulting other health care providers, particularly specialists, for patient case management"@en, "health worker to health worker communication"@en, "inter-provider communication"@en, "seeking second opinion for patient case management"@en .
+
+hito:CoordinateEmergencyResponseAndTransport
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:ReferralCoordination ;
+    a hito:FeatureClassified ;
+    rdfs:label "Coordinate emergency response and transport"@en ;
+    skos:altLabel "ambulance systems"@en, "care coordination"@en, "emergency response management"@en .
+
+hito:DataCoding
+    hito:featureCatalogue hito:WhoDhiDataServiceCatalogue, hito:WhoDhiDataServiceFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment """Digital approaches to code data and manage the use of standardized datasets.
+"""@en ;
+    rdfs:label "Data coding"@en .
+
+hito:DataCollectionManagementAndUse
+    hito:featureCatalogue hito:WhoDhiDataServiceCatalogue, hito:WhoDhiDataServiceFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Digital approaches to data collection, management, analysis, storage. This can include standalone interventions focusing exclusively on data collection and management, as well as data services to support other interventions, such as data visualization within supply chain management.  "@en ;
+    rdfs:label "Data collection, management, and use"@en .
+
+hito:DataExchangeAcrossSystems
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataExchangeAndInteroperability ;
+    a hito:FeatureClassified ;
+    rdfs:label "Data exchange across systems"@en ;
+    skos:altLabel "data mediation"@en, "data orchestration"@en, "information exchange"@en, "interoperability and accessibility"@en, "interoperability layer"@en .
+
+hito:DataExchangeAndInteroperability
+    hito:featureCatalogue hito:WhoDhiDataServiceCatalogue, hito:WhoDhiDataServiceFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "The capability of two or more systems to communicate and exchange data through specified data formats and communication protocols."@en ;
+    rdfs:label "Data exchange and interoperability    "@en .
+
+hito:DataInterchangeInteroperabilityAndAccessibility
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Data interchange interoperability and accessibility"@en .
+
+hito:DataStorageAndAggregation
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCollectionManagementAndUse ;
+    a hito:FeatureClassified ;
+    rdfs:label "Data storage and aggregation"@en ;
+    skos:altLabel "data warehouse"@en, "repository"@en .
+
+hito:DataSynthesisAndVisualization
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCollectionManagementAndUse ;
+    a hito:FeatureClassified ;
+    rdfs:label "Data synthesis and visualization"@en ;
+    skos:altLabel "business intelligence"@en, "presentations of data"@en, "report generation"@en, "reporting dashboards"@en .
+
+hito:ElectronicMedicalRecord
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Electronic medical record"@en .
+
+hito:EmergencyResponseSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Emergency response system"@en .
+
+hito:EnrolClientForHealthServicesclinicalCarePlan
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientIdentificationAndRegistration ;
+    a hito:FeatureClassified ;
+    rdfs:label "Enrol client for health services/clinical care plan"@en ;
+    skos:altLabel "register client/patient for health services"@en .
+
+hito:EnvironmentalMonitoringSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Environmental monitoring system"@en .
+
+hito:EquipmentAndAssetManagement
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to track and manage the maintenance of health equipment. This can include the use of databases, as well as sensors and feedback mechanisms for monitoring health equipment. "@en ;
+    rdfs:label "Equipment and asset management"@en .
+
+hito:FacilityManagement
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches that enable administrative functions related to the management of facilities."@en ;
+    rdfs:label "Facility management"@en .
+
+hito:FacilityManagementInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Facility management information system"@en .
+
+hito:GeographicInformationSystemGis
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Geographic information system (GIS)"@en .
+
+hito:HealthFinanceAndInsuranceInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Health finance and insurance information system"@en .
+
+hito:HealthFinancing
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to manage financial transactions for health system related expenses. These digital financial transactions can be used for payments to health workforce, insurance/payers, as well as administrative management of budget and expenditures.   "@en ;
+    rdfs:label "Health financing"@en .
+
+hito:HealthManagementInformationSystemHmis
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Health management information system (HMIS)"@en .
+
+hito:HealthWorkerActivityPlanningAndScheduling
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Automated scheduling and planning tools to assist in prioritizing provider followup. Digital work planning and scheduling tools can take the form of reminders to healthcare providers on upcoming/overdue services and other mechanisms to flag clients that need to be prioritized for service delivery. "@en ;
+    rdfs:label "Health worker activity planning and scheduling"@en .
+
+hito:HealthcareProviderCommunication
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Communication and transmission of information among healthcare providers, supervisors, and health system managers.  Healthcare provider communication.  "@en ;
+    rdfs:label "Healthcare provider communication"@en .
+
+hito:HealthcareProviderDecisionSupport
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digitized record used to capture, store, access and share health information on a client or grouping of clients.   "@en ;
+    rdfs:label "Healthcare provider decision support"@en .
+
+hito:HealthcareProviderTraining
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "The management and provision of education and training content in electronic form for health professionals. In contrast to decision support, healthcare provider training does not need to be used at the point of care. "@en ;
+    rdfs:label "Healthcare provider training"@en .
+
+hito:HumanResourceInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Human resource information system"@en .
+
+hito:HumanResourceManagement
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to manage the health workforce, including the use of databases to record training levels, certifications, and identification of health workers. "@en ;
+    rdfs:label "Human resource management"@en .
+
+hito:IdentificationRegistriesAndDirectories
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Identification registries and directories"@en .
+
+hito:IdentifyClientsInNeedOfServices
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthWorkerActivityPlanningAndScheduling ;
+    a hito:FeatureClassified ;
+    rdfs:label "Identify client(s) in need of services"@en ;
+    skos:altLabel "automated scheduling of client’s health appointments"@en .
+
+hito:KnowledgeManagementSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Knowledge management system"@en .
+
+hito:LaboratoryAndDiagnosticsImagingManangement
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to manage and exchange laboratory and diagnostic orders and results."@en ;
+    rdfs:label "Laboratory and Diagnostics Imaging Manangement"@en .
+
+hito:LaboratoryAndDiagnosticsInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Laboratory and diagnostics information system"@en .
+
+hito:LearningAndTrainingSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Learning and training system"@en .
+
+hito:ListHealthFacilitiesAndRelatedInformation
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:FacilityManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "List health facilities and related information"@en ;
+    skos:altLabel "health facility registry"@en, "list unique IDs and locations of health facilities"@en, "register health facilities"@en .
+
+hito:ListHealthWorkforceCadresAndRelatedIdentificationInformation
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HumanResourceManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "List health workforce cadres and related identification information"@en ;
+    skos:altLabel "documentation of healthcare providers’ demographics, identification, health facility assignment, and other identifier information"@en, "health worker registry"@en, "provider registry"@en .
+
+hito:LocationMapping
+    hito:featureCatalogue hito:WhoDhiDataServiceCatalogue, hito:WhoDhiDataServiceFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "The use of geolocation coordinates to map objects and events. "@en ;
+    rdfs:label "Location mapping"@en .
+
+hito:LogisticsManagementInformationSystemLmis
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Logistics management information system (LMIS)"@en .
+
+hito:LongitudinalTrackingOfClientsHealthStatusAndServices
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientHealthRecords ;
+    a hito:FeatureClassified ;
+    rdfs:label "Longitudinal tracking of client’s health status and services"@en ;
+    skos:altLabel "case management logs within specific target populations, including migrant populations"@en, "digital register"@en, "digital service record"@en, "digitized registers for longitudinal health program"@en, "domain-specific registers"@en, "eRegister"@en, "eRegistries"@en, "immunization registry"@en, "including tracking of migrant populations’ benefits and health status"@en .
+
+hito:ManageBudgetAndExpenditures
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage budget and expenditures"@en ;
+    skos:altLabel "financial management"@en, "resource planning"@en .
+
+hito:ManageCertificationregistrationOfHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HumanResourceManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage certification/registration of healthcare provider(s)"@en ;
+    skos:altLabel "authority such as a professional council"@en, "certification or licensure with regulatory"@en, "management of health worker registration"@en .
+
+hito:ManageClientsStructuredClinicalRecords
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientHealthRecords ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage client's structured clinical records"@en ;
+    skos:altLabel "clinical record of an individual with information that spans across multiple clinical domains"@en, "electronic medical record"@en, "personal health record"@en .
+
+hito:ManageClientsUnstructuredClinicalRecords
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientHealthRecords ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage client’s unstructured clinical records"@en ;
+    skos:altLabel "electronic medical record and personal health records with that are not based on structured data, and instead including notes, images, documents"@en .
+
+hito:ManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage inventory and distribution of health commodities stock levels of"@en ;
+    skos:altLabel "commodity security"@en, "logistics management"@en, "stock management"@en, "stock monitoring of health commodities"@en .
+
+hito:ManageOfCommodities
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage of commodities"@en ;
+    skos:altLabel "logistics management"@en, "procurement management"@en .
+
+hito:ManageReferralsBetweenHealthAndOtherSectors
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:ReferralCoordination ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage referrals between health and other sectors"@en ;
+    skos:altLabel "intersectoral referral management"@en .
+
+hito:ManageReferralsBetweenPointsOfServiceWithinHealthSector
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:ReferralCoordination ;
+    a hito:FeatureClassified ;
+    rdfs:label "Manage referrals between points of service within health sector"@en ;
+    skos:altLabel "clinical task linking"@en, "referral management"@en .
+
+hito:MapLocationOfClientsAndHouseholds
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:LocationMapping ;
+    a hito:FeatureClassified ;
+    rdfs:label "Map location of clients and households"@en ;
+    skos:altLabel "GPS mapping"@en, "demarcation of catchment areas"@en, "geospatial visualization"@en, "mapping coverage areas"@en, "mapping of health worker route to track the services provided"@en .
+
+hito:MapLocationOfHealthEvents
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:LocationMapping ;
+    a hito:FeatureClassified ;
+    rdfs:label "Map location of health events"@en ;
+    skos:altLabel "GPS mapping"@en, "Geospatial visualization"@en .
+
+hito:MapLocationOfHealthFacilitiesstructures
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:LocationMapping ;
+    a hito:FeatureClassified ;
+    rdfs:label "Map location of health facilities/structures"@en ;
+    skos:altLabel "Global Positioning System (GPS) mapping"@en .
+
+hito:MapLocationOfHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:LocationMapping ;
+    a hito:FeatureClassified ;
+    rdfs:label "Map location of healthcare provider(s)"@en ;
+    skos:altLabel "mapping of health worker route to track the services provided"@en .
+
+hito:MergeDeduplicateAndCurateCodedDatasetsOrTerminologies
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCoding ;
+    a hito:FeatureClassified ;
+    rdfs:label "Merge, de-duplicate, and curate coded datasets or terminologies"@en ;
+    skos:altLabel "maintenance and versioning of health informatics terminology standards"@en, "semantic interoperability"@en, "terminology services"@en .
+
+hito:MonitorColdchainSensitiveCommoditiesLicensedDrugs
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Monitor cold-chain sensitive commodities licensed drugs"@en ;
+    skos:altLabel "sensors to monitor temperature and stability of vaccines"@en .
+
+hito:MonitorPerformanceOfHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HumanResourceManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Monitor performance of healthcare provider(s)"@en ;
+    skos:altLabel "audit and feedback"@en, "clinical task tracking"@en, "remote monitoring of healthcare providers"@en, "supervision"@en, "supportive supervision"@en, "workforce management"@en .
+
+hito:MonitorStatusOfHealthEquipment
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:EquipmentAndAssetManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Monitor status of health equipment"@en ;
+    skos:altLabel "listing of available equipment and physical assets, e.g. hospital beds"@en, "tracking maintenance of equipment"@en .
+
+hito:NonRoutineDataCollectionAndManagement
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCollectionManagementAndUse ;
+    a hito:FeatureClassified ;
+    rdfs:label "Non routine data collection and management"@en ;
+    skos:altLabel "digital data collection"@en, "electronic data collection"@en, "mobile based surveys, using applications such as OpenDataKit (ODK), Enketo, FormHub, etc"@en .
+
+hito:NotificationOfPublicHealthEventsFromPointOfDiagnosis
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:PublicHealthEventNotification ;
+    a hito:FeatureClassified ;
+    rdfs:label "Notification of public health events from point of diagnosis"@en ;
+    skos:altLabel "disease surveillance"@en, "public health surveillance"@en, "surveillance from laboratory systems"@en .
+
+hito:NotifyBirthEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Notify birth event"@en ;
+    skos:altLabel "birth event alert"@en .
+
+hito:NotifyDeathEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Notify death event"@en ;
+    skos:altLabel "death event alert"@en, "death surveillance"@en .
+
+hito:NotifyHealthCommodities
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Notify health commodities"@en ;
+    skos:altLabel "alerts and notifications of stock levels"@en, "restocking coordination"@en, "stockout prevention and monitoring"@en .
+
+hito:OndemandInformationServicesToClients
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Health information accessible to the general public triggered by the client. This could be available via websites, helplines, USSD/ SMS menus, or client applications, among other channels, that may inform decision-making. "@en ;
+    rdfs:label "On-demand information services to clients"@en .
+
+hito:ParseUnstructuredDataIntoStructuredData
+    hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
+    hito:subfeatureOf hito:DataCoding ;
+    a hito:FeatureClassified ;
+    rdfs:label "Parse unstructured data into structured data"@en ;
+    skos:altLabel "automated data cleaning"@en, "dirty data management"@en .
+
+hito:PeerGroupForClients
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientToClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Peer group for clients"@en ;
+    skos:altLabel "peer group"@en, "peer learning"@en, "peer network"@en, "peer support"@en, "peer-to-peer groups"@en .
+
+hito:PeerGroupForHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Peer group for healthcare providers"@en ;
+    skos:altLabel "closed user groups"@en, "communication mechanisms for healthcare providers to discuss among themselves"@en, "peer learning"@en, "peer support"@en .
+
+hito:PersonalHealthTracking
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "The use of mobile applications by clients, phone based sensors, health records, and wearables for clients to monitor their own health status. This can include wearable sensors, web-tools, and apps that allow clients to review and track their health status."@en ;
+    rdfs:label "Personal health tracking"@en .
+
+hito:PharmacyInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Pharmacy information system"@en .
+
+hito:PrescriptionAndMedicationManagement
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to facilitate the management of prescriptions, including tracking prescription orders and monitoring physical consumption of medication."@en ;
+    rdfs:label "Prescription and medication management"@en .
+
+hito:ProvideChecklistAccordingToProtocol
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide checklist according to protocol"@en ;
+    skos:altLabel "decision trees to support service delivery according to care plans, guidelines, and protocols"@en, "job aid and assessment tools to support service delivery—may or may not be linked to a digital health record"@en .
+
+hito:ProvidePromptsAndAlertsBasedAccordingToProtocol
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide prompts and alerts based according to protocol"@en ;
+    skos:altLabel "clinical decision support, job aid--linked to clients digital health record"@en, "process algorithms to support service delivery according to care plans, guidelines, and protocols"@en, "provision of alerts for abnormal findings/lab values, “IF THEN statements��"@en .
+
+hito:ProvideTrainingContentToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderTraining ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide training content to healthcare provider(s)"@en ;
+    skos:altLabel "eLearning"@en, "educational videos, multimedia learning and access to clinical guidance"@en, "mLearning"@en, "training reinforcement and refreshers"@en, "virtual learning"@en .
+
+hito:PublicHealthAndDiseaseSurveillanceSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Public health and disease surveillance system"@en .
+
+hito:PublicHealthEventNotification
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches for alerting and compiling information on nonroutine public health events."@en ;
+    rdfs:label "Public health event notification"@en .
+
+hito:RecordTrainingCredentialsOfHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HumanResourceManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Record training credentials of healthcare provider(s)"@en ;
+    skos:altLabel "track or manage preservice and/or in-service training received by a health worker"@en .
+
+hito:ReferralCoordination
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches to support communication and coordination mechanisms to facilitate referrals, both within the health sector and to other health-related sectors."@en ;
+    rdfs:label "Referral coordination"@en .
+
+hito:RegisterAndHealthCommoditiesProcurement
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Register and health commodities procurement"@en ;
+    skos:altLabel "drug regulation and registration"@en .
+
+hito:RegisterAndVerifyClientInsuranceMembership
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Register and verify client insurance membership"@en ;
+    skos:altLabel "determination of insurance coverage"@en, "eligibility verification for insurance"@en, "recording and verifying that a client is a member of a scheme or entitled to benefits"@en, "social protection"@en .
+
+hito:RegisterBirthEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Register birth event"@en ;
+    skos:altLabel "birth registration (can include registration for health system purposes, as well as registration to civil registrar)"@en .
+
+hito:RegisterDeathEvent
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:CivilRegistrationAndVitalStatistic ;
+    a hito:FeatureClassified ;
+    rdfs:label "Register death event"@en ;
+    skos:altLabel "death surveillance"@en, "mortality surveillance"@en .
+
+hito:RemoteMonitoringOfClientHealthOrDiagnosticDataByProvider
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:Telemedicine ;
+    a hito:FeatureClassified ;
+    rdfs:label "Remote monitoring of client health or diagnostic data by provider"@en ;
+    skos:altLabel "provider is able to monitor client’s health through an implanted sensor/diagnostic equipment"@en, "telemonitoring"@en, "virtual monitoring"@en .
+
+hito:ReportCounterfeitOrSubstandardDrugsByClients
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:SupplyChainManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Report counterfeit or substandard drugs by clients"@en ;
+    skos:altLabel "counterfeit drug notification"@en, "monitoring drug authenticity and quality"@en, "pharmacovigilance"@en .
+
+hito:ReportEffectsAdverseDrug
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:PrescriptionAndMedicationManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Report effects adverse drug"@en ;
+    skos:altLabel "reporting contraindications, drug interactions, adverse effects"@en .
+
+hito:ReportingOfHealthSystemFeedbackByClients
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:CitizenBasedReporting ;
+    a hito:FeatureClassified ;
+    rdfs:label "Reporting of health system feedback by clients"@en ;
+    skos:altLabel "accountability monitoring"@en, "accountability reporting"@en, "crowdsourced feedback"@en, "interaction with health worker"@en, "patient/client feedback"@en, "public reporting on health system issues, such as the availability and quality of services received"@en, "quality of care feedback"@en, "satisfaction with services"@en .
+
+hito:ReportingOfPublicHealthEventsByClient
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:CitizenBasedReporting ;
+    a hito:FeatureClassified ;
+    rdfs:label "Reporting of public health events by client"@en ;
+    skos:altLabel "client reporting"@en, "disease notification"@en, "surveillance notification"@en .
+
+hito:ResearchInformationSystem
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Research information system"@en .
+
+hito:RoutineHealthIndicatorDataCollectionAndManagement
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientHealthRecords ;
+    a hito:FeatureClassified ;
+    rdfs:label "Routine health indicator data collection and management"@en ;
+    skos:altLabel "client health data collection"@en, "data collection for Health Management Information System (HMIS)"@en .
+
+hito:ScheduleHealthcareProvidersActivities
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthWorkerActivityPlanningAndScheduling ;
+    a hito:FeatureClassified ;
+    rdfs:label "Schedule healthcare provider's activities"@en ;
+    skos:altLabel "prioritization of daily activities/tasks"@en, "task management"@en, "work planning"@en .
+
+hito:ScreenClientsByRiskOrOtherHealthStatus
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    a hito:FeatureClassified ;
+    rdfs:label "Screen clients by risk or other health status"@en ;
+    skos:altLabel "job aid to support service delivery according to care plans, guidelines, and protocols"@en, "tools for screening, risk assessment, triage and client prioritization"@en .
+
+hito:SelfMonitoringOfHealthOrDiagnosticDataByClient
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:PersonalHealthTracking ;
+    a hito:FeatureClassified ;
+    rdfs:label "Self monitoring of health or diagnostic data by client"@en ;
+    skos:altLabel "client’s health data is collected based on a machine a client uses on their own"@en, "personal health monitoring"@en, "self-care"@en, "self-monitoring"@en, "self-tracking"@en, "sensors and wearables for personal health monitoring"@en .
+
+hito:SharedHealthRecordAndHealthInformationRespositories
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Shared Health Record and health information respositories"@en .
+
+hito:SupplyChainManagement
+    hito:functionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Digital approaches for monitoring and reporting stock levels, consumption and distribution of medical commodities. This can include the use of communication systems (e.g. SMS) and data dashboards to manage and report on supply levels of medical commodities.    "@en ;
+    rdfs:label "Supply chain management"@en .
+
+hito:TargetedClientCommunication
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Transmission of targeted health information “in which separate audience segments (often demographic categories) benefit from a shared message.” Targeted communication can also be further customized according to an individual’s specific needs, resulting in “tailored client communication,” whereby message content is matched to the needs and preferences of an individual. The communication can be unidirectional and bidirectional, but initial contact is from the health system; as opposed to on-demand information service where the client initiates the first contact to the health system.  "@en ;
+    rdfs:label "Targeted client communication"@en .
+
+hito:Telemedicine
+    hito:applicationSystemCatalogueCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:functionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    a hito:ApplicationSystemClassified, hito:EnterpriseFunctionClassified ;
+    rdfs:comment "Provision of health-care services at a distance. The delivery of health care services, where patients and providers are separated by distance.    "@en ;
+    rdfs:label "Telemedicine"@en .
+
+hito:TrackAndManageInsuranceReimbursement
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Track and manage insurance reimbursement"@en ;
+    skos:altLabel "claims and encounter reports for reimbursement"@en, "insurance financial transactions"@en .
+
+hito:TrackBiologicalSpecimens
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:LaboratoryAndDiagnosticsImagingManangement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Track biological specimens"@en ;
+    skos:altLabel "tracking of blood donations"@en .
+
+hito:TrackClientsMedicationConsumption
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:PrescriptionAndMedicationManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Track client's medication consumption"@en ;
+    skos:altLabel "monitoring adherence to medications and drugs"@en, "monitoring/observing whether patients have taken their prescribed medications"@en .
+
+hito:TrackInsuranceBillingAndClaimsSubmission
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Track insurance billing and claims submission"@en ;
+    skos:altLabel "administrative transaction processing"@en, "claims management"@en, "social protection"@en .
+
+hito:TrackRegulationAndLicensingOfMedicalEquipment
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:EquipmentAndAssetManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Track regulation and licensing of medical equipment"@en ;
+    skos:altLabel "physical asset management"@en, "regulation of physical assets"@en .
+
+hito:TransmissionOfMedicalDataToHealthcareProvider
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:Telemedicine ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmission of medical data to healthcare provider"@en ;
+    skos:altLabel "asynchronous telemedicine"@en, "store and forward"@en .
+
+hito:TransmitDiagnosticOrdersDiagnosticResults
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:LaboratoryAndDiagnosticsImagingManangement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit diagnostic orders diagnostic results"@en ;
+    skos:altLabel "laboratory test requisition and management"@en .
+
+hito:TransmitDiagnosticsResultOrAvailabilityOfResultToClients
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:TargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit diagnostics result, or availability of result, to clients"@en ;
+    skos:altLabel "laboratory results management"@en, "tests results management"@en .
+
+hito:TransmitHealthEventAlertsToSpecificPopulationGroups
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:TargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit health event alerts to specific population group(s)"@en ;
+    skos:altLabel "disease notification to specific or pre-identified populations"@en, "health promotion messaging"@en, "notification of health events to specific populations based on demographic characteristics"@en, "public health event notification"@en .
+
+hito:TransmitNonroutineHealthEventAlertsToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit non-routine health event alerts to healthcare providers"@en ;
+    skos:altLabel "emergency alerts to healthcare providers"@en, "mass messaging to healthcare providers"@en, "public health related updates to health workers"@en .
+
+hito:TransmitOrManageIncentivesToClientsForHealthServices
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientFinancialTransactions ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit or manage incentives to clients for health services"@en ;
+    skos:altLabel "cash transfers to clients conditional on health related behaviours"@en .
+
+hito:TransmitOrManageIncentivesToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit or manage incentives to healthcare provider(s)"@en ;
+    skos:altLabel "conditional payments"@en, "financial incentives for health worker motivation"@en, "performance-based financing for health workers"@en, "results based financing"@en .
+
+hito:TransmitOrManageOutOfPocketPaymentsByClient
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientFinancialTransactions ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit or manage out of pocket payments by client"@en ;
+    skos:altLabel "mobile money payments directly made by client (this can include payments for any health services such as emergency transportation, health fees, etc)"@en .
+
+hito:TransmitOrManageVouchersToClientForHealthServices
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientFinancialTransactions ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit or manage vouchers to client for health services"@en ;
+    skos:altLabel "health voucher issuance (e.g. for mosquitonets, for transport, etc) and redemption services"@en .
+
+hito:TransmitOrTrackPrescriptionOrders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:PrescriptionAndMedicationManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit or track prescription orders"@en ;
+    skos:altLabel "tools to place prescription orders or track the status of prescriptions and refills"@en, "tracking medication orders"@en .
+
+hito:TransmitRoutineNewsAndWorkflowNotificationsToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:HealthcareProviderCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit routine news and workflow notifications to healthcare provider(s)"@en ;
+    skos:altLabel "alerts and reminders to healthcare provider"@en, "motivational communication healthcare provider"@en, "transmission of workflow updates to healthcare provider"@en .
+
+hito:TransmitRoutinePayrollPaymentToHealthcareProviders
+    hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
+    hito:supports hito:HealthFinancing ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit routine payroll payment to healthcare provider(s)"@en ;
+    skos:altLabel "health worker routine payments"@en, "payroll management"@en .
+
+hito:TransmitTargetedAlertsAndRemindersToClients
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:TargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit targeted alerts and reminders to client(s)"@en ;
+    skos:altLabel "alerts for preventive services and wellness"@en, "communication for retention in care"@en, "continuity of care"@en, "notifications and reminders for appointments, medication adherence, or follow-up services"@en .
+
+hito:TransmitTargetedHealthInformationToClientBasedOnHealthStatusOrDemographics
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:TargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit targeted health information to client based on health status or demographics"@en ;
+    skos:altLabel "behavior change communication"@en, "client-centered messaging"@en, "health communication based on a known client’s health status or clinical history"@en, "health education"@en, "health promotion communication"@en .
+
+hito:TransmitToHealthcareProviderAndTrack
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:supports hito:LaboratoryAndDiagnosticsImagingManangement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit to healthcare provider and track"@en ;
+    skos:altLabel "laboratory results management"@en, "tests results communication between healthcare providers"@en .
+
+hito:TransmitUntargetedHealthEventAlertsToUndefinedGroup
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:UntargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit untargeted health event alerts to undefined group"@en ;
+    skos:altLabel "disease notification"@en, "mass messaging campaign"@en, "public health event notification"@en .
+
+hito:TransmitUntargetedHealthInformationToAnUndefinedPopulation
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    hito:subfeatureOf hito:UntargetedClientCommunication ;
+    a hito:FeatureClassified ;
+    rdfs:label "Transmit untargeted health information to an undefined population"@en ;
+    skos:altLabel "health messaging to undefined target group regardless of demographic characteristics or health status"@en, "mass messaging campaign or communication to an undefined target group"@en .
+
+hito:UntargetedClientCommunication
+    hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Transmission of untargeted health promotion content “in which in which relatively large, undifferentiated audiences receive identical messages.” This includes message blasts usually conducted to a mobile phone user bank. The communication can be unidirectional and bidirectional.  "@en ;
+    rdfs:label "Untargeted client communication"@en .
+
+hito:VerifyClientUniqueIdentity
+    hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
+    hito:subfeatureOf hito:ClientIdentificationAndRegistration ;
+    a hito:FeatureClassified ;
+    rdfs:label "Verify client unique identity"@en ;
+    skos:altLabel "biometrics"@en, "client registry"@en .
+
+hito:WhoDhi1-0
+    a owl:Thing ;
+    rdfs:label "WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:member hito:WhoDhiClientFeatureCatalogue, hito:WhoDhiDataServiceFeatureCatalogue, hito:WhoDhiHealthSystemManagerFeatureCatalogue, hito:WhoDhiHealthSystemManagerFunctionCatalogue, hito:WhoDhiHealthcareProviderFeatureCatalogue, hito:WhoDhiHealthcareProviderFunctionCatalogue, hito:WhoDhiSystemCategoryApplicationSystemCatalogue .
+
+hito:WhoDhiClientFeatureCatalogue
+    a hito:FeatureCatalogue ;
+    rdfs:comment "Section 1.0 'Client' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Clients"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiDataServiceFeatureCatalogue
+    a hito:FeatureCatalogue ;
+    rdfs:comment "Section 4.0 'Data Service' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Clients"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiHealthSystemManagerFeatureCatalogue
+    a hito:FeatureCatalogue ;
+    rdfs:comment "Feature catalogue defined in section 3.0 'Health System Managers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Health System Managers Feature Catalogue"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiHealthSystemManagerFunctionCatalogue
+    a hito:FunctionCatalogue ;
+    rdfs:comment "Function catalogue defined in section 3.0 'Health System Managers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Health System Managers Function Catalogue"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiHealthcareProviderFeatureCatalogue
+    a hito:FeatureCatalogue ;
+    rdfs:comment "Feature Catalogue defined in section 2.0 'Healthcare Providers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Healthcare Provider Feature Catalogue"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiHealthcareProviderFunctionCatalogue
+    a hito:FunctionCatalogue ;
+    rdfs:comment "Function Catalogue defined in section 2.0 'Healthcare Providers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "Healthcare Provider Function Catalogue"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
+hito:WhoDhiSystemCategoryApplicationSystemCatalogue
+    a hito:ApplicationSystemCatalogue ;
+    rdfs:comment "Section 'System Categories' describing Application Systems in the WHO Classification of Digital Health Interventions v1.0"@en ;
+    rdfs:label "System Categories"@en ;
+    rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
+
