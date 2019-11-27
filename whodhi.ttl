@@ -905,20 +905,20 @@ hito:VerifyClientUniqueIdentity
     skos:altLabel "biometrics"@en, "client registry"@en .
 
 hito:WhoDhi1-0
-    a owl:Thing ;
+    a hito:Classification ;
     rdfs:label "WHO Classification of Digital Health Interventions v1.0"@en ;
     rdfs:member hito:WhoDhiClientFeatureCatalogue, hito:WhoDhiDataServiceFeatureCatalogue, hito:WhoDhiHealthSystemManagerFeatureCatalogue, hito:WhoDhiHealthSystemManagerFunctionCatalogue, hito:WhoDhiHealthcareProviderFeatureCatalogue, hito:WhoDhiHealthcareProviderFunctionCatalogue, hito:WhoDhiSystemCategoryApplicationSystemCatalogue .
 
 hito:WhoDhiClientFeatureCatalogue
     a hito:FeatureCatalogue ;
     rdfs:comment "Section 1.0 'Client' in the WHO Classification of Digital Health Interventions v1.0"@en ;
-    rdfs:label "Clients"@en ;
+    rdfs:label "Client Feature Catalogue"@en ;
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiDataServiceFeatureCatalogue
     a hito:FeatureCatalogue ;
     rdfs:comment "Section 4.0 'Data Service' in the WHO Classification of Digital Health Interventions v1.0"@en ;
-    rdfs:label "Clients"@en ;
+    rdfs:label "Data Service Feature Catalogue"@en ;
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiHealthSystemManagerFeatureCatalogue
