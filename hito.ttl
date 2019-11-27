@@ -284,11 +284,25 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "uses standard"@en .
 
 
+###  http://hitontology.eu/ontology/subfeatureOf
+:subfeatureOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :FeatureClassified;
+                    rdfs:range :FeatureClassified;
+                    rdfs:label "subfeature of"@en .
+
+
 ###  http://hitontology.eu/ontology/suitableForOrganizationalUnit
 :suitableForOrganizationalUnit rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :OrganizationalUnitCitation ;
                     rdfs:label "suitable for organizational unit"@en .
+
+
+###  http://hitontology.eu/ontology/supports
+:supports rdf:type owl:ObjectProperty ;
+                    rdfs:domain :FeatureClassified;
+                    rdfs:range :EnterpriseFunctionClassified ;
+                    rdfs:label "supports"@en .
 
 
 ###  http://hitontology.eu/ontology/supportsClient
