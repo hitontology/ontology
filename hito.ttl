@@ -13,9 +13,6 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
      rdfs:comment "finding evidence in health IT evaluation studies"@en ;
-     ov:defines :ApplicationSystemCatalogue;
-     ov:defines :ApplicationSystemClassified; 
-     ov:defines :ApplicationSystemCitation; 
      ov:defines :DOI; 
      ov:defines :ExperimentalStudyRCT; 
      ov:defines :FeatureCatalogue; 
@@ -42,13 +39,17 @@
 :uc2 rdf:type owl:Ontology ;
      rdfs:label "MEDFLOSS"@en ;
      rdfs:comment "selecting medical free/libre open source software"@en ;
+     ov:defines :ApplicationSystemCatalogue;
+     ov:defines :ApplicationSystemClassified; 
+     ov:defines :ApplicationSystemCitation; 
      ov:defines :Certification; 
-     ov:defines :EnterpriseFunctionClassified; 
+     ov:defines :Classification; 
      ov:defines :Client; 
      ov:defines :CommunicationStandard; 
      ov:defines :CommunityStatus; 
      ov:defines :DatabaseSystem; 
      ov:defines :EnterpriseFunctionCitation; 
+     ov:defines :EnterpriseFunctionClassified; 
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
      ov:defines :Language; 
@@ -412,6 +413,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Certification rdf:type owl:Class ;
                      rdfs:subClassOf :Standard ;
                      rdfs:label "Certification"@en .
+
+###  http://hitontology.eu/ontology/Classification
+:Classification rdf:type owl:Class ,
+         	rdfs:label "Classification"@en .
 
 
 ###  http://hitontology.eu/ontology/Client
