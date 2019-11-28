@@ -1,7 +1,122 @@
-:Bahmni a hito:SoftwareProduct;
-	rdfs:label “Bahmni”;
-	hito:supportsLanguage dbr:English_language;
-	hito:supportsClient :WebBased;
-	hito:supportsEnterpriseFunction :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting.
-	hito:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr: <http://dbpedia.org/resource/>.
 
+:Bahmni a :SoftwareProduct;
+	rdfs:label "Bahmni";
+	:supportsLanguage dbr:English_language;
+	:supportsClient :WebBased;
+	:supportsEnterpriseFunction :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting;
+	:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
+
+############## Enterprise Functions
+
+:PatientRegistration a :EnterpriseFunctionCitation;
+	rdfs:label "Patient Registration"@en.
+
+:ClinicalServices a :EnterpriseFunctionCitation;
+	rdfs:label "Clinical Services"@en.
+
+:Laboratory a :EnterpriseFunctionCitation;
+	rdfs:label "Laboratory"@en.
+
+:InpatientManagement a :EnterpriseFunctionCitation;
+	rdfs:label "Inpatient Management"@en.
+
+:StockManagement a :EnterpriseFunctionCitation;
+	rdfs:label "Stock Management"@en.
+
+:Billing a :EnterpriseFunctionCitation;
+	rdfs:label "Billing"@en.
+
+:Reporting a :EnterpriseFunctionCitation;
+	rdfs:label "Reporting"@en.
+
+################### Features
+
+:SearchPatients a :FeatureCitatio;
+		rdfs:label "Search Patients"@en.
+
+:PrintPatientId a :FeatureCitation;
+	rdfs:label "Print Patient Id"@en.
+
+:CaptureClinicalRecords a :FeatureCitation;
+	rdfs:label "Capture Clinical Records"@en.
+
+:MaintainClinicalRecords a :FeatureCitation;
+	rdfs:label "Maintain Clinical Records"@en.
+
+:CreateGeneralForms a :FeatureCitation;
+	rdfs:label "Create General Forms"@en.
+
+:CreateDiseaseSpecificForms a :FeatureCitation;
+	rdfs:label "Create Disease Specific Forms"@en.
+
+:CaptureDrugPrescriptions a :FeatureCitation;
+	rdfs:label "Capture Drug Prescriptions"@en.
+
+:OrderLab a :FeatureCitation;
+	rdfs:label "Order Lab"@en.
+
+:OrderRadiology a :FeatureCitation;
+	rdfs:label "Order Radiology"@en.
+
+:OrderInvestigation a :FeatureCitation;
+	rdfs:label "Order Investigation"@en.
+
+:UseDrugPrescriptionTemplates a :FeatureCitation;
+	rdfs:label "Use Drug Prescription Templates"@en.
+
+:ManagePatientOrders a :FeatureCitation;
+	rdfs:label "Manage Patient Orders"@en.
+
+:ManageSamples a :FeatureCitation;
+	rdfs:label "Manage Samples"@en.
+
+:ManageTests a :FeatureCitation;
+	rdfs:label "Manage Tests"@en.
+
+:DisplayLaboratoryWorkload a :FeatureCitation;
+	rdfs:label "Display Laboratory Workload"@en.
+
+:SendSamplesForReferrals a :FeatureCitation;
+	rdfs:label "Send Samples For Referrals"@en.
+
+:ManagePatientsAdmissions a :FeatureCitation;
+	rdfs:label "Manage Patients Admissions"@en.
+
+:PerformBedAssignments a :FeatureCitation;
+	rdfs:label "Perform Bed Assignments"@en.
+
+:TrackWardOccupancy a :FeatureCitation;
+	rdfs:label "Track Ward Occupancy"@en.
+
+:ManageStock a :FeatureCitation;
+	rdfs:label "Manage Stock"@en.
+
+:TrackStock a :FeatureCitation;
+	rdfs:label "Track Stock"@en.
+
+:ReorderStock a :FeatureCitation;
+	rdfs:label "Reorder Stock"@en.
+
+:MoveStock a :FeatureCitation;
+	rdfs:label "Move Stock"@en.
+
+:MonitorStockLevels a :FeatureCitation;
+	rdfs:label "Monitor Stock Levels"@en.
+
+:ManageAccurateRecords a :FeatureCitation;
+	rdfs:label "Manage Accurate Records"@en.
+
+:MaintainAccurateRecords a :FeatureCitation;
+	rdfs:label "Maintain Accurate Records"@en.
+
+:PerformOperationalReporting a :FeatureCitation;
+	rdfs:label "Perform Operational Reporting"@en.
+
+:ClinicalReporting a :FeatureCitation;
+	rdfs:label "Clinical Reporting"@en.
+
+:PublicHealthReporting a :FeatureCitation;
+	rdfs:label "Public Health Reporting"@en.
