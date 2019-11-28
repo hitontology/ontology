@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ov: <http://open.vocab.org/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix yago: <http://dbpedia.org/class/yago/>.
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
@@ -53,7 +54,6 @@
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
      ov:defines :Language; 
-     ov:defines :License; 
      ov:defines :OperatingSystem; 
      ov:defines :Popularity; 
      ov:defines :ProgrammingLanguage; 
@@ -247,7 +247,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/license
 :license rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :License ;
+                    rdfs:range yago:License106549661;
                     rdfs:label "license"@en .
 
 
@@ -500,11 +500,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :LabStudy rdf:type owl:Class ;
           rdfs:subClassOf :Study ;
           rdfs:label "Lab Study"@en .
-
-
-###  http://hitontology.eu/ontology/License
-:License rdf:type owl:Class ;
-          rdfs:label "License"@en .
 
 
 ###  http://hitontology.eu/ontology/NonExperimentalStudy
