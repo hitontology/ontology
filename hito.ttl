@@ -6,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ov: <http://open.vocab.org/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
-@base <http://hitontology.eu/ontology> .
+@base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
 
