@@ -6,8 +6,36 @@
 	rdfs:label "Bahmni";
 	:supportsLanguage dbr:English_language;
 	:supportsClient :WebBased;
+	:runsOnOs :CentOs6;
+	:programmingLanguage :Java;
+	:homepage <https://www.bahmni.org/>;
+	:usesDbs :MySql,:PostgreSql;
 	:supportsEnterpriseFunction :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting;
 	:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
+
+:CentOs6 a :OperatingSystem;
+	rdfs:label "CentOS v6"@en.
+
+:Windows a :OperatingSystem;
+	rdfs:label "Windows"@en.
+
+:MacOs a :OperatingSystem;
+	rdfs:label "MacOS"@en.
+
+:Linux a :OperatingSystem;
+	rdfs:label "Linux"@en.
+
+:DigitalOcean a :CloudPlatform;
+	rdfs:label "Digital Ocean"@en.
+
+:Java a :ProgrammingLanguage;
+	rdfs:label "Java"@en.
+
+:MySql a :DatabaseSystem;
+	rdfs:label "MySQL"@en.
+
+:PostgreSql a :DatabaseSystem;
+	rdfs:label "PostgreSQL"@en.
 
 ############## Enterprise Functions
 
