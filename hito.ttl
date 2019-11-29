@@ -1026,6 +1026,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Health center"@en .
 
 
+###  http://hitontology.eu/ontology/HL7
+:HL7 a :CommunicationStandard;
+	rdfs:label "HL7".
+
+
 ###  http://hitontology.eu/ontology/Hospital_environment
 :Hospital_environment rdf:type owl:NamedIndividual ,
                                :OrganizationalUnitClassified ;
@@ -1033,6 +1038,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                       rdfs:comment "Hospital (environment)" ;
                       rdfs:label "Hospital environment"@en .
+
+
+###  http://hitontology.eu/ontology/ICD10
+:ICD10 a :Standard;
+	rdfs:label "ICD10".
 
 
 ###  http://hitontology.eu/ontology/ICNP_as_classification_system
