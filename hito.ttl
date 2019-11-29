@@ -53,7 +53,6 @@
      ov:defines :EnterpriseFunctionClassified; 
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
-     ov:defines :Language; 
      ov:defines :OperatingSystem; 
      ov:defines :Popularity; 
      ov:defines :ProgrammingLanguage; 
