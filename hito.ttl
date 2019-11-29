@@ -53,7 +53,6 @@
      ov:defines :EnterpriseFunctionClassified; 
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
-     ov:defines :OperatingSystem; 
      ov:defines :Popularity; 
      ov:defines :Standard; 
      ov:defines :Terminology. 
@@ -273,7 +272,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/runsOnOs
 :runsOnOs rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :OperatingSystem ;
+                    rdfs:range yago:WikicatOperatingSystems;
                     rdfs:label "runs on OS"@en .
 
 
@@ -503,11 +502,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :NonExperimentalStudy rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Non Experimental Study"@en .
-
-
-###  http://hitontology.eu/ontology/OperatingSystem
-:OperatingSystem rdf:type owl:Class ;
-       rdfs:label "OperatingSystem"@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
