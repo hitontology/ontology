@@ -32,23 +32,8 @@
 	rdfs:label "gynaecology"@en;
 	:classifiedUnitSMOMEDCT :Gynecology_department_environment.
 
-:CentOs6 a :OperatingSystem;
-	rdfs:label "CentOS v6"@en.
-
-:Windows a :OperatingSystem;
-	rdfs:label "Windows"@en.
-
-:MacOs a :OperatingSystem;
-	rdfs:label "MacOS"@en.
-
-:Linux a :OperatingSystem;
-	rdfs:label "Linux"@en.
-
 :DigitalOcean a :CloudPlatform;
 	rdfs:label "Digital Ocean"@en.
-
-:Java a :ProgrammingLanguage;
-	rdfs:label "Java"@en.
 
 :MySql a :DatabaseSystem;
 	rdfs:label "MySQL"@en.
