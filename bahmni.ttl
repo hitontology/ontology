@@ -18,11 +18,11 @@
 
 :BahmniEmergency a :OrganizationalUnitCitation;
 	rdfs:label "emergency"@en;
-	classifiedUnitSMOMEDCT :Accident_and_Emergency_department_environment.
+	:classifiedUnitSMOMEDCT :Accident_and_Emergency_department_environment.
 
 :BahmniSurgery a :OrganizationalUnitCitation;
 	rdfs:label "surgery"@en;
-	classifiedUnitSMOMEDCT :Surgical_department_environment.
+	:classifiedUnitSMOMEDCT :Surgical_department_environment.
 
 :BahmniIntakeOutput a :OrganizationalUnitCitation;
 	rdfs:label "intake-output"@en.
@@ -30,7 +30,7 @@
 
 :BahmniGynaecology a :OrganizationalUnitCitation;
 	rdfs:label "gynaecology"@en;
-	classifiedUnitSMOMEDCT :Gynecology_department_environment.
+	:classifiedUnitSMOMEDCT :Gynecology_department_environment.
 
 :CentOs6 a :OperatingSystem;
 	rdfs:label "CentOS v6"@en.
