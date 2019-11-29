@@ -319,7 +319,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:range :Client ;
                     rdfs:label "supports client"@en .
 
-
 ###  http://hitontology.eu/ontology/supportedByFeature
 :supportedByFeature rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnterpriseFunctionCitation ;
@@ -1440,6 +1439,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                                     rdfs:label "Methods of information in medicine"@en .
 
 
+###  http://hitontology.eu/ontology/Mobile
+:Mobile a :Client;
+                    rdfs:label "mobile"@en .
+
+
 ###  http://hitontology.eu/ontology/NamedStudy_1
 :NamedStudy_1 rdf:type owl:NamedIndividual ,
                        :ExperimentalStudyRCT ;
@@ -2218,6 +2222,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                 rdfs:seeAlso "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6417985/pdf/nihms-1507901.pdf" .
 
 
+###  http://hitontology.eu/ontology/Native
+:Native a :Client;
+                    rdfs:label "native"@en .
+
+
 ###  http://hitontology.eu/ontology/Neonatal_intensive_care_unit_environment
 :Neonatal_intensive_care_unit_environment rdf:type owl:NamedIndividual ,
                                                    :OrganizationalUnitClassified ;
@@ -2751,6 +2760,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 :VanDoormaalEJ rdf:type owl:NamedIndividual ,
                         :FirstAuthor ;
                rdfs:label "Van Doormaal EJ"@en .
+
+
+###  http://hitontology.eu/ontology/WebBased
+:WebBased a :Client;
+                    rdfs:label "web-based"@en .
 
 
 ###  http://hitontology.eu/ontology/WestbrookIJ
