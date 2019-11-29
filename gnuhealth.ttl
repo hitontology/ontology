@@ -1,0 +1,146 @@
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr: <http://dbpedia.org/resource/>.
+
+:GnuHealth a :SoftwareProduct;
+	rdfs:label "GNU Health";
+	:supportsLanguage dbr:English_language;
+	:supportsClient :WebBased, :Native, :Mobile;
+	:runsOnOs dbr:Linux;
+	:programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)>;
+	:homepage <https://www.gnuhealth.org/>;
+	:usesStandard :HL7, :ICD10;
+	:usesDbs :PostgreSql;
+	:license dbr:GNU_General_Public_License;
+	:supportsEnterpriseFunction :ClinicalDocumentation,:RecordManagement,:PatientAdministration,:ReportGeneration,:Accounting,:Billing,:Coding,:StatisticalAnalysis,:StaffManagement,:Epidemiology,:MedicationManagement,:PatientManagement,:PatientEvaluations,:PatientAppointmentAndAdmissionManagement,:Occhiolino,:FinancialAccounting,:AnalyticAccounting,:ProductsAndServicesManagement,:PurchaseAdministration,:StockManagement,:AccessManagement; 
+	:offersFeature :CreatingPartyWithPatientProperty,:ListingTheCurrentPatients,:CreatingPatientRecord,:PrintingPatientIdCard,:IntroductionToEvaluations,:EvaluationsHistory,:EvaluationsForm,:Appointments,:InformationStoredPerAppointment,:ListOfAllAppointments,:AppointmentsCalendar,:AppointmentsReport,:ListOfAppointmentsForSpecificPatient,:GnuLims,:RequestingLaboratoryTest,:ManagingLaboratoryTests,:StoringLaboratoryTestResults,:LaboratoryReports,:LabOrdersAndHealthServices,:InterfacesWithLaboratoriesAndLims,:ChartOfAccounts,:ConfiguringAccounts,:AccountTypes,:ConfiguringJournals,:OrganizationStructure,:AssetManagement,:CostAllocationAmongCostCenters,:CostAllocationFromCostCenters,:GnuHealthProductsAndServicesManagement,:ProductsBasics,:VariantsBasics,:CreatingNewMedicationProducts,:InvoicingPatients,:ListingHealthServicesToBeInvoiced,:CreatingTheInvoice,:BasicsOfStockManagement,:StockLocations,:StockMovements,:Shipments,:Inventories,:AccessManagementOverview,:GroupsAccessManagement,:UsersAccessManagement,:Socioeconomics,:InfrastructureOfSocioeconomics,:Lifestyle,:FunctioningAndDisability,:Gynecology,:Obstetrics,:IntroductionToObstetrics,:GeneralPregnancyInformation,:PrenatalEvaluations,:PerinatalAndIntrapartumInformation,:PuerperiumMonitor,:GeneticFamilyHistory,:GeneticInformation,:ProteinRelatedDiseases,:SurgeryIntroduction,:SurgeriesPerPatient,:AllSurgeriesInformation,:SurgeriesForm,:IntroductionToPediatricsSection,:Neonatology,:Psc,:IntroductionToNursing,:DocumentRoundingsForInpatients,:DefaultImagingModule,:CreatingRequestForImage,:GeneratingResults,:ViewResults,:ConfiguringAvailableTests,:OrthancIntegrationModule,:UsageOrthancModule,:AdministrationOrthancModule,:SynchronizationOrthancModule,:TroubleshootingOrthancModule,:InpatientManagementInformation,:AdministrativeData,:NutritionInformation,:MedicationPlan,:CarePlan,:IntensiveCareUnit,:IcuFunctionalityInformation,:PatientIcuInformation,:PatientRoundingInformation,:Drainages,:Cardiovascular,:BloodAndSkin,:DigestiveAndAbdomen,:NeglectedTropicalDiseasesInformation,:ChagasDiseaseInformation,:DengueFever,:Reporting,:PatientEvaluationsReport,:TopDiseasesReport,:InjurySurveillanceSystemRegistrationReport,:SpecialtiesByHealthProfessionalsReport,:EvaluationsReport.
+
+:HL7 a :CommunicationStandard;
+	rdfs:label "HL7".
+
+:ICD10 a :Standard;
+	rdfs:label "ICD10".
+
+############## Enterprise Functions
+:ClinicalDocumentation a :EnterpriseFunctionCitation; rdfs:label "Clinical Documentation"@en.
+:RecordManagement a :EnterpriseFunctionCitation; rdfs:label "Record Management"@en.
+:PatientAdministration a :EnterpriseFunctionCitation; rdfs:label "Patient Administration"@en.
+:ReportGeneration a :EnterpriseFunctionCitation; rdfs:label "Report Generation"@en.
+:Accounting a :EnterpriseFunctionCitation; rdfs:label "Accounting"@en.
+:Billing a :EnterpriseFunctionCitation; rdfs:label "Billing"@en.
+:Coding a :EnterpriseFunctionCitation; rdfs:label "Coding"@en.
+:StatisticalAnalysis a :EnterpriseFunctionCitation; rdfs:label "Statistical Analysis"@en.
+:StaffManagement a :EnterpriseFunctionCitation; rdfs:label "Staff Management"@en.
+:Epidemiology a :EnterpriseFunctionCitation; rdfs:label "Epidemiology"@en.
+:MedicationManagement a :EnterpriseFunctionCitation; rdfs:label "Medication Management"@en.
+:PatientManagement a :EnterpriseFunctionCitation; rdfs:label "Patient Management"@en.
+:PatientEvaluations a :EnterpriseFunctionCitation; rdfs:label "Patient Evaluations"@en.
+:PatientAppointmentAndAdmissionManagement a :EnterpriseFunctionCitation; rdfs:label "Patient Appointment and Admission Management"@en.
+:Occhiolino a :EnterpriseFunctionCitation; rdfs:label "Occhiolino,the GNU LIMS: Laboratory Information Management System"@en.
+:FinancialAccounting a :EnterpriseFunctionCitation; rdfs:label "Financial Accounting"@en.
+:AnalyticAccounting a :EnterpriseFunctionCitation; rdfs:label "Analytic Accounting"@en.
+:ProductsAndServicesManagement a :EnterpriseFunctionCitation; rdfs:label "Products and Services Management"@en.
+:PurchaseAdministration a :EnterpriseFunctionCitation; rdfs:label "Purchase Administration"@en.
+:StockManagement a :EnterpriseFunctionCitation; rdfs:label "Stock Management"@en.
+:AccessManagement a :EnterpriseFunctionCitation; rdfs:label "Access Management"@en.
+
+################### Features
+:CreatingPartyWithPatientProperty a :EnterpriseFunctionCitation; rdfs:label "Creating a party with the patient property"@en.
+:ListingTheCurrentPatients a :EnterpriseFunctionCitation; rdfs:label "Listing the current patients"@en.
+:CreatingPatientRecord a :EnterpriseFunctionCitation; rdfs:label "Creating a patient record"@en.
+:PrintingPatientIdCard a :EnterpriseFunctionCitation; rdfs:label "Printing a patient ID card"@en.
+:IntroductionToEvaluations a :EnterpriseFunctionCitation; rdfs:label "Introduction to Evaluations"@en.
+:EvaluationsHistory a :EnterpriseFunctionCitation; rdfs:label "Evaluations History"@en.
+:EvaluationsForm a :EnterpriseFunctionCitation; rdfs:label "Evaluations Form (Main Info, Clinical, Mental Status. Diagnosis)"@en.
+:Appointments a :EnterpriseFunctionCitation; rdfs:label "Appointments"@en.
+:InformationStoredPerAppointment a :EnterpriseFunctionCitation; rdfs:label "Information stored per appointment"@en.
+:ListOfAllAppointments a :EnterpriseFunctionCitation; rdfs:label "List of all appointments"@en.
+:AppointmentsCalendar a :EnterpriseFunctionCitation; rdfs:label "Appointments Calendar"@en.
+:AppointmentsReport a :EnterpriseFunctionCitation; rdfs:label "Appointments Report"@en.
+:ListOfAppointmentsForSpecificPatient a :EnterpriseFunctionCitation; rdfs:label "List of appointments for a specific patient"@en.
+:GnuLims a :EnterpriseFunctionCitation; rdfs:label "GNU LIMS: Laboratory Information Management System for the Healthcare and Biomedical sectors"@en.
+:RequestingLaboratoryTest a :EnterpriseFunctionCitation; rdfs:label "Requesting a Laboratory Test"@en.
+:ManagingLaboratoryTests a :EnterpriseFunctionCitation; rdfs:label "Managing Laboratory Tests"@en.
+:StoringLaboratoryTestResults a :EnterpriseFunctionCitation; rdfs:label "Storing Laboratory Test Results"@en.
+:LaboratoryReports a :EnterpriseFunctionCitation; rdfs:label "Laboratory Reports"@en.
+:LabOrdersAndHealthServices a :EnterpriseFunctionCitation; rdfs:label "Lab orders and Health Services"@en.
+:InterfacesWithLaboratoriesAndLims a :EnterpriseFunctionCitation; rdfs:label "Interfaces with Laboratories and LIMS"@en.
+:ChartOfAccounts a :EnterpriseFunctionCitation; rdfs:label "Chart of accounts"@en.
+:ConfiguringAccounts a :EnterpriseFunctionCitation; rdfs:label "Configuring Accounts"@en.
+:AccountTypes a :EnterpriseFunctionCitation; rdfs:label "Account Types"@en.
+:ConfiguringJournals a :EnterpriseFunctionCitation; rdfs:label "Configuring Journals"@en.
+:OrganizationStructure a :EnterpriseFunctionCitation; rdfs:label "Organization structure"@en.
+:AssetManagement a :EnterpriseFunctionCitation; rdfs:label "Asset management"@en.
+:CostAllocationAmongCostCenters a :EnterpriseFunctionCitation; rdfs:label "Cost allocation among cost centers"@en.
+:CostAllocationFromCostCenters a :EnterpriseFunctionCitation; rdfs:label "cost allocation from cost centers"@en.
+:GnuHealthProductsAndServicesManagement a :EnterpriseFunctionCitation; rdfs:label "GNU Health/Products and Services Management"@en.
+:ProductsBasics a :EnterpriseFunctionCitation; rdfs:label "Products basics"@en.
+:VariantsBasics a :EnterpriseFunctionCitation; rdfs:label "Variants basics"@en.
+:CreatingNewMedicationProducts a :EnterpriseFunctionCitation; rdfs:label "Creating new medication products"@en.
+:InvoicingPatients a :EnterpriseFunctionCitation; rdfs:label "Invoicing Patients"@en.
+:ListingHealthServicesToBeInvoiced a :EnterpriseFunctionCitation; rdfs:label "Listing Health Services to be Invoiced"@en.
+:CreatingTheInvoice a :EnterpriseFunctionCitation; rdfs:label "Creating the Invoice"@en.
+:BasicsOfStockManagement a :EnterpriseFunctionCitation; rdfs:label "Basics of Stock Management"@en.
+:StockLocations a :EnterpriseFunctionCitation; rdfs:label "Stock Locations"@en.
+:StockMovements a :EnterpriseFunctionCitation; rdfs:label "Stock Movements"@en.
+:Shipments a :EnterpriseFunctionCitation; rdfs:label "Shipments"@en.
+:Inventories a :EnterpriseFunctionCitation; rdfs:label "Inventories"@en.
+:AccessManagementOverview a :EnterpriseFunctionCitation; rdfs:label "Access Management Overview"@en.
+:GroupsAccessManagement a :EnterpriseFunctionCitation; rdfs:label "Groups Access Management"@en.
+:UsersAccessManagement a :EnterpriseFunctionCitation; rdfs:label "Users Access Management"@en.
+:Socioeconomics a :EnterpriseFunctionCitation; rdfs:label "Socioeconomics"@en.
+:InfrastructureOfSocioeconomics a :EnterpriseFunctionCitation; rdfs:label "Infrastructure of Socioeconomics"@en.
+:Lifestyle a :EnterpriseFunctionCitation; rdfs:label "Lifestyle (Diet and Exercise, Addictions, Sexuality, Safety)"@en.
+:FunctioningAndDisability a :EnterpriseFunctionCitation; rdfs:label "Functioning and Disability"@en.
+:Gynecology a :EnterpriseFunctionCitation; rdfs:label "Gynecology (General review, Mammography history, PAP Smear history, Colposcopy history)"@en.
+:Obstetrics a :EnterpriseFunctionCitation; rdfs:label "Obstetrics"@en.
+:IntroductionToObstetrics a :EnterpriseFunctionCitation; rdfs:label "Introduction to Obstetrics"@en.
+:GeneralPregnancyInformation a :EnterpriseFunctionCitation; rdfs:label "General Pregnancy Information"@en.
+:PrenatalEvaluations a :EnterpriseFunctionCitation; rdfs:label "Prenatal Evaluations"@en.
+:PerinatalAndIntrapartumInformation a :EnterpriseFunctionCitation; rdfs:label "Perinatal and Intrapartum Information"@en.
+:PuerperiumMonitor a :EnterpriseFunctionCitation; rdfs:label "Puerperium Monitor"@en.
+:GeneticFamilyHistory a :EnterpriseFunctionCitation; rdfs:label "Genetic Family History"@en.
+:GeneticInformation a :EnterpriseFunctionCitation; rdfs:label "Genetic Information"@en.
+:ProteinRelatedDiseases a :EnterpriseFunctionCitation; rdfs:label "Protein Related Diseases"@en.
+:SurgeryIntroduction a :EnterpriseFunctionCitation; rdfs:label "Surgery introduction"@en.
+:SurgeriesPerPatient a :EnterpriseFunctionCitation; rdfs:label "Surgeries per Patient"@en.
+:AllSurgeriesInformation a :EnterpriseFunctionCitation; rdfs:label "All Surgeries information"@en.
+:SurgeriesForm a :EnterpriseFunctionCitation; rdfs:label "Surgeries Form"@en.
+:IntroductionToPediatricsSection a :EnterpriseFunctionCitation; rdfs:label "Introduction to Pediatrics Section"@en.
+:Neonatology a :EnterpriseFunctionCitation; rdfs:label "Neonatology"@en.
+:Psc a :EnterpriseFunctionCitation; rdfs:label "PSC (Pediatrics Symptom Checklist)"@en.
+:IntroductionToNursing a :EnterpriseFunctionCitation; rdfs:label "Introduction to Nursing"@en.
+:DocumentRoundingsForInpatients a :EnterpriseFunctionCitation; rdfs:label "document Roundings for inpatients (Main information, ICU information, Procedures information, Medication information,Stock Moves information)"@en.
+:DefaultImagingModule a :EnterpriseFunctionCitation; rdfs:label "Default imaging module"@en.
+:CreatingRequestForImage a :EnterpriseFunctionCitation; rdfs:label "Creating a request for image"@en.
+:GeneratingResults a :EnterpriseFunctionCitation; rdfs:label "Generating results"@en.
+:ViewResults a :EnterpriseFunctionCitation; rdfs:label "View results"@en.
+:ConfiguringAvailableTests a :EnterpriseFunctionCitation; rdfs:label "Configuring available tests"@en.
+:OrthancIntegrationModule a :EnterpriseFunctionCitation; rdfs:label "Orthanc Integration module"@en.
+:UsageOrthancModule a :EnterpriseFunctionCitation; rdfs:label "Usage Orthanc module"@en.
+:AdministrationOrthancModule a :EnterpriseFunctionCitation; rdfs:label "Administration Orthanc module"@en.
+:SynchronizationOrthancModule a :EnterpriseFunctionCitation; rdfs:label "Synchronization Orthanc module"@en.
+:TroubleshootingOrthancModule a :EnterpriseFunctionCitation; rdfs:label "Troubleshooting Orthanc module"@en.
+:InpatientManagementInformation a :EnterpriseFunctionCitation; rdfs:label "Inpatient Management information"@en.
+:AdministrativeData a :EnterpriseFunctionCitation; rdfs:label "Administrative Data"@en.
+:NutritionInformation a :EnterpriseFunctionCitation; rdfs:label "Nutrition information"@en.
+:MedicationPlan a :EnterpriseFunctionCitation; rdfs:label "Medication Plan"@en.
+:CarePlan a :EnterpriseFunctionCitation; rdfs:label "Care Plan"@en.
+:IntensiveCareUnit a :EnterpriseFunctionCitation; rdfs:label "Intensive Care Unit"@en.
+:IcuFunctionalityInformation a :EnterpriseFunctionCitation; rdfs:label "ICU Functionality information"@en.
+:PatientIcuInformation a :EnterpriseFunctionCitation; rdfs:label "Patient ICU Information"@en.
+:PatientRoundingInformation a :EnterpriseFunctionCitation; rdfs:label "Patient Rounding information (Neurologic Respiratory, incl. X-Ray)"@en.
+:Drainages a :EnterpriseFunctionCitation; rdfs:label "Drainages"@en.
+:Cardiovascular a :EnterpriseFunctionCitation; rdfs:label "Cardiovascular"@en.
+:BloodAndSkin a :EnterpriseFunctionCitation; rdfs:label "Blood and Skin"@en.
+:DigestiveAndAbdomen a :EnterpriseFunctionCitation; rdfs:label "Digestive and Abdomen"@en.
+:NeglectedTropicalDiseasesInformation a :EnterpriseFunctionCitation; rdfs:label "Neglected Tropical Diseases information"@en.
+:ChagasDiseaseInformation a :EnterpriseFunctionCitation; rdfs:label "Chagas Disease information"@en.
+:DengueFever a :EnterpriseFunctionCitation; rdfs:label "Dengue Fever"@en.
+:Reporting a :EnterpriseFunctionCitation; rdfs:label "Reporting"@en.
+:PatientEvaluationsReport a :EnterpriseFunctionCitation; rdfs:label "Patient Evaluations report"@en.
+:TopDiseasesReport a :EnterpriseFunctionCitation; rdfs:label "Top Diseases report"@en.
+:InjurySurveillanceSystemRegistrationReport a :EnterpriseFunctionCitation; rdfs:label "Injury Surveillance System Registration report"@en.
+:SpecialtiesByHealthProfessionalsReport a :EnterpriseFunctionCitation; rdfs:label "Specialties by health professionals report"@en.
+:EvaluationsReport a :EnterpriseFunctionCitation; rdfs:label "Evaluations Report"@en.
+
