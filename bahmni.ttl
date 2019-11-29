@@ -7,7 +7,7 @@
 	:supportsLanguage dbr:English_language;
 	:supportsClient :WebBased;
 	:runsOnOs :CentOs6;
-	:programmingLanguage :Java;
+	:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)>;
 	:homepage <https://www.bahmni.org/>;
 	:usesDbs :MySql,:PostgreSql;
 	:usedInOrganizationalUnit :BahmniEmergency, :BahmniSurgery, :BahmniIntakeOutput, :BahmniGynaecology;

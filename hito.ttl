@@ -55,7 +55,6 @@
      ov:defines :Homepage; 
      ov:defines :OperatingSystem; 
      ov:defines :Popularity; 
-     ov:defines :ProgrammingLanguage; 
      ov:defines :Standard; 
      ov:defines :Terminology. 
 
@@ -267,7 +266,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/programmingLanguage
 :programmingLanguage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :ProgrammingLanguage ;
+                    rdfs:range dbo:ProgrammingLanguage ;
                     rdfs:label "programming language"@en .
 
 
@@ -539,11 +538,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/PMID
 :PMID rdf:type owl:Class ;
       rdfs:label "PMID"@en .
-
-
-###  http://hitontology.eu/ontology/ProgrammingLanguage
-:ProgrammingLanguage rdf:type owl:Class ;
-          rdfs:label "ProgrammingLanguage"@en .
 
 
 ###  http://hitontology.eu/ontology/QuasiExperimentalStudy
