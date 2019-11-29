@@ -833,6 +833,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                                     rdfs:label "Dermatology department environment"@en .
 
 
+###  http://hitontology.eu/ontology/Dicom
+:DICOM a :Standard;
+	rdfs:label "DICOM".
+
+
 ###  http://hitontology.eu/ontology/Eclipsys_Continuum_2000_CDS
 :Eclipsys_Continuum_2000_CDS rdf:type owl:NamedIndividual ,
                                       :SoftwareProduct ;
@@ -1026,8 +1031,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Health center"@en .
 
 
-###  http://hitontology.eu/ontology/HL7
-:HL7 a :CommunicationStandard;
+###  http://hitontology.eu/ontology/Hl7
+:Hl7 a :CommunicationStandard;
 	rdfs:label "HL7".
 
 
@@ -1040,8 +1045,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                       rdfs:label "Hospital environment"@en .
 
 
-###  http://hitontology.eu/ontology/ICD10
-:ICD10 a :Standard;
+###  http://hitontology.eu/ontology/Icd10
+:Icd10 a :Standard;
 	rdfs:label "ICD10".
 
 
@@ -2518,6 +2523,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                                      :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                      rdfs:comment "Rheumatology department (environment)" ;
                                      rdfs:label "Rheumatology department environment"@en .
+
+
+###  http://hitontology.eu/ontology/Rest
+:Rest a :Standard;
+	rdfs:label "REST".
 
 
 ###  http://hitontology.eu/ontology/SAP_R3_Business_Process_Control_System_software

@@ -9,7 +9,7 @@
 	:runsOnOs dbr:Linux;
 	:programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)>;
 	:homepage <https://www.gnuhealth.org/>;
-	:usesStandard :HL7, :ICD10;
+	:usesStandard :Hl7, :Icd10;
 	:usesDbs :PostgreSql;
 	:license dbr:GNU_General_Public_License;
 	:supportsEnterpriseFunction :ClinicalDocumentation,:RecordManagement,:PatientAdministration,:ReportGeneration,:Accounting,:Billing,:Coding,:StatisticalAnalysis,:StaffManagement,:Epidemiology,:MedicationManagement,:PatientManagement,:PatientEvaluations,:PatientAppointmentAndAdmissionManagement,:Occhiolino,:FinancialAccounting,:AnalyticAccounting,:ProductsAndServicesManagement,:PurchaseAdministration,:StockManagement,:AccessManagement; 
