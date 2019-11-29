@@ -1,0 +1,30 @@
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr: <http://dbpedia.org/resource/>.
+
+:Orthanc a :SoftwareProduct;
+	rdfs:label "Orthanc";
+	:supportsLanguage dbr:English_language;
+	:supportsClient :WebBased;
+	:runsOnOs dbr:Linux, dbr:Unix, dbr:Mac_OS, dbr:Microsoft_Windows; # Windows doesn't have the operating system type in DBpedia but I think that is an error
+	:programmingLanguage <http://dbpedia.org/resource/C++>;
+	:homepage <https://www.orthanc-server.com/>;
+	:usesStandard :Dicom, :Rest;
+	:usesDbs :PostgreSql;
+	:license dbr:GNU_Free_Documentation_License;
+	:supportsEnterpriseFunction :ImageArchiving, :ImageCommunication, :ImageDistribution, :ImageManagement; 
+	:offersFeature :DicomIdentifiers, :DicomNetworkProtocol, :TestConnection, :SendImages, :SearchContent, :RetrieveImages.
+
+############## Enterprise Functions
+:ImageArchiving a :EnterpriseFunctionCitation; rdfs:label "Image Archiving"@en.
+:ImageCommunication a :EnterpriseFunctionCitation; rdfs:label "Image Communication"@en.
+:ImageDistribution a :EnterpriseFunctionCitation; rdfs:label "Image Distribution"@en.
+:ImageManagement a :EnterpriseFunctionCitation; rdfs:label "Image Management"@en.
+################### Features
+:DicomIdentifiers a :FeatureCitation; rdfs:label "DICOM identifiers"@en.
+:DicomNetworkProtocol a :FeatureCitation; rdfs:label "DICOM network protocol"@en.
+:TestConnection a :FeatureCitation; rdfs:label "Test the connection"@en.
+:SendImages a :FeatureCitation; rdfs:label "Send images"@en.
+:SearchContent a :FeatureCitation; rdfs:label "Search the content"@en.
+:RetrieveImages a :FeatureCitation; rdfs:label "Retrieve images"@en.
+
