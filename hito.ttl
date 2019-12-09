@@ -53,6 +53,7 @@
      ov:defines :EnterpriseFunctionClassified; 
      ov:defines :FunctionCatalogue; 
      ov:defines :Homepage; 
+     ov:defines :Interoperability;
      ov:defines :Popularity; 
      ov:defines :Standard; 
      ov:defines :Terminology. 
@@ -246,6 +247,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :Homepage ;
                     rdfs:label "homepage"@en .
+
+
+###  http://hitontology.eu/ontology/interoperability
+:interoperability rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :Interoperability;
+                    rdfs:label "interoperability"@en .
 
 
 ###  http://hitontology.eu/ontology/license
@@ -502,6 +510,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Homepage rdf:type owl:Class ;
           rdfs:label "Homepage"@en .
 
+
+###  http://hitontology.eu/ontology/Interoperability
+:Interoperability rdf:type owl:Class ;
+          rdfs:label "Interoperability"@en .
 
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
@@ -2554,6 +2566,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                  rdfs:label "SAP R3 Business Process Control System software"@en .
 
 
+###  http://hitontology.eu/ontology/SemanticInteroperability
+:SemanticInteroperability a :Interoperability ;
+          rdfs:label "Semantic Interoperability"@en .
+
+
 ###  http://hitontology.eu/ontology/Software_quality
 :Software_quality rdf:type owl:NamedIndividual ,
                            :OutcomeCriteriaClassified ;
@@ -2698,12 +2715,22 @@ xsd:gYear rdf:type rdfs:Datatype .
                                  rdfs:label "Surgical department environment"@en .
 
 
+###  http://hitontology.eu/ontology/SyntacticInteroperability
+:SyntacticInteroperability a :Interoperability ;
+          rdfs:label "Syntactic Interoperability"@en .
+
+
 ###  http://hitontology.eu/ontology/Sysmex_XS_1000i_haematology_analyser
 :Sysmex_XS_1000i_haematology_analyser rdf:type owl:NamedIndividual ,
                                                :SoftwareProduct ;
                                       :offersFeature :complete_test_results ,
                                                      :read_bar_code_label ;
                                       rdfs:label "Sysmex XS 1000i haematology analyser"@en .
+
+
+###  http://hitontology.eu/ontology/TechnicalInteroperability
+:TechnicalInteroperability a :Interoperability ;
+          rdfs:label "Technical Interoperability"@en.
 
 
 ###  http://hitontology.eu/ontology/Technicians
