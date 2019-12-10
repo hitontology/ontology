@@ -96,13 +96,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/featureClassifiedEHRHL7FM
 :featureClassifiedEHRHL7FM rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :featureClassified;
                            rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "classified Feature EHRHL7FM"@en .
 
 
 ###  http://hitontology.eu/ontology/featureClassified
-:featureClassifiedEHRHL7FM rdf:type owl:ObjectProperty ;
+:featureClassified rdf:type owl:ObjectProperty ;
                            rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "classified feature"@en .
