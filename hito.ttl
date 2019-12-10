@@ -54,7 +54,6 @@
      ov:defines :Homepage; 
      ov:defines :Interoperability;
      ov:defines :Popularity; 
-     ov:defines :Standard; 
      ov:defines :SoftwareEvolutionState;
      ov:defines :Terminology. 
 
@@ -267,7 +266,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :implements rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :ApplicationSystem ;
-                    rdfs:comment "If installed and customized, a software product implements a certain application system."@en .
+                    rdfs:comment "If installed and customized, a software product implements a certain application system."@en ;
                     rdfs:label "implements"@en .
 
 
@@ -318,13 +317,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :DatabaseSystem ;
                     rdfs:label "uses database system"@en .
-
-
-###  http://hitontology.eu/ontology/usesStandard
-:usesStandard rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :Standard ;
-                    rdfs:label "uses standard"@en .
 
 
 ###  http://hitontology.eu/ontology/softwareProductComponent
@@ -453,7 +445,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Certification
 :Certification rdf:type owl:Class ;
-                     rdfs:subClassOf :Standard ;
                      rdfs:label "Certification"@en .
 
 ###  http://hitontology.eu/ontology/Classification
@@ -465,11 +456,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Client rdf:type owl:Class ;
                      rdfs:label "Client"@en .
 
-
-###  http://hitontology.eu/ontology/CommunicationStandard
-:CommunicationStandard rdf:type owl:Class ;
-                     rdfs:subClassOf :Standard ;
-                     rdfs:label "Communication Standard"@en .
 
 
 ###  http://hitontology.eu/ontology/DatabaseSystem
@@ -595,11 +581,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                  rdfs:label "Software Product"@en .
 
 
-###  http://hitontology.eu/ontology/Standard
-:Standard rdf:type owl:Class ;
-       rdfs:label "Standard"@en .
-
-
 ###  http://hitontology.eu/ontology/Study
 :Study rdf:type owl:Class ;
        rdfs:label "Study"@en .
@@ -613,11 +594,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/StudyMethodCitation
 :StudyMethodCitation rdf:type owl:Class ;
                      rdfs:label "Study Method Citation"@en .
-
-###  http://hitontology.eu/ontology/Terminology
-:Terminology rdf:type owl:Class ;
-                     rdfs:subClassOf :Standard ;
-                     rdfs:label "Terminology"@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;
@@ -884,7 +860,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/Dicom
-:DICOM a :Standard;
+:DICOM a :SyntacticInteroperability;
 	rdfs:label "DICOM".
 
 
@@ -1096,7 +1072,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/Icd10
-:Icd10 a :Standard;
+:Icd10 a :SemanticInteroperability;
 	rdfs:label "ICD10".
 
 
@@ -2576,7 +2552,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/Rest
-:Rest a :Standard;
+:Rest a :TechnicalInteroperability;
 	rdfs:label "REST".
 
 
