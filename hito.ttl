@@ -353,8 +353,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "supported by feature"@en .
 
 
-###  http://hitontology.eu/ontology/supportsEnterpriseFunction
-:supportsEnterpriseFunction rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/supportsEnterpriseFunctionCitation
+:supportsEnterpriseFunctionCitation rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :EnterpriseFunctionCitation ;
                     rdfs:label "supports enterprise function"@en .

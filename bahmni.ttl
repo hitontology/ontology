@@ -13,7 +13,7 @@
 	:usedInOrganizationalUnit :BahmniEmergency, :BahmniSurgery, :BahmniIntakeOutput, :BahmniGynaecology;
 #	:supportsClient
 	:license dbr:Affero_General_Public_License;
-	:supportsEnterpriseFunction :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting;
+	:supportsEnterpriseFunctionCitation :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting;
 	:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
 
 :BahmniEmergency a :OrganizationalUnitCitation;

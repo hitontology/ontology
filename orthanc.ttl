@@ -4,6 +4,7 @@
 
 :Orthanc a :SoftwareProduct;
 	rdfs:label "Orthanc";
+	rdfs:comment "The enterprise function citations are based on the medfloss website."
 	:supportsLanguage dbr:English_language;
 	:supportsClient :WebBased;
 	:runsOnOs dbr:Linux, dbr:Unix, dbr:Mac_OS, dbr:Microsoft_Windows; # Windows doesn't have the operating system type in DBpedia but I think that is an error
@@ -12,7 +13,7 @@
 	:usesStandard :Dicom, :Rest;
 	:usesDbs :PostgreSql;
 	:license dbr:GNU_Free_Documentation_License;
-	:supportsEnterpriseFunction :ImageArchiving, :ImageCommunication, :ImageDistribution, :ImageManagement; 
+	:supportsEnterpriseFunctionCitation :ImageArchiving, :ImageCommunication, :ImageDistribution, :ImageManagement; 
 	:offersFeature :DicomIdentifiers, :DicomNetworkProtocol, :TestConnection, :SendImages, :SearchContent, :RetrieveImages.
 
 ############## Enterprise Functions
