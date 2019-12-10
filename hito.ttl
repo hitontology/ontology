@@ -47,7 +47,6 @@
      ov:defines :Classification; 
      ov:defines :Client; 
      ov:defines :CommunicationStandard; 
-     ov:defines :CommunityStatus; 
      ov:defines :DatabaseSystem; 
      ov:defines :EnterpriseFunctionCitation; 
      ov:defines :EnterpriseFunctionClassified; 
@@ -157,13 +156,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :UserGroupClassified ;
                     rdfs:label "user group"@en .
-
-
-###  http://hitontology.eu/ontology/communityStatus
-:communityStatus rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :CommunityStatus ;
-                    rdfs:label "communityStatus"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystem
@@ -472,11 +464,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Client
 :Client rdf:type owl:Class ;
                      rdfs:label "Client"@en .
-
-
-###  http://hitontology.eu/ontology/CommunityStatus
-:CommunityStatus rdf:type owl:Class ;
-          rdfs:label "Community Status"@en .
 
 
 ###  http://hitontology.eu/ontology/CommunicationStandard
