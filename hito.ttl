@@ -101,8 +101,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "classified feature"@en .
 
 
-###  http://hitontology.eu/ontology/classifiedFunction
-:classifiedFunction rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/functionClassified
+:functionClassified rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :EnterpriseFunctionClassified ;
                     rdfs:label "classified function"@en .
