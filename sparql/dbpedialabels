@@ -1,0 +1,10 @@
+CONSTRUCT {?x rdfs:label ?y.}
+WHERE
+{
+ {?x a yago:OperatingSystem106568134.} UNION
+ {?x a yago:License106549661.} UNION
+ {?x a dbo:ProgrammingLanguage.} UNION
+ {?x a dbo:Language.}
+ ?x rdfs:label ?y.
+}
+
