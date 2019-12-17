@@ -1,31 +1,68 @@
-@prefix : <http://hitontology.eu/ontology/> .
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hito: <> .
 
-:Orthanc a :SoftwareProduct;
-	rdfs:label "Orthanc";
-	rdfs:comment "The enterprise function citations are based on the medfloss website.";
-	:supportsLanguage dbr:English_language;
-	:supportsClient :WebBased;
-	:runsOnOs dbr:Linux, dbr:Unix, dbr:Mac_OS, dbr:Microsoft_Windows; # Windows doesn't have the operating system type in DBpedia but I think that is an error
-	:programmingLanguage <http://dbpedia.org/resource/C++>;
-	:homepage <https://www.orthanc-server.com/>;
-	:usesStandard :Dicom, :Rest;
-	:usesDbs :PostgreSql;
-	:license dbr:GNU_Free_Documentation_License;
-	:supportsEnterpriseFunctionCitation :ImageArchiving, :ImageCommunication, :ImageDistribution, :ImageManagement; 
-	:offersFeature :DicomIdentifiers, :DicomNetworkProtocol, :TestConnection, :SendImages, :SearchContent, :RetrieveImages.
+hito:DicomIdentifiers
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM identifiers"@en .
 
-############## Enterprise Functions
-:ImageArchiving a :EnterpriseFunctionCitation; rdfs:label "Image Archiving"@en.
-:ImageCommunication a :EnterpriseFunctionCitation; rdfs:label "Image Communication"@en.
-:ImageDistribution a :EnterpriseFunctionCitation; rdfs:label "Image Distribution"@en.
-:ImageManagement a :EnterpriseFunctionCitation; rdfs:label "Image Management"@en.
-################### Features
-:DicomIdentifiers a :FeatureCitation; rdfs:label "DICOM identifiers"@en.
-:DicomNetworkProtocol a :FeatureCitation; rdfs:label "DICOM network protocol"@en.
-:TestConnection a :FeatureCitation; rdfs:label "Test the connection"@en.
-:SendImages a :FeatureCitation; rdfs:label "Send images"@en.
-:SearchContent a :FeatureCitation; rdfs:label "Search the content"@en.
-:RetrieveImages a :FeatureCitation; rdfs:label "Retrieve images"@en.
+hito:DicomNetworkProtocol
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM network protocol"@en .
+
+hito:ImageArchiving
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Archiving"@en .
+
+hito:ImageCommunication
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Communication"@en .
+
+hito:ImageDistribution
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Distribution"@en .
+
+hito:ImageManagement
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Management"@en .
+
+hito:Orthanc
+    hito:homepage <https://www.orthanc-server.com/> ;
+    hito:license <http://dbpedia.org/resource/GNU_Free_Documentation_License> ;
+    hito:offersFeature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
+    hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
+    hito:runsOnOs <http://dbpedia.org/resource/Linux>, <http://dbpedia.org/resource/Mac_OS>, <http://dbpedia.org/resource/Microsoft_Windows>, <http://dbpedia.org/resource/Unix> ;
+    hito:supportsClient hito:WebBased ;
+    hito:supportsEnterpriseFunctionCitation hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
+    hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
+    hito:usesDbs hito:PostgreSql ;
+    hito:usesStandard hito:Dicom, hito:Rest ;
+    a hito:SoftwareProduct ;
+    rdfs:comment "The enterprise function citations are based on the medfloss website." ;
+    rdfs:label "Orthanc" .
+
+hito:RetrieveImages
+    a hito:FeatureCitation ;
+    rdfs:label "Retrieve images"@en .
+
+hito:SearchContent
+    a hito:FeatureCitation ;
+    rdfs:label "Search the content"@en .
+
+hito:SendImages
+    hito:featureClassified hito:CaptureFromDigitalDevices ;
+    a hito:FeatureCitation ;
+    rdfs:label "Send images"@en .
+
+hito:TestConnection
+    a hito:FeatureCitation ;
+    rdfs:label "Test the connection"@en .
 
