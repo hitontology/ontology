@@ -1,154 +1,230 @@
-@prefix : <http://hitontology.eu/ontology/> .
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hito: <> .
 
-:Bahmni a :SoftwareProduct;
-	rdfs:label "Bahmni";
-	:supportsLanguage dbr:English_language;
-	:supportsClient :WebBased;
-	:runsOnOs dbr:CentOS;
-	:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)>;
-	:homepage <https://www.bahmni.org/>;
-	:usesDbs :MySql,:PostgreSql;
-	:usedInOrganizationalUnit :BahmniEmergency, :BahmniSurgery, :BahmniIntakeOutput, :BahmniGynaecology;
-#	:supportsClient
-	:license dbr:Affero_General_Public_License;
-	:supportsEnterpriseFunctionCitation :PatientRegistration, :ClinicalServices, :Laboratory, :InpatientManagement, :StockManagement, :Billing, :Reporting;
-	:offersFeature :SearchPatients, :PrintPatientId, :CaptureClinicalRecords, :MaintainClinicalRecords, :CreateGeneralForms, :CreateDiseaseSpecificForms, :CaptureDrugPrescriptions, :OrderLab, :OrderRadiology, :OrderInvestigation, :UseDrugPrescriptionTemplates, :ManagePatientOrders, :ManageSamples, :ManageTests, :DisplayLaboratoryWorkload, :SendSamplesForReferrals, :ManagePatientsAdmissions, :PerformBedAssignments, :TrackWardOccupancy, :ManageStock, :TrackStock, :ReorderStock, :MoveStock, :MonitorStockLevels, :ManageAccurateRecords, :MaintainAccurateRecords, :PerformOperationalReporting, :ClinicalReporting, :PublicHealthReporting.
+hito:Bahmni
+    hito:homepage <https://www.bahmni.org/> ;
+    hito:license <http://dbpedia.org/resource/Affero_General_Public_License> ;
+    hito:offersFeature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
+    hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    hito:runsOnOs <http://dbpedia.org/resource/CentOS> ;
+    hito:supportsClient hito:WebBased ;
+    hito:supportsEnterpriseFunctionCitation hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
+    hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
+    hito:usedInOrganizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
+    hito:usesDbs hito:MySql, hito:PostgreSql ;
+    a hito:SoftwareProduct ;
+    rdfs:label "Bahmni" .
 
-:BahmniEmergency a :OrganizationalUnitCitation;
-	rdfs:label "emergency"@en;
-	:classifiedUnitSMOMEDCT :Accident_and_Emergency_department_environment.
+hito:BahmniEmergency
+    hito:classifiedUnitSMOMEDCT hito:Accident_and_Emergency_department_environment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "emergency"@en .
 
-:BahmniSurgery a :OrganizationalUnitCitation;
-	rdfs:label "surgery"@en;
-	:classifiedUnitSMOMEDCT :Surgical_department_environment.
+hito:BahmniGynaecology
+    hito:classifiedUnitSMOMEDCT hito:Gynecology_department_environment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "gynaecology"@en .
 
-:BahmniIntakeOutput a :OrganizationalUnitCitation;
-	rdfs:label "intake-output"@en.
-#	classifiedUnitSMOMEDCT :.
+hito:BahmniIntakeOutput
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "intake-output"@en .
 
-:BahmniGynaecology a :OrganizationalUnitCitation;
-	rdfs:label "gynaecology"@en;
-	:classifiedUnitSMOMEDCT :Gynecology_department_environment.
+hito:BahmniSurgery
+    hito:classifiedUnitSMOMEDCT hito:Surgical_department_environment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "surgery"@en .
 
-:DigitalOcean a :CloudPlatform;
-	rdfs:label "Digital Ocean"@en.
+hito:Billing
+    hito:functionClassified hito:HealthFinancing ;
+    hito:supportedByFeatureCitation hito:MaintainAccurateRecords, hito:ManageAccurateRecords ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Billing"@en .
 
-:MySql a :DatabaseSystem;
-	rdfs:label "MySQL"@en.
+hito:CaptureClinicalRecords
+    a hito:FeatureCitation ;
+    rdfs:label "Capture Clinical Records"@en .
 
-:PostgreSql a :DatabaseSystem;
-	rdfs:label "PostgreSQL"@en.
+hito:CaptureDrugPrescriptions
+    hito:featureClassified hito:ReportEffectsAdverseDrug, hito:TrackClientsMedicationConsumption, hito:TransmitOrTrackPrescriptionOrders ;
+    a hito:FeatureCitation ;
+    rdfs:label "Capture Drug Prescriptions"@en .
 
-############## Enterprise Functions
+hito:ClinicalReporting
+    hito:featureClassified hito:IdentifyClientsInNeedOfServices, hito:ScheduleHealthcareProvidersActivities ;
+    a hito:FeatureCitation ;
+    rdfs:label "Clinical Reporting"@en .
 
-:PatientRegistration a :EnterpriseFunctionCitation;
-	rdfs:label "Patient Registration"@en.
+hito:ClinicalServices
+    hito:functionClassified hito:ClientHealthRecords, hito:HealthWorkerActivityPlanningAndScheduling, hito:HealthcareProviderCommunication, hito:HealthcareProviderTraining, hito:PrescriptionAndMedicationManagement ;
+    hito:supportedByFeatureCitation hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:MaintainClinicalRecords, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:UseDrugPrescriptionTemplates ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Clinical Services"@en .
 
-:ClinicalServices a :EnterpriseFunctionCitation;
-	rdfs:label "Clinical Services"@en.
+hito:CreateDiseaseSpecificForms
+    hito:featureClassified hito:ScheduleHealthcareProvidersActivities ;
+    a hito:FeatureCitation ;
+    rdfs:label "Create Disease Specific Forms"@en .
 
-:Laboratory a :EnterpriseFunctionCitation;
-	rdfs:label "Laboratory"@en.
+hito:CreateGeneralForms
+    hito:featureClassified hito:EnrolClientForHealthServicesclinicalCarePlan, hito:VerifyClientUniqueIdentity ;
+    a hito:FeatureCitation ;
+    rdfs:label "Create General Forms"@en .
 
-:InpatientManagement a :EnterpriseFunctionCitation;
-	rdfs:label "Inpatient Management"@en.
+hito:DigitalOcean
+    a hito:CloudPlatform ;
+    rdfs:label "Digital Ocean"@en .
 
-:StockManagement a :EnterpriseFunctionCitation;
-	rdfs:label "Stock Management"@en.
+hito:DisplayLaboratoryWorkload
+    hito:featureClassified hito:CaptureFromDigitalDevices, hito:TrackBiologicalSpecimens, hito:TransmitDiagnosticOrdersDiagnosticResults, hito:TransmitToHealthcareProviderAndTrack ;
+    a hito:FeatureCitation ;
+    rdfs:label "Display Laboratory Workload"@en .
 
-:Billing a :EnterpriseFunctionCitation;
-	rdfs:label "Billing"@en.
+hito:InpatientManagement
+    hito:functionClassified hito:ClientHealthRecords, hito:ClientIdentificationAndRegistration ;
+    hito:supportedByFeatureCitation hito:ManagePatientsAdmissions, hito:PerformBedAssignments, hito:SendSamplesForReferrals, hito:TrackWardOccupancy ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Inpatient Management"@en .
 
-:Reporting a :EnterpriseFunctionCitation;
-	rdfs:label "Reporting"@en.
+hito:Laboratory
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    hito:supportedByFeatureCitation hito:DisplayLaboratoryWorkload, hito:ManagePatientOrders, hito:ManageSamples, hito:ManageTests ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Laboratory"@en .
 
-################### Features
+hito:MaintainAccurateRecords
+    hito:featureClassified hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    a hito:FeatureCitation ;
+    rdfs:label "Maintain Accurate Records"@en .
 
-:SearchPatients a :FeatureCitation;
-		rdfs:label "Search Patients"@en.
+hito:MaintainClinicalRecords
+    hito:featureClassified hito:ManageClientsStructuredClinicalRecords, hito:ManageClientsUnstructuredClinicalRecords, hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    a hito:FeatureCitation ;
+    rdfs:label "Maintain Clinical Records"@en .
 
-:PrintPatientId a :FeatureCitation;
-	rdfs:label "Print Patient Id"@en.
+hito:ManageAccurateRecords
+    hito:featureClassified hito:LongitudinalTrackingOfClientsHealthStatusAndServices, hito:ManageClientsStructuredClinicalRecords ;
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Accurate Records"@en .
 
-:CaptureClinicalRecords a :FeatureCitation;
-	rdfs:label "Capture Clinical Records"@en.
+hito:ManagePatientOrders
+    hito:featureClassified hito:LongitudinalTrackingOfClientsHealthStatusAndServices, hito:ManageClientsStructuredClinicalRecords, hito:ManageClientsUnstructuredClinicalRecords, hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Patient Orders"@en .
 
-:MaintainClinicalRecords a :FeatureCitation;
-	rdfs:label "Maintain Clinical Records"@en.
+hito:ManagePatientsAdmissions
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Patients Admissions"@en .
 
-:CreateGeneralForms a :FeatureCitation;
-	rdfs:label "Create General Forms"@en.
+hito:ManageSamples
+    hito:featureClassified hito:TransmitToHealthcareProviderAndTrack ;
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Samples"@en .
 
-:CreateDiseaseSpecificForms a :FeatureCitation;
-	rdfs:label "Create Disease Specific Forms"@en.
+hito:ManageStock
+    hito:featureClassified hito:ManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, hito:ManageOfCommodities, hito:MonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:MonitorStatusOfHealthEquipment, hito:NotifyHealthCommodities, hito:ReportCounterfeitOrSubstandardDrugsByClients ;
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Stock"@en .
 
-:CaptureDrugPrescriptions a :FeatureCitation;
-	rdfs:label "Capture Drug Prescriptions"@en.
+hito:ManageTests
+    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    a hito:FeatureCitation ;
+    rdfs:label "Manage Tests"@en .
 
-:OrderLab a :FeatureCitation;
-	rdfs:label "Order Lab"@en.
+hito:MonitorStockLevels
+    hito:featureClassified hito:MonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:MonitorStatusOfHealthEquipment, hito:NotifyHealthCommodities, hito:RegisterAndHealthCommoditiesProcurement ;
+    a hito:FeatureCitation ;
+    rdfs:label "Monitor Stock Levels"@en .
 
-:OrderRadiology a :FeatureCitation;
-	rdfs:label "Order Radiology"@en.
+hito:MoveStock
+    a hito:FeatureCitation ;
+    rdfs:label "Move Stock"@en .
 
-:OrderInvestigation a :FeatureCitation;
-	rdfs:label "Order Investigation"@en.
+hito:MySql
+    a hito:DatabaseSystem ;
+    rdfs:label "MySQL"@en .
 
-:UseDrugPrescriptionTemplates a :FeatureCitation;
-	rdfs:label "Use Drug Prescription Templates"@en.
+hito:OrderInvestigation
+    a hito:FeatureCitation ;
+    rdfs:label "Order Investigation"@en .
 
-:ManagePatientOrders a :FeatureCitation;
-	rdfs:label "Manage Patient Orders"@en.
+hito:OrderLab
+    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    a hito:FeatureCitation ;
+    rdfs:label "Order Lab"@en .
 
-:ManageSamples a :FeatureCitation;
-	rdfs:label "Manage Samples"@en.
+hito:OrderRadiology
+    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    a hito:FeatureCitation ;
+    rdfs:label "Order Radiology"@en .
 
-:ManageTests a :FeatureCitation;
-	rdfs:label "Manage Tests"@en.
+hito:PatientRegistration
+    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    hito:supportedByFeatureCitation hito:PrintPatientId, hito:SearchPatients ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Patient Registration"@en .
 
-:DisplayLaboratoryWorkload a :FeatureCitation;
-	rdfs:label "Display Laboratory Workload"@en.
+hito:PerformBedAssignments
+    a hito:FeatureCitation ;
+    rdfs:label "Perform Bed Assignments"@en .
 
-:SendSamplesForReferrals a :FeatureCitation;
-	rdfs:label "Send Samples For Referrals"@en.
+hito:PerformOperationalReporting
+    a hito:FeatureCitation ;
+    rdfs:label "Perform Operational Reporting"@en .
 
-:ManagePatientsAdmissions a :FeatureCitation;
-	rdfs:label "Manage Patients Admissions"@en.
+hito:PostgreSql
+    a hito:DatabaseSystem ;
+    rdfs:label "PostgreSQL"@en .
 
-:PerformBedAssignments a :FeatureCitation;
-	rdfs:label "Perform Bed Assignments"@en.
+hito:PrintPatientId
+    hito:featureClassified hito:VerifyClientUniqueIdentity ;
+    a hito:FeatureCitation ;
+    rdfs:label "Print Patient Id"@en .
 
-:TrackWardOccupancy a :FeatureCitation;
-	rdfs:label "Track Ward Occupancy"@en.
+hito:PublicHealthReporting
+    hito:featureClassified hito:ReportingOfHealthSystemFeedbackByClients, hito:ReportingOfPublicHealthEventsByClient ;
+    a hito:FeatureCitation ;
+    rdfs:label "Public Health Reporting"@en .
 
-:ManageStock a :FeatureCitation;
-	rdfs:label "Manage Stock"@en.
+hito:ReorderStock
+    hito:featureClassified hito:CoordinateEmergencyResponseAndTransport, hito:ManageReferralsBetweenHealthAndOtherSectors, hito:ManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    a hito:FeatureCitation ;
+    rdfs:label "Reorder Stock"@en .
 
-:TrackStock a :FeatureCitation;
-	rdfs:label "Track Stock"@en.
+hito:Reporting
+    hito:supportedByFeatureCitation hito:ClinicalReporting, hito:PerformOperationalReporting, hito:PublicHealthReporting ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Reporting"@en .
 
-:ReorderStock a :FeatureCitation;
-	rdfs:label "Reorder Stock"@en.
+hito:SearchPatients
+    a hito:FeatureCitation ;
+    rdfs:label "Search Patients"@en .
 
-:MoveStock a :FeatureCitation;
-	rdfs:label "Move Stock"@en.
+hito:SendSamplesForReferrals
+    hito:featureClassified hito:TransmissionOfMedicalDataToHealthcareProvider ;
+    a hito:FeatureCitation ;
+    rdfs:label "Send Samples For Referrals"@en .
 
-:MonitorStockLevels a :FeatureCitation;
-	rdfs:label "Monitor Stock Levels"@en.
+hito:StockManagement
+    hito:functionClassified hito:SupplyChainManagement ;
+    hito:supportedByFeatureCitation hito:ManageStock, hito:MonitorStockLevels, hito:MoveStock, hito:ReorderStock, hito:TrackStock ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Stock Management"@en .
 
-:ManageAccurateRecords a :FeatureCitation;
-	rdfs:label "Manage Accurate Records"@en.
+hito:TrackStock
+    a hito:FeatureCitation ;
+    rdfs:label "Track Stock"@en .
 
-:MaintainAccurateRecords a :FeatureCitation;
-	rdfs:label "Maintain Accurate Records"@en.
+hito:TrackWardOccupancy
+    a hito:FeatureCitation ;
+    rdfs:label "Track Ward Occupancy"@en .
 
-:PerformOperationalReporting a :FeatureCitation;
-	rdfs:label "Perform Operational Reporting"@en.
+hito:UseDrugPrescriptionTemplates
+    hito:featureClassified hito:ReportEffectsAdverseDrug ;
+    a hito:FeatureCitation ;
+    rdfs:label "Use Drug Prescription Templates"@en .
 
-:ClinicalReporting a :FeatureCitation;
-	rdfs:label "Clinical Reporting"@en.
-
-:PublicHealthReporting a :FeatureCitation;
-	rdfs:label "Public Health Reporting"@en.
