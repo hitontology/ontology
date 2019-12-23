@@ -169,7 +169,7 @@ hito:CommunicationAndPerformanceFeedbackToHealthcareProviders
 hito:CommunicationFromHealthcareProvidersToSupervisor
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.5.1" ;
-    hito:subfeatureOf hito:HealthcareProviderCommunication ;
+    hito:supports hito:HealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Communication from healthcare provider(s) to supervisor"@en .
 
@@ -182,7 +182,7 @@ hito:CommunitybasedInformationSystem
 hito:ConsultationsBetweenRemoteClientAndHealthcareProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.4.1" ;
-    hito:subfeatureOf hito:Telemedicine ;
+    hito:supports hito:Telemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Consultations between remote client and healthcare provider"@en ;
     skos:altLabel "call centers"@en, "client based telemedicine"@en, "client calls a health worker or hotline to receive clinical guidance on health issue"@en, "helpline"@en, "hotlines"@en, "interactive telemedicine"@en, "real-time telemedicine"@en, "remote consultation"@en, "synchronous telemedicine"@en, "tele consultation"@en .
@@ -190,7 +190,7 @@ hito:ConsultationsBetweenRemoteClientAndHealthcareProvider
 hito:ConsultationsForCaseManagementBetweenHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.4.4" ;
-    hito:subfeatureOf hito:Telemedicine ;
+    hito:supports hito:Telemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Consultations for case management between healthcare providers"@en ;
     skos:altLabel "closed usergroup"@en, "consulting other health care providers, particularly specialists, for patient case management"@en, "health worker to health worker communication"@en, "inter-provider communication"@en, "seeking second opinion for patient case management"@en .
@@ -270,7 +270,7 @@ hito:EmergencyResponseSystem
 hito:EnrolClientForHealthServicesclinicalCarePlan
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.1.2" ;
-    hito:subfeatureOf hito:ClientIdentificationAndRegistration ;
+    hito:supports hito:ClientIdentificationAndRegistration ;
     a hito:FeatureClassified ;
     rdfs:label "Enrol client for health services/clinical care plan"@en ;
     skos:altLabel "register client/patient for health services"@en .
@@ -438,7 +438,7 @@ hito:LogisticsManagementInformationSystemLmis
 hito:LongitudinalTrackingOfClientsHealthStatusAndServices
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.2.1" ;
-    hito:subfeatureOf hito:ClientHealthRecords ;
+    hito:supports hito:ClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Longitudinal tracking of client’s health status and services"@en ;
     skos:altLabel "case management logs within specific target populations, including migrant populations"@en, "digital register"@en, "digital service record"@en, "digitized registers for longitudinal health program"@en, "domain-specific registers"@en, "eRegister"@en, "eRegistries"@en, "immunization registry"@en, "including tracking of migrant populations’ benefits and health status"@en .
@@ -462,7 +462,7 @@ hito:ManageCertificationregistrationOfHealthcareProviders
 hito:ManageClientsStructuredClinicalRecords
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.2.2" ;
-    hito:subfeatureOf hito:ClientHealthRecords ;
+    hito:supports hito:ClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Manage client's structured clinical records"@en ;
     skos:altLabel "clinical record of an individual with information that spans across multiple clinical domains"@en, "electronic medical record"@en, "personal health record"@en .
@@ -470,7 +470,7 @@ hito:ManageClientsStructuredClinicalRecords
 hito:ManageClientsUnstructuredClinicalRecords
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.2.3" ;
-    hito:subfeatureOf hito:ClientHealthRecords ;
+    hito:supports hito:ClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Manage client’s unstructured clinical records"@en ;
     skos:altLabel "electronic medical record and personal health records with that are not based on structured data, and instead including notes, images, documents"@en .
@@ -665,7 +665,7 @@ hito:PrescriptionAndMedicationManagement
 hito:ProvideChecklistAccordingToProtocol
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.3.2" ;
-    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    hito:supports hito:HealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide checklist according to protocol"@en ;
     skos:altLabel "decision trees to support service delivery according to care plans, guidelines, and protocols"@en, "job aid and assessment tools to support service delivery—may or may not be linked to a digital health record"@en .
@@ -673,10 +673,10 @@ hito:ProvideChecklistAccordingToProtocol
 hito:ProvidePromptsAndAlertsBasedAccordingToProtocol
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.3.1" ;
-    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    hito:supports hito:HealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide prompts and alerts based according to protocol"@en ;
-    skos:altLabel "clinical decision support, job aid--linked to clients digital health record"@en, "process algorithms to support service delivery according to care plans, guidelines, and protocols"@en, "provision of alerts for abnormal findings/lab values, “IF THEN statements��"@en .
+    skos:altLabel "clinical decision support, job aid--linked to clients digital health record"@en, "process algorithms to support service delivery according to care plans, guidelines, and protocols"@en, "provision of alerts for abnormal findings/lab values, “IF THEN statements”"@en .
 
 hito:ProvideTrainingContentToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
@@ -748,9 +748,8 @@ hito:RegisterDeathEvent
 
 hito:RemoteMonitoringOfClientHealthOrDiagnosticDataByProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr """2.4.2
-""" ;
-    hito:subfeatureOf hito:Telemedicine ;
+    hito:memberNr "2.4.2" ;
+    hito:supports hito:Telemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Remote monitoring of client health or diagnostic data by provider"@en ;
     skos:altLabel "provider is able to monitor client’s health through an implanted sensor/diagnostic equipment"@en, "telemonitoring"@en, "virtual monitoring"@en .
@@ -796,7 +795,7 @@ hito:ResearchInformationSystem
 hito:RoutineHealthIndicatorDataCollectionAndManagement
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.2.4" ;
-    hito:subfeatureOf hito:ClientHealthRecords ;
+    hito:supports hito:ClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Routine health indicator data collection and management"@en ;
     skos:altLabel "client health data collection"@en, "data collection for Health Management Information System (HMIS)"@en .
@@ -812,7 +811,7 @@ hito:ScheduleHealthcareProvidersActivities
 hito:ScreenClientsByRiskOrOtherHealthStatus
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.3.3" ;
-    hito:subfeatureOf hito:HealthcareProviderDecisionSupport ;
+    hito:supports hito:HealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Screen clients by risk or other health status"@en ;
     skos:altLabel "job aid to support service delivery according to care plans, guidelines, and protocols"@en, "tools for screening, risk assessment, triage and client prioritization"@en .
@@ -896,7 +895,7 @@ hito:TrackRegulationAndLicensingOfMedicalEquipment
 hito:TransmissionOfMedicalDataToHealthcareProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.4.3" ;
-    hito:subfeatureOf hito:Telemedicine ;
+    hito:supports hito:Telemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Transmission of medical data to healthcare provider"@en ;
     skos:altLabel "asynchronous telemedicine"@en, "store and forward"@en .
@@ -1039,7 +1038,7 @@ hito:UntargetedClientCommunication
 hito:VerifyClientUniqueIdentity
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.1.1" ;
-    hito:subfeatureOf hito:ClientIdentificationAndRegistration ;
+    hito:supports hito:ClientIdentificationAndRegistration ;
     a hito:FeatureClassified ;
     rdfs:label "Verify client unique identity"@en ;
     skos:altLabel "biometrics"@en, "client registry"@en .
