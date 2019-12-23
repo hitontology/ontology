@@ -1,0 +1,188 @@
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hito: <> .
+
+hito:Bb
+    rdfs:member hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue .
+
+hito:BbOperationManagementSystemFeatureCatalogue
+    a hito:FeatureCatalogue ;
+    rdfs:comment "Feature catalogue defined in table 6.7 on page 123 in the Blue Book version edition 2"@en ;
+    rdfs:label "Blue Book Operation Management System Feature Catalogue"@en .
+
+hito:BbOperationManagementSystemFunctionCatalogue
+    a hito:FunctionCatalogue ;
+    rdfs:comment "Function catalogue defined in table 6.7 on page 123 in the Blue Book version edition 2"@en ;
+    rdfs:label "Blue Book Operation Management System Function Catalogue"@en .
+
+hito:CodingOfDiagnosesAndProcedures
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.1.5" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Coding of diagnoses and procedures"@en .
+
+hito:DecisionMakingAndPatientInformation
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.1.2" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Decision making and patient information"@en .
+
+hito:DisplayVitalParametersFromMonitoringDevices
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.4.1" ;
+    hito:supports hito:ExecutionOfOperations ;
+    a hito:FeatureClassified ;
+    rdfs:label "Display vital parameters from monitoring devices"@en .
+
+hito:ExecutionOfOperations
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.1.4" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Execution of operations"@en .
+
+hito:MedicalAdmission
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.1.1" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Medical admission"@en .
+
+hito:PatientDischargeAndTransferToOtherInstitutions
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.1.6" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Patient discharge and transfer to other institutions"@en .
+
+hito:ProvideCatalogsAndOtherMeansForCodingDiagnoses
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.5.1" ;
+    hito:supports hito:CodingOfDiagnosesAndProcedures ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide catalogs and other means for coding diagnoses"@en .
+
+hito:ProvideCatalogsAndOtherMeansForCodingProcedures
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.5.2" ;
+    hito:supports hito:CodingOfDiagnosesAndProcedures ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide catalogs and other means for coding procedures"@en .
+
+hito:ProvideFormsForDocumentingDiagnosis
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.1.3" ;
+    hito:subfeatureOf hito:MedicalAdmission ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide forms for documenting diagnosis"@en .
+
+hito:ProvideFormsForDocumentingMedicalAnamnesis
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.1.2" ;
+    hito:supports hito:MedicalAdmission ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide forms for documenting medical anamnesis"@en .
+
+hito:ProvideFormsForDocumentingPatientsInformedConsent
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.2.1" ;
+    hito:supports hito:DecisionMakingAndPatientInformation ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide forms for documenting patients informed consent"@en .
+
+hito:ProvideFormsForDocumentingProceduresAndOutcomes
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.4.2" ;
+    hito:supports hito:ExecutionOfOperations ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide forms for documenting procedures and outcomes"@en .
+
+hito:ProvideFormsForPreparingOperationReports
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.6.1" ;
+    hito:supports hito:PatientDischargeAndTransferToOtherInstitutions ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide forms for preparing operation reports"@en .
+
+hito:ProvideMeansForCheckinOfPatient
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.1.1" ;
+    hito:supports hito:MedicalAdmission ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for check-in of patient"@en .
+
+hito:ProvideMeansForCreatingOperationPlansDailyWeekly
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.2.4" ;
+    hito:supports hito:SchedulingAndResourceAllocation ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for creating operation plans (daily, weekly)"@en .
+
+hito:ProvideMeansForCreatingStatistics
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.5.3" ;
+    hito:supports hito:CodingOfDiagnosesAndProcedures ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for creating statistics"@en .
+
+hito:ProvideMeansForManagingAppointments
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.2.1" ;
+    hito:supports hito:SchedulingAndResourceAllocation ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for managing appointments"@en .
+
+hito:ProvideMeansForManagingMedicalDevices
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.2.2" ;
+    hito:supports hito:SchedulingAndResourceAllocation ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for managing medical devices"@en .
+
+hito:ProvideMeansForManagingRooms
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.1.1" ;
+    hito:supports hito:SupplyAndDisposalManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for managing rooms"@en .
+
+hito:ProvideMeansForOrderingDrugsMaterialsAndLaundry
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.2.3" ;
+    hito:supports hito:SchedulingAndResourceAllocation ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for ordering drugs, materials and laundry"@en .
+
+hito:ProvideMeansForOrderingPatientTransferToWard
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.1.6.2" ;
+    hito:supports hito:PatientDischargeAndTransferToOtherInstitutions ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for ordering patient transfer to ward"@en .
+
+hito:ProvideMeansForPreparingWorkSchedules
+    hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
+    hito:memberNr "6.3.2.3.1" ;
+    hito:supports hito:WorkSchedulingAndTimeManagement ;
+    a hito:FeatureClassified ;
+    rdfs:label "Provide means for preparing work schedules"@en .
+
+hito:SchedulingAndResourceAllocation
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.2.2" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Scheduling and resource allocation"@en .
+
+hito:SupplyAndDisposalManagement
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.2.1" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Supply and disposal Management"@en .
+
+hito:WorkSchedulingAndTimeManagement
+    hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue ;
+    hito:memberNr "6.3.2.3" ;
+    a hito:EnterpriseFunctionClassified ;
+    rdfs:label "Work scheduling and time management"@en .
+
