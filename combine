@@ -1,0 +1,4 @@
+F="/tmp/combined.nt"
+echo "Writing to $F"
+echo "" > $F
+ls *.ttl | xargs -I @ rapper -i turtle -o ntriples @ >> $F
