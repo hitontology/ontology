@@ -44,7 +44,7 @@ hito:ArchivingOfPatientInformation
 hito:Bb
     a hito:Classification ;
     rdfs:label "Blue Book classification"@en ;
-    rdfs:member hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModel .
+    rdfs:member hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
 
 hito:BbOperationManagementSystemFeatureCatalogue
     a hito:FeatureCatalogue ;
