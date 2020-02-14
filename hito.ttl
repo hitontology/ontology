@@ -50,7 +50,7 @@
      ov:defines :DatabaseSystem; 
      ov:defines :EnterpriseFunctionCitation; 
      ov:defines :EnterpriseFunctionClassified; 
-     ov:defines :FunctionCatalogue; 
+     ov:defines :EnterpriseFunctionCatalogue; 
      ov:defines :Homepage; 
      ov:defines :Interoperability;
      ov:defines :Popularity; 
@@ -160,7 +160,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/enterpriseFunctionFromCatalogue
 :enterpriseFunctionFromCatalogue rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnterpriseFunctionClassified ;
-                    rdfs:range :FunctionCatalogue ;
+                    rdfs:range :EnterpriseFunctionCatalogue ;
                     rdfs:label "enterprise function from catalogue"@en .
 
 
@@ -505,7 +505,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/FunctionCatalogue
-:FunctionCatalogue rdf:type owl:Class ;
+:EnterpriseFunctionCatalogue rdf:type owl:Class ;
                    rdfs:label "Function Catalogue"@en .
 
 

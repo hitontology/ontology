@@ -52,12 +52,12 @@ hito:BbOperationManagementSystemFeatureCatalogue
     rdfs:label "Blue Book Operation Management System Feature Catalogue"@en .
 
 hito:BbOperationManagementSystemFunctionCatalogue
-    a hito:FunctionCatalogue ;
+    a hito:EnterpriseFunctionCatalogue ;
     rdfs:comment "Function catalogue defined in table 6.7 on page 123 in the Blue Book version edition 2"@en ;
     rdfs:label "Blue Book Operation Management System Function Catalogue"@en .
 
 hito:BbReferenceModel
-    a hito:FunctionCatalogue ;
+    a hito:EnterpriseFunctionCatalogue ;
     rdfs:comment "Blue Book Reference Model of the Domain Layer of Hospital Information Systems"@en ;
     rdfs:label "Blue Book Reference Model Function Catalogue"@en .
 
