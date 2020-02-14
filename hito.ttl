@@ -258,7 +258,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/implements
 :implements rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :ApplicationSystem ;
+                    rdfs:range :ApplicationSystemCitation ;
                     rdfs:comment "If installed and customized, a software product implements a certain application system."@en ;
                     rdfs:label "implements"@en .
 
