@@ -251,7 +251,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/homepage
 :homepage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :Homepage ;
+                    rdfs:range rdfs:Resource;
                     rdfs:label "homepage"@en .
 
 
@@ -507,11 +507,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/FunctionCatalogue
 :FunctionCatalogue rdf:type owl:Class ;
                    rdfs:label "Function Catalogue"@en .
-
-
-###  http://hitontology.eu/ontology/Homepage
-:Homepage rdf:type owl:Class ;
-          rdfs:label "Homepage"@en .
 
 
 ###  http://hitontology.eu/ontology/Interoperability
