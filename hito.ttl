@@ -367,13 +367,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "supports language"@en .
 
 
-###  http://hitontology.eu/ontology/productPart
-:productPart rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :SoftwareProduct ;
-                    rdfs:label "software product part "@en .
-
-
 ###  http://hitontology.eu/ontology/publishedInJournal
 :publishedInJournal rdf:type owl:ObjectProperty ;
                     rdfs:domain :Study ;
