@@ -54,7 +54,6 @@
      ov:defines :Homepage; 
      ov:defines :Interoperability;
      ov:defines :Popularity; 
-     ov:defines :SoftwareEvolutionState;
      ov:defines :Terminology. 
 
 :uc3 rdf:type owl:Ontology ;
@@ -183,13 +182,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                            rdfs:domain :Study ;
                                            rdfs:range :UserGroupCitation ;
                                            rdfs:label "evaluates Application System Having User Group"@en .
-
-
-###  http://hitontology.eu/ontology/evolutionState
-:evolutionState rdf:type owl:ObjectProperty ;
-                                      rdfs:domain :SoftwareProduct ;
-                                      rdfs:range :SoftwareEvolutionState ;
-                                      rdfs:label "evolution state"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemUsedInUnit
@@ -557,11 +549,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :QuasiExperimentalStudy rdf:type owl:Class ;
                         rdfs:subClassOf :Study ;
                         rdfs:label "Quasi Experimental Study"@en .
-
-
-###  http://hitontology.eu/ontology/SoftwareEvolutionState
-:SoftwareEvolutionState rdf:type owl:Class ;
-       rdfs:label "Software Evolution State"@en .
 
 
 ###  http://hitontology.eu/ontology/SoftwareProduct
