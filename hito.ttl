@@ -51,7 +51,6 @@
      ov:defines :EnterpriseFunctionCitation; 
      ov:defines :EnterpriseFunctionClassified; 
      ov:defines :EnterpriseFunctionCatalogue; 
-     ov:defines :Homepage; 
      ov:defines :Interoperability;
      ov:defines :Popularity; 
      ov:defines :Terminology. 
