@@ -8,6 +8,7 @@
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix yago: <http://dbpedia.org/class/yago/>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
