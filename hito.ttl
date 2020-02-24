@@ -7,6 +7,7 @@
 @prefix ov: <http://open.vocab.org/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix yago: <http://dbpedia.org/class/yago/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology .
@@ -242,6 +243,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/homepage
 :homepage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
+		    skos:closeMatch doap:homepage ;
                     rdfs:range rdfs:Resource;
                     rdfs:label "homepage"@en .
 
@@ -273,6 +275,14 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureCitation ;
                rdfs:label "offers Feature"@en .
+
+
+###  http://hitontology.eu/ontology/repository
+:repository rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+		    skos:closeMatch doap:repository;
+                    rdfs:range rdfs:Resource;
+                    rdfs:label "repository"@en .
 
 
 ###  http://hitontology.eu/ontology/popularity
@@ -552,6 +562,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/SoftwareProduct
 :SoftwareProduct rdf:type owl:Class ;
+                 skos:closeMatch doap:Project ;
                  rdfs:label "Software Product"@en .
 
 
