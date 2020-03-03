@@ -296,7 +296,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/programmingLanguage
 :programmingLanguage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range yago:ProgrammingLanguage106898352;
+                    rdfs:range yago:WikicatProgrammingLanguages;
                     rdfs:label "programming language"@en .
 
 
