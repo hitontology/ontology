@@ -159,11 +159,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                             rdfs:label "evaluates Application System"@en .
 
 
-###  http://hitontology.eu/ontology/enterpriseFunctionFromCatalogue
-:enterpriseFunctionFromCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/enterpriseFunctionCatalogue
+:enterpriseFunctionCatalogue rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnterpriseFunctionClassified ;
                     rdfs:range :EnterpriseFunctionCatalogue ;
-                    rdfs:label "enterprise function from catalogue"@en .
+                    rdfs:label "enterprise function catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemBasedOnProduct
