@@ -515,7 +515,7 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:label "First Author"@en .
 
 
-###  http://hitontology.eu/ontology/FunctionCatalogue
+###  http://hitontology.eu/ontology/EnterpriseFunctionCatalogue
 :EnterpriseFunctionCatalogue rdf:type owl:Class ;
                    rdfs:label "Function Catalogue"@en .
 
