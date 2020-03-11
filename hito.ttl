@@ -75,6 +75,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://hitontology.eu/ontology/applicationSystem
+:applicationSystem rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct ;
+                           rdfs:range :ApplicationSystemCitation ;
+                           rdfs:label "application system catalogue"@en .
+
+
 ###  http://hitontology.eu/ontology/applicationSystemCatalogue
 :applicationSystemCatalogue rdf:type owl:ObjectProperty ;
                            rdfs:domain :ApplicationSystemClassified ;
@@ -82,18 +89,18 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "application system catalogue"@en .
 
 
+###  http://hitontology.eu/ontology/applicationSystemClassified
+:applicationSystemClassified rdf:type owl:ObjectProperty ;
+                             rdfs:domain :ApplicationSystemCitation ;
+                             rdfs:range :ApplicationSystemClassified ;
+                             rdfs:label "classified application system"@en .
+
+
 ###  http://hitontology.eu/ontology/certification
 :certification rdf:type owl:ObjectProperty ;
                              rdfs:domain :SoftwareProduct;
                              rdfs:range :Certification ;
                              rdfs:label "certification"@en .
-
-
-###  http://hitontology.eu/ontology/applicationSystemClassified
-:applicationSystemClassified rdf:type owl:ObjectProperty ;
-                             rdfs:domain :ApplicationSystemCitation ;
-                             rdfs:range :ApplicationSystemClassified ;
-                             rdfs:label "classified Application System"@en .
 
 
 ###  http://hitontology.eu/ontology/featureClassified
