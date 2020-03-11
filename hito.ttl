@@ -16,46 +16,48 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
      rdfs:comment "finding evidence in health IT evaluation studies"@en ;
-     ov:defines :DOI; 
-     ov:defines :ExperimentalStudyRCT; 
-     ov:defines :FeatureCatalogue; 
-     ov:defines :FeatureClassified; 
-     ov:defines :FeatureCitation; 
-     ov:defines :FirstAuthor; 
-     ov:defines :Journal; 
-     ov:defines :LabStudy; 
-     ov:defines :NonExperimentalStudy; 
-     ov:defines :OrganizationalUnitClassified; 
-     ov:defines :OrganizationalUnitCitation; 
-     ov:defines :OutcomeCriteriaClassified; 
-     ov:defines :OutcomeCriteriaCitation; 
-     ov:defines :PMID; 
-     ov:defines :QuasiExperimentalStudy; 
-     ov:defines :SoftwareProduct; 
-     ov:defines :Study; 
-     ov:defines :StudyMethodClassified; 
-     ov:defines :StudyMethodCitation; 
-     ov:defines :UserGroupClassified; 
-     ov:defines :UserGroupCitation; 
-     ov:defines :ValidationStudy.   	
+     ov:defines :DOI;
+     ov:defines :ExperimentalStudyRCT;
+     ov:defines :FeatureCatalogue;
+     ov:defines :FeatureClassified;
+     ov:defines :FeatureCitation;
+     ov:defines :FirstAuthor;
+     ov:defines :Journal;
+     ov:defines :LabStudy;
+     ov:defines :NonExperimentalStudy;
+     ov:defines :OrganizationalUnitCatalogue;
+     ov:defines :OrganizationalUnitClassified;
+     ov:defines :OrganizationalUnitCitation;
+     ov:defines :OutcomeCriteriaClassified;
+     ov:defines :OutcomeCriteriaCitation;
+     ov:defines :PMID;
+     ov:defines :QuasiExperimentalStudy;
+     ov:defines :SoftwareProduct;
+     ov:defines :Study;
+     ov:defines :StudyMethodClassified;
+     ov:defines :StudyMethodCitation;
+     ov:defines :UserGroupCatalogue;
+     ov:defines :UserGroupClassified;
+     ov:defines :UserGroupCitation;
+     ov:defines :ValidationStudy.
 
 :uc2 rdf:type owl:Ontology ;
      rdfs:label "MEDFLOSS"@en ;
      rdfs:comment "selecting medical free/libre open source software"@en ;
      ov:defines :ApplicationSystemCatalogue;
-     ov:defines :ApplicationSystemClassified; 
-     ov:defines :ApplicationSystemCitation; 
-     ov:defines :Certification; 
-     ov:defines :Classification; 
-     ov:defines :Client; 
-     ov:defines :CommunicationStandard; 
-     ov:defines :DatabaseSystem; 
-     ov:defines :EnterpriseFunctionCitation; 
-     ov:defines :EnterpriseFunctionClassified; 
-     ov:defines :EnterpriseFunctionCatalogue; 
+     ov:defines :ApplicationSystemClassified;
+     ov:defines :ApplicationSystemCitation;
+     ov:defines :Certification;
+     ov:defines :Classification;
+     ov:defines :Client;
+     ov:defines :CommunicationStandard;
+     ov:defines :DatabaseSystem;
+     ov:defines :EnterpriseFunctionCitation;
+     ov:defines :EnterpriseFunctionClassified;
+     ov:defines :EnterpriseFunctionCatalogue;
      ov:defines :Interoperability;
-     ov:defines :Popularity; 
-     ov:defines :Terminology. 
+     ov:defines :Popularity;
+     ov:defines :Terminology.
 
 :uc3 rdf:type owl:Ontology ;
      rdfs:label "commercial software"@en ;
@@ -196,7 +198,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :featureCatalogue rdf:type owl:ObjectProperty ;
                            rdfs:domain :FeatureClassified ;
                            rdfs:range :FeatureCatalogue ;
-                           rdfs:label "classified Feature EHRHL7FM"@en .
+                           rdfs:label "feature catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/featureClassifiedComponent
@@ -278,6 +280,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "offers Feature"@en .
 
 
+###  http://hitontology.eu/ontology/organizationalUnitCatalogue
+:organizationalUnitCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:domain :OrganizationalUnitClassified ;
+                           rdfs:range :OrganizationalUnitCatalogue ;
+                           rdfs:label "organizational unit catalogue"@en .
+
+
 ###  http://hitontology.eu/ontology/repository
 :repository rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
@@ -300,18 +309,18 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "programming language"@en .
 
 
+###  http://hitontology.eu/ontology/publishedInJournal
+:publishedInJournal rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Study ;
+                    rdfs:range :Journal ;
+                    rdfs:label "published In Journal"@en .
+
+
 ###  http://hitontology.eu/ontology/runsOnOs
 :runsOnOs rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range yago:OperatingSystem106568134;
                     rdfs:label "runs on OS"@en .
-
-
-###  http://hitontology.eu/ontology/usesDbs
-:usesDbs rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :DatabaseSystem ;
-                    rdfs:label "uses database system"@en .
 
 
 ###  http://hitontology.eu/ontology/softwareProductComponent
@@ -369,11 +378,18 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "supports language"@en .
 
 
-###  http://hitontology.eu/ontology/publishedInJournal
-:publishedInJournal rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Study ;
-                    rdfs:range :Journal ;
-                    rdfs:label "published In Journal"@en .
+###  http://hitontology.eu/ontology/userGroupCatalogue
+:userGroupCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:domain :UserGroupClassified ;
+                           rdfs:range :UserGroupCatalogue ;
+                           rdfs:label "user group catalogue"@en .
+
+
+###  http://hitontology.eu/ontology/usesDbs
+:usesDbs rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range :DatabaseSystem ;
+                    rdfs:label "uses database system"@en .
 
 
 #################################################################
@@ -523,6 +539,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 :NonExperimentalStudy rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Non Experimental Study"@en .
+
+
+###  http://hitontology.eu/ontology/OrganizationalUnitCatalogue
+:OrganizationalUnitCatalogue rdf:type owl:Class ;
+                   rdfs:label "Organizational Unit Catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
@@ -2772,15 +2793,66 @@ xsd:gYear rdf:type rdfs:Datatype .
                         :standardized_prescriptions_and_medication_protocols ;
          rdfs:label "Theriak"@en .
 
+
+###  http://hitontology.eu/ontology/UnknownApplicationSystemCatalogue
+:UnknownApplicationSystemCatalogue rdf:type :ApplicationSystemCatalogue ;
+	rdfs:label "Unknown Application System Catalogue"@en ;
+	rdfs:comment "residual catalogue for assigning citations with unknown classified application system." .
+
+
+###  http://hitontology.eu/ontology/UnknownApplicationSystemClassified
+	:UnknownApplicationSystemClassified rdf:type :ApplicationSystemClassified ;
+	rdfs:label "Unknown Classified Application System"@en ;
+	:applicationSystemCatalogue :UnknownApplicationSystemCatalogue .
+
+
+###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionCatalogue
+:UnknownEnterpriseFunctionCatalogue rdf:type :EnterpriseFunctionCatalogue ;
+	rdfs:label "Unknown Enterprise Function Catalogue"@en ;
+	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
+
+
+###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionClassified
+	:UnknownEnterpriseFunctionClassified rdf:type :EnterpriseFunctionClassified ;
+	rdfs:label "Unknown Classified Enterprise Function"@en ;
+	:enterpriseFunctionCatalogue :UnknownEnterpriseFunctionCatalogue .
+
+
 ###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
 :UnknownFeatureCatalogue rdf:type :FeatureCatalogue ;
 	rdfs:label "Unknown Feature Catalogue"@en ;
 	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
 
-###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
-:UnknownFeatureClassified rdf:type :FeatureClassified ;
+
+###  http://hitontology.eu/ontology/UnknownFeatureClassified
+	:UnknownFeatureClassified rdf:type :FeatureClassified ;
 	rdfs:label "Unknown Classified Feature"@en ;
 	:featureCatalogue :UnknownFeatureCatalogue .
+
+
+###  http://hitontology.eu/ontology/UnknownOrganizationalUnitCatalogue
+:UnknownOrganizationalUnitCatalogue rdf:type :OrganizationalUnitCatalogue ;
+	rdfs:label "Unknown Organizational Unit Catalogue"@en ;
+	rdfs:comment "residual catalogue for assigning citations with unknown classified organizational unit." .
+
+
+###  http://hitontology.eu/ontology/UnknownOrganizationalUnitClassified
+	:UnknownOrganizationalUnitClassified rdf:type :OrganizationalUnitClassified ;
+	rdfs:label "Unknown Classified Organizational Unit"@en ;
+	:organizationalUnitCatalogue :UnknownOrganizationalUnitCatalogue .
+
+
+###  http://hitontology.eu/ontology/UnknownUserGroupCatalogue
+:UnknownUserGroupCatalogue rdf:type :UserGroupCatalogue ;
+	rdfs:label "Unknown User Group Catalogue"@en ;
+	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
+
+
+###  http://hitontology.eu/ontology/UnknownUserGroupClassified
+	:UnknownUserGroupClassified rdf:type :UserGroupClassified ;
+	rdfs:label "Unknown Classified User Group"@en ;
+	:userGroupCatalogue :UnknownUserGroupCatalogue .
+
 
 ###  http://hitontology.eu/ontology/Usage_pattern
 :Usage_pattern rdf:type owl:NamedIndividual ,
