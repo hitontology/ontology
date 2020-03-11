@@ -273,8 +273,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "license"@en .
 
 
-###  http://hitontology.eu/ontology/offersFeature
-:offersFeature rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/feature
+:feature rdf:type owl:ObjectProperty ;
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureCitation ;
                rdfs:label "offers Feature"@en .
@@ -625,7 +625,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/AGFA_PACS_IMPAX
 :AGFA_PACS_IMPAX rdf:type owl:NamedIndividual ,
                           :SoftwareProduct ;
-                 :offersFeature :automatic_and_paperless_operations ,
+                 :feature :automatic_and_paperless_operations ,
                                 :booking_of_examinations ,
                                 :patient_registration ,
                                 :speech_recognition ;
@@ -635,7 +635,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/AGFA_RIS_Elefante
 :AGFA_RIS_Elefante rdf:type owl:NamedIndividual ,
                             :SoftwareProduct ;
-                   :offersFeature :automatic_and_paperless_operations ,
+                   :feature :automatic_and_paperless_operations ,
                                   :booking_of_examinations ,
                                   :patient_registration ,
                                   :speech_recognition ;
@@ -645,7 +645,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Abbott_i-Stat
 :Abbott_i-Stat rdf:type owl:NamedIndividual ,
                         :SoftwareProduct ;
-               :offersFeature :complete_test_results ,
+               :feature :complete_test_results ,
                               :read_bar_code_label ;
                rdfs:label "Abbott i-Stat"@en .
 
@@ -743,7 +743,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/CSC_MedChart
 :CSC_MedChart rdf:type owl:NamedIndividual ,
                        :SoftwareProduct ;
-              :offersFeature :predefined_order_sentences_allow_for_group_of_related_orders_to_be_selected_with_single_click ,
+              :feature :predefined_order_sentences_allow_for_group_of_related_orders_to_be_selected_with_single_click ,
                              :predefined_order_sentences_searchable_by_category_quick_lists ,
                              :prescribe_longhand ;
               rdfs:label "CSC Med Chart"@en .
@@ -788,7 +788,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/CernerMilleniumPowerOrders
 :CernerMilleniumPowerOrders rdf:type owl:NamedIndividual ,
                                      :SoftwareProduct ;
-                            :offersFeature :dropdown_menu_of_predefined_order_sentences_triggered_on_drug_selection ,
+                            :feature :dropdown_menu_of_predefined_order_sentences_triggered_on_drug_selection ,
                                            :predefined_order_sentences_with_details_of_drug_strength_dose_and_form ;
                             rdfs:label "Cerner Millenium Power Orders"@en .
 
@@ -796,7 +796,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Cerner_FirstNet
 :Cerner_FirstNet rdf:type owl:NamedIndividual ,
                           :SoftwareProduct ;
-                 :offersFeature :PACS_interface ,
+                 :feature :PACS_interface ,
                                 :creation_of_data_relation_to_triage ,
                                 :discharge_summaries ,
                                 :mandatory_reporting ,
@@ -807,7 +807,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Cerner_Soarian_CPOE_platform
 :Cerner_Soarian_CPOE_platform rdf:type owl:NamedIndividual ,
                                        :SoftwareProduct ;
-                              :offersFeature :medication-specific_order_set ,
+                              :feature :medication-specific_order_set ,
                                              :unit-specific_oder_set ;
                               rdfs:label "Cerner Soarian CPOE platform"@en .
 
@@ -874,7 +874,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Eclipsys_Continuum_2000_CDS
 :Eclipsys_Continuum_2000_CDS rdf:type owl:NamedIndividual ,
                                       :SoftwareProduct ;
-                             :offersFeature :audit_trail ,
+                             :feature :audit_trail ,
                                             :automatic_transfer_of_laboratory_data ,
                                             :electronic_signature ,
                                             :graphical_user_interface_to_document_care ,
@@ -948,7 +948,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/GE_Patchspecd_PACS
 :GE_Patchspecd_PACS rdf:type owl:NamedIndividual ,
                              :SoftwareProduct ;
-                    :offersFeature :automatic_forwarded_processed_images ,
+                    :feature :automatic_forwarded_processed_images ,
                                    :forward_into_archive ,
                                    :interfaced_to_the_RIS ;
                     rdfs:label "GE Patchspecd PACS"@en .
@@ -1031,7 +1031,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/HNA_Millenium
 :HNA_Millenium rdf:type owl:NamedIndividual ,
                         :SoftwareProduct ;
-               :offersFeature :allowing_to_reuse_earlier_anamnestic_data ,
+               :feature :allowing_to_reuse_earlier_anamnestic_data ,
                               :automatic_creation_of_a_nursing_transfer_report ,
                               :comprising_a_set_of_nursing_care_standards ,
                               :nursing_anamnesis ,
@@ -1438,7 +1438,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Medicator
 :Medicator rdf:type owl:NamedIndividual ,
                     :SoftwareProduct ;
-           :offersFeature :medication_control_based_on_national_drug_database ,
+           :feature :medication_control_based_on_national_drug_database ,
                           :medication_selection_from_menu_in_wich_medication_from_the_ward_stock_or_the_pharmacy_is_shown ,
                           :possibility_to_continue_prescribing_while_safety_alert ,
                           :safety_alerts_for_accepted_medication_are_seen_by_pharmacists_who_can_contact_physicians_or_nurses ,
@@ -1459,7 +1459,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Metavision
 :Metavision rdf:type owl:NamedIndividual ,
                      :SoftwareProduct ;
-            :offersFeature :automatic_data_collection ,
+            :feature :automatic_data_collection ,
                            :clinical_documentation ,
                            :computerized_order_entry ,
                            :data_storage_repository ,
@@ -2334,7 +2334,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/PIK
 :PIK rdf:type owl:NamedIndividual ,
               :SoftwareProduct ;
-     :offersFeature :adaption_of_nursing_care_plans_during_care_planning ,
+     :feature :adaption_of_nursing_care_plans_during_care_planning ,
                     :anamnesis_supported_by_offering_flexible_forms_for_data_entry ,
                     :creation_of_nursing_care_plans ,
                     :nursing_documentation_forms ,
@@ -2566,7 +2566,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/SAP_R3_Business_Process_Control_System_software
 :SAP_R3_Business_Process_Control_System_software rdf:type owl:NamedIndividual ,
                                                           :SoftwareProduct ;
-                                                 :offersFeature :planning_view ,
+                                                 :feature :planning_view ,
                                                                 :request_form_assigned_a_timeslot_room_and_staff ;
                                                  rdfs:label "SAP R3 Business Process Control System software"@en .
 
@@ -2730,7 +2730,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Sysmex_XS_1000i_haematology_analyser
 :Sysmex_XS_1000i_haematology_analyser rdf:type owl:NamedIndividual ,
                                                :SoftwareProduct ;
-                                      :offersFeature :complete_test_results ,
+                                      :feature :complete_test_results ,
                                                      :read_bar_code_label ;
                                       rdfs:label "Sysmex XS 1000i haematology analyser"@en .
 
@@ -2750,7 +2750,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/TeleDICOM
 :TeleDICOM rdf:type owl:NamedIndividual ,
                     :SoftwareProduct ;
-           :offersFeature :interactive_consultation_between_two_or_more_centers ,
+           :feature :interactive_consultation_between_two_or_more_centers ,
                           :offline_mode ,
                           :real-time_voice_communication ,
                           :use_of_interactive_pointers_and_specific_calculation_tools ,
@@ -2782,7 +2782,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Theriak
 :Theriak rdf:type owl:NamedIndividual ,
                   :SoftwareProduct ;
-         :offersFeature :medication_control_based_on_national_drug_database ,
+         :feature :medication_control_based_on_national_drug_database ,
                         :medication_selection_from_menu_in_wich_medication_from_the_ward_stock_or_the_pharmacy_is_shown ,
                         :possibility_to_continue_prescribing_while_safety_alert ,
                         :safety_alerts_for_accepted_medication_are_seen_by_pharmacists_who_can_contact_physicians_or_nurses ,
@@ -3501,7 +3501,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/eChasqui
 :eChasqui rdf:type owl:NamedIndividual ,
                    :SoftwareProduct ;
-          :offersFeature :consolidated_list_of_results_for_jurisdiction ,
+          :feature :consolidated_list_of_results_for_jurisdiction ,
                          :email_notification_of_new_results ,
                          :patient_page_containing_details_of_any_single_sample ,
                          :patient_page_containing_the_history_of_all_tests_performed ,
@@ -3515,7 +3515,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/e_Doc
 :e_Doc rdf:type owl:NamedIndividual ,
                 :SoftwareProduct ;
-       :offersFeature :capturing_data_for_all_patient_visits ;
+       :feature :capturing_data_for_all_patient_visits ;
        rdfs:label "e Doc"@en .
 
 

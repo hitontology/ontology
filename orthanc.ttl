@@ -37,7 +37,7 @@ hito:ImageManagement
 hito:Orthanc
     hito:homepage <https://www.orthanc-server.com/> ;
     hito:license <http://dbpedia.org/resource/GNU_Free_Documentation_License> ;
-    hito:offersFeature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
+    hito:feature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
     hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
     hito:runsOnOs <http://dbpedia.org/resource/Linux>, <http://dbpedia.org/resource/Mac_OS>, <http://dbpedia.org/resource/Microsoft_Windows>, <http://dbpedia.org/resource/Unix> ;
     hito:supportsClient hito:WebBased ;
