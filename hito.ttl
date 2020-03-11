@@ -2772,6 +2772,15 @@ xsd:gYear rdf:type rdfs:Datatype .
                         :standardized_prescriptions_and_medication_protocols ;
          rdfs:label "Theriak"@en .
 
+###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
+:UnknownFeatureCatalogue rdf:type :FeatureCatalogue ;
+	rdfs:label "Unknown Feature Catalogue"@en ;
+	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
+
+###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
+:UnknownFeatureClassified rdf:type :FeatureClassified ;
+	rdfs:label "Unknown Classified Feature"@en ;
+	:featureCatalogue :UnknownFeatureCatalogue .
 
 ###  http://hitontology.eu/ontology/Usage_pattern
 :Usage_pattern rdf:type owl:NamedIndividual ,
