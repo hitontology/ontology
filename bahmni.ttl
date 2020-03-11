@@ -40,7 +40,7 @@ hito:BahmniSurgery
     rdfs:label "surgery"@en .
 
 hito:Billing
-    hito:functionClassified hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:HealthFinancing ;
     hito:supportedByFeatureCitation hito:MaintainAccurateRecords, hito:ManageAccurateRecords ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
@@ -60,7 +60,7 @@ hito:ClinicalReporting
     rdfs:label "Clinical Reporting"@en .
 
 hito:ClinicalServices
-    hito:functionClassified hito:ClientHealthRecords, hito:HealthWorkerActivityPlanningAndScheduling, hito:HealthcareProviderCommunication, hito:HealthcareProviderTraining, hito:PrescriptionAndMedicationManagement ;
+    hito:enterpriseFunctionClassified hito:ClientHealthRecords, hito:HealthWorkerActivityPlanningAndScheduling, hito:HealthcareProviderCommunication, hito:HealthcareProviderTraining, hito:PrescriptionAndMedicationManagement ;
     hito:supportedByFeatureCitation hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:MaintainClinicalRecords, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:UseDrugPrescriptionTemplates ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Clinical Services"@en .
@@ -85,13 +85,13 @@ hito:DisplayLaboratoryWorkload
     rdfs:label "Display Laboratory Workload"@en .
 
 hito:InpatientManagement
-    hito:functionClassified hito:ClientHealthRecords, hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:ClientHealthRecords, hito:ClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:ManagePatientsAdmissions, hito:PerformBedAssignments, hito:SendSamplesForReferrals, hito:TrackWardOccupancy ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Inpatient Management"@en .
 
 hito:Laboratory
-    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:DisplayLaboratoryWorkload, hito:ManagePatientOrders, hito:ManageSamples, hito:ManageTests ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory"@en .
@@ -163,7 +163,7 @@ hito:OrderRadiology
     rdfs:label "Order Radiology"@en .
 
 hito:PatientRegistration
-    hito:functionClassified hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:PrintPatientId, hito:SearchPatients ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Registration"@en .
@@ -210,7 +210,7 @@ hito:SendSamplesForReferrals
     rdfs:label "Send Samples For Referrals"@en .
 
 hito:StockManagement
-    hito:functionClassified hito:SupplyChainManagement ;
+    hito:enterpriseFunctionClassified hito:SupplyChainManagement ;
     hito:supportedByFeatureCitation hito:ManageStock, hito:MonitorStockLevels, hito:MoveStock, hito:ReorderStock, hito:TrackStock ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .

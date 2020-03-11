@@ -15,22 +15,22 @@ hito:DicomNetworkProtocol
     rdfs:label "DICOM network protocol"@en .
 
 hito:ImageArchiving
-    hito:functionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Archiving"@en .
 
 hito:ImageCommunication
-    hito:functionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Communication"@en .
 
 hito:ImageDistribution
-    hito:functionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Distribution"@en .
 
 hito:ImageManagement
-    hito:functionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Management"@en .
 
