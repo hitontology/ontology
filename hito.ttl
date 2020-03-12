@@ -316,6 +316,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "programming language"@en .
 
 
+###  http://hitontology.eu/ontology/programmingLibrary
+:programmingLibrary rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct ;
+                    rdfs:range rdfs:Resource ; # search for a fitting class
+                    rdfs:label "programming library"@en .
+
+
 ###  http://hitontology.eu/ontology/publishedInJournal
 :publishedInJournal rdf:type owl:ObjectProperty ;
                     rdfs:domain :Study ;
@@ -612,6 +619,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;
                      rdfs:label "User Group Classified"@en .
+
+
+###  http://hitontology.eu/ontology/UserGroupCatalogue
+:UserGroupCatalogue rdf:type owl:Class ;
+                   rdfs:label "User Group Catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/UserGroupCitation
@@ -2816,7 +2828,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionCatalogue
 :UnknownEnterpriseFunctionCatalogue rdf:type :EnterpriseFunctionCatalogue ;
 	rdfs:label "Unknown Enterprise Function Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
+	rdfs:comment "residual catalogue for assigning citations with unknown classified enterprise function." .
 
 
 ###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionClassified
