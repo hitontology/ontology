@@ -11,7 +11,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @base <http://hitontology.eu/ontology/> .
 
-<http://hitontology.eu/ontology> rdf:type owl:Ontology .
+<http://hitontology.eu/ontology> rdf:type owl:Ontology ;
+	rdfs:label "Health IT Ontology"@en;
+	skos:altLabel "HITO"@en;
+	doap:repository <https://github.com/hitontology/ontology>.
 
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
