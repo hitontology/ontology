@@ -9,6 +9,7 @@
 @prefix yago: <http://dbpedia.org/class/yago/>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix swo: <http://www.ebi.ac.uk/swo/>.
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
@@ -279,7 +280,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/license
 :license rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range yago:License106549661;
+                    rdfs:range swo:SWO_0000002 ;
                     rdfs:label "license"@en .
 
 
