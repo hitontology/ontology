@@ -34,3 +34,12 @@ wget -O language.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdb
 wget -O os.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FOperatingSystem106568134%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
 
 cat license.nt programminglanguage.nt language.nt os.nt | sort -o dbpedia.nt
+
+# operating system excluding outliers
+#SELECT DISTINCT(?os) (COUNT(?x) as ?count)
+#{
+# ?x dbo:operatingSystem ?os.
+#}
+#GROUP BY ?os
+#HAVING (COUNT(?x) > 2)
+#ORDER BY DESC(?count)
