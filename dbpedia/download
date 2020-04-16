@@ -5,8 +5,8 @@
 #[] dbo:license ?s.
 #}
 
-wget -O license.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FLicense106549661%3E.%0D%0A%5B%5D+dbo%3Alicense+%3Fs.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
-rapper -i ntriples -c license.nt
+#wget -O license.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FLicense106549661%3E.%0D%0A%5B%5D+dbo%3Alicense+%3Fs.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
+#rapper -i ntriples -c license.nt
 
 #construct {?s ?p ?o.}
 #{
@@ -14,7 +14,7 @@ rapper -i ntriples -c license.nt
 #?s a <http://dbpedia.org/ontology/ProgrammingLanguage>.
 #}
 
-wget -O programminglanguage.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FProgrammingLanguage%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
+#wget -O programminglanguage.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FProgrammingLanguage%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
 
 #construct {?s ?p ?o.}
 #{
@@ -23,7 +23,7 @@ wget -O programminglanguage.nt 'http://dbpedia.org/sparql?default-graph-uri=http
 #?s <http://dbpedia.org/ontology/iso6391Code> [].
 #}
 
-wget -O language.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FLanguage%3E.%0D%0A%3Fs+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2Fiso6391Code%3E+%5B%5D.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
+#w#get -O language.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FLanguage%3E.%0D%0A%3Fs+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2Fiso6391Code%3E+%5B%5D.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
 
 #construct {?s ?p ?o.}
 #{
@@ -31,15 +31,29 @@ wget -O language.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdb
 #?s a <http://dbpedia.org/class/yago/OperatingSystem106568134>.
 #}
 
-wget -O os.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FOperatingSystem106568134%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
+#wget -O os.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FOperatingSystem106568134%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
 
-cat license.nt programminglanguage.nt language.nt os.nt | sort -o dbpedia.nt
+#cat license.nt programminglanguage.nt language.nt os.nt | sort -o dbpedia.nt
 
 # operating system excluding outliers
-#SELECT DISTINCT(?os) (COUNT(?x) as ?count)
+#PREFIX ui: <http://www.w3.org/ns/ui#>
+#PREFIX hito: <http://hitontology.eu/ontology/>
+#
+#CONSTRUCT
 #{
-# ?x dbo:operatingSystem ?os.
-#}
-#GROUP BY ?os
-#HAVING (COUNT(?x) > 2)
-#ORDER BY DESC(?count)
+# ?os a hito:OperatingSystem.
+# ?os ?p ?o.
+# ?os ui:sortPriority ?count.
+#} WHERE
+#{
+# SELECT COUNT(DISTINCT(?x)) as ?count ?os ?p ?o
+# {
+#  ?os ?p ?o.
+#  ?x dbo:operatingSystem ?os.
+#  FILTER(?p=rdfs:label)
+#  FILTER(LANGMATCHES(LANG(?o),"en"))
+# } 
+#} GROUP BY ?os HAVING (?count > 2)
+#
+
+wget -O os.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+ui%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fui%23%3E%0D%0APREFIX+hito%3A+%3Chttp%3A%2F%2Fhitontology.eu%2Fontology%2F%3E%0D%0A%0D%0ACONSTRUCT%0D%0A%7B%0D%0A+%3Fos+a+hito%3AOperatingSystem.%0D%0A+%3Fos+%3Fp+%3Fo.%0D%0A+%3Fos+ui%3AsortPriority+%3Fcount.%0D%0A%7D+WHERE%0D%0A%7B%0D%0A+SELECT+COUNT%28DISTINCT%28%3Fx%29%29+as+%3Fcount+%3Fos+%3Fp+%3Fo%0D%0A+%7B%0D%0A++%3Fos+%3Fp+%3Fo.%0D%0A++%3Fx+dbo%3AoperatingSystem+%3Fos.%0D%0A++FILTER%28%3Fp%3Drdfs%3Alabel%29%0D%0A++FILTER%28LANGMATCHES%28LANG%28%3Fo%29%2C%22en%22%29%29%0D%0A+%7D+%0D%0A%7D+GROUP+BY+%3Fos+HAVING+%28%3Fcount+%3E+2%29%0D%0A&format=text%2Fplain'
