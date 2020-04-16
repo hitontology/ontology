@@ -334,11 +334,12 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "published In Journal"@en .
 
 
-###  http://hitontology.eu/ontology/runsOnOs
-:runsOnOs rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/operatingSystem
+:operatingSystem rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range yago:OperatingSystem106568134;
-                    rdfs:label "runs on OS"@en .
+                    rdfs:range :OperatingSystem;
+                    rdfs:label "operating system"@en ;
+                    rdfs:comment "runs on operating system"@en .
 
 
 ###  http://hitontology.eu/ontology/softwareProductComponent
@@ -545,6 +546,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 :EnterpriseFunctionCatalogue rdf:type owl:Class ;
                    rdfs:label "Function Catalogue"@en .
 
+### http://hitontology.eu/ontology/OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:label "Operating System"@en .
 
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
