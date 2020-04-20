@@ -51,7 +51,7 @@
      ov:defines :ApplicationSystemCatalogue;
      ov:defines :ApplicationSystemClassified;
      ov:defines :ApplicationSystemCitation;
-     ov:defines :Certification;
+#    ov:defines :Certification;
      ov:defines :Classification;
      ov:defines :Client;
      ov:defines :CommunicationStandard;
@@ -100,9 +100,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/certification
-:certification rdf:type owl:ObjectProperty ;
+#:certification rdf:type owl:ObjectProperty ;
+:certification rdf:type owl:DatatypeProperty ;
                              rdfs:domain :SoftwareProduct;
-                             rdfs:range :Certification ;
+#                            rdfs:range :Certification ;
+#                            rdfs:range xsd:string ;
                              rdfs:label "certification"@en .
 
 
