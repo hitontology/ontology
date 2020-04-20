@@ -121,9 +121,9 @@ hito:AttachDigitalSignatures
 hito:Bb
     a hito:Classification ;
     rdfs:label "Blue Book classification"@en ;
-    rdfs:member hito:BbApplicationSystemCatalogue, hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
+    rdfs:member hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
 
-hito:BbApplicationSystemCatalogue
+hito:BbApplicationComponentApplicationSystemCatalogue
     a hito:ApplicationSystemCatalogue ;
     rdfs:comment "Application Components from the Blue Book as Application Systems"@en ;
     rdfs:label "Blue Book Application Components"@en .
