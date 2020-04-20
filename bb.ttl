@@ -121,7 +121,12 @@ hito:AttachDigitalSignatures
 hito:Bb
     a hito:Classification ;
     rdfs:label "Blue Book classification"@en ;
-    rdfs:member hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
+    rdfs:member hito:BbApplicationSystemCatalogue, hito:BbOperationManagementSystemFeatureCatalogue, hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
+
+hito:BbApplicationSystemCatalogue
+    a hito:ApplicationSystemCatalogue ;
+    rdfs:comment "Application Components from the Blue Book as Application Systems"@en ;
+    rdfs:label "Blue Book Application Components"@en .
 
 hito:BbOperationManagementSystemFeatureCatalogue
     a hito:FeatureCatalogue ;
@@ -138,11 +143,24 @@ hito:BbReferenceModelFunctionCatalogue
     rdfs:comment "Blue Book Reference Model of the Domain Layer of Hospital Information Systems"@en ;
     rdfs:label "Blue Book Reference Model Function Catalogue"@en .
 
+hito:BloodBankManagementSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Supports blood donor services, blood analyses, administration of blood bottles."@en ;
+    rdfs:label "Blood bank management system"@en .
+
 hito:CalculateDosageOfDrugs
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
     hito:subfeatureOf hito:OrderEntry ;
     a hito:FeatureClassified ;
     rdfs:label "Calculate dosage of drugs"@en .
+
+hito:CardiovascularInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Provides many features of a clinical information system and a radiology information system while tailoring the special needs of a cardiology department."@en ;
+    rdfs:label "Cardiovascular information system"@en ;
+    skos:altLabel "CVIS"@en .
 
 hito:Catering
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
@@ -211,6 +229,11 @@ hito:CreatingARoster
     a hito:FeatureClassified ;
     rdfs:label "Creating a roster"@en .
 
+hito:DataWarehouseSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Data Warehouse System"@en .
+
 hito:DecisionMakingAndPatientInformation
     hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
@@ -225,6 +248,24 @@ hito:DecisionMakingPlanningAndOrganizationOfPatientTreatment
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "decision making, planning and organization of patient treatment"@en .
+
+hito:DecisionSupportSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "A knowledge-based system which assists a doctor in finding the right diagnosis or treatment for a specific patient."@en ;
+    rdfs:label "Decision support system"@en .
+
+hito:DialysisInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of a dialysis department, has interfaces to hemodialysis machines."@en ;
+    rdfs:label "Dialysis information system"@en .
+
+hito:DigitalDictationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Offers features for digital voice recording and speech recognition, is often integrated into medical information systems and supports report, finding and letter writing."@en ;
+    rdfs:label "Digital dictation system"@en .
 
 hito:DisplayEarlierLabResultsOfAPatient
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
@@ -250,10 +291,20 @@ hito:DisplayWarningMessages
     a hito:FeatureClassified ;
     rdfs:label "Display warning messages"@en .
 
+hito:DocumentArchivingSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Document Archiving System"@en .
+
 hito:Education
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "education"@en .
+
+hito:EnterpriseResourcePlanningSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Enterprise Resource Planning System"@en .
 
 hito:ExecutionOfClinicalTrialsAndExperiments
     hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
@@ -359,6 +410,12 @@ hito:KnowledgeInquiryAndLiteratureManagement
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "knowledge inquiry and literature management"@en .
 
+hito:LaboratoryInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Laboratory Information System"@en ;
+    skos:altLabel "LIS"@en .
+
 hito:LaundryManagement
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
@@ -412,6 +469,11 @@ hito:MedicalDischargeAndWritingTheDischargeLetter
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "medical discharge and writing the discharge letter"@en .
 
+hito:MedicalDocumentationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Medical Documentation System"@en .
+
 hito:MergePatientInformationFromTwoRecords
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
     hito:subfeatureOf hito:AdministrativeAdmission ;
@@ -439,16 +501,32 @@ hito:NursingDischargeAndWritingTheNursingDischargeReport
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "nursing discharge and writing the nursing discharge report"@en .
 
+hito:NursingManagementAndDocumentationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Nursing Management and Documentation System"@en .
+
 hito:OfferDecisionsupportForCarePlanning
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
     hito:subfeatureOf hito:MedicalAndNursingCarePlanning ;
     a hito:FeatureClassified ;
     rdfs:label "Offer decision-support for care planning"@en .
 
+hito:OncologyInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of an oncology department."@en ;
+    rdfs:label "Oncology information system"@en .
+
 hito:OpeningAPatientRecord
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "opening a patient record"@en .
+
+hito:OperationManagementSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Operation Management System"@en .
 
 hito:OperationalInformationManagement
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
@@ -466,10 +544,32 @@ hito:OrganizePatientTransport
     a hito:FeatureClassified ;
     rdfs:label "Organize patient transport"@en .
 
+hito:OrthopedicsInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of an orthopedics department, can include a computer-aided design (CAD) system for transplant planning."@en ;
+    rdfs:label "Orthopedics information system"@en .
+
+hito:OutpatientManagementSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Outpatient Management System"@en .
+
+hito:PathologyInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Has similar features as a laboratory information system, e. g. receiving orders, writing reports."@en ;
+    rdfs:label "Pathology information system"@en .
+
 hito:PatientAdministration
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient administration"@en .
+
+hito:PatientAdministrationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Patient Administration System"@en .
 
 hito:PatientAdmission
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
@@ -480,6 +580,12 @@ hito:PatientCare
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient care"@en .
+
+hito:PatientDataManagementSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Patient Data Management System"@en ;
+    skos:altLabel "PDMS"@en .
 
 hito:PatientDischargeAndTransferToOtherInstitutions
     hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
@@ -500,6 +606,18 @@ hito:PerformanceOfLegalNotificationRequirements
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "performance of legal notification requirements"@en .
+
+hito:PharmacyInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Supports the workflow in the pharmacy department: receiving drug orders, managing the drug stock, distributing drugs throughout the hospital."@en ;
+    rdfs:label "Pharmacy information system"@en .
+
+hito:PictureArchivingAndCommunicationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Picture Archiving and Communication System"@en ;
+    skos:altLabel "PACS"@en .
 
 hito:PreparationOfAnOrder
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
@@ -1094,6 +1212,12 @@ hito:ProvideReminderForFulfillingOfLegalReportingRequirements
     a hito:FeatureClassified ;
     rdfs:label "Provide reminder for fulfilling of legal reporting requirements"@en .
 
+hito:ProviderOrPhysicianOrderEntrySystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Provider or Physician Order Entry System"@en ;
+    skos:altLabel "POE"@en .
+
 hito:PublishingAndPresenting
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
@@ -1103,6 +1227,12 @@ hito:QualityManagement
     hito:functionCatalogue hito:BbOperationManagementSystemFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "Quality management"@en, "quality management"@en .
+
+hito:RadiologyInformationSystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:label "Radiology Information System"@en ;
+    skos:altLabel "RIS"@en .
 
 hito:ReceiveBloodSamples
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
@@ -1218,6 +1348,12 @@ hito:TacticalInformationManagement
     hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "tactical information management"@en .
+
+hito:TeleradiologySystem
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue ;
+    a hito:ApplicationSystemClassified ;
+    rdfs:comment "Enables evaluations of radiological images from (external) radiologists' remote workplaces and may be closely connected to RIS and PACS."@en ;
+    rdfs:label "Teleradiology system"@en .
 
 hito:ValidateResults
     hito:featureCatalogue hito:BbOperationManagementSystemFeatureCatalogue ;
