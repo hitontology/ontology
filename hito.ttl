@@ -60,7 +60,6 @@
      ov:defines :EnterpriseFunctionClassified;
      ov:defines :EnterpriseFunctionCatalogue;
      ov:defines :Interoperability;
-     ov:defines :Popularity;
      ov:defines :Terminology.
 
 :uc3 rdf:type owl:Ontology ;
@@ -304,13 +303,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 		    skos:closeMatch doap:repository;
                     rdfs:range rdfs:Resource;
                     rdfs:label "repository"@en .
-
-
-###  http://hitontology.eu/ontology/popularity
-:popularity rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :Popularity ;
-                    rdfs:label "popularity"@en .
 
 
 ###  http://hitontology.eu/ontology/programmingLanguage
