@@ -2601,7 +2601,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/SemanticInteroperability
-:SemanticInteroperability a :Interoperability ;
+:SemanticInteroperability rdfs:subClassOf :Interoperability ;
           rdfs:comment "Semantic Interoperability Standard"@en ;
           rdfs:label "Semantic Interoperability"@en .
 
@@ -2751,7 +2751,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/SyntacticInteroperability
-:SyntacticInteroperability a :Interoperability ;
+:SyntacticInteroperability rdfs:subClassOf :Interoperability ;
           rdfs:comment "Syntactic Interoperability Standard"@en ;
           rdfs:label "Syntactic Interoperability"@en .
 
@@ -2765,7 +2765,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/TechnicalInteroperability
-:TechnicalInteroperability a :Interoperability ;
+:TechnicalInteroperability rdfs:subClassOf :Interoperability ;
           rdfs:comment "Technical Interoperability Standard"@en ;
           rdfs:label "Technical Interoperability"@en.
 
