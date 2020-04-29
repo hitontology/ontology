@@ -5,6 +5,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix hito: <> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bb: <http://www.snik.eu/ontology/bb/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:DicomIdentifiers
     a hito:FeatureCitation ;
@@ -35,15 +40,15 @@ hito:ImageManagement
     rdfs:label "Image Management"@en .
 
 hito:Orthanc
-    hito:homepage <https://www.orthanc-server.com/> ;
-    hito:license <http://dbpedia.org/resource/GNU_Free_Documentation_License> ;
-    hito:feature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
-    hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
-    hito:runsOnOs <http://dbpedia.org/resource/Linux>, <http://dbpedia.org/resource/Mac_OS>, <http://dbpedia.org/resource/Microsoft_Windows>, <http://dbpedia.org/resource/Unix> ;
     hito:client hito:WebBased ;
-    hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
-    hito:language <http://dbpedia.org/resource/English_language> ;
     hito:databaseSystem hito:PostgreSql ;
+    hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
+    hito:feature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
+    hito:homepage <https://www.orthanc-server.com/> ;
+    hito:language dbr:English_language ;
+    hito:license dbr:GNU_Free_Documentation_License ;
+    hito:operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows, dbr:Unix ;
+    hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
     hito:usesStandard hito:Dicom, hito:Rest ;
     a hito:SoftwareProduct ;
     rdfs:comment "The enterprise function citations are based on the medfloss website." ;
