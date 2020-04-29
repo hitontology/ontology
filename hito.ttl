@@ -2835,16 +2835,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 	:applicationSystemCatalogue :UnknownApplicationSystemCatalogue .
 
 
-###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionCatalogue
-:UnknownEnterpriseFunctionCatalogue rdf:type :EnterpriseFunctionCatalogue ;
+###  http://hitontology.eu/ontology/UnknownFunctionCatalogue
+:UnknownFunctionCatalogue rdf:type :EnterpriseFunctionCatalogue ;
 	rdfs:label "Unknown Enterprise Function Catalogue"@en ;
 	rdfs:comment "residual catalogue for assigning citations with unknown classified enterprise function." .
 
 
-###  http://hitontology.eu/ontology/UnknownEnterpriseFunctionClassified
-	:UnknownEnterpriseFunctionClassified rdf:type :EnterpriseFunctionClassified ;
+###  http://hitontology.eu/ontology/UnknownFunctionClassified
+	:UnknownFunctionClassified rdf:type :EnterpriseFunctionClassified ;
 	rdfs:label "Unknown Classified Enterprise Function"@en ;
-	:enterpriseFunctionCatalogue :UnknownEnterpriseFunctionCatalogue .
+	:enterpriseFunctionCatalogue :UnknownFunctionCatalogue .
 
 
 ###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
