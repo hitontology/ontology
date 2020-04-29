@@ -462,6 +462,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/ApplicationSystemCatalogue
 :ApplicationSystemCatalogue rdf:type owl:Class ;
+                             rdfs:subClassOf :Catalogue ;
                              rdfs:label "Application System Catalogue"@en .
 
 
@@ -473,6 +474,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/ApplicationSystemCitation
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:label "Application System Citation"@en .
+
+
+###  http://hitontology.eu/ontology/Catalogue
+:Catalogue rdf:type owl:Class ;
+                rdfs:label "Catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/Certification
@@ -518,6 +524,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/FeatureCatalogue
 :FeatureCatalogue rdf:type owl:Class ;
+                   rdfs:subClassOf :Catalogue ;
                    rdfs:label "Feature Catalogue"@en .
 
 
@@ -538,6 +545,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCatalogue
 :EnterpriseFunctionCatalogue rdf:type owl:Class ;
+                   rdfs:subClassOf :Catalogue ;
                    rdfs:label "Function Catalogue"@en .
 
 ### http://hitontology.eu/ontology/OperatingSystem
@@ -567,6 +575,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCatalogue
 :OrganizationalUnitCatalogue rdf:type owl:Class ;
+                   rdfs:subClassOf :Catalogue ;
                    rdfs:label "Organizational Unit Catalogue"@en .
 
 
@@ -633,6 +642,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/UserGroupCatalogue
 :UserGroupCatalogue rdf:type owl:Class ;
+                   rdfs:subClassOf :Catalogue ;
                    rdfs:label "User Group Catalogue"@en .
 
 
