@@ -40,7 +40,7 @@ hito:Orthanc
     hito:feature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
     hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
     hito:runsOnOs <http://dbpedia.org/resource/Linux>, <http://dbpedia.org/resource/Mac_OS>, <http://dbpedia.org/resource/Microsoft_Windows>, <http://dbpedia.org/resource/Unix> ;
-    hito:supportsClient hito:WebBased ;
+    hito:client hito:WebBased ;
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
     hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
     hito:databaseSystem hito:PostgreSql ;

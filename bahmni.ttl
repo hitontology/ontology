@@ -12,7 +12,7 @@ hito:Bahmni
     hito:feature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
     hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     hito:runsOnOs <http://dbpedia.org/resource/CentOS> ;
-    hito:supportsClient hito:WebBased ;
+    hito:client hito:WebBased ;
     hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
     hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
     hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
