@@ -5,18 +5,23 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix hito: <> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bb: <http://www.snik.eu/ontology/bb/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:Bahmni
-    hito:homepage <https://www.bahmni.org/> ;
-    hito:license <http://dbpedia.org/resource/Affero_General_Public_License> ;
-    hito:feature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
-    hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
-    hito:runsOnOs <http://dbpedia.org/resource/CentOS> ;
     hito:client hito:WebBased ;
-    hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
-    hito:language <http://dbpedia.org/resource/English_language> ;
-    hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
     hito:databaseSystem hito:MySql, hito:PostgreSql ;
+    hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
+    hito:feature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
+    hito:homepage <https://www.bahmni.org/> ;
+    hito:language dbr:English_language ;
+    hito:license dbr:Affero_General_Public_License ;
+    hito:operatingSystem dbr:CentOS ;
+    hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
+    hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a hito:SoftwareProduct ;
     rdfs:label "Bahmni" .
 
