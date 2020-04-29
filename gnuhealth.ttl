@@ -199,7 +199,7 @@ hito:GnuHealth
     hito:runsOnOs <http://dbpedia.org/resource/Linux> ;
     hito:client hito:Mobile, hito:Native, hito:WebBased ;
     hito:enterpriseFunction hito:AccessManagement, hito:Accounting, hito:AnalyticAccounting, hito:Billing, hito:ClinicalDocumentation, hito:Coding, hito:Epidemiology, hito:FinancialAccounting, hito:MedicationManagement, hito:Occhiolino, hito:PatientAdministration, hito:PatientAppointmentAndAdmissionManagement, hito:PatientEvaluations, hito:PatientManagement, hito:ProductsAndServicesManagement, hito:PurchaseAdministration, hito:RecordManagement, hito:ReportGeneration, hito:StaffManagement, hito:StatisticalAnalysis, hito:StockManagement ;
-    hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
+    hito:language <http://dbpedia.org/resource/English_language> ;
     hito:databaseSystem hito:PostgreSql ;
     hito:usesStandard hito:Hl7, hito:Icd10 ;
     a hito:SoftwareProduct ;

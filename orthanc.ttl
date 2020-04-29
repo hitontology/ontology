@@ -42,7 +42,7 @@ hito:Orthanc
     hito:runsOnOs <http://dbpedia.org/resource/Linux>, <http://dbpedia.org/resource/Mac_OS>, <http://dbpedia.org/resource/Microsoft_Windows>, <http://dbpedia.org/resource/Unix> ;
     hito:client hito:WebBased ;
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
-    hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
+    hito:language <http://dbpedia.org/resource/English_language> ;
     hito:databaseSystem hito:PostgreSql ;
     hito:usesStandard hito:Dicom, hito:Rest ;
     a hito:SoftwareProduct ;
