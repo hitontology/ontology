@@ -16,7 +16,7 @@ hito:Bahmni
     hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
     hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
     hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
-    hito:usesDbs hito:MySql, hito:PostgreSql ;
+    hito:databaseSystem hito:MySql, hito:PostgreSql ;
     a hito:SoftwareProduct ;
     rdfs:label "Bahmni" .
 

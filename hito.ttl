@@ -398,11 +398,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "user group catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/usesDbs
-:usesDbs rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/databaseSystem
+:databaseSystem rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :DatabaseSystem ;
-                    rdfs:label "uses database system"@en .
+                    rdfs:label "database system"@en .
 
 
 #################################################################

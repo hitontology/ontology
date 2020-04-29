@@ -43,7 +43,7 @@ hito:Orthanc
     hito:supportsClient hito:WebBased ;
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
     hito:supportsLanguage <http://dbpedia.org/resource/English_language> ;
-    hito:usesDbs hito:PostgreSql ;
+    hito:databaseSystem hito:PostgreSql ;
     hito:usesStandard hito:Dicom, hito:Rest ;
     a hito:SoftwareProduct ;
     rdfs:comment "The enterprise function citations are based on the medfloss website." ;
