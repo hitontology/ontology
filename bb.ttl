@@ -8,6 +8,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix bb: <http://www.snik.eu/ontology/bb/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:AdministrateTheMasterPatientIndexMpi
     hito:featureCatalogue hito:BbArchitectureFeatureCatalogue ;
@@ -16,22 +18,22 @@ hito:AdministrateTheMasterPatientIndexMpi
     rdfs:label "Administrate the master patient index (MPI)"@en .
 
 hito:AdministrationAndProvisionOfMedicalRecords
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administration and provision of medical records"@en .
 
 hito:AdministrationOfBusinessTripsAndFurtherTraining
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administration of business trips and further training"@en .
 
 hito:AdministrationOfHumanResourceMasterData
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administration of human resource master data"@en .
 
 hito:AdministrativeAdmission
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:AdministrativeAdmission ;
@@ -39,7 +41,7 @@ hito:AdministrativeAdmission
     rdfs:label "Administrative admission"@en, "administrative admission"@en .
 
 hito:AdministrativeDischargeAndBilling
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1", "Table6.4" ;
     dcterms:source bb:AdministrativeDischargeAndBilling ;
@@ -47,7 +49,7 @@ hito:AdministrativeDischargeAndBilling
     rdfs:label "Administrative discharge and billing"@en .
 
 hito:AdministrativeDischargeAndFinalBilling
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administrative discharge and final billing"@en .
 
@@ -66,7 +68,7 @@ hito:AnalyzeData
     rdfs:label "Analyze data"@en .
 
 hito:AppointmentScheduling
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.8" ;
     dc:source "Table6.8" ;
     dcterms:source bb:AppointmentScheduling ;
@@ -81,7 +83,7 @@ hito:ArchivePictures
     rdfs:label "Archive pictures"@en .
 
 hito:ArchivingOfPatientInformation
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.13" ;
     dc:source "Table6.13" ;
     dcterms:source bb:ArchivingOfPatientInformation ;
@@ -148,7 +150,12 @@ hito:Bb
     dcterms:source <https://www.snik.eu/ontology/bb> ;
     a hito:Classification ;
     rdfs:label "Blue Book classification"@en ;
-    rdfs:member hito:BbArchitectureApplicationSystemCatalogue, hito:BbArchitectureFeatureCatalogue, hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
+    rdfs:member hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue, hito:BbArchitectureFeatureCatalogue, hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue .
+
+hito:BbApplicationComponentApplicationSystemCatalogue
+    a hito:ApplicationSystemCatalogue ;
+    rdfs:comment "Application Components from the Blue Book as Application Systems"@en ;
+    rdfs:label "Blue Book Application Components"@en .
 
 hito:BbArchitectureApplicationSystemCatalogue
     a hito:ApplicationSystemCatalogue ;
@@ -171,7 +178,7 @@ hito:BbReferenceModelFunctionCatalogue
     rdfs:label "Blue Book Reference Model Function Catalogue"@en .
 
 hito:BloodBankManagementSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Supports blood donor services, blood analyses, administration of blood bottles."@en ;
     rdfs:label "Blood bank management system"@en .
@@ -184,19 +191,19 @@ hito:CalculateDosageOfDrugs
     rdfs:label "Calculate dosage of drugs"@en .
 
 hito:CardiovascularInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Provides many features of a clinical information system and a radiology information system while tailoring the special needs of a cardiology department."@en ;
     rdfs:label "Cardiovascular information system"@en ;
     skos:altLabel "CVIS"@en .
 
 hito:Catering
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "catering"@en .
 
 hito:CodingOfDiagnosesAndProcedures
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1", "Table6.3", "Table6.6", "Table6.7", "Table6.8" ;
     dcterms:source bb:CodingOfDiagnosesAndProcedures ;
@@ -204,7 +211,7 @@ hito:CodingOfDiagnosesAndProcedures
     rdfs:label "Coding of diagnoses and procedures"@en, "coding of diagnoses and procedures"@en .
 
 hito:CodingOfProcedures
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "coding of procedures"@en .
 
@@ -244,7 +251,7 @@ hito:CommunicateReportToOrderingUnit
     rdfs:label "Communicate report to ordering unit"@en .
 
 hito:Controlling
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:Controlling ;
@@ -252,7 +259,7 @@ hito:Controlling
     rdfs:label "Controlling"@en, "controlling"@en .
 
 hito:CostAndResultsAccounting
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "cost and results accounting"@en .
 
@@ -270,12 +277,12 @@ hito:CreatingARoster
     rdfs:label "Creating a roster"@en .
 
 hito:DataWarehouseSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Data Warehouse System"@en .
 
 hito:DecisionMakingAndPatientInformation
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.7" ;
     dc:source "Table6.7" ;
     dcterms:source bb:DecisionMakingAndPatientInformation ;
@@ -283,7 +290,7 @@ hito:DecisionMakingAndPatientInformation
     rdfs:label "Decision making and patient information"@en, "decision making and patient information"@en .
 
 hito:DecisionMakingPlanningAndOrganizationOfPatientTreatment
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.2" ;
     dc:source "Table6.2", "Table6.4" ;
     dcterms:source bb:DecisionMakingPlanningAndOrganizationOfPatientTreatment ;
@@ -291,19 +298,19 @@ hito:DecisionMakingPlanningAndOrganizationOfPatientTreatment
     rdfs:label "Decision making and planning of patient treatment"@en, "decision making, planning and organization of patient treatment"@en .
 
 hito:DecisionSupportSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "A knowledge-based system which assists a doctor in finding the right diagnosis or treatment for a specific patient."@en ;
     rdfs:label "Decision support system"@en .
 
 hito:DialysisInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of a dialysis department, has interfaces to hemodialysis machines."@en ;
     rdfs:label "Dialysis information system"@en .
 
 hito:DigitalDictationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Offers features for digital voice recording and speech recognition, is often integrated into medical information systems and supports report, finding and letter writing."@en ;
     rdfs:label "Digital dictation system"@en .
@@ -337,22 +344,22 @@ hito:DisplayWarningMessages
     rdfs:label "Display warning messages"@en .
 
 hito:DocumentArchivingSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Document Archiving System"@en .
 
 hito:Education
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "education"@en .
 
 hito:EnterpriseResourcePlanningSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Enterprise Resource Planning System"@en .
 
 hito:ExecutionOfAnOperation
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.7" ;
     dc:source "Table6.7" ;
     dcterms:source bb:ExecutionOfAnOperation ;
@@ -360,7 +367,7 @@ hito:ExecutionOfAnOperation
     rdfs:label "Execution of an operation"@en .
 
 hito:ExecutionOfClinicalTrialsAndExperiments
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.12" ;
     dc:source "Table6.12" ;
     dcterms:source bb:ExecutionOfClinicalTrialsAndExperiments ;
@@ -368,12 +375,12 @@ hito:ExecutionOfClinicalTrialsAndExperiments
     rdfs:label "Execution of clinical trials and experiments"@en, "execution of clinical trials and experiments"@en .
 
 hito:ExecutionOfDiagnosticAndTherapeuticProcedures
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "execution of diagnostic and therapeutic procedures"@en .
 
 hito:ExecutionOfDiagnosticTherapeuticAndNursingProcedures
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.2", "6.4" ;
     dc:source "Table6.2", "Table6.4", "Table6.6" ;
     dcterms:source bb:ExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
@@ -381,7 +388,7 @@ hito:ExecutionOfDiagnosticTherapeuticAndNursingProcedures
     rdfs:label "Execution of diagnostic, therapeutic and nursing Procedures"@en, "Execution of diagnostic, therapeutic and nursing procedures"@en, "execution of diagnostic, therapeutic and nursing procedures"@en .
 
 hito:ExecutionOfLabExaminations
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.10" ;
     dc:source "Table6.10" ;
     dcterms:source bb:ExecutionOfLabExaminations ;
@@ -389,7 +396,7 @@ hito:ExecutionOfLabExaminations
     rdfs:label "Execution of lab examinations"@en .
 
 hito:ExecutionOfNursingProcedures
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:ExecutionOfNursingProcedures ;
@@ -397,7 +404,7 @@ hito:ExecutionOfNursingProcedures
     rdfs:label "Execution of nursing procedures"@en, "execution of nursing procedures"@en .
 
 hito:ExecutionOfOperations
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.3" ;
     dc:source "Table6.3", "Table6.6" ;
     dcterms:source bb:MedicalAndNursingCarePlanning ;
@@ -405,7 +412,7 @@ hito:ExecutionOfOperations
     rdfs:label "Medical and nursing care planning"@en .
 
 hito:ExecutionOfRadiologicalExaminations
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.8" ;
     dc:source "Table6.8", "Table6.9" ;
     dcterms:source <http://www.snik.eu/ontology/bb/> ;
@@ -413,7 +420,7 @@ hito:ExecutionOfRadiologicalExaminations
     rdfs:label "Execution of radiological examinations"@en .
 
 hito:FacilityManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:FacilityManagement ;
@@ -421,7 +428,7 @@ hito:FacilityManagement
     rdfs:label "Facility management"@en, "facility management"@en .
 
 hito:FinancialAccounting
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:FinancialAccounting ;
@@ -435,12 +442,12 @@ hito:GenerateAUniquePinAndACin
     rdfs:label "Generate a unique PIN and a CIN"@en .
 
 hito:HospitalAdministration
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "hospital administration"@en .
 
 hito:HospitalManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.12" ;
     dc:source "Table6.12" ;
     dcterms:source bb:HospitalManagement ;
@@ -448,7 +455,7 @@ hito:HospitalManagement
     rdfs:label "Hospital management"@en, "hospital management"@en .
 
 hito:HumanResourceManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.2" ;
     dc:source "Table6.11", "Table6.2", "Table6.3", "Table6.4", "Table6.6" ;
     dcterms:source bb:HumanResourceManagement ;
@@ -456,12 +463,12 @@ hito:HumanResourceManagement
     rdfs:label "Human resource management"@en .
 
 hito:HumanResourcePlanning
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "human resource planning"@en .
 
 hito:HumanResourcesManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "human resources management"@en .
 
@@ -480,7 +487,7 @@ hito:IndexDocumentContent
     rdfs:label "Index document content"@en .
 
 hito:InformationManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "information management"@en .
 
@@ -492,28 +499,28 @@ hito:IntegrateDataFromDifferentApplicationComponents
     rdfs:label "Integrate data from different application components"@en .
 
 hito:InternalQualityManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "internal quality management"@en .
 
 hito:KnowledgeInquiryAndLiteratureManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "knowledge inquiry and literature management"@en .
 
 hito:LaboratoryInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Laboratory Information System"@en ;
     skos:altLabel "LIS"@en .
 
 hito:LaundryManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "laundry management"@en .
 
 hito:LongTermArchiving
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "long term archiving"@en .
 
@@ -539,7 +546,7 @@ hito:ManageStorageMedia
     rdfs:label "Manage storage media"@en .
 
 hito:ManagementOfMedicalDevices
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.8" ;
     dc:source "Table6.8" ;
     dcterms:source bb:ManagementOfMedicalDevices ;
@@ -547,12 +554,12 @@ hito:ManagementOfMedicalDevices
     rdfs:label "Management of Medical Devices"@en, "management of medical devices"@en .
 
 hito:MaterialAndMedicationManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "material and medication management"@en .
 
 hito:MedicalAdmission
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.2" ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7", "Table6.8" ;
     dcterms:source bb:MedicalAdmission ;
@@ -560,17 +567,17 @@ hito:MedicalAdmission
     rdfs:label "Medical admission"@en, "medical admission"@en .
 
 hito:MedicalAndNursingCarePlanning
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "medical and nursing care planning"@en .
 
 hito:MedicalDischargeAndWritingTheDischargeLetter
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "medical discharge and writing the discharge letter"@en .
 
 hito:MedicalDocumentationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Medical Documentation System"@en .
 
@@ -589,7 +596,7 @@ hito:ModifyPresentationOfPictures
     rdfs:label "Modify presentation of pictures"@en .
 
 hito:NursingAdmission
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:NursingAdmission ;
@@ -597,7 +604,7 @@ hito:NursingAdmission
     rdfs:label "Nursing admission"@en, "nursing admission"@en .
 
 hito:NursingDischargeAndNursingReportWriting
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:NursingDischargeAndNursingReportWriting ;
@@ -605,12 +612,12 @@ hito:NursingDischargeAndNursingReportWriting
     rdfs:label "Nursing discharge and nursing report writing"@en .
 
 hito:NursingDischargeAndWritingTheNursingDischargeReport
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "nursing discharge and writing the nursing discharge report"@en .
 
 hito:NursingManagementAndDocumentationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Nursing Management and Documentation System"@en .
 
@@ -621,28 +628,28 @@ hito:OfferDecisionsupportForCarePlanning
     rdfs:label "Offer decision-support for care planning"@en .
 
 hito:OncologyInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of an oncology department."@en ;
     rdfs:label "Oncology information system"@en .
 
 hito:OpeningAPatientRecord
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "opening a patient record"@en .
 
 hito:OperationManagementSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Operation Management System"@en .
 
 hito:OperationalInformationManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "operational information management"@en .
 
 hito:OrderEntry
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.5" ;
     dc:source "Table6.5" ;
     dcterms:source bb:OrderEntry ;
@@ -657,50 +664,50 @@ hito:OrganizePatientTransport
     rdfs:label "Organize patient transport"@en .
 
 hito:OrthopedicsInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Provides many features of a clinical information system while tailoring the special needs of an orthopedics department, can include a computer-aided design (CAD) system for transplant planning."@en ;
     rdfs:label "Orthopedics information system"@en .
 
 hito:OutpatientManagementSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Outpatient Management System"@en .
 
 hito:PathologyInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Has similar features as a laboratory information system, e. g. receiving orders, writing reports."@en ;
     rdfs:label "Pathology information system"@en .
 
 hito:PatientAdministration
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient administration"@en .
 
 hito:PatientAdministrationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Patient Administration System"@en .
 
 hito:PatientAdmission
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient admission"@en .
 
 hito:PatientCare
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient care"@en .
 
 hito:PatientDataManagementSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Patient Data Management System"@en ;
     skos:altLabel "PDMS"@en .
 
 hito:PatientDischargeAndTransferToOtherInstitutions
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.2" ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7" ;
     dcterms:source bb:PatientDischargeAndTransferToOtherInstitutions ;
@@ -708,7 +715,7 @@ hito:PatientDischargeAndTransferToOtherInstitutions
     rdfs:label "Patient discharge and transfer to other institutions"@en, "patient discharge and transfer to other institutions"@en .
 
 hito:PatientIdentificationAndCheckingForRecurrent
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:PatientIdentificationAndCheckingForRecurrent ;
@@ -716,29 +723,29 @@ hito:PatientIdentificationAndCheckingForRecurrent
     rdfs:label "Patient identification and checking for recurrent"@en, "patient identification and checking for recurrent"@en .
 
 hito:PayrollAccounting
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "payroll accounting"@en .
 
 hito:PerformanceOfLegalNotificationRequirements
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "performance of legal notification requirements"@en .
 
 hito:PharmacyInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Supports the workflow in the pharmacy department: receiving drug orders, managing the drug stock, distributing drugs throughout the hospital."@en ;
     rdfs:label "Pharmacy information system"@en .
 
 hito:PictureArchivingAndCommunicationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Picture Archiving and Communication System"@en ;
     skos:altLabel "PACS"@en .
 
 hito:PreparationOfAnOrder
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "preparation of an order"@en .
 
@@ -1411,18 +1418,18 @@ hito:ProvideReminderForFulfillingOfLegalReportingRequirements
     rdfs:label "Provide reminder for fulfilling of legal reporting requirements"@en .
 
 hito:ProviderOrPhysicianOrderEntrySystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Provider or Physician Order Entry System"@en ;
     skos:altLabel "POE"@en .
 
 hito:PublishingAndPresenting
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "publishing and presenting"@en .
 
 hito:QualityManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:QualityManagement ;
@@ -1430,7 +1437,7 @@ hito:QualityManagement
     rdfs:label "Quality management"@en, "quality management"@en .
 
 hito:RadiologyInformationSystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Radiology Information System"@en ;
     skos:altLabel "RIS"@en .
@@ -1450,12 +1457,12 @@ hito:ReceiveOrders
     rdfs:label "Receive orders"@en .
 
 hito:ResearchAndEducation
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "research and education"@en .
 
 hito:ResearchManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "research management"@en .
 
@@ -1481,7 +1488,7 @@ hito:ScanningDocumentsFromReferringPhysicianAndOtherSources
     rdfs:label "Scanning documents from referring physician and other sources"@en .
 
 hito:SchedulingAndResourceAllocation
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue, hito:BbReferenceModelFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1", "Table6.4", "Table6.6", "Table6.7" ;
     dcterms:source bb:SchedulingAndResourceAllocation ;
@@ -1489,12 +1496,12 @@ hito:SchedulingAndResourceAllocation
     rdfs:label "Scheduling and resource allocation"@en, "scheduling and resource allocation"@en .
 
 hito:SchedulingAndResourcePlanningWithTheMedicalServiceUnit
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "scheduling and resource planning with the medical service unit"@en .
 
 hito:SchedulingAndResourcePlanningWithThePatientTransportService
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "scheduling and resource planning with the patient transport service"@en .
 
@@ -1519,7 +1526,7 @@ hito:SelectOrdersFromOrderSets
     rdfs:label "Select orders from order sets"@en .
 
 hito:StrategicInformationManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "strategic information management"@en .
 
@@ -1530,7 +1537,7 @@ hito:StructureData
     rdfs:label "Structure data"@en .
 
 hito:SupplyAndDisposalManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.6" ;
     dc:source "Table6.11", "Table6.6", "Table6.7" ;
     dcterms:source bb:SupplyAndDisposalManagement ;
@@ -1538,7 +1545,7 @@ hito:SupplyAndDisposalManagement
     rdfs:label "Supply and disposal management"@en .
 
 hito:SupplyManagementSchedulingAndResourceAllocation
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "supply management scheduling and resource allocation"@en .
 
@@ -1550,12 +1557,12 @@ hito:SupportCreationOfANursingCarePlan
     rdfs:label "Support creation of a nursing care plan"@en .
 
 hito:TacticalInformationManagement
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "tactical information management"@en .
 
 hito:TeleradiologySystem
-    hito:applicationSystemCatalogue hito:BbArchitectureApplicationSystemCatalogue ;
+    hito:applicationSystemCatalogue hito:BbApplicationComponentApplicationSystemCatalogue, hito:BbArchitectureApplicationSystemCatalogue ;
     a hito:ApplicationSystemClassified ;
     rdfs:comment "Enables evaluations of radiological images from (external) radiologists' remote workplaces and may be closely connected to RIS and PACS."@en ;
     rdfs:label "Teleradiology system"@en .
@@ -1574,7 +1581,7 @@ hito:ViewPatientrelatedAppointments
     rdfs:label "View patient-related appointments"@en .
 
 hito:VisitorAndInformationService
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:VisitorAndInformationService ;
@@ -1582,12 +1589,12 @@ hito:VisitorAndInformationService
     rdfs:label "Visitor and information service"@en .
 
 hito:VisitorAndInformationServices
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "visitor and information services"@en .
 
 hito:WorkOrganizationAndTimeManagement
-    hito:functionCatalogue hito:BbArchitectureFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbArchitectureFunctionCatalogue ;
     hito:memberNr "6.7" ;
     dc:source "Table6.7", "Table6.8" ;
     dcterms:source bb:WorkOrganizationAndTimeManagement ;
@@ -1595,7 +1602,7 @@ hito:WorkOrganizationAndTimeManagement
     rdfs:label "Work organization and time management"@en .
 
 hito:WorkOrganizationAndTimePlanning
-    hito:functionCatalogue hito:BbReferenceModelFunctionCatalogue ;
+    hito:enterpriseFunctionCatalogue hito:BbReferenceModelFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "work organization and time planning"@en .
 
