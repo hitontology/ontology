@@ -688,15 +688,6 @@ xsd:gYear rdf:type rdfs:Datatype .
          rdfs:label "Adaba BG"@en .
 
 
-###  http://hitontology.eu/ontology/Administrative_healthcare_staff_occupation
-:Administrative_healthcare_staff_occupation rdf:type owl:NamedIndividual ,
-                                                     :UserGroupClassified ;
-                                            :hasSCTID 224608005 ;
-                                            :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                                            rdfs:comment "Administrative healthcare staff (occupation)" ;
-                                            rdfs:label "Administrative healthcare staff occupation"@en .
-
-
 ###  http://hitontology.eu/ontology/AllainTJ
 :AllainTJ rdf:type owl:NamedIndividual ,
                    :FirstAuthor ;
@@ -821,24 +812,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ChienTI rdf:type owl:NamedIndividual ,
                   :FirstAuthor ;
          rdfs:label "Chien TI"@en .
-
-
-###  http://hitontology.eu/ontology/Clerical_occupation_occupation
-:Clerical_occupation_occupation rdf:type owl:NamedIndividual ,
-                                         :UserGroupClassified ;
-                                :hasSCTID 159483005 ;
-                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                                rdfs:comment "Clerical occupation (occupation)" ;
-                                rdfs:label "Clerical occupation occupation"@en .
-
-
-###  http://hitontology.eu/ontology/Clerk_occupation
-:Clerk_occupation rdf:type owl:NamedIndividual ,
-                           :UserGroupClassified ;
-                  :hasSCTID 106353008 ;
-                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                  rdfs:comment "Clerk (occupation)" ;
-                  rdfs:label "Clerk occupation"@en .
 
 
 ###  http://hitontology.eu/ontology/Communication
@@ -1107,15 +1080,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                rdfs:label "Laboratory Information System"@en .
 
 
-###  http://hitontology.eu/ontology/Laboratory_technician_occupation
-:Laboratory_technician_occupation rdf:type owl:NamedIndividual ,
-                                           :UserGroupClassified ;
-                                  :hasSCTID 159282002 ;
-                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                                  rdfs:comment "Laboratory technician (occupation)" ;
-                                  rdfs:label "Laboratory technician occupation"@en .
-
-
 ###  http://hitontology.eu/ontology/LemmettyK
 :LemmettyK rdf:type owl:NamedIndividual ,
                     :FirstAuthor ;
@@ -1307,15 +1271,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                        :ApplicationSystemClassified ;
                               :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
                               rdfs:label "Medical Documentation System"@en .
-
-
-###  http://hitontology.eu/ontology/Medical_technician_occupation
-:Medical_technician_occupation rdf:type owl:NamedIndividual ,
-                                        :UserGroupClassified ;
-                               :hasSCTID 307988006 ;
-                               :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                               rdfs:comment "Medical technician (occupation)" ;
-                               rdfs:label "Medical technician occupation"@en .
 
 
 ###  http://hitontology.eu/ontology/MedicationAlertOverrides
@@ -2257,24 +2212,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                       rdfs:label "Patient satisfaction"@en .
 
 
-###  http://hitontology.eu/ontology/Pharmacist_occupation
-:Pharmacist_occupation rdf:type owl:NamedIndividual ,
-                                :UserGroupClassified ;
-                       :hasSCTID 46255001 ;
-                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                       rdfs:comment "Pharmacist (occupation)" ;
-                       rdfs:label "Pharmacist occupation"@en .
-
-
-###  http://hitontology.eu/ontology/Physician_occupation
-:Physician_occupation rdf:type owl:NamedIndividual ,
-                               :UserGroupClassified ;
-                      :hasSCTID 309343006 ;
-                      :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                      rdfs:comment "Physician (occupation)" ;
-                      rdfs:label "Physician occupation"@en .
-
-
 ###  http://hitontology.eu/ontology/Picture_Archiving_and_Communication_System_PACS
 :Picture_Archiving_and_Communication_System_PACS rdf:type owl:NamedIndividual ,
                                                           :ApplicationSystemClassified ;
@@ -2310,15 +2247,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "Produce A Summary Record Of Care"@en .
 
 
-###  http://hitontology.eu/ontology/Professional_nurse_occupation
-:Professional_nurse_occupation rdf:type owl:NamedIndividual ,
-                                        :UserGroupClassified ;
-                               :hasSCTID 106292003 ;
-                               :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                               rdfs:comment "Professional nurse (occupation)" ;
-                               rdfs:label "Professional nurse occupation"@en .
-
-
 ###  http://hitontology.eu/ontology/Provider_or_Physician_Order_Entry_System_POE
 :Provider_or_Physician_Order_Entry_System_POE rdf:type owl:NamedIndividual ,
                                                        :ApplicationSystemClassified ;
@@ -2347,15 +2275,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                  :applicationSystemClassified :Picture_Archiving_and_Communication_System_PACS ,
                                               :Radiology_Information_System ;
                  rdfs:label "RIS-PACS system"@en .
-
-
-###  http://hitontology.eu/ontology/Radiologist_occupation
-:Radiologist_occupation rdf:type owl:NamedIndividual ,
-                                 :UserGroupClassified ;
-                        :hasSCTID 66862007 ;
-                        :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                        rdfs:comment "Radiologist (occupation)" ;
-                        rdfs:label "Radiologist occupation"@en .
 
 
 ###  http://hitontology.eu/ontology/Radiologists
@@ -2535,15 +2454,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                 rdfs:label "Support For Standard Care Plans Guidelines Protocols"@en .
 
 
-###  http://hitontology.eu/ontology/Surgeon_occupation
-:Surgeon_occupation rdf:type owl:NamedIndividual ,
-                             :UserGroupClassified ;
-                    :hasSCTID 304292004 ;
-                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-                    rdfs:comment "Surgeon (occupation)" ;
-                    rdfs:label "Surgeon occupation"@en .
-
-
 ###  http://hitontology.eu/ontology/SyntacticInteroperability
 :SyntacticInteroperability rdfs:subClassOf :Interoperability ;
           rdfs:comment "Syntactic Interoperability Standard"@en ;
@@ -2715,15 +2625,6 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:label "Westbrook IJ"@en .
 
 
-###  http://hitontology.eu/ontology/Woman_person
-:Woman_person rdf:type owl:NamedIndividual ,
-                       :UserGroupClassified ;
-              :hasSCTID 224526002 ;
-              :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
-              rdfs:comment "Woman (person)" ;
-              rdfs:label "Woman person" .
-
-
 ###  http://hitontology.eu/ontology/adaption_of_nursing_care_plans_during_care_planning
 :adaption_of_nursing_care_plans_during_care_planning rdf:type owl:NamedIndividual ,
                                                               :FeatureCitation ;
@@ -2737,13 +2638,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                        :OutcomeCriteriaCitation ;
                               :classifiedOutcomeCriteria :Process_quality ;
                               rdfs:label "adherence to recommendations"@en .
-
-
-###  http://hitontology.eu/ontology/administrative_staff
-:administrative_staff rdf:type owl:NamedIndividual ,
-                               :UserGroupCitation ;
-                      :classifiedUserGroupSNOMEDCT :Administrative_healthcare_staff_occupation ;
-                      rdfs:label "administrative staff"@en .
 
 
 ###  http://hitontology.eu/ontology/admission_overview
@@ -2986,20 +2880,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                   :ManageClinicalHistory ,
                                                                   :ManagePatientHistory ;
                                        rdfs:label "capturing data for all patient visits"@en .
-
-
-###  http://hitontology.eu/ontology/clerical_staff
-:clerical_staff rdf:type owl:NamedIndividual ,
-                         :UserGroupCitation ;
-                :classifiedUserGroupSNOMEDCT :Clerical_occupation_occupation ;
-                rdfs:label "clerical staff"@en .
-
-
-###  http://hitontology.eu/ontology/clerks
-:clerks rdf:type owl:NamedIndividual ,
-                 :UserGroupCitation ;
-        :classifiedUserGroupSNOMEDCT :Clerk_occupation ;
-        rdfs:label "clerks"@en .
 
 
 ###  http://hitontology.eu/ontology/clinical_audit
