@@ -11,9 +11,14 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
 
+:Snomed
+    a :Classification ;
+    rdfs:label "SNOMED CT"@en ;
+    rdfs:member :SnomedEnvironmentOrganizationalUnitCatalogue, :SnomedUserGroupCatalogue .
+
 ###  http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue
 :SnomedEnvironmentOrganizationalUnitCatalogue rdf:type :OrganizationalUnitCatalogue ;
-                                              rdfs:label "Snomed CT Environment Client Feature Catalogue"@en .
+                                              rdfs:label "SNOMED CT Environment Client Feature Catalogue"@en .
 
 ###  http://hitontology.eu/ontology/AccidentAndEmergencyDepartmentEnvironment
 :AccidentAndEmergencyDepartmentEnvironment rdf:type owl:NamedIndividual ,
@@ -425,8 +430,8 @@
 ##################################################################################### User Group
 
 ###  http://hitontology.eu/ontology/SnomedUserGroupCatalogue
-:SnomedUserGroupCatalogue rdf:type :OrganizationalUnitCatalogue ;
-                          rdfs:label "Snomed CT User Group Catalogue"@en .
+:SnomedUserGroupCatalogue rdf:type :UserGroupCatalogue ;
+                          rdfs:label "SNOMED CT User Group Catalogue"@en .
 
 ######################################################## User Group Classified
 
