@@ -433,6 +433,7 @@
 ###  http://hitontology.eu/ontology/Administrative_healthcare_staff_occupation
 :Administrative_healthcare_staff_occupation rdf:type owl:NamedIndividual ,
                                                      :UserGroupClassified ;
+                                     	    :userGroupCatalogue :SnomedUserGroupCatalogue ;
                                             :hasSCTID 224608005 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                             rdfs:comment "Administrative healthcare staff (occupation)" ;
@@ -442,6 +443,7 @@
 ###  http://hitontology.eu/ontology/Clerical_occupation_occupation
 :Clerical_occupation_occupation rdf:type owl:NamedIndividual ,
                                          :UserGroupClassified ;
+                                :userGroupCatalogue :SnomedUserGroupCatalogue ;
                                 :hasSCTID 159483005 ;
                                 :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                 rdfs:comment "Clerical occupation (occupation)" ;
@@ -451,6 +453,7 @@
 ###  http://hitontology.eu/ontology/Clerk_occupation
 :Clerk_occupation rdf:type owl:NamedIndividual ,
                            :UserGroupClassified ;
+                  :userGroupCatalogue :SnomedUserGroupCatalogue ;
                   :hasSCTID 106353008 ;
                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                   rdfs:comment "Clerk (occupation)" ;
@@ -460,6 +463,7 @@
 ###  http://hitontology.eu/ontology/Laboratory_technician_occupation
 :Laboratory_technician_occupation rdf:type owl:NamedIndividual ,
                                            :UserGroupClassified ;
+                                  :userGroupCatalogue :SnomedUserGroupCatalogue ;
                                   :hasSCTID 159282002 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                   rdfs:comment "Laboratory technician (occupation)" ;
@@ -469,6 +473,7 @@
 ###  http://hitontology.eu/ontology/Medical_technician_occupation
 :Medical_technician_occupation rdf:type owl:NamedIndividual ,
                                         :UserGroupClassified ;
+                               :userGroupCatalogue :SnomedUserGroupCatalogue ;
                                :hasSCTID 307988006 ;
                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                rdfs:comment "Medical technician (occupation)" ;
@@ -478,6 +483,7 @@
 ###  http://hitontology.eu/ontology/Pharmacist_occupation
 :Pharmacist_occupation rdf:type owl:NamedIndividual ,
                                 :UserGroupClassified ;
+                       :userGroupCatalogue :SnomedUserGroupCatalogue ;
                        :hasSCTID 46255001 ;
                        :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                        rdfs:comment "Pharmacist (occupation)" ;
@@ -487,6 +493,7 @@
 ###  http://hitontology.eu/ontology/Physician_occupation
 :Physician_occupation rdf:type owl:NamedIndividual ,
                                :UserGroupClassified ;
+                      :userGroupCatalogue :SnomedUserGroupCatalogue ;
                       :hasSCTID 309343006 ;
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                       rdfs:comment "Physician (occupation)" ;
@@ -496,6 +503,7 @@
 ###  http://hitontology.eu/ontology/Professional_nurse_occupation
 :Professional_nurse_occupation rdf:type owl:NamedIndividual ,
                                         :UserGroupClassified ;
+                               :userGroupCatalogue :SnomedUserGroupCatalogue ;
                                :hasSCTID 106292003 ;
                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                                rdfs:comment "Professional nurse (occupation)" ;
@@ -505,6 +513,7 @@
 ###  http://hitontology.eu/ontology/Radiologist_occupation
 :Radiologist_occupation rdf:type owl:NamedIndividual ,
                                  :UserGroupClassified ;
+                        :userGroupCatalogue :SnomedUserGroupCatalogue ;
                         :hasSCTID 66862007 ;
                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                         rdfs:comment "Radiologist (occupation)" ;
@@ -514,6 +523,7 @@
 ###  http://hitontology.eu/ontology/Surgeon_occupation
 :Surgeon_occupation rdf:type owl:NamedIndividual ,
                              :UserGroupClassified ;
+                    :userGroupCatalogue :SnomedUserGroupCatalogue ;
                     :hasSCTID 304292004 ;
                     :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
                     rdfs:comment "Surgeon (occupation)" ;
@@ -523,6 +533,7 @@
 ###  http://hitontology.eu/ontology/Woman_person
 :Woman_person rdf:type owl:NamedIndividual ,
                        :UserGroupClassified ;
+              :userGroupCatalogue :SnomedUserGroupCatalogue ;
               :hasSCTID 224526002 ;
               :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
               rdfs:comment "Woman (person)" ;
@@ -549,7 +560,6 @@
                  :UserGroupCitation ;
         :classifiedUserGroupSNOMEDCT :Clerk_occupation ;
         rdfs:label "clerks"@en .
-<<<<<<< HEAD
 
 
 ###  http://hitontology.eu/ontology/classifiedUserGroupSNOMEDCT
