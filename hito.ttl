@@ -343,13 +343,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "software product component"@en .
 
 
-###  http://hitontology.eu/ontology/suitableForOrganizationalUnit
-:suitableForOrganizationalUnit rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct ;
-                    rdfs:range :OrganizationalUnitCitation ;
-                    rdfs:label "suitable for organizational unit"@en .
-
-
 ###  http://hitontology.eu/ontology/supports
 :supports rdf:type owl:ObjectProperty ;
                     rdfs:domain :FeatureClassified;
