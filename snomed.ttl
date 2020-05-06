@@ -412,6 +412,13 @@
                      :organizationalUnitClassified :HospitalEnvironment ;
                      rdfs:label "university hospital"@en .
 
+##################################################################################### User Group
+
+###  http://hitontology.eu/ontology/SnomedUserGroupCatalogue
+:SnomedUserGroupCatalogue rdf:type :OrganizationalUnitCatalogue ;
+                          rdfs:label "Snomed CT User Group Catalogue"@en .
+
+######################################################## User Group Classified
 
 ###  http://hitontology.eu/ontology/Administrative_healthcare_staff_occupation
 :Administrative_healthcare_staff_occupation rdf:type owl:NamedIndividual ,
@@ -511,6 +518,7 @@
               rdfs:comment "Woman (person)" ;
               rdfs:label "Woman person" .
 
+############################################# User Group Citation
 
 ###  http://hitontology.eu/ontology/administrative_staff
 :administrative_staff rdf:type owl:NamedIndividual ,
@@ -531,5 +539,62 @@
                  :UserGroupCitation ;
         :classifiedUserGroupSNOMEDCT :Clerk_occupation ;
         rdfs:label "clerks"@en .
+
+
+###  http://hitontology.eu/ontology/classifiedUserGroupSNOMEDCT
+:classifiedUserGroupSNOMEDCT rdf:type owl:ObjectProperty ;
+                             rdfs:domain :UserGroupCitation ;
+                             rdfs:range :UserGroupClassified ;
+                             rdfs:label "classified User Group SNOMEDCT"@en .
+
+
+###  http://hitontology.eu/ontology/laboratory_staff
+:laboratory_staff rdf:type owl:NamedIndividual ,
+                           :UserGroupCitation ;
+                  :classifiedUserGroupSNOMEDCT :Laboratory_technician_occupation ;
+                  rdfs:label "laboratory staff"@en .
+
+
+###  http://hitontology.eu/ontology/pharmacists
+:pharmacists rdf:type owl:NamedIndividual ,
+                      :UserGroupCitation ;
+             :classifiedUserGroupSNOMEDCT :Pharmacist_occupation ;
+             rdfs:label "pharmacists"@en .
+
+
+###  http://hitontology.eu/ontology/physicians
+:physicians rdf:type owl:NamedIndividual ,
+                     :UserGroupCitation ;
+            :classifiedUserGroupSNOMEDCT :Physician_occupation ;
+            rdfs:label "physicians"@en .
+
+
+###  http://hitontology.eu/ontology/radiologists
+:radiologists rdf:type owl:NamedIndividual ,
+                       :UserGroupCitation ;
+              :classifiedUserGroupSNOMEDCT :Radiologist_occupation ;
+              rdfs:label "radiologists"@en .
+
+
+###  http://hitontology.eu/ontology/surgeons
+:surgeons rdf:type owl:NamedIndividual ,
+                   :UserGroupCitation ;
+          :classifiedUserGroupSNOMEDCT :Surgeon_occupation ;
+          rdfs:label "surgeons"@en .
+
+
+###  http://hitontology.eu/ontology/technicians
+:technicians rdf:type owl:NamedIndividual ,
+                      :UserGroupCitation ;
+             owl:sameAs :technologists ;
+             :classifiedUserGroupSNOMEDCT :Medical_technician_occupation ;
+             rdfs:label "technicians"@en .
+
+
+###  http://hitontology.eu/ontology/women_of_reproductive_age
+:women_of_reproductive_age rdf:type owl:NamedIndividual ,
+                                    :UserGroupCitation ;
+                           :classifiedUserGroupSNOMEDCT :Woman_person ;
+                           rdfs:label "women of reproductive health" .
 
 
