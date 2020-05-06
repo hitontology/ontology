@@ -11,9 +11,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
 
+###  http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue
+:SnomedEnvironmentOrganizationalUnitCatalogue rdf:type :OrganizationalUnitCatalogue ;
+                                              rdfs:label "Snomed CT Environment Client Feature Catalogue"@en .
 
-###  http://hitontology.eu/ontology/Accident_and_Emergency_department_environment
-:Accident_and_Emergency_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/AccidentAndEmergencyDepartmentEnvironment
+:AccidentAndEmergencyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                         :OrganizationalUnitClassified ;
                                                :hasSCTID 225728007 ;
                                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -22,8 +25,8 @@
 
 
 
-###  http://hitontology.eu/ontology/Cardiology_department_environment
-:Cardiology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/CardiologyDepartmentEnvironment
+:CardiologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                             :OrganizationalUnitClassified ;
                                    :hasSCTID 418019003 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -31,8 +34,8 @@
                                    rdfs:label "Cardiology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Care_of_the_elderly_department_environment
-:Care_of_the_elderly_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/CareOfTheElderlyDepartmentEnvironment
+:CareOfTheElderlyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                      :OrganizationalUnitClassified ;
                                             :hasSCTID 309933000 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -40,8 +43,8 @@
                                             rdfs:label "Care of the elderly department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Dermatology_department_environment
-:Dermatology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/DermatologyDepartmentEnvironment
+:DermatologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                              :OrganizationalUnitClassified ;
                                     :hasSCTID 309923008 ;
                                     :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -49,8 +52,8 @@
                                     rdfs:label "Dermatology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Endocrinology_department_environment
-:Endocrinology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/EndocrinologyDepartmentEnvironment
+:EndocrinologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                :OrganizationalUnitClassified ;
                                       :hasSCTID 309925001 ;
                                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -58,8 +61,8 @@
                                       rdfs:label "Endocrinology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Gastroenterology_department_environment
-:Gastroenterology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/GastroenterologyDepartmentEnvironment
+:GastroenterologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                   :OrganizationalUnitClassified ;
                                          :hasSCTID 309926000 ;
                                          :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -67,8 +70,8 @@
                                          rdfs:label "Gastroenterology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/General_medical_department_environment
-:General_medical_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/GeneralMedicalDepartmentEnvironment
+:GeneralMedicalDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                  :OrganizationalUnitClassified ;
                                         :hasSCTID 309927009 ;
                                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -76,8 +79,8 @@
                                         rdfs:label "General medical department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Genetics_department_environment
-:Genetics_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/GeneticsDepartmentEnvironment
+:GeneticsDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                           :OrganizationalUnitClassified ;
                                  :hasSCTID 309928004 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -85,8 +88,8 @@
                                  rdfs:label "Genetics department environment" .
 
 
-###  http://hitontology.eu/ontology/Gynecology_department_environment
-:Gynecology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/GynecologyDepartmentEnvironment
+:GynecologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                             :OrganizationalUnitClassified ;
                                    :hasSCTID 309943002 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -95,8 +98,8 @@
                                    rdfs:label "Gynecology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Hospital_environment
-:Hospital_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/HospitalEnvironment
+:HospitalEnvironment rdf:type owl:NamedIndividual ,
                                :OrganizationalUnitClassified ;
                       :hasSCTID 22232009 ;
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -104,8 +107,8 @@
                       rdfs:label "Hospital environment"@en .
 
 
-###  http://hitontology.eu/ontology/Infectious_diseases_department_environment
-:Infectious_diseases_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/InfectiousDiseasesDepartmentEnvironment
+:InfectiousDiseasesDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                                      :OrganizationalUnitClassified ;
                                             :hasSCTID 309934006 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -114,8 +117,8 @@
                                             rdfs:label "Infectious diseases department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Intensive_care_unit_environment
-:Intensive_care_unit_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/IntensiveCareUnitEnvironment
+:IntensiveCareUnitEnvironment rdf:type owl:NamedIndividual ,
                                           :OrganizationalUnitClassified ;
                                  :hasSCTID 309904001 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -123,8 +126,8 @@
                                  rdfs:label "Intensive care unit environment"@en .
 
 
-###  http://hitontology.eu/ontology/Laboratory_environment
-:Laboratory_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/LaboratoryEnvironment
+:LaboratoryEnvironment rdf:type owl:NamedIndividual ,
                                  :OrganizationalUnitClassified ;
                         :hasSCTID 261904005 ;
                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -132,8 +135,8 @@
                         rdfs:label "Laboratory environment"@en .
 
 
-###  http://hitontology.eu/ontology/Medical_center_environment
-:Medical_center_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/MedicalCenterEnvironment
+:MedicalCenterEnvironment rdf:type owl:NamedIndividual ,
                                      :OrganizationalUnitClassified ;
                             :hasSCTID 309928004 ;
                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -141,8 +144,8 @@
                             rdfs:label "Medical center environment" .
 
 
-###  http://hitontology.eu/ontology/Pediatric_department_environment
-:Pediatric_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/PediatricDepartmentEnvironment
+:PediatricDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                            :OrganizationalUnitClassified ;
                                   :hasSCTID 309945009 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -150,8 +153,8 @@
                                   rdfs:label "Pediatric department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Pediatric_intensive_care_unit_environment
-:Pediatric_intensive_care_unit_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/PediatricIntensiveCareUnitEnvironment
+:PediatricIntensiveCareUnitEnvironment rdf:type owl:NamedIndividual ,
                                                     :OrganizationalUnitClassified ;
                                            :hasSCTID 309910001 ;
                                            :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -159,8 +162,8 @@
                                            rdfs:label "Pediatric intensive care unit environment"@en .
 
 
-###  http://hitontology.eu/ontology/Psychiatry_department_environment
-:Psychiatry_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/PsychiatryDepartmentEnvironment
+:PsychiatryDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                             :OrganizationalUnitClassified ;
                                    :hasSCTID 309958005 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -168,8 +171,8 @@
                                    rdfs:label "Psychiatry department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Radiology_department_environment
-:Radiology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/RadiologyDepartmentEnvironment
+:RadiologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                            :OrganizationalUnitClassified ;
                                   :hasSCTID 309964003 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -177,8 +180,8 @@
                                   rdfs:label "Radiology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Rheumatology_department_environment
-:Rheumatology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/RheumatologyDepartmentEnvironment
+:RheumatologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                               :OrganizationalUnitClassified ;
                                      :hasSCTID 309941000 ;
                                      :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -186,8 +189,8 @@
                                      rdfs:label "Rheumatology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Surgical_department_environment
-:Surgical_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/SurgicalDepartmentEnvironment
+:SurgicalDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                           :OrganizationalUnitClassified ;
                                  :hasSCTID 309967005 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -195,8 +198,8 @@
                                  rdfs:label "Surgical department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Neonatal_intensive_care_unit_environment
-:Neonatal_intensive_care_unit_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NeonatalIntensiveCareUnitEnvironment
+:NeonatalIntensiveCareUnitEnvironment rdf:type owl:NamedIndividual ,
                                                    :OrganizationalUnitClassified ;
                                           :hasSCTID 405269005 ;
                                           :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -204,8 +207,8 @@
                                           rdfs:label "Neonatal intensive care unit environment"@en .
 
 
-###  http://hitontology.eu/ontology/Nephrology_department_environment
-:Nephrology_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NephrologyDepartmentEnvironment
+:NephrologyDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                             :OrganizationalUnitClassified ;
                                    :hasSCTID 309936008 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -213,8 +216,8 @@
                                    rdfs:label "Nephrology department environment"@en .
 
 
-###  http://hitontology.eu/ontology/Orthopedic_department_environment
-:Orthopedic_department_environment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/OrthopedicDepartmentEnvironment
+:OrthopedicDepartmentEnvironment rdf:type owl:NamedIndividual ,
                                             :OrganizationalUnitClassified ;
                                    :hasSCTID 309989009 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019" ;
@@ -222,178 +225,178 @@
                                    rdfs:label "Orthopedic department environment"@en .
 
 
-###  http://hitontology.eu/ontology/cardiology_ward
-:cardiology_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/cardiologyWard
+:cardiologyWard rdf:type owl:NamedIndividual ,
                           :OrganizationalUnitCitation ;
-                 :organizationalUnitClassified :Cardiology_department_environment ;
+                 :organizationalUnitClassified :CardiologyDepartmentEnvironment ;
                  rdfs:label "cardiology ward"@en .
 
 
 ###  http://hitontology.eu/ontology/dermatology
 :dermatology rdf:type owl:NamedIndividual ,
                       :OrganizationalUnitCitation ;
-             :organizationalUnitClassified :Dermatology_department_environment ;
+             :organizationalUnitClassified :DermatologyDepartmentEnvironment ;
              rdfs:label "dermatology"@en .
 
 
-###  http://hitontology.eu/ontology/emergency_department
-:emergency_department rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/emergencyDepartment
+:emergencyDepartment rdf:type owl:NamedIndividual ,
                                :OrganizationalUnitCitation ;
-                      :organizationalUnitClassified :Accident_and_Emergency_department_environment ;
+                      :organizationalUnitClassified :AccidentAndEmergencyDepartmentEnvironment ;
                       rdfs:label "emergency department"@en .
 
 
 ###  http://hitontology.eu/ontology/endocrinology
 :endocrinology rdf:type owl:NamedIndividual ,
                         :OrganizationalUnitCitation ;
-               :organizationalUnitClassified :Endocrinology_department_environment ;
+               :organizationalUnitClassified :EndocrinologyDepartmentEnvironment ;
                rdfs:label "endocrinology"@en .
 
 
-###  http://hitontology.eu/ontology/gastroenterology_ward
-:gastroenterology_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/gastroenterologyWard
+:gastroenterologyWard rdf:type owl:NamedIndividual ,
                                 :OrganizationalUnitCitation ;
-                       :organizationalUnitClassified :Gastroenterology_department_environment ;
+                       :organizationalUnitClassified :GastroenterologyDepartmentEnvironment ;
                        rdfs:label "gastroenterology ward"@en .
 
 
-###  http://hitontology.eu/ontology/general_internal_medicine
-:general_internal_medicine rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/generalInternalMedicine
+:generalInternalMedicine rdf:type owl:NamedIndividual ,
                                     :OrganizationalUnitCitation ;
-                           :organizationalUnitClassified :General_medical_department_environment ;
+                           :organizationalUnitClassified :GeneralMedicalDepartmentEnvironment ;
                            rdfs:label "general internal medicine"@en .
 
 
-###  http://hitontology.eu/ontology/general_internal_medicine_ward
-:general_internal_medicine_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/generalInternalMedicineWard
+:generalInternalMedicineWard rdf:type owl:NamedIndividual ,
                                          :OrganizationalUnitCitation ;
-                                :organizationalUnitClassified :General_medical_department_environment ;
+                                :organizationalUnitClassified :GeneralMedicalDepartmentEnvironment ;
                                 rdfs:label "general internal medicine ward"@en .
 
 
-###  http://hitontology.eu/ontology/genetic_counseling
-:genetic_counseling rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/geneticCounseling
+:geneticCounseling rdf:type owl:NamedIndividual ,
                              :OrganizationalUnitCitation ;
-                    :organizationalUnitClassified :Genetics_department_environment ;
+                    :organizationalUnitClassified :GeneticsDepartmentEnvironment ;
                     rdfs:label "genetic counseling" .
 
 
-###  http://hitontology.eu/ontology/geriatry_ward
-:geriatry_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/geriatryWard
+:geriatryWard rdf:type owl:NamedIndividual ,
                         :OrganizationalUnitCitation ;
-               :organizationalUnitClassified :Care_of_the_elderly_department_environment ;
+               :organizationalUnitClassified :CareOfTheElderlyDepartmentEnvironment ;
                rdfs:label "geriatry ward"@en .
 
 
 ###  http://hitontology.eu/ontology/gynaecology
 :gynaecology rdf:type owl:NamedIndividual ,
                       :OrganizationalUnitCitation ;
-             :organizationalUnitClassified :Gynecology_department_environment ;
+             :organizationalUnitClassified :GynecologyDepartmentEnvironment ;
              rdfs:label "gynaecology"@en .
 
 
 ###  http://hitontology.eu/ontology/hospitals
 :hospitals rdf:type owl:NamedIndividual ,
                     :OrganizationalUnitCitation ;
-           :organizationalUnitClassified :Hospital_environment ;
+           :organizationalUnitClassified :HospitalEnvironment ;
            rdfs:label "hospitals"@en .
 
 
 ###  http://hitontology.eu/ontology/infectiology
 :infectiology rdf:type owl:NamedIndividual ,
                        :OrganizationalUnitCitation ;
-              :organizationalUnitClassified :Infectious_diseases_department_environment ;
+              :organizationalUnitClassified :InfectiousDiseasesDepartmentEnvironment ;
               rdfs:label "infectiology"@en .
 
 
-###  http://hitontology.eu/ontology/intensive_care_unit
-:intensive_care_unit rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/intensiveCareUnit
+:intensiveCareUnit rdf:type owl:NamedIndividual ,
                               :OrganizationalUnitCitation ;
-                     :organizationalUnitClassified :Intensive_care_unit_environment ;
+                     :organizationalUnitClassified :IntensiveCareUnitEnvironment ;
                      rdfs:label "intensive care unit"@en .
 
 
 ###  http://hitontology.eu/ontology/laboratory
 :laboratory rdf:type owl:NamedIndividual ,
                      :OrganizationalUnitCitation ;
-            :organizationalUnitClassified :Laboratory_environment ;
+            :organizationalUnitClassified :LaboratoryEnvironment ;
             rdfs:label "laboratory"@en .
 
 
-###  http://hitontology.eu/ontology/medical_center
-:medical_center rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/medicalCenter
+:medicalCenter rdf:type owl:NamedIndividual ,
                          :OrganizationalUnitCitation ;
-                :organizationalUnitClassified :Medical_center_environment ;
+                :organizationalUnitClassified :MedicalCenterEnvironment ;
                 rdfs:label "medical center" .
 
 
-###  http://hitontology.eu/ontology/neonatal_intensive_care
-:neonatal_intensive_care rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/neonatalIntensiveCare
+:neonatalIntensiveCare rdf:type owl:NamedIndividual ,
                                   :OrganizationalUnitCitation ;
-                         :organizationalUnitClassified :Neonatal_intensive_care_unit_environment ;
+                         :organizationalUnitClassified :NeonatalIntensiveCareUnitEnvironment ;
                          rdfs:label "neonatal intensive care"@en .
 
 
 ###  http://hitontology.eu/ontology/nephrology
 :nephrology rdf:type owl:NamedIndividual ,
                      :OrganizationalUnitCitation ;
-            :organizationalUnitClassified :Nephrology_department_environment ;
+            :organizationalUnitClassified :NephrologyDepartmentEnvironment ;
             rdfs:label "nephrology"@en .
 
 
 ###  http://hitontology.eu/ontology/orthopedy
 :orthopedy rdf:type owl:NamedIndividual ,
                     :OrganizationalUnitCitation ;
-           :organizationalUnitClassified :Orthopedic_department_environment ;
+           :organizationalUnitClassified :OrthopedicDepartmentEnvironment ;
            rdfs:label "orthopedy"@en .
 
 
-###  http://hitontology.eu/ontology/pediatric_intensive_care
-:pediatric_intensive_care rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/pediatricIntensiveCare
+:pediatricIntensiveCare rdf:type owl:NamedIndividual ,
                                    :OrganizationalUnitCitation ;
-                          :organizationalUnitClassified :Pediatric_intensive_care_unit_environment ;
+                          :organizationalUnitClassified :PediatricIntensiveCareUnitEnvironment ;
                           rdfs:label "pediatric intensive care"@en .
 
 
 ###  http://hitontology.eu/ontology/pediatrics
 :pediatrics rdf:type owl:NamedIndividual ,
                      :OrganizationalUnitCitation ;
-            :organizationalUnitClassified :Pediatric_department_environment ;
+            :organizationalUnitClassified :PediatricDepartmentEnvironment ;
             rdfs:label "pediatrics"@en .
 
 
-###  http://hitontology.eu/ontology/psychiatry_ward
-:psychiatry_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/psychiatryWard
+:psychiatryWard rdf:type owl:NamedIndividual ,
                           :OrganizationalUnitCitation ;
-                 :organizationalUnitClassified :Psychiatry_department_environment ;
+                 :organizationalUnitClassified :PsychiatryDepartmentEnvironment ;
                  rdfs:label "psychiatry ward"@en .
 
 
 ###  http://hitontology.eu/ontology/radiology
 :radiology rdf:type owl:NamedIndividual ,
                     :OrganizationalUnitCitation ;
-           :organizationalUnitClassified :Radiology_department_environment ;
+           :organizationalUnitClassified :RadiologyDepartmentEnvironment ;
            rdfs:label "radiology"@en .
 
 
-###  http://hitontology.eu/ontology/rheumatology_ward
-:rheumatology_ward rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/rheumatologyWard
+:rheumatologyWard rdf:type owl:NamedIndividual ,
                             :OrganizationalUnitCitation ;
-                   :organizationalUnitClassified :Rheumatology_department_environment ;
+                   :organizationalUnitClassified :RheumatologyDepartmentEnvironment ;
                    rdfs:label "rheumatology ward"@en .
 
 
 ###  http://hitontology.eu/ontology/surgery
 :surgery rdf:type owl:NamedIndividual ,
                   :OrganizationalUnitCitation ;
-         :organizationalUnitClassified :Surgical_department_environment ;
+         :organizationalUnitClassified :SurgicalDepartmentEnvironment ;
          rdfs:label "surgery"@en .
 
 
-###  http://hitontology.eu/ontology/university_hospital
-:university_hospital rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/universityHospital
+:universityHospital rdf:type owl:NamedIndividual ,
                               :OrganizationalUnitCitation ;
-                     :organizationalUnitClassified :Hospital_environment ;
+                     :organizationalUnitClassified :HospitalEnvironment ;
                      rdfs:label "university hospital"@en .
 
 
