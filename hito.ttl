@@ -3790,7 +3790,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :laboratoy_turnaround_time rdf:type owl:NamedIndividual ,
                                     :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :Process_efficiency ;
-                           rdfs:label "laboratoy turnaround time"@en .
+                           rdfs:label "laboratory turnaround time"@en .
 
 
 ###  http://hitontology.eu/ontology/list_to_track_the_status_of_pending_samples
