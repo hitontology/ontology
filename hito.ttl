@@ -448,6 +448,37 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:range xsd:string ;
                     rdfs:comment "vancouver Reference"@en .
 
+########## Direct connections between SoftwareProduct and classified catalogue entries
+
+###  http://hitontology.eu/ontology/directApplicationSystem
+:directApplicationSystem rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct;
+                           rdfs:range :ApplicationSystemClassified ;
+                           rdfs:label "application system"@en .
+
+###  http://hitontology.eu/ontology/directEnterpriseFunction
+:directEnterpriseFunction rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct;
+                           rdfs:range :EnterpriseFunctionClassified ;
+                           rdfs:label "function"@en .
+
+###  http://hitontology.eu/ontology/directFeature
+:directFeature rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct;
+                           rdfs:range :FeatureClassified ;
+                           rdfs:label "feature"@en .
+
+###  http://hitontology.eu/ontology/directUserGroup
+:directUserGroup rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct;
+                           rdfs:range :UserGroupClassified ;
+                           rdfs:label "user group"@en .
+
+###  http://hitontology.eu/ontology/directOrganizationalUnit
+:directOrganizationalUnit rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProduct;
+                           rdfs:range :OrganizationalUnitClassified ;
+                           rdfs:label "organizational unit"@en .
 
 #################################################################
 #    Classes
