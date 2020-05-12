@@ -17,6 +17,7 @@ hito:Bahmni
     hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
     hito:feature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
     hito:homepage <https://www.bahmni.org/> ;
+    dcterms:source <https://www.medfloss.org/node/1103> ;
     hito:language dbr:English_language ;
     hito:license dbr:Affero_General_Public_License ;
     hito:operatingSystem dbr:CentOS ;
