@@ -1,5 +1,7 @@
-F="/tmp/combined.nt"
+F="/tmp/hito-all.nt"
+FT="/tmp/hito-all.ttl"
 echo "Writing to $F"
 echo "" > $F
 ls *.ttl | xargs -I @ rapper -i turtle -o ntriples @ >> $F
 cat dbpedia/os.nt >> $F
+cat prefix.ttl $F | rapper -i turtle -o turtle  - http://hitontology.eu/ontology/ > $FT
