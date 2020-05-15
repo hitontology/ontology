@@ -1072,7 +1072,7 @@ hito:WhoDhiHealthSystemManagerFeatureCatalogue
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiHealthSystemManagerFunctionCatalogue
-    a hito:FunctionCatalogue ;
+    a hito:EnterpriseFunctionCatalogue ;
     rdfs:comment "Function catalogue defined in section 3.0 'Health System Managers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
     rdfs:label "Health System Managers Function Catalogue"@en ;
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
@@ -1084,7 +1084,7 @@ hito:WhoDhiHealthcareProviderFeatureCatalogue
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiHealthcareProviderFunctionCatalogue
-    a hito:FunctionCatalogue ;
+    a hito:EnterpriseFunctionCatalogue ;
     rdfs:comment "Function Catalogue defined in section 2.0 'Healthcare Providers' in the WHO Classification of Digital Health Interventions v1.0"@en ;
     rdfs:label "Healthcare Provider Function Catalogue"@en ;
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
