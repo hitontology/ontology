@@ -485,11 +485,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/ApplicationSystemClassified
 :ApplicationSystemClassified rdf:type owl:Class ;
+                             rdfs:subClassOf :Classified ;
                              rdfs:label "Application System Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemCitation
 :ApplicationSystemCitation rdf:type owl:Class ;
+                           rdfs:subClassOf :Citation;
                            rdfs:label "Application System Citation"@en .
 
 
@@ -502,9 +504,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Certification rdf:type owl:Class ;
                      rdfs:label "Certification"@en .
 
+
+###  http://hitontology.eu/ontology/Citation
+:Classification rdf:type owl:Class ;
+         	rdfs:label "Citation"@en .
+
+
 ###  http://hitontology.eu/ontology/Classification
 :Classification rdf:type owl:Class ;
          	rdfs:label "Classification"@en .
+
+
+###  http://hitontology.eu/ontology/Classified
+:Classification rdf:type owl:Class ;
+         	rdfs:label "Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/Client
@@ -525,11 +538,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionClassified
 :EnterpriseFunctionClassified rdf:type owl:Class ;
+                      rdfs:subClassOf :Classified ;
                       rdfs:label "Enterprise Function Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCitation
 :EnterpriseFunctionCitation rdf:type owl:Class ;
+                      rdfs:subClassOf :Citation;
                       rdfs:label "Enterprise Function Citation"@en .
 
 
@@ -547,11 +562,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/FeatureClassified
 :FeatureClassified rdf:type owl:Class ;
+                   rdfs:subClassOf :Classified ;
                    rdfs:label "Feature Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureCitation
 :FeatureCitation rdf:type owl:Class ;
+                 rdfs:subClassOf :Citation;
                  rdfs:label "Feature Citation"@en .
 
 
@@ -598,11 +615,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
 :OrganizationalUnitClassified rdf:type owl:Class ;
+                              rdfs:subClassOf :Classified ;
                               rdfs:label "Organizational Unit Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCitation
 :OrganizationalUnitCitation rdf:type owl:Class ;
+                            rdfs:subClassOf :Citation;
                             rdfs:label "Organizational Unit Citation"@en .
 
 
@@ -613,6 +632,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
 :OutcomeCriteriaCitation rdf:type owl:Class ;
+                         rdfs:subClassOf :Citation;
                          rdfs:label "Outcome Criteria Citation"@en .
 
 
@@ -645,15 +665,18 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/StudyMethodClassified
 :StudyMethodClassified rdf:type owl:Class ;
+                       rdfs:subClassOf :Classified ;
                        rdfs:label "Study Method Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/StudyMethodCitation
 :StudyMethodCitation rdf:type owl:Class ;
+                     rdfs:subClassOf :Citation;
                      rdfs:label "Study Method Citation"@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;
+                     rdfs:subClassOf :Classified ;
                      rdfs:label "User Group Classified"@en .
 
 
@@ -665,6 +688,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/UserGroupCitation
 :UserGroupCitation rdf:type owl:Class ;
+                   rdfs:subClassOf :Citation;
                    rdfs:label "User Group Citation"@en .
 
 
