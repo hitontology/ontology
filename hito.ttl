@@ -509,7 +509,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Classification rdf:type owl:Class ;
          	rdfs:label "Citation"@en .
 
-
 ###  http://hitontology.eu/ontology/Classification
 :Classification rdf:type owl:Class ;
          	rdfs:label "Classification"@en .
@@ -529,6 +528,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/DatabaseSystem
 :DatabaseSystem rdf:type owl:Class ;
           rdfs:label "Database System"@en .
+
+###  http://hitontology.eu/ontology/Dickinson
+:Dickinson rdf:type :FeatureCatalogue ;
+	   rdfs:comment "Dickinson et al. feature catalogue" ;
+           rdfs:label "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014."@en .
 
 
 ###  http://hitontology.eu/ontology/DOI
@@ -766,6 +770,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Audit rdf:type owl:NamedIndividual ,
                 :FeatureClassified ;
        :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+       :featureCatalogue :Dickinson ;
        rdfs:label "Audit"@en .
 
 
@@ -1151,6 +1156,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageAdministrativeTransactionProcessing rdf:type owl:NamedIndividual ,
                                                     :FeatureClassified ;
                                            :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                           :featureCatalogue :Dickinson ;
                                            rdfs:label "Manage Administrative Transaction Processing"@en .
 
 
@@ -1158,6 +1164,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageCareCoordinationAndReporting rdf:type owl:NamedIndividual ,
                                              :FeatureClassified ;
                                     :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                    :featureCatalogue :Dickinson ;
                                     rdfs:label "Manage Care Coordination And Reporting"@en .
 
 
@@ -1165,6 +1172,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageClinicalDocumentation rdf:type owl:NamedIndividual ,
                                       :FeatureClassified ;
                              :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                             :featureCatalogue :Dickinson ;
                              rdfs:label "Manage Clinical Documentation"@en .
 
 
@@ -1172,6 +1180,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageClinicalHistory rdf:type owl:NamedIndividual ,
                                 :FeatureClassified ;
                        :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                       :featureCatalogue :Dickinson ;
                        rdfs:label "Manage Clinical History"@en .
 
 
@@ -1179,6 +1188,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageClinicalWorkflowTasking rdf:type owl:NamedIndividual ,
                                         :FeatureClassified ;
                                :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                               :featureCatalogue :Dickinson ;
                                rdfs:label "Manage Clinical Workflow Tasking"@en .
 
 
@@ -1186,6 +1196,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageCommunication rdf:type owl:NamedIndividual ,
                               :FeatureClassified ;
                      :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                     :featureCatalogue :Dickinson ;
                      rdfs:label "Manage Communication"@en .
 
 
@@ -1193,6 +1204,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageHealthcareResourceAvailabilityInformation rdf:type owl:NamedIndividual ,
                                                           :FeatureClassified ;
                                                  :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                 :featureCatalogue :Dickinson ;
                                                  rdfs:label "Manage Healthcare Resource Availability Information"@en .
 
 
@@ -1200,6 +1212,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageHealthcareResourceScheduling rdf:type owl:NamedIndividual ,
                                              :FeatureClassified ;
                                     :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                    :featureCatalogue :Dickinson ;
                                     rdfs:label "Manage Healthcare Resource Scheduling"@en .
 
 
@@ -1207,6 +1220,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageMedicationAdministration rdf:type owl:NamedIndividual ,
                                          :FeatureClassified ;
                                 :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                :featureCatalogue :Dickinson ;
                                 rdfs:label "Manage Medication Administration"@en .
 
 
@@ -1214,6 +1228,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageMedicationImmunizationAndTreatmentAdministration rdf:type owl:NamedIndividual ,
                                                                  :FeatureClassified ;
                                                         :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                        :featureCatalogue :Dickinson ;
                                                         rdfs:label "Manage Medication Immunization And Treatment Administration"@en .
 
 
@@ -1221,6 +1236,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageMedicationOrders rdf:type owl:NamedIndividual ,
                                  :FeatureClassified ;
                         :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                        :featureCatalogue :Dickinson ;
                         rdfs:label "Manage Medication Orders"@en .
 
 
@@ -1228,6 +1244,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageNonMedicationPatientCareOrders rdf:type owl:NamedIndividual ,
                                                :FeatureClassified ;
                                       :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                      :featureCatalogue :Dickinson ;
                                       rdfs:label "Manage Non Medication Patient Care Orders"@en .
 
 
@@ -1235,6 +1252,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageOrderSetTemplates rdf:type owl:NamedIndividual ,
                                   :FeatureClassified ;
                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                         :featureCatalogue :Dickinson ;
                          rdfs:label "Manage Order Set Templates"@en .
 
 
@@ -1242,6 +1260,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageOrders rdf:type owl:NamedIndividual ,
                        :FeatureClassified ;
               :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+              :featureCatalogue :Dickinson ;
               rdfs:label "Manage Orders"@en .
 
 
@@ -1249,6 +1268,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageOrdersForDiagnositcScreeningTests rdf:type owl:NamedIndividual ,
                                                   :FeatureClassified ;
                                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                         :featureCatalogue :Dickinson ;
                                          rdfs:label "Manage Orders For Diagnositc Screening Tests"@en .
 
 
@@ -1256,6 +1276,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageOrdersForReferral rdf:type owl:NamedIndividual ,
                                   :FeatureClassified ;
                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                         :featureCatalogue :Dickinson ;
                          rdfs:label "Manage Orders For Referral"@en .
 
 
@@ -1263,6 +1284,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManagePatientHistory rdf:type owl:NamedIndividual ,
                                :FeatureClassified ;
                       :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                      :featureCatalogue :Dickinson ;
                       rdfs:label "Manage Patient History"@en .
 
 
@@ -1270,6 +1292,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageProblemList rdf:type owl:NamedIndividual ,
                             :FeatureClassified ;
                    :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                   :featureCatalogue :Dickinson ;
                    rdfs:label "Manage Problem List"@en .
 
 
@@ -1277,6 +1300,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageRecordEntryAmendedCorrectedAndAugmentedState rdf:type owl:NamedIndividual ,
                                                              :FeatureClassified ;
                                                     :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                    :featureCatalogue :Dickinson ;
                                                     rdfs:label "Manage Record Entry Amended Corrected And Augmented State"@en .
 
 
@@ -1284,6 +1308,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageResourceAvailability rdf:type owl:NamedIndividual ,
                                      :FeatureClassified ;
                             :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                            :featureCatalogue :Dickinson ;
                             rdfs:label "Manage Resource Availability"@en .
 
 
@@ -1291,6 +1316,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageResults rdf:type owl:NamedIndividual ,
                         :FeatureClassified ;
                :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+               :featureCatalogue :Dickinson ;
                rdfs:label "Manage Results"@en .
 
 
@@ -1298,6 +1324,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ManageResultsOfDiagnosticTests rdf:type owl:NamedIndividual ,
                                          :FeatureClassified ;
                                 :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                :featureCatalogue :Dickinson ;
                                 rdfs:label "Manage Results Of Diagnostic Tests"@en .
 
 
@@ -1311,6 +1338,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :MeasurementAnalysisResearchAndReports rdf:type owl:NamedIndividual ,
                                                 :FeatureClassified ;
                                        :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                       :featureCatalogue :Dickinson ;
                                        rdfs:label "Measurement Analysis Research And Reports"@en .
 
 
@@ -1325,6 +1353,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :MedicationAlertOverrides rdf:type owl:NamedIndividual ,
                                    :FeatureClassified ;
                           :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                          :featureCatalogue :Dickinson ;
                           rdfs:label "Medication Alert Overrides"@en .
 
 
@@ -1332,6 +1361,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :MedicationAndAllergyInteractionChecking rdf:type owl:NamedIndividual ,
                                                   :FeatureClassified ;
                                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                         :featureCatalogue :Dickinson ;
                                          rdfs:label "Medication And Allergy Interaction Checking"@en .
 
 
@@ -1339,6 +1369,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :MedicationOrderEfficiencies rdf:type owl:NamedIndividual ,
                                       :FeatureClassified ;
                              :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                             :featureCatalogue :Dickinson ;
                              rdfs:label "Medication Order Efficiencies"@en .
 
 
@@ -2292,6 +2323,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ProduceASummaryRecordOfCare rdf:type owl:NamedIndividual ,
                                       :FeatureClassified ;
                              :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                             :featureCatalogue :Dickinson ;
                              rdfs:label "Produce A Summary Record Of Care"@en .
 
 
@@ -2348,6 +2380,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :RegistryAndDirectoryServices rdf:type owl:NamedIndividual ,
                                        :FeatureClassified ;
                               :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                              :featureCatalogue :Dickinson ;
                               rdfs:label "Registry And Directory Services"@en .
 
 
@@ -2387,6 +2420,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :StandardTerminologyAndTerminologyServices rdf:type owl:NamedIndividual ,
                                                     :FeatureClassified ;
                                            :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                           :featureCatalogue :Dickinson ;
                                            rdfs:label "Standard Terminology And Terminology Services"@en .
 
 
@@ -2394,6 +2428,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportCareCoordinationAndReporting rdf:type owl:NamedIndividual ,
                                               :FeatureClassified ;
                                      :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                     :featureCatalogue :Dickinson ;
                                      rdfs:label "Support Care Coordination And Reporting"@en .
 
 
@@ -2401,6 +2436,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportClinicalDocumentation rdf:type owl:NamedIndividual ,
                                        :FeatureClassified ;
                               :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                              :featureCatalogue :Dickinson ;
                               rdfs:label "Support Clinical Documentation"@en .
 
 
@@ -2408,6 +2444,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForCommunicationBetweenOrganizations rdf:type owl:NamedIndividual ,
                                                       :FeatureClassified ;
                                              :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                             :featureCatalogue :Dickinson ;
                                              rdfs:label "Support For Communication Between Organizations"@en .
 
 
@@ -2415,6 +2452,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForContextSensitiveCarePlansGuidelinesProtocols rdf:type owl:NamedIndividual ,
                                                                  :FeatureClassified ;
                                                         :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                        :featureCatalogue :Dickinson ;
                                                         rdfs:label "Support For Context Sensitive Care Plans Guidelines Protocols"@en .
 
 
@@ -2422,6 +2460,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForMedicationAdministration rdf:type owl:NamedIndividual ,
                                              :FeatureClassified ;
                                     :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                    :featureCatalogue :Dickinson ;
                                     rdfs:label "Support For Medication Administration"@en .
 
 
@@ -2429,6 +2468,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForMedicationInteractionAndAllergyChecking rdf:type owl:NamedIndividual ,
                                                             :FeatureClassified ;
                                                    :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                   :featureCatalogue :Dickinson ;
                                                    rdfs:label "Support For Medication Interaction And Allergy Checking"@en .
 
 
@@ -2436,6 +2476,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForMedicationOrderingEfficiencies rdf:type owl:NamedIndividual ,
                                                    :FeatureClassified ;
                                           :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                          :featureCatalogue :Dickinson ;
                                           rdfs:label "Support For Medication Ordering Efficiencies"@en .
 
 
@@ -2443,6 +2484,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForMedicationRecommendations rdf:type owl:NamedIndividual ,
                                               :FeatureClassified ;
                                      :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                     :featureCatalogue :Dickinson ;
                                      rdfs:label "Support For Medication Recommendations"@en .
 
 
@@ -2450,6 +2492,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForPatientContextDrivenAssessments rdf:type owl:NamedIndividual ,
                                                     :FeatureClassified ;
                                            :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                           :featureCatalogue :Dickinson ;
                                            rdfs:label "Support For Patient Context Driven Assessments"@en .
 
 
@@ -2457,6 +2500,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportForStandardAssessments rdf:type owl:NamedIndividual ,
                                         :FeatureClassified ;
                                :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                               :featureCatalogue :Dickinson ;
                                rdfs:label "Support For Standard Assessments"@en .
 
 
@@ -2464,6 +2508,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportOfPatientSpecificDosingAndWarnings rdf:type owl:NamedIndividual ,
                                                     :FeatureClassified ;
                                            :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                           :featureCatalogue :Dickinson ;
                                            rdfs:label "Support Of Patient Specific Dosing And Warnings"@en .
 
 
@@ -2471,6 +2516,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportOrders rdf:type owl:NamedIndividual ,
                         :FeatureClassified ;
                :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+               :featureCatalogue :Dickinson ;
                rdfs:label "Support Orders"@en .
 
 
@@ -2478,6 +2524,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportOrdersForDiagnosticScreeningTests rdf:type owl:NamedIndividual ,
                                                    :FeatureClassified ;
                                           :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                          :featureCatalogue :Dickinson ;
                                           rdfs:label "Support Orders For Diagnostic Screening Tests"@en .
 
 
@@ -2485,6 +2532,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportRemoteHealthcareServices rdf:type owl:NamedIndividual ,
                                           :FeatureClassified ;
                                  :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                 :featureCatalogue :Dickinson ;
                                  rdfs:label "Support Remote Healthcare Services"@en .
 
 
@@ -2492,6 +2540,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportTriageCategorization rdf:type owl:NamedIndividual ,
                                       :FeatureClassified ;
                              :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                             :featureCatalogue :Dickinson ;
                              rdfs:label "Support Triage Categorization"@en .
 
 
@@ -2499,6 +2548,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SupportforStandardCarePlansGuidelinesProtocols rdf:type owl:NamedIndividual ,
                                                          :FeatureClassified ;
                                                 :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+                                                :featureCatalogue :Dickinson ;
                                                 rdfs:label "Support For Standard Care Plans Guidelines Protocols"@en .
 
 
@@ -2646,6 +2696,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :UseOrderSets rdf:type owl:NamedIndividual ,
                        :FeatureClassified ;
               :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
+              :featureCatalogue :Dickinson ;
               rdfs:label "Use Order Sets"@en .
 
 
