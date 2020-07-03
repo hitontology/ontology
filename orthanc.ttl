@@ -11,6 +11,14 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
+hito:BringDicomImagesToComputerVisionCommunity
+    a hito:FeatureCitation ;
+    rdfs:label "Bring DICOM images to the Computer Vision Community"@en .
+
+hito:DataManagementForClinicalRoutineAndMedicalResearch
+    a hito:FeatureCitation ;
+    rdfs:label "data management for clinical routine and medical research"@en .
+
 hito:DicomIdentifiers
     a hito:FeatureCitation ;
     rdfs:label "DICOM identifiers"@en .
@@ -19,55 +27,81 @@ hito:DicomNetworkProtocol
     a hito:FeatureCitation ;
     rdfs:label "DICOM network protocol"@en .
 
+hito:DicomScriptingForClinicalRoutine
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM scripting for clinical routine"@en .
+
+hito:Empty
+    a hito:EnterpriseFunctionCitation, hito:FeatureCitation ;
+    rdfs:label "empty"@en .
+
+hito:EvaluationsReport
+    a hito:FeatureCitation ;
+    rdfs:label "Evaluations Report"@en .
+
 hito:ImageArchiving
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Archiving"@en .
 
 hito:ImageCommunication
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Communication"@en .
 
 hito:ImageDistribution
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Distribution"@en .
 
 hito:ImageManagement
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Management"@en .
 
+hito:InjurySurveillanceSystemRegistrationReport
+    a hito:FeatureCitation ;
+    rdfs:label "Injury Surveillance System Registration report"@en .
+
+hito:ListingAvailableServers
+    a hito:FeatureCitation ;
+    rdfs:label "Listing available servers"@en .
+
 hito:Orthanc
-    hito:client hito:WebBased ;
-    hito:databaseSystem hito:PostgreSql ;
-    hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement ;
-    hito:feature hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:RetrieveImages, hito:SearchContent, hito:SendImages, hito:TestConnection ;
-    hito:homepage <https://www.orthanc-server.com/> ;
-    hito:language dbr:English_language ;
-    hito:license dbr:GNU_Free_Documentation_License ;
-    hito:operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows, dbr:Unix ;
-    hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
-    hito:usesStandard hito:Dicom, hito:Rest ;
-    a hito:SoftwareProduct ;
-    rdfs:comment "The enterprise function citations are based on the medfloss website." ;
-    rdfs:label "Orthanc" .
+    hito:directEnterpriseFunction hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManagement, hito:ResearchAndEducation ;
+    hito:directFeature hito:CaptureFromDigitalDevices ;
+    hito:enterpriseFunction hito:Empty, hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement, hito:ResearchAboutAutomatedAnalysisOfMedicalImages ;
+    hito:feature hito:BringDicomImagesToComputerVisionCommunity, hito:DataManagementForClinicalRoutineAndMedicalResearch, hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:DicomScriptingForClinicalRoutine, hito:Empty, hito:EvaluationsReport, hito:InjurySurveillanceSystemRegistrationReport, hito:ListingAvailableServers, hito:PluginMechanismToAddNewModules, hito:RetrieveImages, hito:RetrievingDicomResourcesFromWado-RsServer, hito:SearchContent, hito:SendImages, hito:SendingDicomResourcesToStow-RsServer, hito:TestConnection, hito:TopDiseasesReport .
+
+hito:PluginMechanismToAddNewModules
+    a hito:FeatureCitation ;
+    rdfs:label "plugin mechanism to add new modules"@en .
+
+hito:ResearchAboutAutomatedAnalysisOfMedicalImages
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "research about the automated analysis of medical images"@en .
 
 hito:RetrieveImages
     a hito:FeatureCitation ;
     rdfs:label "Retrieve images"@en .
+
+hito:RetrievingDicomResourcesFromWado-RsServer
+    a hito:FeatureCitation ;
+    rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
 
 hito:SearchContent
     a hito:FeatureCitation ;
     rdfs:label "Search the content"@en .
 
 hito:SendImages
-    hito:featureClassified hito:CaptureFromDigitalDevices ;
     a hito:FeatureCitation ;
     rdfs:label "Send images"@en .
+
+hito:SendingDicomResourcesToStow-RsServer
+    a hito:FeatureCitation ;
+    rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
 
 hito:TestConnection
     a hito:FeatureCitation ;
     rdfs:label "Test the connection"@en .
+
+hito:TopDiseasesReport
+    a hito:FeatureCitation ;
+    rdfs:label "Top Diseases report"@en .
 
