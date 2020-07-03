@@ -23,10 +23,6 @@ hito:AccountTypes
     a hito:FeatureCitation ;
     rdfs:label "Account Types"@en .
 
-hito:Accounting
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Accounting"@en .
-
 hito:AdministrationOrthancModule
     a hito:FeatureCitation ;
     rdfs:label "Administration Orthanc module"@en .
@@ -34,6 +30,10 @@ hito:AdministrationOrthancModule
 hito:AdministrativeData
     a hito:FeatureCitation ;
     rdfs:label "Administrative Data"@en .
+
+hito:AdmissionManagement
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Admission Management"@en .
 
 hito:AllSurgeriesInformation
     a hito:FeatureCitation ;
@@ -55,19 +55,6 @@ hito:AppointmentsReport
     a hito:FeatureCitation ;
     rdfs:label "Appointments Report"@en .
 
-hito:AssetManagement
-    hito:featureClassified hito:AssessHealthFacilities ;
-    a hito:FeatureCitation ;
-    rdfs:label "Asset management"@en .
-
-hito:BasicsOfStockManagement
-    a hito:FeatureCitation ;
-    rdfs:label "Basics of Stock Management"@en .
-
-hito:Billing
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Billing"@en .
-
 hito:BloodAndSkin
     a hito:FeatureCitation ;
     rdfs:label "Blood and Skin"@en .
@@ -88,14 +75,6 @@ hito:ChartOfAccounts
     a hito:FeatureCitation ;
     rdfs:label "Chart of accounts"@en .
 
-hito:ClinicalDocumentation
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Clinical Documentation"@en .
-
-hito:Coding
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Coding"@en .
-
 hito:ConfiguringAccounts
     a hito:FeatureCitation ;
     rdfs:label "Configuring Accounts"@en .
@@ -108,29 +87,21 @@ hito:ConfiguringJournals
     a hito:FeatureCitation ;
     rdfs:label "Configuring Journals"@en .
 
-hito:CostAllocationAmongCostCenters
+hito:CreatingAPartyWithThePatientProperty
     a hito:FeatureCitation ;
-    rdfs:label "Cost allocation among cost centers"@en .
+    rdfs:label "Creating a party with the patient property"@en .
 
-hito:CostAllocationFromCostCenters
+hito:CreatingAPatientRecord
     a hito:FeatureCitation ;
-    rdfs:label "cost allocation from cost centers"@en .
+    rdfs:label "Creating a patient record"@en .
+
+hito:CreatingARequestForImage
+    a hito:FeatureCitation ;
+    rdfs:label "Creating a request for image"@en .
 
 hito:CreatingNewMedicationProducts
     a hito:FeatureCitation ;
     rdfs:label "Creating new medication products"@en .
-
-hito:CreatingPartyWithPatientProperty
-    a hito:FeatureCitation ;
-    rdfs:label "Creating a party with the patient property"@en .
-
-hito:CreatingPatientRecord
-    a hito:FeatureCitation ;
-    rdfs:label "Creating a patient record"@en .
-
-hito:CreatingRequestForImage
-    a hito:FeatureCitation ;
-    rdfs:label "Creating a request for image"@en .
 
 hito:CreatingTheInvoice
     a hito:FeatureCitation ;
@@ -148,7 +119,7 @@ hito:DigestiveAndAbdomen
     a hito:FeatureCitation ;
     rdfs:label "Digestive and Abdomen"@en .
 
-hito:DocumentRoundingsForInpatients
+hito:DocumentRoundingsForInpatientsMainInformationIcuInformationProceduresInformationMedicationInformationstockMovesInformation
     a hito:FeatureCitation ;
     rdfs:label "document Roundings for inpatients (Main information, ICU information, Procedures information, Medication information,Stock Moves information)"@en .
 
@@ -156,11 +127,15 @@ hito:Drainages
     a hito:FeatureCitation ;
     rdfs:label "Drainages"@en .
 
-hito:Epidemiology
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Epidemiology"@en .
+hito:ElectronicMedicalRecordEmr
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Electronic Medical Record (EMR)"@en .
 
-hito:EvaluationsForm
+hito:Empty
+    a hito:EnterpriseFunctionCitation, hito:FeatureCitation ;
+    rdfs:label "empty"@en .
+
+hito:EvaluationsFormMainInfoClinicalMentalStatusDiagnosis
     a hito:FeatureCitation ;
     rdfs:label "Evaluations Form (Main Info, Clinical, Mental Status. Diagnosis)"@en .
 
@@ -196,36 +171,37 @@ hito:GeneticInformation
     a hito:FeatureCitation ;
     rdfs:label "Genetic Information"@en .
 
+hito:Genetics
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Genetics"@en .
+
 hito:GnuHealth
-    hito:client hito:Mobile, hito:Native, hito:WebBased ;
-    hito:databaseSystem hito:PostgreSql ;
-    hito:enterpriseFunction hito:AccessManagement, hito:Accounting, hito:AnalyticAccounting, hito:Billing, hito:ClinicalDocumentation, hito:Coding, hito:Epidemiology, hito:FinancialAccounting, hito:MedicationManagement, hito:Occhiolino, hito:PatientAdministration, hito:PatientAppointmentAndAdmissionManagement, hito:PatientEvaluations, hito:PatientManagement, hito:ProductsAndServicesManagement, hito:PurchaseAdministration, hito:RecordManagement, hito:ReportGeneration, hito:StaffManagement, hito:StatisticalAnalysis, hito:StockManagement ;
-    hito:feature hito:AccessManagementOverview, hito:AccountTypes, hito:AdministrationOrthancModule, hito:AdministrativeData, hito:AllSurgeriesInformation, hito:Appointments, hito:AppointmentsCalendar, hito:AppointmentsReport, hito:AssetManagement, hito:BasicsOfStockManagement, hito:BloodAndSkin, hito:Cardiovascular, hito:CarePlan, hito:ChagasDiseaseInformation, hito:ChartOfAccounts, hito:ConfiguringAccounts, hito:ConfiguringAvailableTests, hito:ConfiguringJournals, hito:CostAllocationAmongCostCenters, hito:CostAllocationFromCostCenters, hito:CreatingNewMedicationProducts, hito:CreatingPartyWithPatientProperty, hito:CreatingPatientRecord, hito:CreatingRequestForImage, hito:CreatingTheInvoice, hito:DefaultImagingModule, hito:DengueFever, hito:DigestiveAndAbdomen, hito:DocumentRoundingsForInpatients, hito:Drainages, hito:EvaluationsForm, hito:EvaluationsHistory, hito:EvaluationsReport, hito:FunctioningAndDisability, hito:GeneralPregnancyInformation, hito:GeneratingResults, hito:GeneticFamilyHistory, hito:GeneticInformation, hito:GnuHealthProductsAndServicesManagement, hito:GnuLims, hito:GroupsAccessManagement, hito:Gynecology, hito:IcuFunctionalityInformation, hito:InformationStoredPerAppointment, hito:InfrastructureOfSocioeconomics, hito:InjurySurveillanceSystemRegistrationReport, hito:InpatientManagementInformation, hito:IntensiveCareUnit, hito:InterfacesWithLaboratoriesAndLims, hito:IntroductionToEvaluations, hito:IntroductionToNursing, hito:IntroductionToObstetrics, hito:IntroductionToPediatricsSection, hito:Inventories, hito:InvoicingPatients, hito:LabOrdersAndHealthServices, hito:LaboratoryReports, hito:Lifestyle, hito:ListOfAllAppointments, hito:ListOfAppointmentsForSpecificPatient, hito:ListingHealthServicesToBeInvoiced, hito:ListingTheCurrentPatients, hito:ManagingLaboratoryTests, hito:MedicationPlan, hito:NeglectedTropicalDiseasesInformation, hito:Neonatology, hito:NutritionInformation, hito:Obstetrics, hito:OrganizationStructure, hito:OrthancIntegrationModule, hito:PatientEvaluationsReport, hito:PatientIcuInformation, hito:PatientRoundingInformation, hito:PerinatalAndIntrapartumInformation, hito:PrenatalEvaluations, hito:PrintingPatientIdCard, hito:ProductsBasics, hito:ProteinRelatedDiseases, hito:Psc, hito:PuerperiumMonitor, hito:Reporting, hito:RequestingLaboratoryTest, hito:Shipments, hito:Socioeconomics, hito:SpecialtiesByHealthProfessionalsReport, hito:StockLocations, hito:StockMovements, hito:StoringLaboratoryTestResults, hito:SurgeriesForm, hito:SurgeriesPerPatient, hito:SurgeryIntroduction, hito:SynchronizationOrthancModule, hito:TopDiseasesReport, hito:TroubleshootingOrthancModule, hito:UsageOrthancModule, hito:UsersAccessManagement, hito:VariantsBasics, hito:ViewResults ;
-    hito:homepage <https://www.gnuhealth.org/> ;
-    hito:language dbr:English_language ;
-    hito:license dbr:GNU_General_Public_License, <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
-    hito:operatingSystem dbr:Linux ;
-    hito:programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
-    hito:usesStandard hito:Hl7, hito:Icd10 ;
-    a hito:SoftwareProduct ;
-    rdfs:label "GNU Health" .
-
-hito:GnuHealthProductsAndServicesManagement
-    a hito:FeatureCitation ;
-    rdfs:label "GNU Health/Products and Services Management"@en .
-
-hito:GnuLims
-    hito:featureClassified hito:TrackBiologicalSpecimens ;
-    a hito:FeatureCitation ;
-    rdfs:label "GNU LIMS: Laboratory Information Management System for the Healthcare and Biomedical sectors"@en .
+    hito:applicationSystem hito:ElectronicMedicalRecordEmr, hito:HealthInformationSystemHis, hito:HospitalManagementInformationSystem ;
+    hito:directEnterpriseFunction hito:ClientHealthRecords, hito:PrescriptionAndMedicationManagement ;
+    hito:directFeature hito:ListHealthWorkforceCadresAndRelatedIdentificationInformation, hito:ManageCertificationregistrationOfHealthcareProviders, hito:MonitorPerformanceOfHealthcareProviders, hito:PublicHealthEventNotification ;
+    hito:enterpriseFunction hito:AccessManagement, hito:AdmissionManagement, hito:AnalyticAccounting, hito:Empty, hito:FinancialAccounting, hito:Genetics, hito:GynecologicCare, hito:HospitalManagement, hito:IntensiveCare, hito:LaboratoryManagement, hito:NeglectedTropicalDiseasesCare, hito:Nursing, hito:Obstetrics, hito:PatientAppointment, hito:PatientEvaluations, hito:PatientManagement, hito:PediatricCare, hito:ProductsManagement, hito:PurchaseAdministration, <ServicesManagement/InvoicingPatients>, hito:Socioeconomics, hito:StockManagement, hito:Surgery ;
+    hito:feature hito:AccessManagementOverview, hito:AccountTypes, hito:AdministrationOrthancModule, hito:AdministrativeData, hito:AllSurgeriesInformation, hito:Appointments, hito:AppointmentsCalendar, hito:AppointmentsReport, hito:BloodAndSkin, hito:Cardiovascular, hito:CarePlan, hito:ChagasDiseaseInformation, hito:ChartOfAccounts, hito:ConfiguringAccounts, hito:ConfiguringAvailableTests, hito:ConfiguringJournals, hito:CreatingAPartyWithThePatientProperty, hito:CreatingAPatientRecord, hito:CreatingARequestForImage, hito:CreatingNewMedicationProducts, hito:CreatingTheInvoice, hito:DefaultImagingModule, hito:DengueFever, hito:DigestiveAndAbdomen, hito:DocumentRoundingsForInpatientsMainInformationIcuInformationProceduresInformationMedicationInformationstockMovesInformation, hito:Drainages, hito:Empty, hito:EvaluationsFormMainInfoClinicalMentalStatusDiagnosis, hito:EvaluationsHistory, hito:EvaluationsReport, hito:FunctioningAndDisability, hito:GeneralPregnancyInformation, hito:GeneratingResults, hito:GeneticFamilyHistory, hito:GeneticInformation, hito:GroupsAccessManagement, hito:IcuFunctionalityInformation, hito:InformationStoredPerAppointment, hito:InfrastructureOfSocioeconomics, hito:InjurySurveillanceSystemRegistrationReport, hito:InpatientManagementInformation, hito:InterfacesWithLaboratoriesAndLims, hito:Inventories, hito:InvoicingPatients, hito:LabOrdersAndHealthServices, hito:LaboratoryReports, hito:LifestyleDietAndExerciseAddictionsSexualitySafety, hito:ListOfAllAppointments, hito:ListOfAppointmentsForASpecificPatient, hito:ListingHealthServicesToBeInvoiced, hito:ListingTheCurrentPatients, hito:ManagingLaboratoryTests, hito:MedicationPlan, hito:NeglectedTropicalDiseasesInformation, hito:NutritionInformation, hito:OrganizationStructure, hito:OrthancIntegrationModule, hito:PatientEvaluationsReport, hito:PatientIcuInformation, hito:PatientRoundingInformationNeurologicRespiratoryInclXray, hito:PerinatalAndIntrapartumInformation, hito:PrenatalEvaluations, hito:PrintingAPatientIdCard, hito:ProteinRelatedDiseases, hito:PscPediatricsSymptomChecklist, hito:PuerperiumMonitor, hito:Reporting, hito:RequestingALaboratoryTest, hito:Shipments, hito:StockLocations, hito:StockMovements, hito:StoringLaboratoryTestResults, hito:SurgeriesForm, hito:SurgeriesPerPatient, hito:SynchronizationOrthancModule, hito:TopDiseasesReport, hito:TroubleshootingOrthancModule, hito:UsageOrthancModule, hito:UsersAccessManagement, hito:ViewResults ;
+    hito:organizationalUnit hito:Sctid22232009, hito:Sctid264361005, hito:Sctid394761003 .
 
 hito:GroupsAccessManagement
     a hito:FeatureCitation ;
     rdfs:label "Groups Access Management"@en .
 
-hito:Gynecology
-    a hito:FeatureCitation ;
-    rdfs:label "Gynecology (General review, Mammography history, PAP Smear history, Colposcopy history)"@en .
+hito:GynecologicCare
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Gynecologic Care"@en .
+
+hito:HealthInformationSystemHis
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Health Information System (HIS)"@en .
+
+hito:HospitalManagement
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Hospital Management"@en .
+
+hito:HospitalManagementInformationSystem
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Hospital management Information System"@en .
 
 hito:IcuFunctionalityInformation
     a hito:FeatureCitation ;
@@ -244,33 +220,16 @@ hito:InjurySurveillanceSystemRegistrationReport
     rdfs:label "Injury Surveillance System Registration report"@en .
 
 hito:InpatientManagementInformation
-    hito:featureClassified hito:ManageClientsStructuredClinicalRecords ;
     a hito:FeatureCitation ;
     rdfs:label "Inpatient Management information"@en .
 
-hito:IntensiveCareUnit
-    a hito:FeatureCitation ;
-    rdfs:label "Intensive Care Unit"@en .
+hito:IntensiveCare
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Intensive Care"@en .
 
 hito:InterfacesWithLaboratoriesAndLims
     a hito:FeatureCitation ;
     rdfs:label "Interfaces with Laboratories and LIMS"@en .
-
-hito:IntroductionToEvaluations
-    a hito:FeatureCitation ;
-    rdfs:label "Introduction to Evaluations"@en .
-
-hito:IntroductionToNursing
-    a hito:FeatureCitation ;
-    rdfs:label "Introduction to Nursing"@en .
-
-hito:IntroductionToObstetrics
-    a hito:FeatureCitation ;
-    rdfs:label "Introduction to Obstetrics"@en .
-
-hito:IntroductionToPediatricsSection
-    a hito:FeatureCitation ;
-    rdfs:label "Introduction to Pediatrics Section"@en .
 
 hito:Inventories
     a hito:FeatureCitation ;
@@ -284,11 +243,15 @@ hito:LabOrdersAndHealthServices
     a hito:FeatureCitation ;
     rdfs:label "Lab orders and Health Services"@en .
 
+hito:LaboratoryManagement
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Laboratory Management"@en .
+
 hito:LaboratoryReports
     a hito:FeatureCitation ;
     rdfs:label "Laboratory Reports"@en .
 
-hito:Lifestyle
+hito:LifestyleDietAndExerciseAddictionsSexualitySafety
     a hito:FeatureCitation ;
     rdfs:label "Lifestyle (Diet and Exercise, Addictions, Sexuality, Safety)"@en .
 
@@ -296,7 +259,7 @@ hito:ListOfAllAppointments
     a hito:FeatureCitation ;
     rdfs:label "List of all appointments"@en .
 
-hito:ListOfAppointmentsForSpecificPatient
+hito:ListOfAppointmentsForASpecificPatient
     a hito:FeatureCitation ;
     rdfs:label "List of appointments for a specific patient"@en .
 
@@ -309,37 +272,32 @@ hito:ListingTheCurrentPatients
     rdfs:label "Listing the current patients"@en .
 
 hito:ManagingLaboratoryTests
-    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
     a hito:FeatureCitation ;
     rdfs:label "Managing Laboratory Tests"@en .
-
-hito:MedicationManagement
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Medication Management"@en .
 
 hito:MedicationPlan
     a hito:FeatureCitation ;
     rdfs:label "Medication Plan"@en .
 
+hito:NeglectedTropicalDiseasesCare
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Neglected Tropical Diseases Care"@en .
+
 hito:NeglectedTropicalDiseasesInformation
     a hito:FeatureCitation ;
     rdfs:label "Neglected Tropical Diseases information"@en .
 
-hito:Neonatology
-    a hito:FeatureCitation ;
-    rdfs:label "Neonatology"@en .
+hito:Nursing
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Nursing"@en .
 
 hito:NutritionInformation
     a hito:FeatureCitation ;
     rdfs:label "Nutrition information"@en .
 
 hito:Obstetrics
-    a hito:FeatureCitation ;
-    rdfs:label "Obstetrics"@en .
-
-hito:Occhiolino
     a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Occhiolino,the GNU LIMS: Laboratory Information Management System"@en .
+    rdfs:label "Obstetrics"@en .
 
 hito:OrganizationStructure
     a hito:FeatureCitation ;
@@ -349,13 +307,9 @@ hito:OrthancIntegrationModule
     a hito:FeatureCitation ;
     rdfs:label "Orthanc Integration module"@en .
 
-hito:PatientAdministration
+hito:PatientAppointment
     a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Patient Administration"@en .
-
-hito:PatientAppointmentAndAdmissionManagement
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Patient Appointment and Admission Management"@en .
+    rdfs:label "Patient Appointment"@en .
 
 hito:PatientEvaluations
     a hito:EnterpriseFunctionCitation ;
@@ -373,9 +327,13 @@ hito:PatientManagement
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Management"@en .
 
-hito:PatientRoundingInformation
+hito:PatientRoundingInformationNeurologicRespiratoryInclXray
     a hito:FeatureCitation ;
     rdfs:label "Patient Rounding information (Neurologic Respiratory, incl. X-Ray)"@en .
+
+hito:PediatricCare
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Pediatric Care"@en .
 
 hito:PerinatalAndIntrapartumInformation
     a hito:FeatureCitation ;
@@ -385,24 +343,19 @@ hito:PrenatalEvaluations
     a hito:FeatureCitation ;
     rdfs:label "Prenatal Evaluations"@en .
 
-hito:PrintingPatientIdCard
-    hito:featureClassified hito:EnrolClientForHealthServicesclinicalCarePlan ;
+hito:PrintingAPatientIdCard
     a hito:FeatureCitation ;
     rdfs:label "Printing a patient ID card"@en .
 
-hito:ProductsAndServicesManagement
+hito:ProductsManagement
     a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Products and Services Management"@en .
-
-hito:ProductsBasics
-    a hito:FeatureCitation ;
-    rdfs:label "Products basics"@en .
+    rdfs:label "Products Management"@en .
 
 hito:ProteinRelatedDiseases
     a hito:FeatureCitation ;
     rdfs:label "Protein Related Diseases"@en .
 
-hito:Psc
+hito:PscPediatricsSymptomChecklist
     a hito:FeatureCitation ;
     rdfs:label "PSC (Pediatrics Symptom Checklist)"@en .
 
@@ -414,42 +367,40 @@ hito:PurchaseAdministration
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Purchase Administration"@en .
 
-hito:RecordManagement
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Record Management"@en .
-
-hito:ReportGeneration
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Report Generation"@en .
-
 hito:Reporting
     a hito:FeatureCitation ;
     rdfs:label "Reporting"@en .
 
-hito:RequestingLaboratoryTest
-    hito:featureClassified hito:TransmitToHealthcareProviderAndTrack ;
+hito:RequestingALaboratoryTest
     a hito:FeatureCitation ;
     rdfs:label "Requesting a Laboratory Test"@en .
+
+hito:Sctid22232009
+    hito:organizationalUnitClassified hito:HospitalEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "SCTID: 22232009"@en .
+
+hito:Sctid264361005
+    hito:organizationalUnitClassified hito:HealthCenterEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "SCTID: 264361005"@en .
+
+hito:Sctid394761003
+    hito:organizationalUnitClassified hito:GeneralPractitionerPracticeSiteEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:label "SCTID: 394761003"@en .
+
+<ServicesManagement/InvoicingPatients>
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Services Management/Invoicing Patients"@en .
 
 hito:Shipments
     a hito:FeatureCitation ;
     rdfs:label "Shipments"@en .
 
 hito:Socioeconomics
-    a hito:FeatureCitation ;
+    a hito:EnterpriseFunctionCitation ;
     rdfs:label "Socioeconomics"@en .
-
-hito:SpecialtiesByHealthProfessionalsReport
-    a hito:FeatureCitation ;
-    rdfs:label "Specialties by health professionals report"@en .
-
-hito:StaffManagement
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Staff Management"@en .
-
-hito:StatisticalAnalysis
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Statistical Analysis"@en .
 
 hito:StockLocations
     a hito:FeatureCitation ;
@@ -475,9 +426,9 @@ hito:SurgeriesPerPatient
     a hito:FeatureCitation ;
     rdfs:label "Surgeries per Patient"@en .
 
-hito:SurgeryIntroduction
-    a hito:FeatureCitation ;
-    rdfs:label "Surgery introduction"@en .
+hito:Surgery
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Surgery"@en .
 
 hito:SynchronizationOrthancModule
     a hito:FeatureCitation ;
@@ -498,10 +449,6 @@ hito:UsageOrthancModule
 hito:UsersAccessManagement
     a hito:FeatureCitation ;
     rdfs:label "Users Access Management"@en .
-
-hito:VariantsBasics
-    a hito:FeatureCitation ;
-    rdfs:label "Variants basics"@en .
 
 hito:ViewResults
     a hito:FeatureCitation ;
