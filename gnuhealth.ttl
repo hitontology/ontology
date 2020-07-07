@@ -152,7 +152,7 @@ hito:FunctioningAndDisability
     a hito:FeatureCitation ;
     rdfs:label "Functioning and Disability"@en .
 
-hito:GeneralPracticionerPracticeSiteEnvironmentSctid394761003
+hito:GeneralPractitionerPracticeSiteEnvironmentSctid394761003
     hito:organizationalUnitClassified hito:GeneralPractitionerPracticeSiteEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 394761003"@en ;
@@ -190,7 +190,7 @@ hito:GnuHealth
     hito:language dbr:English_language ;
     hito:license hito:GNU_General_Public_License ;
     hito:operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
-    hito:organizationalUnit hito:GeneralPracticionerPracticeSiteEnvironmentSctid394761003, hito:HealthCenterEnvironmentSctid264361005, hito:HospitalEnvironmentSctid22232009 ;
+    hito:organizationalUnit hito:GeneralPractitionerPracticeSiteEnvironmentSctid394761003, hito:HealthCenterEnvironmentSctid264361005, hito:HospitalEnvironmentSctid22232009 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/Python_(programming_language)> ;
     hito:softwareProductComponent hito:Occhiolino ;
     a hito:SoftwareProduct ;

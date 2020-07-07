@@ -103,8 +103,8 @@
                                  rdfs:label "Genetics department environment"@en .
 
 
-###  http://hitontology.eu/ontology/GeneralPracticionerPracticeSiteEnvironment
-:GeneralPracticionerPracticeSiteEnvironment rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/GeneralPractitionerPracticeSiteEnvironment
+:GeneralPractitionerPracticeSiteEnvironment rdf:type owl:NamedIndividual ,
                                           :OrganizationalUnitClassified ;
                                  :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
                                  :hasSCTID 394761003 ;
