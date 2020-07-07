@@ -36,18 +36,22 @@ hito:EvaluationsReport
     rdfs:label "Evaluations Report"@en .
 
 hito:ImageArchiving
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Archiving"@en .
 
 hito:ImageCommunication
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Communication"@en .
 
 hito:ImageDistribution
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Distribution"@en .
 
 hito:ImageManagement
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Management"@en .
 
