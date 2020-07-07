@@ -538,7 +538,7 @@
 
 
 ###  http://hitontology.eu/ontology/Researcher_occupation
-:Radiologist_occupation rdf:type owl:NamedIndividual ,
+:Researcher_occupation rdf:type owl:NamedIndividual ,
                                  :UserGroupClassified ;
                         :userGroupCatalogue :SnomedUserGroupCatalogue ;
                         :hasSCTID 769038007 ;
