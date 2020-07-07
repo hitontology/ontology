@@ -98,7 +98,7 @@ hito:PluginMechanismToAddNewModules
     rdfs:label "plugin mechanism to add new modules"@en .
 
 hito:RadiologistSctid66862007
-    hito:userGroupClassified hito:Radiologist ;
+    hito:userGroupClassified hito:Radiologist_occupation ;
     a hito:UserGroupCitation ;
     rdfs:label "Radiologist"@en .
 
@@ -114,7 +114,7 @@ hito:ResearchAboutAutomatedAnalysisOfMedicalImages
     rdfs:label "research about the automated analysis of medical images"@en .
 
 hito:ResearcherSctid769038007
-    hito:userGroupClassified hito:Researcher ;
+    hito:userGroupClassified hito:Researcher_occupation ;
     a hito:UserGroupCitation ;
     rdfs:label "Researcher"@en .
 
