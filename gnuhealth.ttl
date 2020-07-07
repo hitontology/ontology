@@ -128,12 +128,9 @@ hito:Drainages
     rdfs:label "Drainages"@en .
 
 hito:ElectronicMedicalRecordEmr
+    hito:applicationSystemClassified hito:SharedHealthRecordAndHealthInformationRespositories ;
     a hito:ApplicationSystemCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
-
-hito:Empty
-    a hito:EnterpriseFunctionCitation, hito:FeatureCitation ;
-    rdfs:label "empty"@en .
 
 hito:EvaluationsFormMainInfoClinicalMentalStatusDiagnosis
     a hito:FeatureCitation ;
@@ -154,6 +151,12 @@ hito:FinancialAccounting
 hito:FunctioningAndDisability
     a hito:FeatureCitation ;
     rdfs:label "Functioning and Disability"@en .
+
+hito:GeneralPracticionerPracticeSiteEnvironmentSctid394761003
+    hito:organizationalUnitClassified hito:GeneralPractitionerPracticeSiteEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 394761003"@en ;
+    rdfs:label "General Practitioner Practice Site Environment"@en .
 
 hito:GeneralPregnancyInformation
     a hito:FeatureCitation ;
@@ -181,13 +184,13 @@ hito:GnuHealth
     hito:databaseSystem hito:PostgreSql ;
     hito:directEnterpriseFunction hito:ClientHealthRecords, hito:PrescriptionAndMedicationManagement ;
     hito:directFeature hito:ListHealthWorkforceCadresAndRelatedIdentificationInformation, hito:ManageCertificationregistrationOfHealthcareProviders, hito:MonitorPerformanceOfHealthcareProviders, hito:PublicHealthEventNotification ;
-    hito:enterpriseFunction hito:AccessManagement, hito:AdmissionManagement, hito:AnalyticAccounting, hito:Empty, hito:FinancialAccounting, hito:Genetics, hito:GynecologicCare, hito:HospitalManagement, hito:IntensiveCare, hito:LaboratoryManagement, hito:NeglectedTropicalDiseasesCare, hito:Nursing, hito:Obstetrics, hito:PatientAppointment, hito:PatientEvaluations, hito:PatientManagement, hito:PediatricCare, hito:ProductsManagement, hito:PurchaseAdministration, <ServicesManagement/InvoicingPatients>, hito:Socioeconomics, hito:StockManagement, hito:Surgery ;
-    hito:feature hito:AccessManagementOverview, hito:AccountTypes, hito:AdministrationOrthancModule, hito:AdministrativeData, hito:AllSurgeriesInformation, hito:Appointments, hito:AppointmentsCalendar, hito:AppointmentsReport, hito:BloodAndSkin, hito:Cardiovascular, hito:CarePlan, hito:ChagasDiseaseInformation, hito:ChartOfAccounts, hito:ConfiguringAccounts, hito:ConfiguringAvailableTests, hito:ConfiguringJournals, hito:CreatingAPartyWithThePatientProperty, hito:CreatingAPatientRecord, hito:CreatingARequestForImage, hito:CreatingNewMedicationProducts, hito:CreatingTheInvoice, hito:DefaultImagingModule, hito:DengueFever, hito:DigestiveAndAbdomen, hito:DocumentRoundingsForInpatientsMainInformationIcuInformationProceduresInformationMedicationInformationstockMovesInformation, hito:Drainages, hito:Empty, hito:EvaluationsFormMainInfoClinicalMentalStatusDiagnosis, hito:EvaluationsHistory, hito:EvaluationsReport, hito:FunctioningAndDisability, hito:GeneralPregnancyInformation, hito:GeneratingResults, hito:GeneticFamilyHistory, hito:GeneticInformation, hito:GroupsAccessManagement, hito:IcuFunctionalityInformation, hito:InformationStoredPerAppointment, hito:InfrastructureOfSocioeconomics, hito:InjurySurveillanceSystemRegistrationReport, hito:InpatientManagementInformation, hito:InterfacesWithLaboratoriesAndLims, hito:Inventories, hito:InvoicingPatients, hito:LabOrdersAndHealthServices, hito:LaboratoryReports, hito:LifestyleDietAndExerciseAddictionsSexualitySafety, hito:ListOfAllAppointments, hito:ListOfAppointmentsForASpecificPatient, hito:ListingHealthServicesToBeInvoiced, hito:ListingTheCurrentPatients, hito:ManagingLaboratoryTests, hito:MedicationPlan, hito:NeglectedTropicalDiseasesInformation, hito:NutritionInformation, hito:OrganizationStructure, hito:OrthancIntegrationModule, hito:PatientEvaluationsReport, hito:PatientIcuInformation, hito:PatientRoundingInformationNeurologicRespiratoryInclXray, hito:PerinatalAndIntrapartumInformation, hito:PrenatalEvaluations, hito:PrintingAPatientIdCard, hito:ProteinRelatedDiseases, hito:PscPediatricsSymptomChecklist, hito:PuerperiumMonitor, hito:Reporting, hito:RequestingALaboratoryTest, hito:Shipments, hito:StockLocations, hito:StockMovements, hito:StoringLaboratoryTestResults, hito:SurgeriesForm, hito:SurgeriesPerPatient, hito:SynchronizationOrthancModule, hito:TopDiseasesReport, hito:TroubleshootingOrthancModule, hito:UsageOrthancModule, hito:UsersAccessManagement, hito:ViewResults ;
+    hito:enterpriseFunction hito:AccessManagement, hito:AdmissionManagement, hito:AnalyticAccounting, hito:FinancialAccounting, hito:Genetics, hito:GynecologicCare, hito:HospitalManagement, hito:IntensiveCare, hito:LaboratoryManagement, hito:NeglectedTropicalDiseasesCare, hito:Nursing, hito:Obstetrics, hito:PatientAppointment, hito:PatientEvaluations, hito:PatientManagement, hito:PediatricCare, hito:ProductsManagement, hito:PurchaseAdministration, <ServicesManagement/InvoicingPatients>, hito:Socioeconomics, hito:StockManagement, hito:Surgery ;
+    hito:feature hito:AccessManagementOverview, hito:AccountTypes, hito:AdministrationOrthancModule, hito:AdministrativeData, hito:AllSurgeriesInformation, hito:Appointments, hito:AppointmentsCalendar, hito:AppointmentsReport, hito:BloodAndSkin, hito:Cardiovascular, hito:CarePlan, hito:ChagasDiseaseInformation, hito:ChartOfAccounts, hito:ConfiguringAccounts, hito:ConfiguringAvailableTests, hito:ConfiguringJournals, hito:CreatingAPartyWithThePatientProperty, hito:CreatingAPatientRecord, hito:CreatingARequestForImage, hito:CreatingNewMedicationProducts, hito:CreatingTheInvoice, hito:DefaultImagingModule, hito:DengueFever, hito:DigestiveAndAbdomen, hito:DocumentRoundingsForInpatientsMainInformationIcuInformationProceduresInformationMedicationInformationstockMovesInformation, hito:Drainages, hito:EvaluationsFormMainInfoClinicalMentalStatusDiagnosis, hito:EvaluationsHistory, hito:EvaluationsReport, hito:FunctioningAndDisability, hito:GeneralPregnancyInformation, hito:GeneratingResults, hito:GeneticFamilyHistory, hito:GeneticInformation, hito:GroupsAccessManagement, hito:IcuFunctionalityInformation, hito:InformationStoredPerAppointment, hito:InfrastructureOfSocioeconomics, hito:InjurySurveillanceSystemRegistrationReport, hito:InpatientManagementInformation, hito:InterfacesWithLaboratoriesAndLims, hito:Inventories, hito:InvoicingPatients, hito:LabOrdersAndHealthServices, hito:LaboratoryReports, hito:LifestyleDietAndExerciseAddictionsSexualitySafety, hito:ListOfAllAppointments, hito:ListOfAppointmentsForASpecificPatient, hito:ListingHealthServicesToBeInvoiced, hito:ListingTheCurrentPatients, hito:ManagingLaboratoryTests, hito:MedicationPlan, hito:NeglectedTropicalDiseasesInformation, hito:NutritionInformation, hito:OrganizationStructure, hito:OrthancIntegrationModule, hito:PatientEvaluationsReport, hito:PatientIcuInformation, hito:PatientRoundingInformationNeurologicRespiratoryInclXray, hito:PerinatalAndIntrapartumInformation, hito:PrenatalEvaluations, hito:PrintingAPatientIdCard, hito:ProteinRelatedDiseases, hito:PscPediatricsSymptomChecklist, hito:PuerperiumMonitor, hito:Reporting, hito:RequestingALaboratoryTest, hito:Shipments, hito:StockLocations, hito:StockMovements, hito:StoringLaboratoryTestResults, hito:SurgeriesForm, hito:SurgeriesPerPatient, hito:SynchronizationOrthancModule, hito:TopDiseasesReport, hito:TroubleshootingOrthancModule, hito:UsageOrthancModule, hito:UsersAccessManagement, hito:ViewResults ;
     hito:interoperability hito:HL7, hito:HL7_FHIR, hito:Icd10 ;
     hito:language dbr:English_language ;
     hito:license hito:GNU_General_Public_License ;
     hito:operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
-    hito:organizationalUnit hito:Sctid22232009, hito:Sctid264361005, hito:Sctid394761003 ;
+    hito:organizationalUnit hito:GeneralPracticionerPracticeSiteEnvironmentSctid394761003, hito:HealthCenterEnvironmentSctid264361005, hito:HospitalEnvironmentSctid22232009 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/Python_(programming_language)> ;
     hito:softwareProductComponent hito:Occhiolino ;
     a hito:SoftwareProduct ;
@@ -201,9 +204,22 @@ hito:GynecologicCare
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Gynecologic Care"@en .
 
+hito:HealthCenterEnvironmentSctid264361005
+    hito:organizationalUnitClassified hito:HealthCenterEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 264361005"@en ;
+    rdfs:label "Health Center Environment"@en .
+
 hito:HealthInformationSystemHis
+    hito:applicationSystemClassified hito:ClinicalInformationSystem, hito:ElectronicPatientRecordSystem ;
     a hito:ApplicationSystemCitation ;
     rdfs:label "Health Information System (HIS)"@en .
+
+hito:HospitalEnvironmentSctid22232009
+    hito:organizationalUnitClassified hito:HospitalEnvironment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 22232009"@en ;
+    rdfs:label "Hospital Environment"@en .
 
 hito:HospitalManagement
     a hito:EnterpriseFunctionCitation ;
@@ -384,21 +400,6 @@ hito:Reporting
 hito:RequestingALaboratoryTest
     a hito:FeatureCitation ;
     rdfs:label "Requesting a Laboratory Test"@en .
-
-hito:Sctid22232009
-    hito:organizationalUnitClassified hito:HospitalEnvironment ;
-    a hito:OrganizationalUnitCitation ;
-    rdfs:label "SCTID: 22232009"@en .
-
-hito:Sctid264361005
-    hito:organizationalUnitClassified hito:HealthCenterEnvironment ;
-    a hito:OrganizationalUnitCitation ;
-    rdfs:label "SCTID: 264361005"@en .
-
-hito:Sctid394761003
-    hito:organizationalUnitClassified hito:GeneralPractitionerPracticeSiteEnvironment ;
-    a hito:OrganizationalUnitCitation ;
-    rdfs:label "SCTID: 394761003"@en .
 
 <ServicesManagement/InvoicingPatients>
     a hito:EnterpriseFunctionCitation ;
