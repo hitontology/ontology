@@ -537,6 +537,16 @@
                                rdfs:label "Professional nurse occupation"@en .
 
 
+###  http://hitontology.eu/ontology/Researcher_occupation
+:Radiologist_occupation rdf:type owl:NamedIndividual ,
+                                 :UserGroupClassified ;
+                        :userGroupCatalogue :SnomedUserGroupCatalogue ;
+                        :hasSCTID 769038007 ;
+                        :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
+                        rdfs:comment "Researcher (occupation)"@en ;
+                        rdfs:label "Researcher occupation"@en .
+
+
 ###  http://hitontology.eu/ontology/Radiologist_occupation
 :Radiologist_occupation rdf:type owl:NamedIndividual ,
                                  :UserGroupClassified ;
