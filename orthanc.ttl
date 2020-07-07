@@ -31,6 +31,11 @@ hito:DicomScriptingForClinicalRoutine
     a hito:FeatureCitation ;
     rdfs:label "DICOM scripting for clinical routine"@en .
 
+hito:DicomServer
+    hito:applicationSystemClassified hito:PictureArchivingAndCommunicationSystem ;
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Dicom server"@en .
+
 hito:EvaluationsReport
     a hito:FeatureCitation ;
     rdfs:label "Evaluations Report"@en .
@@ -63,7 +68,13 @@ hito:ListingAvailableServers
     a hito:FeatureCitation ;
     rdfs:label "Listing available servers"@en .
 
+hito:Minipacs
+    hito:applicationSystemClassified hito:PictureArchivingAndCommunicationSystem ;
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "mini-PACS"@en .
+
 hito:Orthanc
+    hito:applicationSystem hito:DicomServer, hito:Minipacs ;
     hito:client hito:WebBased ;
     hito:databaseSystem hito:PostgreSql ;
     hito:directEnterpriseFunction hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManagement, hito:ResearchAndEducation ;
