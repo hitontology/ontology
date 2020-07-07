@@ -32,6 +32,7 @@ hito:AdministrativeData
     rdfs:label "Administrative Data"@en .
 
 hito:AdmissionManagement
+    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Admission Management"@en .
 
@@ -145,6 +146,7 @@ hito:EvaluationsReport
     rdfs:label "Evaluations Report"@en .
 
 hito:FinancialAccounting
+    hito:enterpriseFunctionClassified hito:HealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Financial Accounting"@en .
 
@@ -271,6 +273,7 @@ hito:LabOrdersAndHealthServices
     rdfs:label "Lab orders and Health Services"@en .
 
 hito:LaboratoryManagement
+    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 
@@ -375,6 +378,7 @@ hito:PrintingAPatientIdCard
     rdfs:label "Printing a patient ID card"@en .
 
 hito:ProductsManagement
+    hito:enterpriseFunctionClassified hito:EquipmentAndAssetManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Products Management"@en .
 
@@ -403,6 +407,7 @@ hito:RequestingALaboratoryTest
     rdfs:label "Requesting a Laboratory Test"@en .
 
 <ServicesManagement/InvoicingPatients>
+    hito:enterpriseFunctionClassified hito:ClientFinancialTransactions, hito:HealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Services Management/Invoicing Patients"@en .
 
@@ -419,6 +424,7 @@ hito:StockLocations
     rdfs:label "Stock Locations"@en .
 
 hito:StockManagement
+    hito:enterpriseFunctionClassified hito:SupplyChainManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
 
