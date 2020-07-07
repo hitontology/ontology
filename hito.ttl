@@ -888,10 +888,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                          rdfs:label "Decision Support System"@en .
 
 
-###  http://hitontology.eu/ontology/Dicom
-:DICOM a :SyntacticInteroperability;
-	rdfs:label "DICOM".
-
 
 ###  http://hitontology.eu/ontology/Eclipsys_Continuum_2000_CDS
 :Eclipsys_Continuum_2000_CDS rdf:type owl:NamedIndividual ,
