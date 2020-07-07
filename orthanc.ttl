@@ -70,6 +70,7 @@ hito:Orthanc
     hito:language dbr:English_language ;
     hito:license hito:GNU_Free_Documentation_License ;
     hito:operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
+    hito:organizationalUnit hito:RadiologyDepartmentSctid309964003 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/C++> ;
     a hito:SoftwareProduct ;
     rdfs:label "Orthanc"@en .
@@ -77,6 +78,12 @@ hito:Orthanc
 hito:PluginMechanismToAddNewModules
     a hito:FeatureCitation ;
     rdfs:label "plugin mechanism to add new modules"@en .
+
+hito:RadiologyDepartmentSctid309964003
+    hito:organizationalUnitClassified hito:RadiologyDepartment ;
+    a hito:OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 309964003"@en ;
+    rdfs:label "Radiology department"@en .
 
 hito:ResearchAboutAutomatedAnalysisOfMedicalImages
     a hito:EnterpriseFunctionCitation ;
