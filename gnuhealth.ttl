@@ -12,6 +12,7 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:AccessManagement
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Access Management"@en .
 
@@ -32,7 +33,7 @@ hito:AdministrativeData
     rdfs:label "Administrative Data"@en .
 
 hito:AdmissionManagement
-    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:AdministrativeAdmission, hito:ClientIdentificationAndRegistration ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Admission Management"@en .
 
@@ -41,6 +42,7 @@ hito:AllSurgeriesInformation
     rdfs:label "All Surgeries information"@en .
 
 hito:AnalyticAccounting
+    hito:enterpriseFunctionClassified hito:CostAndResultsAccounting ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Analytic Accounting"@en .
 
@@ -146,7 +148,7 @@ hito:EvaluationsReport
     rdfs:label "Evaluations Report"@en .
 
 hito:FinancialAccounting
-    hito:enterpriseFunctionClassified hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:FinancialAccounting, hito:HealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Financial Accounting"@en .
 
@@ -177,6 +179,7 @@ hito:GeneticInformation
     rdfs:label "Genetic Information"@en .
 
 hito:Genetics
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Genetics"@en .
 
@@ -204,6 +207,7 @@ hito:GroupsAccessManagement
     rdfs:label "Groups Access Management"@en .
 
 hito:GynecologicCare
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Gynecologic Care"@en .
 
@@ -225,6 +229,7 @@ hito:HospitalEnvironmentSctid22232009
     rdfs:label "Hospital Environment"@en .
 
 hito:HospitalManagement
+    hito:enterpriseFunctionClassified hito:HospitalManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Hospital Management"@en .
 
@@ -253,6 +258,7 @@ hito:InpatientManagementInformation
     rdfs:label "Inpatient Management information"@en .
 
 hito:IntensiveCare
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Intensive Care"@en .
 
@@ -273,7 +279,7 @@ hito:LabOrdersAndHealthServices
     rdfs:label "Lab orders and Health Services"@en .
 
 hito:LaboratoryManagement
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 
@@ -310,6 +316,7 @@ hito:MedicationPlan
     rdfs:label "Medication Plan"@en .
 
 hito:NeglectedTropicalDiseasesCare
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Neglected Tropical Diseases Care"@en .
 
@@ -318,6 +325,7 @@ hito:NeglectedTropicalDiseasesInformation
     rdfs:label "Neglected Tropical Diseases information"@en .
 
 hito:Nursing
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Nursing"@en .
 
@@ -326,6 +334,7 @@ hito:NutritionInformation
     rdfs:label "Nutrition information"@en .
 
 hito:Obstetrics
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Obstetrics"@en .
 
@@ -338,10 +347,12 @@ hito:OrthancIntegrationModule
     rdfs:label "Orthanc Integration module"@en .
 
 hito:PatientAppointment
+    hito:enterpriseFunctionClassified hito:AppointmentScheduling ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Appointment"@en .
 
 hito:PatientEvaluations
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:MedicalAdmission ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Evaluations"@en .
 
@@ -354,6 +365,7 @@ hito:PatientIcuInformation
     rdfs:label "Patient ICU Information"@en .
 
 hito:PatientManagement
+    hito:enterpriseFunctionClassified hito:PatientAdministration ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Management"@en .
 
@@ -362,6 +374,7 @@ hito:PatientRoundingInformationNeurologicRespiratoryInclXray
     rdfs:label "Patient Rounding information (Neurologic Respiratory, incl. X-Ray)"@en .
 
 hito:PediatricCare
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Pediatric Care"@en .
 
@@ -378,7 +391,7 @@ hito:PrintingAPatientIdCard
     rdfs:label "Printing a patient ID card"@en .
 
 hito:ProductsManagement
-    hito:enterpriseFunctionClassified hito:EquipmentAndAssetManagement ;
+    hito:enterpriseFunctionClassified hito:EquipmentAndAssetManagement, hito:MaterialAndMedicationManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Products Management"@en .
 
@@ -395,6 +408,7 @@ hito:PuerperiumMonitor
     rdfs:label "Puerperium Monitor"@en .
 
 hito:PurchaseAdministration
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Purchase Administration"@en .
 
@@ -407,7 +421,7 @@ hito:RequestingALaboratoryTest
     rdfs:label "Requesting a Laboratory Test"@en .
 
 <ServicesManagement/InvoicingPatients>
-    hito:enterpriseFunctionClassified hito:ClientFinancialTransactions, hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:AdministrativeDischargeAndFinalBilling, hito:ClientFinancialTransactions, hito:HealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Services Management/Invoicing Patients"@en .
 
@@ -416,6 +430,7 @@ hito:Shipments
     rdfs:label "Shipments"@en .
 
 hito:Socioeconomics
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Socioeconomics"@en .
 
@@ -424,7 +439,7 @@ hito:StockLocations
     rdfs:label "Stock Locations"@en .
 
 hito:StockManagement
-    hito:enterpriseFunctionClassified hito:SupplyChainManagement ;
+    hito:enterpriseFunctionClassified hito:SupplyAndDisposalManagement, hito:SupplyChainManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
 
@@ -445,6 +460,7 @@ hito:SurgeriesPerPatient
     rdfs:label "Surgeries per Patient"@en .
 
 hito:Surgery
+    hito:enterpriseFunctionClassified hito:ExecutionOfDiagnosticAndTherapeuticProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Surgery"@en .
 

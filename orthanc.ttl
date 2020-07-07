@@ -92,6 +92,7 @@ hito:RadiologyDepartmentSctid309964003
     rdfs:label "Radiology department"@en .
 
 hito:ResearchAboutAutomatedAnalysisOfMedicalImages
+    hito:enterpriseFunctionClassified hito:ResearchAndEducation ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "research about the automated analysis of medical images"@en .
 
