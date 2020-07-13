@@ -52,6 +52,7 @@
      ov:defines :ApplicationSystemClassified;
      ov:defines :ApplicationSystemCitation;
 #    ov:defines :Certification;
+     ov:defines :Citation;
      ov:defines :Classification;
      ov:defines :Client;
      ov:defines :CommunicationStandard;
@@ -108,8 +109,30 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "certification"@en .
 
 
+###  http://hitontology.eu/ontology/catalogue
+:citation rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Classified;
+                             rdfs:range :Catalogue;
+                             rdfs:label "catalogue"@en .
+
+
+###  http://hitontology.eu/ontology/citation
+:citation rdf:type owl:ObjectProperty ;
+                             rdfs:domain :SoftwareProduct;
+                             rdfs:range :Citation;
+                             rdfs:label "citation"@en .
+
+
+###  http://hitontology.eu/ontology/classified
+:classified rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Citation;
+                             rdfs:range :Classified;
+                             rdfs:label "classified"@en .
+
+
 ###  http://hitontology.eu/ontology/featureClassified
 :featureClassified rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :classified ;
                            rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "classified feature"@en .
@@ -117,6 +140,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionClassified
 :enterpriseFunctionClassified rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :classified ;
                     rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :EnterpriseFunctionClassified ;
                     rdfs:label "classified function"@en .
@@ -124,6 +148,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedOutcomeCriteria
 :classifiedOutcomeCriteria rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :classified ;
                            rdfs:domain :OutcomeCriteriaCitation ;
                            rdfs:range :OutcomeCriteriaClassified ;
                            rdfs:label "classified Outcome Criteria"@en .
@@ -131,6 +156,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedStudyMethod
 :classifiedStudyMethod rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :classified ;
                        rdfs:domain :StudyMethodCitation ;
                        rdfs:range :StudyMethodClassified ;
                        rdfs:label "classified Study Method"@en .
@@ -138,6 +164,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/organizationalUnitClassified
 :organizationalUnitClassified rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :classified ;
                         rdfs:domain :OrganizationalUnitCitation ;
                         rdfs:range :OrganizationalUnitClassified ;
                         rdfs:label "classified organizational unit"@en .
@@ -145,13 +172,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/classifiedUserGroupSNOMEDCT
 :classifiedUserGroupSNOMEDCT rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :classified ;
                              rdfs:domain :UserGroupCitation ;
                              rdfs:range :UserGroupClassified ;
                              rdfs:label "classified User Group SNOMEDCT"@en .
 
 
 ###  http://hitontology.eu/ontology/organizationalUnit
-:organizationalUnit :rdf:type owl:ObjectProperty ;
+:organizationalUnit rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :OrganizationalUnitCitation ;
                     rdfs:label "used in organizational unit"@en .
@@ -173,6 +202,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionCatalogue
 :enterpriseFunctionCatalogue rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :catalogue;
                     rdfs:domain :EnterpriseFunctionClassified ;
                     rdfs:range :EnterpriseFunctionCatalogue ;
                     rdfs:label "enterprise function catalogue"@en .
@@ -208,6 +238,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/featureCatalogue
 :featureCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :catalogue;
                            rdfs:domain :FeatureClassified ;
                            rdfs:range :FeatureCatalogue ;
                            rdfs:label "feature catalogue"@en .
@@ -215,10 +246,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/featureClassifiedComponent
 :featureClassifiedComponent rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :softwareProductComponent ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :FeatureClassified;
                     rdfs:label "classified feature component"@en .
-
 
 ###  http://hitontology.eu/ontology/hasDOI
 :hasDOI rdf:type owl:ObjectProperty ;
@@ -294,6 +325,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/organizationalUnitCatalogue
 :organizationalUnitCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :catalogue ;
                            rdfs:domain :OrganizationalUnitClassified ;
                            rdfs:range :OrganizationalUnitCatalogue ;
                            rdfs:label "organizational unit catalogue"@en .
@@ -342,7 +374,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:range :SoftwareProduct;
                     rdfs:label "software product component"@en .
 
-
 ###  http://hitontology.eu/ontology/supports
 :supports rdf:type owl:ObjectProperty ;
                     rdfs:domain :FeatureClassified;
@@ -365,6 +396,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/enterpriseFunction
 :enterpriseFunction rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :EnterpriseFunctionCitation ;
                     rdfs:label "supports enterprise function"@en .
@@ -379,6 +411,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/userGroupCatalogue
 :userGroupCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :citation ;
                            rdfs:domain :UserGroupClassified ;
                            rdfs:range :UserGroupCatalogue ;
                            rdfs:label "user group catalogue"@en .
