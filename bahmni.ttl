@@ -19,7 +19,7 @@ hito:Bahmni
     hito:homepage <https://www.bahmni.org/> ;
     dcterms:source <https://www.medfloss.org/node/1103> ;
     hito:language dbr:English_language ;
-    hito:license dbr:Affero_General_Public_License, <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
+    hito:license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     hito:operatingSystem dbr:CentOS ;
     hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
     hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
