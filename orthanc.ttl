@@ -82,7 +82,7 @@ hito:Orthanc
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement, hito:ResearchAboutAutomatedAnalysisOfMedicalImages ;
     hito:feature hito:BringDicomImagesToComputerVisionCommunity, hito:DataManagementForClinicalRoutineAndMedicalResearch, hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:DicomScriptingForClinicalRoutine, hito:EvaluationsReport, hito:InjurySurveillanceSystemRegistrationReport, hito:ListingAvailableServers, hito:PluginMechanismToAddNewModules, hito:RetrieveImages, hito:RetrievingDicomResourcesFromWado-RsServer, hito:SearchContent, hito:SendImages, hito:SendingDicomResourcesToStow-RsServer, hito:TestConnection, hito:TopDiseasesReport ;
     hito:homepage <https://www.orthanc-server.com/> ;
-    hito:interoperability hito:DICOM, hito:Rest ;
+    hito:interoperability hito:DICOM, hito:REST;
     hito:language dbr:English_language ;
     hito:license hito:GNU_Free_Documentation_License ;
     hito:operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;

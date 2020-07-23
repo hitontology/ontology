@@ -2269,11 +2269,6 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:label "rheumatology"@en .
 
 
-###  http://hitontology.eu/ontology/Rest
-:Rest a :TechnicalInteroperability;
-	rdfs:label "REST".
-
-
 ###  http://hitontology.eu/ontology/SemanticInteroperability
 :SemanticInteroperability rdfs:subClassOf :Interoperability ;
           rdfs:comment "Semantic Interoperability Standard"@en ;
