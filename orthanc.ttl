@@ -10,6 +10,7 @@
 @prefix bb: <http://www.snik.eu/ontology/bb/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix swo: <http://www.ebi.ac.uk/swo/>.
 
 hito:BringDicomImagesToComputerVisionCommunity
     a hito:FeatureCitation ;
@@ -84,7 +85,7 @@ hito:Orthanc
     hito:homepage <https://www.orthanc-server.com/> ;
     hito:interoperability hito:DICOM, hito:REST;
     hito:language dbr:English_language ;
-    hito:license hito:GNU_Free_Documentation_License ;
+    hito:license swo:SWO_1000046 ;
     hito:operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
     hito:organizationalUnit hito:RadiologyDepartmentSctid309964003 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/C++> ;
