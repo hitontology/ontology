@@ -969,16 +969,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Health center"@en .
 
 
-###  http://hitontology.eu/ontology/Hl7
-:Hl7 a :CommunicationStandard;
-	rdfs:label "HL7".
-
-
-###  http://hitontology.eu/ontology/Icd10
-:Icd10 a :SemanticInteroperability;
-	rdfs:label "ICD10".
-
-
 ###  http://hitontology.eu/ontology/ICNP_as_classification_system
 :ICNP_as_classification_system rdf:type owl:NamedIndividual ,
                                         :FeatureCitation ;
