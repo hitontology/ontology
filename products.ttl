@@ -216,4 +216,6 @@
        rdfs:label "e Doc"@en .
 
 
+:Occhiolino rdf:type :SoftwareProduct ;
+       rdfs:label "Occhiolino" .
 
