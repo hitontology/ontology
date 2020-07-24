@@ -10,7 +10,6 @@
 @prefix bb: <http://www.snik.eu/ontology/bb/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
-@prefix swo: <http://www.ebi.ac.uk/swo/>.
 
 hito:BringDicomImagesToComputerVisionCommunity
     a hito:FeatureCitation ;
@@ -83,9 +82,9 @@ hito:Orthanc
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement, hito:ResearchAboutAutomatedAnalysisOfMedicalImages ;
     hito:feature hito:BringDicomImagesToComputerVisionCommunity, hito:DataManagementForClinicalRoutineAndMedicalResearch, hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:DicomScriptingForClinicalRoutine, hito:EvaluationsReport, hito:InjurySurveillanceSystemRegistrationReport, hito:ListingAvailableServers, hito:PluginMechanismToAddNewModules, hito:RetrieveImages, hito:RetrievingDicomResourcesFromWado-RsServer, hito:SearchContent, hito:SendImages, hito:SendingDicomResourcesToStow-RsServer, hito:TestConnection, hito:TopDiseasesReport ;
     hito:homepage <https://www.orthanc-server.com/> ;
-    hito:interoperability hito:DICOM, hito:REST;
+    hito:interoperability hito:DICOM, hito:Rest ;
     hito:language dbr:English_language ;
-    hito:license swo:SWO_1000046 ;
+    hito:license hito:GNU_Free_Documentation_License ;
     hito:operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
     hito:organizationalUnit hito:RadiologyDepartmentSctid309964003 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/C++> ;
