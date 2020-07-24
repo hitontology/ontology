@@ -81,6 +81,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/applicationSystem
 :applicationSystem rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :citation ;
                            rdfs:domain :SoftwareProduct ;
                            rdfs:range :ApplicationSystemCitation ;
                            rdfs:label "application system catalogue"@en .
@@ -188,6 +189,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/userGroup
 :userGroup :rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :UserGroupClassified ;
                     rdfs:label "user group"@en .
@@ -318,6 +320,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/feature
 :feature rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :citation ;
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureCitation ;
                rdfs:label "offers Feature"@en .
