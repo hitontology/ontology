@@ -1,16 +1,6 @@
 #construct {?s ?p ?o.}
 #{
 #?s ?p ?o.
-#?s a <http://dbpedia.org/class/yago/License106549661>.
-#[] dbo:license ?s.
-#}
-
-#wget -O license.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FLicense106549661%3E.%0D%0A%5B%5D+dbo%3Alicense+%3Fs.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
-#rapper -i ntriples -c license.nt
-
-#construct {?s ?p ?o.}
-#{
-#?s ?p ?o.
 #?s a <http://dbpedia.org/ontology/ProgrammingLanguage>.
 #}
 
@@ -33,7 +23,7 @@
 
 #wget -O os.nt 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=construct+%7B%3Fs+%3Fp+%3Fo.%7D%0D%0A%7B%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%3Fs+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FOperatingSystem106568134%3E.%0D%0A%7D&format=text%2Fplain&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on&run=+Run+Query+'
 
-#cat license.nt programminglanguage.nt language.nt os.nt | sort -o dbpedia.nt
+#cat programminglanguage.nt language.nt os.nt | sort -o dbpedia.nt
 
 # operating system excluding outliers
 #PREFIX ui: <http://www.w3.org/ns/ui#>
