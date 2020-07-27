@@ -194,7 +194,7 @@ hito:GnuHealth
     hito:homepage <https://www.gnuhealth.org/> ;
     hito:interoperability hito:HL7, hito:HL7_FHIR, hito:ICD10 ;
     hito:language dbr:English_language ;
-    hito:license hito:GNU_General_Public_License ;
+    hito:license <http://www.ebi.ac.uk/swo/license/GNU_General_Public_License> ;
     hito:operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
     hito:organizationalUnit hito:GeneralPractitionerPracticeSiteEnvironmentSctid394761003, hito:HealthCenterEnvironmentSctid264361005, hito:HospitalEnvironmentSctid22232009 ;
     hito:programmingLanguage <http://dbpedia.org/resource/http://dbpedia.org/resource/Python_(programming_language)> ;
