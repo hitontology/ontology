@@ -433,12 +433,12 @@ hito:WhoDhiKnowledgeManagementSystem
     a hito:ApplicationSystemClassified ;
     rdfs:label "Knowledge management system"@en .
 
-hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement
+hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:memberNr "2.10" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage and exchange laboratory and diagnostic orders and results."@en ;
-    rdfs:label "Laboratory and Diagnostics Imaging Manangement"@en .
+    rdfs:label "Laboratory and Diagnostics Imaging Management"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
