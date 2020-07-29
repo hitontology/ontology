@@ -32,7 +32,7 @@ hito:DicomScriptingForClinicalRoutine
     rdfs:label "DICOM scripting for clinical routine"@en .
 
 hito:DicomServer
-    hito:applicationSystemClassified hito:PictureArchivingAndCommunicationSystem ;
+    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
     a hito:ApplicationSystemCitation ;
     rdfs:label "Dicom server"@en .
 
@@ -41,22 +41,22 @@ hito:EvaluationsReport
     rdfs:label "Evaluations Report"@en .
 
 hito:ImageArchiving
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Archiving"@en .
 
 hito:ImageCommunication
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Communication"@en .
 
 hito:ImageDistribution
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Distribution"@en .
 
 hito:ImageManagement
-    hito:enterpriseFunctionClassified hito:LaboratoryAndDiagnosticsImagingManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Image Management"@en .
 
@@ -68,13 +68,13 @@ hito:ListingAvailableServers
     a hito:FeatureCitation ;
     rdfs:label "Listing available servers"@en .
 
-hito:Minipacs
-    hito:applicationSystemClassified hito:PictureArchivingAndCommunicationSystem ;
+hito:MiniPacs
+    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
     a hito:ApplicationSystemCitation ;
     rdfs:label "mini-PACS"@en .
 
 hito:Orthanc
-    hito:applicationSystem hito:DicomServer, hito:Minipacs ;
+    hito:applicationSystem hito:DicomServer, hito:MiniPacs ;
     hito:client hito:WebBased ;
     hito:databaseSystem hito:PostgreSql ;
     hito:directEnterpriseFunction hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManagement, hito:ResearchAndEducation ;
@@ -98,24 +98,26 @@ hito:PluginMechanismToAddNewModules
     rdfs:label "plugin mechanism to add new modules"@en .
 
 hito:RadiologistSctid66862007
-    hito:userGroupClassified hito:Radiologist_occupation ;
+    hito:userGroupClassified hito:SnomedRadiologistOccupation ;
     a hito:UserGroupCitation ;
+    rdfs:comment "SCTID: 66862007"@en ;
     rdfs:label "Radiologist"@en .
 
 hito:RadiologyDepartmentSctid309964003
-    hito:organizationalUnitClassified hito:RadiologyDepartment ;
+    hito:organizationalUnitClassified hito:SnomedRadiologyDepartment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 309964003"@en ;
     rdfs:label "Radiology department"@en .
 
 hito:ResearchAboutAutomatedAnalysisOfMedicalImages
-    hito:enterpriseFunctionClassified hito:ResearchAndEducation ;
+    hito:enterpriseFunctionClassified hito:BbResearchAndEducation ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "research about the automated analysis of medical images"@en .
 
 hito:ResearcherSctid769038007
-    hito:userGroupClassified hito:Researcher_occupation ;
+    hito:userGroupClassified hito:SnomedResearcherOccupation ;
     a hito:UserGroupCitation ;
+    rdfs:comment "SCTID: 769038007"@en ;
     rdfs:label "Researcher"@en .
 
 hito:RetrieveImages
