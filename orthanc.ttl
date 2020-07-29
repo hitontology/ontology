@@ -77,7 +77,7 @@ hito:Orthanc
     hito:applicationSystem hito:DicomServer, hito:MiniPacs ;
     hito:client hito:WebBased ;
     hito:databaseSystem hito:PostgreSql ;
-    hito:directEnterpriseFunction hito:ExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManagement, hito:ResearchAndEducation ;
+    hito:directEnterpriseFunction hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:BbResearchAndEducation, hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     hito:directFeature hito:CaptureFromDigitalDevices ;
     hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement, hito:ResearchAboutAutomatedAnalysisOfMedicalImages ;
     hito:feature hito:BringDicomImagesToComputerVisionCommunity, hito:DataManagementForClinicalRoutineAndMedicalResearch, hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:DicomScriptingForClinicalRoutine, hito:EvaluationsReport, hito:InjurySurveillanceSystemRegistrationReport, hito:ListingAvailableServers, hito:PluginMechanismToAddNewModules, hito:RetrieveImages, hito:RetrievingDicomResourcesFromWado-RsServer, hito:SearchContent, hito:SendImages, hito:SendingDicomResourcesToStow-RsServer, hito:TestConnection, hito:TopDiseasesReport ;

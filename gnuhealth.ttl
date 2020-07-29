@@ -179,7 +179,7 @@ hito:GeneticInformation
     rdfs:label "Genetic Information"@en .
 
 hito:Genetics
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Genetics"@en .
 
@@ -207,7 +207,7 @@ hito:GroupsAccessManagement
     rdfs:label "Groups Access Management"@en .
 
 hito:GynecologicCare
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Gynecologic Care"@en .
 
@@ -258,7 +258,7 @@ hito:InpatientManagementInformation
     rdfs:label "Inpatient Management information"@en .
 
 hito:IntensiveCare
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Intensive Care"@en .
 
@@ -279,7 +279,7 @@ hito:LabOrdersAndHealthServices
     rdfs:label "Lab orders and Health Services"@en .
 
 hito:LaboratoryManagement
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures, hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:LaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 
@@ -316,7 +316,7 @@ hito:MedicationPlan
     rdfs:label "Medication Plan"@en .
 
 hito:NeglectedTropicalDiseasesCare
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Neglected Tropical Diseases Care"@en .
 
@@ -334,7 +334,7 @@ hito:NutritionInformation
     rdfs:label "Nutrition information"@en .
 
 hito:Obstetrics
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Obstetrics"@en .
 
@@ -352,7 +352,7 @@ hito:PatientAppointment
     rdfs:label "Patient Appointment"@en .
 
 hito:PatientEvaluations
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures, hito:BbMedicalAdmission ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:BbMedicalAdmission ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Evaluations"@en .
 
@@ -374,7 +374,7 @@ hito:PatientRoundingInformationNeurologicRespiratoryInclXray
     rdfs:label "Patient Rounding information (Neurologic Respiratory, incl. X-Ray)"@en .
 
 hito:PediatricCare
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Pediatric Care"@en .
 
@@ -460,7 +460,7 @@ hito:SurgeriesPerPatient
     rdfs:label "Surgeries per Patient"@en .
 
 hito:Surgery
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticAndTherapeuticProcedures ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Surgery"@en .
 
