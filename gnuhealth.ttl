@@ -12,7 +12,7 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:AccessManagement
-    hito:enterpriseFunctionClassified hito:BbUnknownFunctionClassified ;
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Access Management"@en .
 
@@ -408,7 +408,7 @@ hito:PuerperiumMonitor
     rdfs:label "Puerperium Monitor"@en .
 
 hito:PurchaseAdministration
-    hito:enterpriseFunctionClassified hito:BbUnknownFunctionClassified ;
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Purchase Administration"@en .
 
@@ -430,7 +430,7 @@ hito:Shipments
     rdfs:label "Shipments"@en .
 
 hito:Socioeconomics
-    hito:enterpriseFunctionClassified hito:BbUnknownFunctionClassified ;
+    hito:enterpriseFunctionClassified hito:UnknownFunctionClassified ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Socioeconomics"@en .
 
