@@ -17,14 +17,14 @@ hito:Bahmni
     hito:enterpriseFunction hito:Billing, hito:ClinicalServices, hito:InpatientManagement, hito:Laboratory, hito:PatientRegistration, hito:Reporting, hito:StockManagement ;
     hito:feature hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:ClinicalReporting, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:DisplayLaboratoryWorkload, hito:MaintainAccurateRecords, hito:MaintainClinicalRecords, hito:ManageAccurateRecords, hito:ManagePatientOrders, hito:ManagePatientsAdmissions, hito:ManageSamples, hito:ManageStock, hito:ManageTests, hito:MonitorStockLevels, hito:MoveStock, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:PerformBedAssignments, hito:PerformOperationalReporting, hito:PrintPatientId, hito:PublicHealthReporting, hito:ReorderStock, hito:SearchPatients, hito:SendSamplesForReferrals, hito:TrackStock, hito:TrackWardOccupancy, hito:UseDrugPrescriptionTemplates ;
     hito:homepage <https://www.bahmni.org/> ;
-    dcterms:source <https://www.medfloss.org/node/1103> ;
     hito:language dbr:English_language ;
     hito:license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     hito:operatingSystem dbr:CentOS ;
     hito:organizationalUnit hito:BahmniEmergency, hito:BahmniGynaecology, hito:BahmniIntakeOutput, hito:BahmniSurgery ;
     hito:programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    dcterms:source <https://www.medfloss.org/node/1103> ;
     a hito:SoftwareProduct ;
-    rdfs:label "Bahmni" .
+    rdfs:label "Bahmni"@en .
 
 hito:BahmniEmergency
     hito:classifiedUnitSMOMEDCT hito:AccidentAndEmergencyDepartmentEnvironment ;
@@ -46,7 +46,7 @@ hito:BahmniSurgery
     rdfs:label "surgery"@en .
 
 hito:Billing
-    hito:enterpriseFunctionClassified hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:WhoDhiHealthFinancing ;
     hito:supportedByFeatureCitation hito:MaintainAccurateRecords, hito:ManageAccurateRecords ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
@@ -56,69 +56,65 @@ hito:CaptureClinicalRecords
     rdfs:label "Capture Clinical Records"@en .
 
 hito:CaptureDrugPrescriptions
-    hito:featureClassified hito:ReportEffectsAdverseDrug, hito:TrackClientsMedicationConsumption, hito:TransmitOrTrackPrescriptionOrders ;
+    hito:featureClassified hito:WhoDhiReportEffectsAdverseDrug, hito:WhoDhiTrackClientsMedicationConsumption, hito:WhoDhiTransmitOrTrackPrescriptionOrders ;
     a hito:FeatureCitation ;
     rdfs:label "Capture Drug Prescriptions"@en .
 
 hito:ClinicalReporting
-    hito:featureClassified hito:IdentifyClientsInNeedOfServices, hito:ScheduleHealthcareProvidersActivities ;
+    hito:featureClassified hito:WhoDhiIdentifyClientsInNeedOfServices, hito:WhoDhiScheduleHealthcareProvidersActivities ;
     a hito:FeatureCitation ;
     rdfs:label "Clinical Reporting"@en .
 
 hito:ClinicalServices
-    hito:enterpriseFunctionClassified hito:ClientHealthRecords, hito:HealthWorkerActivityPlanningAndScheduling, hito:HealthcareProviderCommunication, hito:HealthcareProviderTraining, hito:PrescriptionAndMedicationManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiClientHealthRecords, hito:WhoDhiHealthWorkerActivityPlanningAndScheduling, hito:WhoDhiHealthcareProviderCommunication, hito:WhoDhiHealthcareProviderTraining, hito:WhoDhiPrescriptionAndMedicationManagement ;
     hito:supportedByFeatureCitation hito:CaptureClinicalRecords, hito:CaptureDrugPrescriptions, hito:CreateDiseaseSpecificForms, hito:CreateGeneralForms, hito:MaintainClinicalRecords, hito:OrderInvestigation, hito:OrderLab, hito:OrderRadiology, hito:UseDrugPrescriptionTemplates ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Clinical Services"@en .
 
 hito:CreateDiseaseSpecificForms
-    hito:featureClassified hito:ScheduleHealthcareProvidersActivities ;
+    hito:featureClassified hito:WhoDhiScheduleHealthcareProvidersActivities ;
     a hito:FeatureCitation ;
     rdfs:label "Create Disease Specific Forms"@en .
 
 hito:CreateGeneralForms
-    hito:featureClassified hito:EnrolClientForHealthServicesclinicalCarePlan, hito:VerifyClientUniqueIdentity ;
+    hito:featureClassified hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan, hito:WhoDhiVerifyClientUniqueIdentity ;
     a hito:FeatureCitation ;
     rdfs:label "Create General Forms"@en .
 
-hito:DigitalOcean
-    a hito:CloudPlatform ;
-    rdfs:label "Digital Ocean"@en .
-
 hito:DisplayLaboratoryWorkload
-    hito:featureClassified hito:CaptureFromDigitalDevices, hito:TrackBiologicalSpecimens, hito:TransmitDiagnosticOrdersDiagnosticResults, hito:TransmitToHealthcareProviderAndTrack ;
+    hito:featureClassified hito:WhoDhiCaptureFromDigitalDevices, hito:WhoDhiTrackBiologicalSpecimens, hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults, hito:WhoDhiTransmitToHealthcareProviderAndTrack ;
     a hito:FeatureCitation ;
     rdfs:label "Display Laboratory Workload"@en .
 
 hito:InpatientManagement
-    hito:enterpriseFunctionClassified hito:ClientHealthRecords, hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:WhoDhiClientHealthRecords, hito:WhoDhiClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:ManagePatientsAdmissions, hito:PerformBedAssignments, hito:SendSamplesForReferrals, hito:TrackWardOccupancy ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Inpatient Management"@en .
 
 hito:Laboratory
-    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:WhoDhiClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:DisplayLaboratoryWorkload, hito:ManagePatientOrders, hito:ManageSamples, hito:ManageTests ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory"@en .
 
 hito:MaintainAccurateRecords
-    hito:featureClassified hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:featureClassified hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Maintain Accurate Records"@en .
 
 hito:MaintainClinicalRecords
-    hito:featureClassified hito:ManageClientsStructuredClinicalRecords, hito:ManageClientsUnstructuredClinicalRecords, hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:featureClassified hito:WhoDhiManageClientsStructuredClinicalRecords, hito:WhoDhiManageClientsUnstructuredClinicalRecords, hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Maintain Clinical Records"@en .
 
 hito:ManageAccurateRecords
-    hito:featureClassified hito:LongitudinalTrackingOfClientsHealthStatusAndServices, hito:ManageClientsStructuredClinicalRecords ;
+    hito:featureClassified hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, hito:WhoDhiManageClientsStructuredClinicalRecords ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Accurate Records"@en .
 
 hito:ManagePatientOrders
-    hito:featureClassified hito:LongitudinalTrackingOfClientsHealthStatusAndServices, hito:ManageClientsStructuredClinicalRecords, hito:ManageClientsUnstructuredClinicalRecords, hito:RoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:featureClassified hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, hito:WhoDhiManageClientsStructuredClinicalRecords, hito:WhoDhiManageClientsUnstructuredClinicalRecords, hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Patient Orders"@en .
 
@@ -127,22 +123,22 @@ hito:ManagePatientsAdmissions
     rdfs:label "Manage Patients Admissions"@en .
 
 hito:ManageSamples
-    hito:featureClassified hito:TransmitToHealthcareProviderAndTrack ;
+    hito:featureClassified hito:WhoDhiTransmitToHealthcareProviderAndTrack ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Samples"@en .
 
 hito:ManageStock
-    hito:featureClassified hito:ManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, hito:ManageOfCommodities, hito:MonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:MonitorStatusOfHealthEquipment, hito:NotifyHealthCommodities, hito:ReportCounterfeitOrSubstandardDrugsByClients ;
+    hito:featureClassified hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, hito:WhoDhiManageOfCommodities, hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:WhoDhiMonitorStatusOfHealthEquipment, hito:WhoDhiNotifyHealthCommodities, hito:WhoDhiReportCounterfeitOrSubstandardDrugsByClients ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Stock"@en .
 
 hito:ManageTests
-    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Tests"@en .
 
 hito:MonitorStockLevels
-    hito:featureClassified hito:MonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:MonitorStatusOfHealthEquipment, hito:NotifyHealthCommodities, hito:RegisterAndHealthCommoditiesProcurement ;
+    hito:featureClassified hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:WhoDhiMonitorStatusOfHealthEquipment, hito:WhoDhiNotifyHealthCommodities, hito:WhoDhiRegisterAndHealthCommoditiesProcurement ;
     a hito:FeatureCitation ;
     rdfs:label "Monitor Stock Levels"@en .
 
@@ -150,26 +146,22 @@ hito:MoveStock
     a hito:FeatureCitation ;
     rdfs:label "Move Stock"@en .
 
-hito:MySql
-    a hito:DatabaseSystem ;
-    rdfs:label "MySQL"@en .
-
 hito:OrderInvestigation
     a hito:FeatureCitation ;
     rdfs:label "Order Investigation"@en .
 
 hito:OrderLab
-    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a hito:FeatureCitation ;
     rdfs:label "Order Lab"@en .
 
 hito:OrderRadiology
-    hito:featureClassified hito:TransmitDiagnosticOrdersDiagnosticResults ;
+    hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a hito:FeatureCitation ;
     rdfs:label "Order Radiology"@en .
 
 hito:PatientRegistration
-    hito:enterpriseFunctionClassified hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:WhoDhiClientIdentificationAndRegistration ;
     hito:supportedByFeatureCitation hito:PrintPatientId, hito:SearchPatients ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Patient Registration"@en .
@@ -182,22 +174,18 @@ hito:PerformOperationalReporting
     a hito:FeatureCitation ;
     rdfs:label "Perform Operational Reporting"@en .
 
-hito:PostgreSql
-    a hito:DatabaseSystem ;
-    rdfs:label "PostgreSQL"@en .
-
 hito:PrintPatientId
-    hito:featureClassified hito:VerifyClientUniqueIdentity ;
+    hito:featureClassified hito:WhoDhiVerifyClientUniqueIdentity ;
     a hito:FeatureCitation ;
     rdfs:label "Print Patient Id"@en .
 
 hito:PublicHealthReporting
-    hito:featureClassified hito:ReportingOfHealthSystemFeedbackByClients, hito:ReportingOfPublicHealthEventsByClient ;
+    hito:featureClassified hito:WhoDhiReportingOfHealthSystemFeedbackByClients, hito:WhoDhiReportingOfPublicHealthEventsByClient ;
     a hito:FeatureCitation ;
     rdfs:label "Public Health Reporting"@en .
 
 hito:ReorderStock
-    hito:featureClassified hito:CoordinateEmergencyResponseAndTransport, hito:ManageReferralsBetweenHealthAndOtherSectors, hito:ManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    hito:featureClassified hito:WhoDhiCoordinateEmergencyResponseAndTransport, hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors, hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
     a hito:FeatureCitation ;
     rdfs:label "Reorder Stock"@en .
 
@@ -211,12 +199,12 @@ hito:SearchPatients
     rdfs:label "Search Patients"@en .
 
 hito:SendSamplesForReferrals
-    hito:featureClassified hito:TransmissionOfMedicalDataToHealthcareProvider ;
+    hito:featureClassified hito:WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
     a hito:FeatureCitation ;
     rdfs:label "Send Samples For Referrals"@en .
 
 hito:StockManagement
-    hito:enterpriseFunctionClassified hito:SupplyChainManagement ;
+    hito:enterpriseFunctionClassified hito:WhoDhiSupplyChainManagement ;
     hito:supportedByFeatureCitation hito:ManageStock, hito:MonitorStockLevels, hito:MoveStock, hito:ReorderStock, hito:TrackStock ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
@@ -230,7 +218,7 @@ hito:TrackWardOccupancy
     rdfs:label "Track Ward Occupancy"@en .
 
 hito:UseDrugPrescriptionTemplates
-    hito:featureClassified hito:ReportEffectsAdverseDrug ;
+    hito:featureClassified hito:WhoDhiReportEffectsAdverseDrug ;
     a hito:FeatureCitation ;
     rdfs:label "Use Drug Prescription Templates"@en .
 
