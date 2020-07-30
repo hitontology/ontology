@@ -386,8 +386,10 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:range :FeatureClassified;
                     rdfs:label "subfeature of"@en .
 
+
 ###  http://hitontology.eu/ontology/supports
 :supports rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :subClassifiedOf ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :EnterpriseFunctionClassified ;
                     rdfs:label "supports"@en .
@@ -398,6 +400,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :Client ;
                     rdfs:label "client"@en .
+
 
 ###  http://hitontology.eu/ontology/supportedByFeatureCitation
 :supportedByFeatureCitation rdf:type owl:ObjectProperty ;
