@@ -104,7 +104,7 @@ hito:RadiologistSctid66862007
     rdfs:label "Radiologist"@en .
 
 hito:RadiologyDepartmentSctid309964003
-    hito:organizationalUnitClassified hito:SnomedRadiologyDepartment ;
+    hito:organizationalUnitClassified hito:SnomedRadiologyDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 309964003"@en ;
     rdfs:label "Radiology department"@en .
