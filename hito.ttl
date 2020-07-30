@@ -131,12 +131,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "classified"@en .
 
 
-###  http://hitontology.eu/ontology/classifiedComponent
-:classifiedComponent rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Classified;
-                    rdfs:range :Classified;
-                    rdfs:label "classified component"@en .
-
 ###  http://hitontology.eu/ontology/featureClassified
 :featureClassified rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :classified ;
@@ -251,13 +245,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:range :FeatureCatalogue ;
                            rdfs:label "feature catalogue"@en .
 
-
-###  http://hitontology.eu/ontology/featureClassifiedComponent
-:featureClassifiedComponent rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :classifiedComponent ;
-                    rdfs:domain :FeatureClassified;
-                    rdfs:range :FeatureClassified;
-                    rdfs:label "classified feature component"@en .
 
 ###  http://hitontology.eu/ontology/hasDOI
 :hasDOI rdf:type owl:ObjectProperty ;
@@ -382,6 +369,22 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct;
                     rdfs:range :SoftwareProduct;
                     rdfs:label "software product component"@en .
+
+
+###  http://hitontology.eu/ontology/subClassifiedOf
+:subClassifiedOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Classified;
+                    rdfs:range :Classified;
+                    rdfs:label "subclassified of"@en ;
+                    rdfs:comment "The classified in subject position is a child of classified in object position."@en .
+
+
+###  http://hitontology.eu/ontology/subFeatureOf
+:featureClassifiedComponent rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :subClassifiedOf ;
+                    rdfs:domain :FeatureClassified;
+                    rdfs:range :FeatureClassified;
+                    rdfs:label "subfeature of"@en .
 
 ###  http://hitontology.eu/ontology/supports
 :supports rdf:type owl:ObjectProperty ;

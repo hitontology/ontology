@@ -19,7 +19,7 @@ hito:WhoDhi1-0
 hito:WhoDhiAccessByClientToOwnMedicalRecords
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.4.1" ;
-    hito:subfeatureOf hito:WhoDhiPersonalHealthTracking ;
+    hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Access by client to own medical records"@en ;
     skos:altLabel "ability for clients to track their health history"@en, "patient’s own access to their health record"@en, "self-access to client health record"@en .
@@ -27,7 +27,7 @@ hito:WhoDhiAccessByClientToOwnMedicalRecords
 hito:WhoDhiActiveDataCapturedocumentationByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.4.3" ;
-    hito:subfeatureOf hito:WhoDhiPersonalHealthTracking ;
+    hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Active data capture/documentation by client"@en ;
     skos:altLabel "capture patient originated data"@en, "client documentation of health status and activities"@en, "journaling"@en, "personal health monitoring"@en, "self-care"@en, "self-monitoring"@en, "self-tracking"@en .
@@ -51,7 +51,7 @@ hito:WhoDhiAssessHealthFacilities
 hito:WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.1.4" ;
-    hito:subfeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
+    hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Automated analysis of data to generate new information or predictions on future events"@en ;
     skos:altLabel "artificial intelligence"@en, "machine learning"@en, "predictive analytics"@en .
@@ -109,7 +109,7 @@ hito:WhoDhiCivilRegistrationAndVitalStatistics
 hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.2.3" ;
-    hito:subfeatureOf hito:WhoDhiDataCoding ;
+    hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Classify disease codes or cause of mortality"@en ;
     skos:altLabel "ICD coding"@en, "clinical coding for reporting and insurance"@en, "mapping local terminology, codes, and formats"@en, "recording cause of death"@en .
@@ -156,7 +156,7 @@ hito:WhoDhiClientIdentificationAndRegistration
 hito:WhoDhiClientLookupOfHealthInformation
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.6.1" ;
-    hito:subfeatureOf hito:WhoDhiOndemandInformationServicesToClients ;
+    hito:subFeatureOf hito:WhoDhiOndemandInformationServicesToClients ;
     a hito:FeatureClassified ;
     rdfs:label "Client look-up of health information"@en ;
     skos:altLabel "client searches or looks up information on a health topic"@en, "decision support for clients"@en .
@@ -237,7 +237,7 @@ hito:WhoDhiDataCollectionManagementAndUse
 hito:WhoDhiDataExchangeAcrossSystems
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.4.1" ;
-    hito:subfeatureOf hito:WhoDhiDataExchangeAndInteroperability ;
+    hito:subFeatureOf hito:WhoDhiDataExchangeAndInteroperability ;
     a hito:FeatureClassified ;
     rdfs:label "Data exchange across systems"@en ;
     skos:altLabel "data mediation"@en, "data orchestration"@en, "information exchange"@en, "interoperability and accessibility"@en, "interoperability layer"@en .
@@ -264,7 +264,7 @@ hito:WhoDhiDataServiceFeatureCatalogue
 hito:WhoDhiDataStorageAndAggregation
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.1.2" ;
-    hito:subfeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
+    hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Data storage and aggregation"@en ;
     skos:altLabel "data warehouse"@en, "repository"@en .
@@ -272,7 +272,7 @@ hito:WhoDhiDataStorageAndAggregation
 hito:WhoDhiDataSynthesisAndVisualization
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.1.3" ;
-    hito:subfeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
+    hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Data synthesis and visualization"@en ;
     skos:altLabel "business intelligence"@en, "presentations of data"@en, "report generation"@en, "reporting dashboards"@en .
@@ -556,7 +556,7 @@ hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector
 hito:WhoDhiMapLocationOfClientsAndHouseholds
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.3.3" ;
-    hito:subfeatureOf hito:WhoDhiLocationMapping ;
+    hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of clients and households"@en ;
     skos:altLabel "GPS mapping"@en, "demarcation of catchment areas"@en, "geospatial visualization"@en, "mapping coverage areas"@en, "mapping of health worker route to track the services provided"@en .
@@ -564,7 +564,7 @@ hito:WhoDhiMapLocationOfClientsAndHouseholds
 hito:WhoDhiMapLocationOfHealthEvents
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.3.2" ;
-    hito:subfeatureOf hito:WhoDhiLocationMapping ;
+    hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of health events"@en ;
     skos:altLabel "GPS mapping"@en, "Geospatial visualization"@en .
@@ -572,7 +572,7 @@ hito:WhoDhiMapLocationOfHealthEvents
 hito:WhoDhiMapLocationOfHealthFacilitiesstructures
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.3.1" ;
-    hito:subfeatureOf hito:WhoDhiLocationMapping ;
+    hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of health facilities/structures"@en ;
     skos:altLabel "Global Positioning System (GPS) mapping"@en .
@@ -580,7 +580,7 @@ hito:WhoDhiMapLocationOfHealthFacilitiesstructures
 hito:WhoDhiMapLocationOfHealthcareProviders
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.3.4" ;
-    hito:subfeatureOf hito:WhoDhiLocationMapping ;
+    hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of healthcare provider(s)"@en ;
     skos:altLabel "mapping of health worker route to track the services provided"@en .
@@ -588,7 +588,7 @@ hito:WhoDhiMapLocationOfHealthcareProviders
 hito:WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.2.2" ;
-    hito:subfeatureOf hito:WhoDhiDataCoding ;
+    hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Merge, de-duplicate, and curate coded datasets or terminologies"@en ;
     skos:altLabel "maintenance and versioning of health informatics terminology standards"@en, "semantic interoperability"@en, "terminology services"@en .
@@ -620,7 +620,7 @@ hito:WhoDhiMonitorStatusOfHealthEquipment
 hito:WhoDhiNonRoutineDataCollectionAndManagement
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.1.1" ;
-    hito:subfeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
+    hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Non routine data collection and management"@en ;
     skos:altLabel "digital data collection"@en, "electronic data collection"@en, "mobile based surveys, using applications such as OpenDataKit (ODK), Enketo, FormHub, etc"@en .
@@ -667,7 +667,7 @@ hito:WhoDhiOndemandInformationServicesToClients
 hito:WhoDhiParseUnstructuredDataIntoStructuredData
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:memberNr "4.2.1" ;
-    hito:subfeatureOf hito:WhoDhiDataCoding ;
+    hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Parse unstructured data into structured data"@en ;
     skos:altLabel "automated data cleaning"@en, "dirty data management"@en .
@@ -675,7 +675,7 @@ hito:WhoDhiParseUnstructuredDataIntoStructuredData
 hito:WhoDhiPeerGroupForClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.3.1" ;
-    hito:subfeatureOf hito:WhoDhiClientToClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiClientToClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Peer group for clients"@en ;
     skos:altLabel "peer group"@en, "peer learning"@en, "peer network"@en, "peer support"@en, "peer-to-peer groups"@en .
@@ -819,7 +819,7 @@ hito:WhoDhiReportEffectsAdverseDrug
 hito:WhoDhiReportingOfHealthSystemFeedbackByClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.5.1" ;
-    hito:subfeatureOf hito:WhoDhiCitizenBasedReporting ;
+    hito:subFeatureOf hito:WhoDhiCitizenBasedReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Reporting of health system feedback by clients"@en ;
     skos:altLabel "accountability monitoring"@en, "accountability reporting"@en, "crowdsourced feedback"@en, "interaction with health worker"@en, "patient/client feedback"@en, "public reporting on health system issues, such as the availability and quality of services received"@en, "quality of care feedback"@en, "satisfaction with services"@en .
@@ -827,7 +827,7 @@ hito:WhoDhiReportingOfHealthSystemFeedbackByClients
 hito:WhoDhiReportingOfPublicHealthEventsByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.5.2" ;
-    hito:subfeatureOf hito:WhoDhiCitizenBasedReporting ;
+    hito:subFeatureOf hito:WhoDhiCitizenBasedReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Reporting of public health events by client"@en ;
     skos:altLabel "client reporting"@en, "disease notification"@en, "surveillance notification"@en .
@@ -865,7 +865,7 @@ hito:WhoDhiScreenClientsByRiskOrOtherHealthStatus
 hito:WhoDhiSelfMonitoringOfHealthOrDiagnosticDataByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.4.2" ;
-    hito:subfeatureOf hito:WhoDhiPersonalHealthTracking ;
+    hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Self monitoring of health or diagnostic data by client"@en ;
     skos:altLabel "client’s health data is collected based on a machine a client uses on their own"@en, "personal health monitoring"@en, "self-care"@en, "self-monitoring"@en, "self-tracking"@en, "sensors and wearables for personal health monitoring"@en .
@@ -968,7 +968,7 @@ hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
 hito:WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.1.4" ;
-    hito:subfeatureOf hito:WhoDhiTargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit diagnostics result, or availability of result, to clients"@en ;
     skos:altLabel "laboratory results management"@en, "tests results management"@en .
@@ -976,7 +976,7 @@ hito:WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients
 hito:WhoDhiTransmitHealthEventAlertsToSpecificPopulationGroups
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.1.1" ;
-    hito:subfeatureOf hito:WhoDhiTargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit health event alerts to specific population group(s)"@en ;
     skos:altLabel "disease notification to specific or pre-identified populations"@en, "health promotion messaging"@en, "notification of health events to specific populations based on demographic characteristics"@en, "public health event notification"@en .
@@ -992,7 +992,7 @@ hito:WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders
 hito:WhoDhiTransmitOrManageIncentivesToClientsForHealthServices
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.7.3" ;
-    hito:subfeatureOf hito:WhoDhiClientFinancialTransactions ;
+    hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage incentives to clients for health services"@en ;
     skos:altLabel "cash transfers to clients conditional on health related behaviours"@en .
@@ -1008,7 +1008,7 @@ hito:WhoDhiTransmitOrManageIncentivesToHealthcareProviders
 hito:WhoDhiTransmitOrManageOutOfPocketPaymentsByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.7.1" ;
-    hito:subfeatureOf hito:WhoDhiClientFinancialTransactions ;
+    hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage out of pocket payments by client"@en ;
     skos:altLabel "mobile money payments directly made by client (this can include payments for any health services such as emergency transportation, health fees, etc)"@en .
@@ -1016,7 +1016,7 @@ hito:WhoDhiTransmitOrManageOutOfPocketPaymentsByClient
 hito:WhoDhiTransmitOrManageVouchersToClientForHealthServices
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.7.2" ;
-    hito:subfeatureOf hito:WhoDhiClientFinancialTransactions ;
+    hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage vouchers to client for health services"@en ;
     skos:altLabel "health voucher issuance (e.g. for mosquitonets, for transport, etc) and redemption services"@en .
@@ -1048,7 +1048,7 @@ hito:WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders
 hito:WhoDhiTransmitTargetedAlertsAndRemindersToClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.1.3" ;
-    hito:subfeatureOf hito:WhoDhiTargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit targeted alerts and reminders to client(s)"@en ;
     skos:altLabel "alerts for preventive services and wellness"@en, "communication for retention in care"@en, "continuity of care"@en, "notifications and reminders for appointments, medication adherence, or follow-up services"@en .
@@ -1056,7 +1056,7 @@ hito:WhoDhiTransmitTargetedAlertsAndRemindersToClients
 hito:WhoDhiTransmitTargetedHealthInformationToClientBasedOnHealthStatusOrDemographics
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.1.2" ;
-    hito:subfeatureOf hito:WhoDhiTargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit targeted health information to client based on health status or demographics"@en ;
     skos:altLabel "behavior change communication"@en, "client-centered messaging"@en, "health communication based on a known client’s health status or clinical history"@en, "health education"@en, "health promotion communication"@en .
@@ -1072,7 +1072,7 @@ hito:WhoDhiTransmitToHealthcareProviderAndTrack
 hito:WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.2.2" ;
-    hito:subfeatureOf hito:WhoDhiUntargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiUntargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit untargeted health event alerts to undefined group"@en ;
     skos:altLabel "disease notification"@en, "mass messaging campaign"@en, "public health event notification"@en .
@@ -1080,7 +1080,7 @@ hito:WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup
 hito:WhoDhiTransmitUntargetedHealthInformationToAnUndefinedPopulation
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
     hito:memberNr "1.2.1" ;
-    hito:subfeatureOf hito:WhoDhiUntargetedClientCommunication ;
+    hito:subFeatureOf hito:WhoDhiUntargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit untargeted health information to an undefined population"@en ;
     skos:altLabel "health messaging to undefined target group regardless of demographic characteristics or health status"@en, "mass messaging campaign or communication to an undefined target group"@en .
