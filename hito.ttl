@@ -131,6 +131,12 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:label "classified"@en .
 
 
+###  http://hitontology.eu/ontology/classifiedComponent
+:classifiedComponent rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Classified;
+                    rdfs:range :Classified;
+                    rdfs:label "classified component"@en .
+
 ###  http://hitontology.eu/ontology/featureClassified
 :featureClassified rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :classified ;
@@ -248,7 +254,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/featureClassifiedComponent
 :featureClassifiedComponent rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :softwareProductComponent ;
+                    rdfs:subPropertyOf :classifiedComponent ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :FeatureClassified;
                     rdfs:label "classified feature component"@en .
