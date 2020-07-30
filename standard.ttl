@@ -12,7 +12,7 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:ARFF
-    dcterms:source dbr:Aircraft_rescue_and_firefighting, wikipedia:Aircraft_rescue_and_firefighting ;
+    dcterms:source dbr:Aircraft_rescue_and_firefighting ; 
     a hito:Interoperability ;
     rdfs:comment "Aircraft rescue and firefighting"@en ;
     rdfs:label "ARFF"@en .
