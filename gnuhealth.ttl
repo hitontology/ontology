@@ -33,7 +33,7 @@ hito:AdministrativeData
     rdfs:label "Administrative Data"@en .
 
 hito:AdmissionManagement
-    hito:enterpriseFunctionClassified hito:BbAdministrativeAdmission, hito:ClientIdentificationAndRegistration ;
+    hito:enterpriseFunctionClassified hito:BbAdministrativeAdmission, hito:WhoDhiClientIdentificationAndRegistration ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Admission Management"@en .
 
@@ -148,7 +148,7 @@ hito:EvaluationsReport
     rdfs:label "Evaluations Report"@en .
 
 hito:FinancialAccounting
-    hito:enterpriseFunctionClassified hito:BbFinancialAccounting, hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:BbFinancialAccounting, hito:WhoDhiHealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Financial Accounting"@en .
 
@@ -279,7 +279,7 @@ hito:LabOrdersAndHealthServices
     rdfs:label "Lab orders and Health Services"@en .
 
 hito:LaboratoryManagement
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:LaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 
@@ -391,7 +391,7 @@ hito:PrintingAPatientIdCard
     rdfs:label "Printing a patient ID card"@en .
 
 hito:ProductsManagement
-    hito:enterpriseFunctionClassified hito:BbMaterialAndMedicationManagement, hito:EquipmentAndAssetManagement ;
+    hito:enterpriseFunctionClassified hito:BbMaterialAndMedicationManagement, hito:WhoDhiEquipmentAndAssetManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Products Management"@en .
 
@@ -421,7 +421,7 @@ hito:RequestingALaboratoryTest
     rdfs:label "Requesting a Laboratory Test"@en .
 
 <ServicesManagement/InvoicingPatients>
-    hito:enterpriseFunctionClassified hito:BbAdministrativeDischargeAndFinalBilling, hito:ClientFinancialTransactions, hito:HealthFinancing ;
+    hito:enterpriseFunctionClassified hito:BbAdministrativeDischargeAndFinalBilling, hito:WhoDhiClientFinancialTransactions, hito:WhoDhiHealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Services Management/Invoicing Patients"@en .
 
@@ -439,7 +439,7 @@ hito:StockLocations
     rdfs:label "Stock Locations"@en .
 
 hito:StockManagement
-    hito:enterpriseFunctionClassified hito:BbSupplyAndDisposalManagement, hito:SupplyChainManagement ;
+    hito:enterpriseFunctionClassified hito:BbSupplyAndDisposalManagement, hito:WhoDhiSupplyChainManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
 
