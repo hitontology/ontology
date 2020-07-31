@@ -279,7 +279,7 @@ hito:LabOrdersAndHealthServices
     rdfs:label "Lab orders and Health Services"@en .
 
 hito:LaboratoryManagement
-    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
+    hito:enterpriseFunctionClassified hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 

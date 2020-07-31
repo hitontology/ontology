@@ -59,7 +59,7 @@ hito:WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureE
 hito:WhoDhiCaptureFromDigitalDevices
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.10.3" ;
-    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
+    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Capture from digital devices"@en ;
     skos:altLabel "diagnostic accessories added to digital devices"@en, "point of care diagnostics"@en .
@@ -920,7 +920,7 @@ hito:WhoDhiTrackAndManageInsuranceReimbursement
 hito:WhoDhiTrackBiologicalSpecimens
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.10.4" ;
-    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
+    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Track biological specimens"@en ;
     skos:altLabel "tracking of blood donations"@en .
@@ -960,7 +960,7 @@ hito:WhoDhiTransmissionOfMedicalDataToHealthcareProvider
 hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.10.2" ;
-    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
+    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit diagnostic orders diagnostic results"@en ;
     skos:altLabel "laboratory test requisition and management"@en .
@@ -1064,7 +1064,7 @@ hito:WhoDhiTransmitTargetedHealthInformationToClientBasedOnHealthStatusOrDemogra
 hito:WhoDhiTransmitToHealthcareProviderAndTrack
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
     hito:memberNr "2.10.1" ;
-    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManangement ;
+    hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit to healthcare provider and track"@en ;
     skos:altLabel "laboratory results management"@en, "tests results communication between healthcare providers"@en .
