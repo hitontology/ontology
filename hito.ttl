@@ -554,7 +554,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/Citation
-:Classification rdf:type owl:Class ;
+:Citation rdf:type owl:Class ;
          	rdfs:label "Citation"@en .
 
 ###  http://hitontology.eu/ontology/Classification
@@ -563,7 +563,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/Classified
-:Classification rdf:type owl:Class ;
+:Classified rdf:type owl:Class ;
          	rdfs:label "Classified"@en .
 
 
