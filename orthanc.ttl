@@ -11,140 +11,140 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
-hito:BringDicomImagesToComputerVisionCommunity
-    a hito:FeatureCitation ;
-    rdfs:label "Bring DICOM images to the Computer Vision Community"@en .
-
-hito:DataManagementForClinicalRoutineAndMedicalResearch
-    a hito:FeatureCitation ;
-    rdfs:label "data management for clinical routine and medical research"@en .
-
-hito:DicomIdentifiers
-    a hito:FeatureCitation ;
-    rdfs:label "DICOM identifiers"@en .
-
-hito:DicomNetworkProtocol
-    a hito:FeatureCitation ;
-    rdfs:label "DICOM network protocol"@en .
-
-hito:DicomScriptingForClinicalRoutine
-    a hito:FeatureCitation ;
-    rdfs:label "DICOM scripting for clinical routine"@en .
-
-hito:DicomServer
-    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
-    a hito:ApplicationSystemCitation ;
-    rdfs:label "Dicom server"@en .
-
-hito:EvaluationsReport
-    a hito:FeatureCitation ;
-    rdfs:label "Evaluations Report"@en .
-
-hito:ImageArchiving
-    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Image Archiving"@en .
-
-hito:ImageCommunication
-    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Image Communication"@en .
-
-hito:ImageDistribution
-    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Image Distribution"@en .
-
-hito:ImageManagement
-    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "Image Management"@en .
-
-hito:InjurySurveillanceSystemRegistrationReport
-    a hito:FeatureCitation ;
-    rdfs:label "Injury Surveillance System Registration report"@en .
-
-hito:ListingAvailableServers
-    a hito:FeatureCitation ;
-    rdfs:label "Listing available servers"@en .
-
-hito:MiniPacs
-    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
-    a hito:ApplicationSystemCitation ;
-    rdfs:label "mini-PACS"@en .
-
 hito:Orthanc
-    hito:applicationSystem hito:DicomServer, hito:MiniPacs ;
+    hito:applicationSystem hito:OrthancAppDicomServer, hito:OrthancAppMiniPacs ;
     hito:client hito:WebBased ;
     hito:databaseSystem hito:PostgreSql ;
     hito:directEnterpriseFunction hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:BbResearchAndEducation, hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     hito:directFeature hito:CaptureFromDigitalDevices ;
-    hito:enterpriseFunction hito:ImageArchiving, hito:ImageCommunication, hito:ImageDistribution, hito:ImageManagement, hito:ResearchAboutAutomatedAnalysisOfMedicalImages ;
-    hito:feature hito:BringDicomImagesToComputerVisionCommunity, hito:DataManagementForClinicalRoutineAndMedicalResearch, hito:DicomIdentifiers, hito:DicomNetworkProtocol, hito:DicomScriptingForClinicalRoutine, hito:EvaluationsReport, hito:InjurySurveillanceSystemRegistrationReport, hito:ListingAvailableServers, hito:PluginMechanismToAddNewModules, hito:RetrieveImages, hito:RetrievingDicomResourcesFromWado-RsServer, hito:SearchContent, hito:SendImages, hito:SendingDicomResourcesToStow-RsServer, hito:TestConnection, hito:TopDiseasesReport ;
+    hito:enterpriseFunction hito:OrthancFuncImageArchiving, hito:OrthancFuncImageCommunication, hito:OrthancFuncImageDistribution, hito:OrthancFuncImageManagement, hito:OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
+    hito:feature hito:OrthancFeatBringDicomImagesToComputerVisionCommunity, hito:OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, hito:OrthancFeatDicomIdentifiers, hito:OrthancFeatDicomNetworkProtocol, hito:OrthancFeatDicomScriptingForClinicalRoutine, hito:OrthancFeatEvaluationsReport, hito:OrthancFeatInjurySurveillanceSystemRegistrationReport, hito:OrthancFeatListingAvailableServers, hito:OrthancFeatPluginMechanismToAddNewModules, hito:OrthancFeatRetrieveImages, hito:OrthancFeatRetrievingDicomResourcesFromWado-RsServer, hito:OrthancFeatSearchContent, hito:OrthancFeatSendImages, hito:OrthancFeatSendingDicomResourcesToStow-RsServer, hito:OrthancFeatTestConnection, hito:OrthancFeatTopDiseasesReport ;
     hito:homepage <https://www.orthanc-server.com/> ;
     hito:interoperability hito:DICOM, hito:REST ;
     hito:language dbr:English_language ;
     hito:license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     hito:operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
-    hito:organizationalUnit hito:RadiologyDepartmentSctid309964003 ;
+    hito:organizationalUnit hito:OrthancOrgRadiologyDepartmentSctid309964003 ;
     hito:programmingLanguage <http://dbpedia.org/resource/C++> ;
     hito:repository <https://hg.orthanc-server.com/> ;
-    hito:userGroup hito:RadiologistSctid66862007, hito:ResearcherSctid769038007 ;
+    hito:userGroup hito:OrthancUgRadiologistSctid66862007, hito:OrthancUgResearcherSctid769038007 ;
     a hito:SoftwareProduct ;
     rdfs:label "Orthanc"@en .
 
-hito:PluginMechanismToAddNewModules
+hito:OrthancAppDicomServer
+    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Dicom server"@en .
+
+hito:OrthancAppMiniPacs
+    hito:applicationSystemClassified hito:BbPictureArchivingAndCommunicationSystem ;
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "mini-PACS"@en .
+
+hito:OrthancFeatBringDicomImagesToComputerVisionCommunity
+    a hito:FeatureCitation ;
+    rdfs:label "Bring DICOM images to the Computer Vision Community"@en .
+
+hito:OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch
+    a hito:FeatureCitation ;
+    rdfs:label "data management for clinical routine and medical research"@en .
+
+hito:OrthancFeatDicomIdentifiers
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM identifiers"@en .
+
+hito:OrthancFeatDicomNetworkProtocol
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM network protocol"@en .
+
+hito:OrthancFeatDicomScriptingForClinicalRoutine
+    a hito:FeatureCitation ;
+    rdfs:label "DICOM scripting for clinical routine"@en .
+
+hito:OrthancFeatEvaluationsReport
+    a hito:FeatureCitation ;
+    rdfs:label "Evaluations Report"@en .
+
+hito:OrthancFeatInjurySurveillanceSystemRegistrationReport
+    a hito:FeatureCitation ;
+    rdfs:label "Injury Surveillance System Registration report"@en .
+
+hito:OrthancFeatListingAvailableServers
+    a hito:FeatureCitation ;
+    rdfs:label "Listing available servers"@en .
+
+hito:OrthancFeatPluginMechanismToAddNewModules
     a hito:FeatureCitation ;
     rdfs:label "plugin mechanism to add new modules"@en .
 
-hito:RadiologistSctid66862007
-    hito:userGroupClassified hito:SnomedRadiologistOccupation ;
-    a hito:UserGroupCitation ;
-    rdfs:comment "SCTID: 66862007"@en ;
-    rdfs:label "Radiologist"@en .
+hito:OrthancFeatRetrieveImages
+    a hito:FeatureCitation ;
+    rdfs:label "Retrieve images"@en .
 
-hito:RadiologyDepartmentSctid309964003
+hito:OrthancFeatRetrievingDicomResourcesFromWado-RsServer
+    a hito:FeatureCitation ;
+    rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
+
+hito:OrthancFeatSearchContent
+    a hito:FeatureCitation ;
+    rdfs:label "Search the content"@en .
+
+hito:OrthancFeatSendImages
+    a hito:FeatureCitation ;
+    rdfs:label "Send images"@en .
+
+hito:OrthancFeatSendingDicomResourcesToStow-RsServer
+    a hito:FeatureCitation ;
+    rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
+
+hito:OrthancFeatTestConnection
+    a hito:FeatureCitation ;
+    rdfs:label "Test the connection"@en .
+
+hito:OrthancFeatTopDiseasesReport
+    a hito:FeatureCitation ;
+    rdfs:label "Top Diseases report"@en .
+
+hito:OrthancFuncImageArchiving
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Archiving"@en .
+
+hito:OrthancFuncImageCommunication
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Communication"@en .
+
+hito:OrthancFuncImageDistribution
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Distribution"@en .
+
+hito:OrthancFuncImageManagement
+    hito:enterpriseFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "Image Management"@en .
+
+hito:OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages
+    hito:enterpriseFunctionClassified hito:BbResearchAndEducation ;
+    a hito:EnterpriseFunctionCitation ;
+    rdfs:label "research about the automated analysis of medical images"@en .
+
+hito:OrthancOrgRadiologyDepartmentSctid309964003
     hito:organizationalUnitClassified hito:SnomedRadiologyDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 309964003"@en ;
     rdfs:label "Radiology department"@en .
 
-hito:ResearchAboutAutomatedAnalysisOfMedicalImages
-    hito:enterpriseFunctionClassified hito:BbResearchAndEducation ;
-    a hito:EnterpriseFunctionCitation ;
-    rdfs:label "research about the automated analysis of medical images"@en .
+hito:OrthancUgRadiologistSctid66862007
+    hito:userGroupClassified hito:SnomedRadiologistOccupation ;
+    a hito:UserGroupCitation ;
+    rdfs:comment "SCTID: 66862007"@en ;
+    rdfs:label "Radiologist"@en .
 
-hito:ResearcherSctid769038007
+hito:OrthancUgResearcherSctid769038007
     hito:userGroupClassified hito:SnomedResearcherOccupation ;
     a hito:UserGroupCitation ;
     rdfs:comment "SCTID: 769038007"@en ;
     rdfs:label "Researcher"@en .
-
-hito:RetrieveImages
-    a hito:FeatureCitation ;
-    rdfs:label "Retrieve images"@en .
-
-hito:RetrievingDicomResourcesFromWado-RsServer
-    a hito:FeatureCitation ;
-    rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
-
-hito:SearchContent
-    a hito:FeatureCitation ;
-    rdfs:label "Search the content"@en .
-
-hito:SendImages
-    a hito:FeatureCitation ;
-    rdfs:label "Send images"@en .
-
-hito:SendingDicomResourcesToStow-RsServer
-    a hito:FeatureCitation ;
-    rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
-
-hito:TestConnection
-    a hito:FeatureCitation ;
-    rdfs:label "Test the connection"@en .
-
-hito:TopDiseasesReport
-    a hito:FeatureCitation ;
-    rdfs:label "Top Diseases report"@en .
 
