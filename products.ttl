@@ -16,22 +16,41 @@
 ###  http://hitontology.eu/ontology/AgfaPacsImpax
 :AgfaPacsImpax rdf:type owl:NamedIndividual ,
                           :SoftwareProduct ;
-                 :feature :automaticAndPaperlessOperations ,
-                                :bookingOfExaminations ,
+                 :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
+                                :AgfaPacsImpaxBookingOfExaminations ,
                                 :patientRegistration ,
-                                :speechRecognition ;
+                                :AgfaPacsImpaxSpeechRecognition ;
                  rdfs:label "Agfa PACS IMPAX"@en .
 
+:AgfaPacsImpaxFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
+                                                     rdfs:label "automatic and paperless operations"@en .
+
+:AgfaPacsImpaxFeaturePatientRegistration a :FeatureCitation;
+                                                     rdfs:label "patient registration"@en .
+
+:AgfaPacsImpaxBookingOfExaminations a :FeatureCitation;
+                                                     rdfs:label "booking of examinations"@en .
 
 ###  http://hitontology.eu/ontology/AgfaRisElefante
 :AgfaRisElefante rdf:type owl:NamedIndividual ,
                             :SoftwareProduct ;
-                   :feature :automaticAndPaperlessOperations ,
-                                  :bookingOfExaminations ,
-                                  :patientRegistration ,
+                   :feature :AgfaRisElefanteAutomaticAndPaperlessOperations ,
+                                  :AgfaRisElefanteBookingOfExaminations ,
+                                  :AgfaRisElefantePatientRegistration ,
                                   :speechRecognition ;
                    rdfs:label "Agfa RIS Elefante"@en .
 
+:AgfaRisElefanteFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
+                                                     rdfs:label "automatic and paperless operations"@en .
+
+:AgfaRisElefantePatientRegistration a :FeatureCitation;
+                                    rdfs:label "patient registration"@en .
+
+:AgfaRisElefanteBookingOfExaminations a :FeatureCitation;
+                                                     rdfs:label "booking of examinations"@en .
+
+:AgfaPacsImpaxSpeechRecognition a :FeatureCitation;
+                                                     rdfs:label "speech recognitioin"@en .
 
 ###  http://hitontology.eu/ontology/AbbottI-Stat
 :AbbottI-Stat rdf:type owl:NamedIndividual ,
@@ -118,15 +137,26 @@
                     :SoftwareProduct ;
            :feature :medicationControlBasedOnNationalDrugDatabase ,
                           :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown ,
-                          :possibilityToContinuePrescribingWhileSafetyAlert ,
+                          :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert ,
                           :safetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses ,
-                          :safetyAlertsInCaseOfAllergies ,
+                          :MedicatorSafetyAlertsInCaseOfAllergies ,
                           :safetyAlertsInCaseOfDrug-drugInteractions ,
-                          :safetyAlertsInCaseOfOverdosing ,
+                          :MedicatorSafetyAlertsInCaseOfOverdosing ,
                           :safetyAlertsInRealTime ,
-                          :standardizedPrescriptionsAndMedicationProtocols ;
+                          :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
            rdfs:label "Medicator"@en .
 
+:MedicatorPossibilityToContinuePrescribingWhileSafetyAlert a :FeatureCitation;
+                                                           rdfs:label "possibility to continue prescribing while safety alert"@en .
+
+:MedicatorSafetyAlertsInCaseOfAllergies a :FeatureCitation;
+                                        rdfs:label "safety alerts in case of allergies"@en .
+
+:MedicatorSafetyAlertsInCaseOfOverdosing a :FeatureCitation;
+                                         rdfs:label "safety alerts in case of overdosing"@en .
+
+:MedicatorStandardizedPrescriptionsAndMedicationProtocols a :FeatureCitation;
+                                         rdfs:label "standardized precriptions and medication protocols"@en .
 
 ###  http://hitontology.eu/ontology/Metavision
 :Metavision rdf:type owl:NamedIndividual ,
@@ -164,9 +194,15 @@
 ###  http://hitontology.eu/ontology/SysmexXS_1000iHaematologyAnalyser
 :SysmexXS_1000iHaematologyAnalyser rdf:type owl:NamedIndividual ,
                                                :SoftwareProduct ;
-                                      :feature :completeTestResults ,
-                                                     :readBarCodeLabel ;
+                                      :feature :SysmexCompleteTestResults ,
+                                                     :SysmexReadBarCodeLabel ;
                                       rdfs:label "Sysmex XS 1000i haematology analyser"@en .
+
+:SysmexCompleteTestResults a :FeatureCitation;
+                           rdfs:label "complete test results"@en.
+
+:SysmexReadBarCodeLabel a :FeatureCitation;
+                           rdfs:label "read bar code label"@en.
 
 
 ###  http://hitontology.eu/ontology/TeleDICOM
@@ -183,17 +219,35 @@
 ###  http://hitontology.eu/ontology/Theriak
 :Theriak rdf:type owl:NamedIndividual ,
                   :SoftwareProduct ;
-         :feature :medicationControlBasedOnNationalDrugDatabase ,
-                        :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown ,
+         :feature :TheriakMedicationControlBasedOnNationalDrugDatabase ,
+                        :TheriakMedicationSelection ,
                         :possibilityToContinuePrescribingWhileSafetyAlert ,
-                        :safetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses ,
+                        :TheriakPossibilityToContinuePrescribingWhileSafetyAlert ,
+                        :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses ,
                         :safetyAlertsInCaseOfAllergies ,
-                        :safetyAlertsInCaseOfDrug-drugInteractions ,
+                        :TheriakSafetyAlertsInCaseOfDrugDrugInteractions ,
                         :safetyAlertsInCaseOfOverdosing ,
-                        :safetyAlertsInRealTime ,
+                        :TheriakSafetyAlertsInRealTime ,
                         :standardizedPrescriptionsAndMedicationProtocols ;
          rdfs:label "Theriak"@en .
 
+:TheriakMedicationSelection a :FeatureCitation;
+                            rdfs:label "medication selection from menu in which medication from the ward stock or the pharmacy is shown."@en .
+
+:TheriakPossibilityToContinuePrescribingWhileSafetyAlert a :FeatureCitation;
+                                                         rdfs:label "possibility to continue prescribing while safety alert"@en .
+
+:TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses  a :FeatureCitation;
+                                                                                              rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
+
+:TheriakMedicationControlBasedOnNationalDrugDatabase a :FeatureCitation;
+                                                     rdfs:label "medication control based on national drug database"@en .
+
+:TheriakSafetyAlertsInCaseOfDrugDrugInteractions a :FeatureCitation;
+                                                 rdfs:label "safety alerts in case of drug-drug interactions"@en .
+
+:TheriakSafetyAlertsInRealTime a :FeatureCitation;
+                               rdfs:label "safety alerts in real time"@en .
 
 ###  http://hitontology.eu/ontology/eChasqui
 :eChasqui rdf:type owl:NamedIndividual ,
