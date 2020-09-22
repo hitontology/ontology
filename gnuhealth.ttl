@@ -449,7 +449,7 @@ hito:GnuHealthFuncPurchaseAdministration
     rdfs:label "Purchase Administration"@en .
 
 hito:GnuHealthFuncServicesManagementinvoicingPatients
-    hito:enterpriseFunctionClassified hito:BbAdministrativeDischargeAndFinalBilling, hito:WhoDhiClientFinancialTransactions, hito:WhoDhiHealthFinancing ;
+    hito:enterpriseFunctionClassified hito:BbAdministrativeDischargeAndFinalBilling, hito:WhoDhiHealthFinancing ;
     a hito:EnterpriseFunctionCitation ;
     rdfs:label "Services Management/Invoicing Patients"@en .
 
