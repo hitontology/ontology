@@ -451,13 +451,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 		rdfs:label "medfloss rating" ;
 		rdfs:comment "average medfloss.org rating" .
 
-###  http://hitontology.eu/ontology/memberNr
-:hasSCTID rdf:type owl:DatatypeProperty ,
+###  http://hitontology.eu/ontology/internalId
+:internalId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain owl:Thing ;
           rdfs:range xsd:string ;
-          rdfs:label "member number"@en;
-          rdfs:comment "internal number of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "@en.
+          rdfs:label "internal identifier"@en;
+          rdfs:comment "Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "@en.
 
 
 ###  http://hitontology.eu/ontology/hasSCTID

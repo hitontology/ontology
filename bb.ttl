@@ -35,7 +35,7 @@ hito:BbAdministrationOfHumanResourceMasterData
 
 hito:BbAdministrativeAdmission
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:AdministrativeAdmission ;
     a hito:EnterpriseFunctionClassified ;
@@ -43,7 +43,7 @@ hito:BbAdministrativeAdmission
 
 hito:BbAdministrativeDischargeAndBilling
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1", "Table6.4" ;
     dcterms:source bb:AdministrativeDischargeAndBilling ;
     a hito:EnterpriseFunctionClassified ;
@@ -75,7 +75,7 @@ hito:BbApplicationSystemCatalogue
 
 hito:BbAppointmentScheduling
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.8" ;
+    hito:internalId "6.8" ;
     dc:source "Table6.8" ;
     dcterms:source bb:AppointmentScheduling ;
     a hito:EnterpriseFunctionClassified ;
@@ -90,7 +90,7 @@ hito:BbArchivePictures
 
 hito:BbArchivingOfPatientInformation
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.13" ;
+    hito:internalId "6.13" ;
     dc:source "Table6.13" ;
     dcterms:source bb:ArchivingOfPatientInformation ;
     a hito:EnterpriseFunctionClassified ;
@@ -188,7 +188,7 @@ hito:BbClinicalInformationSystem
 
 hito:BbCodingOfDiagnosesAndProcedures
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1", "Table6.3", "Table6.6", "Table6.7", "Table6.8" ;
     dcterms:source bb:CodingOfDiagnosesAndProcedures ;
     a hito:EnterpriseFunctionClassified ;
@@ -236,7 +236,7 @@ hito:BbCommunicateReportToOrderingUnit
 
 hito:BbControlling
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.11" ;
+    hito:internalId "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:Controlling ;
     a hito:EnterpriseFunctionClassified ;
@@ -268,7 +268,7 @@ hito:BbDataWarehouseSystem
 
 hito:BbDecisionMakingAndPatientInformation
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.7" ;
+    hito:internalId "6.7" ;
     dc:source "Table6.7" ;
     dcterms:source bb:DecisionMakingAndPatientInformation ;
     a hito:EnterpriseFunctionClassified ;
@@ -276,7 +276,7 @@ hito:BbDecisionMakingAndPatientInformation
 
 hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.2" ;
+    hito:internalId "6.2" ;
     dc:source "Table6.2", "Table6.4" ;
     dcterms:source bb:DecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     a hito:EnterpriseFunctionClassified ;
@@ -357,7 +357,7 @@ hito:BbEnterpriseResourcePlanningSystem
 
 hito:BbExecutionOfAnOperation
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.7" ;
+    hito:internalId "6.7" ;
     dc:source "Table6.7" ;
     dcterms:source bb:ExecutionOfAnOperation ;
     a hito:EnterpriseFunctionClassified ;
@@ -365,7 +365,7 @@ hito:BbExecutionOfAnOperation
 
 hito:BbExecutionOfClinicalTrialsAndExperiments
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.12" ;
+    hito:internalId "6.12" ;
     dc:source "Table6.12" ;
     dcterms:source bb:ExecutionOfClinicalTrialsAndExperiments ;
     a hito:EnterpriseFunctionClassified ;
@@ -373,7 +373,7 @@ hito:BbExecutionOfClinicalTrialsAndExperiments
 
 hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.2" ;
+    hito:internalId "6.2" ;
     dc:source "Table6.2", "Table6.4", "Table6.6" ;
     dcterms:source bb:ExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a hito:EnterpriseFunctionClassified ;
@@ -381,7 +381,7 @@ hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures
 
 hito:BbExecutionOfLabExaminations
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.10" ;
+    hito:internalId "6.10" ;
     dc:source "Table6.10" ;
     dcterms:source bb:ExecutionOfLabExaminations ;
     a hito:EnterpriseFunctionClassified ;
@@ -389,7 +389,7 @@ hito:BbExecutionOfLabExaminations
 
 hito:BbExecutionOfNursingProcedures
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.3" ;
+    hito:internalId "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:ExecutionOfNursingProcedures ;
     a hito:EnterpriseFunctionClassified ;
@@ -397,14 +397,14 @@ hito:BbExecutionOfNursingProcedures
 
 hito:BbExecutionOfRadiologicalExaminations
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.8" ;
+    hito:internalId "6.8" ;
     dc:source "Table6.8", "Table6.9" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "Execution of radiological examinations"@en .
 
 hito:BbFacilityManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.11" ;
+    hito:internalId "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:FacilityManagement ;
     a hito:EnterpriseFunctionClassified ;
@@ -417,7 +417,7 @@ hito:BbFeatureCatalogue
 
 hito:BbFinancialAccounting
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.11" ;
+    hito:internalId "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:FinancialAccounting ;
     a hito:EnterpriseFunctionClassified ;
@@ -441,7 +441,7 @@ hito:BbHospitalAdministration
 
 hito:BbHospitalManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.12" ;
+    hito:internalId "6.12" ;
     dc:source "Table6.12" ;
     dcterms:source bb:HospitalManagement ;
     a hito:EnterpriseFunctionClassified ;
@@ -449,7 +449,7 @@ hito:BbHospitalManagement
 
 hito:BbHumanResourceManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.2" ;
+    hito:internalId "6.2" ;
     dc:source "Table6.11", "Table6.2", "Table6.3", "Table6.4", "Table6.6" ;
     dcterms:source bb:HumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
@@ -541,7 +541,7 @@ hito:BbManageStorageMedia
 
 hito:BbManagementOfMedicalDevices
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.8" ;
+    hito:internalId "6.8" ;
     dc:source "Table6.8" ;
     dcterms:source bb:ManagementOfMedicalDevices ;
     a hito:EnterpriseFunctionClassified ;
@@ -554,7 +554,7 @@ hito:BbMaterialAndMedicationManagement
 
 hito:BbMedicalAdmission
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.2" ;
+    hito:internalId "6.2" ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7", "Table6.8" ;
     dcterms:source bb:MedicalAdmission ;
     a hito:EnterpriseFunctionClassified ;
@@ -562,7 +562,7 @@ hito:BbMedicalAdmission
 
 hito:BbMedicalAndNursingCarePlanning
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.3" ;
+    hito:internalId "6.3" ;
     dc:source "Table6.3", "Table6.6" ;
     dcterms:source bb:MedicalAndNursingCarePlanning ;
     a hito:EnterpriseFunctionClassified ;
@@ -595,7 +595,7 @@ hito:BbModifyPresentationOfPictures
 
 hito:BbNursingAdmission
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.3" ;
+    hito:internalId "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:NursingAdmission ;
     a hito:EnterpriseFunctionClassified ;
@@ -603,7 +603,7 @@ hito:BbNursingAdmission
 
 hito:BbNursingDischargeAndNursingReportWriting
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.3" ;
+    hito:internalId "6.3" ;
     dc:source "Table6.3" ;
     dcterms:source bb:NursingDischargeAndNursingReportWriting ;
     a hito:EnterpriseFunctionClassified ;
@@ -651,7 +651,7 @@ hito:BbOperationalInformationManagement
 
 hito:BbOrderEntry
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.5" ;
+    hito:internalId "6.5" ;
     dc:source "Table6.5" ;
     dcterms:source bb:OrderEntry ;
     a hito:EnterpriseFunctionClassified ;
@@ -714,7 +714,7 @@ hito:BbPatientDataManagementSystem
 
 hito:BbPatientDischargeAndTransferToOtherInstitutions
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.2" ;
+    hito:internalId "6.2" ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7" ;
     dcterms:source bb:PatientDischargeAndTransferToOtherInstitutions ;
     a hito:EnterpriseFunctionClassified ;
@@ -722,7 +722,7 @@ hito:BbPatientDischargeAndTransferToOtherInstitutions
 
 hito:BbPatientIdentificationAndCheckingForRecurrent
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:PatientIdentificationAndCheckingForRecurrent ;
     a hito:EnterpriseFunctionClassified ;
@@ -1439,7 +1439,7 @@ hito:BbPublishingAndPresenting
 
 hito:BbQualityManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.11" ;
+    hito:internalId "6.11" ;
     dc:source "Table6.11" ;
     dcterms:source bb:QualityManagement ;
     a hito:EnterpriseFunctionClassified ;
@@ -1499,7 +1499,7 @@ hito:BbScanningDocumentsFromReferringPhysicianAndOtherSources
 
 hito:BbSchedulingAndResourceAllocation
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1", "Table6.4", "Table6.6", "Table6.7" ;
     dcterms:source bb:SchedulingAndResourceAllocation ;
     a hito:EnterpriseFunctionClassified ;
@@ -1548,7 +1548,7 @@ hito:BbStructureData
 
 hito:BbSupplyAndDisposalManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.6" ;
+    hito:internalId "6.6" ;
     dc:source "Table6.11", "Table6.6", "Table6.7" ;
     dcterms:source bb:SupplyAndDisposalManagement ;
     a hito:EnterpriseFunctionClassified ;
@@ -1593,7 +1593,7 @@ hito:BbViewPatientrelatedAppointments
 
 hito:BbVisitorAndInformationService
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.1" ;
+    hito:internalId "6.1" ;
     dc:source "Table6.1" ;
     dcterms:source bb:VisitorAndInformationService ;
     a hito:EnterpriseFunctionClassified ;
@@ -1606,7 +1606,7 @@ hito:BbVisitorAndInformationServices
 
 hito:BbWorkOrganizationAndTimeManagement
     hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
-    hito:memberNr "6.7" ;
+    hito:internalId "6.7" ;
     dc:source "Table6.7", "Table6.8" ;
     dcterms:source bb:WorkOrganizationAndTimeManagement ;
     a hito:EnterpriseFunctionClassified ;

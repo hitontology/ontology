@@ -18,7 +18,7 @@ hito:WhoDhi1-0
 
 hito:WhoDhiAccessByClientToOwnMedicalRecords
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.4.1" ;
+    hito:internalId "1.4.1" ;
     hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Access by client to own medical records"@en ;
@@ -26,7 +26,7 @@ hito:WhoDhiAccessByClientToOwnMedicalRecords
 
 hito:WhoDhiActiveDataCapturedocumentationByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.4.3" ;
+    hito:internalId "1.4.3" ;
     hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Active data capture/documentation by client"@en ;
@@ -34,7 +34,7 @@ hito:WhoDhiActiveDataCapturedocumentationByClient
 
 hito:WhoDhiAssessCapacityOfHealthcareProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.8.2" ;
+    hito:internalId "2.8.2" ;
     hito:supports hito:WhoDhiHealthcareProviderTraining ;
     a hito:FeatureClassified ;
     rdfs:label "Assess capacity of healthcare provider"@en ;
@@ -42,7 +42,7 @@ hito:WhoDhiAssessCapacityOfHealthcareProvider
 
 hito:WhoDhiAssessHealthFacilities
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.7.2" ;
+    hito:internalId "3.7.2" ;
     hito:supports hito:WhoDhiFacilityManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Assess health facilities"@en ;
@@ -50,7 +50,7 @@ hito:WhoDhiAssessHealthFacilities
 
 hito:WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.1.4" ;
+    hito:internalId "4.1.4" ;
     hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Automated analysis of data to generate new information or predictions on future events"@en ;
@@ -58,7 +58,7 @@ hito:WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureE
 
 hito:WhoDhiCaptureFromDigitalDevices
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.10.3" ;
+    hito:internalId "2.10.3" ;
     hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Capture from digital devices"@en ;
@@ -66,13 +66,13 @@ hito:WhoDhiCaptureFromDigitalDevices
 
 hito:WhoDhiCensusPopulationInformationDataWarehouse
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "1" ;
+    hito:internalId "1" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Census, population information & data warehouse"@en .
 
 hito:WhoDhiCertifyBirthEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.3" ;
+    hito:internalId "3.4.3" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Certify birth event"@en ;
@@ -80,7 +80,7 @@ hito:WhoDhiCertifyBirthEvent
 
 hito:WhoDhiCertifyDeathEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.6" ;
+    hito:internalId "3.4.6" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Certify death event"@en ;
@@ -88,27 +88,27 @@ hito:WhoDhiCertifyDeathEvent
 
 hito:WhoDhiCitizenBasedReporting
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.5" ;
+    hito:internalId "1.5" ;
     a hito:FeatureClassified ;
     rdfs:comment "Digital platforms, including social media, that enable clients to report on public health events, as well as experiences, issues, and satisfaction with health services."@en ;
     rdfs:label "Citizen based reporting"@en .
 
 hito:WhoDhiCivilRegistrationAndVitalStatistic
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.4" ;
+    hito:internalId "3.4" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to support the registration of births and deaths, issue birth and death certificates, and compile and disseminate vital statistics, including cause of death information. "@en ;
     rdfs:label "Civil Registration and Vital Statistic"@en .
 
 hito:WhoDhiCivilRegistrationAndVitalStatistics
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "2" ;
+    hito:internalId "2" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Civil registration and vital statistics"@en .
 
 hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.2.3" ;
+    hito:internalId "4.2.3" ;
     hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Classify disease codes or cause of mortality"@en ;
@@ -116,13 +116,13 @@ hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality
 
 hito:WhoDhiClientApplications
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "3" ;
+    hito:internalId "3" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Client applications"@en .
 
 hito:WhoDhiClientCommunicationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "4" ;
+    hito:internalId "4" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Client communication system"@en .
 
@@ -134,28 +134,28 @@ hito:WhoDhiClientFeatureCatalogue
 
 hito:WhoDhiClientFinancialTransactions
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.7" ;
+    hito:internalId "1.7" ;
     a hito:FeatureClassified ;
     rdfs:comment "Digital approaches to facilitate financial transactions for clients. These digital financial transactions can be used to facilitate conditional cash transfers and payments related to health service delivery."@en ;
     rdfs:label "Client financial transactions"@en .
 
 hito:WhoDhiClientHealthRecords
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.2" ;
+    hito:internalId "2.2" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digitized job aids that combine an individual’s health information with the health-care provider’s knowledge and clinical protocols in order to assist health-care providers in making diagnosis and treatment decisions. "@en ;
     rdfs:label "Client health records"@en .
 
 hito:WhoDhiClientIdentificationAndRegistration
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.1" ;
+    hito:internalId "2.1" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Client identity verification and enrollment into health services."@en ;
     rdfs:label "Client identification and registration"@en .
 
 hito:WhoDhiClientLookupOfHealthInformation
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.6.1" ;
+    hito:internalId "1.6.1" ;
     hito:subFeatureOf hito:WhoDhiOndemandInformationServicesToClients ;
     a hito:FeatureClassified ;
     rdfs:label "Client look-up of health information"@en ;
@@ -163,20 +163,20 @@ hito:WhoDhiClientLookupOfHealthInformation
 
 hito:WhoDhiClientToClientCommunication
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.3" ;
+    hito:internalId "1.3" ;
     a hito:FeatureClassified ;
     rdfs:comment "Communication between clients as peers within an organized network/group."@en ;
     rdfs:label "Client to client communication"@en .
 
 hito:WhoDhiClinicalTerminologyAndClassifications
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "5" ;
+    hito:internalId "5" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Clinical terminology and classifications"@en .
 
 hito:WhoDhiCommunicationAndPerformanceFeedbackToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.5.2" ;
+    hito:internalId "2.5.2" ;
     hito:supports hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Communication and performance feedback to healthcare provider(s)"@en ;
@@ -184,20 +184,20 @@ hito:WhoDhiCommunicationAndPerformanceFeedbackToHealthcareProviders
 
 hito:WhoDhiCommunicationFromHealthcareProvidersToSupervisor
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.5.1" ;
+    hito:internalId "2.5.1" ;
     hito:supports hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Communication from healthcare provider(s) to supervisor"@en .
 
 hito:WhoDhiCommunitybasedInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "6" ;
+    hito:internalId "6" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Community-based information system"@en .
 
 hito:WhoDhiConsultationsBetweenRemoteClientAndHealthcareProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.4.1" ;
+    hito:internalId "2.4.1" ;
     hito:supports hito:WhoDhiTelemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Consultations between remote client and healthcare provider"@en ;
@@ -205,7 +205,7 @@ hito:WhoDhiConsultationsBetweenRemoteClientAndHealthcareProvider
 
 hito:WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.4.4" ;
+    hito:internalId "2.4.4" ;
     hito:supports hito:WhoDhiTelemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Consultations for case management between healthcare providers"@en ;
@@ -213,7 +213,7 @@ hito:WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders
 
 hito:WhoDhiCoordinateEmergencyResponseAndTransport
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.6.1" ;
+    hito:internalId "2.6.1" ;
     hito:supports hito:WhoDhiReferralCoordination ;
     a hito:FeatureClassified ;
     rdfs:label "Coordinate emergency response and transport"@en ;
@@ -221,7 +221,7 @@ hito:WhoDhiCoordinateEmergencyResponseAndTransport
 
 hito:WhoDhiDataCoding
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.2" ;
+    hito:internalId "4.2" ;
     a hito:FeatureClassified ;
     rdfs:comment """Digital approaches to code data and manage the use of standardized datasets.
 """@en ;
@@ -229,14 +229,14 @@ hito:WhoDhiDataCoding
 
 hito:WhoDhiDataCollectionManagementAndUse
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.1" ;
+    hito:internalId "4.1" ;
     a hito:FeatureClassified ;
     rdfs:comment "Digital approaches to data collection, management, analysis, storage. This can include standalone interventions focusing exclusively on data collection and management, as well as data services to support other interventions, such as data visualization within supply chain management.  "@en ;
     rdfs:label "Data collection, management, and use"@en .
 
 hito:WhoDhiDataExchangeAcrossSystems
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.4.1" ;
+    hito:internalId "4.4.1" ;
     hito:subFeatureOf hito:WhoDhiDataExchangeAndInteroperability ;
     a hito:FeatureClassified ;
     rdfs:label "Data exchange across systems"@en ;
@@ -244,14 +244,14 @@ hito:WhoDhiDataExchangeAcrossSystems
 
 hito:WhoDhiDataExchangeAndInteroperability
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.4" ;
+    hito:internalId "4.4" ;
     a hito:FeatureClassified ;
     rdfs:comment "The capability of two or more systems to communicate and exchange data through specified data formats and communication protocols."@en ;
     rdfs:label "Data exchange and interoperability    "@en .
 
 hito:WhoDhiDataInterchangeInteroperabilityAndAccessibility
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "7" ;
+    hito:internalId "7" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Data interchange interoperability and accessibility"@en .
 
@@ -263,7 +263,7 @@ hito:WhoDhiDataServiceFeatureCatalogue
 
 hito:WhoDhiDataStorageAndAggregation
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.1.2" ;
+    hito:internalId "4.1.2" ;
     hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Data storage and aggregation"@en ;
@@ -271,7 +271,7 @@ hito:WhoDhiDataStorageAndAggregation
 
 hito:WhoDhiDataSynthesisAndVisualization
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.1.3" ;
+    hito:internalId "4.1.3" ;
     hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Data synthesis and visualization"@en ;
@@ -279,19 +279,19 @@ hito:WhoDhiDataSynthesisAndVisualization
 
 hito:WhoDhiElectronicMedicalRecord
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "8" ;
+    hito:internalId "8" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Electronic medical record"@en .
 
 hito:WhoDhiEmergencyResponseSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "9" ;
+    hito:internalId "9" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Emergency response system"@en .
 
 hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.1.2" ;
+    hito:internalId "2.1.2" ;
     hito:supports hito:WhoDhiClientIdentificationAndRegistration ;
     a hito:FeatureClassified ;
     rdfs:label "Enrol client for health services/clinical care plan"@en ;
@@ -299,52 +299,52 @@ hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan
 
 hito:WhoDhiEnvironmentalMonitoringSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "10" ;
+    hito:internalId "10" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Environmental monitoring system"@en .
 
 hito:WhoDhiEquipmentAndAssetManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.6" ;
+    hito:internalId "3.6" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to track and manage the maintenance of health equipment. This can include the use of databases, as well as sensors and feedback mechanisms for monitoring health equipment. "@en ;
     rdfs:label "Equipment and asset management"@en .
 
 hito:WhoDhiFacilityManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.7" ;
+    hito:internalId "3.7" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches that enable administrative functions related to the management of facilities."@en ;
     rdfs:label "Facility management"@en .
 
 hito:WhoDhiFacilityManagementInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "11" ;
+    hito:internalId "11" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Facility management information system"@en .
 
 hito:WhoDhiGeographicInformationSystemGis
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "12" ;
+    hito:internalId "12" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Geographic information system (GIS)"@en .
 
 hito:WhoDhiHealthFinanceAndInsuranceInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "13" ;
+    hito:internalId "13" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Health finance and insurance information system"@en .
 
 hito:WhoDhiHealthFinancing
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.5" ;
+    hito:internalId "3.5" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage financial transactions for health system related expenses. These digital financial transactions can be used for payments to health workforce, insurance/payers, as well as administrative management of budget and expenditures.   "@en ;
     rdfs:label "Health financing"@en .
 
 hito:WhoDhiHealthManagementInformationSystemHmis
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "14" ;
+    hito:internalId "14" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Health management information system (HMIS)"@en .
 
@@ -362,21 +362,21 @@ hito:WhoDhiHealthSystemManagerFunctionCatalogue
 
 hito:WhoDhiHealthWorkerActivityPlanningAndScheduling
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.7" ;
+    hito:internalId "2.7" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Automated scheduling and planning tools to assist in prioritizing provider followup. Digital work planning and scheduling tools can take the form of reminders to healthcare providers on upcoming/overdue services and other mechanisms to flag clients that need to be prioritized for service delivery. "@en ;
     rdfs:label "Health worker activity planning and scheduling"@en .
 
 hito:WhoDhiHealthcareProviderCommunication
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.5" ;
+    hito:internalId "2.5" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Communication and transmission of information among healthcare providers, supervisors, and health system managers.  Healthcare provider communication.  "@en ;
     rdfs:label "Healthcare provider communication"@en .
 
 hito:WhoDhiHealthcareProviderDecisionSupport
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.3" ;
+    hito:internalId "2.3" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digitized record used to capture, store, access and share health information on a client or grouping of clients.   "@en ;
     rdfs:label "Healthcare provider decision support"@en .
@@ -395,33 +395,33 @@ hito:WhoDhiHealthcareProviderFunctionCatalogue
 
 hito:WhoDhiHealthcareProviderTraining
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.8" ;
+    hito:internalId "2.8" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "The management and provision of education and training content in electronic form for health professionals. In contrast to decision support, healthcare provider training does not need to be used at the point of care. "@en ;
     rdfs:label "Healthcare provider training"@en .
 
 hito:WhoDhiHumanResourceInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "15" ;
+    hito:internalId "15" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Human resource information system"@en .
 
 hito:WhoDhiHumanResourceManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.1" ;
+    hito:internalId "3.1" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage the health workforce, including the use of databases to record training levels, certifications, and identification of health workers. "@en ;
     rdfs:label "Human resource management"@en .
 
 hito:WhoDhiIdentificationRegistriesAndDirectories
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "16" ;
+    hito:internalId "16" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Identification registries and directories"@en .
 
 hito:WhoDhiIdentifyClientsInNeedOfServices
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.7.1" ;
+    hito:internalId "2.7.1" ;
     hito:supports hito:WhoDhiHealthWorkerActivityPlanningAndScheduling ;
     a hito:FeatureClassified ;
     rdfs:label "Identify client(s) in need of services"@en ;
@@ -429,32 +429,32 @@ hito:WhoDhiIdentifyClientsInNeedOfServices
 
 hito:WhoDhiKnowledgeManagementSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "17" ;
+    hito:internalId "17" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Knowledge management system"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.10" ;
+    hito:internalId "2.10" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage and exchange laboratory and diagnostic orders and results."@en ;
     rdfs:label "Laboratory and Diagnostics Imaging Management"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "18" ;
+    hito:internalId "18" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Laboratory and diagnostics information system"@en .
 
 hito:WhoDhiLearningAndTrainingSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "19" ;
+    hito:internalId "19" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Learning and training system"@en .
 
 hito:WhoDhiListHealthFacilitiesAndRelatedInformation
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.7.1" ;
+    hito:internalId "3.7.1" ;
     hito:supports hito:WhoDhiFacilityManagement ;
     a hito:FeatureClassified ;
     rdfs:label "List health facilities and related information"@en ;
@@ -462,7 +462,7 @@ hito:WhoDhiListHealthFacilitiesAndRelatedInformation
 
 hito:WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.1.1" ;
+    hito:internalId "3.1.1" ;
     hito:supports hito:WhoDhiHumanResourceManagement ;
     a hito:FeatureClassified ;
     rdfs:label "List health workforce cadres and related identification information"@en ;
@@ -470,20 +470,20 @@ hito:WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation
 
 hito:WhoDhiLocationMapping
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.3" ;
+    hito:internalId "4.3" ;
     a hito:FeatureClassified ;
     rdfs:comment "The use of geolocation coordinates to map objects and events. "@en ;
     rdfs:label "Location mapping"@en .
 
 hito:WhoDhiLogisticsManagementInformationSystemLmis
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "20" ;
+    hito:internalId "20" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Logistics management information system (LMIS)"@en .
 
 hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.2.1" ;
+    hito:internalId "2.2.1" ;
     hito:supports hito:WhoDhiClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Longitudinal tracking of client’s health status and services"@en ;
@@ -491,7 +491,7 @@ hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices
 
 hito:WhoDhiManageBudgetAndExpenditures
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.6" ;
+    hito:internalId "3.5.6" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Manage budget and expenditures"@en ;
@@ -499,7 +499,7 @@ hito:WhoDhiManageBudgetAndExpenditures
 
 hito:WhoDhiManageCertificationregistrationOfHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.1.3" ;
+    hito:internalId "3.1.3" ;
     hito:supports hito:WhoDhiHumanResourceManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Manage certification/registration of healthcare provider(s)"@en ;
@@ -507,7 +507,7 @@ hito:WhoDhiManageCertificationregistrationOfHealthcareProviders
 
 hito:WhoDhiManageClientsStructuredClinicalRecords
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.2.2" ;
+    hito:internalId "2.2.2" ;
     hito:supports hito:WhoDhiClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Manage client's structured clinical records"@en ;
@@ -515,7 +515,7 @@ hito:WhoDhiManageClientsStructuredClinicalRecords
 
 hito:WhoDhiManageClientsUnstructuredClinicalRecords
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.2.3" ;
+    hito:internalId "2.2.3" ;
     hito:supports hito:WhoDhiClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Manage client’s unstructured clinical records"@en ;
@@ -523,7 +523,7 @@ hito:WhoDhiManageClientsUnstructuredClinicalRecords
 
 hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.1" ;
+    hito:internalId "3.2.1" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Manage inventory and distribution of health commodities stock levels of"@en ;
@@ -531,7 +531,7 @@ hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf
 
 hito:WhoDhiManageOfCommodities
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.5" ;
+    hito:internalId "3.2.5" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Manage of commodities"@en ;
@@ -539,7 +539,7 @@ hito:WhoDhiManageOfCommodities
 
 hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.6.3" ;
+    hito:internalId "2.6.3" ;
     hito:supports hito:WhoDhiReferralCoordination ;
     a hito:FeatureClassified ;
     rdfs:label "Manage referrals between health and other sectors"@en ;
@@ -547,7 +547,7 @@ hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors
 
 hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.6.2" ;
+    hito:internalId "2.6.2" ;
     hito:supports hito:WhoDhiReferralCoordination ;
     a hito:FeatureClassified ;
     rdfs:label "Manage referrals between points of service within health sector"@en ;
@@ -555,7 +555,7 @@ hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector
 
 hito:WhoDhiMapLocationOfClientsAndHouseholds
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.3.3" ;
+    hito:internalId "4.3.3" ;
     hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of clients and households"@en ;
@@ -563,7 +563,7 @@ hito:WhoDhiMapLocationOfClientsAndHouseholds
 
 hito:WhoDhiMapLocationOfHealthEvents
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.3.2" ;
+    hito:internalId "4.3.2" ;
     hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of health events"@en ;
@@ -571,7 +571,7 @@ hito:WhoDhiMapLocationOfHealthEvents
 
 hito:WhoDhiMapLocationOfHealthFacilitiesstructures
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.3.1" ;
+    hito:internalId "4.3.1" ;
     hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of health facilities/structures"@en ;
@@ -579,7 +579,7 @@ hito:WhoDhiMapLocationOfHealthFacilitiesstructures
 
 hito:WhoDhiMapLocationOfHealthcareProviders
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.3.4" ;
+    hito:internalId "4.3.4" ;
     hito:subFeatureOf hito:WhoDhiLocationMapping ;
     a hito:FeatureClassified ;
     rdfs:label "Map location of healthcare provider(s)"@en ;
@@ -587,7 +587,7 @@ hito:WhoDhiMapLocationOfHealthcareProviders
 
 hito:WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.2.2" ;
+    hito:internalId "4.2.2" ;
     hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Merge, de-duplicate, and curate coded datasets or terminologies"@en ;
@@ -595,7 +595,7 @@ hito:WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies
 
 hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.3" ;
+    hito:internalId "3.2.3" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Monitor cold-chain sensitive commodities licensed drugs"@en ;
@@ -603,7 +603,7 @@ hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs
 
 hito:WhoDhiMonitorPerformanceOfHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.1.2" ;
+    hito:internalId "3.1.2" ;
     hito:supports hito:WhoDhiHumanResourceManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Monitor performance of healthcare provider(s)"@en ;
@@ -611,7 +611,7 @@ hito:WhoDhiMonitorPerformanceOfHealthcareProviders
 
 hito:WhoDhiMonitorStatusOfHealthEquipment
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.6.1" ;
+    hito:internalId "3.6.1" ;
     hito:supports hito:WhoDhiEquipmentAndAssetManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Monitor status of health equipment"@en ;
@@ -619,7 +619,7 @@ hito:WhoDhiMonitorStatusOfHealthEquipment
 
 hito:WhoDhiNonRoutineDataCollectionAndManagement
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.1.1" ;
+    hito:internalId "4.1.1" ;
     hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Non routine data collection and management"@en ;
@@ -627,7 +627,7 @@ hito:WhoDhiNonRoutineDataCollectionAndManagement
 
 hito:WhoDhiNotificationOfPublicHealthEventsFromPointOfDiagnosis
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.3.1" ;
+    hito:internalId "3.3.1" ;
     hito:supports hito:WhoDhiPublicHealthEventNotification ;
     a hito:FeatureClassified ;
     rdfs:label "Notification of public health events from point of diagnosis"@en ;
@@ -635,7 +635,7 @@ hito:WhoDhiNotificationOfPublicHealthEventsFromPointOfDiagnosis
 
 hito:WhoDhiNotifyBirthEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.1" ;
+    hito:internalId "3.4.1" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Notify birth event"@en ;
@@ -643,7 +643,7 @@ hito:WhoDhiNotifyBirthEvent
 
 hito:WhoDhiNotifyDeathEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.4" ;
+    hito:internalId "3.4.4" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Notify death event"@en ;
@@ -651,7 +651,7 @@ hito:WhoDhiNotifyDeathEvent
 
 hito:WhoDhiNotifyHealthCommodities
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.2" ;
+    hito:internalId "3.2.2" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Notify health commodities"@en ;
@@ -659,14 +659,14 @@ hito:WhoDhiNotifyHealthCommodities
 
 hito:WhoDhiOndemandInformationServicesToClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.6" ;
+    hito:internalId "1.6" ;
     a hito:FeatureClassified ;
     rdfs:comment "Health information accessible to the general public triggered by the client. This could be available via websites, helplines, USSD/ SMS menus, or client applications, among other channels, that may inform decision-making. "@en ;
     rdfs:label "On-demand information services to clients"@en .
 
 hito:WhoDhiParseUnstructuredDataIntoStructuredData
     hito:featureCatalogue hito:WhoDhiDataServiceFeatureCatalogue ;
-    hito:memberNr "4.2.1" ;
+    hito:internalId "4.2.1" ;
     hito:subFeatureOf hito:WhoDhiDataCoding ;
     a hito:FeatureClassified ;
     rdfs:label "Parse unstructured data into structured data"@en ;
@@ -674,7 +674,7 @@ hito:WhoDhiParseUnstructuredDataIntoStructuredData
 
 hito:WhoDhiPeerGroupForClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.3.1" ;
+    hito:internalId "1.3.1" ;
     hito:subFeatureOf hito:WhoDhiClientToClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Peer group for clients"@en ;
@@ -682,7 +682,7 @@ hito:WhoDhiPeerGroupForClients
 
 hito:WhoDhiPeerGroupForHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.5.5" ;
+    hito:internalId "2.5.5" ;
     hito:supports hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Peer group for healthcare providers"@en ;
@@ -690,27 +690,27 @@ hito:WhoDhiPeerGroupForHealthcareProviders
 
 hito:WhoDhiPersonalHealthTracking
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.4" ;
+    hito:internalId "1.4" ;
     a hito:FeatureClassified ;
     rdfs:comment "The use of mobile applications by clients, phone based sensors, health records, and wearables for clients to monitor their own health status. This can include wearable sensors, web-tools, and apps that allow clients to review and track their health status."@en ;
     rdfs:label "Personal health tracking"@en .
 
 hito:WhoDhiPharmacyInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "21" ;
+    hito:internalId "21" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Pharmacy information system"@en .
 
 hito:WhoDhiPrescriptionAndMedicationManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.9" ;
+    hito:internalId "2.9" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to facilitate the management of prescriptions, including tracking prescription orders and monitoring physical consumption of medication."@en ;
     rdfs:label "Prescription and medication management"@en .
 
 hito:WhoDhiProvideChecklistAccordingToProtocol
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.3.2" ;
+    hito:internalId "2.3.2" ;
     hito:supports hito:WhoDhiHealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide checklist according to protocol"@en ;
@@ -718,7 +718,7 @@ hito:WhoDhiProvideChecklistAccordingToProtocol
 
 hito:WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.3.1" ;
+    hito:internalId "2.3.1" ;
     hito:supports hito:WhoDhiHealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide prompts and alerts based according to protocol"@en ;
@@ -726,7 +726,7 @@ hito:WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol
 
 hito:WhoDhiProvideTrainingContentToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.8.1" ;
+    hito:internalId "2.8.1" ;
     hito:supports hito:WhoDhiHealthcareProviderTraining ;
     a hito:FeatureClassified ;
     rdfs:label "Provide training content to healthcare provider(s)"@en ;
@@ -734,20 +734,20 @@ hito:WhoDhiProvideTrainingContentToHealthcareProviders
 
 hito:WhoDhiPublicHealthAndDiseaseSurveillanceSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "22" ;
+    hito:internalId "22" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Public health and disease surveillance system"@en .
 
 hito:WhoDhiPublicHealthEventNotification
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.3" ;
+    hito:internalId "3.3" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches for alerting and compiling information on nonroutine public health events."@en ;
     rdfs:label "Public health event notification"@en .
 
 hito:WhoDhiRecordTrainingCredentialsOfHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.1.4" ;
+    hito:internalId "3.1.4" ;
     hito:supports hito:WhoDhiHumanResourceManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Record training credentials of healthcare provider(s)"@en ;
@@ -755,14 +755,14 @@ hito:WhoDhiRecordTrainingCredentialsOfHealthcareProviders
 
 hito:WhoDhiReferralCoordination
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.6" ;
+    hito:internalId "2.6" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to support communication and coordination mechanisms to facilitate referrals, both within the health sector and to other health-related sectors."@en ;
     rdfs:label "Referral coordination"@en .
 
 hito:WhoDhiRegisterAndHealthCommoditiesProcurement
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.4" ;
+    hito:internalId "3.2.4" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Register and health commodities procurement"@en ;
@@ -770,7 +770,7 @@ hito:WhoDhiRegisterAndHealthCommoditiesProcurement
 
 hito:WhoDhiRegisterAndVerifyClientInsuranceMembership
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.1" ;
+    hito:internalId "3.5.1" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Register and verify client insurance membership"@en ;
@@ -778,7 +778,7 @@ hito:WhoDhiRegisterAndVerifyClientInsuranceMembership
 
 hito:WhoDhiRegisterBirthEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.2" ;
+    hito:internalId "3.4.2" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Register birth event"@en ;
@@ -786,7 +786,7 @@ hito:WhoDhiRegisterBirthEvent
 
 hito:WhoDhiRegisterDeathEvent
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.4.5" ;
+    hito:internalId "3.4.5" ;
     hito:supports hito:WhoDhiCivilRegistrationAndVitalStatistic ;
     a hito:FeatureClassified ;
     rdfs:label "Register death event"@en ;
@@ -794,7 +794,7 @@ hito:WhoDhiRegisterDeathEvent
 
 hito:WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.4.2" ;
+    hito:internalId "2.4.2" ;
     hito:supports hito:WhoDhiTelemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Remote monitoring of client health or diagnostic data by provider"@en ;
@@ -802,7 +802,7 @@ hito:WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider
 
 hito:WhoDhiReportCounterfeitOrSubstandardDrugsByClients
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.2.6" ;
+    hito:internalId "3.2.6" ;
     hito:supports hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Report counterfeit or substandard drugs by clients"@en ;
@@ -810,7 +810,7 @@ hito:WhoDhiReportCounterfeitOrSubstandardDrugsByClients
 
 hito:WhoDhiReportEffectsAdverseDrug
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.9.3" ;
+    hito:internalId "2.9.3" ;
     hito:supports hito:WhoDhiPrescriptionAndMedicationManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Report effects adverse drug"@en ;
@@ -818,7 +818,7 @@ hito:WhoDhiReportEffectsAdverseDrug
 
 hito:WhoDhiReportingOfHealthSystemFeedbackByClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.5.1" ;
+    hito:internalId "1.5.1" ;
     hito:subFeatureOf hito:WhoDhiCitizenBasedReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Reporting of health system feedback by clients"@en ;
@@ -826,7 +826,7 @@ hito:WhoDhiReportingOfHealthSystemFeedbackByClients
 
 hito:WhoDhiReportingOfPublicHealthEventsByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.5.2" ;
+    hito:internalId "1.5.2" ;
     hito:subFeatureOf hito:WhoDhiCitizenBasedReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Reporting of public health events by client"@en ;
@@ -834,13 +834,13 @@ hito:WhoDhiReportingOfPublicHealthEventsByClient
 
 hito:WhoDhiResearchInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "23" ;
+    hito:internalId "23" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Research information system"@en .
 
 hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.2.4" ;
+    hito:internalId "2.2.4" ;
     hito:supports hito:WhoDhiClientHealthRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Routine health indicator data collection and management"@en ;
@@ -848,7 +848,7 @@ hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement
 
 hito:WhoDhiScheduleHealthcareProvidersActivities
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.7.2" ;
+    hito:internalId "2.7.2" ;
     hito:supports hito:WhoDhiHealthWorkerActivityPlanningAndScheduling ;
     a hito:FeatureClassified ;
     rdfs:label "Schedule healthcare provider's activities"@en ;
@@ -856,7 +856,7 @@ hito:WhoDhiScheduleHealthcareProvidersActivities
 
 hito:WhoDhiScreenClientsByRiskOrOtherHealthStatus
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.3.3" ;
+    hito:internalId "2.3.3" ;
     hito:supports hito:WhoDhiHealthcareProviderDecisionSupport ;
     a hito:FeatureClassified ;
     rdfs:label "Screen clients by risk or other health status"@en ;
@@ -864,7 +864,7 @@ hito:WhoDhiScreenClientsByRiskOrOtherHealthStatus
 
 hito:WhoDhiSelfMonitoringOfHealthOrDiagnosticDataByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.4.2" ;
+    hito:internalId "1.4.2" ;
     hito:subFeatureOf hito:WhoDhiPersonalHealthTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Self monitoring of health or diagnostic data by client"@en ;
@@ -872,13 +872,13 @@ hito:WhoDhiSelfMonitoringOfHealthOrDiagnosticDataByClient
 
 hito:WhoDhiSharedHealthRecordAndHealthInformationRespositories
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "24" ;
+    hito:internalId "24" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Shared Health Record and health information respositories"@en .
 
 hito:WhoDhiSupplyChainManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
-    hito:memberNr "3.2" ;
+    hito:internalId "3.2" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches for monitoring and reporting stock levels, consumption and distribution of medical commodities. This can include the use of communication systems (e.g. SMS) and data dashboards to manage and report on supply levels of medical commodities.    "@en ;
     rdfs:label "Supply chain management"@en .
@@ -891,27 +891,27 @@ hito:WhoDhiSystemCategoryApplicationSystemCatalogue
 
 hito:WhoDhiTargetedClientCommunication
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.1" ;
+    hito:internalId "1.1" ;
     a hito:FeatureClassified ;
     rdfs:comment "Transmission of targeted health information “in which separate audience segments (often demographic categories) benefit from a shared message.” Targeted communication can also be further customized according to an individual’s specific needs, resulting in “tailored client communication,” whereby message content is matched to the needs and preferences of an individual. The communication can be unidirectional and bidirectional, but initial contact is from the health system; as opposed to on-demand information service where the client initiates the first contact to the health system.  "@en ;
     rdfs:label "Targeted client communication"@en .
 
 hito:WhoDhiTelemedicine
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
-    hito:memberNr "2.4" ;
+    hito:internalId "2.4" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Provision of health-care services at a distance. The delivery of health care services, where patients and providers are separated by distance.    "@en ;
     rdfs:label "Telemedicine"@en .
 
 hito:WhoDhiTelemedicineCategory
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
-    hito:memberNr "25" ;
+    hito:internalId "25" ;
     a hito:ApplicationSystemClassified ;
     rdfs:label "Telemedicine Category"@en .
 
 hito:WhoDhiTrackAndManageInsuranceReimbursement
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.3" ;
+    hito:internalId "3.5.3" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Track and manage insurance reimbursement"@en ;
@@ -919,7 +919,7 @@ hito:WhoDhiTrackAndManageInsuranceReimbursement
 
 hito:WhoDhiTrackBiologicalSpecimens
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.10.4" ;
+    hito:internalId "2.10.4" ;
     hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Track biological specimens"@en ;
@@ -927,7 +927,7 @@ hito:WhoDhiTrackBiologicalSpecimens
 
 hito:WhoDhiTrackClientsMedicationConsumption
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.9.2" ;
+    hito:internalId "2.9.2" ;
     hito:supports hito:WhoDhiPrescriptionAndMedicationManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Track client's medication consumption"@en ;
@@ -935,7 +935,7 @@ hito:WhoDhiTrackClientsMedicationConsumption
 
 hito:WhoDhiTrackInsuranceBillingAndClaimsSubmission
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.2" ;
+    hito:internalId "3.5.2" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Track insurance billing and claims submission"@en ;
@@ -943,7 +943,7 @@ hito:WhoDhiTrackInsuranceBillingAndClaimsSubmission
 
 hito:WhoDhiTrackRegulationAndLicensingOfMedicalEquipment
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.6.2" ;
+    hito:internalId "3.6.2" ;
     hito:supports hito:WhoDhiEquipmentAndAssetManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Track regulation and licensing of medical equipment"@en ;
@@ -951,7 +951,7 @@ hito:WhoDhiTrackRegulationAndLicensingOfMedicalEquipment
 
 hito:WhoDhiTransmissionOfMedicalDataToHealthcareProvider
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.4.3" ;
+    hito:internalId "2.4.3" ;
     hito:supports hito:WhoDhiTelemedicine ;
     a hito:FeatureClassified ;
     rdfs:label "Transmission of medical data to healthcare provider"@en ;
@@ -959,7 +959,7 @@ hito:WhoDhiTransmissionOfMedicalDataToHealthcareProvider
 
 hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.10.2" ;
+    hito:internalId "2.10.2" ;
     hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit diagnostic orders diagnostic results"@en ;
@@ -967,7 +967,7 @@ hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
 
 hito:WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.1.4" ;
+    hito:internalId "1.1.4" ;
     hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit diagnostics result, or availability of result, to clients"@en ;
@@ -975,7 +975,7 @@ hito:WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients
 
 hito:WhoDhiTransmitHealthEventAlertsToSpecificPopulationGroups
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.1.1" ;
+    hito:internalId "1.1.1" ;
     hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit health event alerts to specific population group(s)"@en ;
@@ -983,7 +983,7 @@ hito:WhoDhiTransmitHealthEventAlertsToSpecificPopulationGroups
 
 hito:WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.5.4" ;
+    hito:internalId "2.5.4" ;
     hito:supports hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit non-routine health event alerts to healthcare providers"@en ;
@@ -991,7 +991,7 @@ hito:WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders
 
 hito:WhoDhiTransmitOrManageIncentivesToClientsForHealthServices
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.7.3" ;
+    hito:internalId "1.7.3" ;
     hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage incentives to clients for health services"@en ;
@@ -999,7 +999,7 @@ hito:WhoDhiTransmitOrManageIncentivesToClientsForHealthServices
 
 hito:WhoDhiTransmitOrManageIncentivesToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.5" ;
+    hito:internalId "3.5.5" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage incentives to healthcare provider(s)"@en ;
@@ -1007,7 +1007,7 @@ hito:WhoDhiTransmitOrManageIncentivesToHealthcareProviders
 
 hito:WhoDhiTransmitOrManageOutOfPocketPaymentsByClient
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.7.1" ;
+    hito:internalId "1.7.1" ;
     hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage out of pocket payments by client"@en ;
@@ -1015,7 +1015,7 @@ hito:WhoDhiTransmitOrManageOutOfPocketPaymentsByClient
 
 hito:WhoDhiTransmitOrManageVouchersToClientForHealthServices
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.7.2" ;
+    hito:internalId "1.7.2" ;
     hito:subFeatureOf hito:WhoDhiClientFinancialTransactions ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or manage vouchers to client for health services"@en ;
@@ -1023,7 +1023,7 @@ hito:WhoDhiTransmitOrManageVouchersToClientForHealthServices
 
 hito:WhoDhiTransmitOrTrackPrescriptionOrders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.9.1" ;
+    hito:internalId "2.9.1" ;
     hito:supports hito:WhoDhiPrescriptionAndMedicationManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit or track prescription orders"@en ;
@@ -1031,7 +1031,7 @@ hito:WhoDhiTransmitOrTrackPrescriptionOrders
 
 hito:WhoDhiTransmitRoutineNewsAndWorkflowNotificationsToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.5.3" ;
+    hito:internalId "2.5.3" ;
     hito:supports hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit routine news and workflow notifications to healthcare provider(s)"@en ;
@@ -1039,7 +1039,7 @@ hito:WhoDhiTransmitRoutineNewsAndWorkflowNotificationsToHealthcareProviders
 
 hito:WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders
     hito:featureCatalogue hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
-    hito:memberNr "3.5.4" ;
+    hito:internalId "3.5.4" ;
     hito:supports hito:WhoDhiHealthFinancing ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit routine payroll payment to healthcare provider(s)"@en ;
@@ -1047,7 +1047,7 @@ hito:WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders
 
 hito:WhoDhiTransmitTargetedAlertsAndRemindersToClients
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.1.3" ;
+    hito:internalId "1.1.3" ;
     hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit targeted alerts and reminders to client(s)"@en ;
@@ -1055,7 +1055,7 @@ hito:WhoDhiTransmitTargetedAlertsAndRemindersToClients
 
 hito:WhoDhiTransmitTargetedHealthInformationToClientBasedOnHealthStatusOrDemographics
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.1.2" ;
+    hito:internalId "1.1.2" ;
     hito:subFeatureOf hito:WhoDhiTargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit targeted health information to client based on health status or demographics"@en ;
@@ -1063,7 +1063,7 @@ hito:WhoDhiTransmitTargetedHealthInformationToClientBasedOnHealthStatusOrDemogra
 
 hito:WhoDhiTransmitToHealthcareProviderAndTrack
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.10.1" ;
+    hito:internalId "2.10.1" ;
     hito:supports hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit to healthcare provider and track"@en ;
@@ -1071,7 +1071,7 @@ hito:WhoDhiTransmitToHealthcareProviderAndTrack
 
 hito:WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.2.2" ;
+    hito:internalId "1.2.2" ;
     hito:subFeatureOf hito:WhoDhiUntargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit untargeted health event alerts to undefined group"@en ;
@@ -1079,7 +1079,7 @@ hito:WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup
 
 hito:WhoDhiTransmitUntargetedHealthInformationToAnUndefinedPopulation
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.2.1" ;
+    hito:internalId "1.2.1" ;
     hito:subFeatureOf hito:WhoDhiUntargetedClientCommunication ;
     a hito:FeatureClassified ;
     rdfs:label "Transmit untargeted health information to an undefined population"@en ;
@@ -1087,14 +1087,14 @@ hito:WhoDhiTransmitUntargetedHealthInformationToAnUndefinedPopulation
 
 hito:WhoDhiUntargetedClientCommunication
     hito:featureCatalogue hito:WhoDhiClientFeatureCatalogue ;
-    hito:memberNr "1.2" ;
+    hito:internalId "1.2" ;
     a hito:FeatureClassified ;
     rdfs:comment "Transmission of untargeted health promotion content “in which in which relatively large, undifferentiated audiences receive identical messages.” This includes message blasts usually conducted to a mobile phone user bank. The communication can be unidirectional and bidirectional.  "@en ;
     rdfs:label "Untargeted client communication"@en .
 
 hito:WhoDhiVerifyClientUniqueIdentity
     hito:featureCatalogue hito:WhoDhiHealthcareProviderFeatureCatalogue ;
-    hito:memberNr "2.1.1" ;
+    hito:internalId "2.1.1" ;
     hito:supports hito:WhoDhiClientIdentificationAndRegistration ;
     a hito:FeatureClassified ;
     rdfs:label "Verify client unique identity"@en ;
