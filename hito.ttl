@@ -380,7 +380,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/subFeatureOf
-:featureClassifiedComponent rdf:type owl:ObjectProperty ;
+:subFeatureOf rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :subClassifiedOf ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :FeatureClassified;
