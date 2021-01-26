@@ -2047,29 +2047,11 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:label "rheumatology"@en .
 
 
-###  http://hitontology.eu/ontology/SemanticInteroperability
-:SemanticInteroperability rdfs:subClassOf :Interoperability ;
-          rdfs:comment "Semantic Interoperability Standard"@en ;
-          rdfs:label "Semantic Interoperability"@en .
-
-
 ###  http://hitontology.eu/ontology/SoftwareQuality
 :SoftwareQuality rdf:type owl:NamedIndividual ,
                            :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                   rdfs:label "Software quality"@en .
-
-
-###  http://hitontology.eu/ontology/SyntacticInteroperability
-:SyntacticInteroperability rdfs:subClassOf :Interoperability ;
-          rdfs:comment "Syntactic Interoperability Standard"@en ;
-          rdfs:label "Syntactic Interoperability"@en .
-
-
-###  http://hitontology.eu/ontology/TechnicalInteroperability
-:TechnicalInteroperability rdfs:subClassOf :Interoperability ;
-          rdfs:comment "Technical Interoperability Standard"@en ;
-          rdfs:label "Technical Interoperability"@en.
 
 
 ###  http://hitontology.eu/ontology/Technicians
