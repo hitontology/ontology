@@ -852,14 +852,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                            rdfs:label "Connecting medical informatics and bio-informatics proceedings of MIE2005"@en .
 
 
-###  http://hitontology.eu/ontology/DecisionSupportSystem
-:DecisionSupportSystem rdf:type owl:NamedIndividual ,
-                                  :ApplicationSystemClassified ;
-                         :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                         rdfs:label "Decision Support System"@en .
-
-
-
 ###  http://hitontology.eu/ontology/EconomicOutcome
 :EconomicOutcome rdf:type owl:NamedIndividual ,
                            :OutcomeCriteriaClassified ;
@@ -867,17 +859,10 @@ xsd:gYear rdf:type rdfs:Datatype .
                   rdfs:label "Economic outcome"@en .
 
 
-###  http://hitontology.eu/ontology/ElectronicPatientRecordSystem
-:ElectronicPatientRecordSystem rdf:type owl:NamedIndividual ,
-                                           :ApplicationSystemClassified ;
-                                  :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                  rdfs:label "Electronic Patient Record System"@en .
-
-
 ###  http://hitontology.eu/ontology/EmergencyDepartmentInformationSystemEDIS
 :EmergencyDepartmentInformationSystemEDIS rdf:type owl:NamedIndividual ,
                                                        :ApplicationSystemCitation ;
-                                              :applicationSystemClassified :OutpatientManagementSystem ;
+                                              :applicationSystemClassified :BbOutpatientManagementSystem ;
                                               rdfs:comment "Emergency Department Information System (EDIS)" ;
                                               rdfs:label "Emergency Department Information System EDIS"@en .
 
@@ -885,7 +870,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/EmergencyDepartmentProviderElectronicDocumentationSystem
 :EmergencyDepartmentProviderElectronicDocumentationSystem rdf:type owl:NamedIndividual ,
                                                                         :ApplicationSystemCitation ;
-                                                               :applicationSystemClassified :OutpatientManagementSystem ;
+                                                               :applicationSystemClassified :BbOutpatientManagementSystem ;
                                                                rdfs:label "Emergency Department provider electronic documentation system"@en .
 
 
@@ -893,13 +878,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :EngelmannC rdf:type owl:NamedIndividual ,
                      :FirstAuthor ;
             rdfs:label "Engelmann C"@en .
-
-
-###  http://hitontology.eu/ontology/EnterpriseResourcePlanningSystem
-:EnterpriseResourcePlanningSystem rdf:type owl:NamedIndividual ,
-                                              :ApplicationSystemClassified ;
-                                     :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                     rdfs:label "Enterprise Resource Planning System"@en .
 
 
 ###  http://hitontology.eu/ontology/EslamiS
@@ -1047,13 +1025,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                              rdfs:label "Journal of the Formosan Medical Association"@en .
 
 
-###  http://hitontology.eu/ontology/LaboratoryInformationSystem
-:LaboratoryInformationSystem rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemClassified ;
-                               :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                               rdfs:label "Laboratory Information System"@en .
-
-
 ###  http://hitontology.eu/ontology/LemmettyK
 :LemmettyK rdf:type owl:NamedIndividual ,
                     :FirstAuthor ;
@@ -1077,13 +1048,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :MarianiC rdf:type owl:NamedIndividual ,
                    :FirstAuthor ;
           rdfs:label "Mariani C"@en .
-
-
-###  http://hitontology.eu/ontology/MedicalDocumentationSystem
-:MedicalDocumentationSystem rdf:type owl:NamedIndividual ,
-                                       :ApplicationSystemClassified ;
-                              :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                              rdfs:label "Medical Documentation System"@en .
 
 
 ###  http://hitontology.eu/ontology/MenkeAJ
@@ -1893,27 +1857,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Nightingale GP"@en .
 
 
-###  http://hitontology.eu/ontology/NursingManagementAndDocumentationSystem
-:NursingManagementAndDocumentationSystem rdf:type owl:NamedIndividual ,
-                                                      :ApplicationSystemClassified ;
-                                             :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                             rdfs:label "Nursing Management and Documentation System"@en .
-
-
-###  http://hitontology.eu/ontology/OperationManagementSystem
-:OperationManagementSystem rdf:type owl:NamedIndividual ,
-                                      :ApplicationSystemClassified ;
-                             :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                             rdfs:label "Operation Management System"@en .
-
-
-###  http://hitontology.eu/ontology/OutpatientManagementSystem
-:OutpatientManagementSystem rdf:type owl:NamedIndividual ,
-                                       :ApplicationSystemClassified ;
-                              :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                              rdfs:label "Outpatient Management System"@en .
-
-
 ###  http://hitontology.eu/ontology/PACSInterface
 :PACSInterface rdf:type owl:NamedIndividual ,
                          :FeatureCitation ;
@@ -1924,7 +1867,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/PDMS
 :PDMS rdf:type owl:NamedIndividual ,
                :ApplicationSystemCitation ;
-      :applicationSystemClassified :PatientDataManagementSystemPDMS ;
+      :applicationSystemClassified :BbPatientDataManagementSystem ;
       rdfs:label "PDMS"@en .
 
 
@@ -1933,21 +1876,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                    :Journal ;
           rdfs:isDefinedBy "PubMed. NLM Catalog - NCBI [Internet]. [cited 2019 Apr 2]. Available from: https://www.ncbi.nlm.nih.gov/nlmcatalog" ;
           rdfs:label "PLo S One"@en .
-
-
-###  http://hitontology.eu/ontology/PatientAdministrationSystem
-:PatientAdministrationSystem rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemClassified ;
-                               :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                               rdfs:label "Patient Administration System"@en .
-
-
-###  http://hitontology.eu/ontology/PatientDataManagementSystemPDMS
-:PatientDataManagementSystemPDMS rdf:type owl:NamedIndividual ,
-                                              :ApplicationSystemClassified ;
-                                     :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                     rdfs:comment "Patient Data Management System (PDMS)" ;
-                                     rdfs:label "Patient Data Management System PDMS"@en .
 
 
 ###  http://hitontology.eu/ontology/PatientEmpowerment
@@ -1962,14 +1890,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                :OutcomeCriteriaClassified ;
                       :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                       rdfs:label "Patient satisfaction"@en .
-
-
-###  http://hitontology.eu/ontology/PictureArchivingAndCommunicationSystemPACS
-:PictureArchivingAndCommunicationSystemPACS rdf:type owl:NamedIndividual ,
-                                                          :ApplicationSystemClassified ;
-                                                 :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                                 rdfs:comment "Picture Archiving and Communication System (PACS)" ;
-                                                 rdfs:label "Picture Archiving and Communication System PACS"@en .
 
 
 ###  http://hitontology.eu/ontology/PoonGE
@@ -1992,14 +1912,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                  rdfs:label "Process quality"@en .
 
 
-###  http://hitontology.eu/ontology/ProviderOrPhysicianOrderEntrySystemPOE
-:ProviderOrPhysicianOrderEntrySystemPOE rdf:type owl:NamedIndividual ,
-                                                       :ApplicationSystemClassified ;
-                                              :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                                              rdfs:comment "Provider or Physician Order Entry System (POE)" ;
-                                              rdfs:label "Provider or Physician Order Entry System POE"@en .
-
-
 ###  http://hitontology.eu/ontology/Qualitative
 :Qualitative rdf:type owl:NamedIndividual ,
                       :StudyMethodClassified ;
@@ -2017,8 +1929,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/RIS-PACSSystem
 :RIS-PACSSystem rdf:type owl:NamedIndividual ,
                           :ApplicationSystemCitation ;
-                 :applicationSystemClassified :PictureArchivingAndCommunicationSystemPACS ,
-                                              :RadiologyInformationSystem ;
+                 :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ,
+                                              :BbRadiologyInformationSystem ;
                  rdfs:label "RIS-PACS system"@en .
 
 
@@ -2026,13 +1938,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Radiologists rdf:type owl:NamedIndividual ;
               :hasSCTID 66862007 ;
               rdfs:label "Radiologists"@en .
-
-
-###  http://hitontology.eu/ontology/RadiologyInformationSystem
-:RadiologyInformationSystem rdf:type owl:NamedIndividual ,
-                                       :ApplicationSystemClassified ;
-                              :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                              rdfs:label "Radiology Information System"@en .
 
 
 ###  http://hitontology.eu/ontology/RedfernOR
@@ -2058,13 +1963,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :Technicians rdf:type owl:NamedIndividual ;
              :hasSCTID 307988006 ;
              rdfs:label "Technicians"@en .
-
-
-###  http://hitontology.eu/ontology/TeleradiologySystem
-:TeleradiologySystem rdf:type owl:NamedIndividual ,
-                               :ApplicationSystemClassified ;
-                      :vancouverReference "Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011." ;
-                      rdfs:label "Teleradiology system"@en .
 
 
 ###  http://hitontology.eu/ontology/TheNewEnglandJournalOfMedicine
@@ -2447,7 +2345,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :clinicalDocumentationSystem rdf:type owl:NamedIndividual ,
                                         :ApplicationSystemCitation ;
                                owl:sameAs :electronicMedicalRecordSystem ;
-                               :applicationSystemClassified :MedicalDocumentationSystem ;
+                               :applicationSystemClassified :BbMedicalDocumentationSystem ;
                                rdfs:label "clinical documentation system"@en .
 
 
@@ -2504,7 +2402,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/computerizedDecisionAid
 :computerizedDecisionAid rdf:type owl:NamedIndividual ,
                                     :ApplicationSystemCitation ;
-                           :applicationSystemClassified :DecisionSupportSystem ;
+                           :applicationSystemClassified :BbDecisionSupportSystem ;
                            rdfs:label "computerized decision aid" .
 
 
@@ -2528,8 +2426,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS
 :computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS rdf:type owl:NamedIndividual ,
                                                                                                    :ApplicationSystemCitation ;
-                                                                                          :applicationSystemClassified :DecisionSupportSystem ,
-                                                                                                                       :ProviderOrPhysicianOrderEntrySystemPOE ;
+                                                                                          :applicationSystemClassified :BbDecisionSupportSystem ,
+                                                                                                                       :BbProviderOrPhysicianOrderEntrySystem ;
                                                                                           rdfs:comment "computerized physician order entry system with basic clinical decision support (CPOE-CDSS)" ;
                                                                                           rdfs:label "computerized physician order entry system with basic clinical decision support CPOE-CDSS"@en .
 
@@ -2537,14 +2435,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/computerizedPrescribingSystem
 :computerizedPrescribingSystem rdf:type owl:NamedIndividual ,
                                           :ApplicationSystemCitation ;
-                                 :applicationSystemClassified :ProviderOrPhysicianOrderEntrySystemPOE ;
+                                 :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                  rdfs:label "computerized prescribing system"@en .
 
 
 ###  http://hitontology.eu/ontology/computerizedProviderOrderEntrySystem
 :computerizedProviderOrderEntrySystem rdf:type owl:NamedIndividual ,
                                                    :ApplicationSystemCitation ;
-                                          :applicationSystemClassified :ProviderOrPhysicianOrderEntrySystemPOE ;
+                                          :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                           rdfs:label "computerized provider order entry system"@en .
 
 
@@ -2737,7 +2635,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/electronicMedicalRecordSystem
 :electronicMedicalRecordSystem rdf:type owl:NamedIndividual ,
                                            :ApplicationSystemCitation ;
-                                  :applicationSystemClassified :MedicalDocumentationSystem ;
+                                  :applicationSystemClassified :BbMedicalDocumentationSystem ;
                                   rdfs:label "electronic medical record system"@en .
 
 
@@ -2761,6 +2659,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/electronicPatientRecordSystemEPR
 :electronicPatientRecordSystemEPR rdf:type owl:NamedIndividual ,
                                                :ApplicationSystemCitation ;
+                                               :applicationSystemClassified :BbElectronicPatientRecordSystem ;
                                       rdfs:comment "electronic patient record system (EPR)" ;
                                       rdfs:label "electronic patient record system EPR"@en .
 
@@ -2775,7 +2674,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/electronicPrescribingSystem
 :electronicPrescribingSystem rdf:type owl:NamedIndividual ,
                                         :ApplicationSystemCitation ;
-                               :applicationSystemClassified :ProviderOrPhysicianOrderEntrySystemPOE ;
+                               :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                rdfs:label "electronic prescribing system"@en .
 
 
@@ -2806,7 +2705,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/enterpriseWideResourcePlanningSystemERP
 :enterpriseWideResourcePlanningSystemERP rdf:type owl:NamedIndividual ,
                                                        :ApplicationSystemCitation ;
-                                              :applicationSystemClassified :EnterpriseResourcePlanningSystem ;
+                                              :applicationSystemClassified :BbEnterpriseResourcePlanningSystem ;
                                               rdfs:comment "enterprise wide resource planning system (ERP)" ;
                                               rdfs:label "enterprise wide resource planning system ERP"@en .
 
@@ -3301,7 +3200,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/laboratoryInformationSystem
 :laboratoryInformationSystem rdf:type owl:NamedIndividual ,
                                         :ApplicationSystemCitation ;
-                               :applicationSystemClassified :LaboratoryInformationSystem ;
+                               :applicationSystemClassified :BbLaboratoryInformationSystem ;
                                rdfs:label "laboratory information system"@en .
 
 
@@ -3440,7 +3339,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :nursingDocumentationSystem rdf:type owl:NamedIndividual ,
                                        :ApplicationSystemCitation ;
                               owl:sameAs :nursingInformationSystem ;
-                              :applicationSystemClassified :NursingManagementAndDocumentationSystem ;
+                              :applicationSystemClassified :BbNursingManagementAndDocumentationSystem ;
                               rdfs:label "nursing documentation system"@en .
 
 
@@ -3455,7 +3354,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/nursingInformationSystem
 :nursingInformationSystem rdf:type owl:NamedIndividual ,
                                      :ApplicationSystemCitation ;
-                            :applicationSystemClassified :NursingManagementAndDocumentationSystem ;
+                            :applicationSystemClassified :BbNursingManagementAndDocumentationSystem ;
                             rdfs:label "nursing information system"@en .
 
 
@@ -3510,7 +3409,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/operationManagementSystem
 :operationManagementSystem rdf:type owl:NamedIndividual ,
                                       :ApplicationSystemCitation ;
-                             :applicationSystemClassified :OperationManagementSystem ;
+                             :applicationSystemClassified :BbOperationManagementSystem ;
                              rdfs:label "operation management system"@en .
 
 
@@ -3561,7 +3460,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/patientAdministrationSystemPAS
 :patientAdministrationSystemPAS rdf:type owl:NamedIndividual ,
                                             :ApplicationSystemCitation ;
-                                   :applicationSystemClassified :PatientAdministrationSystem ;
+                                   :applicationSystemClassified :BbPatientAdministrationSystem ;
                                    rdfs:comment "patient administration system (PAS)" ;
                                    rdfs:label "patient administration system PAS"@en .
 
@@ -3576,7 +3475,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/patientDataManagementSystemPDMS
 :patientDataManagementSystemPDMS rdf:type owl:NamedIndividual ,
                                               :ApplicationSystemCitation ;
-                                     :applicationSystemClassified :PatientDataManagementSystemPDMS ;
+                                     :applicationSystemClassified :BbPatientDataManagementSystem ;
                                      rdfs:comment "patient data management system (PDMS)" ;
                                      rdfs:label "patient data management system PDMS"@en .
 
@@ -3644,7 +3543,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/pictureArchivalAndCommunicationSystem
 :pictureArchivalAndCommunicationSystem rdf:type owl:NamedIndividual ,
                                                     :ApplicationSystemCitation ;
-                                           :applicationSystemClassified :PictureArchivingAndCommunicationSystemPACS ;
+                                           :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
                                            rdfs:label "picture archival and communication system"@en .
 
 
@@ -4185,7 +4084,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/teleconsultationSystem
 :teleconsultationSystem rdf:type owl:NamedIndividual ,
                                   :ApplicationSystemCitation ;
-                         :applicationSystemClassified :TeleradiologySystem ;
+                         :applicationSystemClassified :BbTeleradiologySystem ;
                          rdfs:label "teleconsultation system"@en .
 
 
