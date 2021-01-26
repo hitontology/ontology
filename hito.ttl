@@ -1104,8 +1104,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "mobile"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_1
-:NamedStudy_1 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy1
+:NamedStudy1 rdf:type owl:NamedIndividual ,
                        :ExperimentalStudyRCT ;
               :evaluatesApplicationSystem :laboratoryInformationSystem ;
               :evaluatesApplicationSystemBasedOnProduct :eChasqui ;
@@ -1137,8 +1137,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3982951/pdf/pone.0090110.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_10
-:NamedStudy_10 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy10
+:NamedStudy10 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :enterpriseWideResourcePlanningSystemERP ;
                :evaluatesApplicationSystemBasedOnProduct :SAPR3BusinessProcessControlSystemSoftware ;
@@ -1166,8 +1166,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6241744/pdf/10-4338-ACI-2016-06-RA-0100.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_11
-:NamedStudy_11 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy11
+:NamedStudy11 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :PDMS ;
                :evaluatesApplicationSystemHavingFeature :automatedCalculationOfVentilationTimes ,
@@ -1199,8 +1199,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3847636/pdf/1472-6947-13-107.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_12
-:NamedStudy_12 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy12
+:NamedStudy12 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :computerizedDecisionSupportSystemCDSS ,
                                            :patientDataManagementSystemPDMS ;
@@ -1230,8 +1230,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Evaluation of consulting and critiquing decision support systems: Effect on adherence to a lower tidal volume mechanical ventilation strategy"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_13
-:NamedStudy_13 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy13
+:NamedStudy13 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :patientAdministrationSystemPAS ;
                :evaluatesApplicationSystemHavingFeature :in-patientAdmissionsAndDischarges ,
@@ -1257,8 +1257,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Improving a health information system for real-time data entries: An action research project using socio-technical systems theory"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_14
-:NamedStudy_14 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy14
+:NamedStudy14 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :electronicPatientRecordSystemEPR ,
                                            :patientAdministrationSystemPAS ;
@@ -1294,8 +1294,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Evaluation of user adoption during three module deployments of region-wide electronic patient record systems"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_15
-:NamedStudy_15 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy15
+:NamedStudy15 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :nursingDocumentationSystem ;
                :evaluatesApplicationSystemBasedOnProduct :PIK ;
@@ -1325,8 +1325,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC150360/pdf/0100069.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_16
-:NamedStudy_16 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy16
+:NamedStudy16 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :nursingInformationSystem ;
                :evaluatesApplicationSystemBasedOnProduct :HNAMillenium ;
@@ -1356,8 +1356,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Effect of a nursing information system on the quality of information processing in nursing: An evaluation study using the HIS-monitor instrument"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_17
-:NamedStudy_17 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy17
+:NamedStudy17 rdf:type owl:NamedIndividual ,
                         :LabStudy ;
                :evaluatesApplicationSystem :nursingDocumentationSystem ;
                :evaluatesApplicationSystemHavingFeature :ICNPAsClassificationSystem ,
@@ -1378,8 +1378,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Measuring the User Acceptance of a Web-based Nursing Documentation System"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_18
-:NamedStudy_18 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy18
+:NamedStudy18 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :EmergencyDepartmentInformationSystemEDIS ;
                :evaluatesApplicationSystemBasedOnProduct :CernerFirstNet ;
@@ -1409,8 +1409,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Does an integrated Emergency Department Information System change the sequence of clinical work? A mixed-method cross-site study"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_19
-:NamedStudy_19 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy19
+:NamedStudy19 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :EmergencyDepartmentProviderElectronicDocumentationSystem ;
                :evaluatesApplicationSystemBasedOnProduct :eDoc ;
@@ -1432,8 +1432,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5653416/pdf/nihms880796.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_2
-:NamedStudy_2 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy2
+:NamedStudy2 rdf:type owl:NamedIndividual ,
                        :NonExperimentalStudy ;
               :evaluatesApplicationSystem :electronicPrescribingSystem ;
               :evaluatesApplicationSystemBasedOnProduct :CSCMedChart ,
@@ -1463,8 +1463,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3822121/pdf/amiajnl-2013-001745.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_20
-:NamedStudy_20 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy20
+:NamedStudy20 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :electronicMedicalRecordSystem ;
                :evaluatesApplicationSystemHavingFeature :real-timeDataEntering ;
@@ -1489,8 +1489,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6019548/pdf/MMJ2904-0322.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_21
-:NamedStudy_21 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy21
+:NamedStudy21 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :clinicalDocumentationSystem ;
                :evaluatesApplicationSystemBasedOnProduct :EclipsysContinuum_2000CDS ;
@@ -1523,8 +1523,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC57982/pdf/1472-6947-1-3.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_22
-:NamedStudy_22 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy22
+:NamedStudy22 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :electronicMedication-administrationSystem ;
                :evaluatesApplicationSystemHavingFeature :electronicPatientWorklist ,
@@ -1552,8 +1552,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:label "Effect of Bar-Code Technology on the Safety of Medication Administration"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_23
-:NamedStudy_23 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy23
+:NamedStudy23 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :pointOfCareTestingDevicePOCT ;
                :evaluatesApplicationSystemBasedOnProduct :AbbottI-Stat ,
@@ -1577,8 +1577,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4652707/pdf/bmjqir-2-u201027-w685.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_24
-:NamedStudy_24 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy24
+:NamedStudy24 rdf:type owl:NamedIndividual ,
                         :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :computerizedPrescribingSystem ;
                :evaluatesApplicationSystemHavingFeature :SupportForMedicationOrderingEfficiencies ,
@@ -1609,8 +1609,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC27317/pdf/750.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_26
-:NamedStudy_26 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy26
+:NamedStudy26 rdf:type owl:NamedIndividual ,
                         :NonExperimentalStudy ;
                :evaluatesApplicationSystem :semi-automaticAortaDilatationQuantificationSoftware ;
                :evaluatesApplicationSystemHavingFeature :automaticAlignmentOfBaselineAndFollow-upCTA ,
@@ -1633,8 +1633,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6482131/pdf/10554_2018Article_1488.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_3
-:NamedStudy_3 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy3
+:NamedStudy3 rdf:type owl:NamedIndividual ,
                        :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :computerizedProviderOrderEntrySystem ;
               :evaluatesApplicationSystemBasedOnProduct :CernerSoarianCPOEPlatform ;
@@ -1661,8 +1661,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6241742/pdf/10-4338-ACI-2016-09-RA-0153.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_4
-:NamedStudy_4 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy4
+:NamedStudy4 rdf:type owl:NamedIndividual ,
                        :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS ;
               :evaluatesApplicationSystemBasedOnProduct :Medicator ,
@@ -1700,8 +1700,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3002127/pdf/816.S1067502709001704.main.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_5
-:NamedStudy_5 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy5
+:NamedStudy5 rdf:type owl:NamedIndividual ,
                        :ValidationStudy ;
               :evaluatesApplicationSystem :teleconsultationSystem ;
               :evaluatesApplicationSystemBasedOnProduct :TeleDICOM ;
@@ -1740,8 +1740,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092051/pdf/10278_2010Article_9303.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_6
-:NamedStudy_6 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy6
+:NamedStudy6 rdf:type owl:NamedIndividual ,
                        :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :RIS-PACSSystem ;
               :evaluatesApplicationSystemBasedOnProduct :AGFAPACSIMPAX ,
@@ -1771,8 +1771,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3045177/pdf/10278_2006Article_10858.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_7
-:NamedStudy_7 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy7
+:NamedStudy7 rdf:type owl:NamedIndividual ,
                        :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :pictureArchivalAndCommunicationSystem ;
               :evaluatesApplicationSystemBasedOnProduct :GEPatchspecdPACS ;
@@ -1799,8 +1799,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3613261/pdf/10278_2002Article_10.1007-+s10278-002-0024-5.pdf> .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_8
-:NamedStudy_8 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy8
+:NamedStudy8 rdf:type owl:NamedIndividual ,
                        :NonExperimentalStudy ;
               :evaluatesApplicationSystem :laboratoryInformationSystem ;
               :evaluatesApplicationSystemHavingFeature :emergencyTesting ;
@@ -1819,8 +1819,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:label "Evaluation and Improvement Strategy of Analytical Turnaround Time in the Stat Laboratory"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_9
-:NamedStudy_9 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy9
+:NamedStudy9 rdf:type owl:NamedIndividual ,
                        :NonExperimentalStudy ;
               :evaluatesApplicationSystem :operationManagementSystem ;
               :evaluatesApplicationSystemHavingFeature :followingOfThePerioerpativeProcess ,
@@ -1855,8 +1855,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:label "Operation Management System Evaluation in the Central Finland Health Care District - End Users' View of System Implementation"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy_24
-:NamedStudy_24 rdf:type owl:NamedIndividual ,
+###  http://hitontology.eu/ontology/NamedStudy24
+:NamedStudy24 rdf:type owl:NamedIndividual ,
                          :ExperimentalStudyRCT ;
                 :evaluatesApplicationSystemHavingFeature :app ,
                                                          :informationSourroundingPatientAgeAndGestationalAgeToGuideTowardAvailableOptions ,
