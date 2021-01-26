@@ -1,0 +1,37 @@
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hito: <> .
+
+hito:MySql
+    a hito:DatabaseSystem;
+    rdfs:label "MySQL"@en .
+
+hito:OracleDatabase
+    a hito:DatabaseSystem;
+    rdfs:label "Oracle Database"@en .
+
+hito:MicrosoftSqlServer
+    a hito:DatabaseSystem;
+    rdfs:label "Microsoft SQL Server"@en .
+
+hito:PostgreSql
+    a hito:DatabaseSystem;
+    rdfs:label "PostgreSQL"@en .
+
+hito:MongoDb
+    a hito:DatabaseSystem;
+    rdfs:label "MongoDB"@en .
+
+hito:MariaDb
+    a hito:DatabaseSystem;
+    rdfs:label "MariaDB"@en .
+
+hito:IbmDb2
+    a hito:DatabaseSystem;
+    rdfs:label "IBM DB2"@en .
+
+hito:SapHana
+    a hito:DatabaseSystem;
+    rdfs:label "SAP HANA"@en .
+
