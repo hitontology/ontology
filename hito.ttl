@@ -48,9 +48,9 @@
 :uc2 rdf:type owl:Ontology ;
      rdfs:label "MEDFLOSS"@en ;
      rdfs:comment "selecting medical free/libre open source software"@en ;
-     ov:defines :ApplicationSystemCatalogue;
-     ov:defines :ApplicationSystemClassified;
-     ov:defines :ApplicationSystemCitation;
+     ov:defines :SoftwareProductInstallationCatalogue;
+     ov:defines :SoftwareProductInstallationClassified;
+     ov:defines :SoftwareProductInstallationCitation;
 #    ov:defines :Certification;
      ov:defines :Citation;
      ov:defines :Classification;
@@ -79,26 +79,26 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://hitontology.eu/ontology/applicationSystem
-:applicationSystem rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/hasBeenUsedForInstallationOf
+:hasBeenUsedForInstallationOf rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :citation ;
                            rdfs:domain :SoftwareProduct ;
-                           rdfs:range :ApplicationSystemCitation ;
-                           rdfs:label "application system catalogue"@en .
+                           rdfs:range :SoftwareProductInstallationCitation ;
+                           rdfs:label "has been used for the installation of"@en .
 
 
 ###  http://hitontology.eu/ontology/applicationSystemCatalogue
-:applicationSystemCatalogue rdf:type owl:ObjectProperty ;
-                           rdfs:domain :ApplicationSystemClassified ;
-                           rdfs:range :ApplicationSystemCatalogue ;
-                           rdfs:label "application system catalogue"@en .
+:softwareProductInstallationCatalogue rdf:type owl:ObjectProperty ;
+                           rdfs:domain :SoftwareProductInstallationClassified ;
+                           rdfs:range :SoftwareProductInstallationCatalogue ;
+                           rdfs:label "software product installation catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/applicationSystemClassified
-:applicationSystemClassified rdf:type owl:ObjectProperty ;
-                             rdfs:domain :ApplicationSystemCitation ;
-                             rdfs:range :ApplicationSystemClassified ;
-                             rdfs:label "classified application system"@en .
+###  http://hitontology.eu/ontology/softwareProductInstallationClassified
+:softwareProductInstallationClassified rdf:type owl:ObjectProperty ;
+                             rdfs:domain :SoftwareProductInstallationCitation ;
+                             rdfs:range :SoftwareProductInstallationClassified ;
+                             rdfs:label "classified software product installation"@en .
 
 
 ###  http://hitontology.eu/ontology/certification
@@ -198,7 +198,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystem
 :evaluatesApplicationSystem rdf:type owl:ObjectProperty ;
                             rdfs:domain :Study ;
-                            rdfs:range :ApplicationSystemCitation ;
+                            rdfs:range :SoftwareProductInstallationCitation ;
                             rdfs:label "evaluates Application System"@en .
 
 
@@ -292,7 +292,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/implements
 :implements rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :ApplicationSystemCitation ;
+                    rdfs:range :SoftwareProductInstallationCitation ;
                     rdfs:comment "If installed and customized, a software product implements a certain application system."@en ;
                     rdfs:label "implements"@en .
 
@@ -479,7 +479,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/vancouverReference
 :vancouverReference rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :ApplicationSystemClassified ,
+                    rdfs:domain :SoftwareProductInstallationClassified ,
                                 :FeatureClassified ,
                                 :OrganizationalUnitClassified ,
                                 :OutcomeCriteriaClassified ,
@@ -494,7 +494,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/directApplicationSystem
 :directApplicationSystem rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
-                           rdfs:range :ApplicationSystemClassified ;
+                           rdfs:range :SoftwareProductInstallationClassified ;
                            rdfs:label "application system"@en .
 
 ###  http://hitontology.eu/ontology/directEnterpriseFunction
@@ -526,19 +526,19 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://hitontology.eu/ontology/ApplicationSystemCatalogue
-:ApplicationSystemCatalogue rdf:type owl:Class ;
+:SoftwareProductInstallationCatalogue rdf:type owl:Class ;
                              rdfs:subClassOf :Catalogue ;
                              rdfs:label "Application System Catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemClassified
-:ApplicationSystemClassified rdf:type owl:Class ;
+:SoftwareProductInstallationClassified rdf:type owl:Class ;
                              rdfs:subClassOf :Classified ;
                              rdfs:label "Application System Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemCitation
-:ApplicationSystemCitation rdf:type owl:Class ;
+:SoftwareProductInstallationCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Citation"@en .
 
@@ -861,16 +861,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/EmergencyDepartmentInformationSystemEDIS
 :EmergencyDepartmentInformationSystemEDIS rdf:type owl:NamedIndividual ,
-                                                       :ApplicationSystemCitation ;
-                                              :applicationSystemClassified :BbOutpatientManagementSystem ;
+                                                       :SoftwareProductInstallationCitation ;
+                                              :softwareProductInstallationClassified :BbOutpatientManagementSystem ;
                                               rdfs:comment "Emergency Department Information System (EDIS)" ;
                                               rdfs:label "Emergency Department Information System EDIS"@en .
 
 
 ###  http://hitontology.eu/ontology/EmergencyDepartmentProviderElectronicDocumentationSystem
 :EmergencyDepartmentProviderElectronicDocumentationSystem rdf:type owl:NamedIndividual ,
-                                                                        :ApplicationSystemCitation ;
-                                                               :applicationSystemClassified :BbOutpatientManagementSystem ;
+                                                                        :SoftwareProductInstallationCitation ;
+                                                               :softwareProductInstallationClassified :BbOutpatientManagementSystem ;
                                                                rdfs:label "Emergency Department provider electronic documentation system"@en .
 
 
@@ -1866,8 +1866,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/PDMS
 :PDMS rdf:type owl:NamedIndividual ,
-               :ApplicationSystemCitation ;
-      :applicationSystemClassified :BbPatientDataManagementSystem ;
+               :SoftwareProductInstallationCitation ;
+      :softwareProductInstallationClassified :BbPatientDataManagementSystem ;
       rdfs:label "PDMS"@en .
 
 
@@ -1928,8 +1928,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/RIS-PACSSystem
 :RIS-PACSSystem rdf:type owl:NamedIndividual ,
-                          :ApplicationSystemCitation ;
-                 :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ,
+                          :SoftwareProductInstallationCitation ;
+                 :softwareProductInstallationClassified :BbPictureArchivingAndCommunicationSystem ,
                                               :BbRadiologyInformationSystem ;
                  rdfs:label "RIS-PACS system"@en .
 
@@ -1980,15 +1980,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/UnknownApplicationSystemCatalogue
-:UnknownApplicationSystemCatalogue rdf:type :ApplicationSystemCatalogue ;
+:UnknownApplicationSystemCatalogue rdf:type :SoftwareProductInstallationCatalogue ;
 	rdfs:label "Unknown Application System Catalogue"@en ;
 	rdfs:comment "residual catalogue for assigning citations with unknown classified application system." .
 
 
 ###  http://hitontology.eu/ontology/UnknownApplicationSystemClassified
-	:UnknownApplicationSystemClassified rdf:type :ApplicationSystemClassified ;
+	:UnknownApplicationSystemClassified rdf:type :SoftwareProductInstallationClassified ;
 	rdfs:label "Unknown Classified Application System"@en ;
-	:applicationSystemCatalogue :UnknownApplicationSystemCatalogue .
+	:softwareProductInstallationCatalogue :UnknownApplicationSystemCatalogue .
 
 
 ###  http://hitontology.eu/ontology/UnknownFunctionCatalogue
@@ -2343,9 +2343,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/clinicalDocumentationSystem
 :clinicalDocumentationSystem rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemCitation ;
+                                        :SoftwareProductInstallationCitation ;
                                owl:sameAs :electronicMedicalRecordSystem ;
-                               :applicationSystemClassified :BbMedicalDocumentationSystem ;
+                               :softwareProductInstallationClassified :BbMedicalDocumentationSystem ;
                                rdfs:label "clinical documentation system"@en .
 
 
@@ -2401,14 +2401,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/computerizedDecisionAid
 :computerizedDecisionAid rdf:type owl:NamedIndividual ,
-                                    :ApplicationSystemCitation ;
-                           :applicationSystemClassified :BbDecisionSupportSystem ;
+                                    :SoftwareProductInstallationCitation ;
+                           :softwareProductInstallationClassified :BbDecisionSupportSystem ;
                            rdfs:label "computerized decision aid" .
 
 
 ###  http://hitontology.eu/ontology/computerizedDecisionSupportSystemCDSS
 :computerizedDecisionSupportSystemCDSS rdf:type owl:NamedIndividual ,
-                                                    :ApplicationSystemCitation ;
+                                                    :SoftwareProductInstallationCitation ;
                                            rdfs:comment "computerized decision support system (CDSS)" ;
                                            rdfs:label "computerized decision support system CDSS"@en .
 
@@ -2425,8 +2425,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS
 :computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS rdf:type owl:NamedIndividual ,
-                                                                                                   :ApplicationSystemCitation ;
-                                                                                          :applicationSystemClassified :BbDecisionSupportSystem ,
+                                                                                                   :SoftwareProductInstallationCitation ;
+                                                                                          :softwareProductInstallationClassified :BbDecisionSupportSystem ,
                                                                                                                        :BbProviderOrPhysicianOrderEntrySystem ;
                                                                                           rdfs:comment "computerized physician order entry system with basic clinical decision support (CPOE-CDSS)" ;
                                                                                           rdfs:label "computerized physician order entry system with basic clinical decision support CPOE-CDSS"@en .
@@ -2434,15 +2434,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/computerizedPrescribingSystem
 :computerizedPrescribingSystem rdf:type owl:NamedIndividual ,
-                                          :ApplicationSystemCitation ;
-                                 :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
+                                          :SoftwareProductInstallationCitation ;
+                                 :softwareProductInstallationClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                  rdfs:label "computerized prescribing system"@en .
 
 
 ###  http://hitontology.eu/ontology/computerizedProviderOrderEntrySystem
 :computerizedProviderOrderEntrySystem rdf:type owl:NamedIndividual ,
-                                                   :ApplicationSystemCitation ;
-                                          :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
+                                                   :SoftwareProductInstallationCitation ;
+                                          :softwareProductInstallationClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                           rdfs:label "computerized provider order entry system"@en .
 
 
@@ -2634,14 +2634,14 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/electronicMedicalRecordSystem
 :electronicMedicalRecordSystem rdf:type owl:NamedIndividual ,
-                                           :ApplicationSystemCitation ;
-                                  :applicationSystemClassified :BbMedicalDocumentationSystem ;
+                                           :SoftwareProductInstallationCitation ;
+                                  :softwareProductInstallationClassified :BbMedicalDocumentationSystem ;
                                   rdfs:label "electronic medical record system"@en .
 
 
 ###  http://hitontology.eu/ontology/electronicMedication-administrationSystem
 :electronicMedication-administrationSystem rdf:type owl:NamedIndividual ,
-                                                      :ApplicationSystemCitation ;
+                                                      :SoftwareProductInstallationCitation ;
                                              rdfs:label "electronic medication-administration system"@en .
 
 
@@ -2658,8 +2658,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/electronicPatientRecordSystemEPR
 :electronicPatientRecordSystemEPR rdf:type owl:NamedIndividual ,
-                                               :ApplicationSystemCitation ;
-                                               :applicationSystemClassified :BbElectronicPatientRecordSystem ;
+                                               :SoftwareProductInstallationCitation ;
+                                               :softwareProductInstallationClassified :BbElectronicPatientRecordSystem ;
                                       rdfs:comment "electronic patient record system (EPR)" ;
                                       rdfs:label "electronic patient record system EPR"@en .
 
@@ -2673,8 +2673,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/electronicPrescribingSystem
 :electronicPrescribingSystem rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemCitation ;
-                               :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
+                                        :SoftwareProductInstallationCitation ;
+                               :softwareProductInstallationClassified :BbProviderOrPhysicianOrderEntrySystem ;
                                rdfs:label "electronic prescribing system"@en .
 
 
@@ -2704,8 +2704,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/enterpriseWideResourcePlanningSystemERP
 :enterpriseWideResourcePlanningSystemERP rdf:type owl:NamedIndividual ,
-                                                       :ApplicationSystemCitation ;
-                                              :applicationSystemClassified :BbEnterpriseResourcePlanningSystem ;
+                                                       :SoftwareProductInstallationCitation ;
+                                              :softwareProductInstallationClassified :BbEnterpriseResourcePlanningSystem ;
                                               rdfs:comment "enterprise wide resource planning system (ERP)" ;
                                               rdfs:label "enterprise wide resource planning system ERP"@en .
 
@@ -3199,8 +3199,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/laboratoryInformationSystem
 :laboratoryInformationSystem rdf:type owl:NamedIndividual ,
-                                        :ApplicationSystemCitation ;
-                               :applicationSystemClassified :BbLaboratoryInformationSystem ;
+                                        :SoftwareProductInstallationCitation ;
+                               :softwareProductInstallationClassified :BbLaboratoryInformationSystem ;
                                rdfs:label "laboratory information system"@en .
 
 
@@ -3337,9 +3337,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursingDocumentationSystem
 :nursingDocumentationSystem rdf:type owl:NamedIndividual ,
-                                       :ApplicationSystemCitation ;
+                                       :SoftwareProductInstallationCitation ;
                               owl:sameAs :nursingInformationSystem ;
-                              :applicationSystemClassified :BbNursingManagementAndDocumentationSystem ;
+                              :softwareProductInstallationClassified :BbNursingManagementAndDocumentationSystem ;
                               rdfs:label "nursing documentation system"@en .
 
 
@@ -3353,8 +3353,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/nursingInformationSystem
 :nursingInformationSystem rdf:type owl:NamedIndividual ,
-                                     :ApplicationSystemCitation ;
-                            :applicationSystemClassified :BbNursingManagementAndDocumentationSystem ;
+                                     :SoftwareProductInstallationCitation ;
+                            :softwareProductInstallationClassified :BbNursingManagementAndDocumentationSystem ;
                             rdfs:label "nursing information system"@en .
 
 
@@ -3408,8 +3408,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/operationManagementSystem
 :operationManagementSystem rdf:type owl:NamedIndividual ,
-                                      :ApplicationSystemCitation ;
-                             :applicationSystemClassified :BbOperationManagementSystem ;
+                                      :SoftwareProductInstallationCitation ;
+                             :softwareProductInstallationClassified :BbOperationManagementSystem ;
                              rdfs:label "operation management system"@en .
 
 
@@ -3459,8 +3459,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patientAdministrationSystemPAS
 :patientAdministrationSystemPAS rdf:type owl:NamedIndividual ,
-                                            :ApplicationSystemCitation ;
-                                   :applicationSystemClassified :BbPatientAdministrationSystem ;
+                                            :SoftwareProductInstallationCitation ;
+                                   :softwareProductInstallationClassified :BbPatientAdministrationSystem ;
                                    rdfs:comment "patient administration system (PAS)" ;
                                    rdfs:label "patient administration system PAS"@en .
 
@@ -3474,8 +3474,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/patientDataManagementSystemPDMS
 :patientDataManagementSystemPDMS rdf:type owl:NamedIndividual ,
-                                              :ApplicationSystemCitation ;
-                                     :applicationSystemClassified :BbPatientDataManagementSystem ;
+                                              :SoftwareProductInstallationCitation ;
+                                     :softwareProductInstallationClassified :BbPatientDataManagementSystem ;
                                      rdfs:comment "patient data management system (PDMS)" ;
                                      rdfs:label "patient data management system PDMS"@en .
 
@@ -3542,8 +3542,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/pictureArchivalAndCommunicationSystem
 :pictureArchivalAndCommunicationSystem rdf:type owl:NamedIndividual ,
-                                                    :ApplicationSystemCitation ;
-                                           :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
+                                                    :SoftwareProductInstallationCitation ;
+                                           :softwareProductInstallationClassified :BbPictureArchivingAndCommunicationSystem ;
                                            rdfs:label "picture archival and communication system"@en .
 
 
@@ -3585,7 +3585,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/pointOfCareTestingDevicePOCT
 :pointOfCareTestingDevicePOCT rdf:type owl:NamedIndividual ,
-                                            :ApplicationSystemCitation ;
+                                            :SoftwareProductInstallationCitation ;
                                    rdfs:comment "point of care testing device (POCT)" ;
                                    rdfs:label "point of care testing device POCT"@en .
 
@@ -3916,7 +3916,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/semi-automaticAortaDilatationQuantificationSoftware
 :semi-automaticAortaDilatationQuantificationSoftware rdf:type owl:NamedIndividual ,
-                                                                  :ApplicationSystemCitation ;
+                                                                  :SoftwareProductInstallationCitation ;
                                                          rdfs:label "semi-automatic aorta dilatation quantification software" .
 
 
@@ -4083,8 +4083,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/teleconsultationSystem
 :teleconsultationSystem rdf:type owl:NamedIndividual ,
-                                  :ApplicationSystemCitation ;
-                         :applicationSystemClassified :BbTeleradiologySystem ;
+                                  :SoftwareProductInstallationCitation ;
+                         :softwareProductInstallationClassified :BbTeleradiologySystem ;
                          rdfs:label "teleconsultation system"@en .
 
 
