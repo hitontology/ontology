@@ -1,0 +1,204 @@
+@base <http://hitontology.eu/ontology/> .
+@prefix hito: <> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hito:Ajax
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Ajax"@en .
+
+hito:AndroMda
+    a hito:ProgrammingLibrary ;
+    rdfs:label "AndroMDA"@en .
+
+hito:AndroidSdk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Android SDK"@en .
+
+hito:AngularJs
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Angular JS"@en .
+
+hito:AspNet
+    a hito:ProgrammingLibrary ;
+    rdfs:label "ASP.NET"@en .
+
+hito:Boost
+    a hito:ProgrammingLibrary ;
+    rdfs:label "BOOST"@en .
+
+hito:Bootstrap
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Bootstrap"@en .
+
+hito:Camel
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Camel"@en .
+
+hito:CmGui
+    a hito:ProgrammingLibrary ;
+    rdfs:label "CMGUI"@en .
+
+hito:Cocoa
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Cocoa"@en .
+
+hito:Dcmtk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "DCMTK"@en .
+
+hito:Django
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Django"@en .
+
+hito:Dojo
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Dojo"@en .
+
+hito:Drupal
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Drupal"@en .
+
+hito:Ember
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Ember"@en .
+
+hito:FilemakerPro
+    a hito:ProgrammingLibrary ;
+    rdfs:label "FileMaker Pro"@en .
+
+hito:GdLibrary
+    a hito:ProgrammingLibrary ;
+    rdfs:label "GD Library"@en .
+
+hito:Grails
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Grails"@en .
+
+hito:Gtk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "GTK"@en .
+
+hito:GtkPlus
+    a hito:ProgrammingLibrary ;
+    rdfs:label "GTK+"@en .
+
+hito:Itk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "ITK"@en .
+
+hito:JBoss
+    a hito:ProgrammingLibrary ;
+    rdfs:label "JBoss"@en .
+
+hito:JBossDrools
+    a hito:ProgrammingLibrary ;
+    rdfs:label "JBoss Drools"@en .
+
+hito:JQuery
+    a hito:ProgrammingLibrary ;
+    rdfs:label "jQuery"@en .
+
+hito:JavaAwt
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Java AWT"@en .
+
+hito:JavaSwing
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Java Swing"@en .
+
+hito:Jsp
+    a hito:ProgrammingLibrary ;
+    rdfs:label "JSP"@en .
+
+hito:Matplotlib
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Matplotlib"@en .
+
+hito:Maven
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Maven"@en .
+
+hito:Mitk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "MITK"@en .
+
+hito:Mono
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Mono"@en .
+
+hito:MuleEsb
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Mule ESB"@en .
+
+hito:Netgen
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Netgen"@en .
+
+hito:OpenGl
+    a hito:ProgrammingLibrary ;
+    rdfs:label "OpenGL"@en .
+
+hito:PerlDbi
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Perl DBI"@en .
+
+hito:Pil
+    a hito:ProgrammingLibrary ;
+    rdfs:label "PIL"@en .
+
+hito:PrototypeJs
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Prototype.js"@en .
+
+hito:PyQt4
+    a hito:ProgrammingLibrary ;
+    rdfs:label "PyQt4"@en .
+
+hito:Pydicom
+    a hito:ProgrammingLibrary ;
+    rdfs:label "pydicom"@en .
+
+hito:Qt
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Qt"@en .
+
+hito:Sencha
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Sencha"@en .
+
+hito:Smarty
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Smarty"@en .
+
+hito:Swing
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Swing"@en .
+
+hito:Swt
+    a hito:ProgrammingLibrary ;
+    rdfs:label "SWT"@en .
+
+hito:Tryton
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Tryton"@en .
+
+hito:Vtk
+    a hito:ProgrammingLibrary ;
+    rdfs:label "VTK"@en .
+
+hito:Web2Py
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Web2Py"@en .
+
+hito:WxPython
+    a hito:ProgrammingLibrary ;
+    rdfs:label "wxPython"@en .
+
+hito:WxWidgets
+    a hito:ProgrammingLibrary ;
+    rdfs:label "wxWidgets"@en .
+
+hito:Zope
+    a hito:ProgrammingLibrary ;
+    rdfs:label "Zope"@en .
+

@@ -345,7 +345,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/programmingLibrary
 :programmingLibrary rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range rdfs:Resource ; # search for a fitting class
+                    rdfs:range :ProgrammingLibrary ;
                     rdfs:label "programming library"@en .
 
 
@@ -686,6 +686,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Popularity
 :Popularity rdf:type owl:Class ;
           rdfs:label "Popularity"@en .
+
+
+###  http://hitontology.eu/ontology/ProgrammingLibrary
+:ProgrammingLibrary rdf:type owl:Class ;
+          rdfs:label "Programming Library"@en .
 
 
 ###  http://hitontology.eu/ontology/PMID
