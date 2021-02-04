@@ -35,3 +35,7 @@ hito:SapHana
     a hito:DatabaseSystem;
     rdfs:label "SAP HANA"@en .
 
+hito:TinyDb
+    a hito:DatabaseSystem;
+    rdfs:label "TinyDB"@en .
+
