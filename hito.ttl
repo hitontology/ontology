@@ -679,7 +679,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
 :OutcomeCriteriaCitation rdf:type owl:Class ;
-                         rdfs:subClassOf :Citation;
+#                         rdfs:subClassOf :Citation;
                          rdfs:label "Outcome Criteria Citation"@en .
 
 
@@ -717,13 +717,13 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/StudyMethodClassified
 :StudyMethodClassified rdf:type owl:Class ;
-                       rdfs:subClassOf :Classified ;
+#                       rdfs:subClassOf :Classified ;
                        rdfs:label "Study Method Classified"@en .
 
 
 ###  http://hitontology.eu/ontology/StudyMethodCitation
 :StudyMethodCitation rdf:type owl:Class ;
-                     rdfs:subClassOf :Citation;
+#                     rdfs:subClassOf :Citation;
                      rdfs:label "Study Method Citation"@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
