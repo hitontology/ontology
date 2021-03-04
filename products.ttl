@@ -16,42 +16,45 @@
 ###  http://hitontology.eu/ontology/AgfaPacsImpax
 :AgfaPacsImpax rdf:type :SoftwareProduct ;
                  :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
-                                :AgfaPacsImpaxBookingOfExaminations ,
-                                :patientRegistration ,
-                                :AgfaPacsImpaxSpeechRecognition ;
+                                :AgfaPacsImpaxFeatureBookingOfExaminations ,
+                                :AgfaPacsImpaxFeaturePatientRegistraction ,
+                                :AgfaPacsImpaxFeatureSpeechRecognition ;
                  rdfs:label "Agfa PACS IMPAX"@en .
 
 :AgfaPacsImpaxFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
                                                      rdfs:label "automatic and paperless operations"@en .
 
+:AgfaPacsImpaxFeatureBookingOfExaminations a :FeatureCitation;
+                                                     rdfs:label "booking of examinations"@en .
+
 :AgfaPacsImpaxFeaturePatientRegistration a :FeatureCitation;
                                                      rdfs:label "patient registration"@en .
 
-:AgfaPacsImpaxBookingOfExaminations a :FeatureCitation;
-                                                     rdfs:label "booking of examinations"@en .
+:AgfaPacsImpaxFeatureSpeechRecognition a :FeatureCitation;
+                                                     rdfs:label "speech recognitioin"@en .
 
 ###  http://hitontology.eu/ontology/AgfaRisElefante
 :AgfaRisElefante rdf:type :SoftwareProduct ;
-                   :feature :AgfaRisElefanteAutomaticAndPaperlessOperations ,
-                                  :AgfaRisElefanteBookingOfExaminations ,
-                                  :AgfaRisElefantePatientRegistration ,
-                                  :speechRecognition ;
+                   :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations ,
+                                  :AgfaRisElefanteFeatureBookingOfExaminations ,
+                                  :AgfaRisElefanteFeaturePatientRegistration ,
+                                  :AgfaRisElefanteFeatureSpeechRecognition ;
                    rdfs:label "Agfa RIS Elefante"@en .
 
 :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
                                                      rdfs:label "automatic and paperless operations"@en .
 
-:AgfaRisElefantePatientRegistration a :FeatureCitation;
+:AgfaRisElefanteFeaturePatientRegistration a :FeatureCitation;
                                     rdfs:label "patient registration"@en .
 
-:AgfaRisElefanteBookingOfExaminations a :FeatureCitation;
+:AgfaRisElefanteFeatureBookingOfExaminations a :FeatureCitation;
                                                      rdfs:label "booking of examinations"@en .
 
-:AgfaPacsImpaxSpeechRecognition a :FeatureCitation;
+:AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
                                                      rdfs:label "speech recognitioin"@en .
 
-###  http://hitontology.eu/ontology/AbbottI-Stat
-:AbbottI-Stat rdf:type :SoftwareProduct ;
+###  http://hitontology.eu/ontology/AbbottIStat
+:AbbottIStat rdf:type :SoftwareProduct ;
                :feature :completeTestResults ,
                               :readBarCodeLabel ;
                rdfs:label "Abbott i-Stat"@en .
