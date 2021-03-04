@@ -14,8 +14,7 @@
 	doap:repository <https://github.com/hitontology/ontology>.
 
 ###  http://hitontology.eu/ontology/AgfaPacsImpax
-:AgfaPacsImpax rdf:type owl:NamedIndividual ,
-                          :SoftwareProduct ;
+:AgfaPacsImpax rdf:type :SoftwareProduct ;
                  :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
                                 :AgfaPacsImpaxBookingOfExaminations ,
                                 :patientRegistration ,
@@ -32,8 +31,7 @@
                                                      rdfs:label "booking of examinations"@en .
 
 ###  http://hitontology.eu/ontology/AgfaRisElefante
-:AgfaRisElefante rdf:type owl:NamedIndividual ,
-                            :SoftwareProduct ;
+:AgfaRisElefante rdf:type :SoftwareProduct ;
                    :feature :AgfaRisElefanteAutomaticAndPaperlessOperations ,
                                   :AgfaRisElefanteBookingOfExaminations ,
                                   :AgfaRisElefantePatientRegistration ,
@@ -53,16 +51,14 @@
                                                      rdfs:label "speech recognitioin"@en .
 
 ###  http://hitontology.eu/ontology/AbbottI-Stat
-:AbbottI-Stat rdf:type owl:NamedIndividual ,
-                        :SoftwareProduct ;
+:AbbottI-Stat rdf:type :SoftwareProduct ;
                :feature :completeTestResults ,
                               :readBarCodeLabel ;
                rdfs:label "Abbott i-Stat"@en .
 
 
 ###  http://hitontology.eu/ontology/CSCMedChart
-:CSCMedChart rdf:type owl:NamedIndividual ,
-                       :SoftwareProduct ;
+:CSCMedChart rdf:type :SoftwareProduct ;
               :feature :predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick ,
                              :predefinedOrderSentencesSearchableByCategoryQuickLists ,
                              :prescribeLonghand ;
@@ -70,16 +66,14 @@
 
 
 ###  http://hitontology.eu/ontology/CernerMilleniumPowerOrders
-:CernerMilleniumPowerOrders rdf:type owl:NamedIndividual ,
-                                     :SoftwareProduct ;
+:CernerMilleniumPowerOrders rdf:type :SoftwareProduct ;
                             :feature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection ,
                                            :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
                             rdfs:label "Cerner Millenium Power Orders"@en .
 
 
 ###  http://hitontology.eu/ontology/CernerFirstNet
-:CernerFirstNet rdf:type owl:NamedIndividual ,
-                          :SoftwareProduct ;
+:CernerFirstNet rdf:type :SoftwareProduct ;
                  :feature :PacsInterface ,
                                 :creationOfDataRelationToTriage ,
                                 :dischargeSummaries ,
@@ -89,16 +83,14 @@
 
 
 ###  http://hitontology.eu/ontology/CernerSoarianCPOEPlatform
-:CernerSoarianCPOEPlatform rdf:type owl:NamedIndividual ,
-                                       :SoftwareProduct ;
+:CernerSoarianCPOEPlatform rdf:type :SoftwareProduct ;
                               :feature :medication-specificOrderSet ,
                                              :unit-specificOderSet ;
                               rdfs:label "Cerner Soarian CPOE platform"@en .
 
 
 ###  http://hitontology.eu/ontology/EclipsysContinuum_2000CDS
-:EclipsysContinuum_2000CDS rdf:type owl:NamedIndividual ,
-                                      :SoftwareProduct ;
+:EclipsysContinuum_2000CDS rdf:type :SoftwareProduct ;
                              :feature :auditTrail ,
                                             :automaticTransferOfLaboratoryData ,
                                             :electronicSignature ,
@@ -108,8 +100,7 @@
 
 
 ###  http://hitontology.eu/ontology/GEPatchspecdPacs
-:GEPatchspecdPacs rdf:type owl:NamedIndividual ,
-                             :SoftwareProduct ;
+:GEPatchspecdPacs rdf:type :SoftwareProduct ;
                     :feature :automaticForwardedProcessedImages ,
                                    :forwardIntoArchive ,
                                    :interfacedToTheRis ;
@@ -117,8 +108,7 @@
 
 
 ###  http://hitontology.eu/ontology/HNAMillenium
-:HNAMillenium rdf:type owl:NamedIndividual ,
-                        :SoftwareProduct ;
+:HNAMillenium rdf:type :SoftwareProduct ;
                :feature :allowingToReuseEarlierAnamnesticData ,
                               :automaticCreationOfANursingTransferReport ,
                               :comprisingASetOfNursingCareStandards ,
@@ -133,8 +123,7 @@
 
 
 ###  http://hitontology.eu/ontology/Medicator
-:Medicator rdf:type owl:NamedIndividual ,
-                    :SoftwareProduct ;
+:Medicator rdf:type :SoftwareProduct ;
            :feature :medicationControlBasedOnNationalDrugDatabase ,
                           :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown ,
                           :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert ,
@@ -159,8 +148,7 @@
                                          rdfs:label "standardized precriptions and medication protocols"@en .
 
 ###  http://hitontology.eu/ontology/Metavision
-:Metavision rdf:type owl:NamedIndividual ,
-                     :SoftwareProduct ;
+:Metavision rdf:type :SoftwareProduct ;
             :feature :automaticDataCollection ,
                            :clinicalDocumentation ,
                            :computerizedOrderEntry ,
@@ -171,8 +159,7 @@
 
 
 ###  http://hitontology.eu/ontology/PIK
-:PIK rdf:type owl:NamedIndividual ,
-              :SoftwareProduct ;
+:PIK rdf:type :SoftwareProduct ;
      :feature :adaptionOfNursingCarePlansDuringCarePlanning ,
                     :anamnesisSupportedByOfferingFlexibleFormsForDataEntry ,
                     :creationOfNursingCarePlans ,
@@ -184,16 +171,14 @@
 
 
 ###  http://hitontology.eu/ontology/SAPR3BusinessProcessControlSystemSoftware
-:SAPR3BusinessProcessControlSystemSoftware rdf:type owl:NamedIndividual ,
-                                                          :SoftwareProduct ;
+:SAPR3BusinessProcessControlSystemSoftware rdf:type :SoftwareProduct ;
                                                  :feature :planningView ,
                                                                 :requestFormAssignedATimeslotRoomAndStaff ;
                                                  rdfs:label "SAP R3 Business Process Control System software"@en .
 
 
 ###  http://hitontology.eu/ontology/SysmexXS_1000iHaematologyAnalyser
-:SysmexXS_1000iHaematologyAnalyser rdf:type owl:NamedIndividual ,
-                                               :SoftwareProduct ;
+:SysmexXS_1000iHaematologyAnalyser rdf:type :SoftwareProduct ;
                                       :feature :SysmexCompleteTestResults ,
                                                      :SysmexReadBarCodeLabel ;
                                       rdfs:label "Sysmex XS 1000i haematology analyser"@en .
@@ -206,8 +191,7 @@
 
 
 ###  http://hitontology.eu/ontology/TeleDICOM
-:TeleDICOM rdf:type owl:NamedIndividual ,
-                    :SoftwareProduct ;
+:TeleDICOM rdf:type :SoftwareProduct ;
            :feature :interactiveConsultationBetweenTwoOrMoreCenters ,
                           :offlineMode ,
                           :real-timeVoiceCommunication ,
@@ -217,8 +201,7 @@
 
 
 ###  http://hitontology.eu/ontology/Theriak
-:Theriak rdf:type owl:NamedIndividual ,
-                  :SoftwareProduct ;
+:Theriak rdf:type :SoftwareProduct ;
          :feature :TheriakMedicationControlBasedOnNationalDrugDatabase ,
                         :TheriakMedicationSelection ,
                         :possibilityToContinuePrescribingWhileSafetyAlert ,
@@ -250,8 +233,7 @@
                                rdfs:label "safety alerts in real time"@en .
 
 ###  http://hitontology.eu/ontology/eChasqui
-:eChasqui rdf:type owl:NamedIndividual ,
-                   :SoftwareProduct ;
+:eChasqui rdf:type :SoftwareProduct ;
           :feature :consolidatedListOfResultsForJurisdiction ,
                          :emailNotificationOfNewResults ,
                          :patientPageContainingDetailsOfAnySingleSample ,
@@ -264,8 +246,7 @@
 
 
 ###  http://hitontology.eu/ontology/eDoc
-:eDoc rdf:type owl:NamedIndividual ,
-                :SoftwareProduct ;
+:eDoc rdf:type :SoftwareProduct ;
        :feature :capturingDataForAllPatientVisits ;
        rdfs:label "e Doc"@en .
 
