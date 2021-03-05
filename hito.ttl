@@ -387,12 +387,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "subfeature of"@en .
 
 
-###  http://hitontology.eu/ontology/supports
-:supports rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/supportsFunctionClassified
+:supportsFunctionClassified rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :subClassifiedOf ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :EnterpriseFunctionClassified ;
-                    rdfs:label "supports"@en .
+                    rdfs:label "supports"@en ;
+                    rdfs:comment "The classified feature in subject position supports the classified enterprise function in object position."@en .
 
 
 ###  http://hitontology.eu/ontology/client
