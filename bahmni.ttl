@@ -32,138 +32,167 @@ hito:BahmniEmergency
     rdfs:label "emergency"@en .
 
 hito:BahmniFeatCaptureClinicalRecords
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Capture Clinical Records"@en .
 
 hito:BahmniFeatCaptureDrugPrescriptions
     hito:featureClassified hito:WhoDhiReportEffectsAdverseDrug, hito:WhoDhiTrackClientsMedicationConsumption, hito:WhoDhiTransmitOrTrackPrescriptionOrders ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Capture Drug Prescriptions"@en .
 
 hito:BahmniFeatClinicalReporting
     hito:featureClassified hito:WhoDhiIdentifyClientsInNeedOfServices, hito:WhoDhiScheduleHealthcareProvidersActivities ;
+    hito:supportsFunction hito:BahmniFuncReporting ;
     a hito:FeatureCitation ;
     rdfs:label "Clinical Reporting"@en .
 
 hito:BahmniFeatCreateDiseaseSpecificForms
     hito:featureClassified hito:WhoDhiScheduleHealthcareProvidersActivities ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Create Disease Specific Forms"@en .
 
 hito:BahmniFeatCreateGeneralForms
     hito:featureClassified hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan, hito:WhoDhiVerifyClientUniqueIdentity ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Create General Forms"@en .
 
 hito:BahmniFeatDisplayLaboratoryWorkload
     hito:featureClassified hito:WhoDhiCaptureFromDigitalDevices, hito:WhoDhiTrackBiologicalSpecimens, hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults, hito:WhoDhiTransmitToHealthcareProviderAndTrack ;
+    hito:supportsFunction hito:BahmniFuncLaboratory ;
     a hito:FeatureCitation ;
     rdfs:label "Display Laboratory Workload"@en .
 
 hito:BahmniFeatMaintainAccurateRecords
     hito:featureClassified hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:supportsFunction hito:BahmniFuncBilling ;
     a hito:FeatureCitation ;
     rdfs:label "Maintain Accurate Records"@en .
 
 hito:BahmniFeatMaintainClinicalRecords
     hito:featureClassified hito:WhoDhiManageClientsStructuredClinicalRecords, hito:WhoDhiManageClientsUnstructuredClinicalRecords, hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Maintain Clinical Records"@en .
 
 hito:BahmniFeatManageAccurateRecords
     hito:featureClassified hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, hito:WhoDhiManageClientsStructuredClinicalRecords ;
+    hito:supportsFunction hito:BahmniFuncBilling ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Accurate Records"@en .
 
 hito:BahmniFeatManagePatientOrders
     hito:featureClassified hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, hito:WhoDhiManageClientsStructuredClinicalRecords, hito:WhoDhiManageClientsUnstructuredClinicalRecords, hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    hito:supportsFunction hito:BahmniFuncLaboratory ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Patient Orders"@en .
 
 hito:BahmniFeatManagePatientsAdmissions
+    hito:supportsFunction hito:BahmniFuncInpatientManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Patients Admissions"@en .
 
 hito:BahmniFeatManageSamples
     hito:featureClassified hito:WhoDhiTransmitToHealthcareProviderAndTrack ;
+    hito:supportsFunction hito:BahmniFuncLaboratory ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Samples"@en .
 
 hito:BahmniFeatManageStock
     hito:featureClassified hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, hito:WhoDhiManageOfCommodities, hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:WhoDhiMonitorStatusOfHealthEquipment, hito:WhoDhiNotifyHealthCommodities, hito:WhoDhiReportCounterfeitOrSubstandardDrugsByClients ;
+    hito:supportsFunction hito:BahmniFuncStockManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Stock"@en .
 
 hito:BahmniFeatManageTests
     hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    hito:supportsFunction hito:BahmniFuncLaboratory ;
     a hito:FeatureCitation ;
     rdfs:label "Manage Tests"@en .
 
 hito:BahmniFeatMonitorStockLevels
     hito:featureClassified hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, hito:WhoDhiMonitorStatusOfHealthEquipment, hito:WhoDhiNotifyHealthCommodities, hito:WhoDhiRegisterAndHealthCommoditiesProcurement ;
+    hito:supportsFunction hito:BahmniFuncStockManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Monitor Stock Levels"@en .
 
 hito:BahmniFeatMoveStock
+    hito:supportsFunction hito:BahmniFuncStockManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Move Stock"@en .
 
 hito:BahmniFeatOrderInvestigation
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Order Investigation"@en .
 
 hito:BahmniFeatOrderLab
     hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Order Lab"@en .
 
 hito:BahmniFeatOrderRadiology
     hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Order Radiology"@en .
 
 hito:BahmniFeatPerformBedAssignments
+    hito:supportsFunction hito:BahmniFuncInpatientManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Perform Bed Assignments"@en .
 
 hito:BahmniFeatPerformOperationalReporting
+    hito:supportsFunction hito:BahmniFuncReporting ;
     a hito:FeatureCitation ;
     rdfs:label "Perform Operational Reporting"@en .
 
 hito:BahmniFeatPrintPatientId
     hito:featureClassified hito:WhoDhiVerifyClientUniqueIdentity ;
+    hito:supportsFunction hito:BahmniFuncPatientRegistration ;
     a hito:FeatureCitation ;
     rdfs:label "Print Patient Id"@en .
 
 hito:BahmniFeatPublicHealthReporting
     hito:featureClassified hito:WhoDhiReportingOfHealthSystemFeedbackByClients, hito:WhoDhiReportingOfPublicHealthEventsByClient ;
+    hito:supportsFunction hito:BahmniFuncReporting ;
     a hito:FeatureCitation ;
     rdfs:label "Public Health Reporting"@en .
 
 hito:BahmniFeatReorderStock
     hito:featureClassified hito:WhoDhiCoordinateEmergencyResponseAndTransport, hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors, hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    hito:supportsFunction hito:BahmniFuncStockManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Reorder Stock"@en .
 
 hito:BahmniFeatSearchPatients
+    hito:supportsFunction hito:BahmniFuncPatientRegistration ;
     a hito:FeatureCitation ;
     rdfs:label "Search Patients"@en .
 
 hito:BahmniFeatSendSamplesForReferrals
     hito:featureClassified hito:WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
+    hito:supportsFunction hito:BahmniFuncInpatientManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Send Samples For Referrals"@en .
 
 hito:BahmniFeatTrackStock
+    hito:supportsFunction hito:BahmniFuncStockManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Track Stock"@en .
 
 hito:BahmniFeatTrackWardOccupancy
+    hito:supportsFunction hito:BahmniFuncInpatientManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Track Ward Occupancy"@en .
 
 hito:BahmniFeatUseDrugPrescriptionTemplates
     hito:featureClassified hito:WhoDhiReportEffectsAdverseDrug ;
+    hito:supportsFunction hito:BahmniFuncClinicalServices ;
     a hito:FeatureCitation ;
     rdfs:label "Use Drug Prescription Templates"@en .
 
@@ -214,25 +243,4 @@ hito:BahmniSurgery
     hito:organizationalUnit hito:SnomedSurgicalDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:label "surgery"@en .
-
-hito:Billing
-    hito:supportedByFeatureCitation hito:BahmniFeatMaintainAccurateRecords, hito:BahmniFeatManageAccurateRecords .
-
-hito:ClinicalServices
-    hito:supportedByFeatureCitation hito:BahmniFeatCaptureClinicalRecords, hito:BahmniFeatCaptureDrugPrescriptions, hito:BahmniFeatCreateDiseaseSpecificForms, hito:BahmniFeatCreateGeneralForms, hito:BahmniFeatMaintainClinicalRecords, hito:BahmniFeatOrderInvestigation, hito:BahmniFeatOrderLab, hito:BahmniFeatOrderRadiology, hito:BahmniFeatUseDrugPrescriptionTemplates .
-
-hito:InpatientManagement
-    hito:supportedByFeatureCitation hito:BahmniFeatManagePatientsAdmissions, hito:BahmniFeatPerformBedAssignments, hito:BahmniFeatSendSamplesForReferrals, hito:BahmniFeatTrackWardOccupancy .
-
-hito:Laboratory
-    hito:supportedByFeatureCitation hito:BahmniFeatDisplayLaboratoryWorkload, hito:BahmniFeatManagePatientOrders, hito:BahmniFeatManageSamples, hito:BahmniFeatManageTests .
-
-hito:PatientRegistration
-    hito:supportedByFeatureCitation hito:BahmniFeatPrintPatientId, hito:BahmniFeatSearchPatients .
-
-hito:Reporting
-    hito:supportedByFeatureCitation hito:BahmniFeatClinicalReporting, hito:BahmniFeatPerformOperationalReporting, hito:BahmniFeatPublicHealthReporting .
-
-hito:StockManagement
-    hito:supportedByFeatureCitation hito:BahmniFeatManageStock, hito:BahmniFeatMonitorStockLevels, hito:BahmniFeatMoveStock, hito:BahmniFeatReorderStock, hito:BahmniFeatTrackStock .
 
