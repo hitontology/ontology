@@ -27,7 +27,7 @@ hito:Bahmni
     rdfs:label "Bahmni"@en .
 
 hito:BahmniEmergency
-    hito:classifiedUnitSMOMEDCT hito:AccidentAndEmergencyDepartmentEnvironment ;
+    hito:organizationalUnit hito:SnomedAccidentAndEmergencyDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:label "emergency"@en .
 
@@ -202,7 +202,7 @@ hito:BahmniFuncStockManagement
     rdfs:label "Stock Management"@en .
 
 hito:BahmniGynaecology
-    hito:classifiedUnitSMOMEDCT hito:GynecologyDepartmentEnvironment ;
+    hito:organizationalUnit hito:SnomedGynecologyDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:label "gynaecology"@en .
 
@@ -211,7 +211,7 @@ hito:BahmniIntakeOutput
     rdfs:label "intake-output"@en .
 
 hito:BahmniSurgery
-    hito:classifiedUnitSMOMEDCT hito:SurgicalDepartmentEnvironment ;
+    hito:organizationalUnit hito:SnomedSurgicalDepartmentEnvironment ;
     a hito:OrganizationalUnitCitation ;
     rdfs:label "surgery"@en .
 
