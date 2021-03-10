@@ -526,7 +526,7 @@ hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf
     hito:internalId "3.2.1" ;
     hito:supportsFunctionClassified hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Manage inventory and distribution of health commodities stock levels of"@en ;
+    rdfs:label "Manage inventory and distribution of health commodities"@en ;
     skos:altLabel "commodity security"@en, "logistics management"@en, "stock management"@en, "stock monitoring of health commodities"@en .
 
 hito:WhoDhiManageOfCommodities
@@ -534,7 +534,7 @@ hito:WhoDhiManageOfCommodities
     hito:internalId "3.2.5" ;
     hito:supportsFunctionClassified hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Manage of commodities"@en ;
+    rdfs:label "Manage procurement of commodities"@en ;
     skos:altLabel "logistics management"@en, "procurement management"@en .
 
 hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors
@@ -598,7 +598,7 @@ hito:WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs
     hito:internalId "3.2.3" ;
     hito:supportsFunctionClassified hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Monitor cold-chain sensitive commodities licensed drugs"@en ;
+    rdfs:label "Monitor cold-chain sensitive commodities"@en ;
     skos:altLabel "sensors to monitor temperature and stability of vaccines"@en .
 
 hito:WhoDhiMonitorPerformanceOfHealthcareProviders
@@ -654,7 +654,7 @@ hito:WhoDhiNotifyHealthCommodities
     hito:internalId "3.2.2" ;
     hito:supportsFunctionClassified hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Notify health commodities"@en ;
+    rdfs:label "Notify stock levels of health commodities"@en ;
     skos:altLabel "alerts and notifications of stock levels"@en, "restocking coordination"@en, "stockout prevention and monitoring"@en .
 
 hito:WhoDhiOndemandInformationServicesToClients
@@ -765,7 +765,7 @@ hito:WhoDhiRegisterAndHealthCommoditiesProcurement
     hito:internalId "3.2.4" ;
     hito:supportsFunctionClassified hito:WhoDhiSupplyChainManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Register and health commodities procurement"@en ;
+    rdfs:label "Register licensed drugs and health commodities"@en ;
     skos:altLabel "drug regulation and registration"@en .
 
 hito:WhoDhiRegisterAndVerifyClientInsuranceMembership
