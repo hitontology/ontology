@@ -31,7 +31,7 @@
                                                      rdfs:label "patient registration"@en .
 
 :AgfaPacsImpaxFeatureSpeechRecognition a :FeatureCitation;
-                                                     rdfs:label "speech recognitioin"@en .
+                                                     rdfs:label "speech recognition"@en .
 
 ###  http://hitontology.eu/ontology/AgfaRisElefante
 :AgfaRisElefante rdf:type :SoftwareProduct ;
@@ -51,7 +51,7 @@
                                                      rdfs:label "booking of examinations"@en .
 
 :AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
-                                                     rdfs:label "speech recognitioin"@en .
+                                                     rdfs:label "speech recognition"@en .
 
 ###  http://hitontology.eu/ontology/AbbottIStat
 :AbbottIStat rdf:type :SoftwareProduct ;
