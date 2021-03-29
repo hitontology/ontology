@@ -11,13 +11,6 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
-hito:ARFF
-    dcterms:source wikipedia:Aircraft_rescue_and_firefighting ;
-    a hito:Interoperability ;
-    rdfs:comment "Aircraft rescue and firefighting"@en ;
-    rdfs:label "ARFF"@en ;
-    owl:sameAs dbr:Aircraft_rescue_and_firefighting .
-
 hito:ATC
     dcterms:source <https://www.ite.org/technical-resources/standards/atc-controller/> ;
     a hito:Interoperability ;
