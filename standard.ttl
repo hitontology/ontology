@@ -12,60 +12,68 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:ARFF
-    dcterms:source dbr:Aircraft_rescue_and_firefighting ; 
+    dcterms:source wikipedia:Aircraft_rescue_and_firefighting ;
     a hito:Interoperability ;
     rdfs:comment "Aircraft rescue and firefighting"@en ;
-    rdfs:label "ARFF"@en .
+    rdfs:label "ARFF"@en ;
+    owl:sameAs dbr:Aircraft_rescue_and_firefighting .
 
 hito:ATC
+    dcterms:source <https://www.ite.org/technical-resources/standards/atc-controller/> ;
     a hito:Interoperability ;
+    rdfs:comment "Advanced Transportation Controller"@en ;
     rdfs:label "ATC"@en .
 
 hito:Arden
-    dcterms:source dbr:Arden_syntax ;
+    hito:subStandardOf dbr:Health_Level_7 ;
+    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=2> ;
     a hito:Interoperability ;
-    rdfs:label "Arden"@en .
+    rdfs:comment "Arden Syntax"@en ;
+    rdfs:label "Arden Syntax"@en ;
+    rdfs:seeAlso <https://doi.org/10.1016/j.jbi.2012.02.001> ;
+    owl:sameAs dbr:Arden_syntax .
 
 hito:CAM
+    dcterms:source wikipedia:Content_Assembly_Mechanism ;
     a hito:Interoperability ;
+    rdfs:comment "Content Assembly Mechanism"@en ;
     rdfs:label "CAM"@en .
 
 hito:CCA
     dcterms:source <http://www.cpaa.org.uk/care-standards-handbook.html> ;
     a hito:Interoperability ;
+    rdfs:comment "Care Coordination Association Standard Handbook"@en ;
     rdfs:label "CCA"@en .
 
 hito:CCAM
+    dcterms:source <https://en.wikipedia.org/wiki/Classification_Commune_des_Actes_M%C3%A9dicaux> ;
     a hito:Interoperability ;
+    rdfs:comment "Classification Commune des Actes Médicaux"@en ;
     rdfs:label "CCAM"@en .
-
-hito:CCD
-    dcterms:source wikipedia:Continuity_of_Care_Document ;
-    a hito:Interoperability ;
-    rdfs:comment "Continuity of Care Document"@en ;
-    rdfs:label "CCD"@en .
 
 hito:CCR
     dcterms:source wikipedia:Continuity_of_Care_Record ;
     a hito:Interoperability ;
-    rdfs:comment "Continuity of Care Record"@en ;
+    rdfs:comment "ASTM E2369 - 12: Standard Specification for Continuity of Care Record (CCR)"@en ;
     rdfs:label "CCR"@en .
 
 hito:CDA
-    dcterms:source <http://www.hl7.org/implement/standards/product_matrix.cfm?Family=CDA>, wikipedia:Clinical_Document_Architecture ;
+    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7> ;
     a hito:Interoperability ;
-    rdfs:comment "Clinical Document Architecture"@en ;
-    rdfs:label "CDA"@en .
+    rdfs:comment "HL7 Clinical Document Architecture"@en ;
+    rdfs:label "HL7 CDA"@en .
 
-hito:CDISC
+hito:CDISC_LAB
+    dcterms:source <https://www.cdisc.org/standards/data-exchange/lab> ;
+    a hito:Interoperability ;
+    rdfs:comment "Clinical Data Interchange Standards Consortium Laboratory Data Model"@en ;
+    rdfs:label "CDISC LAB"@en .
+
+hito:CDISC_ODM
     dcterms:source wikipedia:Clinical_Data_Interchange_Standards_Consortium ;
     a hito:Interoperability ;
-    rdfs:comment "Clinical Data Interchange Standards Consortium"@en ;
-    rdfs:label "CDISC"@en .
-
-hito:CDISG
-    a hito:Interoperability ;
-    rdfs:label "CDISG"@en .
+    rdfs:comment "Clinical Data Interchange Standards Consortium Operational Data Model"@en ;
+    rdfs:label "CDISC ODM"@en .
 
 hito:CGNS
     dcterms:source wikipedia:CGNS ;
@@ -74,14 +82,17 @@ hito:CGNS
     rdfs:label "CGNS"@en .
 
 hito:CMS3_0
-    dcterms:source <https://www.cms.gov/Regulations-and-Guidance/Guidance/CMSRecordsSchedule/index>, <https://www.cms.gov/Regulations-and-Guidance/Regulations-and-Guidance> ;
+    dcterms:source <https://www.cms.gov/Regulations-and-Guidance/Guidance/CMSRecordsSchedule/index> ;
     a hito:Interoperability ;
+    rdfs:comment "Centers for Medicare & Medicaid Services"@en ;
     rdfs:label "CMS 3.0"@en .
 
 hito:CORBA
-    dcterms:source dbr:Common_Object_Request_Broker_Architecture ;
+    dcterms:source <https://www.omg.org/spec/CORBA/About-CORBA/> ;
     a hito:Interoperability ;
-    rdfs:label "CORBA"@en .
+    rdfs:comment "Common Object Request Broker Architecture"@en ;
+    rdfs:label "CORBA"@en ;
+    owl:sameAs dbr:Common_Object_Request_Broker_Architecture .
 
 hito:CTS2
     dcterms:source <https://wiki.hl7.org/CTS2>, <https://www.omg.org/spec/CTS2/About-CTS2/> ;
@@ -92,70 +103,83 @@ hito:CTS2
 hito:CertifiedHITProduct
     dcterms:source <https://chpl.healthit.gov/#/search> ;
     a hito:Interoperability ;
+    rdfs:comment "Certified Health IT Product List"@en ;
     rdfs:label "Certified HIT Product"@en .
 
 hito:Continua
     dcterms:source <https://www.pchalliance.org/continua-design-guidelines> ;
     a hito:Interoperability ;
+    rdfs:comment "Continua Design Guidelines"@en ;
     rdfs:label "Continua"@en .
 
 hito:DICOM
-    dcterms:source dbr:DICOM, <https://www.dicomstandard.org/> ;
+    dcterms:source <https://www.dicomstandard.org/> ;
     a hito:Interoperability ;
     rdfs:comment "Digital Imaging and Communications in Medicine"@en ;
-    rdfs:label "DICOM"@en .
+    rdfs:label "DICOM"@en ;
+    owl:sameAs dbr:DICOM .
 
 hito:EDI
-    dcterms:source dbr:Electronic_data_interchange, <https://docs.oracle.com/cd/E51433_01/fscm92pbr2/eng/fscm/sedi/task_EDIStandards-9f1203.html>, wikipedia:Electronic_data_interchange ;
+    dcterms:source <https://docs.oracle.com/cd/E51433_01/fscm92pbr2/eng/fscm/sedi/task_EDIStandards-9f1203.html>, wikipedia:Electronic_data_interchange ;
     a hito:Interoperability ;
     rdfs:comment "Electronic data interchange"@en ;
-    rdfs:label "EDI"@en .
-
-hito:FHIR
-    dcterms:source dbr:Fast_Healthcare_Interoperability_Resources, <https://www.hl7.org/fhir/overview.html>, <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=343> ;
-    a hito:Interoperability ;
-    rdfs:comment "Fast Healthcare Interoperability Resources Specification"@en ;
-    rdfs:label "FHIR"@en .
-
-hito:FTP
-    dcterms:source dbr:File_Transfer_Protocol, wikipedia:File_Transfer_Protocol ;
-    a hito:Interoperability ;
-    rdfs:comment "File Transfer Protocol (FTP)"@en ;
-    rdfs:label "FTP"@en .
+    rdfs:label "EDI"@en ;
+    owl:sameAs dbr:Electronic_data_interchange .
 
 hito:GDF
-    dcterms:source dbr:Geographic_Data_Files, wikipedia:Geographic_Data_Files ;
+    dcterms:source wikipedia:Geographic_Data_Files ;
     a hito:Interoperability ;
     rdfs:comment "Geographic Data Files (GDF)"@en ;
-    rdfs:label "GDF"@en .
+    rdfs:label "GDF"@en ;
+    owl:sameAs dbr:Geographic_Data_Files .
 
 hito:GDT
-    dcterms:source dbr:Geometric_dimensioning_and_tolerancing, wikipedia:Geometric_dimensioning_and_tolerancing ;
+    dcterms:source wikipedia:Geometric_dimensioning_and_tolerancing ;
     a hito:Interoperability ;
     rdfs:comment "Geometric dimensioning and tolerancing"@en ;
-    rdfs:label "GDT"@en .
-
-hito:GSM
-    dcterms:source dbr:GSM, wikipedia:GSM ;
-    a hito:Interoperability ;
-    rdfs:comment "Global System for Mobile Communications"@en ;
-    rdfs:label "GSM"@en .
+    rdfs:label "GDT"@en ;
+    owl:sameAs dbr:Geometric_dimensioning_and_tolerancing .
 
 hito:HIPAA
-    dcterms:source dbr:Health_Insurance_Portability_and_Accountability_Act, <https://www.hhs.gov/hipaa/for-professionals/privacy/index.html>, <https://www.hhs.gov/hipaa/index.html> ;
+    dcterms:source <https://www.hhs.gov/hipaa/for-professionals/privacy/index.html>, <https://www.hhs.gov/hipaa/index.html> ;
     a hito:Interoperability ;
     rdfs:comment "Health Insurance Portability and Accountability Act"@en ;
-    rdfs:label "HIPAA"@en .
+    rdfs:label "HIPAA"@en ;
+    owl:sameAs dbr:Health_Insurance_Portability_and_Accountability_Act .
 
 hito:HL7
-    dcterms:source dbr:Health_Level_7, <http://www.hl7.org/> ;
+    dcterms:source <http://www.hl7.org/> ;
     a hito:Interoperability ;
     rdfs:comment "Health Level 7"@en ;
-    rdfs:label "HL7"@en .
+    rdfs:label "HL7"@en ;
+    owl:sameAs dbr:Health_Level_7 .
+
+hito:HL7_CCD
+    dcterms:source wikipedia:Continuity_of_Care_Document ;
+    a hito:Interoperability ;
+    rdfs:comment "Health Level 7 Continuity of Care Document"@en ;
+    rdfs:label "HL7 CCD"@en .
 
 hito:HL7_FHIR
+    dcterms:source <https://www.hl7.org/fhir/overview.html>, <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=343> ;
     a hito:Interoperability ;
-    rdfs:label "HL7 FHIR"@en .
+    rdfs:comment "Health Level 7 Fast Healthcare Interoperability Resources Specification"@en ;
+    rdfs:label "HL7 FHIR"@en ;
+    owl:sameAs dbr:Fast_Healthcare_Interoperability_Resources .
+
+<HL7_V2.x>
+    hito:subStandardOf hito:HL7 ;
+    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185> ;
+    a hito:Interoperability ;
+    rdfs:comment "Health Level 7 Version 2.x"@en ;
+    rdfs:label "HL7 V2.x"@en .
+
+<HL7_V3.0>
+    hito:subStandardOf hito:HL7 ;
+    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=186> ;
+    a hito:Interoperability ;
+    rdfs:comment "Health Level 7 Version 3.0"@en ;
+    rdfs:label "HL7 V3.0"@en .
 
 hito:HPRIM
     dcterms:source <http://www.interopsante.org/> ;
@@ -164,17 +188,23 @@ hito:HPRIM
     rdfs:label "HPRIM"@en .
 
 hito:HPRIM-XML
+    dcterms:source <http://www.interopsante.org/> ;
     a hito:Interoperability ;
+    rdfs:comment "Harmoniser et PRomouvoir l'Informatique Médicale XML"@en ;
     rdfs:label "HPRIM-XML"@en .
 
 hito:HPRIM2_1
+    dcterms:source <http://www.interopsante.org/> ;
     a hito:Interoperability ;
+    rdfs:comment "Harmoniser et PRomouvoir l'Informatique Médicale Version 2.1"@en ;
     rdfs:label "HPRIM-2.1"@en .
 
 hito:HSCIC_ITK
-    dcterms:source dbr:HSCIC ;
+    dcterms:source <https://digital.nhs.uk/services/interoperability-toolkit> ;
     a hito:Interoperability ;
-    rdfs:label "HSCIC-ITK"@en .
+    rdfs:comment "Health and Social Care Information Centre Interoperability Toolkit"@en ;
+    rdfs:label "HSCIC-ITK"@en ;
+    owl:sameAs dbr:HSCIC .
 
 hito:HXP
     dcterms:source <http://hxp.sourceforge.net/> ;
@@ -183,27 +213,38 @@ hito:HXP
     rdfs:label "HXP"@en .
 
 hito:ICD10
-    dcterms:source dbr:ICD-10, <https://www.who.int/classifications/icd/icdonlineversions/en/> ;
+    dcterms:source <https://www.who.int/classifications/icd/icdonlineversions/en/> ;
     a hito:Interoperability ;
     rdfs:comment "International Statistical Classification of Diseases and Related Health Problems"@en ;
-    rdfs:label "ICD10"@en .
+    rdfs:label "ICD10"@en ;
+    owl:sameAs dbr:ICD-10 .
+
+hito:ICD11
+    dcterms:source <https://icd.who.int/en> ;
+    a hito:Interoperability ;
+    rdfs:comment "International Classification of Diseases 11th Revision"@en ;
+    rdfs:label "ICD11"@en .
 
 hito:ICD9
-    dcterms:source dbr:ICD-9, wikipedia:List_of_ICD-9_codes, <https://www.cdc.gov/nchs/icd/icd9cm.htm> ;
+    dcterms:source wikipedia:List_of_ICD-9_codes, <https://www.cdc.gov/nchs/icd/icd9cm.htm> ;
     a hito:Interoperability ;
-    rdfs:comment "International Classification of Diseases,Ninth Revision, Clinical Modification"@en ;
-    rdfs:label "ICD9"@en .
+    rdfs:comment "International Classification of Diseases, Ninth Revision, Clinical Modification"@en ;
+    rdfs:label "ICD9"@en ;
+    owl:sameAs dbr:ICD-9 .
 
 hito:ICPC2
-    dcterms:source dbr:ICPC-2, <https://www.who.int/classifications/icd/adaptations/icpc2/en/> ;
+    dcterms:source <https://www.who.int/classifications/icd/adaptations/icpc2/en/> ;
     a hito:Interoperability ;
     rdfs:comment "International Classification of Primary Care, Second edition"@en ;
-    rdfs:label "ICPC-2"@en .
+    rdfs:label "ICPC-2"@en ;
+    owl:sameAs dbr:ICPC-2 .
 
 hito:ICPM
-    dcterms:source dbr:ICPM ;
+    dcterms:source wikipedia:International_Classification_of_Health_Interventions ;
     a hito:Interoperability ;
-    rdfs:label "ICPM"@en .
+    rdfs:comment "International Classification of Procedures in Medicine"@en ;
+    rdfs:label "ICPM"@en ;
+    owl:sameAs dbr:ICPM .
 
 hito:IEPD
     dcterms:source <https://it.ojp.gov/NISS/> ;
@@ -212,189 +253,229 @@ hito:IEPD
     rdfs:label "IEPD"@en .
 
 hito:IHE
-    dcterms:source dbr:IHE, <https://www.ihe.net/> ;
+    dcterms:source <https://www.ihe.net/> ;
     a hito:Interoperability ;
     rdfs:comment "Integrating the Healthcare Enterprise"@en ;
-    rdfs:label "IHE"@en .
+    rdfs:label "IHE"@en ;
+    owl:sameAs dbr:IHE .
 
 hito:IHE_ATNA
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Audit_Trail_and_Node_Authentication> ;
     a hito:Interoperability ;
     rdfs:comment "Audit Trail and Node Authentication (ATNA)"@en ;
     rdfs:label "IHE-ATNA"@en .
 
 hito:IHE_BPPC
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Basic_Patient_Privacy_Consents> ;
     a hito:Interoperability ;
     rdfs:comment "Basic Patient Privacy Consents (BPPC)"@en ;
     rdfs:label "IHE-BPPC"@en .
 
 hito:IHE_CT
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Consistent_Time> ;
     a hito:Interoperability ;
     rdfs:comment "Consistent Time Integration Profile"@en ;
     rdfs:label "IHE-CT"@en .
 
 hito:IHE_EDR
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/PCC_TF-1/EDR> ;
     a hito:Interoperability ;
     rdfs:comment "Emergency Department Referral (EDR) Integration Profile"@en ;
     rdfs:label "IHE-EDR"@en .
 
 hito:IHE_MHD
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Mobile_access_to_Health_Documents_(MHD)> ;
     a hito:Interoperability ;
     rdfs:comment "Mobile access to Health Documents (MHD)"@en ;
     rdfs:label "IHE-MHD"@en .
 
 hito:IHE_MPQ
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Multi-Patient_Queries> ;
     a hito:Interoperability ;
     rdfs:comment "Multi-Patient Queries"@en ;
     rdfs:label "IHE-MPQ"@en .
 
 hito:IHE_PAM
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Administration_Management> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Administration Management"@en ;
     rdfs:label "IHE-PAM"@en .
 
 hito:IHE_PCD
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://www.ihe.net/ihe_domains/patient_care_devices/> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Care Device"@en ;
     rdfs:label "IHE-PCD"@en .
 
 hito:IHE_PDQ
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Demographics_Query> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Demographics Query"@en ;
     rdfs:label "IHE-PDQ"@en .
 
 hito:IHE_PDQm
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Demographics_Query_for_Mobile_(PDQm)> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Demographics Query for Mobile (PDQm)"@en ;
     rdfs:label "IHE-PDQm"@en .
 
 hito:IHE_PDQv3
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Demographics_Query_HL7_v3> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Demographics Query HL7 v3"@en ;
     rdfs:label "IHE-PDQv3"@en .
 
 hito:IHE_PIX
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Identifier_Cross-Referencing> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Identifier Cross-Referencing"@en ;
     rdfs:label "IHE-PIX"@en .
 
 hito:IHE_PIXm
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Identifier_Cross-Reference_for_Mobile_(PIXm)> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Identifier Cross-Reference for Mobile (PIXm)"@en ;
     rdfs:label "IHE-PIXm"@en .
 
 hito:IHE_PIXv3
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Patient_Identifier_Cross-Reference_HL7_v3> ;
     a hito:Interoperability ;
     rdfs:comment "Patient Identifier Cross-Reference HL7 v3"@en ;
     rdfs:label "IHE-PIXv3"@en .
 
 hito:IHE_QED
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/PCC_TF-1/QED> ;
     a hito:Interoperability ;
     rdfs:comment "Query for Existing Data Integration Profile (QED)"@en ;
     rdfs:label "IHE-QED"@en .
 
 hito:IHE_RO
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Radiation_Oncology> ;
     a hito:Interoperability ;
     rdfs:comment "Radiation Oncology"@en ;
     rdfs:label "IHE-RO"@en .
 
 hito:IHE_SVS
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Sharing_Value_Sets> ;
     a hito:Interoperability ;
     rdfs:comment "Sharing Value Sets"@en ;
     rdfs:label "IHE-SVS"@en .
 
 hito:IHE_XCA
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross-Community_Access> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-Community Access"@en ;
     rdfs:label "IHE-XCA"@en .
 
 hito:IHE_XCA_I
+    hito:subStandardOf hito:IHE ;
+    dcterms:source <https://wiki.ihe.net/index.php/Cross-Community_Access_for_Imaging> ;
     a hito:Interoperability ;
+    rdfs:comment "Cross-Community Access for Imaging"@en ;
     rdfs:label "IHE-XCA-I"@en .
 
 hito:IHE_XCF
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross_Community_Fetch> ;
     a hito:Interoperability ;
     rdfs:comment "Cross Community Fetch"@en ;
     rdfs:label "IHE-XCF"@en .
 
 hito:IHE_XCPD
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross-Community_Patient_Discovery> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-Community Patient Discovery"@en ;
     rdfs:label "IHE-XCPD"@en .
 
 hito:IHE_XDR
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross-enterprise_Document_Reliable_Interchange> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-enterprise Document Reliable Interchange"@en ;
     rdfs:label "IHE-XDR"@en .
 
 hito:IHE_XDS
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-Enterprise Document Sharing"@en ;
     rdfs:label "IHE-XDS"@en .
 
 hito:IHE_XDS_I
-    dcterms:source hito:he ;
+    hito:subStandardOf hito:IHE ;
+    dcterms:source <https://wiki.ihe.net/index.php/Cross-enterprise_Document_Sharing_for_Imaging> ;
     a hito:Interoperability ;
-    rdfs:label "IHE-XDS-I"@en .
+    rdfs:comment "Cross-enterprise Document Sharing for Imaging"@en ;
+    rdfs:label "IHE-XDS-I"@en ;
+    owl:sameAs hito:he .
 
 hito:IHE_XDS_MS
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/PCC_TF-1/XDS-MS> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-Enterprise Sharing of Medical Summaries (XDS-MS) Integration Profile"@en ;
     rdfs:label "IHE-XDS-MS"@en .
 
 hito:IHE_XDS_SD
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/XDS-SD_Harmonization> ;
     a hito:Interoperability ;
     rdfs:comment "XDS-SD Harmonization"@en ;
     rdfs:label "IHE-XDS-SD"@en .
 
 hito:IHE_XDSa
+    hito:subStandardOf hito:IHE ;
+    dcterms:source <https://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing> ;
     a hito:Interoperability ;
+    rdfs:comment "Cross-Enterprise Document Sharing Version a "@en ;
     rdfs:label "IHE-XDS.a"@en .
 
 hito:IHE_XDSb
+    hito:subStandardOf hito:IHE ;
+    dcterms:source <https://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing> ;
     a hito:Interoperability ;
+    rdfs:comment "Cross-Enterprise Document Sharing Version b"@en ;
     rdfs:label "IHE-XDS.b"@en .
 
 hito:IHE_XPID
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/XAD-PID_Change_Management> ;
     a hito:Interoperability ;
     rdfs:comment "XAD-PID Change Management"@en ;
     rdfs:label "IHE-XPID"@en .
 
 hito:IHE_XUA
+    hito:subStandardOf hito:IHE ;
     dcterms:source <https://wiki.ihe.net/index.php/Cross-Enterprise_User_Assertion_(XUA)> ;
     a hito:Interoperability ;
     rdfs:comment "Cross-Enterprise User Assertion (XUA)"@en ;
     rdfs:label "IHE-XUA"@en .
 
 hito:ISO13606
-    dcterms:source dbr:EN_13606, <https://www.iso.org/standard/67868.html> ;
+    dcterms:source <https://www.iso.org/standard/67868.html> ;
     a hito:Interoperability ;
     rdfs:comment "Health informatics — Electronic health record communication — Part 1: Reference model"@en ;
-    rdfs:label "ISO 13606"@en .
+    rdfs:label "ISO 13606"@en ;
+    owl:sameAs dbr:EN_13606 .
 
 hito:ISOIEC11756_1999
     dcterms:source <https://www.iso.org/standard/29268.html> ;
@@ -403,15 +484,18 @@ hito:ISOIEC11756_1999
     rdfs:label "ISO/IEC 11756:1999"@en .
 
 hito:KML
-    dcterms:source dbr:Keyhole_Markup_Language ;
+    dcterms:source wikipedia:Keyhole_Markup_Language ;
     a hito:Interoperability ;
-    rdfs:label "KML"@en .
+    rdfs:comment "Keyhole Markup Language"@en ;
+    rdfs:label "KML"@en ;
+    owl:sameAs dbr:Keyhole_Markup_Language .
 
 hito:LOINC
-    dcterms:source dbr:LOINC, wikipedia:LOINC, <https://loinc.org/> ;
+    dcterms:source wikipedia:LOINC, <https://loinc.org/> ;
     a hito:Interoperability ;
     rdfs:comment "Logical Observation Identifiers Names and Codes (LOINC)"@en ;
-    rdfs:label "LOINC"@en .
+    rdfs:label "LOINC"@en ;
+    owl:sameAs dbr:LOINC .
 
 hito:MPPS
     dcterms:source <https://www.medicalconnections.co.uk/tags/MPPS> ;
@@ -420,42 +504,42 @@ hito:MPPS
     rdfs:label "MPPS"@en .
 
 hito:MedDRA
-    dcterms:source dbr:MedDRA, wikipedia:MedDRA ;
+    dcterms:source wikipedia:MedDRA ;
     a hito:Interoperability ;
     rdfs:comment "Medical Dictionary for Regulatory Activities"@en ;
-    rdfs:label "MedDRA"@en .
-
-hito:NCPDP
-    dcterms:source dbr:National_Council_for_Prescription_Drug_Programs, <https://ncpdp.org/Standards-Development/Standards-Information> ;
-    a hito:Interoperability ;
-    rdfs:comment "national council for prescription drug programs"@en ;
-    rdfs:label "NCPDP"@en .
+    rdfs:label "MedDRA"@en ;
+    owl:sameAs dbr:MedDRA .
 
 hito:NDR
+    dcterms:source <https://niem.github.io/NIEM-NDR/> ;
     a hito:Interoperability ;
-    rdfs:comment "was soll das sein?"@en ;
+    rdfs:comment "NIEM Naming and Design Rules"@en ;
     rdfs:label "NDR"@en .
 
 hito:NGAP
+    dcterms:source <https://fr.wikipedia.org/wiki/Nomenclature_g%C3%A9n%C3%A9rale_des_actes_professionnels> ;
     a hito:Interoperability ;
+    rdfs:comment "La nomenclature générale des actes professionnels"@en ;
     rdfs:label "NGAP"@en .
 
 hito:NHS
-    dcterms:source dbr:National_Health_Service ;
+    dcterms:source <https://www.nhs.uk> ;
     a hito:Interoperability ;
-    rdfs:comment "national health service"@en ;
-    rdfs:label "NHS"@en .
+    rdfs:comment "National Health Service"@en ;
+    rdfs:label "NHS"@en ;
+    owl:sameAs dbr:National_Health_Service .
 
 hito:NIEM
-    dcterms:source dbr:National_Information_Exchange_Model, <https://www.niem.gov/> ;
+    dcterms:source <https://www.niem.gov/> ;
     a hito:Interoperability ;
     rdfs:comment "National Information Exchange Model"@en ;
-    rdfs:label "NIEM"@en .
+    rdfs:label "NIEM"@en ;
+    owl:sameAs dbr:National_Information_Exchange_Model .
 
 hito:NIfTI
     dcterms:source <https://nifti.nimh.nih.gov/> ;
     a hito:Interoperability ;
-    rdfs:comment "Neuroimaging Informatics Technology Initiative"@en ;
+    rdfs:comment "Neuroimaging Informatics Technology Initiative Open File Format"@en ;
     rdfs:label "NIfTI"@en .
 
 hito:OASIS
@@ -470,11 +554,12 @@ hito:OMOP
     rdfs:comment "OMOP Common Data Model"@en ;
     rdfs:label "OMOP"@en .
 
-hito:OPCS44
+hito:OPCS4
+    dcterms:source wikipedia:OPCS-4 ;
     a hito:Interoperability ;
     rdfs:comment """National Clinical Coding Standards
 OPCS-4"""@en ;
-    rdfs:label "OPCS44"@en .
+    rdfs:label "OPCS4"@en .
 
 hito:OPS
     dcterms:source wikipedia:Open_Pluggable_Specification ;
@@ -483,29 +568,38 @@ hito:OPS
     rdfs:label "OPS"@en .
 
 hito:OpenEHR
-    dcterms:source dbr:OpenEHR, wikipedia:OpenEHR ;
+    dcterms:source wikipedia:OpenEHR ;
     a hito:Interoperability ;
-    rdfs:label "Open EHR"@en .
+    rdfs:comment "Open Electronic Health Record"@en ;
+    rdfs:label "Open EHR"@en ;
+    owl:sameAs dbr:OpenEHR .
 
 hito:PN13
+    dcterms:source <http://siph.phast.fr/pn13-siph3-v3/> ;
     a hito:Interoperability ;
+    rdfs:comment "PN13 standard libre"@en ;
     rdfs:label "PN13"@en .
 
 hito:REST
-    dcterms:source dbr:Representational_state_transfer ;
+    dcterms:source wikipedia:Representational_state_transfer ;
     a hito:Interoperability ;
-    rdfs:label "REST"@en .
+    rdfs:comment "Representational state transfer"@en ;
+    rdfs:label "REST"@en ;
+    owl:sameAs dbr:Representational_state_transfer .
 
 hito:SAML
-    dcterms:source dbr:Security_Assertion_Markup_Language, wikipedia:Security_Assertion_Markup_Language ;
+    dcterms:source wikipedia:Security_Assertion_Markup_Language ;
     a hito:Interoperability ;
     rdfs:comment "Security Assertion Markup Language"@en ;
-    rdfs:label "SAML"@en .
+    rdfs:label "SAML"@en ;
+    owl:sameAs dbr:Security_Assertion_Markup_Language .
 
 hito:SCP_ECG
-    dcterms:source dbr:SCP-ECG ;
+    dcterms:source wikipedia:SCP-ECG ;
     a hito:Interoperability ;
-    rdfs:label "SCP-ECG"@en .
+    rdfs:comment "Standard communications protocol for computer assisted electrocardiography"@en ;
+    rdfs:label "SCP-ECG"@en ;
+    owl:sameAs dbr:SCP-ECG .
 
 hito:SDMX_HD
     dcterms:source <https://wiki.openmrs.org/display/docs/SDMX-HD> ;
@@ -514,96 +608,107 @@ hito:SDMX_HD
     rdfs:label "SDMX-HD"@en .
 
 hito:SMART
-    dcterms:source dbr:SMART_criteria, wikipedia:SMART_criteria ;
+    dcterms:source wikipedia:SMART_criteria ;
     a hito:Interoperability ;
-    rdfs:label "SMART"@en .
-
-hito:SMTP
-    dcterms:source dbr:Simple_Mail_Transfer_Protocol, wikipedia:Simple_Mail_Transfer_Protocol ;
-    a hito:Interoperability ;
-    rdfs:comment "Simple Mail Transfer Protocol"@en ;
-    rdfs:label "SMTP"@en .
+    rdfs:comment "SMART criteria"@en ;
+    rdfs:label "SMART"@en ;
+    owl:sameAs dbr:SMART_criteria .
 
 hito:SNOMED_CT
-    dcterms:source dbr:SNOMED_CT, <http://www.snomed.org/>, wikipedia:SNOMED_CT ;
+    dcterms:source <http://www.snomed.org/>, wikipedia:SNOMED_CT ;
     a hito:Interoperability ;
     rdfs:comment "systematically organized computer processable collection of medical terms"@en ;
-    rdfs:label "SNOMED CT"@en .
+    rdfs:label "SNOMED CT"@en ;
+    owl:sameAs dbr:SNOMED_CT .
 
 hito:SOAP
-    dcterms:source dbr:SOAP, wikipedia:SOAP ;
+    dcterms:source wikipedia:SOAP ;
     a hito:Interoperability ;
     rdfs:comment "Simple Object Access Protocol"@en ;
-    rdfs:label "SOAP"@en .
+    rdfs:label "SOAP"@en ;
+    owl:sameAs dbr:SOAP .
 
 hito:STS
-    dcterms:source dbr:Microsoft_Live_Labs_Security_Token_Service ;
+    dcterms:source <https://www.sts.org.za/what-is-the-sts-and-who-is-the-sts-association.html> ;
     a hito:Interoperability ;
-    rdfs:comment "Security token service? (MS Live)"@en ;
-    rdfs:label "STS"@en .
+    rdfs:comment "Standard Transfer Specification"@en ;
+    rdfs:label "STS"@en ;
+    owl:sameAs dbr:Microsoft_Live_Labs_Security_Token_Service .
 
 hito:SVG
-    dcterms:source dbr:Scalable_Vector_Graphics, wikipedia:Scalable_Vector_Graphics ;
+    dcterms:source wikipedia:Scalable_Vector_Graphics ;
     a hito:Interoperability ;
     rdfs:comment "Scalable Vector Graphics"@en ;
-    rdfs:label "SVG"@en .
+    rdfs:label "SVG"@en ;
+    owl:sameAs dbr:Scalable_Vector_Graphics .
 
 hito:TARMED
-    dcterms:source dbr:TARMED, <http://www.tarmedsuisse.ch/> ;
+    dcterms:source <http://www.tarmedsuisse.ch/> ;
     a hito:Interoperability ;
     rdfs:comment "Tarif Médical"@en ;
-    rdfs:label "TARMED"@en .
+    rdfs:label "TARMED"@en ;
+    owl:sameAs dbr:TARMED .
 
 hito:UMLS
-    dcterms:source dbr:Unified_Medical_Language_System, <https://www.nlm.nih.gov/research/umls/index.html> ;
+    dcterms:source <https://www.nlm.nih.gov/research/umls/index.html> ;
     a hito:Interoperability ;
     rdfs:comment "Unified Medical Language System"@en ;
-    rdfs:label "UMLS"@en .
+    rdfs:label "UMLS"@en ;
+    owl:sameAs dbr:Unified_Medical_Language_System .
 
 hito:WADO
+    hito:subStandardOf hito:DICOM ;
     dcterms:source <https://www.dicomstandard.org/dicomweb/retrieve-wado-rs-and-wado-uri/> ;
     a hito:Interoperability ;
     rdfs:comment "Web Access to DICOM Objects (WADO)"@en ;
     rdfs:label "WADO"@en .
 
 hito:WSDL
-    dcterms:source dbr:Web_Services_Description_Language, <https://www.w3.org/TR/wsdl.html> ;
+    dcterms:source <https://www.w3.org/TR/wsdl.html> ;
     a hito:Interoperability ;
     rdfs:comment "Web Services Description Language"@en ;
-    rdfs:label "WSDL"@en .
+    rdfs:label "WSDL"@en ;
+    owl:sameAs dbr:Web_Services_Description_Language .
 
 hito:X12
-    dcterms:source dbr:X12 ;
+    dcterms:source wikipedia:ASC_X12 ;
     a hito:Interoperability ;
-    rdfs:label "X12"@en .
+    rdfs:comment "X12 Electronic Data Interchange Standards"@en ;
+    rdfs:label "X12"@en ;
+    owl:sameAs dbr:X12 .
 
 hito:XACML
-    dcterms:source dbr:XACML, <http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html> ;
+    dcterms:source <http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html> ;
     a hito:Interoperability ;
     rdfs:comment "eXtensible Access Control Markup Language"@en ;
-    rdfs:label "XACML"@en .
+    rdfs:label "XACML"@en ;
+    owl:sameAs dbr:XACML .
 
 hito:XML
-    dcterms:source dbr:XML, <https://www.w3.org/XML/> ;
+    dcterms:source <https://www.w3.org/XML/> ;
     a hito:Interoperability ;
     rdfs:comment "Extensible Markup Language"@en ;
-    rdfs:label "XML"@en .
+    rdfs:label "XML"@en ;
+    owl:sameAs dbr:XML .
 
 hito:XPath
-    dcterms:source dbr:XPath, <https://www.w3.org/TR/1999/REC-xpath-19991116/> ;
+    dcterms:source <https://www.w3.org/TR/1999/REC-xpath-19991116/> ;
     a hito:Interoperability ;
     rdfs:comment "XML Path Language"@en ;
-    rdfs:label "XPath"@en .
+    rdfs:label "XPath"@en ;
+    owl:sameAs dbr:XPath .
 
 hito:XSD
-    dcterms:source <http://dbpedia.org/resource/XML_Schema_(W3C)>, <https://www.w3.org/TR/xmlschema11-1/> ;
+    dcterms:source <https://www.w3.org/TR/xmlschema11-1/> ;
     a hito:Interoperability ;
     rdfs:comment "W3C XML Schema Definition Language (XSD)"@en ;
-    rdfs:label "XSD"@en .
+    rdfs:label "XSD"@en ;
+    owl:sameAs <http://dbpedia.org/resource/XML_Schema_(W3C)> .
 
 hito:YAML
-    dcterms:source dbr:YAML, wikipedia:YAML ;
+    dcterms:source wikipedia:YAML ;
     a hito:Interoperability ;
     rdfs:comment "YAML (a recursive acronym for \"YAML Ain't Markup Language\") is a human-readable data-serialization language."@en ;
-    rdfs:label "YAML"@en .
+    rdfs:label "YAML"@en ;
+    owl:sameAs dbr:YAML .
 
