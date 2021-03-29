@@ -387,6 +387,14 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "subfeature of"@en .
 
 
+###  http://hitontology.eu/ontology/subInteroperabilityOf
+:subInteroperabilityOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Interoperability;
+                    rdfs:range :Interoperability ;
+                    rdfs:label "subinteroperability of"@en ;
+                    rdfs:comment "subinteroperability standard of."@en .
+
+
 ###  http://hitontology.eu/ontology/supportsFunction
 :supportsFunction rdf:type owl:ObjectProperty ;
                     rdfs:domain :FeatureCitation ;
