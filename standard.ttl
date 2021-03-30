@@ -17,15 +17,6 @@ hito:ATC
     rdfs:comment "Advanced Transportation Controller"@en ;
     rdfs:label "ATC"@en .
 
-hito:Arden
-    hito:subStandardOf dbr:Health_Level_7 ;
-    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=2> ;
-    a hito:Interoperability ;
-    rdfs:comment "Arden Syntax"@en ;
-    rdfs:label "Arden Syntax"@en ;
-    rdfs:seeAlso <https://doi.org/10.1016/j.jbi.2012.02.001> ;
-    owl:sameAs dbr:Arden_syntax .
-
 hito:CAM
     dcterms:source wikipedia:Content_Assembly_Mechanism ;
     a hito:Interoperability ;
@@ -51,6 +42,7 @@ hito:CCR
     rdfs:label "CCR"@en .
 
 hito:CDA
+    hito:subStandardOf hito:HL7 ;
     dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7> ;
     a hito:Interoperability ;
     rdfs:comment "HL7 Clinical Document Architecture"@en ;
@@ -86,12 +78,6 @@ hito:CORBA
     rdfs:comment "Common Object Request Broker Architecture"@en ;
     rdfs:label "CORBA"@en ;
     owl:sameAs dbr:Common_Object_Request_Broker_Architecture .
-
-hito:CTS2
-    dcterms:source <https://wiki.hl7.org/CTS2>, <https://www.omg.org/spec/CTS2/About-CTS2/> ;
-    a hito:Interoperability ;
-    rdfs:comment "Common Terminology Services 2"@en ;
-    rdfs:label "CTS2"@en .
 
 hito:CertifiedHITProduct
     dcterms:source <https://chpl.healthit.gov/#/search> ;
@@ -147,13 +133,31 @@ hito:HL7
     rdfs:label "HL7"@en ;
     owl:sameAs dbr:Health_Level_7 .
 
+hito:HL7_Arden
+    hito:subStandardOf hito:HL7 ;
+    dcterms:source <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=2> ;
+    a hito:Interoperability ;
+    rdfs:comment "Arden Syntax"@en ;
+    rdfs:label "HL7 Arden Syntax"@en ;
+    rdfs:seeAlso <https://doi.org/10.1016/j.jbi.2012.02.001> ;
+    owl:sameAs dbr:Arden_syntax .
+
 hito:HL7_CCD
+    hito:subStandardOf hito:HL7 ;
     dcterms:source wikipedia:Continuity_of_Care_Document ;
     a hito:Interoperability ;
     rdfs:comment "Health Level 7 Continuity of Care Document"@en ;
     rdfs:label "HL7 CCD"@en .
 
+hito:HL7_CTS2
+    hito:subStandardOf hito:HL7 ;
+    dcterms:source <https://wiki.hl7.org/CTS2>, <https://www.omg.org/spec/CTS2/About-CTS2/> ;
+    a hito:Interoperability ;
+    rdfs:comment "Common Terminology Services 2"@en ;
+    rdfs:label "HL7 CTS2"@en .
+
 hito:HL7_FHIR
+    hito:subStandardOf hito:HL7 ;
     dcterms:source <https://www.hl7.org/fhir/overview.html>, <https://www.hl7.org/implement/standards/product_brief.cfm?product_id=343> ;
     a hito:Interoperability ;
     rdfs:comment "Health Level 7 Fast Healthcare Interoperability Resources Specification"@en ;
@@ -205,7 +209,14 @@ hito:HXP
     rdfs:comment "Healthcare Xchange Protocol"@en ;
     rdfs:label "HXP"@en .
 
+hito:ICD
+    dcterms:source <https://icd.who.int/en> ;
+    a hito:Interoperability ;
+    rdfs:comment "International Classification of Diseases"@en ;
+    rdfs:label "ICD"@en .
+
 hito:ICD10
+    hito:subStandardOf hito:ICD ;
     dcterms:source <https://www.who.int/classifications/icd/icdonlineversions/en/> ;
     a hito:Interoperability ;
     rdfs:comment "International Statistical Classification of Diseases and Related Health Problems"@en ;
@@ -213,12 +224,14 @@ hito:ICD10
     owl:sameAs dbr:ICD-10 .
 
 hito:ICD11
+    hito:subStandardOf hito:ICD ;
     dcterms:source <https://icd.who.int/en> ;
     a hito:Interoperability ;
     rdfs:comment "International Classification of Diseases 11th Revision"@en ;
     rdfs:label "ICD11"@en .
 
 hito:ICD9
+    hito:subStandardOf hito:ICD ;
     dcterms:source wikipedia:List_of_ICD-9_codes, <https://www.cdc.gov/nchs/icd/icd9cm.htm> ;
     a hito:Interoperability ;
     rdfs:comment "International Classification of Diseases, Ninth Revision, Clinical Modification"@en ;
