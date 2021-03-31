@@ -28,7 +28,7 @@
 		<VAR>?di</VAR>
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?di a hito:FeatureClassified; hito:featureCatalogue hito:Dickinson.</RESTRICTION>
-		<PROPERTY>rdfs:label AS nolang RENAME label</PROPERTY>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</SOURCE>
 
@@ -38,22 +38,22 @@
 		<VAR>?ehr</VAR>
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?ehr a hito:FeatureClassified; hito:featureCatalogue hito:EhrSfmFeatureCatalogue.</RESTRICTION>
-		<PROPERTY>rdfs:label AS nolang RENAME label</PROPERTY>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</TARGET>
 
 <METRIC>trigrams(di.label,ehr.label)</METRIC>
 
 	<ACCEPTANCE>
-		<THRESHOLD>1</THRESHOLD>
-		<FILE>di-ehr-exact.ttl</FILE>
-		<RELATION>skos:exactMatch</RELATION>
+		<THRESHOLD>0.7</THRESHOLD>
+		<FILE>di-ehr-close.ttl</FILE>
+		<RELATION>skos:closeMatch</RELATION>
 	</ACCEPTANCE>
 	
 	<REVIEW>
-		<THRESHOLD>0.8</THRESHOLD>
-		<FILE>di-ehr-close.ttl</FILE>
-		<RELATION>skos:closeMatch</RELATION>
+		<THRESHOLD>0.2</THRESHOLD>
+		<FILE>di-ehr-far.ttl</FILE>
+		<RELATION>hito:farMatch</RELATION>
 	</REVIEW>
 
 	<EXECUTION>
@@ -62,5 +62,5 @@
 		<ENGINE>default</ENGINE>
 	</EXECUTION>
 
-	<OUTPUT>TAB</OUTPUT>
+	<OUTPUT>CSV</OUTPUT>
 </LIMES>
