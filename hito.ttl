@@ -97,6 +97,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/applicationSystemClassified
 :applicationSystemClassified rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :classified ;
                              rdfs:domain :ApplicationSystemCitation ;
                              rdfs:range :ApplicationSystemClassified ;
                              rdfs:label "classified application system"@en .
@@ -438,6 +439,14 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range dbo:Language;
                     rdfs:label "language"@en .
+
+
+###  http://hitontology.eu/ontology/userGroupClassified
+:userGroupClassified rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :classified;
+                           rdfs:domain :UserGroupCitation ;
+                           rdfs:range :UserGroupClassified ;
+                           rdfs:label "classified user group"@en .
 
 
 ###  http://hitontology.eu/ontology/userGroupCatalogue
