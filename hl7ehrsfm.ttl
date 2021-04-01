@@ -1089,7 +1089,7 @@ hito:EhrSfmManageHealthrelatedFactorsList
 hito:EhrSfmManageImmunizationAdministration
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
     hito:internalId "CP.6.2" ;
-    hito:subFeatureOf hito:EhrSfmSupportTreatmentAdministration ;
+    hito:subFeatureOf hito:EhrSfmManageMedicationImmunizationAndTreatmentAdministration ;
     a hito:FeatureClassified ;
     rdfs:comment "Capture and maintain discrete data concerning immunizations given to a patient including date administered, type, manufacturer, lot number, and any allergic or adverse reactions. Facilitate the interaction with an immunization registry to allow maintenance of a patient’s immunization history."@en ;
     rdfs:label "CP.6.2 Manage Immunization Administration"@en ;
@@ -1149,12 +1149,22 @@ hito:EhrSfmManageMedicalEquipmentProstheticOrthoticDeviceList
 hito:EhrSfmManageMedicationAdministration
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
     hito:internalId "CP.6.1" ;
-    hito:subFeatureOf hito:EhrSfmSupportTreatmentAdministration ;
+    hito:subFeatureOf hito:EhrSfmManageMedicationImmunizationAndTreatmentAdministration ;
     a hito:FeatureClassified ;
     rdfs:comment "Present providers with the list of medications that are to be administered to a patient, necessary administration information, and capture administration details."@en ;
     rdfs:label "CP.6.1 Manage Medication Administration"@en ;
     skos:altLabel "Manage Medication Administration"@en ;
     skos:definition "In a setting in which medication orders are to be administered by a provider rather than the patient, the necessary information is presented including: the list of medication orders that are to be administered; administration instructions, times or other conditions of administration; dose and route, etc. The system shall securely relate medications to be administered to the unique identity of the patient (see CPS.1.1). Additionally, the provider can record what actually was or was not administered, whether or not these facts conform to the order. Appropriate time stamps for all medication related activity are generated.For some settings that administer complete sets of medications from a variety of providers' orders, it may be useful to provide an additional check for possible drug-drug or other interactions.The EHR system shall support the five “rights” - Right Patient, Right Drug, Right Dose, Right Route, Right Time.The system should report medication administration, where appropriate, to public health or disease management authorities (e.g., oncology related medication orders should be communicated or transmitted to a cancer registry)."@en .
+
+hito:EhrSfmManageMedicationImmunizationAndTreatmentAdministration
+    hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
+    hito:internalId "CP.6" ;
+    hito:subFeatureOf hito:EhrSfmCareProvision ;
+    a hito:FeatureClassified ;
+    rdfs:comment "Provide the functionality required to support the management of medication and immunization administration."@en ;
+    rdfs:label "CP.6 Manage Medication, Immunization and Treatment Administration"@en ;
+    skos:altLabel "Manage Medication, Immunization and Treatment Administration"@en ;
+    skos:definition "Provide the functionality required to support the safe administration of medications or immunizations to a patient based on medical requirement and orders within the system. This includes presenting providers with the list of medications or immunizations that are to be administered to a patient, necessary administration information, and capture all required and relevant administration details."@en .
 
 hito:EhrSfmManageMedicationList
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
@@ -1618,7 +1628,7 @@ hito:EhrSfmManageTransitionsOfCareAndDischargedPatients
 hito:EhrSfmManageTreatmentAdministration
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
     hito:internalId "CP.6.3" ;
-    hito:subFeatureOf hito:EhrSfmSupportTreatmentAdministration ;
+    hito:subFeatureOf hito:EhrSfmManageMedicationImmunizationAndTreatmentAdministration ;
     a hito:FeatureClassified ;
     rdfs:comment "Provide the functionality required to support the management of treatment administration and documentation. (Treatment defined as the administration or application of remedies to a patient for a disease or injury; medicinal or surgical management; therapy.)"@en ;
     rdfs:label "CP.6.3 Manage Treatment Administration"@en ;
@@ -3063,7 +3073,7 @@ hito:EhrSfmSupportServiceRequestsAndClaims
 hito:EhrSfmSupportTreatmentAdministration
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
     hito:internalId "CPS.6" ;
-    hito:subFeatureOf hito:EhrSfmCareProvision, hito:EhrSfmCareProvisionSupport ;
+    hito:subFeatureOf hito:EhrSfmCareProvisionSupport ;
     a hito:FeatureClassified ;
     rdfs:comment "Alert providers to potential administration errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong time) in support of safe and accurate medication and immunization administration and support administration workflow."@en ;
     rdfs:label "CPS.6 Support Treatment Administration"@en ;
