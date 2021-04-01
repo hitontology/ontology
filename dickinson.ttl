@@ -83,7 +83,7 @@
 
 ###  http://hitontology.eu/ontology/ManageMedicationImmunizationAndTreatmentAdministration
 :ManageMedicationImmunizationAndTreatmentAdministration rdf:type :FeatureClassified ;
-                                                        hito:internalId "CP.6" ;
+                                                        :internalId "CP.6" ;
                                                         :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
                                                         :featureCatalogue :Dickinson ;
                                                         rdfs:label "Manage Medication, Immunization And Treatment Administration"@en .
@@ -98,7 +98,7 @@
 
 ###  http://hitontology.eu/ontology/ManageNonMedicationPatientCareOrders
 :ManageNonMedicationPatientCareOrders rdf:type :FeatureClassified ;
-                                      hito:internalId "CP.4.1" ;
+                                      :internalId "CP.4.1" ;
                                       :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
                                       :featureCatalogue :Dickinson ;
                                       rdfs:label "Manage Non Medication Patient Care Orders"@en .
@@ -120,7 +120,7 @@
 
 ###  http://hitontology.eu/ontology/ManageOrdersForDiagnositcScreeningTests
 :ManageOrdersForDiagnositcScreeningTests rdf:type :FeatureClassified ;
-                                         hito:internalId "CP.4.4" ;
+                                         :internalId "CP.4.4" ;
                                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
                                          :featureCatalogue :Dickinson ;
                                          rdfs:label "Manage Orders For Diagnositc Screening Tests"@en .
@@ -128,7 +128,7 @@
 
 ###  http://hitontology.eu/ontology/ManageOrdersForReferral
 :ManageOrdersForReferral rdf:type :FeatureClassified ;
-                         hito:internalId "CP.4.6" ;
+                         :internalId "CP.4.6" ;
                          :vancouverReference "Dickinson G, Ritter J, Stevens-Love H, Dyke P Van. ISO/HL7 10781 - Electronic Health Record System Functional Model, Release 2. 2014." ;
                          :featureCatalogue :Dickinson ;
                          rdfs:label "Manage Orders For Referral"@en .
