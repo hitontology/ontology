@@ -189,7 +189,7 @@
 
 ###  http://hitontology.eu/ontology/ICNPAsClassificationSystem
 :ICNPAsClassificationSystem rdf:type :FeatureCitation ;
-                               :featureClassified :StandardTerminologyAndTerminologyServices ;
+                               :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
                                rdfs:label "ICNP as classification system"@en .
 
 
@@ -438,7 +438,7 @@
 :NamedStudy14 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :electronicPatientRecordSystemEPR ,
                                            :patientAdministrationSystemPAS ;
-               :evaluatesApplicationSystemHavingFeature :ManageCommunication ,
+               :evaluatesApplicationSystemHavingFeature :EhrSfmManageCommunication ,
                                                         :admissionOverview ,
                                                         :agreementManagement ,
                                                         :appointmentLetters ,
@@ -555,7 +555,7 @@
 :NamedStudy18 rdf:type :NonExperimentalStudy ;
                :evaluatesApplicationSystem :EmergencyDepartmentInformationSystemEDIS ;
                :evaluatesApplicationSystemBasedOnProduct :CernerFirstNet ;
-               :evaluatesApplicationSystemHavingFeature :MeasurementAnalysisResearchAndReports ,
+               :evaluatesApplicationSystemHavingFeature :EhrSfmMeasurementAnalysisResearchAndReports ,
                                                         :PACSInterface ,
                                                         :creationOfDataRelationToTriage ,
                                                         :dischargeSummaries ,
@@ -622,7 +622,7 @@
               :hasFirstAuthor :WestbrookIJ ;
               :hasOutcomeCriteria :reductionOfPrescribingErrors ;
               :hasPMID :i23721982 ;
-              :hasStudyMethod :clinicalAudit ,
+              :hasStudyMethod :clinicalEhrSfmAudit ,
                               :contentAnalysis ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
               :publishedInYear 2013 ;
@@ -746,7 +746,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy24
 :NamedStudy24 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :computerizedPrescribingSystem ;
-               :evaluatesApplicationSystemHavingFeature :SupportForMedicationOrderingEfficiencies ,
+               :evaluatesApplicationSystemHavingFeature :EhrSfmSupportForMedicationOrderingEfficiencies ,
                                                         :alteringPrescribingHabitsByAlternativeDrugs ,
                                                         :displayOfWarningsWhenAppropiate ,
                                                         :drugDictionary ,
@@ -1045,7 +1045,7 @@
 
 ###  http://hitontology.eu/ontology/PACSInterface
 :PACSInterface rdf:type :FeatureCitation ;
-                :featureClassified :ManageResults ;
+                :featureClassified :EhrSfmManageResults ;
                 rdfs:label "PACS interface"@en .
 
 
@@ -1234,8 +1234,8 @@
 
 ###  http://hitontology.eu/ontology/adaptionOfNursingCarePlansDuringCarePlanning
 :adaptionOfNursingCarePlansDuringCarePlanning rdf:type :FeatureCitation ;
-                                                     :featureClassified :ManageOrders ,
-                                                                                :SupportOrders ;
+                                                     :featureClassified :EhrSfmManageOrders ,
+                                                                                :EhrSfmSupportOrders ;
                                                      rdfs:label "adaption of nursing care plans during care planning"@en .
 
 
@@ -1247,27 +1247,27 @@
 
 ###  http://hitontology.eu/ontology/admissionOverview
 :admissionOverview rdf:type :FeatureCitation ;
-                    :featureClassified :ManageAdministrativeTransactionProcessing ,
-                                               :ManageClinicalWorkflowTasking ;
+                    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ,
+                                               :EhrSfmManageClinicalWorkflowTasking ;
                     rdfs:label "admission overview"@en .
 
 
 ###  http://hitontology.eu/ontology/agreementManagement
 :agreementManagement rdf:type :FeatureCitation ;
-                      :featureClassified :ManageAdministrativeTransactionProcessing ;
+                      :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                       rdfs:label "agreement management"@en .
 
 
 ###  http://hitontology.eu/ontology/allowingToReuseEarlierAnamnesticData
 :allowingToReuseEarlierAnamnesticData rdf:type :FeatureCitation ;
-                                           :featureClassified :ManagePatientHistory ;
+                                           :featureClassified :EhrSfmManagePatientHistory ;
                                            rdfs:label "allowing to reuse earlier anamnestic data"@en .
 
 
 ###  http://hitontology.eu/ontology/alteringPrescribingHabitsByAlternativeDrugs
 :alteringPrescribingHabitsByAlternativeDrugs rdf:type :FeatureCitation ;
-                                                  :featureClassified :ManageOrders ,
-                                                                             :MedicationOrderEfficiencies ;
+                                                  :featureClassified :EhrSfmManageOrders ,
+                                                                             :EhrSfmMedicationOrderEfficiencies ;
                                                   rdfs:label "altering prescribing habits by alternative drugs"@en .
 
 
@@ -1310,15 +1310,15 @@
 
 ###  http://hitontology.eu/ontology/anamnesisSupportedByOfferingFlexibleFormsForDataEntry
 :anamnesisSupportedByOfferingFlexibleFormsForDataEntry rdf:type :FeatureCitation ;
-                                                               :featureClassified :ManageClinicalDocumentation ,
-                                                                                          :ManageClinicalHistory ,
-                                                                                          :ManageProblemList ;
+                                                               :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                                                                          :EhrSfmManageClinicalHistory ,
+                                                                                          :EhrSfmManageProblemList ;
                                                                rdfs:label "anamnesis supported by offering flexible forms for data entry"@en .
 
 
 ###  http://hitontology.eu/ontology/app
 :app rdf:type :FeatureCitation ;
-     :featureClassified :SupportRemoteHealthcareServices ;
+     :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
      rdfs:label "app" .
 
 
@@ -1329,52 +1329,52 @@
 
 ###  http://hitontology.eu/ontology/auditTrail
 :auditTrail rdf:type :FeatureCitation ;
-             :featureClassified :Audit ;
+             :featureClassified :EhrSfmAudit ;
              rdfs:label "audit trail"@en .
 
 
 ###  http://hitontology.eu/ontology/automatedCalculationOfVentilationTimes
 :automatedCalculationOfVentilationTimes rdf:type :FeatureCitation ;
-                                            :featureClassified :SupportForMedicationOrderingEfficiencies ,
-                                                                       :SupportForMedicationRecommendations ,
-                                                                       :SupportOrders ;
+                                            :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                       :EhrSfmSupportForMedicationRecommendations ,
+                                                                       :EhrSfmSupportOrders ;
                                             rdfs:label "automated calculation of ventilation times"@en .
 
 
 ###  http://hitontology.eu/ontology/automatedCodingSemi-automatedCodingOfDiagnosesAndProceduresFromPreviouslyDocumentedClinicalDataAccorddingToGermanDRG
 :automatedCodingSemi-automatedCodingOfDiagnosesAndProceduresFromPreviouslyDocumentedClinicalDataAccorddingToGermanDRG rdf:type :FeatureCitation ;
-                                                                                                                                      :featureClassified :StandardTerminologyAndTerminologyServices ;
+                                                                                                                                      :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
                                                                                                                                       rdfs:label "automated coding semi-automated coding of diagnoses and procedures from previously documented clinical data accordding to German DRG"@en .
 
 
 ###  http://hitontology.eu/ontology/automaticAlignmentOfBaselineAndFollow-upCTA
 :automaticAlignmentOfBaselineAndFollow-upCTA rdf:type :FeatureCitation ;
-                                                   :featureClassified :ManageResults ,
-                                                                              :ManageResultsOfDiagnosticTests ;
+                                                   :featureClassified :EhrSfmManageResults ,
+                                                                              :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                    rdfs:label "automatic alignment of baseline and follow-up CTA" .
 
 
 ###  http://hitontology.eu/ontology/automaticAndPaperlessOperations
 :automaticAndPaperlessOperations rdf:type :FeatureCitation ;
-                                    :featureClassified :ManageOrders ,
-                                                               :ManageOrdersForDiagnositcScreeningTests ,
-                                                               :ManageResults ,
-                                                               :ManageResultsOfDiagnosticTests ,
-                                                               :SupportOrders ,
-                                                               :SupportOrdersForDiagnosticScreeningTests ;
+                                    :featureClassified :EhrSfmManageOrders ,
+                                                               :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                               :EhrSfmManageResults ,
+                                                               :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                               :EhrSfmSupportOrders ,
+                                                               :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
                                     rdfs:label "automatic and paperless operations"@en .
 
 
 ###  http://hitontology.eu/ontology/automaticCreationOfANursingTransferReport
 :automaticCreationOfANursingTransferReport rdf:type :FeatureCitation ;
-                                                 :featureClassified :ProduceASummaryRecordOfCare ;
+                                                 :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
                                                  rdfs:label "automatic creation of a nursing transfer report"@en .
 
 
 ###  http://hitontology.eu/ontology/automaticDataCollection
 :automaticDataCollection rdf:type :FeatureCitation ;
-                           :featureClassified :MedicationOrderEfficiencies ,
-                                                      :SupportForMedicationOrderingEfficiencies ;
+                           :featureClassified :EhrSfmMedicationOrderEfficiencies ,
+                                                      :EhrSfmSupportForMedicationOrderingEfficiencies ;
                            rdfs:label "automatic data collection"@en .
 
 
@@ -1385,24 +1385,24 @@
 
 ###  http://hitontology.eu/ontology/automaticForwardedProcessedImages
 :automaticForwardedProcessedImages rdf:type :FeatureCitation ;
-                                      :featureClassified :ManageOrders ,
-                                                                 :ManageOrdersForDiagnositcScreeningTests ,
-                                                                 :ManageResults ,
-                                                                 :ManageResultsOfDiagnosticTests ;
+                                      :featureClassified :EhrSfmManageOrders ,
+                                                                 :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                                 :EhrSfmManageResults ,
+                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                       rdfs:label "automatic forwarded processed images"@en .
 
 
 ###  http://hitontology.eu/ontology/automaticSegmentationOfBaselineCTA
 :automaticSegmentationOfBaselineCTA rdf:type :FeatureCitation ;
-                                        :featureClassified :ManageResults ,
-                                                                   :ManageResultsOfDiagnosticTests ;
+                                        :featureClassified :EhrSfmManageResults ,
+                                                                   :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                         rdfs:label "automatic segmentation of baseline CTA" .
 
 
 ###  http://hitontology.eu/ontology/automaticTransferOfLaboratoryData
 :automaticTransferOfLaboratoryData rdf:type :FeatureCitation ;
-                                       :featureClassified :ManageResults ,
-                                                                  :ManageResultsOfDiagnosticTests ;
+                                       :featureClassified :EhrSfmManageResults ,
+                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                        rdfs:label "automatic transfer of laboratory data"@en .
 
 
@@ -1414,31 +1414,31 @@
 
 ###  http://hitontology.eu/ontology/bedManagement
 :bedManagement rdf:type :FeatureCitation ;
-                :featureClassified :ManageResourceAvailability ;
+                :featureClassified :EhrSfmManageResourceAvailability ;
                 rdfs:label "bed management"@en .
 
 
 ###  http://hitontology.eu/ontology/bedsideCPOEForOrdersBetweenPhysiciansAndNurses
 :bedsideCPOEForOrdersBetweenPhysiciansAndNurses rdf:type :FeatureCitation ;
-                                                       :featureClassified :ManageOrders ,
-                                                                                  :SupportForMedicationOrderingEfficiencies ,
-                                                                                  :SupportOrders ;
+                                                       :featureClassified :EhrSfmManageOrders ,
+                                                                                  :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                  :EhrSfmSupportOrders ;
                                                        rdfs:label "bedside CPOE for orders between physicians and nurses"@en .
 
 
 ###  http://hitontology.eu/ontology/bookingForm
 :bookingForm rdf:type :FeatureCitation ;
-              :featureClassified :ManageOrders ,
-                                         :SupportOrders ;
+              :featureClassified :EhrSfmManageOrders ,
+                                         :EhrSfmSupportOrders ;
               rdfs:label "booking form"@en .
 
 
 ###  http://hitontology.eu/ontology/bookingOfExaminations
 :bookingOfExaminations rdf:type :FeatureCitation ;
-                         :featureClassified :ManageOrders ,
-                                                    :ManageOrdersForDiagnositcScreeningTests ,
-                                                    :SupportOrders ,
-                                                    :SupportOrdersForDiagnosticScreeningTests ;
+                         :featureClassified :EhrSfmManageOrders ,
+                                                    :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                    :EhrSfmSupportOrders ,
+                                                    :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
                          rdfs:label "booking of examinations"@en .
 
 
@@ -1450,21 +1450,21 @@
 
 ###  http://hitontology.eu/ontology/capturingDataForAllPatientVisits
 :capturingDataForAllPatientVisits rdf:type :FeatureCitation ;
-                                       :featureClassified :ManageClinicalDocumentation ,
-                                                                  :ManageClinicalHistory ,
-                                                                  :ManagePatientHistory ;
+                                       :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                                                  :EhrSfmManageClinicalHistory ,
+                                                                  :EhrSfmManagePatientHistory ;
                                        rdfs:label "capturing data for all patient visits"@en .
 
 
-###  http://hitontology.eu/ontology/clinicalAudit
-:clinicalAudit rdf:type :StudyMethodCitation ;
+###  http://hitontology.eu/ontology/clinicalEhrSfmAudit
+:clinicalEhrSfmAudit rdf:type :StudyMethodCitation ;
                 :classifiedStudyMethod :Qualitative ;
                 rdfs:label "clinical audit"@en .
 
 
 ###  http://hitontology.eu/ontology/clinicalDocumentation
 :clinicalDocumentation rdf:type :FeatureCitation ;
-                        :featureClassified :ManageClinicalDocumentation ;
+                        :featureClassified :EhrSfmManageClinicalDocumentation ;
                         rdfs:label "clinical documentation"@en .
 
 
@@ -1507,14 +1507,14 @@
 
 ###  http://hitontology.eu/ontology/completeTestResults
 :completeTestResults rdf:type :FeatureCitation ;
-                       :featureClassified :ManageResults ,
-                                                  :ManageResultsOfDiagnosticTests ;
+                       :featureClassified :EhrSfmManageResults ,
+                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                        rdfs:label "complete test results"@en .
 
 
 ###  http://hitontology.eu/ontology/comprisingASetOfNursingCareStandards
 :comprisingASetOfNursingCareStandards rdf:type :FeatureCitation ;
-                                            :featureClassified :SupportforStandardCarePlansGuidelinesProtocols ;
+                                            :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
                                             rdfs:label "comprising a set of nursing care standards"@en .
 
 
@@ -1532,10 +1532,10 @@
 
 ###  http://hitontology.eu/ontology/computerizedOrderEntry
 :computerizedOrderEntry rdf:type :FeatureCitation ;
-                          :featureClassified :ManageOrders ,
-                                                     :MedicationOrderEfficiencies ,
-                                                     :SupportForMedicationOrderingEfficiencies ,
-                                                     :SupportOrders ;
+                          :featureClassified :EhrSfmManageOrders ,
+                                                     :EhrSfmMedicationOrderEfficiencies ,
+                                                     :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                     :EhrSfmSupportOrders ;
                           rdfs:label "computerized order entry"@en .
 
 
@@ -1561,14 +1561,14 @@
 
 ###  http://hitontology.eu/ontology/consolidatedListOfResultsForJurisdiction
 :consolidatedListOfResultsForJurisdiction rdf:type :FeatureCitation ;
-                                               :featureClassified :ManageResults ,
-                                                                          :ManageResultsOfDiagnosticTests ;
+                                               :featureClassified :EhrSfmManageResults ,
+                                                                          :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                rdfs:label "consolidated list of results for jurisdiction"@en .
 
 
 ###  http://hitontology.eu/ontology/consultationReferrals
 :consultationReferrals rdf:type :FeatureCitation ;
-                        :featureClassified :ManageOrdersForReferral ;
+                        :featureClassified :EhrSfmEhrSfmManageOrdersForReferral ;
                         rdfs:label "consultation referrals"@en .
 
 
@@ -1593,24 +1593,24 @@
 
 ###  http://hitontology.eu/ontology/creationAndStorageOfNursingDiagnosesAndNursingOutcomes
 :creationAndStorageOfNursingDiagnosesAndNursingOutcomes rdf:type :FeatureCitation ;
-                                                                :featureClassified :ManageClinicalDocumentation ;
+                                                                :featureClassified :EhrSfmManageClinicalDocumentation ;
                                                                 rdfs:label "creation and storage of nursing diagnoses and nursing outcomes"@en .
 
 
 ###  http://hitontology.eu/ontology/creationOfDataRelationToTriage
 :creationOfDataRelationToTriage rdf:type :FeatureCitation ;
-                                     :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                :ManageHealthcareResourceScheduling ,
-                                                                :SupportCareCoordinationAndReporting ,
-                                                                :SupportTriageCategorization ;
+                                     :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                :EhrSfmManageHealthcareResourceScheduling ,
+                                                                :EhrSfmSupportCareCoordinationReporting ,
+                                                                :EhrSfmSupportTriageCategorization ;
                                      rdfs:label "creation of data relation to triage"@en .
 
 
 ###  http://hitontology.eu/ontology/creationOfNursingCarePlans
 :creationOfNursingCarePlans rdf:type :FeatureCitation ;
-                                :featureClassified :ManageClinicalWorkflowTasking ,
-                                                           :ManageOrders ,
-                                                           :SupportOrders ;
+                                :featureClassified :EhrSfmManageClinicalWorkflowTasking ,
+                                                           :EhrSfmManageOrders ,
+                                                           :EhrSfmSupportOrders ;
                                 rdfs:label "creation of nursing care plans"@en .
 
 
@@ -1627,15 +1627,15 @@
 
 ###  http://hitontology.eu/ontology/dataReuseAndDataTransferForAccountingPurposesToTheAdministrationSubsystem
 :dataReuseAndDataTransferForAccountingPurposesToTheAdministrationSubsystem rdf:type :FeatureCitation ;
-                                                                                      :featureClassified :ManageAdministrativeTransactionProcessing ,
-                                                                                                                 :SupportForCommunicationBetweenOrganizations ;
+                                                                                      :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ,
+                                                                                                                 :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                                                                                       rdfs:label "data reuse and data transfer for accounting purposes to the administration subsystem"@en .
 
 
 ###  http://hitontology.eu/ontology/dataStorageRepository
 :dataStorageRepository rdf:type :FeatureCitation ;
-                         :featureClassified :ManageClinicalDocumentation ,
-                                                    :ManageHealthcareResourceAvailabilityInformation ;
+                         :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                                    :EhrSfmManageHealthcareResourceAvailabilityInformation ;
                          rdfs:label "data storage repository"@en .
 
 
@@ -1659,8 +1659,8 @@
 
 ###  http://hitontology.eu/ontology/decisionsSupportFunctions
 :decisionsSupportFunctions rdf:type :FeatureCitation ;
-                             :featureClassified :SupportOfPatientSpecificDosingAndWarnings ,
-                                                        :SupportOrders ;
+                             :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ,
+                                                        :EhrSfmSupportOrders ;
                              rdfs:label "decisions support functions"@en .
 
 
@@ -1684,15 +1684,15 @@
 
 ###  http://hitontology.eu/ontology/dischargeSummaries
 :dischargeSummaries rdf:type :FeatureCitation ;
-                     :featureClassified :ProduceASummaryRecordOfCare ;
+                     :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
                      rdfs:label "discharge summaries"@en .
 
 
 ###  http://hitontology.eu/ontology/displayOfWarningsWhenAppropiate
 :displayOfWarningsWhenAppropiate rdf:type :FeatureCitation ;
-                                     :featureClassified :MedicationAndAllergyInteractionChecking ,
-                                                                :MedicationOrderEfficiencies ,
-                                                                :SupportOfPatientSpecificDosingAndWarnings ;
+                                     :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking ,
+                                                                :EhrSfmMedicationOrderEfficiencies ,
+                                                                :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                                      rdfs:label "display of warnings when appropiate"@en .
 
 
@@ -1704,20 +1704,20 @@
 
 ###  http://hitontology.eu/ontology/dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection
 :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection rdf:type :FeatureCitation ;
-                                                                         :featureClassified :ManageOrderSetTemplates ,
-                                                                                                    :ManageOrders ,
-                                                                                                    :MedicationOrderEfficiencies ,
-                                                                                                    :SupportForMedicationOrderingEfficiencies ,
-                                                                                                    :SupportOrders ,
-                                                                                                    :UseOrderSets ;
+                                                                         :featureClassified :EhrSfmManageOrderSetTemplates ,
+                                                                                                    :EhrSfmManageOrders ,
+                                                                                                    :EhrSfmMedicationOrderEfficiencies ,
+                                                                                                    :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                                    :EhrSfmSupportOrders ,
+                                                                                                    :EhrSfmUseOrderSets ;
                                                                          rdfs:label "dropdown menu of predefined order sentences triggered on drug selection"@en .
 
 
 ###  http://hitontology.eu/ontology/drugDictionary
 :drugDictionary rdf:type :FeatureCitation ;
-                 :featureClassified :MedicationOrderEfficiencies ,
-                                            :SupportForMedicationRecommendations ,
-                                            :SupportOfPatientSpecificDosingAndWarnings ;
+                 :featureClassified :EhrSfmMedicationOrderEfficiencies ,
+                                            :EhrSfmSupportForMedicationRecommendations ,
+                                            :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                  rdfs:label "drug dictionary"@en .
 
 
@@ -1734,11 +1734,11 @@
 
 ###  http://hitontology.eu/ontology/electronicMedicationAdministrationTool
 :electronicMedicationAdministrationTool rdf:type :FeatureCitation ;
-                                           :featureClassified :ManageMedicationAdministration ,
-                                                                      :ManageMedicationImmunizationAndTreatmentAdministration ,
-                                                                      :ManageOrders ,
-                                                                      :MedicationOrderEfficiencies ,
-                                                                      :SupportForMedicationOrderingEfficiencies ;
+                                           :featureClassified :EhrSfmManageMedicationAdministration ,
+                                                                      :EhrSfmManageMedicationImmunizationAndTreatmentAdministration ,
+                                                                      :EhrSfmManageOrders ,
+                                                                      :EhrSfmMedicationOrderEfficiencies ,
+                                                                      :EhrSfmSupportForMedicationOrderingEfficiencies ;
                                            rdfs:label "electronic medication administration tool"@en .
 
 
@@ -1751,7 +1751,7 @@
 
 ###  http://hitontology.eu/ontology/electronicPatientWorklist
 :electronicPatientWorklist rdf:type :FeatureCitation ;
-                             :featureClassified :ManageClinicalWorkflowTasking ;
+                             :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
                              rdfs:label "electronic patient worklist"@en .
 
 
@@ -1763,22 +1763,22 @@
 
 ###  http://hitontology.eu/ontology/electronicSignature
 :electronicSignature rdf:type :FeatureCitation ;
-                      :featureClassified :ManageRecordEntryAmendedCorrectedAndAugmentedState ;
+                      :featureClassified :EhrSfmManageRecordEntryAmendedCorrectedAndAugementedState ;
                       rdfs:label "electronic signature"@en .
 
 
 ###  http://hitontology.eu/ontology/emailNotificationOfNewResults
 :emailNotificationOfNewResults rdf:type :FeatureCitation ;
-                                   :featureClassified :SupportForCommunicationBetweenOrganizations ;
+                                   :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                                    rdfs:label "email notification of new results"@en .
 
 
 ###  http://hitontology.eu/ontology/emergencyTesting
 :emergencyTesting rdf:type :FeatureCitation ;
-                   :featureClassified :ManageOrders ,
-                                              :ManageOrdersForDiagnositcScreeningTests ,
-                                              :ManageResults ,
-                                              :ManageResultsOfDiagnosticTests ;
+                   :featureClassified :EhrSfmManageOrders ,
+                                              :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                              :EhrSfmManageResults ,
+                                              :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                    rdfs:label "emergency testing"@en .
 
 
@@ -1791,15 +1791,15 @@
 
 ###  http://hitontology.eu/ontology/exportFunctionToTheBillingSystem
 :exportFunctionToTheBillingSystem rdf:type :FeatureCitation ;
-                                       :featureClassified :ManageAdministrativeTransactionProcessing ;
+                                       :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                                        rdfs:label "export function to the billing system"@en .
 
 
 ###  http://hitontology.eu/ontology/facilitatingCalculationsOfDrugDosesAndFluidBalances
 :facilitatingCalculationsOfDrugDosesAndFluidBalances rdf:type :FeatureCitation ;
-                                                            :featureClassified :SupportForMedicationOrderingEfficiencies ,
-                                                                                       :SupportOfPatientSpecificDosingAndWarnings ,
-                                                                                       :SupportOrders ;
+                                                            :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                       :EhrSfmSupportOfPatientSpecificDosingAndWarnings ,
+                                                                                       :EhrSfmSupportOrders ;
                                                             rdfs:label "facilitating calculations of drug doses and fluid balances"@en .
 
 
@@ -1811,16 +1811,16 @@
 
 ###  http://hitontology.eu/ontology/followingOfThePerioerpativeProcess
 :followingOfThePerioerpativeProcess rdf:type :FeatureCitation ;
-                                        :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                   :ManageClinicalWorkflowTasking ,
-                                                                   :SupportCareCoordinationAndReporting ;
+                                        :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                   :EhrSfmManageClinicalWorkflowTasking ,
+                                                                   :EhrSfmSupportCareCoordinationReporting ;
                                         rdfs:label "following of the perioerpative process"@en .
 
 
 ###  http://hitontology.eu/ontology/forwardIntoArchive
 :forwardIntoArchive rdf:type :FeatureCitation ;
-                      :featureClassified :ManageResults ,
-                                                 :ManageResultsOfDiagnosticTests ;
+                      :featureClassified :EhrSfmManageResults ,
+                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                       rdfs:label "forward into archive"@en .
 
 
@@ -1849,8 +1849,8 @@
 
 ###  http://hitontology.eu/ontology/graphicalUserInterfaceToDocumentCare
 :graphicalUserInterfaceToDocumentCare rdf:type :FeatureCitation ;
-                                           :featureClassified :ManageClinicalDocumentation ,
-                                                                      :ManagePatientHistory ;
+                                           :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                                                      :EhrSfmManagePatientHistory ;
                                            rdfs:label "graphical user interface to document care"@en .
 
 
@@ -2112,14 +2112,14 @@
 
 ###  http://hitontology.eu/ontology/importInterfacesForLaboratoryMicrobiologyRadiologyReports
 :importInterfacesForLaboratoryMicrobiologyRadiologyReports rdf:type :FeatureCitation ;
-                                                                 :featureClassified :ManageResults ,
-                                                                                            :ManageResultsOfDiagnosticTests ;
+                                                                 :featureClassified :EhrSfmManageResults ,
+                                                                                            :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                                  rdfs:label "import interfaces for laboratory microbiology radiology reports"@en .
 
 
 ###  http://hitontology.eu/ontology/in-patientAdmissionsAndDischarges
 :in-patientAdmissionsAndDischarges rdf:type :FeatureCitation ;
-                                      :featureClassified :ManageAdministrativeTransactionProcessing ;
+                                      :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                                       rdfs:label "'in-patient admissions and discharges'"@en .
 
 
@@ -2131,15 +2131,15 @@
 
 ###  http://hitontology.eu/ontology/informationAboutTheOperationActivity
 :informationAboutTheOperationActivity rdf:type :FeatureCitation ;
-                                          :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                     :ManageClinicalWorkflowTasking ,
-                                                                     :SupportCareCoordinationAndReporting ;
+                                          :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                     :EhrSfmManageClinicalWorkflowTasking ,
+                                                                     :EhrSfmSupportCareCoordinationReporting ;
                                           rdfs:label "information about the operation activity"@en .
 
 
 ###  http://hitontology.eu/ontology/informationSourroundingPatientAgeAndGestationalAgeToGuideTowardAvailableOptions
 :informationSourroundingPatientAgeAndGestationalAgeToGuideTowardAvailableOptions rdf:type :FeatureCitation ;
-                                                                                            :featureClassified :SupportForPatientContextDrivenAssessments ;
+                                                                                            :featureClassified :EhrSfmSupportForPatientContextdrivenAssessments ;
                                                                                             rdfs:label "Information surrounding patient age and gestational age to guide toward available options" .
 
 
@@ -2150,7 +2150,7 @@
 
 ###  http://hitontology.eu/ontology/integrationOfPatientSpecificData
 :integrationOfPatientSpecificData rdf:type :FeatureCitation ;
-                                      :featureClassified :ManageClinicalDocumentation ;
+                                      :featureClassified :EhrSfmManageClinicalDocumentation ;
                                       rdfs:label "integration of patient specific data"@en .
 
 
@@ -2162,19 +2162,19 @@
 
 ###  http://hitontology.eu/ontology/interactiveConsultationBetweenTwoOrMoreCenters
 :interactiveConsultationBetweenTwoOrMoreCenters rdf:type :FeatureCitation ;
-                                                      :featureClassified :ManageResults ,
-                                                                                 :ManageResultsOfDiagnosticTests ,
-                                                                                 :SupportForCommunicationBetweenOrganizations ,
-                                                                                 :SupportRemoteHealthcareServices ;
+                                                      :featureClassified :EhrSfmManageResults ,
+                                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                                                 :EhrSfmSupportForCommunicationsBetweenOrganizations ,
+                                                                                 :EhrSfmSupportRemoteHealthcareServices ;
                                                       rdfs:label "interactive consultation between two or more centers"@en .
 
 
 ###  http://hitontology.eu/ontology/interfacedToTheRIS
 :interfacedToTheRIS rdf:type :FeatureCitation ;
-                       :featureClassified :ManageOrders ,
-                                                  :ManageOrdersForDiagnositcScreeningTests ,
-                                                  :ManageResults ,
-                                                  :ManageResultsOfDiagnosticTests ;
+                       :featureClassified :EhrSfmManageOrders ,
+                                                  :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                  :EhrSfmManageResults ,
+                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                        rdfs:label "interfaced to the RIS"@en .
 
 
@@ -2186,7 +2186,7 @@
 
 ###  http://hitontology.eu/ontology/invoicingAndRegistrationOverview
 :invoicingAndRegistrationOverview rdf:type :FeatureCitation ;
-                                     :featureClassified :ManageAdministrativeTransactionProcessing ;
+                                     :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                                      rdfs:label "invoicing and registration overview"@en .
 
 
@@ -2222,56 +2222,56 @@
 
 ###  http://hitontology.eu/ontology/listToTrackTheStatusOfPendingSamples
 :listToTrackTheStatusOfPendingSamples rdf:type :FeatureCitation ;
-                                             :featureClassified :ManageResults ,
-                                                                        :ManageResultsOfDiagnosticTests ,
-                                                                        :SupportForCommunicationBetweenOrganizations ;
+                                             :featureClassified :EhrSfmManageResults ,
+                                                                        :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                                        :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                                              rdfs:label "list to track the status of pending samples"@en .
 
 
 ###  http://hitontology.eu/ontology/mandatoryReporting
 :mandatoryReporting rdf:type :FeatureCitation ;
-                     :featureClassified :ManageCareCoordinationAndReporting ,
-                                                :SupportCareCoordinationAndReporting ;
+                     :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                :EhrSfmSupportCareCoordinationReporting ;
                      rdfs:label "mandatory reporting"@en .
 
 
 ###  http://hitontology.eu/ontology/medication-specificOrderSet
 :medication-specificOrderSet rdf:type :FeatureCitation ;
-                               :featureClassified :ManageMedicationOrders ,
-                                                          :ManageOrderSetTemplates ,
-                                                          :ManageOrders ,
-                                                          :MedicationOrderEfficiencies ,
-                                                          :SupportForMedicationOrderingEfficiencies ,
-                                                          :SupportOrders ,
-                                                          :UseOrderSets ;
+                               :featureClassified :EhrSfmManageMedicationOrders ,
+                                                          :EhrSfmManageOrderSetTemplates ,
+                                                          :EhrSfmManageOrders ,
+                                                          :EhrSfmMedicationOrderEfficiencies ,
+                                                          :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                          :EhrSfmSupportOrders ,
+                                                          :EhrSfmUseOrderSets ;
                                rdfs:label "medication-specific order set"@en .
 
 
 ###  http://hitontology.eu/ontology/medicationControlBasedOnNationalDrugDatabase
 :medicationControlBasedOnNationalDrugDatabase rdf:type :FeatureCitation ;
-                                                    :featureClassified :MedicationAndAllergyInteractionChecking ,
-                                                                               :SupportForMedicationInteractionAndAllergyChecking ,
-                                                                               :SupportOfPatientSpecificDosingAndWarnings ;
+                                                    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking ,
+                                                                               :EhrSfmSupportForMedicationInteractionAndAllergyChecking ,
+                                                                               :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                                                     rdfs:label "medication control based on national drug database"@en .
 
 
 ###  http://hitontology.eu/ontology/medicationOrdersAppearOnThePatientsElectronicRecordOnceThePharmacistHasApprovedThem
 :medicationOrdersAppearOnThePatientsElectronicRecordOnceThePharmacistHasApprovedThem rdf:type :FeatureCitation ;
-                                                                                                  :featureClassified :ManageMedicationOrders ,
-                                                                                                                             :ManageOrders ,
-                                                                                                                             :MedicationAndAllergyInteractionChecking ;
+                                                                                                  :featureClassified :EhrSfmManageMedicationOrders ,
+                                                                                                                             :EhrSfmManageOrders ,
+                                                                                                                             :EhrSfmMedicationInteractionAndAllergyChecking ;
                                                                                                   rdfs:label "medication orders appear on the patients electronic record once the pharmacist has approved them"@en .
 
 
 ###  http://hitontology.eu/ontology/medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown
 :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown rdf:type :FeatureCitation ;
-                                                                                                :featureClassified :ManageHealthcareResourceAvailabilityInformation ,
-                                                                                                                           :ManageMedicationOrders ,
-                                                                                                                           :ManageOrders ,
-                                                                                                                           :ManageResourceAvailability ,
-                                                                                                                           :MedicationOrderEfficiencies ,
-                                                                                                                           :SupportForMedicationOrderingEfficiencies ,
-                                                                                                                           :SupportOrders ;
+                                                                                                :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation ,
+                                                                                                                           :EhrSfmManageMedicationOrders ,
+                                                                                                                           :EhrSfmManageOrders ,
+                                                                                                                           :EhrSfmManageResourceAvailability ,
+                                                                                                                           :EhrSfmMedicationOrderEfficiencies ,
+                                                                                                                           :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                                                           :EhrSfmSupportOrders ;
                                                                                                 rdfs:label "medication selection from menu in wich medication from the ward stock or the pharmacy is shown"@en .
 
 
@@ -2283,9 +2283,9 @@
 
 ###  http://hitontology.eu/ontology/nurseAlteringIfPatientsMedicationIsOverdue
 :nurseAlteringIfPatientsMedicationIsOverdue rdf:type :FeatureCitation ;
-                                                  :featureClassified :ManageMedicationAdministration ,
-                                                                             :ManageMedicationImmunizationAndTreatmentAdministration ,
-                                                                             :ManageMedicationOrders ;
+                                                  :featureClassified :EhrSfmManageMedicationAdministration ,
+                                                                             :EhrSfmManageMedicationImmunizationAndTreatmentAdministration ,
+                                                                             :EhrSfmManageMedicationOrders ;
                                                   rdfs:label "nurse altering if patients medication is overdue"@en .
 
 
@@ -2297,30 +2297,30 @@
 
 ###  http://hitontology.eu/ontology/nursingAnamnesis
 :nursingAnamnesis rdf:type :FeatureCitation ;
-                   :featureClassified :ManageClinicalDocumentation ,
-                                              :ManageClinicalHistory ,
-                                              :ManageProblemList ;
+                   :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                              :EhrSfmManageClinicalHistory ,
+                                              :EhrSfmManageProblemList ;
                    rdfs:label "nursing anamnesis"@en .
 
 
 ###  http://hitontology.eu/ontology/nursingCarePlanningSupportedByPre-definedNursingCareStandards
 :nursingCarePlanningSupportedByPre-definedNursingCareStandards rdf:type :FeatureCitation ;
-                                                                       :featureClassified :SupportForContextSensitiveCarePlansGuidelinesProtocols ,
-                                                                                                  :SupportForPatientContextDrivenAssessments ,
-                                                                                                  :SupportForStandardAssessments ,
-                                                                                                  :SupportforStandardCarePlansGuidelinesProtocols ;
+                                                                       :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols ,
+                                                                                                  :EhrSfmSupportForPatientContextdrivenAssessments ,
+                                                                                                  :EhrSfmSupportForStandardAssessments ,
+                                                                                                  :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
                                                                        rdfs:label "nursing care planning supported by pre-defined nursing care standards"@en .
 
 
 ###  http://hitontology.eu/ontology/nursingDiagnosisBasedOnTheNANDATaxonomy
 :nursingDiagnosisBasedOnTheNANDATaxonomy rdf:type :FeatureCitation ;
-                                               :featureClassified :StandardTerminologyAndTerminologyServices ;
+                                               :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
                                                rdfs:label "nursing diagnosis based on the NANDA taxonomy"@en .
 
 
 ###  http://hitontology.eu/ontology/nursingDocumentationForms
 :nursingDocumentationForms rdf:type :FeatureCitation ;
-                             :featureClassified :ManageClinicalDocumentation ;
+                             :featureClassified :EhrSfmManageClinicalDocumentation ;
                              rdfs:label "nursing documentation forms"@en .
 
 
@@ -2333,8 +2333,8 @@
 
 ###  http://hitontology.eu/ontology/nursingEvaluation
 :nursingEvaluation rdf:type :FeatureCitation ;
-                    :featureClassified :ManageClinicalDocumentation ,
-                                               :ManageProblemList ;
+                    :featureClassified :EhrSfmManageClinicalDocumentation ,
+                                               :EhrSfmManageProblemList ;
                     rdfs:label "nursing evaluation"@en .
 
 
@@ -2352,31 +2352,31 @@
 
 ###  http://hitontology.eu/ontology/offlineMode
 :offlineMode rdf:type :FeatureCitation ;
-              :featureClassified :SupportRemoteHealthcareServices ;
+              :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
               rdfs:label "offline mode"@en .
 
 
 ###  http://hitontology.eu/ontology/onlineDataAcquisitionOfCitalSignsFromVentilators
 :onlineDataAcquisitionOfCitalSignsFromVentilators rdf:type :FeatureCitation ;
-                                                         :featureClassified :ManageResults ;
+                                                         :featureClassified :EhrSfmManageResults ;
                                                          rdfs:label "online data acquisition of cital signs from ventilators"@en .
 
 
 ###  http://hitontology.eu/ontology/onlineDataAcquisitionOfVitalSignsFromMonitoringDevices
 :onlineDataAcquisitionOfVitalSignsFromMonitoringDevices rdf:type :FeatureCitation ;
-                                                                :featureClassified :ManageResults ;
+                                                                :featureClassified :EhrSfmManageResults ;
                                                                 rdfs:label "online data acquisition of vital signs from monitoring devices"@en .
 
 
 ###  http://hitontology.eu/ontology/onlineDataAcquisitionOfVitalSignsFromOtherMedicalDevices
 :onlineDataAcquisitionOfVitalSignsFromOtherMedicalDevices rdf:type :FeatureCitation ;
-                                                                   :featureClassified :ManageResults ;
+                                                                   :featureClassified :EhrSfmManageResults ;
                                                                    rdfs:label "online data acquisition of vital signs from other medical devices"@en .
 
 
 ###  http://hitontology.eu/ontology/operatingRoomManagement
 :operatingRoomManagement rdf:type :FeatureCitation ;
-                           :featureClassified :ManageClinicalWorkflowTasking ;
+                           :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
                            rdfs:label "operating room management"@en .
 
 
@@ -2393,9 +2393,9 @@
 
 ###  http://hitontology.eu/ontology/operationTheaterActivities
 :operationTheaterActivities rdf:type :FeatureCitation ;
-                              :featureClassified :ManageCareCoordinationAndReporting ,
-                                                         :ManageClinicalWorkflowTasking ,
-                                                         :SupportCareCoordinationAndReporting ;
+                              :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                         :EhrSfmManageClinicalWorkflowTasking ,
+                                                         :EhrSfmSupportCareCoordinationReporting ;
                               rdfs:label "operation theater activities"@en .
 
 
@@ -2407,8 +2407,8 @@
 
 ###  http://hitontology.eu/ontology/outpatientAppointements
 :outpatientAppointements rdf:type :FeatureCitation ;
-                          :featureClassified :ManageAdministrativeTransactionProcessing ,
-                                                     :SupportForCommunicationBetweenOrganizations ;
+                          :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ,
+                                                     :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                           rdfs:label "outpatient appointements"@en .
 
 
@@ -2425,7 +2425,7 @@
 
 ###  http://hitontology.eu/ontology/patientAdministration
 :patientAdministration rdf:type :FeatureCitation ;
-                        :featureClassified :ManageAdministrativeTransactionProcessing ;
+                        :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                         rdfs:label "patient administration"@en .
 
 
@@ -2451,29 +2451,29 @@
 
 ###  http://hitontology.eu/ontology/patientManagementPlans
 :patientManagementPlans rdf:type :FeatureCitation ;
-                          :featureClassified :ManageClinicalDocumentation ;
+                          :featureClassified :EhrSfmManageClinicalDocumentation ;
                           rdfs:label "patient management plans"@en .
 
 
 ###  http://hitontology.eu/ontology/patientPageContainingDetailsOfAnySingleSample
 :patientPageContainingDetailsOfAnySingleSample rdf:type :FeatureCitation ;
-                                                      :featureClassified :ManageResults ,
-                                                                                 :ManageResultsOfDiagnosticTests ;
+                                                      :featureClassified :EhrSfmManageResults ,
+                                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                       rdfs:label "patient page containing details of any single sample"@en .
 
 
 ###  http://hitontology.eu/ontology/patientPageContainingTheHistoryOfAllTestsPerformed
 :patientPageContainingTheHistoryOfAllTestsPerformed rdf:type :FeatureCitation ;
-                                                            :featureClassified :ManageResults ,
-                                                                                       :ManageResultsOfDiagnosticTests ;
+                                                            :featureClassified :EhrSfmManageResults ,
+                                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                             rdfs:label "patient page containing the history of all tests performed"@en .
 
 
 ###  http://hitontology.eu/ontology/patientRegistration
 :patientRegistration rdf:type :FeatureCitation ;
-                      :featureClassified :ManageOrders ,
-                                                 :ManageOrdersForDiagnositcScreeningTests ,
-                                                 :SupportForCommunicationBetweenOrganizations ;
+                      :featureClassified :EhrSfmManageOrders ,
+                                                 :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                 :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                       rdfs:label "patient registration"@en .
 
 
@@ -2509,33 +2509,33 @@
 
 ###  http://hitontology.eu/ontology/plannedActivities
 :plannedActivities rdf:type :FeatureCitation ;
-                    :featureClassified :ManageClinicalWorkflowTasking ,
-                                               :ManageCommunication ;
+                    :featureClassified :EhrSfmManageClinicalWorkflowTasking ,
+                                               :EhrSfmManageCommunication ;
                     rdfs:label "planned activities"@en .
 
 
 ###  http://hitontology.eu/ontology/planningSchedulingAndAnalysisOfOperations
 :planningSchedulingAndAnalysisOfOperations rdf:type :FeatureCitation ;
-                                                :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                           :ManageNonMedicationPatientCareOrders ,
-                                                                           :ManageOrders ,
-                                                                           :SupportCareCoordinationAndReporting ;
+                                                :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                           :EhrSfmManageNonmedicationPatientCareOrders ,
+                                                                           :EhrSfmManageOrders ,
+                                                                           :EhrSfmSupportCareCoordinationReporting ;
                                                 rdfs:label "planning scheduling and analysis of operations"@en .
 
 
 ###  http://hitontology.eu/ontology/planningView
 :planningView rdf:type :FeatureCitation ;
-               :featureClassified :ManageCareCoordinationAndReporting ,
-                                          :ManageClinicalWorkflowTasking ,
-                                          :ManageNonMedicationPatientCareOrders ,
-                                          :ManageOrders ,
-                                          :SupportCareCoordinationAndReporting ;
+               :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                          :EhrSfmManageClinicalWorkflowTasking ,
+                                          :EhrSfmManageNonmedicationPatientCareOrders ,
+                                          :EhrSfmManageOrders ,
+                                          :EhrSfmSupportCareCoordinationReporting ;
                rdfs:label "planning view"@en .
 
 
 ###  http://hitontology.eu/ontology/pointAndClickDataEntry
 :pointAndClickDataEntry rdf:type :FeatureCitation ;
-                            :featureClassified :ManageClinicalDocumentation ;
+                            :featureClassified :EhrSfmManageClinicalDocumentation ;
                             rdfs:label "point and click data entry"@en .
 
 
@@ -2547,47 +2547,47 @@
 
 ###  http://hitontology.eu/ontology/possibilityToContinuePrescribingWhileSafetyAlert
 :possibilityToContinuePrescribingWhileSafetyAlert rdf:type :FeatureCitation ;
-                                                        :featureClassified :MedicationAlertOverrides ;
+                                                        :featureClassified :EhrSfmMedicationAlertOverrides ;
                                                         rdfs:label "possibility to continue prescribing while safety alert"@en .
 
 
 ###  http://hitontology.eu/ontology/pre-processing
 :pre-processing rdf:type :FeatureCitation ;
-                :featureClassified :ManageResults ,
-                                           :ManageResultsOfDiagnosticTests ;
+                :featureClassified :EhrSfmManageResults ,
+                                           :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                 rdfs:label "pre-processing" .
 
 
 ###  http://hitontology.eu/ontology/predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick
 :predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick rdf:type :FeatureCitation ;
-                                                                                               :featureClassified :ManageOrderSetTemplates ,
-                                                                                                                          :ManageOrders ,
-                                                                                                                          :MedicationOrderEfficiencies ,
-                                                                                                                          :SupportForMedicationOrderingEfficiencies ,
-                                                                                                                          :SupportOrders ,
-                                                                                                                          :UseOrderSets ;
+                                                                                               :featureClassified :EhrSfmManageOrderSetTemplates ,
+                                                                                                                          :EhrSfmManageOrders ,
+                                                                                                                          :EhrSfmMedicationOrderEfficiencies ,
+                                                                                                                          :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                                                          :EhrSfmSupportOrders ,
+                                                                                                                          :EhrSfmUseOrderSets ;
                                                                                                rdfs:label "predefined order sentences allow for group of related orders to be selected with single click"@en .
 
 
 ###  http://hitontology.eu/ontology/predefinedOrderSentencesSearchableByCategoryQuickLists
 :predefinedOrderSentencesSearchableByCategoryQuickLists rdf:type :FeatureCitation ;
-                                                               :featureClassified :ManageOrderSetTemplates ,
-                                                                                          :ManageOrders ,
-                                                                                          :MedicationOrderEfficiencies ,
-                                                                                          :SupportForMedicationOrderingEfficiencies ,
-                                                                                          :SupportOrders ,
-                                                                                          :UseOrderSets ;
+                                                               :featureClassified :EhrSfmManageOrderSetTemplates ,
+                                                                                          :EhrSfmManageOrders ,
+                                                                                          :EhrSfmMedicationOrderEfficiencies ,
+                                                                                          :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                          :EhrSfmSupportOrders ,
+                                                                                          :EhrSfmUseOrderSets ;
                                                                rdfs:label "predefined order sentences searchable by category quick lists"@en .
 
 
 ###  http://hitontology.eu/ontology/predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm
 :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm rdf:type :FeatureCitation ;
-                                                                        :featureClassified :ManageOrderSetTemplates ,
-                                                                                                   :ManageOrders ,
-                                                                                                   :MedicationOrderEfficiencies ,
-                                                                                                   :SupportForMedicationOrderingEfficiencies ,
-                                                                                                   :SupportOrders ,
-                                                                                                   :UseOrderSets ;
+                                                                        :featureClassified :EhrSfmManageOrderSetTemplates ,
+                                                                                                   :EhrSfmManageOrders ,
+                                                                                                   :EhrSfmMedicationOrderEfficiencies ,
+                                                                                                   :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                                   :EhrSfmSupportOrders ,
+                                                                                                   :EhrSfmUseOrderSets ;
                                                                         rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
 
 
@@ -2598,7 +2598,7 @@
 
 ###  http://hitontology.eu/ontology/prescribeLonghand
 :prescribeLonghand rdf:type :FeatureCitation ;
-                    :featureClassified :ManageOrders ;
+                    :featureClassified :EhrSfmManageOrders ;
                     rdfs:label "prescribe longhand"@en .
 
 
@@ -2653,27 +2653,27 @@
 
 ###  http://hitontology.eu/ontology/readBarCodeLabel
 :readBarCodeLabel rdf:type :FeatureCitation ;
-                     :featureClassified :ManageOrders ,
-                                                :ManageOrdersForDiagnositcScreeningTests ;
+                     :featureClassified :EhrSfmManageOrders ,
+                                                :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ;
                      rdfs:label "read bar code label"@en .
 
 
 ###  http://hitontology.eu/ontology/real-timeDataEntering
 :real-timeDataEntering rdf:type :FeatureCitation ;
-                         :featureClassified :ManageClinicalDocumentation ;
+                         :featureClassified :EhrSfmManageClinicalDocumentation ;
                          rdfs:label "real-time data entering"@en .
 
 
 ###  http://hitontology.eu/ontology/real-timeVoiceCommunication
 :real-timeVoiceCommunication rdf:type :FeatureCitation ;
-                               :featureClassified :SupportForCommunicationBetweenOrganizations ,
-                                                          :SupportRemoteHealthcareServices ;
+                               :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations ,
+                                                          :EhrSfmSupportRemoteHealthcareServices ;
                                rdfs:label "real-time voice communication"@en .
 
 
 ###  http://hitontology.eu/ontology/recommendationPop-upWindow
 :recommendationPop-upWindow rdf:type :FeatureCitation ;
-                              :featureClassified :SupportOfPatientSpecificDosingAndWarnings ;
+                              :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                               rdfs:label "recommendation pop-up window"@en .
 
 
@@ -2685,14 +2685,14 @@
 
 ###  http://hitontology.eu/ontology/registrationOfInpatients
 :registrationOfInpatients rdf:type :FeatureCitation ;
-                            :featureClassified :ManageAdministrativeTransactionProcessing ;
+                            :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
                             rdfs:label "registration of inpatients"@en .
 
 
 ###  http://hitontology.eu/ontology/remindingAndDocumentationOfNursingTasks
 :remindingAndDocumentationOfNursingTasks rdf:type :FeatureCitation ;
-                                              :featureClassified :ManageClinicalHistory ,
-                                                                         :ManageClinicalWorkflowTasking ;
+                                              :featureClassified :EhrSfmManageClinicalHistory ,
+                                                                         :EhrSfmManageClinicalWorkflowTasking ;
                                               rdfs:label "reminding and documentation of nursing tasks"@en .
 
 
@@ -2703,18 +2703,18 @@
 
 ###  http://hitontology.eu/ontology/reportsOnTestsPerformed
 :reportsOnTestsPerformed rdf:type :FeatureCitation ;
-                            :featureClassified :ManageResults ,
-                                                       :ManageResultsOfDiagnosticTests ;
+                            :featureClassified :EhrSfmManageResults ,
+                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                             rdfs:label "reports on tests performed"@en .
 
 
 ###  http://hitontology.eu/ontology/requestFormAssignedATimeslotRoomAndStaff
 :requestFormAssignedATimeslotRoomAndStaff rdf:type :FeatureCitation ;
-                                                 :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                            :ManageClinicalWorkflowTasking ,
-                                                                            :ManageNonMedicationPatientCareOrders ,
-                                                                            :ManageOrders ,
-                                                                            :SupportCareCoordinationAndReporting ;
+                                                 :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                            :EhrSfmManageClinicalWorkflowTasking ,
+                                                                            :EhrSfmManageNonmedicationPatientCareOrders ,
+                                                                            :EhrSfmManageOrders ,
+                                                                            :EhrSfmSupportCareCoordinationReporting ;
                                                  rdfs:label "request form assigned a timeslot room and staff"@en .
 
 
@@ -2725,68 +2725,68 @@
 
 ###  http://hitontology.eu/ontology/retrievalOfAdministrativeData
 :retrievalOfAdministrativeData rdf:type :FeatureCitation ;
-                                  :featureClassified :ManageNonMedicationPatientCareOrders ,
-                                                             :ManageOrders ;
+                                  :featureClassified :EhrSfmManageNonmedicationPatientCareOrders ,
+                                                             :EhrSfmManageOrders ;
                                   rdfs:label "retrieval of administrative data"@en .
 
 
 ###  http://hitontology.eu/ontology/retrievalOfPatientRegisters
 :retrievalOfPatientRegisters rdf:type :FeatureCitation ;
-                                :featureClassified :ManageOrders ;
+                                :featureClassified :EhrSfmManageOrders ;
                                 rdfs:label "retrieval of patient registers"@en .
 
 
 ###  http://hitontology.eu/ontology/retrievalOfTheNationalCodingSystemForDiagnosisAndMedicalProcedures
 :retrievalOfTheNationalCodingSystemForDiagnosisAndMedicalProcedures rdf:type :FeatureCitation ;
-                                                                              :featureClassified :StandardTerminologyAndTerminologyServices ;
+                                                                              :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
                                                                               rdfs:label "retrieval of the national coding system for diagnosis and medical procedures"@en .
 
 
 ###  http://hitontology.eu/ontology/reviewScreeningAndTestingOptions
 :reviewScreeningAndTestingOptions rdf:type :FeatureCitation ;
-                                      :featureClassified :SupportForPatientContextDrivenAssessments ,
-                                                                 :SupportOrdersForDiagnosticScreeningTests ;
+                                      :featureClassified :EhrSfmSupportForPatientContextdrivenAssessments ,
+                                                                 :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
                                       rdfs:label "review screening and testing options" .
 
 
 ###  http://hitontology.eu/ontology/safetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses
 :safetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses rdf:type :FeatureCitation ;
-                                                                                                    :featureClassified :MedicationAlertOverrides ,
-                                                                                                                               :SupportForCommunicationBetweenOrganizations ;
+                                                                                                    :featureClassified :EhrSfmMedicationAlertOverrides ,
+                                                                                                                               :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                                                                                                     rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
 
 
 ###  http://hitontology.eu/ontology/safetyAlertsInCaseOfAllergies
 :safetyAlertsInCaseOfAllergies rdf:type :FeatureCitation ;
-                                    :featureClassified :MedicationAndAllergyInteractionChecking ,
-                                                               :SupportForMedicationInteractionAndAllergyChecking ;
+                                    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking ,
+                                                               :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
                                     rdfs:label "safety alerts in case of allergies"@en .
 
 
 ###  http://hitontology.eu/ontology/safetyAlertsInCaseOfDrug-drugInteractions
 :safetyAlertsInCaseOfDrug-drugInteractions rdf:type :FeatureCitation ;
-                                                 :featureClassified :MedicationAndAllergyInteractionChecking ,
-                                                                            :SupportForMedicationInteractionAndAllergyChecking ;
+                                                 :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking ,
+                                                                            :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
                                                  rdfs:label "safety alerts in case of drug-drug interactions"@en .
 
 
 ###  http://hitontology.eu/ontology/safetyAlertsInCaseOfOverdosing
 :safetyAlertsInCaseOfOverdosing rdf:type :FeatureCitation ;
-                                     :featureClassified :SupportOfPatientSpecificDosingAndWarnings ;
+                                     :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                                      rdfs:label "safety alerts in case of overdosing"@en .
 
 
 ###  http://hitontology.eu/ontology/safetyAlertsInRealTime
 :safetyAlertsInRealTime rdf:type :FeatureCitation ;
-                            :featureClassified :MedicationAndAllergyInteractionChecking ,
-                                                       :SupportForMedicationInteractionAndAllergyChecking ,
-                                                       :SupportOfPatientSpecificDosingAndWarnings ;
+                            :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking ,
+                                                       :EhrSfmSupportForMedicationInteractionAndAllergyChecking ,
+                                                       :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                             rdfs:label "safety alerts in real time"@en .
 
 
 ###  http://hitontology.eu/ontology/scanBarCodesOnThePatientsWristband
 :scanBarCodesOnThePatientsWristband rdf:type :FeatureCitation ;
-                                          :featureClassified :ManageMedicationAdministration ;
+                                          :featureClassified :EhrSfmManageMedicationAdministration ;
                                           rdfs:label "scan bar codes on the patients wristband"@en .
 
 
@@ -2798,15 +2798,15 @@
 
 ###  http://hitontology.eu/ontology/scheduling
 :scheduling rdf:type :FeatureCitation ;
-            :featureClassified :ManageAdministrativeTransactionProcessing ,
-                                       :ManageClinicalWorkflowTasking ;
+            :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ,
+                                       :EhrSfmManageClinicalWorkflowTasking ;
             rdfs:label "scheduling"@en .
 
 
 ###  http://hitontology.eu/ontology/schedulingAndResourceAllocation
 :schedulingAndResourceAllocation rdf:type :FeatureCitation ;
-                                    :featureClassified :ManageClinicalWorkflowTasking ,
-                                                               :ManageResourceAvailability ;
+                                    :featureClassified :EhrSfmManageClinicalWorkflowTasking ,
+                                                               :EhrSfmManageResourceAvailability ;
                                     rdfs:label "scheduling and resource allocation"@en .
 
 
@@ -2834,8 +2834,8 @@
 
 ###  http://hitontology.eu/ontology/semi-automaticAssessmentOfThoracicAortaDiameters
 :semi-automaticAssessmentOfThoracicAortaDiameters rdf:type :FeatureCitation ;
-                                                       :featureClassified :ManageResults ,
-                                                                                  :ManageResultsOfDiagnosticTests ;
+                                                       :featureClassified :EhrSfmManageResults ,
+                                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                        rdfs:label "semi-automatic assessment of thoracic aorta diameters" .
 
 
@@ -2847,8 +2847,8 @@
 
 ###  http://hitontology.eu/ontology/simplifiedLanguage
 :simplifiedLanguage rdf:type :FeatureCitation ;
-                     :featureClassified :ManageCommunication ,
-                                                :SupportForPatientContextDrivenAssessments ;
+                     :featureClassified :EhrSfmManageCommunication ,
+                                                :EhrSfmSupportForPatientContextdrivenAssessments ;
                      rdfs:label "simplified language" .
 
 
@@ -2866,31 +2866,31 @@
 
 ###  http://hitontology.eu/ontology/someWarningsCanNotBeOverridden
 :someWarningsCanNotBeOverridden rdf:type :FeatureCitation ;
-                                     :featureClassified :ManageMedicationAdministration ,
-                                                                :ManageMedicationImmunizationAndTreatmentAdministration ,
-                                                                :MedicationAlertOverrides ,
-                                                                :SupportOfPatientSpecificDosingAndWarnings ;
+                                     :featureClassified :EhrSfmManageMedicationAdministration ,
+                                                                :EhrSfmManageMedicationImmunizationAndTreatmentAdministration ,
+                                                                :EhrSfmMedicationAlertOverrides ,
+                                                                :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                                      rdfs:label "some warnings can not be overridden"@en .
 
 
 ###  http://hitontology.eu/ontology/speechRecognition
 :speechRecognition rdf:type :FeatureCitation ;
-                    :featureClassified :ManageResults ,
-                                               :ManageResultsOfDiagnosticTests ,
-                                               :SupportOrders ,
-                                               :SupportOrdersForDiagnosticScreeningTests ;
+                    :featureClassified :EhrSfmManageResults ,
+                                               :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                               :EhrSfmSupportOrders ,
+                                               :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
                     rdfs:label "speech recognition"@en .
 
 
 ###  http://hitontology.eu/ontology/standardizedPrescriptionsAndMedicationProtocols
 :standardizedPrescriptionsAndMedicationProtocols rdf:type :FeatureCitation ;
-                                                     :featureClassified :ManageMedicationOrders ,
-                                                                                :ManageOrderSetTemplates ,
-                                                                                :ManageOrders ,
-                                                                                :MedicationOrderEfficiencies ,
-                                                                                :SupportForMedicationOrderingEfficiencies ,
-                                                                                :SupportOrders ,
-                                                                                :UseOrderSets ;
+                                                     :featureClassified :EhrSfmManageMedicationOrders ,
+                                                                                :EhrSfmManageOrderSetTemplates ,
+                                                                                :EhrSfmManageOrders ,
+                                                                                :EhrSfmMedicationOrderEfficiencies ,
+                                                                                :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                                                :EhrSfmSupportOrders ,
+                                                                                :EhrSfmUseOrderSets ;
                                                      rdfs:label "standardized prescriptions and medication protocols"@en .
 
 
@@ -2902,23 +2902,23 @@
 
 ###  http://hitontology.eu/ontology/supportForDigitalPhotography
 :supportForDigitalPhotography rdf:type :FeatureCitation ;
-                                 :featureClassified :ManageResults ,
-                                                            :ManageResultsOfDiagnosticTests ;
+                                 :featureClassified :EhrSfmManageResults ,
+                                                            :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                  rdfs:label "support for digital photography"@en .
 
 
 ###  http://hitontology.eu/ontology/supportNursingCarePlanningForCertainPatientCases
 :supportNursingCarePlanningForCertainPatientCases rdf:type :FeatureCitation ;
-                                                         :featureClassified :SupportForContextSensitiveCarePlansGuidelinesProtocols ,
-                                                                                    :SupportForPatientContextDrivenAssessments ,
-                                                                                    :SupportForStandardAssessments ,
-                                                                                    :SupportforStandardCarePlansGuidelinesProtocols ;
+                                                         :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols ,
+                                                                                    :EhrSfmSupportForPatientContextdrivenAssessments ,
+                                                                                    :EhrSfmSupportForStandardAssessments ,
+                                                                                    :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
                                                          rdfs:label "support nursing care planning for certain patient cases"@en .
 
 
 ###  http://hitontology.eu/ontology/supportingAllPhasesOfTheNursingProcess
 :supportingAllPhasesOfTheNursingProcess rdf:type :FeatureCitation ;
-                                              :featureClassified :ManageClinicalWorkflowTasking ;
+                                              :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
                                               rdfs:label "supporting all phases of the nursing process"@en .
 
 
@@ -2930,14 +2930,14 @@
 
 ###  http://hitontology.eu/ontology/surgeryManagement
 :surgeryManagement rdf:type :FeatureCitation ;
-                    :featureClassified :ManageClinicalWorkflowTasking ;
+                    :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
                     rdfs:label "surgery management"@en .
 
 
 ###  http://hitontology.eu/ontology/surgeryRequest
 :surgeryRequest rdf:type :FeatureCitation ;
-                 :featureClassified :ManageNonMedicationPatientCareOrders ,
-                                            :ManageOrders ;
+                 :featureClassified :EhrSfmManageNonmedicationPatientCareOrders ,
+                                            :EhrSfmManageOrders ;
                  rdfs:label "surgery request"@en .
 
 
@@ -2956,7 +2956,7 @@
 
 ###  http://hitontology.eu/ontology/tabletBasedApplication
 :tabletBasedApplication rdf:type :FeatureCitation ;
-                          :featureClassified :SupportRemoteHealthcareServices ;
+                          :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
                           rdfs:label "tablet-based application" .
 
 
@@ -3016,45 +3016,45 @@
 
 ###  http://hitontology.eu/ontology/toolsForQualityControl
 :toolsForQualityControl rdf:type :FeatureCitation ;
-                           :featureClassified :ManageResults ;
+                           :featureClassified :EhrSfmManageResults ;
                            rdfs:label "tools for quality control"@en .
 
 
 ###  http://hitontology.eu/ontology/translatedIntoSpanish
 :translatedIntoSpanish rdf:type :FeatureCitation ;
-                         :featureClassified :SupportForPatientContextDrivenAssessments ;
+                         :featureClassified :EhrSfmSupportForPatientContextdrivenAssessments ;
                          rdfs:label "translated into Spanish" .
 
 
 ###  http://hitontology.eu/ontology/triggeringTheCDSSToQueryTheTidalVolume
 :triggeringTheCDSSToQueryTheTidalVolume rdf:type :FeatureCitation ;
-                                               :featureClassified :SupportForMedicationOrderingEfficiencies ;
+                                               :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ;
                                                rdfs:label "triggering the CDSS to query the tidal volume"@en .
 
 
 ###  http://hitontology.eu/ontology/unit-specificOderSet
 :unit-specificOderSet rdf:type :FeatureCitation ;
-                        :featureClassified :ManageMedicationOrders ,
-                                                   :ManageOrderSetTemplates ,
-                                                   :ManageOrders ,
-                                                   :ManageOrdersForDiagnositcScreeningTests ,
-                                                   :MedicationOrderEfficiencies ,
-                                                   :SupportForMedicationOrderingEfficiencies ,
-                                                   :SupportOrders ,
-                                                   :UseOrderSets ;
+                        :featureClassified :EhrSfmManageMedicationOrders ,
+                                                   :EhrSfmManageOrderSetTemplates ,
+                                                   :EhrSfmManageOrders ,
+                                                   :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                   :EhrSfmMedicationOrderEfficiencies ,
+                                                   :EhrSfmSupportForMedicationOrderingEfficiencies ,
+                                                   :EhrSfmSupportOrders ,
+                                                   :EhrSfmUseOrderSets ;
                         rdfs:label "unit-specific oder set"@en .
 
 
 ###  http://hitontology.eu/ontology/useOfClinicalPathways
 :useOfClinicalPathways rdf:type :FeatureCitation ;
-                          :featureClassified :SupportforStandardCarePlansGuidelinesProtocols ;
+                          :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
                           rdfs:label "use of clinical pathways"@en .
 
 
 ###  http://hitontology.eu/ontology/useOfInteractivePointersAndSpecificCalculationTools
 :useOfInteractivePointersAndSpecificCalculationTools rdf:type :FeatureCitation ;
-                                                            :featureClassified :ManageResults ,
-                                                                                       :ManageResultsOfDiagnosticTests ;
+                                                            :featureClassified :EhrSfmManageResults ,
+                                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                                             rdfs:label "use of interactive pointers and specific calculation tools"@en .
 
 
@@ -3072,7 +3072,7 @@
 
 ###  http://hitontology.eu/ontology/userDirectoryToControlAnyAccess
 :userDirectoryToControlAnyAccess rdf:type :FeatureCitation ;
-                                      :featureClassified :RegistryAndDirectoryServices ;
+                                      :featureClassified :EhrSfmRegistryAndDirectoryServices ;
                                       rdfs:label "user directory to control any access"@en .
 
 
@@ -3114,42 +3114,42 @@
 
 ###  http://hitontology.eu/ontology/viewOfTheStatusOfPatientsInOperation
 :viewOfTheStatusOfPatientsInOperation rdf:type :FeatureCitation ;
-                                             :featureClassified :ManageCareCoordinationAndReporting ,
-                                                                        :ManageClinicalWorkflowTasking ,
-                                                                        :SupportCareCoordinationAndReporting ;
+                                             :featureClassified :EhrSfmManageCareCoordinationReporting ,
+                                                                        :EhrSfmManageClinicalWorkflowTasking ,
+                                                                        :EhrSfmSupportCareCoordinationReporting ;
                                              rdfs:label "view of the status of patients in operation"@en .
 
 
 ###  http://hitontology.eu/ontology/visualizationOfDiameterProgression
 :visualizationOfDiameterProgression rdf:type :FeatureCitation ;
-                                       :featureClassified :ManageResults ,
-                                                                  :ManageResultsOfDiagnosticTests ;
+                                       :featureClassified :EhrSfmManageResults ,
+                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                        rdfs:label "visualization of diameter progression" .
 
 
 ###  http://hitontology.eu/ontology/visualizationOfSynchronizedDICOMImages
 :visualizationOfSynchronizedDICOMImages rdf:type :FeatureCitation ;
-                                            :featureClassified :ManageResults ,
-                                                                       :ManageResultsOfDiagnosticTests ;
+                                            :featureClassified :EhrSfmManageResults ,
+                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                             rdfs:label "visualization of synchronized DICOM images"@en .
 
 
 ###  http://hitontology.eu/ontology/waitingListForTheFinalOperationSchedule
 :waitingListForTheFinalOperationSchedule rdf:type :FeatureCitation ;
-                                               :featureClassified :ManageClinicalWorkflowTasking ;
+                                               :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
                                                rdfs:label "waiting list for the final operation schedule"@en .
 
 
 ###  http://hitontology.eu/ontology/wardManagement
 :wardManagement rdf:type :FeatureCitation ;
-                 :featureClassified :ManageResourceAvailability ;
+                 :featureClassified :EhrSfmManageResourceAvailability ;
                  rdfs:label "ward management"@en .
 
 
 ###  http://hitontology.eu/ontology/warningsForDelayedReportingOfResults
 :warningsForDelayedReportingOfResults rdf:type :FeatureCitation ;
-                                           :featureClassified :ManageResults ,
-                                                                      :ManageResultsOfDiagnosticTests ;
+                                           :featureClassified :EhrSfmManageResults ,
+                                                                      :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
                                            rdfs:label "warnings for delayed reporting of results"@en .
 
 
@@ -3167,7 +3167,7 @@
 
 ###  http://hitontology.eu/ontology/writingOfNursingLetters
 :writingOfNursingLetters rdf:type :FeatureCitation ;
-                            :featureClassified :ProduceASummaryRecordOfCare ;
+                            :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
                             rdfs:label "writing of nursing letters"@en .
 
 

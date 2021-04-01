@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCRIPTPATH=$(dirname "$0")
+
+while IFS= read -r line; do 
+  # Split line into fields and read into array.
+  IFS=$'\t' read -ra fields <<<"$line"
+  sed -i "s|${fields[0]}|${fields[1]}|" $SCRIPTPATH/../individual.ttl
+done < $SCRIPTPATH/dickinsonmap 
