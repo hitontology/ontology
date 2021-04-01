@@ -38,20 +38,20 @@
 		<VAR>?ehr</VAR>
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?ehr a hito:FeatureClassified; hito:featureCatalogue hito:EhrSfmFeatureCatalogue.</RESTRICTION>
-		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<PROPERTY>skos:altLabel AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</TARGET>
 
 <METRIC>trigrams(di.label,ehr.label)</METRIC>
 
 	<ACCEPTANCE>
-		<THRESHOLD>0.7</THRESHOLD>
+		<THRESHOLD>0.8</THRESHOLD>
 		<FILE>di-ehr-close.ttl</FILE>
 		<RELATION>skos:closeMatch</RELATION>
 	</ACCEPTANCE>
 	
 	<REVIEW>
-		<THRESHOLD>0.2</THRESHOLD>
+		<THRESHOLD>0.4</THRESHOLD>
 		<FILE>di-ehr-far.ttl</FILE>
 		<RELATION>hito:farMatch</RELATION>
 	</REVIEW>
