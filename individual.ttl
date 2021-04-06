@@ -1350,18 +1350,18 @@
 ###  http://hitontology.eu/ontology/automaticAlignmentOfBaselineAndFollow-upCTA
 :automaticAlignmentOfBaselineAndFollow-upCTA rdf:type :FeatureCitation ;
                                                    :featureClassified :EhrSfmManageResults ,
-                                                                              :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                              :EhrSfmManageResultsOfDiagnosticTests ;
                                                    rdfs:label "automatic alignment of baseline and follow-up CTA" .
 
 
 ###  http://hitontology.eu/ontology/automaticAndPaperlessOperations
 :automaticAndPaperlessOperations rdf:type :FeatureCitation ;
                                     :featureClassified :EhrSfmManageOrders ,
-                                                               :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                               :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                                :EhrSfmManageResults ,
-                                                               :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                               :EhrSfmManageResultsOfDiagnosticTests ,
                                                                :EhrSfmSupportOrders ,
-                                                               :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
+                                                               :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
                                     rdfs:label "automatic and paperless operations"@en .
 
 
@@ -1386,23 +1386,23 @@
 ###  http://hitontology.eu/ontology/automaticForwardedProcessedImages
 :automaticForwardedProcessedImages rdf:type :FeatureCitation ;
                                       :featureClassified :EhrSfmManageOrders ,
-                                                                 :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                                 :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                                  :EhrSfmManageResults ,
-                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                 :EhrSfmManageResultsOfDiagnosticTests ;
                                       rdfs:label "automatic forwarded processed images"@en .
 
 
 ###  http://hitontology.eu/ontology/automaticSegmentationOfBaselineCTA
 :automaticSegmentationOfBaselineCTA rdf:type :FeatureCitation ;
                                         :featureClassified :EhrSfmManageResults ,
-                                                                   :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                   :EhrSfmManageResultsOfDiagnosticTests ;
                                         rdfs:label "automatic segmentation of baseline CTA" .
 
 
 ###  http://hitontology.eu/ontology/automaticTransferOfLaboratoryData
 :automaticTransferOfLaboratoryData rdf:type :FeatureCitation ;
                                        :featureClassified :EhrSfmManageResults ,
-                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                  :EhrSfmManageResultsOfDiagnosticTests ;
                                        rdfs:label "automatic transfer of laboratory data"@en .
 
 
@@ -1436,9 +1436,9 @@
 ###  http://hitontology.eu/ontology/bookingOfExaminations
 :bookingOfExaminations rdf:type :FeatureCitation ;
                          :featureClassified :EhrSfmManageOrders ,
-                                                    :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                    :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                     :EhrSfmSupportOrders ,
-                                                    :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
+                                                    :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
                          rdfs:label "booking of examinations"@en .
 
 
@@ -1508,7 +1508,7 @@
 ###  http://hitontology.eu/ontology/completeTestResults
 :completeTestResults rdf:type :FeatureCitation ;
                        :featureClassified :EhrSfmManageResults ,
-                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                  :EhrSfmManageResultsOfDiagnosticTests ;
                        rdfs:label "complete test results"@en .
 
 
@@ -1562,13 +1562,13 @@
 ###  http://hitontology.eu/ontology/consolidatedListOfResultsForJurisdiction
 :consolidatedListOfResultsForJurisdiction rdf:type :FeatureCitation ;
                                                :featureClassified :EhrSfmManageResults ,
-                                                                          :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                          :EhrSfmManageResultsOfDiagnosticTests ;
                                                rdfs:label "consolidated list of results for jurisdiction"@en .
 
 
 ###  http://hitontology.eu/ontology/consultationReferrals
 :consultationReferrals rdf:type :FeatureCitation ;
-                        :featureClassified :EhrSfmEhrSfmManageOrdersForReferral ;
+                        :featureClassified :EhrSfmManageOrdersForReferral ;
                         rdfs:label "consultation referrals"@en .
 
 
@@ -1776,9 +1776,9 @@
 ###  http://hitontology.eu/ontology/emergencyTesting
 :emergencyTesting rdf:type :FeatureCitation ;
                    :featureClassified :EhrSfmManageOrders ,
-                                              :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                              :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                               :EhrSfmManageResults ,
-                                              :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                              :EhrSfmManageResultsOfDiagnosticTests ;
                    rdfs:label "emergency testing"@en .
 
 
@@ -1820,7 +1820,7 @@
 ###  http://hitontology.eu/ontology/forwardIntoArchive
 :forwardIntoArchive rdf:type :FeatureCitation ;
                       :featureClassified :EhrSfmManageResults ,
-                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                 :EhrSfmManageResultsOfDiagnosticTests ;
                       rdfs:label "forward into archive"@en .
 
 
@@ -2113,7 +2113,7 @@
 ###  http://hitontology.eu/ontology/importInterfacesForLaboratoryMicrobiologyRadiologyReports
 :importInterfacesForLaboratoryMicrobiologyRadiologyReports rdf:type :FeatureCitation ;
                                                                  :featureClassified :EhrSfmManageResults ,
-                                                                                            :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                                            :EhrSfmManageResultsOfDiagnosticTests ;
                                                                  rdfs:label "import interfaces for laboratory microbiology radiology reports"@en .
 
 
@@ -2163,7 +2163,7 @@
 ###  http://hitontology.eu/ontology/interactiveConsultationBetweenTwoOrMoreCenters
 :interactiveConsultationBetweenTwoOrMoreCenters rdf:type :FeatureCitation ;
                                                       :featureClassified :EhrSfmManageResults ,
-                                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                                                 :EhrSfmManageResultsOfDiagnosticTests ,
                                                                                  :EhrSfmSupportForCommunicationsBetweenOrganizations ,
                                                                                  :EhrSfmSupportRemoteHealthcareServices ;
                                                       rdfs:label "interactive consultation between two or more centers"@en .
@@ -2172,9 +2172,9 @@
 ###  http://hitontology.eu/ontology/interfacedToTheRIS
 :interfacedToTheRIS rdf:type :FeatureCitation ;
                        :featureClassified :EhrSfmManageOrders ,
-                                                  :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                  :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                   :EhrSfmManageResults ,
-                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                  :EhrSfmManageResultsOfDiagnosticTests ;
                        rdfs:label "interfaced to the RIS"@en .
 
 
@@ -2223,7 +2223,7 @@
 ###  http://hitontology.eu/ontology/listToTrackTheStatusOfPendingSamples
 :listToTrackTheStatusOfPendingSamples rdf:type :FeatureCitation ;
                                              :featureClassified :EhrSfmManageResults ,
-                                                                        :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                                                        :EhrSfmManageResultsOfDiagnosticTests ,
                                                                         :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                                              rdfs:label "list to track the status of pending samples"@en .
 
@@ -2458,21 +2458,21 @@
 ###  http://hitontology.eu/ontology/patientPageContainingDetailsOfAnySingleSample
 :patientPageContainingDetailsOfAnySingleSample rdf:type :FeatureCitation ;
                                                       :featureClassified :EhrSfmManageResults ,
-                                                                                 :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                                 :EhrSfmManageResultsOfDiagnosticTests ;
                                                       rdfs:label "patient page containing details of any single sample"@en .
 
 
 ###  http://hitontology.eu/ontology/patientPageContainingTheHistoryOfAllTestsPerformed
 :patientPageContainingTheHistoryOfAllTestsPerformed rdf:type :FeatureCitation ;
                                                             :featureClassified :EhrSfmManageResults ,
-                                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                                       :EhrSfmManageResultsOfDiagnosticTests ;
                                                             rdfs:label "patient page containing the history of all tests performed"@en .
 
 
 ###  http://hitontology.eu/ontology/patientRegistration
 :patientRegistration rdf:type :FeatureCitation ;
                       :featureClassified :EhrSfmManageOrders ,
-                                                 :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                 :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                  :EhrSfmSupportForCommunicationsBetweenOrganizations ;
                       rdfs:label "patient registration"@en .
 
@@ -2554,7 +2554,7 @@
 ###  http://hitontology.eu/ontology/pre-processing
 :pre-processing rdf:type :FeatureCitation ;
                 :featureClassified :EhrSfmManageResults ,
-                                           :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                           :EhrSfmManageResultsOfDiagnosticTests ;
                 rdfs:label "pre-processing" .
 
 
@@ -2654,7 +2654,7 @@
 ###  http://hitontology.eu/ontology/readBarCodeLabel
 :readBarCodeLabel rdf:type :FeatureCitation ;
                      :featureClassified :EhrSfmManageOrders ,
-                                                :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ;
+                                                :EhrSfmManageOrdersForDiagnosticscreeningTests ;
                      rdfs:label "read bar code label"@en .
 
 
@@ -2704,7 +2704,7 @@
 ###  http://hitontology.eu/ontology/reportsOnTestsPerformed
 :reportsOnTestsPerformed rdf:type :FeatureCitation ;
                             :featureClassified :EhrSfmManageResults ,
-                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                       :EhrSfmManageResultsOfDiagnosticTests ;
                             rdfs:label "reports on tests performed"@en .
 
 
@@ -2745,7 +2745,7 @@
 ###  http://hitontology.eu/ontology/reviewScreeningAndTestingOptions
 :reviewScreeningAndTestingOptions rdf:type :FeatureCitation ;
                                       :featureClassified :EhrSfmSupportForPatientContextdrivenAssessments ,
-                                                                 :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
+                                                                 :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
                                       rdfs:label "review screening and testing options" .
 
 
@@ -2835,7 +2835,7 @@
 ###  http://hitontology.eu/ontology/semi-automaticAssessmentOfThoracicAortaDiameters
 :semi-automaticAssessmentOfThoracicAortaDiameters rdf:type :FeatureCitation ;
                                                        :featureClassified :EhrSfmManageResults ,
-                                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                                  :EhrSfmManageResultsOfDiagnosticTests ;
                                                        rdfs:label "semi-automatic assessment of thoracic aorta diameters" .
 
 
@@ -2876,9 +2876,9 @@
 ###  http://hitontology.eu/ontology/speechRecognition
 :speechRecognition rdf:type :FeatureCitation ;
                     :featureClassified :EhrSfmManageResults ,
-                                               :EhrSfmEhrSfmManageResultsOfDiagnosticTests ,
+                                               :EhrSfmManageResultsOfDiagnosticTests ,
                                                :EhrSfmSupportOrders ,
-                                               :EhrSfmEhrSfmSupportOrdersForDiagnosticscreeningTests ;
+                                               :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
                     rdfs:label "speech recognition"@en .
 
 
@@ -2903,7 +2903,7 @@
 ###  http://hitontology.eu/ontology/supportForDigitalPhotography
 :supportForDigitalPhotography rdf:type :FeatureCitation ;
                                  :featureClassified :EhrSfmManageResults ,
-                                                            :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                            :EhrSfmManageResultsOfDiagnosticTests ;
                                  rdfs:label "support for digital photography"@en .
 
 
@@ -3037,7 +3037,7 @@
                         :featureClassified :EhrSfmManageMedicationOrders ,
                                                    :EhrSfmManageOrderSetTemplates ,
                                                    :EhrSfmManageOrders ,
-                                                   :EhrSfmEhrSfmManageOrdersForDiagnosticscreeningTests ,
+                                                   :EhrSfmManageOrdersForDiagnosticscreeningTests ,
                                                    :EhrSfmMedicationOrderEfficiencies ,
                                                    :EhrSfmSupportForMedicationOrderingEfficiencies ,
                                                    :EhrSfmSupportOrders ,
@@ -3054,7 +3054,7 @@
 ###  http://hitontology.eu/ontology/useOfInteractivePointersAndSpecificCalculationTools
 :useOfInteractivePointersAndSpecificCalculationTools rdf:type :FeatureCitation ;
                                                             :featureClassified :EhrSfmManageResults ,
-                                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                                       :EhrSfmManageResultsOfDiagnosticTests ;
                                                             rdfs:label "use of interactive pointers and specific calculation tools"@en .
 
 
@@ -3123,14 +3123,14 @@
 ###  http://hitontology.eu/ontology/visualizationOfDiameterProgression
 :visualizationOfDiameterProgression rdf:type :FeatureCitation ;
                                        :featureClassified :EhrSfmManageResults ,
-                                                                  :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                  :EhrSfmManageResultsOfDiagnosticTests ;
                                        rdfs:label "visualization of diameter progression" .
 
 
 ###  http://hitontology.eu/ontology/visualizationOfSynchronizedDICOMImages
 :visualizationOfSynchronizedDICOMImages rdf:type :FeatureCitation ;
                                             :featureClassified :EhrSfmManageResults ,
-                                                                       :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                       :EhrSfmManageResultsOfDiagnosticTests ;
                                             rdfs:label "visualization of synchronized DICOM images"@en .
 
 
@@ -3149,7 +3149,7 @@
 ###  http://hitontology.eu/ontology/warningsForDelayedReportingOfResults
 :warningsForDelayedReportingOfResults rdf:type :FeatureCitation ;
                                            :featureClassified :EhrSfmManageResults ,
-                                                                      :EhrSfmEhrSfmManageResultsOfDiagnosticTests ;
+                                                                      :EhrSfmManageResultsOfDiagnosticTests ;
                                            rdfs:label "warnings for delayed reporting of results"@en .
 
 
