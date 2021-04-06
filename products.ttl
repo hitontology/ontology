@@ -15,6 +15,7 @@
 
 ###  http://hitontology.eu/ontology/AgfaPacsImpax
 :AgfaPacsImpax rdf:type :SoftwareProduct ;
+                 :applicationSystem :IMPAXAppPACS, :IMPAXAppRISPACSReporting ;
                  :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
                                 :AgfaPacsImpaxFeatureBookingOfExaminations ,
                                 :AgfaPacsImpaxFeaturePatientRegistraction ,
@@ -123,6 +124,16 @@
                               :supportNursingCarePlanningForCertainPatientCases ,
                               :useOfClinicalPathways ;
                rdfs:label "HNA Millenium"@en .
+
+
+:IMPAXAppPACS
+    a :ApplicationSystemCitation ;
+    rdfs:label "Picture Archiving and Communication System (PACS)"@en .
+
+
+:IMPAXAppRISPACSReporting
+    a :ApplicationSystemCitation ;
+    rdfs:label "RIS/PACS/Reporting (Radiology Information System/Picture Archiving and Communications System) Solution"@en .
 
 
 ###  http://hitontology.eu/ontology/Medicator
