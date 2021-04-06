@@ -14,20 +14,19 @@
 hito:GnuHealth
     hito:applicationSystem hito:GnuHealthAppElectronicMedicalRecordEmr, hito:GnuHealthAppHealthInformationSystemHis, hito:GnuHealthAppHospitalManagementInformationSystem ;
     hito:client hito:Mobile, hito:Native, hito:WebBased ;
-    hito:databaseSystem hito:PostgreSql ;
-    hito:directEnterpriseFunction hito:ClientHealthRecords, hito:PrescriptionAndMedicationManagement ;
-    hito:directFeature hito:ListHealthWorkforceCadresAndRelatedIdentificationInformation, hito:ManageCertificationregistrationOfHealthcareProviders, hito:MonitorPerformanceOfHealthcareProviders, hito:PublicHealthEventNotification ;
+    hito:databaseSystem hito:PostgreSql, hito:TinyDb ;
     hito:enterpriseFunction hito:GnuHealthFuncAccessManagement, hito:GnuHealthFuncAdmissionManagement, hito:GnuHealthFuncAnalyticAccounting, hito:GnuHealthFuncFinancialAccounting, hito:GnuHealthFuncGenetics, hito:GnuHealthFuncGynecologicCare, hito:GnuHealthFuncHospitalManagement, hito:GnuHealthFuncIntensiveCare, hito:GnuHealthFuncLaboratoryManagement, hito:GnuHealthFuncNeglectedTropicalDiseasesCare, hito:GnuHealthFuncNursing, hito:GnuHealthFuncObstetrics, hito:GnuHealthFuncPatientAppointment, hito:GnuHealthFuncPatientEvaluations, hito:GnuHealthFuncPatientManagement, hito:GnuHealthFuncPediatricCare, hito:GnuHealthFuncProductsManagement, hito:GnuHealthFuncPurchaseAdministration, hito:GnuHealthFuncServicesManagementinvoicingPatients, hito:GnuHealthFuncSocioeconomics, hito:GnuHealthFuncStockManagement, hito:GnuHealthFuncSurgery ;
-    hito:feature hito:GnuHealthFeatAccessManagementOverview, hito:GnuHealthFeatAccountTypes, hito:GnuHealthFeatAdministrationOrthancModule, hito:GnuHealthFeatAdministrativeData, hito:GnuHealthFeatAllSurgeriesInformation, hito:GnuHealthFeatAppointments, hito:GnuHealthFeatAppointmentsCalendar, hito:GnuHealthFeatAppointmentsReport, hito:GnuHealthFeatBloodAndSkin, hito:GnuHealthFeatCardiovascular, hito:GnuHealthFeatCarePlan, hito:GnuHealthFeatChagasDiseaseInformation, hito:GnuHealthFeatChartOfAccounts, hito:GnuHealthFeatConfiguringAccounts, hito:GnuHealthFeatConfiguringAvailableTests, hito:GnuHealthFeatConfiguringJournals, hito:GnuHealthFeatCreatingAPartyWithThePatientProperty, hito:GnuHealthFeatCreatingAPatientRecord, hito:GnuHealthFeatCreatingARequestForImage, hito:GnuHealthFeatCreatingNewMedicationProducts, hito:GnuHealthFeatCreatingTheInvoice, hito:GnuHealthFeatDefaultImagingModule, hito:GnuHealthFeatDengueFever, hito:GnuHealthFeatDigestiveAndAbdomen, hito:GnuHealthFeatDocumentRoundingsForInpatients, hito:GnuHealthFeatDrainages, hito:GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, hito:GnuHealthFeatEvaluationsHistory, hito:GnuHealthFeatEvaluationsReport, hito:GnuHealthFeatFunctioningAndDisability, hito:GnuHealthFeatGeneralPregnancyInformation, hito:GnuHealthFeatGeneratingResults, hito:GnuHealthFeatGeneticFamilyHistory, hito:GnuHealthFeatGeneticInformation, hito:GnuHealthFeatGroupsAccessManagement, hito:GnuHealthFeatIcuFunctionalityInformation, hito:GnuHealthFeatInformationStoredPerAppointment, hito:GnuHealthFeatInfrastructureOfSocioeconomics, hito:GnuHealthFeatInjurySurveillanceSystemRegistrationReport, hito:GnuHealthFeatInpatientManagementInformation, hito:GnuHealthFeatInterfacesWithLaboratoriesAndLims, hito:GnuHealthFeatInventories, hito:GnuHealthFeatInvoicingPatients, hito:GnuHealthFeatLabOrdersAndHealthServices, hito:GnuHealthFeatLaboratoryReports, hito:GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, hito:GnuHealthFeatListOfAllAppointments, hito:GnuHealthFeatListOfAppointmentsForASpecificPatient, hito:GnuHealthFeatListingHealthServicesToBeInvoiced, hito:GnuHealthFeatListingTheCurrentPatients, hito:GnuHealthFeatManagingLaboratoryTests, hito:GnuHealthFeatMedicationPlan, hito:GnuHealthFeatNeglectedTropicalDiseasesInformation, hito:GnuHealthFeatNutritionInformation, hito:GnuHealthFeatOrganizationStructure, hito:GnuHealthFeatOrthancIntegrationModule, hito:GnuHealthFeatPatientEvaluationsReport, hito:GnuHealthFeatPatientIcuInformation, hito:GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, hito:GnuHealthFeatPerinatalAndIntrapartumInformation, hito:GnuHealthFeatPrenatalEvaluations, hito:GnuHealthFeatPrintingAPatientIdCard, hito:GnuHealthFeatProteinRelatedDiseases, hito:GnuHealthFeatPscPediatricsSymptomChecklist, hito:GnuHealthFeatPuerperiumMonitor, hito:GnuHealthFeatReporting, hito:GnuHealthFeatRequestingALaboratoryTest, hito:GnuHealthFeatShipments, hito:GnuHealthFeatStockLocations, hito:GnuHealthFeatStockMovements, hito:GnuHealthFeatStoringLaboratoryTestResults, hito:GnuHealthFeatSurgeriesForm, hito:GnuHealthFeatSurgeriesPerPatient, hito:GnuHealthFeatSynchronizationOrthancModule, hito:GnuHealthFeatTopDiseasesReport, hito:GnuHealthFeatTroubleshootingOrthancModule, hito:GnuHealthFeatUsageOrthancModule, hito:GnuHealthFeatUsersAccessManagement, hito:GnuHealthFeatViewResults ;
+    hito:feature hito:GNUHealthFeatBioinformatics, hito:GNUHealthFeatContactTracing, hito:GNUHealthFeatDemographics, hito:GNUHealthFeatDomesticViolence, hito:GNUHealthFeatEpidemiology, hito:GNUHealthFeatInfectiousDisease, hito:GNUHealthFeatSocialMedicine, hito:GnuHealthFeatAccessManagementOverview, hito:GnuHealthFeatAccountTypes, hito:GnuHealthFeatAdministrationOrthancModule, hito:GnuHealthFeatAdministrativeData, hito:GnuHealthFeatAllSurgeriesInformation, hito:GnuHealthFeatAppointments, hito:GnuHealthFeatAppointmentsCalendar, hito:GnuHealthFeatAppointmentsReport, hito:GnuHealthFeatBloodAndSkin, hito:GnuHealthFeatCardiovascular, hito:GnuHealthFeatCarePlan, hito:GnuHealthFeatChagasDiseaseInformation, hito:GnuHealthFeatChartOfAccounts, hito:GnuHealthFeatConfiguringAccounts, hito:GnuHealthFeatConfiguringAvailableTests, hito:GnuHealthFeatConfiguringJournals, hito:GnuHealthFeatCreatingAPartyWithThePatientProperty, hito:GnuHealthFeatCreatingAPatientRecord, hito:GnuHealthFeatCreatingARequestForImage, hito:GnuHealthFeatCreatingNewMedicationProducts, hito:GnuHealthFeatCreatingTheInvoice, hito:GnuHealthFeatDefaultImagingModule, hito:GnuHealthFeatDengueFever, hito:GnuHealthFeatDigestiveAndAbdomen, hito:GnuHealthFeatDocumentRoundingsForInpatients, hito:GnuHealthFeatDrainages, hito:GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, hito:GnuHealthFeatEvaluationsHistory, hito:GnuHealthFeatEvaluationsReport, hito:GnuHealthFeatFunctioningAndDisability, hito:GnuHealthFeatGeneralPregnancyInformation, hito:GnuHealthFeatGeneratingResults, hito:GnuHealthFeatGeneticFamilyHistory, hito:GnuHealthFeatGeneticInformation, hito:GnuHealthFeatGroupsAccessManagement, hito:GnuHealthFeatIcuFunctionalityInformation, hito:GnuHealthFeatInformationStoredPerAppointment, hito:GnuHealthFeatInfrastructureOfSocioeconomics, hito:GnuHealthFeatInjurySurveillanceSystemRegistrationReport, hito:GnuHealthFeatInpatientManagementInformation, hito:GnuHealthFeatInterfacesWithLaboratoriesAndLims, hito:GnuHealthFeatInventories, hito:GnuHealthFeatInvoicingPatients, hito:GnuHealthFeatLabOrdersAndHealthServices, hito:GnuHealthFeatLaboratoryReports, hito:GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, hito:GnuHealthFeatListOfAllAppointments, hito:GnuHealthFeatListOfAppointmentsForASpecificPatient, hito:GnuHealthFeatListingHealthServicesToBeInvoiced, hito:GnuHealthFeatListingTheCurrentPatients, hito:GnuHealthFeatManagingLaboratoryTests, hito:GnuHealthFeatMedicationPlan, hito:GnuHealthFeatNeglectedTropicalDiseasesInformation, hito:GnuHealthFeatNutritionInformation, hito:GnuHealthFeatOrganizationStructure, hito:GnuHealthFeatOrthancIntegrationModule, hito:GnuHealthFeatPatientEvaluationsReport, hito:GnuHealthFeatPatientIcuInformation, hito:GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, hito:GnuHealthFeatPerinatalAndIntrapartumInformation, hito:GnuHealthFeatPrenatalEvaluations, hito:GnuHealthFeatPrintingAPatientIdCard, hito:GnuHealthFeatProteinRelatedDiseases, hito:GnuHealthFeatPscPediatricsSymptomChecklist, hito:GnuHealthFeatPuerperiumMonitor, hito:GnuHealthFeatReporting, hito:GnuHealthFeatRequestingALaboratoryTest, hito:GnuHealthFeatShipments, hito:GnuHealthFeatStockLocations, hito:GnuHealthFeatStockMovements, hito:GnuHealthFeatStoringLaboratoryTestResults, hito:GnuHealthFeatSurgeriesForm, hito:GnuHealthFeatSurgeriesPerPatient, hito:GnuHealthFeatSynchronizationOrthancModule, hito:GnuHealthFeatTopDiseasesReport, hito:GnuHealthFeatTroubleshootingOrthancModule, hito:GnuHealthFeatUsageOrthancModule, hito:GnuHealthFeatUsersAccessManagement, hito:GnuHealthFeatViewResults ;
     hito:homepage <https://www.gnuhealth.org/#/> ;
-    hito:interoperability hito:HL7, hito:HL7_FHIR, hito:ICD10 ;
-    hito:language dbr:English_language ;
-    hito:license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
+    hito:interoperability hito:HL7, hito:HL7_FHIR, hito:ICD10, hito:ICD9, hito:ICPM ;
+    hito:language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
+    hito:license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     hito:operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
     hito:organizationalUnit hito:GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, hito:GnuHealthOrgHealthCenterEnvironmentSctid264361005, hito:GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     hito:programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     hito:softwareProductComponent hito:Occhiolino ;
     a hito:SoftwareProduct ;
+    rdfs:comment "free/libre health and hospital information system with strong focus on public health and social medicine"@en ;
     rdfs:label "GNU Health"@en .
 
 hito:GnuHealthAppElectronicMedicalRecordEmr
@@ -45,6 +44,7 @@ hito:GnuHealthAppHospitalManagementInformationSystem
     rdfs:label "Hospital management Information System"@en .
 
 hito:GnuHealthFeatAccessManagementOverview
+    hito:featureClassified hito:EhrSfmPatientAccessManagement ;
     a hito:FeatureCitation ;
     rdfs:label "Access Management Overview"@en .
 
@@ -57,6 +57,7 @@ hito:GnuHealthFeatAdministrationOrthancModule
     rdfs:label "Administration Orthanc module"@en .
 
 hito:GnuHealthFeatAdministrativeData
+    hito:featureClassified hito:EhrSfmAdministrationSupport ;
     a hito:FeatureCitation ;
     rdfs:label "Administrative Data"@en .
 
@@ -77,6 +78,7 @@ hito:GnuHealthFeatAppointmentsReport
     rdfs:label "Appointments Report"@en .
 
 hito:GnuHealthFeatBloodAndSkin
+    hito:featureClassified hito:EhrSfmSupportOrdersForBloodProductsAndOtherBiologics ;
     a hito:FeatureCitation ;
     rdfs:label "Blood and Skin"@en .
 
@@ -85,6 +87,7 @@ hito:GnuHealthFeatCardiovascular
     rdfs:label "Cardiovascular"@en .
 
 hito:GnuHealthFeatCarePlan
+    hito:featureClassified hito:EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a hito:FeatureCitation ;
     rdfs:label "Care Plan"@en .
 
@@ -201,6 +204,7 @@ hito:GnuHealthFeatInjurySurveillanceSystemRegistrationReport
     rdfs:label "Injury Surveillance System Registration report"@en .
 
 hito:GnuHealthFeatInpatientManagementInformation
+    hito:featureClassified hito:WhoDhiManageClientsStructuredClinicalRecords ;
     a hito:FeatureCitation ;
     rdfs:label "Inpatient Management information"@en .
 
@@ -209,6 +213,7 @@ hito:GnuHealthFeatInterfacesWithLaboratoriesAndLims
     rdfs:label "Interfaces with Laboratories and LIMS"@en .
 
 hito:GnuHealthFeatInventories
+    hito:featureClassified hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a hito:FeatureCitation ;
     rdfs:label "Inventories"@en .
 
@@ -245,10 +250,12 @@ hito:GnuHealthFeatListingTheCurrentPatients
     rdfs:label "Listing the current patients"@en .
 
 hito:GnuHealthFeatManagingLaboratoryTests
+    hito:featureClassified hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a hito:FeatureCitation ;
     rdfs:label "Managing Laboratory Tests"@en .
 
 hito:GnuHealthFeatMedicationPlan
+    hito:featureClassified hito:EhrSfmManageMedicationAdministration, hito:EhrSfmManageMedicationList ;
     a hito:FeatureCitation ;
     rdfs:label "Medication Plan"@en .
 
@@ -289,6 +296,7 @@ hito:GnuHealthFeatPrenatalEvaluations
     rdfs:label "Prenatal Evaluations"@en .
 
 hito:GnuHealthFeatPrintingAPatientIdCard
+    hito:featureClassified hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
     a hito:FeatureCitation ;
     rdfs:label "Printing a patient ID card"@en .
 
@@ -305,10 +313,12 @@ hito:GnuHealthFeatPuerperiumMonitor
     rdfs:label "Puerperium Monitor"@en .
 
 hito:GnuHealthFeatReporting
+    hito:featureClassified hito:EhrSfmManageCareCoordinationReporting, hito:EhrSfmSupportCareCoordinationReporting ;
     a hito:FeatureCitation ;
     rdfs:label "Reporting"@en .
 
 hito:GnuHealthFeatRequestingALaboratoryTest
+    hito:featureClassified hito:WhoDhiTransmitToHealthcareProviderAndTrack ;
     a hito:FeatureCitation ;
     rdfs:label "Requesting a Laboratory Test"@en .
 
@@ -357,6 +367,7 @@ hito:GnuHealthFeatUsersAccessManagement
     rdfs:label "Users Access Management"@en .
 
 hito:GnuHealthFeatViewResults
+    hito:featureClassified hito:EhrSfmManageResults ;
     a hito:FeatureCitation ;
     rdfs:label "View results"@en .
 
@@ -484,4 +495,35 @@ hito:GnuHealthOrgHospitalEnvironmentSctid22232009
     a hito:OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 22232009"@en ;
     rdfs:label "Hospital Environment"@en .
+
+
+hito:GNUHealthFeatBioinformatics
+    a hito:FeatureCitation ;
+    rdfs:label "Bioinformatics"@en .
+
+hito:GNUHealthFeatContactTracing
+    a hito:FeatureCitation ;
+    rdfs:label "Contact tracing"@en .
+
+hito:GNUHealthFeatDemographics
+    hito:featureClassified hito:EhrSfmManagePatientDemographics ;
+    a hito:FeatureCitation ;
+    rdfs:label "Demographics"@en .
+
+hito:GNUHealthFeatDomesticViolence
+    a hito:FeatureCitation ;
+    rdfs:label "Domestic Violence"@en .
+
+hito:GNUHealthFeatEpidemiology
+    hito:featureClassified hito:EhrSfmSupportForEpidemiologicDataAnalysis, hito:EhrSfmSupportForEpidemiologicalInvestigationDataCollection, hito:EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
+    a hito:FeatureCitation ;
+    rdfs:label "Epidemiology"@en .
+
+hito:GNUHealthFeatInfectiousDisease
+    a hito:FeatureCitation ;
+    rdfs:label "infectious disease"@en .
+
+hito:GNUHealthFeatSocialMedicine
+    a hito:FeatureCitation ;
+    rdfs:label "Social Medicine"@en .
 
