@@ -40,6 +40,7 @@
                                   :AgfaRisElefanteFeatureBookingOfExaminations ,
                                   :AgfaRisElefanteFeaturePatientRegistration ,
                                   :AgfaRisElefanteFeatureSpeechRecognition ;
+                   :applicationSystem :ElefanteAppRIS ;
                    rdfs:label "Agfa RIS Elefante"@en .
 
 :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
@@ -52,7 +53,8 @@
                                                      rdfs:label "booking of examinations"@en .
 
 :AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
-                                                     rdfs:label "speech recognition"@en .
+  :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
+  rdfs:label "speech recognition"@en .
 
 ###  http://hitontology.eu/ontology/AbbottIStat
 :AbbottIStat rdf:type :SoftwareProduct ;
@@ -101,6 +103,11 @@
                                             :graphicalUserInterfaceToDocumentCare ,
                                             :pointAndClickDataEntry ;
                              rdfs:label "Eclipsys Continuum 2000 CDS"@en .
+
+
+:ElefanteAppRIS
+    a :ApplicationSystemCitation ;
+    rdfs:label "Radiology Information System (RIS)"@en .
 
 
 ###  http://hitontology.eu/ontology/GEPatchspecdPacs
