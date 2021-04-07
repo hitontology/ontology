@@ -70,40 +70,6 @@
     a :FeatureCitation ;
     rdfs:label "speech recognition"@en .
 
-
-:AgfaPacsImpaxFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
-                                                     rdfs:label "automatic and paperless operations"@en .
-
-:AgfaPacsImpaxFeatureBookingOfExaminations a :FeatureCitation;
-                                                     rdfs:label "booking of examinations"@en .
-
-:AgfaPacsImpaxFeaturePatientRegistration a :FeatureCitation;
-                                                     rdfs:label "patient registration"@en .
-
-:AgfaPacsImpaxFeatureSpeechRecognition a :FeatureCitation;
-                                                     rdfs:label "speech recognition"@en .
-
-:AgfaRisElefante rdf:type :SoftwareProduct ;
-                   :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations ,
-                                  :AgfaRisElefanteFeatureBookingOfExaminations ,
-                                  :AgfaRisElefanteFeaturePatientRegistration ,
-                                  :AgfaRisElefanteFeatureSpeechRecognition ;
-                   :applicationSystem :ElefanteAppRIS ;
-                   rdfs:label "Agfa RIS Elefante"@en .
-
-:AgfaRisElefanteFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
-                                                     rdfs:label "automatic and paperless operations"@en .
-
-:AgfaRisElefanteFeaturePatientRegistration a :FeatureCitation;
-                                    rdfs:label "patient registration"@en .
-
-:AgfaRisElefanteFeatureBookingOfExaminations a :FeatureCitation;
-                                                     rdfs:label "booking of examinations"@en .
-
-:AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
-  :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
-  rdfs:label "speech recognition"@en .
-
 :Bahmni
     :applicationSystem :BahmniAppHospitalSystem ;
     :client :WebBased ;
