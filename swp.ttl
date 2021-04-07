@@ -8,19 +8,67 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-:AgfaPacsImpax rdf:type :SoftwareProduct ;
-                 :applicationSystem :IMPAXAppPACS, :IMPAXAppRISPACSReporting ;
-                 :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
-                                :AgfaPacsImpaxFeatureBookingOfExaminations ,
-                                :AgfaPacsImpaxFeaturePatientRegistraction ,
-                                :AgfaPacsImpaxFeatureSpeechRecognition ;
-                 a :SoftwareProduct ;
-                 rdfs:label "Agfa PACS IMPAX"@en .
+:AbbotIStatFeatureCompleteTestResults
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "complete test results"@en .
+
+:AbbotIStatFeatureReadBarCodeLabel
+    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests ;
+    a :FeatureCitation ;
+    rdfs:label "read bar code label"@en .
+
+:AbbottAppBloodAnalysisSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Blood Analysis System"@en .
+
+:AbbottIStat
+    :applicationSystem :AbbottAppBloodAnalysisSystem ;
+    :feature :AbbotIStatFeatureCompleteTestResults, :AbbotIStatFeatureReadBarCodeLabel ;
+    a :SoftwareProduct ;
+    rdfs:label "Abbott i-Stat"@en .
+
+:AgfaPacsImpax
+    :applicationSystem :IMPAXAppPACS, :IMPAXAppRISPACSReporting ;
+    :feature :AgfaPacsImpaxFeatureBookingOfExaminations, :AgfaPacsImpaxFeaturePatientRegistration, :AgfaPacsImpaxFeatureSpeechRecognition ;
+    a :SoftwareProduct ;
+    rdfs:label "Agfa PACS IMPAX"@en .
+
+:AgfaPacsImpaxFeatureBookingOfExaminations
+    a :FeatureCitation ;
+    rdfs:label "booking of examinations"@en .
 
 :AgfaPacsImpaxFeaturePatientRegistration
     :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
     a :FeatureCitation ;
     rdfs:label "patient registration"@en .
+
+:AgfaPacsImpaxFeatureSpeechRecognition
+    a :FeatureCitation ;
+    rdfs:label "speech recognition"@en .
+
+:AgfaRisElefante
+    :applicationSystem :ElefanteAppRIS ;
+    :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations, :AgfaRisElefanteFeatureBookingOfExaminations, :AgfaRisElefanteFeaturePatientRegistration, :AgfaRisElefanteFeatureSpeechRecognition ;
+    a :SoftwareProduct ;
+    rdfs:label "Agfa RIS Elefante"@en .
+
+:AgfaRisElefanteFeatureAutomaticAndPaperlessOperations
+    a :FeatureCitation ;
+    rdfs:label "automatic and paperless operations"@en .
+
+:AgfaRisElefanteFeatureBookingOfExaminations
+    a :FeatureCitation ;
+    rdfs:label "booking of examinations"@en .
+
+:AgfaRisElefanteFeaturePatientRegistration
+    a :FeatureCitation ;
+    rdfs:label "patient registration"@en .
+
+:AgfaRisElefanteFeatureSpeechRecognition
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
+    a :FeatureCitation ;
+    rdfs:label "speech recognition"@en .
 
 
 :AgfaPacsImpaxFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
@@ -55,6 +103,377 @@
 :AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
   :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
   rdfs:label "speech recognition"@en .
+
+:Bahmni
+    :applicationSystem :BahmniAppHospitalSystem ;
+    :client :WebBased ;
+    :databaseSystem :MySql, :PostgreSql ;
+    :enterpriseFunction :BahmniFuncBilling, :BahmniFuncClinicalServices, :BahmniFuncInpatientManagement, :BahmniFuncLaboratory, :BahmniFuncPatientRegistration, :BahmniFuncReporting, :BahmniFuncStockManagement ;
+    :feature :BahmniFeatCaptureClinicalRecords, :BahmniFeatCaptureDrugPrescriptions, :BahmniFeatClinicalReporting, :BahmniFeatCreateDiseaseSpecificForms, :BahmniFeatCreateGeneralForms, :BahmniFeatDisplayLaboratoryWorkload, :BahmniFeatMaintainAccurateRecords, :BahmniFeatMaintainClinicalRecords, :BahmniFeatManageAccurateRecords, :BahmniFeatManagePatientOrders, :BahmniFeatManagePatientsAdmissions, :BahmniFeatManageSamples, :BahmniFeatManageStock, :BahmniFeatManageTests, :BahmniFeatMonitorStockLevels, :BahmniFeatMoveStock, :BahmniFeatOrderInvestigation, :BahmniFeatOrderLab, :BahmniFeatOrderRadiology, :BahmniFeatPerformBedAssignments, :BahmniFeatPerformOperationalReporting, :BahmniFeatPrintPatientId, :BahmniFeatPublicHealthReporting, :BahmniFeatReorderStock, :BahmniFeatSearchPatients, :BahmniFeatSendSamplesForReferrals, :BahmniFeatTrackStock, :BahmniFeatTrackWardOccupancy, :BahmniFeatUseDrugPrescriptionTemplates ;
+    :homepage <https://www.bahmni.org/> ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
+    :operatingSystem dbr:CentOS ;
+    :organizationalUnit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    a :SoftwareProduct ;
+    rdfs:comment "easy-to-use EMR & hospital system"@en ;
+    rdfs:label "Bahmni"@en .
+
+:BahmniAppHospitalSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Hospital System"@en .
+
+:BahmniEmergency
+    :organizationalUnitClassified :SnomedAccidentAndEmergencyDepartmentEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "emergency"@en .
+
+:BahmniFeatCaptureClinicalRecords
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Capture Clinical Records"@en .
+
+:BahmniFeatCaptureDrugPrescriptions
+    :featureClassified :WhoDhiReportEffectsAdverseDrug, :WhoDhiTrackClientsMedicationConsumption, :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Capture Drug Prescriptions"@en .
+
+:BahmniFeatClinicalReporting
+    :featureClassified :WhoDhiIdentifyClientsInNeedOfServices, :WhoDhiScheduleHealthcareProvidersActivities ;
+    :supportsFunction :BahmniFuncReporting ;
+    a :FeatureCitation ;
+    rdfs:label "Clinical Reporting"@en .
+
+:BahmniFeatCreateDiseaseSpecificForms
+    :featureClassified :WhoDhiScheduleHealthcareProvidersActivities ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Create Disease Specific Forms"@en .
+
+:BahmniFeatCreateGeneralForms
+    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan, :WhoDhiVerifyClientUniqueIdentity ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Create General Forms"@en .
+
+:BahmniFeatDisplayLaboratoryWorkload
+    :featureClassified :WhoDhiCaptureFromDigitalDevices, :WhoDhiTrackBiologicalSpecimens, :WhoDhiTransmitDiagnosticOrdersDiagnosticResults, :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    :supportsFunction :BahmniFuncLaboratory ;
+    a :FeatureCitation ;
+    rdfs:label "Display Laboratory Workload"@en .
+
+:BahmniFeatMaintainAccurateRecords
+    :featureClassified :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :supportsFunction :BahmniFuncBilling ;
+    a :FeatureCitation ;
+    rdfs:label "Maintain Accurate Records"@en .
+
+:BahmniFeatMaintainClinicalRecords
+    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Maintain Clinical Records"@en .
+
+:BahmniFeatManageAccurateRecords
+    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords ;
+    :supportsFunction :BahmniFuncBilling ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Accurate Records"@en .
+
+:BahmniFeatManagePatientOrders
+    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :supportsFunction :BahmniFuncLaboratory ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Patient Orders"@en .
+
+:BahmniFeatManagePatientsAdmissions
+    :supportsFunction :BahmniFuncInpatientManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Patients Admissions"@en .
+
+:BahmniFeatManageSamples
+    :featureClassified :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    :supportsFunction :BahmniFuncLaboratory ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Samples"@en .
+
+:BahmniFeatManageStock
+    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, :WhoDhiManageOfCommodities, :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiReportCounterfeitOrSubstandardDrugsByClients ;
+    :supportsFunction :BahmniFuncStockManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Stock"@en .
+
+:BahmniFeatManageTests
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :supportsFunction :BahmniFuncLaboratory ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Tests"@en .
+
+:BahmniFeatMonitorStockLevels
+    :featureClassified :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiRegisterAndHealthCommoditiesProcurement ;
+    :supportsFunction :BahmniFuncStockManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Monitor Stock Levels"@en .
+
+:BahmniFeatMoveStock
+    :supportsFunction :BahmniFuncStockManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Move Stock"@en .
+
+:BahmniFeatOrderInvestigation
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Order Investigation"@en .
+
+:BahmniFeatOrderLab
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Order Lab"@en .
+
+:BahmniFeatOrderRadiology
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Order Radiology"@en .
+
+:BahmniFeatPerformBedAssignments
+    :supportsFunction :BahmniFuncInpatientManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Perform Bed Assignments"@en .
+
+:BahmniFeatPerformOperationalReporting
+    :supportsFunction :BahmniFuncReporting ;
+    a :FeatureCitation ;
+    rdfs:label "Perform Operational Reporting"@en .
+
+:BahmniFeatPrintPatientId
+    :featureClassified :WhoDhiVerifyClientUniqueIdentity ;
+    :supportsFunction :BahmniFuncPatientRegistration ;
+    a :FeatureCitation ;
+    rdfs:label "Print Patient Id"@en .
+
+:BahmniFeatPublicHealthReporting
+    :featureClassified :WhoDhiReportingOfHealthSystemFeedbackByClients, :WhoDhiReportingOfPublicHealthEventsByClient ;
+    :supportsFunction :BahmniFuncReporting ;
+    a :FeatureCitation ;
+    rdfs:label "Public Health Reporting"@en .
+
+:BahmniFeatReorderStock
+    :featureClassified :WhoDhiCoordinateEmergencyResponseAndTransport, :WhoDhiManageReferralsBetweenHealthAndOtherSectors, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    :supportsFunction :BahmniFuncStockManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Reorder Stock"@en .
+
+:BahmniFeatSearchPatients
+    :supportsFunction :BahmniFuncPatientRegistration ;
+    a :FeatureCitation ;
+    rdfs:label "Search Patients"@en .
+
+:BahmniFeatSendSamplesForReferrals
+    :featureClassified :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
+    :supportsFunction :BahmniFuncInpatientManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Send Samples For Referrals"@en .
+
+:BahmniFeatTrackStock
+    :supportsFunction :BahmniFuncStockManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Track Stock"@en .
+
+:BahmniFeatTrackWardOccupancy
+    :supportsFunction :BahmniFuncInpatientManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Track Ward Occupancy"@en .
+
+:BahmniFeatUseDrugPrescriptionTemplates
+    :featureClassified :WhoDhiReportEffectsAdverseDrug ;
+    :supportsFunction :BahmniFuncClinicalServices ;
+    a :FeatureCitation ;
+    rdfs:label "Use Drug Prescription Templates"@en .
+
+:BahmniFuncBilling
+    :enterpriseFunctionClassified :WhoDhiHealthFinancing ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Billing"@en .
+
+:BahmniFuncClinicalServices
+    :enterpriseFunctionClassified :WhoDhiClientHealthRecords, :WhoDhiHealthWorkerActivityPlanningAndScheduling, :WhoDhiHealthcareProviderCommunication, :WhoDhiHealthcareProviderTraining, :WhoDhiPrescriptionAndMedicationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Clinical Services"@en .
+
+:BahmniFuncInpatientManagement
+    :enterpriseFunctionClassified :WhoDhiClientHealthRecords, :WhoDhiClientIdentificationAndRegistration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Inpatient Management"@en .
+
+:BahmniFuncLaboratory
+    :enterpriseFunctionClassified :WhoDhiClientIdentificationAndRegistration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Laboratory"@en .
+
+:BahmniFuncPatientRegistration
+    :enterpriseFunctionClassified :WhoDhiClientIdentificationAndRegistration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Registration"@en .
+
+:BahmniFuncReporting
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Reporting"@en .
+
+:BahmniFuncStockManagement
+    :enterpriseFunctionClassified :WhoDhiSupplyChainManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Stock Management"@en .
+
+:BahmniGynaecology
+    :organizationalUnitClassified :SnomedGynecologyDepartmentEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "gynaecology"@en .
+
+:BahmniIntakeOutput
+    a :OrganizationalUnitCitation ;
+    rdfs:label "intake-output"@en .
+
+:BahmniSurgery
+    :organizationalUnitClassified :SnomedSurgicalDepartmentEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "surgery"@en .
+
+:BetterMeds
+    :applicationSystem :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution ;
+    :client :Native ;
+    :enterpriseFunction :BetterMedsFeatMedicationManagement ;
+    :feature :BetterMedsFeatClinicalPharmacistReview, :BetterMedsFeatCreatesAMedicationListOnAdmission, :BetterMedsFeatCreatesDailyMedicationAdministrationPlans, :BetterMedsFeatDischargeSummary, :BetterMedsFeatEnablesBarcodeScanning, :BetterMedsFeatEquippedWithMedicationDischargePrescription, :BetterMedsFeatGeneratesAutomatedTasks, :BetterMedsFeatGivesReal-timeWarningsWithADecision-supportSystem, :BetterMedsFeatIncreasedSafetyWithAllergy-relatedWarnings, :BetterMedsFeatInpatientPrescribing, :BetterMedsFeatMedicationAdministrationRecord, :BetterMedsFeatMedicationReconciliation, :BetterMedsFeatOrderSetsAvailableOnAHospital-wideLevel, :BetterMedsFeatOrderSetsCustomisable, :BetterMedsFeatOutpatientPrescribing, :BetterMedsFeatPediatricPrescriptions, :BetterMedsFeatPharmacyIntegration, :BetterMedsFeatProvidesATimelineForUpcomingMedicationAdministrations, :BetterMedsFeatProvidesAnAuditLogOfPrescriptionsAndChanges, :BetterMedsFeatReconcilesThePrescriptionListUponDischarge, :BetterMedsFeatShowsAClearOverviewOfMedicationsAtEveryStep, :BetterMedsFeatSimpleAndComplexIVPrescriptions, :BetterMedsFeatSupportsMedicationTitration, :BetterMedsFeatWitnessingOption, :BetterMedsFeatcapturesPrescriptionsFromDifferentSources ;
+    :homepage <https://meds.better.care> ;
+    :interoperability :HL7_FHIR, :OpenEHR, :SNOMED_CT ;
+    :language dbr:English_language, dbr:Modern_English ;
+    a :SoftwareProduct ;
+    rdfs:comment "Better Meds (formerly OPENeP) is an electronic prescribing and medication administration solution."@en ;
+    rdfs:label "BetterMeds"@en .
+
+:BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic Prescribing and Medication Administration Solution"@en .
+
+:BetterMedsFeatClinicalPharmacistReview
+    a :FeatureCitation ;
+    rdfs:label "Clinical pharmacist review"@en .
+
+:BetterMedsFeatCreatesAMedicationListOnAdmission
+    a :FeatureCitation ;
+    rdfs:label "creates a medication list on admission"@en .
+
+:BetterMedsFeatCreatesDailyMedicationAdministrationPlans
+    a :FeatureCitation ;
+    rdfs:label "creates daily medication administration plans"@en .
+
+:BetterMedsFeatDischargeSummary
+    a :FeatureCitation ;
+    rdfs:label "Discharge summary"@en .
+
+:BetterMedsFeatEnablesBarcodeScanning
+    a :FeatureCitation ;
+    rdfs:label "enables barcode scanning"@en .
+
+:BetterMedsFeatEquippedWithMedicationDischargePrescription
+    a :FeatureCitation ;
+    rdfs:label "equipped with medication discharge prescription"@en .
+
+:BetterMedsFeatGeneratesAutomatedTasks
+    a :FeatureCitation ;
+    rdfs:label "generates automated tasks"@en .
+
+:BetterMedsFeatGivesReal-timeWarningsWithADecision-supportSystem
+    a :FeatureCitation ;
+    rdfs:label "gives real-time warnings with a decision-support system"@en .
+
+:BetterMedsFeatIncreasedSafetyWithAllergy-relatedWarnings
+    a :FeatureCitation ;
+    rdfs:label "increased safety with allergy-related warnings"@en .
+
+:BetterMedsFeatInpatientPrescribing
+    a :FeatureCitation ;
+    rdfs:label "Inpatient prescribing"@en .
+
+:BetterMedsFeatMedicationAdministrationRecord
+    a :FeatureCitation ;
+    rdfs:label "Medication administration record"@en .
+
+:BetterMedsFeatMedicationManagement
+    :enterpriseFunctionClassified :BbMaterialAndMedicationManagement, :WhoDhiPrescriptionAndMedicationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "medication management"@en .
+
+:BetterMedsFeatMedicationReconciliation
+    a :FeatureCitation ;
+    rdfs:label "Medication reconciliation"@en .
+
+:BetterMedsFeatOrderSetsAvailableOnAHospital-wideLevel
+    a :FeatureCitation ;
+    rdfs:label "Order sets available on a hospital-wide level"@en .
+
+:BetterMedsFeatOrderSetsCustomisable
+    a :FeatureCitation ;
+    rdfs:label "Order sets customisable for a specific user, or as patient related"@en .
+
+:BetterMedsFeatOutpatientPrescribing
+    a :FeatureCitation ;
+    rdfs:label "Outpatient prescribing"@en .
+
+:BetterMedsFeatPediatricPrescriptions
+    a :FeatureCitation ;
+    rdfs:label "pediatric prescriptions forms"@en .
+
+:BetterMedsFeatPharmacyIntegration
+    a :FeatureCitation ;
+    rdfs:label "Pharmacy integration"@en .
+
+:BetterMedsFeatProvidesATimelineForUpcomingMedicationAdministrations
+    a :FeatureCitation ;
+    rdfs:label "provides a timeline for upcoming medication administrations"@en .
+
+:BetterMedsFeatProvidesAnAuditLogOfPrescriptionsAndChanges
+    a :FeatureCitation ;
+    rdfs:label "provides an audit log of prescriptions and changes"@en .
+
+:BetterMedsFeatReconcilesThePrescriptionListUponDischarge
+    a :FeatureCitation ;
+    rdfs:label "reconciles the prescription list upon discharge"@en .
+
+:BetterMedsFeatShowsAClearOverviewOfMedicationsAtEveryStep
+    a :FeatureCitation ;
+    rdfs:label "shows a clear overview of medications at every step"@en .
+
+:BetterMedsFeatSimpleAndComplexIVPrescriptions
+    a :FeatureCitation ;
+    rdfs:label "simple and complex IV prescriptions"@en .
+
+:BetterMedsFeatSupportsMedicationTitration
+    a :FeatureCitation ;
+    rdfs:label "supports medication titration"@en .
+
+:BetterMedsFeatWitnessingOption
+    a :FeatureCitation ;
+    rdfs:label "witnessing option"@en .
+
+:BetterMedsFeatcapturesPrescriptionsFromDifferentSources
+    a :FeatureCitation ;
+    rdfs:label "captures prescriptions from different sources"@en .
+
+:BikaLIMS
+    :applicationSystem :BikaLIMSAppLaboratoryInformationManagementSystem ;
+    :homepage <https://www.bikalims.org> ;
+    :repository <https://github.com/bikalims> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source LIMS"@en ;
+    rdfs:label "BikaLIMS"@en .
+
+:BikaLIMSAppLaboratoryInformationManagementSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
 :BetterMeds
     :applicationSystem :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution ;
@@ -659,6 +1078,60 @@
                a :SoftwareProduct ;
                rdfs:label "HNA Millenium"@en .
 
+:HNAMilleniumAppPharmacyManagementSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Pharmacy Management System"@en .
+
+:HnaMilleniumAllowingToReuseEarlierAnamnesticData
+    :featureClassified :EhrSfmManagePatientHistory ;
+    a :FeatureCitation ;
+    rdfs:label "allowing to reuse earlier anamnestic data"@en .
+
+:HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks
+    :featureClassified :EhrSfmManageClinicalHistory, :EhrSfmManageClinicalWorkflowTasking ;
+    a :FeatureCitation ;
+    rdfs:label "reminding and documentation of nursing tasks"@en .
+
+:HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport
+    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    a :FeatureCitation ;
+    rdfs:label "automatic creation of a nursing transfer report"@en .
+
+:HnaMilleniumFeatureComprisingASetOfNursingCareStandards
+    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    a :FeatureCitation ;
+    rdfs:label "comprising a set of nursing care standards"@en .
+
+:HnaMilleniumFeatureNursingAnamnesis
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
+    a :FeatureCitation ;
+    rdfs:label "nursing anamnesis"@en .
+
+:HnaMilleniumFeatureNursingCarePlanningSupportedByPre-definedNursingCareStandards
+    :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    a :FeatureCitation ;
+    rdfs:label "nursing care planning supported by pre-defined nursing care standards"@en .
+
+:HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy
+    :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
+    a :FeatureCitation ;
+    rdfs:label "nursing diagnosis based on the NANDA taxonomy"@en .
+
+:HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases
+    :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    a :FeatureCitation ;
+    rdfs:label "support nursing care planning for certain patient cases"@en .
+
+:HnaMilleniumFeatureUseOfClinicalPathways
+    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    a :FeatureCitation ;
+    rdfs:label "use of clinical pathways"@en .
+
+:HnaMilleniumScheduling
+    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManageClinicalWorkflowTasking ;
+    a :FeatureCitation ;
+    rdfs:label "scheduling"@en .
+
 :HospitalRun
     :applicationSystem :HospitalRunAppEHR, :HospitalRunAppHIS ;
     :client :Native ;
@@ -744,6 +1217,34 @@
     a :UserGroupCitation ;
     rdfs:label "Technician"@en .
 
+:Medicator
+    :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrug-drugInteractions, :MedicatorFeatureSafetyAlertsInRealTime .
+
+:MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
+    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    a :FeatureCitation ;
+    rdfs:label "medication control based on national drug database"@en .
+
+:MedicatorFeatureMedicationSelectionFromMenu
+    :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders, :EhrSfmManageResourceAvailability, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
+    a :FeatureCitation ;
+    rdfs:label "medication selection from menu in which medication from the ward stock or the pharmacy is shown"@en .
+
+:MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses
+    :featureClassified :EhrSfmMedicationAlertOverrides, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    a :FeatureCitation ;
+    rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
+
+:MedicatorFeatureSafetyAlertsInCaseOfDrug-drugInteractions
+    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of drug-drug interactions"@en .
+
+:MedicatorFeatureSafetyAlertsInRealTime
+    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in real time"@en .
+
 :Medicator rdf:type :SoftwareProduct ;
            :feature :medicationControlBasedOnNationalDrugDatabase ,
                           :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown ,
@@ -767,6 +1268,7 @@
 
 :MedicatorStandardizedPrescriptionsAndMedicationProtocols a :FeatureCitation;
                                          rdfs:label "standardized precriptions and medication protocols"@en .
+
 :Medkey
     :applicationSystem :MedkeyAppHIS ;
     :client :WebBased ;
@@ -786,15 +1288,45 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Hospital Information System (HIS)"@en .
 
-:Metavision rdf:type :SoftwareProduct ;
-            :feature :automaticDataCollection ,
-                           :clinicalDocumentation ,
-                           :computerizedOrderEntry ,
-                           :dataStorageRepository ,
-                           :electronicMedicationAdministrationTool ,
-                           :triggeringTheCDSSToQueryTheTidalVolume ;
-            :applicationSystem :MetavisionAppClinicalInformationSystem ;
-            rdfs:label "Metavision"@en .
+:Metavision
+    :applicationSystem :MetavisionAppClinicalInformationSystem ;
+    :feature :MetaVisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
+    a :SoftwareProduct ;
+    rdfs:label "Metavision"@en .
+
+:MetavisionAppClinicalInformationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Clinical Information System"@en .
+
+:MetaVisionFeatureAutomaticDataCollection
+    :featureClassified :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    a :FeatureCitation ;
+    rdfs:label "automatic data collection"@en .
+
+:MetavisionFeatureClinicalDocumentation
+    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "clinical documentation"@en .
+
+:MetavisionFeatureComputerizedOrderEntry
+    :featureClassified :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
+    a :FeatureCitation ;
+    rdfs:label "computerized order entry"@en .
+
+:MetavisionFeatureDataStorageRepository
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
+    a :FeatureCitation ;
+    rdfs:label "data storage repository"@en .
+
+:MetavisionFeatureElectronicMedicationAdministrationTool
+    :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationImmunizationAndTreatmentAdministration, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    a :FeatureCitation ;
+    rdfs:label "electronic medication administration tool"@en .
+
+:MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume
+    :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    a :FeatureCitation ;
+    rdfs:label "triggering the CDSS to query the tidal volume"@en .
 
 :OpenClinicAppGA
     a :ApplicationSystemCitation ;
