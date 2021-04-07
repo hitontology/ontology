@@ -441,19 +441,15 @@
     a :FeatureCitation ;
     rdfs:label "captures prescriptions from different sources"@en .
 
-:BikaLIMS
-    :applicationSystem :BikaLIMSAppLaboratoryInformationManagementSystem ;
+:BikaLims
+    :applicationSystem :BikaLimsAppLaboratoryInformationManagementSystem ;
     :homepage <https://www.bikalims.org> ;
     :repository <https://github.com/bikalims> ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source LIMS"@en ;
     rdfs:label "BikaLIMS"@en .
 
-:BikaLIMSAppLaboratoryInformationManagementSystem
-    a :ApplicationSystemCitation ;
-    rdfs:label "Laboratory Information Management System (LIMS)"@en .
-
-:BikaLIMSAppLaboratoryInformationManagementSystem
+:BikaLimsAppLaboratoryInformationManagementSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
@@ -645,7 +641,7 @@
 :Cis2
     :client :Mobile, :Native ;
     :enterpriseFunction :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
-    :feature :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, <http://hitontology.eu/ontology/Cis2FeatSupportForThe%20Ambulance>, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
+    :feature :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, :Cis2FeatSupportForTheAmbulance, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical Information System Integrated EHR system) Dummy 2"@en ;
     rdfs:label "Commercial CIS2"@en .
@@ -660,7 +656,7 @@
     a :FeatureCitation ;
     rdfs:label "Support for patient administration"@en .
 
-<http://hitontology.eu/ontology/Cis2FeatSupportForTheAmbulance>
+:Cis2FeatSupportForTheAmbulance
     :featureClassified :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "Support for the Ambulance"@en .
@@ -760,15 +756,27 @@
     a :FeatureCitation ;
     rdfs:label "prescribe longhand"@en .
 
-:DHIS2
-    :applicationSystem :DHIS2AppHMIS ;
+:Dcm4Che
+    :applicationSystem :Dcm4CheAppDicomToolkitLibrary ;
+    :homepage <https://www.dcm4che.org> ;
+    :repository <https://github.com/dcm4che> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source Clinical Image and Object Management"@en ;
+    rdfs:label "dcm4che"@en .
+
+:Dcm4CheAppDicomToolkitLibrary
+    a :ApplicationSystemCitation ;
+    rdfs:label "DICOM toolkit & library"@en .
+
+:Dhis2
+    :applicationSystem :DhisAppHmis ;
     :homepage <https://www.dhis2.org/> ;
     :repository <https://github.com/dhis2> ;
     a :SoftwareProduct ;
     rdfs:comment "Open source health management information system"@en ;
     rdfs:label "DHIS2"@en .
 
-:DHIS2AppHMIS
+:DhisAppHmis
     a :ApplicationSystemCitation ;
     rdfs:label "health management information system (HMIS)"@en .
 
@@ -820,7 +828,17 @@
     a :FeatureCitation ;
     rdfs:label "capturing data for all patient visits"@en .
 
-:EclipsysContinuum2000CdsAuditTrail
+:EclipsysContinuum2000Cds
+    :applicationSystem :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem ;
+    :feature :EclipsysContinuum2000CdsFeatAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
+    a :SoftwareProduct ;
+    rdfs:label "Eclipsys Continuum 2000 CDS"@en .
+
+:EclipsysContinuum2000CdsAppClinicalDocumentatioSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Clinical Documentation System (CDS)"@en .
+
+:EclipsysContinuum2000CdsFeatAuditTrail
     :featureClassified :EhrSfmAudit ;
     a :FeatureCitation ;
     rdfs:label "audit trail"@en .
@@ -835,26 +853,15 @@
     a :FeatureCitation ;
     rdfs:label "electronic signature"@en .
 
+:EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory ;
+    a :FeatureCitation ;
+    rdfs:label "graphical user interface to document care"@en .
+
 :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry
     :featureClassified :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "point and click data entry"@en .
-
-:EclipsysContinuum_2000CDS
-    :applicationSystem :EclipsysAppClinicalDocumentatioSystem ;
-    :feature :EclipsysContinuum2000CdsAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
-    a :SoftwareProduct ;
-    rdfs:label "Eclipsys Continuum 2000 CDS"@en .
-
-:EclipsysAppClinicalDocumentatioSystem
-    a :ApplicationSystemCitation ;
-    rdfs:label "Clinical Documentation System (CDS)"@en .
-
-
-
-:ElectronicPatientObservationSystem
-    a :ApplicationSystemCitation ;
-    rdfs:label "electronic patient observation system"@en .
 
 :Elexis
     :applicationSystem :ElexisAppElektronischeKrankengeschichte, :ElexisAppSoftwareArztpraxis ;
@@ -902,7 +909,7 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic medical record manager (EMR)"@en .
 
-:GEPatchspecdPacs
+:GePatchspecdPacs
     :feature :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
     a :SoftwareProduct ;
     rdfs:label "GE Patchspecd PACS"@en .
@@ -917,8 +924,8 @@
     a :FeatureCitation ;
     rdfs:label "forward into archive"@en .
 
-:HNAMillenium
-    :applicationSystem :HNAMilleniumAppPharmacyManagementSystem ;
+:HnaMillenium
+    :applicationSystem :HnaMilleniumAppPharmacyManagementSystem ;
     :feature :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPre-definedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
     a :SoftwareProduct ;
     rdfs:label "HNA Millenium"@en .
@@ -999,19 +1006,19 @@
     a :ApplicationSystemCitation ;
     rdfs:label "hospital information system (HIS)"@en .
 
-:iPath
-    :applicationSystem :iPathTelemedicinePlatform ;
+:IPath
+    :applicationSystem :IPathAppTelemedicinePlatform ;
     :client :WebBased ;
     :databaseSystem :MySql ;
-    :enterpriseFunction :iPathFuncTransmitAndDiscussMedicalResults ;
-    :feature :iPathFeatCooperationBetweenProfessionals, :iPathFeatOnlineCaseDiscussion, :iPathFeatTeachingAndConferencingSessions, :iPathFeatTransmitOfImgaesWithNecessaryClinicalInformation ;
+    :enterpriseFunction :IPathFuncTransmitAndDiscussMedicalResults ;
+    :feature :IPathFeatCooperationBetweenProfessionals, :IPathFeatOnlineCaseDiscussion, :IPathFeatTeachingAndConferencingSessions, :IPathFeatTransmitOfImgaesWithNecessaryClinicalInformation ;
     :homepage <https://www.ipathnetwork.org/> ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     :operatingSystem dbr:Web_application ;
     :programmingLanguage dbr:PHP ;
-    :userGroup :iPathUserMedicalProfessional, :iPathUserTechnician ;
+    :userGroup :IPathUserMedicalProfessional, :IPathUserTechnician ;
     a :SoftwareProduct ;
     rdfs:comment "Telemedicine Network"@en ;
     rdfs:label "iPath"@en .
@@ -1021,7 +1028,7 @@
     a :FeatureCitation ;
     rdfs:label "Cooperation between professionals"@en .
 
-:iPathFeatOnlineCaseDiscussion
+:IPathFeatOnlineCaseDiscussion
     :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Online case discussion"@en .
@@ -1034,12 +1041,12 @@
     a :FeatureCitation ;
     rdfs:label "Teaching and conferencing sessions"@en .
 
-:iPathFeatTransmitOfImgaesWithNecessaryClinicalInformation
+:IPathFeatTransmitOfImgaesWithNecessaryClinicalInformation
     :featureClassified :WhoDhiDataExchangeAcrossSystems, :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
     a :FeatureCitation ;
     rdfs:label "Transmit of images with necessary clinical information"@en .
 
-:iPathFuncTransmitAndDiscussMedicalResults
+:IPathFuncTransmitAndDiscussMedicalResults
     :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Transmit and discuss medical results"@en .
@@ -1076,7 +1083,7 @@
     a :FeatureCitation ;
     rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
 
-:MedicatorFeatureSafetyAlertsInCaseOfDrug-drugInteractions
+:MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions
     :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
     a :FeatureCitation ;
     rdfs:label "safety alerts in case of drug-drug interactions"@en .
@@ -1123,7 +1130,7 @@
 
 :Metavision
     :applicationSystem :MetavisionAppClinicalInformationSystem ;
-    :feature :MetaVisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
+    :feature :MetavisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
     a :SoftwareProduct ;
     rdfs:label "Metavision"@en .
 
@@ -1165,7 +1172,7 @@
     a :ApplicationSystemCitation ;
     rdfs:label "hospital information management system"@en .
 
-:OpenClinicGA
+:OpenClinicGa
     :applicationSystem :OpenClinicAppGA ;
     :homepage <https://sourceforge.net/projects/open-clinic/> ;
     :interoperability :DICOM, :HL7, :HL7_FHIR, :ICD10, :ICPC2, :LOINC, :SNOMED_CT ;
@@ -1175,16 +1182,1173 @@
     a :SoftwareProduct ;
     rdfs:comment "Open Source Integrated Hospital Information Management System"@en ;
     rdfs:label "OpenClinic GA"@en .
-:PIK rdf:type :SoftwareProduct ;
-     :feature :adaptionOfNursingCarePlansDuringCarePlanning ,
-                    :anamnesisSupportedByOfferingFlexibleFormsForDataEntry ,
-                    :creationOfNursingCarePlans ,
-                    :nursingDocumentationForms ,
-                    :supportingAllPhasesOfTheNursingProcess ,
-                    :wardManagement ,
-                    :writingOfNursingLetters ;
-     rdfs:label "PIK"@en .
 
+:OpenDental
+    :applicationSystem :OpenDentalPracticeManagementSoftware ;
+    :client :Native ;
+    :databaseSystem :MySql ;
+    :enterpriseFunction :OpenDentalFuncAccounting, :OpenDentalFuncBilling, :OpenDentalFuncImaging, :OpenDentalFuncManagePatientAppointments, :OpenDentalFuncManagePatientInformation, :OpenDentalFuncTimeManagement, :OpenDentalFuncTreatmentAdministration, :OpenDentalFuncUserManagement ;
+    :feature :OpenDentalFeatAddFormTemplate, :OpenDentalFeatAddPatientAppointment, :OpenDentalFeatBackup, :OpenDentalFeatCalendar, :OpenDentalFeatCreateReferralLetters, :OpenDentalFeatCreateTasks, :OpenDentalFeatCustomReports, :OpenDentalFeatEditPatientAppointment, :OpenDentalFeatEditTreatmentPlan, :OpenDentalFeatElectronicPatientForms, :OpenDentalFeatElectronicPrescriptions, :OpenDentalFeatEmailInbox, :OpenDentalFeatEnhanceRadiographImages, :OpenDentalFeatEnterClinicalPatientInformation, :OpenDentalFeatGraphicalToothChart, :OpenDentalFeatManageInsuranceInformation, :OpenDentalFeatManageTreatmentPlans, :OpenDentalFeatMessaging, :OpenDentalFeatOrganizeClinicalPatientInformation, :OpenDentalFeatPatientPortal, :OpenDentalFeatPrintPatientSchedule, :OpenDentalFeatPrintTreatmentPlan, :OpenDentalFeatProgressNotes, :OpenDentalFeatScanFormsAndLetters, :OpenDentalFeatSchedulePatientAppointment, :OpenDentalFeatSendClaims, :OpenDentalFeatSendTasks, :OpenDentalFeatSignTreatmentPlan, :OpenDentalFeatStoreFormsAndLetters, :OpenDentalFeatStoreImageFiles, :OpenDentalFeatSupplyInventory, :OpenDentalFeatTrackLabCases, :OpenDentalFeatTrackReferredTreatments, :OpenDentalFeatTrackUserAccess, :OpenDentalFeatViewAppointmentList, :OpenDentalFeatViewInsurancePlans, :OpenDentalFeatViewPatientClaimHistory, :OpenDentalFeatViewPatientFinancialHistory, :OpenDentalFeatViewPatientInformation, :OpenDentalFeatViewPatientPaymentPlan, :OpenDentalFeatViewPlannedProcedures, :OpenDentalFeatViewTreatmentPlan, :OpenDentalFeatWaitingRoomTracker, :OpenDentalFeatWebForms ;
+    :homepage <https://opendental.com> ;
+    :language dbr:English_language, dbr:Modern_English ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
+    :organizationalUnit :OpenDentalOrgDentalPractice ;
+    :programmingLanguage <http://dbpedia.org/resource/C_Sharp_%28programming_language%29> ;
+    :repository <https://www.opendental.com/site/sourcecode.html> ;
+    :userGroup :OpenDentalUserDentist ;
+    a :SoftwareProduct ;
+    rdfs:comment "Dental Practice Management Software"@en ;
+    rdfs:label "OpenDental"@en .
+
+:OpenDentalFeatAddFormTemplate
+    a :FeatureCitation ;
+    rdfs:label "Add Form Template"@en .
+
+:OpenDentalFeatAddPatientAppointment
+    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "Add Patient Appointment"@en .
+
+:OpenDentalFeatBackup
+    :featureClassified :EhrSfmDatabaseBackupAndRecovery ;
+    a :FeatureCitation ;
+    rdfs:label "Backup"@en .
+
+:OpenDentalFeatCalendar
+    :featureClassified :BbProvideMeansForManagingAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "Calendar"@en .
+
+:OpenDentalFeatCreateReferralLetters
+    :featureClassified :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
+    a :FeatureCitation ;
+    rdfs:label "Create Referral Letters"@en .
+
+:OpenDentalFeatCreateTasks
+    :featureClassified :BbProvideFormsForDocumentingPlannedTasks ;
+    a :FeatureCitation ;
+    rdfs:label "Create Tasks"@en .
+
+:OpenDentalFeatCustomReports
+    :featureClassified :BbPrepareReport, :BbProvideFormsForWritingAReport, :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
+    a :FeatureCitation ;
+    rdfs:label "Custom Reports"@en .
+
+:OpenDentalFeatEditPatientAppointment
+    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "Edit Patient Appointment"@en .
+
+:OpenDentalFeatEditTreatmentPlan
+    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    a :FeatureCitation ;
+    rdfs:label "Edit Treatment Plan"@en .
+
+:OpenDentalFeatElectronicPatientForms
+    :featureClassified :BbProvideFormsForDocumentingPatientsInformedConsent ;
+    a :FeatureCitation ;
+    rdfs:label "Electronic Patient Forms"@en .
+
+:OpenDentalFeatElectronicPrescriptions
+    :featureClassified :EhrSfmSupportPatientDataDerivedFromEligibilityFormularyAndBenefitDocumentationForElectronicPrescribing ;
+    a :FeatureCitation ;
+    rdfs:label "Electronic Prescriptions"@en .
+
+:OpenDentalFeatEmailInbox
+    a :FeatureCitation ;
+    rdfs:label "Email Inbox"@en .
+
+:OpenDentalFeatEnhanceRadiographImages
+    a :FeatureCitation ;
+    rdfs:label "Enhance Radiograph Images"@en .
+
+:OpenDentalFeatEnterClinicalPatientInformation
+    :featureClassified :EhrSfmInformationView ;
+    a :FeatureCitation ;
+    rdfs:label "Enter Clinical Patient Information"@en .
+
+:OpenDentalFeatGraphicalToothChart
+    a :FeatureCitation ;
+    rdfs:label "Graphical Tooth Chart"@en .
+
+:OpenDentalFeatManageInsuranceInformation
+    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Insurance Information"@en .
+
+:OpenDentalFeatManageTreatmentPlans
+    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans, :EhrSfmSupportTreatmentAdministration ;
+    a :FeatureCitation ;
+    rdfs:label "Manage Treatment Plans"@en .
+
+:OpenDentalFeatMessaging
+    a :FeatureCitation ;
+    rdfs:label "Messaging"@en .
+
+:OpenDentalFeatOrganizeClinicalPatientInformation
+    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords ;
+    a :FeatureCitation ;
+    rdfs:label "Organize Clinical Patient Information"@en .
+
+:OpenDentalFeatPatientPortal
+    a :FeatureCitation ;
+    rdfs:label "Patient Portal"@en .
+
+:OpenDentalFeatPrintPatientSchedule
+    a :FeatureCitation ;
+    rdfs:label "Print Patient Schedule"@en .
+
+:OpenDentalFeatPrintTreatmentPlan
+    :featureClassified :BbPrintForms, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    a :FeatureCitation ;
+    rdfs:label "Print Treatment Plan"@en .
+
+:OpenDentalFeatProgressNotes
+    :featureClassified :EhrSfmManageClinicalDocumentsAndNotes ;
+    a :FeatureCitation ;
+    rdfs:label "Progress Notes"@en .
+
+:OpenDentalFeatScanFormsAndLetters
+    :featureClassified :BbScanDocuments, :BbScanningDocumentsFromReferringPhysicianAndOtherSources ;
+    a :FeatureCitation ;
+    rdfs:label "Scan Forms And Letters"@en .
+
+:OpenDentalFeatSchedulePatientAppointment
+    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "Schedule Patient Appointment"@en .
+
+:OpenDentalFeatSendClaims
+    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    a :FeatureCitation ;
+    rdfs:label "Send Claims"@en .
+
+:OpenDentalFeatSendTasks
+    a :FeatureCitation ;
+    rdfs:label "Send Tasks"@en .
+
+:OpenDentalFeatSignTreatmentPlan
+    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    a :FeatureCitation ;
+    rdfs:label "Sign Treatment Plan"@en .
+
+:OpenDentalFeatStoreFormsAndLetters
+    :featureClassified :BbManageStorageMedia, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Store Forms And Letters"@en .
+
+:OpenDentalFeatStoreImageFiles
+    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Store Image Files"@en .
+
+:OpenDentalFeatSupplyInventory
+    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    a :FeatureCitation ;
+    rdfs:label "Supply Inventory"@en .
+
+:OpenDentalFeatTrackLabCases
+    :featureClassified :BbDisplayEarlierLabResultsOfAPatient ;
+    a :FeatureCitation ;
+    rdfs:label "Track Lab Cases"@en .
+
+:OpenDentalFeatTrackReferredTreatments
+    :featureClassified :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    a :FeatureCitation ;
+    rdfs:label "Track Referred Treatments"@en .
+
+:OpenDentalFeatTrackUserAccess
+    :featureClassified :EhrSfmUserAccessSuccessfulSecurityAuditTrigger ;
+    a :FeatureCitation ;
+    rdfs:label "Track User Access"@en .
+
+:OpenDentalFeatViewAppointmentList
+    :featureClassified :BbProvideMeansForManagingAppointments, :BbViewPatientrelatedAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "View Appointment List"@en .
+
+:OpenDentalFeatViewInsurancePlans
+    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    a :FeatureCitation ;
+    rdfs:label "View Insurance Plans"@en .
+
+:OpenDentalFeatViewPatientClaimHistory
+    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "View Patient Claim History"@en .
+
+:OpenDentalFeatViewPatientFinancialHistory
+    :featureClassified :EhrSfmSupportIntegrationOfCostfinancialInformationIntoPatientCare ;
+    a :FeatureCitation ;
+    rdfs:label "View Patient Financial History"@en .
+
+:OpenDentalFeatViewPatientInformation
+    :featureClassified :BbViewPatientrelatedAppointments, :EhrSfmInformationView ;
+    a :FeatureCitation ;
+    rdfs:label "View Patient Information"@en .
+
+:OpenDentalFeatViewPatientPaymentPlan
+    a :FeatureCitation ;
+    rdfs:label "View Patient Payment Plan"@en .
+
+:OpenDentalFeatViewPlannedProcedures
+    a :FeatureCitation ;
+    rdfs:label "View Planned Procedures"@en .
+
+:OpenDentalFeatViewTreatmentPlan
+    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    a :FeatureCitation ;
+    rdfs:label "View Treatment Plan"@en .
+
+:OpenDentalFeatWaitingRoomTracker
+    :featureClassified :EhrSfmSupportWaitingRoomManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Waiting Room Tracker"@en .
+
+:OpenDentalFeatWebForms
+    a :FeatureCitation ;
+    rdfs:label "Web Forms"@en .
+
+:OpenDentalFuncAccounting
+    :enterpriseFunctionClassified :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPayrollAccounting ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Accounting"@en .
+
+:OpenDentalFuncBilling
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Billing"@en .
+
+:OpenDentalFuncImaging
+    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Imaging"@en .
+
+:OpenDentalFuncManagePatientAppointments
+    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Manage Patient Appointments"@en .
+
+:OpenDentalFuncManagePatientInformation
+    :enterpriseFunctionClassified :BbInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Manage Patient Information"@en .
+
+:OpenDentalFuncTimeManagement
+    :enterpriseFunctionClassified :BbWorkOrganizationAndTimeManagement, :BbWorkOrganizationAndTimePlanning ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Time Management"@en .
+
+:OpenDentalFuncTreatmentAdministration
+    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Treatment Administration"@en .
+
+:OpenDentalFuncUserManagement
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "User Management and Access Control"@en .
+
+:OpenDentalOrgDentalPractice
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Dental Practice"@en .
+
+:OpenDentalPracticeManagementSoftware
+    a :ApplicationSystemCitation ;
+    rdfs:label "Dental Practice Management Software"@en .
+
+:OpenDentalUserDentist
+    a :UserGroupCitation ;
+    rdfs:label "Dentist"@en .
+
+:OpenEObs
+    :applicationSystem :OpenEObsAppElectronicPatientObservationSystem ;
+    :client :Mobile ;
+    :databaseSystem :PostgreSql ;
+    :enterpriseFunction :OpenEObsFunctionPatientObservation, :OpenEObsFunctionWardManagement ;
+    :feature :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling, :OpenEObsFeatureBedsideOrCommunityUseWithMobileDevices, :OpenEObsFeatureCalculatesAScore, :OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators, :OpenEObsFeatureHighLevelWardDashboard, :OpenEObsFeatureIdentifyAndRespondToHighRiskPatients, :OpenEObsFeatureInteractiveChartsOfObservationData, :OpenEObsFeaturePatientAcuityBoard, :OpenEObsFeaturePatientRecord, :OpenEObsFeaturePatientReport, :OpenEObsFeaturePatientVisitManagement, :OpenEObsFeatureRecordObservationsOfPatients, :OpenEObsFeatureStaffAllocationToPatients ;
+    :homepage <https://opusvl.com/solutions/open-eobs> ;
+    :language dbr:English_language, dbr:Modern_English ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
+    :programmingLanguage <http://dbpedia.org/resource/Python_%28programming_language%29> ;
+    :repository <https://github.com/AppertaFoundation/openeobs/> ;
+    a :SoftwareProduct ;
+    rdfs:comment "electronic patient observation system"@en ;
+    rdfs:label "Open-eObs"@en .
+
+:OpenEObsAppElectronicPatientObservationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "electronic patient observation system"@en .
+
+:OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling
+    :featureClassified :WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
+    a :FeatureCitation ;
+    rdfs:label "Automated alerts, monitoring and scheduling"@en .
+
+:OpenEObsFeatureBedsideOrCommunityUseWithMobileDevices
+    a :FeatureCitation ;
+    rdfs:label "Bedside or community use with mobile devices"@en .
+
+:OpenEObsFeatureCalculatesAScore
+    :featureClassified :BbScoringOfThePatientEgTissSapsii ;
+    a :FeatureCitation ;
+    rdfs:label "calculates a score, based on National Early Warning Score (NEWS)"@en .
+
+:OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators
+    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    a :FeatureCitation ;
+    rdfs:label "Capturing of vital signs and clinical risk indicators"@en .
+
+:OpenEObsFeatureHighLevelWardDashboard
+    :featureClassified :BbProvideMeansForManagingWardStaff ;
+    a :FeatureCitation ;
+    rdfs:label "High level Ward Dashboard"@en .
+
+:OpenEObsFeatureIdentifyAndRespondToHighRiskPatients
+    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    a :FeatureCitation ;
+    rdfs:label "identify and respond to high risk patients"@en .
+
+:OpenEObsFeatureInteractiveChartsOfObservationData
+    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Interactive charts of observation data"@en .
+
+:OpenEObsFeaturePatientAcuityBoard
+    :featureClassified :EhrSfmSupportPatientAcuityAndSeverityDetermination ;
+    a :FeatureCitation ;
+    rdfs:label "Patient Acuity Board"@en .
+
+:OpenEObsFeaturePatientRecord
+    :featureClassified :EhrSfmManageAPatientRecord ;
+    a :FeatureCitation ;
+    rdfs:label "Patient Record"@en .
+
+:OpenEObsFeaturePatientReport
+    :featureClassified :BbPrepareReport ;
+    a :FeatureCitation ;
+    rdfs:label "Patient Report"@en .
+
+:OpenEObsFeaturePatientVisitManagement
+    a :FeatureCitation ;
+    rdfs:label "Patient Visit Management"@en .
+
+:OpenEObsFeatureRecordObservationsOfPatients
+    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "record observations of patients"@en .
+
+:OpenEObsFeatureStaffAllocationToPatients
+    :featureClassified :BbAssignStaffToPatientsOrRooms, :BbProvideMeansForManagingWardStaff ;
+    a :FeatureCitation ;
+    rdfs:label "Staff Allocation to Patients"@en .
+
+:OpenEObsFunctionPatientObservation
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient observation"@en .
+
+:OpenEObsFunctionWardManagement
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Ward Management"@en .
+
+:OpenElis
+    :applicationSystem :OpenElisAppLaboratoryInformationSystem ;
+    :homepage <https://sites.google.com/site/openelisglobal/> ;
+    :repository <https://github.com/openelisglobal> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Laboratory Information System for Global Health"@en ;
+    rdfs:label "OpenELIS"@en .
+
+:OpenElisAppLaboratoryInformationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Laboratory Information System (LIS)"@en .
+
+:OpenEmr
+    :applicationSystem :OpenEmrAppElectronicHealthRecord, :OpenEmrAppMedicalPracticeManagementApplication ;
+    :client :WebBased ;
+    :databaseSystem :MySql ;
+    :enterpriseFunction :OpenEmrFuncClinicalDecisionMaking, :OpenEmrFuncElectronicMedicalRecords, :OpenEmrFuncMedicalBilling, :OpenEmrFuncPatientDemographics, :OpenEmrFuncPatientPortal, :OpenEmrFuncPatientScheduling, :OpenEmrFuncPrescriptions, :OpenEmrFuncReports ;
+    :feature :OpenEmrFeatAppointmentCalendar, :OpenEmrFeatClinicMessaging, :OpenEmrFeatClinicalQualityMeasureCalculations, :OpenEmrFeatCreateCustomizeForms, :OpenEmrFeatCreatePrescriptions, :OpenEmrFeatDatedReminders, :OpenEmrFeatElectronicDigitalDocumentManagement, :OpenEmrFeatEncounters, :OpenEmrFeatEyeModule, :OpenEmrFeatFlexibleSystemOfCoding, :OpenEmrFeatGraphicalCharting, :OpenEmrFeatImmunizationsRecords, :OpenEmrFeatInHousePharmacyDispensarySupport, :OpenEmrFeatInsuranceEligibilityQueries, :OpenEmrFeatInsuranceTrackingInterface, :OpenEmrFeatLabRecords, :OpenEmrFeatMedicalClaimManagementInterface, :OpenEmrFeatMedicalImageViewer, :OpenEmrFeatMedicationRecords, :OpenEmrFeatOnlineDrugSearch, :OpenEmrFeatPaperChartTracking, :OpenEmrFeatPatientAppointmentNotification, :OpenEmrFeatPatientDrugScreening, :OpenEmrFeatPatientPortal, :OpenEmrFeatPhysicianReminders, :OpenEmrFeatProcedureRecords, :OpenEmrFeatRecallBoard, :OpenEmrFeatReferrals, :OpenEmrFeatSoap, :OpenEmrFeatTrackPatientDemographics, :OpenEmrFeatTrackPrescriptions, :OpenEmrFeatVitals, :OpenEmrFeatVoiceRecognition ;
+    :homepage <https://www.open-emr.org> ;
+    :interoperability :CDA, :DICOM, :HL7, :HL7_FHIR, :REST, :SMART ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows, dbr:Unix-like ;
+    :programmingLanguage dbr:PHP ;
+    :repository <https://github.com/openemr> ;
+    a :SoftwareProduct ;
+    rdfs:comment "open source electronic health record and medical practice management solution"@en ;
+    rdfs:label "OpenEMR"@en .
+
+:OpenEmrAppElectronicHealthRecord
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic health record application"@en .
+
+:OpenEmrAppMedicalPracticeManagementApplication
+    a :ApplicationSystemCitation ;
+    rdfs:label "Medical practice management application"@en .
+
+:OpenEmrFeatAppointmentCalendar
+    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments, :BbViewPatientrelatedAppointments ;
+    a :FeatureCitation ;
+    rdfs:label "Appointment calendar"@en .
+
+:OpenEmrFeatClinicMessaging
+    a :FeatureCitation ;
+    rdfs:label "Clinic Messaging"@en .
+
+:OpenEmrFeatClinicalQualityMeasureCalculations
+    :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
+    a :FeatureCitation ;
+    rdfs:label "Clinical Quality Measure Calculations"@en .
+
+:OpenEmrFeatCreateCustomizeForms
+    a :FeatureCitation ;
+    rdfs:label "Create and customize forms"@en .
+
+:OpenEmrFeatCreatePrescriptions
+    :featureClassified :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    a :FeatureCitation ;
+    rdfs:label "Create and send prescriptions"@en .
+
+:OpenEmrFeatDatedReminders
+    :featureClassified :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
+    a :FeatureCitation ;
+    rdfs:label "Dated Reminders"@en .
+
+:OpenEmrFeatElectronicDigitalDocumentManagement
+    :featureClassified :EhrSfmManageClinicalDocumentsAndNotes ;
+    a :FeatureCitation ;
+    rdfs:label "Electronic digital document management"@en .
+
+:OpenEmrFeatEncounters
+    :featureClassified :EhrSfmManagePatientEncounter, :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportEncounterEpisodeOfCareManagement, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "Encounters"@en .
+
+:OpenEmrFeatEyeModule
+    a :FeatureCitation ;
+    rdfs:label "Eye Module"@en .
+
+:OpenEmrFeatFlexibleSystemOfCoding
+    :featureClassified :BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses, :BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis, :BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures, :BbProvideCatalogsAndOtherMeansForCodingRadiologicalProcedures ;
+    a :FeatureCitation ;
+    rdfs:label "Flexible system of coding"@en .
+
+:OpenEmrFeatGraphicalCharting
+    a :FeatureCitation ;
+    rdfs:label "Graphical Charting"@en .
+
+:OpenEmrFeatImmunizationsRecords
+    :featureClassified :EhrSfmManageImmunizationList, :EhrSfmSupportForImmunizationAdministration ;
+    a :FeatureCitation ;
+    rdfs:label "Immunization Records"@en .
+
+:OpenEmrFeatInHousePharmacyDispensarySupport
+    a :FeatureCitation ;
+    rdfs:label "In-house pharmacy dispensary support"@en .
+
+:OpenEmrFeatInsuranceEligibilityQueries
+    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
+    a :FeatureCitation ;
+    rdfs:label "Insurance Eligibility Queries"@en .
+
+:OpenEmrFeatInsuranceTrackingInterface
+    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "Insurance Tracking Interface"@en .
+
+:OpenEmrFeatLabRecords
+    :featureClassified :BbDisplayEarlierLabResultsOfAPatient ;
+    a :FeatureCitation ;
+    rdfs:label "Lab Records"@en .
+
+:OpenEmrFeatMedicalClaimManagementInterface
+    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    a :FeatureCitation ;
+    rdfs:label "Medical claim management interface"@en .
+
+:OpenEmrFeatMedicalImageViewer
+    :featureClassified :EhrSfmSupportExternallySourcedClinicalImages ;
+    a :FeatureCitation ;
+    rdfs:label "Medical Image Viewer (DICOM)"@en .
+
+:OpenEmrFeatMedicationRecords
+    :featureClassified :BbProvideFormsForDocumentingMedications, :WhoDhiTrackClientsMedicationConsumption ;
+    a :FeatureCitation ;
+    rdfs:label "Medication Records"@en .
+
+:OpenEmrFeatOnlineDrugSearch
+    :featureClassified :BbProvideDrugCatalogs ;
+    a :FeatureCitation ;
+    rdfs:label "Online drug search"@en .
+
+:OpenEmrFeatPaperChartTracking
+    a :FeatureCitation ;
+    rdfs:label "Paper Chart Tracking"@en .
+
+:OpenEmrFeatPatientAppointmentNotification
+    :featureClassified :EhrSfmSupportForNotificationAndResponse ;
+    a :FeatureCitation ;
+    rdfs:label "Patient appointment notification"@en .
+
+:OpenEmrFeatPatientDrugScreening
+    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    a :FeatureCitation ;
+    rdfs:label "Patient Drug Screening"@en .
+
+:OpenEmrFeatPatientPortal
+    a :FeatureCitation ;
+    rdfs:label "Patient Portal"@en .
+
+:OpenEmrFeatPhysicianReminders
+    a :FeatureCitation ;
+    rdfs:label "Physician Reminders"@en .
+
+:OpenEmrFeatProcedureRecords
+    :featureClassified :BbProvideFormsForDocumentingClinicalProcedures, :BbProvideFormsForDocumentingProceduresAndOutcomes ;
+    a :FeatureCitation ;
+    rdfs:label "Procedure Records"@en .
+
+:OpenEmrFeatRecallBoard
+    :featureClassified :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness ;
+    a :FeatureCitation ;
+    rdfs:label "Recall (reminders) Board"@en .
+
+:OpenEmrFeatReferrals
+    :featureClassified :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
+    a :FeatureCitation ;
+    rdfs:label "Referrals"@en .
+
+:OpenEmrFeatSoap
+    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "SOAP note"@en .
+
+:OpenEmrFeatTrackPatientDemographics
+    :featureClassified :EhrSfmManagePatientDemographics ;
+    a :FeatureCitation ;
+    rdfs:label "Track patient demographics"@en .
+
+:OpenEmrFeatTrackPrescriptions
+    :featureClassified :EhrSfmManageMedicationList, :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    a :FeatureCitation ;
+    rdfs:label "Track patient prescriptions and medications"@en .
+
+:OpenEmrFeatVitals
+    :featureClassified :BbDisplayVitalParametersFromMonitoringDevices ;
+    a :FeatureCitation ;
+    rdfs:label "Vitals (growth charts included)"@en .
+
+:OpenEmrFeatVoiceRecognition
+    a :FeatureCitation ;
+    rdfs:label "Voice recognition"@en .
+
+:OpenEmrFuncClinicalDecisionMaking
+    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Clinical Decision Making"@en .
+
+:OpenEmrFuncElectronicMedicalRecords
+    :enterpriseFunctionClassified :BbOpeningAPatientRecord ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Electronic Medical Records"@en .
+
+:OpenEmrFuncMedicalBilling
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Medical Billing"@en .
+
+:OpenEmrFuncPatientDemographics
+    :enterpriseFunctionClassified :BbInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Demographics"@en .
+
+:OpenEmrFuncPatientPortal
+    :enterpriseFunctionClassified :BbDecisionMakingAndPatientInformation ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Portal"@en .
+
+:OpenEmrFuncPatientScheduling
+    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Scheduling"@en .
+
+:OpenEmrFuncPrescriptions
+    :enterpriseFunctionClassified :WhoDhiPrescriptionAndMedicationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Prescriptions"@en .
+
+:OpenEmrFuncReports
+    :enterpriseFunctionClassified :BbNursingDischargeAndNursingReportWriting ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Reports"@en .
+
+:OpenEyes
+    :applicationSystem :OpenEyesSystemElectronicPatientRecordForOphthalmology ;
+    :client :WebBased ;
+    :feature :OpenEyesFeatDocumentPatientExamination, :OpenEyesFeatDocumentTheAppearanceOfTheEye, :OpenEyesFeatEntryOfInformationOperations, :OpenEyesFeatImportClinicWorkLists, :OpenEyesFeatMDataCollectionAndDisplay, :OpenEyesFeatMessaging, :OpenEyesFeatPatientOverview, :OpenEyesFeatPrescribing, :OpenEyesFeatViewingOfDocuments, :OpenEyesFeatureAutoPopulateATemplatedLetter ;
+    :homepage <https://openeyes.org.uk/> ;
+    :language dbr:English_language, dbr:Modern_English ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
+    :operatingSystem dbr:Cross-platform ;
+    :organizationalUnit :OpenEyesUnitOphthalmicUnit ;
+    :programmingLanguage dbr:PHP ;
+    :repository <https://github.com/appertafoundation/openeyes> ;
+    a :SoftwareProduct ;
+    rdfs:comment "OpenEyes™ is an open source electronic patient record application for ophthalmology."@en ;
+    rdfs:label "OpenEyes"@en .
+
+:OpenEyesFeatDocumentPatientExamination
+    :featureClassified :BbProvideFormsForDocumentingProceduresAndOutcomes, :EhrSfmSupportClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "document a patient examination, investigation or procedure"@en .
+
+:OpenEyesFeatDocumentTheAppearanceOfTheEye
+    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "document the appearance of the eye"@en .
+
+:OpenEyesFeatEntryOfInformationOperations
+    :featureClassified :BbProvideFormsForPreparingOperationReports, :EhrSfmSupportClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "entry of information for a range of operations"@en .
+
+:OpenEyesFeatImportClinicWorkLists
+    a :FeatureCitation ;
+    rdfs:label "import clinic work lists"@en .
+
+:OpenEyesFeatMDataCollectionAndDisplay
+    :featureClassified :WhoDhiDataCollectionManagementAndUse, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "data collection and display"@en .
+
+:OpenEyesFeatMessaging
+    a :FeatureCitation ;
+    rdfs:label "Messaging"@en .
+
+:OpenEyesFeatPatientOverview
+    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    a :FeatureCitation ;
+    rdfs:label "patient overview"@en .
+
+:OpenEyesFeatPrescribing
+    :featureClassified :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    a :FeatureCitation ;
+    rdfs:label "prescribing and the maintenance of an agreed formulary."@en .
+
+:OpenEyesFeatViewingOfDocuments
+    a :FeatureCitation ;
+    rdfs:label "viewing of documents at video refresh rates "@en .
+
+:OpenEyesFeatureAutoPopulateATemplatedLetter
+    :featureClassified :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
+    a :FeatureCitation ;
+    rdfs:label "auto-populate a templated letter"@en .
+
+:OpenEyesSystemElectronicPatientRecordForOphthalmology
+    a :ApplicationSystemCitation ;
+    rdfs:label "electronic patient record for ophthalmology"@en .
+
+:OpenEyesUnitOphthalmicUnit
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Ophthalmic unit"@en .
+
+:OpenHospital
+    :applicationSystem :OpenHospitalAppHospitalInformationSystem ;
+    :homepage <https://sourceforge.net/projects/openhospital/> ;
+    :repository <https://github.com/informatici/openhospital> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open source electronic health record (EHR)"@en ;
+    rdfs:label "Open Hospital"@en .
+
+:OpenHospitalAppHospitalInformationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Hospital Information System"@en .
+
+:OpenImis
+    :applicationSystem :OpenImisAppInsuranceManagementInformationSystem ;
+    :client :WebBased ;
+    :enterpriseFunction :OpenImisFuncHealthFinancingProcessManagement ;
+    :feature :OpenImisFeatAccessToAllBeneficiaryData, :OpenImisFeatClaimEntry, :OpenImisFeatClaimReview, :OpenImisFeatClaimSubmission, :OpenImisFeatDigitalBeneficiaryManagementAndVerification, <http://hitontology.eu/ontology/OpenImisFeatDigitalClaimsSubmissionAnd(automated)Review>, :OpenImisFeatManageBeneficiaries, :OpenImisFeatManageBenefitPackages, :OpenImisFeatManageClientFeedback, :OpenImisFeatManageProviders, :OpenImisFeatMonitoringAndDataAnalysis, :OpenImisFeatPatientVerification, :OpenImisFeatPaymentApproval, :OpenImisFeatServiceClaimsGeneration ;
+    :homepage <http://openimis.org/> ;
+    :language dbr:English_language, dbr:Modern_English ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
+    :operatingSystem dbr:Microsoft_Windows ;
+    :programmingLanguage <http://dbpedia.org/resource/Python_%28programming_language%29> ;
+    :repository <https://openimis.atlassian.net/wiki/spaces/OP/pages/368508929/openIMIS+Software+Components+-+Download> ;
+    a :SoftwareProduct ;
+    rdfs:comment "open source software for health financing"@en ;
+    rdfs:label "OpenIMIS"@en .
+
+:OpenImisAppInsuranceManagementInformationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Insurance Management Information System"@en .
+
+:OpenImisFeatAccessToAllBeneficiaryData
+    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "access to all beneficiary and claims-related data and analysis"@en .
+
+:OpenImisFeatClaimEntry
+    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "Claim Entry"@en .
+
+:OpenImisFeatClaimReview
+    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "Claim review"@en .
+
+:OpenImisFeatClaimSubmission
+    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "Claim submission"@en .
+
+:OpenImisFeatDigitalBeneficiaryManagementAndVerification
+    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "Digital beneficiary management and verification"@en .
+
+<http://hitontology.eu/ontology/OpenImisFeatDigitalClaimsSubmissionAnd(automated)Review>
+    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    a :FeatureCitation ;
+    rdfs:label "Digital claims submission and (automated) review"@en .
+
+:OpenImisFeatManageBeneficiaries
+    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "manage beneficiaries"@en .
+
+:OpenImisFeatManageBenefitPackages
+    a :FeatureCitation ;
+    rdfs:label "manage benefit packages (services and prices)"@en .
+
+:OpenImisFeatManageClientFeedback
+    :featureClassified :WhoDhiReportingOfHealthSystemFeedbackByClients ;
+    a :FeatureCitation ;
+    rdfs:label "manage client feedback"@en .
+
+:OpenImisFeatManageProviders
+    :featureClassified :EhrSfmManageProviderInformation ;
+    a :FeatureCitation ;
+    rdfs:label "manage providers"@en .
+
+:OpenImisFeatMonitoringAndDataAnalysis
+    :featureClassified :BbAnalyzeData ;
+    a :FeatureCitation ;
+    rdfs:label "monitoring and data analysis"@en .
+
+:OpenImisFeatPatientVerification
+    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
+    a :FeatureCitation ;
+    rdfs:label "Patient verification"@en .
+
+:OpenImisFeatPaymentApproval
+    :featureClassified :WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders ;
+    a :FeatureCitation ;
+    rdfs:label "Payment approval"@en .
+
+:OpenImisFeatServiceClaimsGeneration
+    :featureClassified :EhrSfmSupportServiceRequestsAndClaims, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    a :FeatureCitation ;
+    rdfs:label "manage service claims generation, review and processing"@en .
+
+:OpenImisFuncHealthFinancingProcessManagement
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Health Financing Process Management"@en .
+
+:OpenMaxims
+    :applicationSystem :OpenMaximsAppEpr, :OpenMaximsAppPas ;
+    :homepage <http://www.imsmaxims.com/solutions/opensource/> ;
+    :repository <https://github.com/IMS-MAXIMS> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source EPR"@en ;
+    rdfs:label "OpenMAXIMS"@en .
+
+:OpenMaximsAppEpr
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic Patient Record (EPR)"@en .
+
+:OpenMaximsAppPas
+    a :ApplicationSystemCitation ;
+    rdfs:label "Patient Administration System (PAS)"@en .
+
+:OpenMrs
+    :applicationSystem :OpenMrsAppEmr ;
+    :client :Native, :WebBased ;
+    :databaseSystem :MySql ;
+    :enterpriseFunction :OpenMrsFuncDataEntry, :OpenMrsFuncFormEntry, :OpenMrsFuncHealthCareDelivery, :OpenMrsFuncInformationManagement, :OpenMrsFuncManagePatientRecords, :OpenMrsFuncPatientCare, :OpenMrsFuncReporting, :OpenMrsFuncResearch, :OpenMrsFuncUserManagement ;
+    :feature :OpenMrsFeatAlertsAndFlags, :OpenMrsFeatBuildReports, :OpenMrsFeatCohortQuery, :OpenMrsFeatCreatingPatients, :OpenMrsFeatCreatingRoles, :OpenMrsFeatCreatingUsers, :OpenMrsFeatDataEntryForms, :OpenMrsFeatDisplayGraphs, :OpenMrsFeatPatientDashboard, :OpenMrsFeatRecordPatientEncounters, :OpenMrsFeatTreatmentRegimens, :OpenMrsFeatViewPatientDemographics, :OpenMrsFeatViewingPatients ;
+    :homepage <https://openmrs.org> ;
+    :interoperability :CDA, :HL7, :HL7_CCD, :HL7_FHIR ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000055> ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    :repository <https://github.com/openmrs/> ;
+    :userGroup :OpenMrsUseClinicians, :OpenMrsUserAdministrativeStaff, :OpenMrsUserDataEntryClerks, :OpenMrsUserHealthCareProviders, :OpenMrsUserNurses ;
+    a :SoftwareProduct ;
+    rdfs:comment "open source enterprise electronic medical record system platform"@en ;
+    rdfs:label "OpenMRS"@en .
+
+:OpenMrsAppEmr
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic medical record system (EMR)"@en .
+
+:OpenMrsFeatAlertsAndFlags
+    :featureClassified :WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders, :WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup ;
+    a :FeatureCitation ;
+    rdfs:label "Patient Alerts and Flags"@en .
+
+:OpenMrsFeatBuildReports
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    a :FeatureCitation ;
+    rdfs:label "Build reports"@en .
+
+:OpenMrsFeatCohortQuery
+    :featureClassified :EhrSfmAdHocQueryAndRendering, :EhrSfmMeasurementAnalysisResearchAndReports ;
+    a :FeatureCitation ;
+    rdfs:label "Cohort query"@en .
+
+:OpenMrsFeatCreatingPatients
+    :featureClassified :EhrSfmManageAPatientRecord ;
+    a :FeatureCitation ;
+    rdfs:label "Create new patient record"@en .
+
+:OpenMrsFeatCreatingRoles
+    :featureClassified :EhrSfmUserAccessSuccessfulSecurityAuditTrigger, :EhrSfmUserAttemptsToAccessDataUnsuccessfulAccessDeniedSecurityAuditTrigger ;
+    a :FeatureCitation ;
+    rdfs:label "Creating roles"@en .
+
+:OpenMrsFeatCreatingUsers
+    :featureClassified :EhrSfmUserAuthenticationToTheSystemStartUserSessionSecurityAuditTrigger ;
+    a :FeatureCitation ;
+    rdfs:label "Creating Users"@en .
+
+:OpenMrsFeatDataEntryForms
+    :featureClassified :BbProvideFormsForDocumentingPlannedTasks, :BbProvideFormsForEnteringClinicalDataFreetextOrStructured, :WhoDhiDataCollectionManagementAndUse ;
+    a :FeatureCitation ;
+    rdfs:label "Data entry using electronic forms"@en .
+
+:OpenMrsFeatDisplayGraphs
+    a :FeatureCitation ;
+    rdfs:label "Display graphs of patient information"@en .
+
+:OpenMrsFeatPatientDashboard
+    :featureClassified :EhrSfmInformationView, :EhrSfmViewaccessRecordEntryContent ;
+    a :FeatureCitation ;
+    rdfs:label "Patient dashboard"@en .
+
+:OpenMrsFeatRecordPatientEncounters
+    :featureClassified :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "Record patient encounters"@en .
+
+:OpenMrsFeatTreatmentRegimens
+    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    a :FeatureCitation ;
+    rdfs:label "shows a patient's current and completed treatment regimens"@en .
+
+:OpenMrsFeatViewPatientDemographics
+    :featureClassified :EhrSfmManagePatientDemographics ;
+    a :FeatureCitation ;
+    rdfs:label "View patient demographics"@en .
+
+:OpenMrsFeatViewingPatients
+    :featureClassified :EhrSfmManageAPatientRecord, :EhrSfmViewaccessRecordEntryContent ;
+    a :FeatureCitation ;
+    rdfs:label "Viewing patient records"@en .
+
+:OpenMrsFuncDataEntry
+    :enterpriseFunctionClassified :WhoDhiClientHealthRecords ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Data entry"@en .
+
+:OpenMrsFuncFormEntry
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Form Entry"@en .
+
+:OpenMrsFuncHealthCareDelivery
+    :enterpriseFunctionClassified :BbPatientCare ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Health care delivery"@en .
+
+:OpenMrsFuncInformationManagement
+    :enterpriseFunctionClassified :BbInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Information Management"@en .
+
+:OpenMrsFuncManagePatientRecords
+    :enterpriseFunctionClassified :BbInformationManagement, :BbOpeningAPatientRecord ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Manage patient records"@en .
+
+:OpenMrsFuncPatientCare
+    :enterpriseFunctionClassified :BbPatientCare ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Care"@en .
+
+:OpenMrsFuncReporting
+    :enterpriseFunctionClassified :BbNursingDischargeAndNursingReportWriting ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Reporting"@en .
+
+:OpenMrsFuncResearch
+    :enterpriseFunctionClassified :BbResearchAndEducation ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Research"@en .
+
+:OpenMrsFuncUserManagement
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "User Management and Access Control"@en .
+
+:OpenMrsUseClinicians
+    a :UserGroupCitation ;
+    rdfs:label "Clinicians"@en .
+
+:OpenMrsUserAdministrativeStaff
+    a :UserGroupCitation ;
+    rdfs:label "Administrative staff"@en .
+
+:OpenMrsUserDataEntryClerks
+    a :UserGroupCitation ;
+    rdfs:label "Data entry clerks"@en .
+
+:OpenMrsUserHealthCareProviders
+    a :UserGroupCitation ;
+    rdfs:label "Health care providers"@en .
+
+:OpenMrsUserNurses
+    a :UserGroupCitation ;
+    rdfs:label "Nurses"@en .
+
+:OscarEmr
+    :applicationSystem :OscarEmrAppEmr ;
+    :homepage <https://oscar-emr.com/oscar/> ;
+    :repository <https://bitbucket.org/oscaremr/oscar/src/oscar19.1/> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source EMR"@en ;
+    rdfs:label "OSCAREMR"@en .
+
+:OscarEmrAppEmr
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic Medical Record (EMR)"@en .
+
+:Pacs1
+    :client :Native, :WebBased ;
+    :feature :Pacs1Feat3DAnd4DFunctionality, :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines, :Pacs1FeatApprovalConcept, :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities, :Pacs1FeatDataArchivingAndManagemnt, :Pacs1FeatDirectIntegrationInClinicalInformationSystem, :Pacs1FeatDistributionOfImages, :Pacs1FeatHangingProtocols, :Pacs1FeatMovingCTImages, :Pacs1FeatMulticenterInstallationWithCentralDataArchiving, :Pacs1FeatOnlineAndOfflineArchiveManagement, :Pacs1FeatProtocolOfAllTasksTakenByUsers, :Pacs1FeatQueryingOverVariousArchives, :Pacs1FeatRetrievalOfVariousArchives, :Pacs1FeatSnapshots, :Pacs1FeatStandardConformityForInterfacesToModalities, :Pacs1FeatStatisticalAnalyses, :Pacs1FeatVariousMeasurementAndAnalysesTools, :Pacs1FeatWorkLists, :Pacs1LosslessImageDataCompression ;
+    :interoperability :DICOM, :HL7, :IHE ;
+    :language dbr:French_language, dbr:German_language, dbr:Spanish_language ;
+    a :SoftwareProduct ;
+    rdfs:comment "Picture Archiving and Communication System Dummy 1"@en ;
+    rdfs:label "CommercialPACS1"@en .
+
+:Pacs1Feat3DAnd4DFunctionality
+    :featureClassified :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "3D and 4D functionality"@en .
+
+:Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines
+    :featureClassified :JoshiPacsSupportForServiceAndConfigurationUpgrades, :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Additional features for several medical disciplines"@en .
+
+:Pacs1FeatApprovalConcept
+    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Approval concept"@en .
+
+:Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities
+    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems, :WhoDhiMapLocationOfHealthEvents ;
+    a :FeatureCitation ;
+    rdfs:label "Cross-study registration of examinations of various modalities"@en .
+
+:Pacs1FeatDataArchivingAndManagemnt
+    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Data archiving and management"@en .
+
+:Pacs1FeatDirectIntegrationInClinicalInformationSystem
+    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Direct integration in clinical information system"@en .
+
+:Pacs1FeatDistributionOfImages
+    :featureClassified :WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients ;
+    a :FeatureCitation ;
+    rdfs:label "Distribution of images"@en .
+
+:Pacs1FeatHangingProtocols
+    :featureClassified :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    a :FeatureCitation ;
+    rdfs:label "Hanging protocols"@en .
+
+:Pacs1FeatMovingCTImages
+    :featureClassified :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Moving CT images"@en .
+
+:Pacs1FeatMulticenterInstallationWithCentralDataArchiving
+    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Multicenter installation with central data archiving"@en .
+
+:Pacs1FeatOnlineAndOfflineArchiveManagement
+    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Online and offline archive management"@en .
+
+:Pacs1FeatProtocolOfAllTasksTakenByUsers
+    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Protocol of all tasks taken by users"@en .
+
+:Pacs1FeatQueryingOverVariousArchives
+    :featureClassified :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Querying over various archives"@en .
+
+:Pacs1FeatRetrievalOfVariousArchives
+    :featureClassified :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Retrieval of various archives"@en .
+
+:Pacs1FeatSnapshots
+    :featureClassified :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Snapshots"@en .
+
+:Pacs1FeatStandardConformityForInterfacesToModalities
+    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Standard conformity for interfaces to modalities"@en .
+
+:Pacs1FeatStatisticalAnalyses
+    :featureClassified :JoshiPacsToolsForContinuousPacsPerformanceMonitoring, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Statistical analyses"@en .
+
+:Pacs1FeatVariousMeasurementAndAnalysesTools
+    :featureClassified :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Various measurment and analyses tools"@en .
+
+:Pacs1FeatWorkLists
+    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
+    a :FeatureCitation ;
+    rdfs:label "Work lists"@en .
+
+:Pacs1LosslessImageDataCompression
+    :featureClassified :JoshiPacsSupportForHighImageQuality, :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Lossless image data compression"@en .
+
+:Pacs2
+    :client :Mobile, :WebBased ;
+    :feature :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
+    :interoperability :DICOM ;
+    :language dbr:English_language ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    a :SoftwareProduct ;
+    rdfs:comment "Picture Archiving and Communication System Dummy 2"@en ;
+    rdfs:label "Commercial PACS 2"@en .
+
+:Pacs2FeatAdaptableWorkflow
+    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthFacilitiesAndRelatedInformation, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
+    a :FeatureCitation ;
+    rdfs:label "Adaptable Workflow"@en .
+
+:Pacs2FeatAutofax
+    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Autofax"@en .
+
+:Pacs2FeatDICOMStructuredReporting
+    :featureClassified :JoshiPacsStructuredReporting, :WhoDhiParseUnstructuredDataIntoStructuredData ;
+    a :FeatureCitation ;
+    rdfs:label "DICOM structured reporting"@en .
+
+:Pacs2FeatDictationFunction
+    :featureClassified :JoshiPacsVoiceRecognitionTranscriptionAndReporting, :WhoDhiDataExchangeAcrossSystems, :WhoDhiNonRoutineDataCollectionAndManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Dictation function"@en .
+
+:Pacs2FeatDisplayOfAllModalities
+    :featureClassified :JoshiPacsSupportForMultiSpecialtyImagesNonRadImages, :WhoDhiListHealthFacilitiesAndRelatedInformation ;
+    a :FeatureCitation ;
+    rdfs:label "Display of all modalities"@en .
+
+:Pacs2FeatIntegrationOfOtherInformationSystems
+    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Integration of other information systems"@en .
+
+:Pacs2FeatNeededDiagnosticToolsAndViews
+    :featureClassified :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Needed diagnostic tools and views"@en .
+
+:Pacs2FeatRemoteAcess
+    :featureClassified :WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider ;
+    a :FeatureCitation ;
+    rdfs:label "Remote access"@en .
+
+:Pacs2FeatTabletView
+    :featureClassified :WhoDhiDataExchangeAcrossSystems, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Tablet view"@en .
+
+:Pacs2FeatZeroFootprintViewer
+    :featureClassified :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Zero-footprint viewer"@en .
+
+:Pik
+    :applicationSystem :PIkAppPflegeinformationsKommunikationssystem ;
+    :feature :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning, :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry, :PikFeatureCreationOfNursingCarePlans, :PikFeatureSupportingAllPhasesOfTheNursingProcess, :PikFeatureWardManagement, :PikFeatureWritingOfNursingLetters, :PikNursingDocumentationForms ;
+    a :SoftwareProduct ;
+    rdfs:label "PIK"@en .
+
+:PikAppPflegeinformationsKommunikationssystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Pflegeinformations- und Kommunikationssystem"@en .
+
+:PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning
+    :featureClassified :EhrSfmManageOrders, :EhrSfmSupportOrders ;
+    a :FeatureCitation ;
+    rdfs:label "adaption of nursing care plans during care planning"@en .
+
+:PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
+    a :FeatureCitation ;
+    rdfs:label "anamnesis supported by offering flexible forms for data entry"@en .
+
+:PikFeatureCreationOfNursingCarePlans
+    :featureClassified :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageOrders, :EhrSfmSupportOrders ;
+    a :FeatureCitation ;
+    rdfs:label "creation of nursing care plans"@en .
+
+:PikFeatureSupportingAllPhasesOfTheNursingProcess
+    :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
+    a :FeatureCitation ;
+    rdfs:label "supporting all phases of the nursing process"@en .
+
+:PikFeatureWardManagement
+    :featureClassified :EhrSfmManageResourceAvailability ;
+    a :FeatureCitation ;
+    rdfs:label "ward management"@en .
+
+:PikFeatureWritingOfNursingLetters
+    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    a :FeatureCitation ;
+    rdfs:label "writing of nursing letters"@en .
+
+:PikNursingDocumentationForms
+    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "nursing documentation forms"@en .
 
 :SAPR3BusinessProcessControlSystemSoftware rdf:type :SoftwareProduct ;
                                                  :feature :planningView ,
