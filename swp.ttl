@@ -14,7 +14,14 @@
                                 :AgfaPacsImpaxFeatureBookingOfExaminations ,
                                 :AgfaPacsImpaxFeaturePatientRegistraction ,
                                 :AgfaPacsImpaxFeatureSpeechRecognition ;
+                 a :SoftwareProduct ;
                  rdfs:label "Agfa PACS IMPAX"@en .
+
+:AgfaPacsImpaxFeaturePatientRegistration
+    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    a :FeatureCitation ;
+    rdfs:label "patient registration"@en .
+
 
 :AgfaPacsImpaxFeatureAutomaticAndPaperlessOperations a :FeatureCitation;
                                                      rdfs:label "automatic and paperless operations"@en .
@@ -48,11 +55,6 @@
 :AgfaRisElefanteFeatureSpeechRecognition a :FeatureCitation;
   :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
   rdfs:label "speech recognition"@en .
-
-:AbbottIStat rdf:type :SoftwareProduct ;
-               :feature :completeTestResults ,
-                              :readBarCodeLabel ;
-               rdfs:label "Abbott i-Stat"@en .
 
 :BetterMeds
     :applicationSystem :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution ;
@@ -189,21 +191,65 @@
 
 :CernerFirstNet
     :applicationSystem :FirstNetAppEmergencyMedicineInformationSystem ;
-    :feature :creationOfDataRelationToTriage, :dischargeSummaries, :mandatoryReporting, :PacsInterface, :patientManagementPlans ;
+    :feature :CernerFirstNetFeatureCreationOfDataRelationToTriage, :CernerFirstNetFeatureDischargeSummaries, :CernerFirstNetFeatureMandatoryReporting, :CernerFirstNetPatientManagementPlans ;
     a :SoftwareProduct ;
     rdfs:label "Cerner First Net"@en .
 
+:CernerFirstNetFeatureCreationOfDataRelationToTriage
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmSupportCareCoordinationReporting, :EhrSfmSupportTriageCategorization ;
+    a :FeatureCitation ;
+    rdfs:label "creation of data relation to triage"@en .
+
+:CernerFirstNetFeatureDischargeSummaries
+    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    a :FeatureCitation ;
+    rdfs:label "discharge summaries"@en .
+
+:CernerFirstNetFeatureMandatoryReporting
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    a :FeatureCitation ;
+    rdfs:label "mandatory reporting"@en .
+
+:CernerFirstNetPatientManagementPlans
+    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "patient management plans"@en .
+
 :CernerMilleniumPowerOrders
-    :applicationSystem :PowerOrderAppCPOE ;
-    :feature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
+    :applicationSystem :CernerMilleniumPowerOrdersAppCPOE ;
+    :feature :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
     a :SoftwareProduct ;
     rdfs:label "Cerner Millenium Power Orders"@en .
 
+:CernerMilleniumPowerOrdersAppCPOE
+    a :ApplicationSystemCitation ;
+    rdfs:label "Computerized Physician Order Entry (CPOE) System"@en .
+
+:CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection
+    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "dropdown menu of predefined order sentences triggered on drug selection"@en .
+
+:CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm
+    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
+
 :CernerSoarianCPOEPlatform
     :applicationSystem :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
-    :feature :medication-specificOrderSet, :unit-specificOderSet ;
+    :feature :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet, :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet ;
     a :SoftwareProduct ;
     rdfs:label "Cerner Soarian CPOE platform"@en .
+
+:CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet
+    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "medication-specific order set"@en .
+
+:CernerSoarianCpoePlatformFeatureUnitSpecificOderSet
+    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "unit-specific oder set"@en .
 
 :CIS1
     :client :Mobile, :Native ;
@@ -423,7 +469,7 @@
 
 :CSCMedChart
     :applicationSystem :CSCMedChartAppMedicationManagementSystem ;
-    :feature :predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :predefinedOrderSentencesSearchableByCategoryQuickLists, :prescribeLonghand ;
+    :feature :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists, :CscMedChartFeaturePrescribeLonghand ;
     a :SoftwareProduct ;
     rdfs:label "CSC Med Chart"@en .
 
@@ -431,16 +477,20 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Medication Management System"@en .
 
+:CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick
+    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "predefined order sentences allow for group of related orders to be selected with single click"@en .
 
+:CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists
+    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "predefined order sentences searchable by category quick lists"@en .
 
-
-:EclipsysContinuum_2000CDS rdf:type :SoftwareProduct ;
-                             :feature :auditTrail ,
-                                            :automaticTransferOfLaboratoryData ,
-                                            :electronicSignature ,
-                                            :graphicalUserInterfaceToDocumentCare ,
-                                            :pointAndClickDataEntry ;
-                             rdfs:label "Eclipsys Continuum 2000 CDS"@en .
+:CscMedChartFeaturePrescribeLonghand
+    :featureClassified :EhrSfmManageOrders ;
+    a :FeatureCitation ;
+    rdfs:label "prescribe longhand"@en .
 
 :DHIS2
     :applicationSystem :DHIS2AppHMIS ;
@@ -458,19 +508,81 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Dental Practice Management Software"@en .
 
+:EChasquiFeatReportsOnTestsPerformed
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "reports on tests performed"@en .
+
+:EChasquiFeatureConsolidatedListOfResultsForJurisdiction
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "consolidated list of results for jurisdiction"@en .
+
+:EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "patient page containing details of any single sample"@en .
+
+:EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "patient page containing the history of all tests performed"@en .
+
+:EChasquiFeatureToolsForQualityControl
+    :featureClassified :EhrSfmManageResults ;
+    a :FeatureCitation ;
+    rdfs:label "tools for quality control"@en .
+
+:EChasquiFeatureUserDirectoryToControlAnyAccess
+    :featureClassified :EhrSfmRegistryAndDirectoryServices ;
+    a :FeatureCitation ;
+    rdfs:label "user directory to control any access"@en .
+
+:EChasquiFeatureWarningsForDelayedReportingOfResults
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "warnings for delayed reporting of results"@en .
+
 :EChasquiLaboratoryInformationSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information System"@en .
+
+:EDocFeatureCapturingDataForAllPatientVisits
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManagePatientHistory ;
+    a :FeatureCitation ;
+    rdfs:label "capturing data for all patient visits"@en .
+
+:EclipsysContinuum2000CdsAuditTrail
+    :featureClassified :EhrSfmAudit ;
+    a :FeatureCitation ;
+    rdfs:label "audit trail"@en .
+
+:EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "automatic transfer of laboratory data"@en .
+
+:EclipsysContinuum2000CdsFeatureElectronicSignature
+    :featureClassified :EhrSfmManageRecordEntryAmendedCorrectedAndAugementedState ;
+    a :FeatureCitation ;
+    rdfs:label "electronic signature"@en .
+
+:EclipsysContinuum2000CdsFeaturePointAndClickDataEntry
+    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    a :FeatureCitation ;
+    rdfs:label "point and click data entry"@en .
+
+:EclipsysContinuum_2000CDS
+    :applicationSystem :EclipsysAppClinicalDocumentatioSystem ;
+    :feature :EclipsysContinuum2000CdsAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
+    a :SoftwareProduct ;
+    rdfs:label "Eclipsys Continuum 2000 CDS"@en .
 
 :EclipsysAppClinicalDocumentatioSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Clinical Documentation System (CDS)"@en .
 
-:EclipsysContinuum_2000CDS
-    :applicationSystem :EclipsysAppClinicalDocumentatioSystem ;
-    :feature :auditTrail, :automaticTransferOfLaboratoryData, :electronicSignature, :graphicalUserInterfaceToDocumentCare, :pointAndClickDataEntry ;
-    a :SoftwareProduct ;
-    rdfs:label "Eclipsys Continuum 2000 CDS"@en .
+
 
 :ElectronicPatientObservationSystem
     a :ApplicationSystemCitation ;
@@ -527,28 +639,24 @@
     rdfs:label "Electronic medical record manager (EMR)"@en .
 
 :GEPatchspecdPacs
-    :feature :automaticForwardedProcessedImages, :forwardIntoArchive ;
+    :feature :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
     a :SoftwareProduct ;
     rdfs:label "GE Patchspecd PACS"@en .
 
-:GEPatchspecdPacs rdf:type :SoftwareProduct ;
-                    :feature :automaticForwardedProcessedImages ,
-                                   :forwardIntoArchive ,
-                                   :interfacedToTheRis ;
-                    rdfs:label "GE Patchspecd PACS"@en .
+:GePatchspecdPacsFeatureAutomaticForwardedProcessedImages
+    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "automatic forwarded processed images"@en .
 
+:GePatchspecdPacsForwardIntoArchive
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "forward into archive"@en .
 
-:HNAMillenium rdf:type :SoftwareProduct ;
-               :feature :allowingToReuseEarlierAnamnesticData ,
-                              :automaticCreationOfANursingTransferReport ,
-                              :comprisingASetOfNursingCareStandards ,
-                              :nursingAnamnesis ,
-                              :nursingCarePlanningSupportedByPre-definedNursingCareStandards ,
-                              :nursingDiagnosisBasedOnTheNANDATaxonomy ,
-                              :remindingAndDocumentationOfNursingTasks ,
-                              :scheduling ,
-                              :supportNursingCarePlanningForCertainPatientCases ,
-                              :useOfClinicalPathways ;
+:HNAMillenium
+    :applicationSystem :HNAMilleniumAppPharmacyManagementSystem ;
+    :feature :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPre-definedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
+               a :SoftwareProduct ;
                rdfs:label "HNA Millenium"@en .
 
 :HospitalRun
