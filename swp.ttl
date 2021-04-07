@@ -29,10 +29,18 @@
     rdfs:label "Abbott i-Stat"@en .
 
 :AgfaPacsImpax
-    :applicationSystem :IMPAXAppPACS, :IMPAXAppRISPACSReporting ;
+    :applicationSystem :AgfaPacsImpaxAppPacs, :AgfaPacsImpaxAppRisPacsReporting ;
     :feature :AgfaPacsImpaxFeatureBookingOfExaminations, :AgfaPacsImpaxFeaturePatientRegistration, :AgfaPacsImpaxFeatureSpeechRecognition ;
     a :SoftwareProduct ;
     rdfs:label "Agfa PACS IMPAX"@en .
+
+:AgfaPacsImpaxAppPacs
+    a :ApplicationSystemCitation ;
+    rdfs:label "Picture Archiving and Communication System (PACS)"@en .
+
+:AgfaPacsImpaxAppRisPacsReporting
+    a :ApplicationSystemCitation ;
+    rdfs:label "RIS/PACS/Reporting (Radiology Information System/Picture Archiving and Communications System) Solution"@en .
 
 :AgfaPacsImpaxFeatureBookingOfExaminations
     a :FeatureCitation ;
@@ -48,10 +56,14 @@
     rdfs:label "speech recognition"@en .
 
 :AgfaRisElefante
-    :applicationSystem :ElefanteAppRIS ;
+    :applicationSystem :AgfaRisElefanteAppRis ;
     :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations, :AgfaRisElefanteFeatureBookingOfExaminations, :AgfaRisElefanteFeaturePatientRegistration, :AgfaRisElefanteFeatureSpeechRecognition ;
     a :SoftwareProduct ;
     rdfs:label "Agfa RIS Elefante"@en .
+
+:AgfaRisElefanteAppRis
+    a :ApplicationSystemCitation ;
+    rdfs:label "Radiology Information System (RIS)"@en .
 
 :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations
     a :FeatureCitation ;
@@ -491,7 +503,7 @@
     a :FeatureCitation ;
     rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
 
-:CernerSoarianCPOEPlatform
+:CernerSoarianCpoePlatform
     :applicationSystem :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
     :feature :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet, :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet ;
     a :SoftwareProduct ;
@@ -507,229 +519,229 @@
     a :FeatureCitation ;
     rdfs:label "unit-specific oder set"@en .
 
-:CIS1
+:Cis1
     :client :Mobile, :Native ;
-    :enterpriseFunction :CIS1FuncAccounting, :CIS1FuncControlling, :CIS1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :CIS1FuncKnowledgeManagement, :CIS1FuncLogistics, :CIS1FuncManageVariousClinicalAndDiagnosticResults, :CIS1FuncMedicationOrderingAndMedicationDocumentation, :CIS1FuncNursingDocumentation, :CIS1FuncQualityAssurance, :CIS1FuncScheduling, :CIS1FuncServiceRecording, :CIS1FuncSurveillanceOfInfectiousDiseases, :CIS1FuncVariousTypesOfBilling, :CIS1FuncWardOrganization, :CISFuncTriage ;
-    :feature :CIS1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :CIS1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :CIS1FeatSupportOfNursingDocumentation, :CIS1FeatSupportOfQualityAssurance, :CIS1FeatSupportOfTriage, :CIS1FeatSupportOfVariousTypesOfBilling, :CIS1FeatSupportOfWardOrganization, :CIS1FeatSupportSurveillanceOfInfectiousDiseases, :CIS1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CISFeatSupportOfServiceRecording ;
+    :enterpriseFunction :Cis1FuncAccounting, :Cis1FuncControlling, :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FuncKnowledgeManagement, :Cis1FuncLogistics, :Cis1FuncManageVariousClinicalAndDiagnosticResults, :Cis1FuncMedicationOrderingAndMedicationDocumentation, :Cis1FuncNursingDocumentation, :Cis1FuncQualityAssurance, :Cis1FuncScheduling, :Cis1FuncServiceRecording, :Cis1FuncSurveillanceOfInfectiousDiseases, :Cis1FuncVariousTypesOfBilling, :Cis1FuncWardOrganization, :CisFuncTriage ;
+    :feature :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :Cis1FeatSupportOfNursingDocumentation, :Cis1FeatSupportOfQualityAssurance, :Cis1FeatSupportOfTriage, :Cis1FeatSupportOfVariousTypesOfBilling, :Cis1FeatSupportOfWardOrganization, :Cis1FeatSupportSurveillanceOfInfectiousDiseases, :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CisFeatSupportOfServiceRecording ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical information system (integrated EHR system) Dummy 1"@en ;
     rdfs:label "Commercial CIS1"@en .
 
-:CIS1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines
+:Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines
     :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "Support of integrated patient centred documentation for different disciplines"@en .
 
-:CIS1FeatSupportOfMedicationOrderingAndMedicationDocumentation
+:Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation
     :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders ;
     a :FeatureCitation ;
     rdfs:label "Support of medication ordering and medication documentation"@en .
 
-:CIS1FeatSupportOfNursingDocumentation
+:Cis1FeatSupportOfNursingDocumentation
     :featureClassified :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of nursing documentation"@en .
 
-:CIS1FeatSupportOfQualityAssurance
+:Cis1FeatSupportOfQualityAssurance
     :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures, :EhrSfmSupportForProcessImprovement ;
     a :FeatureCitation ;
     rdfs:label "Support of quality assurance"@en .
 
-:CIS1FeatSupportOfTriage
+:Cis1FeatSupportOfTriage
     :featureClassified :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "Support of triage"@en .
 
-:CIS1FeatSupportOfVariousTypesOfBilling
+:Cis1FeatSupportOfVariousTypesOfBilling
     :featureClassified :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support of various types of billing"@en .
 
-:CIS1FeatSupportOfWardOrganization
+:Cis1FeatSupportOfWardOrganization
     :featureClassified :EhrSfmManageFacilityDemographics, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
     a :FeatureCitation ;
     rdfs:label "Support of ward organization"@en .
 
-:CIS1FeatSupportSurveillanceOfInfectiousDiseases
+:Cis1FeatSupportSurveillanceOfInfectiousDiseases
     :featureClassified :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
     a :FeatureCitation ;
     rdfs:label "Support surveillance of infectious diseases"@en .
 
-:CIS1FeatSupportToManagevariousClinicalAndDiagnosticResults
+:Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "Support to manage various clinical and diagnostic results"@en .
 
-:CIS1FuncAccounting
+:Cis1FuncAccounting
     :enterpriseFunctionClassified :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Accounting"@en .
 
-:CIS1FuncControlling
+:Cis1FuncControlling
     :enterpriseFunctionClassified :BbControlling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Controlling"@en .
 
-:CIS1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines
+:Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines
     :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbInformationManagement, :BbPatientAdministration, :BbPatientCare, :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Integrated patient centred documentation for different disciplines"@en .
 
-:CIS1FuncKnowledgeManagement
+:Cis1FuncKnowledgeManagement
     :enterpriseFunctionClassified :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Knowledge management"@en .
 
-:CIS1FuncLogistics
+:Cis1FuncLogistics
     :enterpriseFunctionClassified :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Logistics"@en .
 
-:CIS1FuncManageVariousClinicalAndDiagnosticResults
+:Cis1FuncManageVariousClinicalAndDiagnosticResults
     :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manage various clinical and diagnostic results"@en .
 
-:CIS1FuncMedicationOrderingAndMedicationDocumentation
+:Cis1FuncMedicationOrderingAndMedicationDocumentation
     :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medication ordering and medication documentation"@en .
 
-:CIS1FuncNursingDocumentation
+:Cis1FuncNursingDocumentation
     :enterpriseFunctionClassified :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Nursing Documentation"@en .
 
-:CIS1FuncQualityAssurance
+:Cis1FuncQualityAssurance
     :enterpriseFunctionClassified :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality assurance"@en .
 
-:CIS1FuncScheduling
+:Cis1FuncScheduling
     :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Scheduling"@en .
 
-:CIS1FuncServiceRecording
+:Cis1FuncServiceRecording
     :enterpriseFunctionClassified :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Service recording"@en .
 
-:CIS1FuncSurveillanceOfInfectiousDiseases
+:Cis1FuncSurveillanceOfInfectiousDiseases
     :enterpriseFunctionClassified :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Surveillance of infectious diseases"@en .
 
-:CIS1FuncVariousTypesOfBilling
+:Cis1FuncVariousTypesOfBilling
     :enterpriseFunctionClassified :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Various types of billing"@en .
 
-:CIS1FuncWardOrganization
+:Cis1FuncWardOrganization
     :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSupplyAndDisposalManagement, :BbSupplyManagementSchedulingAndResourceAllocation, :WhoDhiHumanResourceManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Ward organization"@en .
 
-:CIS2
+:Cis2
     :client :Mobile, :Native ;
-    :enterpriseFunction :CIS2Func, :CIS2FuncAmbulance, :CIS2FuncBilling, :CIS2FuncDecisionSupport, :CIS2FuncMedication, :CIS2FuncPatientAdministration, :CIS2FuncScheduling ;
-    :feature :CIS2FeatSupportForBilling, :CIS2FeatSupportForPatientAdministration, <http://hitontology.eu/ontology/CIS2FeatSupportForThe%20Ambulance>, :CIS2FeatSupportOfClinicalDocumentation, :CIS2FeatSupportOfDecisionSupport, :CIS2FeatSupportOfMedicationAndOrdering, :CIS2FeatSupportOfNursingDocumentation, :CIS2FeatSupportOfScheduling ;
+    :enterpriseFunction :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
+    :feature :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, <http://hitontology.eu/ontology/Cis2FeatSupportForThe%20Ambulance>, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical Information System Integrated EHR system) Dummy 2"@en ;
     rdfs:label "Commercial CIS2"@en .
 
-:CIS2FeatSupportForBilling
+:Cis2FeatSupportForBilling
     :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmSupportFinancialReporting, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support for Billing"@en .
 
-:CIS2FeatSupportForPatientAdministration
+:Cis2FeatSupportForPatientAdministration
     :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManagePatientsResidenceForTheProvisionAndAdministrationOfServices, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support for patient administration"@en .
 
-<http://hitontology.eu/ontology/CIS2FeatSupportForThe%20Ambulance>
+<http://hitontology.eu/ontology/Cis2FeatSupportForTheAmbulance>
     :featureClassified :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "Support for the Ambulance"@en .
 
-:CIS2FeatSupportOfClinicalDocumentation
+:Cis2FeatSupportOfClinicalDocumentation
     :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmSupportExternallySourcedClinicalDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of clinical documentation"@en .
 
-:CIS2FeatSupportOfDecisionSupport
+:Cis2FeatSupportOfDecisionSupport
     :featureClassified :EhrSfmClinicalDecisionSupportSystemGuidelinesUpdates ;
     a :FeatureCitation ;
     rdfs:label "Support of decision support"@en .
 
-:CIS2FeatSupportOfMedicationAndOrdering
+:Cis2FeatSupportOfMedicationAndOrdering
     :featureClassified :EhrSfmManageMedicationList, :EhrSfmManageOrders, :EhrSfmSupportMedicationAndImmunizationOrdering, :EhrSfmSupportTreatmentAdministration ;
     a :FeatureCitation ;
     rdfs:label "Support of medication and ordering"@en .
 
-:CIS2FeatSupportOfNursingDocumentation
+:Cis2FeatSupportOfNursingDocumentation
     :featureClassified :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of nursing documentation"@en .
 
-:CIS2FeatSupportOfScheduling
+:Cis2FeatSupportOfScheduling
     :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmManageResourceAvailability ;
     a :FeatureCitation ;
     rdfs:label "Support of scheduling"@en .
 
-:CIS2Func
+:Cis2Func
     :enterpriseFunctionClassified :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Clinical documentation"@en .
 
-:CIS2FuncAmbulance
+:Cis2FuncAmbulance
     :enterpriseFunctionClassified :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Ambulance"@en .
 
-:CIS2FuncBilling
+:Cis2FuncBilling
     :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
-:CIS2FuncDecisionSupport
+:Cis2FuncDecisionSupport
     :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Decision support"@en .
 
-:CIS2FuncMedication
+:Cis2FuncMedication
     :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medication"@en .
 
-:CIS2FuncPatientAdministration
+:Cis2FuncPatientAdministration
     :enterpriseFunctionClassified :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient administration"@en .
 
-:CIS2FuncScheduling
+:Cis2FuncScheduling
     :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService, :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Scheduling"@en .
 
-:CISFeatSupportOfServiceRecording
+:CisFeatSupportOfServiceRecording
     :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
     a :FeatureCitation ;
     rdfs:label "Support of service recording"@en .
 
-:CISFuncTriage
+:CisFuncTriage
     :enterpriseFunctionClassified :BbPatientAdministration, :BbPatientCare, :BbPatientDischargeAndTransferToOtherInstitutions ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Triage"@en .
 
-:CSCMedChart
-    :applicationSystem :CSCMedChartAppMedicationManagementSystem ;
+:CscMedChart
+    :applicationSystem :CscMedChartAppMedicationManagementSystem ;
     :feature :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists, :CscMedChartFeaturePrescribeLonghand ;
     a :SoftwareProduct ;
     rdfs:label "CSC Med Chart"@en .
 
-:CSCMedChartAppMedicationManagementSystem
+:CscMedChartAppMedicationManagementSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Medication Management System"@en .
 
@@ -844,10 +856,6 @@
     a :ApplicationSystemCitation ;
     rdfs:label "electronic patient observation system"@en .
 
-:ElefanteAppRIS
-    a :ApplicationSystemCitation ;
-    rdfs:label "Radiology Information System (RIS)"@en .
-
 :Elexis
     :applicationSystem :ElexisAppElektronischeKrankengeschichte, :ElexisAppSoftwareArztpraxis ;
     :client :Native ;
@@ -912,17 +920,17 @@
 :HNAMillenium
     :applicationSystem :HNAMilleniumAppPharmacyManagementSystem ;
     :feature :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPre-definedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
-               a :SoftwareProduct ;
-               rdfs:label "HNA Millenium"@en .
-
-:HNAMilleniumAppPharmacyManagementSystem
-    a :ApplicationSystemCitation ;
-    rdfs:label "Pharmacy Management System"@en .
+    a :SoftwareProduct ;
+    rdfs:label "HNA Millenium"@en .
 
 :HnaMilleniumAllowingToReuseEarlierAnamnesticData
     :featureClassified :EhrSfmManagePatientHistory ;
     a :FeatureCitation ;
     rdfs:label "allowing to reuse earlier anamnestic data"@en .
+
+:HnaMilleniumAppPharmacyManagementSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Pharmacy Management System"@en .
 
 :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks
     :featureClassified :EhrSfmManageClinicalHistory, :EhrSfmManageClinicalWorkflowTasking ;
@@ -1018,14 +1026,8 @@
     a :FeatureCitation ;
     rdfs:label "Online case discussion"@en .
 
-:IMPAXAppPACS
-    a :ApplicationSystemCitation ;
-    rdfs:label "Picture Archiving and Communication System (PACS)"@en .
 
 
-:IMPAXAppRISPACSReporting
-    a :ApplicationSystemCitation ;
-    rdfs:label "RIS/PACS/Reporting (Radiology Information System/Picture Archiving and Communications System) Solution"@en .
 
 :iPathFeatTeachingAndConferencingSessions
     :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders, :WhoDhiProvideTrainingContentToHealthcareProviders ;
@@ -1055,7 +1057,9 @@
     rdfs:label "Technician"@en .
 
 :Medicator
-    :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrug-drugInteractions, :MedicatorFeatureSafetyAlertsInRealTime .
+    :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions, :MedicatorFeatureSafetyAlertsInRealTime, :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert, :MedicatorSafetyAlertsInCaseOfAllergies, :MedicatorSafetyAlertsInCaseOfOverdosing, :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
+    a :SoftwareProduct ;
+    rdfs:label "Medicator"@en .
 
 :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
     :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
@@ -1082,29 +1086,21 @@
     a :FeatureCitation ;
     rdfs:label "safety alerts in real time"@en .
 
-:Medicator rdf:type :SoftwareProduct ;
-           :feature :medicationControlBasedOnNationalDrugDatabase ,
-                          :medicationSelectionFromMenuInWichMedicationFromTheWardStockOrThePharmacyIsShown ,
-                          :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert ,
-                          :safetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses ,
-                          :MedicatorSafetyAlertsInCaseOfAllergies ,
-                          :safetyAlertsInCaseOfDrug-drugInteractions ,
-                          :MedicatorSafetyAlertsInCaseOfOverdosing ,
-                          :safetyAlertsInRealTime ,
-                          :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
-           rdfs:label "Medicator"@en .
+:MedicatorPossibilityToContinuePrescribingWhileSafetyAlert
+    a :FeatureCitation ;
+    rdfs:label "possibility to continue prescribing while safety alert"@en .
 
-:MedicatorPossibilityToContinuePrescribingWhileSafetyAlert a :FeatureCitation;
-                                                           rdfs:label "possibility to continue prescribing while safety alert"@en .
+:MedicatorSafetyAlertsInCaseOfAllergies
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of allergies"@en .
 
-:MedicatorSafetyAlertsInCaseOfAllergies a :FeatureCitation;
-                                        rdfs:label "safety alerts in case of allergies"@en .
+:MedicatorSafetyAlertsInCaseOfOverdosing
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of overdosing"@en .
 
-:MedicatorSafetyAlertsInCaseOfOverdosing a :FeatureCitation;
-                                         rdfs:label "safety alerts in case of overdosing"@en .
-
-:MedicatorStandardizedPrescriptionsAndMedicationProtocols a :FeatureCitation;
-                                         rdfs:label "standardized precriptions and medication protocols"@en .
+:MedicatorStandardizedPrescriptionsAndMedicationProtocols
+    a :FeatureCitation ;
+    rdfs:label "standardized precriptions and medication protocols"@en .
 
 :Medkey
     :applicationSystem :MedkeyAppHIS ;
@@ -1135,7 +1131,7 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Clinical Information System"@en .
 
-:MetaVisionFeatureAutomaticDataCollection
+:MetavisionFeatureAutomaticDataCollection
     :featureClassified :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
     a :FeatureCitation ;
     rdfs:label "automatic data collection"@en .
