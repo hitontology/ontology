@@ -1,13 +1,13 @@
 @base <http://hitontology.eu/ontology/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix : <http://hitontology.eu/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-###  http://hitontology.eu/ontology/AgfaPacsImpax
 :AgfaPacsImpax rdf:type :SoftwareProduct ;
                  :applicationSystem :IMPAXAppPACS, :IMPAXAppRISPACSReporting ;
                  :feature :AgfaPacsImpaxAutomaticAndPaperlessOperations ,
@@ -28,7 +28,6 @@
 :AgfaPacsImpaxFeatureSpeechRecognition a :FeatureCitation;
                                                      rdfs:label "speech recognition"@en .
 
-###  http://hitontology.eu/ontology/AgfaRisElefante
 :AgfaRisElefante rdf:type :SoftwareProduct ;
                    :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations ,
                                   :AgfaRisElefanteFeatureBookingOfExaminations ,
@@ -50,7 +49,6 @@
   :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
   rdfs:label "speech recognition"@en .
 
-###  http://hitontology.eu/ontology/AbbottIStat
 :AbbottIStat rdf:type :SoftwareProduct ;
                :feature :completeTestResults ,
                               :readBarCodeLabel ;
@@ -75,45 +73,6 @@
 :BetterMedsFeatClinicalPharmacistReview
     a :FeatureCitation ;
     rdfs:label "Clinical pharmacist review"@en .
-###  http://hitontology.eu/ontology/CSCMedChart
-:CSCMedChart rdf:type :SoftwareProduct ;
-              :feature :predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick ,
-                             :predefinedOrderSentencesSearchableByCategoryQuickLists ,
-                             :prescribeLonghand ;
-              rdfs:label "CSC Med Chart"@en .
-
-###  http://hitontology.eu/ontology/CernerMilleniumPowerOrders
-:CernerMilleniumPowerOrders rdf:type :SoftwareProduct ;
-                            :feature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection ,
-                                           :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
-                            rdfs:label "Cerner Millenium Power Orders"@en .
-
-
-###  http://hitontology.eu/ontology/CernerFirstNet
-:CernerFirstNet rdf:type :SoftwareProduct ;
-                 :feature :PacsInterface ,
-                                :creationOfDataRelationToTriage ,
-                                :dischargeSummaries ,
-                                :mandatoryReporting ,
-                                :patientManagementPlans ;
-                 rdfs:label "Cerner First Net"@en .
-
-
-###  http://hitontology.eu/ontology/CernerSoarianCPOEPlatform
-:CernerSoarianCPOEPlatform rdf:type :SoftwareProduct ;
-                              :feature :medication-specificOrderSet ,
-                                             :unit-specificOderSet ;
-                              rdfs:label "Cerner Soarian CPOE platform"@en .
-
-
-###  http://hitontology.eu/ontology/EclipsysContinuum_2000CDS
-:EclipsysContinuum_2000CDS rdf:type :SoftwareProduct ;
-                             :feature :auditTrail ,
-                                            :automaticTransferOfLaboratoryData ,
-                                            :electronicSignature ,
-                                            :graphicalUserInterfaceToDocumentCare ,
-                                            :pointAndClickDataEntry ;
-                             rdfs:label "Eclipsys Continuum 2000 CDS"@en .
 
 :BetterMedsFeatCreatesAMedicationListOnAdmission
     a :FeatureCitation ;
@@ -227,6 +186,24 @@
 :BikaLIMSAppLaboratoryInformationManagementSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
+
+:CernerFirstNet
+    :applicationSystem :FirstNetAppEmergencyMedicineInformationSystem ;
+    :feature :creationOfDataRelationToTriage, :dischargeSummaries, :mandatoryReporting, :PacsInterface, :patientManagementPlans ;
+    a :SoftwareProduct ;
+    rdfs:label "Cerner First Net"@en .
+
+:CernerMilleniumPowerOrders
+    :applicationSystem :PowerOrderAppCPOE ;
+    :feature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
+    a :SoftwareProduct ;
+    rdfs:label "Cerner Millenium Power Orders"@en .
+
+:CernerSoarianCPOEPlatform
+    :applicationSystem :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
+    :feature :medication-specificOrderSet, :unit-specificOderSet ;
+    a :SoftwareProduct ;
+    rdfs:label "Cerner Soarian CPOE platform"@en .
 
 :CIS1
     :client :Mobile, :Native ;
@@ -454,23 +431,16 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Medication Management System"@en .
 
-:CernerFirstNet
-    :applicationSystem :FirstNetAppEmergencyMedicineInformationSystem ;
-    :feature :creationOfDataRelationToTriage, :dischargeSummaries, :mandatoryReporting, :patientManagementPlans ;
-    a :SoftwareProduct ;
-    rdfs:label "Cerner First Net"@en .
 
-:CernerMilleniumPowerOrders
-    :applicationSystem :PowerOrderAppCPOE ;
-    :feature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :predefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
-    a :SoftwareProduct ;
-    rdfs:label "Cerner Millenium Power Orders"@en .
 
-:CernerSoarianCPOEPlatform
-    :applicationSystem :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
-    :feature :medication-specificOrderSet, :unit-specificOderSet ;
-    a :SoftwareProduct ;
-    rdfs:label "Cerner Soarian CPOE platform"@en .
+
+:EclipsysContinuum_2000CDS rdf:type :SoftwareProduct ;
+                             :feature :auditTrail ,
+                                            :automaticTransferOfLaboratoryData ,
+                                            :electronicSignature ,
+                                            :graphicalUserInterfaceToDocumentCare ,
+                                            :pointAndClickDataEntry ;
+                             rdfs:label "Eclipsys Continuum 2000 CDS"@en .
 
 :DHIS2
     :applicationSystem :DHIS2AppHMIS ;
@@ -561,7 +531,6 @@
     a :SoftwareProduct ;
     rdfs:label "GE Patchspecd PACS"@en .
 
-###  http://hitontology.eu/ontology/GEPatchspecdPacs
 :GEPatchspecdPacs rdf:type :SoftwareProduct ;
                     :feature :automaticForwardedProcessedImages ,
                                    :forwardIntoArchive ,
@@ -569,7 +538,6 @@
                     rdfs:label "GE Patchspecd PACS"@en .
 
 
-###  http://hitontology.eu/ontology/HNAMillenium
 :HNAMillenium rdf:type :SoftwareProduct ;
                :feature :allowingToReuseEarlierAnamnesticData ,
                               :automaticCreationOfANursingTransferReport ,
@@ -717,7 +685,7 @@
                            :dataStorageRepository ,
                            :electronicMedicationAdministrationTool ,
                            :triggeringTheCDSSToQueryTheTidalVolume ;
-            :applicationSystem :MetavisionAppClinicalInformationSystem .
+            :applicationSystem :MetavisionAppClinicalInformationSystem ;
             rdfs:label "Metavision"@en .
 
 :OpenClinicAppGA
@@ -745,14 +713,12 @@
      rdfs:label "PIK"@en .
 
 
-###  http://hitontology.eu/ontology/SAPR3BusinessProcessControlSystemSoftware
 :SAPR3BusinessProcessControlSystemSoftware rdf:type :SoftwareProduct ;
                                                  :feature :planningView ,
                                                                 :requestFormAssignedATimeslotRoomAndStaff ;
                                                  rdfs:label "SAP R3 Business Process Control System software"@en .
 
 
-###  http://hitontology.eu/ontology/SysmexXS_1000iHaematologyAnalyser
 :SysmexXS_1000iHaematologyAnalyser rdf:type :SoftwareProduct ;
                                       :feature :SysmexCompleteTestResults ,
                                                      :SysmexReadBarCodeLabel ;
@@ -765,7 +731,6 @@
                            rdfs:label "read bar code label"@en.
 
 
-###  http://hitontology.eu/ontology/TeleDICOM
 :TeleDICOM rdf:type :SoftwareProduct ;
            :feature :interactiveConsultationBetweenTwoOrMoreCenters ,
                           :offlineMode ,
@@ -775,7 +740,6 @@
            rdfs:label "Tele DICOM"@en .
 
 
-###  http://hitontology.eu/ontology/Theriak
 :Theriak rdf:type :SoftwareProduct ;
          :feature :TheriakMedicationControlBasedOnNationalDrugDatabase ,
                         :TheriakMedicationSelection ,
@@ -807,7 +771,6 @@
 :TheriakSafetyAlertsInRealTime a :FeatureCitation;
                                rdfs:label "safety alerts in real time"@en .
 
-###  http://hitontology.eu/ontology/eChasqui
 :eChasqui rdf:type :SoftwareProduct ;
           :feature :consolidatedListOfResultsForJurisdiction ,
                          :emailNotificationOfNewResults ,
@@ -820,7 +783,6 @@
           rdfs:label "e Chasqui"@en .
 
 
-###  http://hitontology.eu/ontology/eDoc
 :eDoc rdf:type :SoftwareProduct ;
        :feature :capturingDataForAllPatientVisits ;
        rdfs:label "e Doc"@en .
