@@ -131,6 +131,13 @@
     a :FeatureCitation ;
     rdfs:label "captures prescriptions from different sources"@en .
 
+:BikaLIMS
+    :applicationSystem :BikaLIMSAppLaboratoryInformationManagementSystem ;
+    :homepage <https://www.bikalims.org> ;
+    :repository <https://github.com/bikalims> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source LIMS"@en ;
+    rdfs:label "BikaLIMS"@en .
 
 :BikaLIMSAppLaboratoryInformationManagementSystem
     a :ApplicationSystemCitation ;
@@ -142,7 +149,7 @@
     :feature :CIS1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :CIS1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :CIS1FeatSupportOfNursingDocumentation, :CIS1FeatSupportOfQualityAssurance, :CIS1FeatSupportOfTriage, :CIS1FeatSupportOfVariousTypesOfBilling, :CIS1FeatSupportOfWardOrganization, :CIS1FeatSupportSurveillanceOfInfectiousDiseases, :CIS1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CISFeatSupportOfServiceRecording ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical information system (integrated EHR system) Dummy 1"@en ;
-    rdfs:label "CIS1"@en .
+    rdfs:label "Commercial CIS1"@en .
 
 :CIS1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines
     :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
@@ -265,7 +272,7 @@
     :feature :CIS2FeatSupportForBilling, :CIS2FeatSupportForPatientAdministration, <http://hitontology.eu/ontology/CIS2FeatSupportForThe%20Ambulance>, :CIS2FeatSupportOfClinicalDocumentation, :CIS2FeatSupportOfDecisionSupport, :CIS2FeatSupportOfMedicationAndOrdering, :CIS2FeatSupportOfNursingDocumentation, :CIS2FeatSupportOfScheduling ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical Information System Integrated EHR system) Dummy 2"@en ;
-    rdfs:label "CIS2"@en .
+    rdfs:label "Commercial CIS2"@en .
 
 :CIS2FeatSupportForBilling
     :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmSupportFinancialReporting, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
@@ -468,4 +475,117 @@
     :feature :automaticForwardedProcessedImages, :forwardIntoArchive ;
     a :SoftwareProduct ;
     rdfs:label "GE Patchspecd PACS"@en .
+
+:HospitalRun
+    :applicationSystem :HospitalRunAppEHR, :HospitalRunAppHIS ;
+    :client :Native ;
+    :homepage <https://hospitalrun.io> ;
+    :interoperability :HL7_FHIR ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_9000074> ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Node.js> ;
+    :repository <https://github.com/HospitalRun/> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open source EHR/HIS application"@en ;
+    rdfs:label "HospitalRun"@en .
+
+:HospitalRunAppEHR
+    a :ApplicationSystemCitation ;
+    rdfs:label "electronic health record (EHR)"@en .
+
+:HospitalRunAppHIS
+    a :ApplicationSystemCitation ;
+    rdfs:label "hospital information system (HIS)"@en .
+
+:iPath
+    :applicationSystem :iPathTelemedicinePlatform ;
+    :client :WebBased ;
+    :databaseSystem :MySql ;
+    :enterpriseFunction :iPathFuncTransmitAndDiscussMedicalResults ;
+    :feature :iPathFeatCooperationBetweenProfessionals, :iPathFeatOnlineCaseDiscussion, :iPathFeatTeachingAndConferencingSessions, :iPathFeatTransmitOfImgaesWithNecessaryClinicalInformation ;
+    :homepage <https://www.ipathnetwork.org/> ;
+    :interoperability :DICOM ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
+    :operatingSystem dbr:Web_application ;
+    :programmingLanguage dbr:PHP ;
+    :userGroup :iPathUserMedicalProfessional, :iPathUserTechnician ;
+    a :SoftwareProduct ;
+    rdfs:comment "Telemedicine Network"@en ;
+    rdfs:label "iPath"@en .
+
+:iPathFeatCooperationBetweenProfessionals
+    :featureClassified :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
+    a :FeatureCitation ;
+    rdfs:label "Cooperation between professionals"@en .
+
+:iPathFeatOnlineCaseDiscussion
+    :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders ;
+    a :FeatureCitation ;
+    rdfs:label "Online case discussion"@en .
+
+:iPathFeatTeachingAndConferencingSessions
+    :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders, :WhoDhiProvideTrainingContentToHealthcareProviders ;
+    a :FeatureCitation ;
+    rdfs:label "Teaching and conferencing sessions"@en .
+
+:iPathFeatTransmitOfImgaesWithNecessaryClinicalInformation
+    :featureClassified :WhoDhiDataExchangeAcrossSystems, :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
+    a :FeatureCitation ;
+    rdfs:label "Transmit of images with necessary clinical information"@en .
+
+:iPathFuncTransmitAndDiscussMedicalResults
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Transmit and discuss medical results"@en .
+
+:iPathTelemedicinePlatform
+    a :ApplicationSystemCitation ;
+    rdfs:label "Telemedicine Platform"@en .
+
+:iPathUserMedicalProfessional
+    a :UserGroupCitation ;
+    rdfs:label "Medical professional"@en .
+
+:iPathUserTechnician
+    a :UserGroupCitation ;
+    rdfs:label "Technician"@en .
+
+:Medkey
+    :applicationSystem :MedkeyAppHIS ;
+    :client :WebBased ;
+    :databaseSystem :MySql, :PostgreSql ;
+    :homepage <https://medkey.org/en/> ;
+    :interoperability :HL7, :OpenEHR ;
+    :language dbr:English_language, dbr:Russian_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
+    :operatingSystem dbr:Web_application ;
+    :programmingLanguage dbr:JavaScript, dbr:PHP ;
+    :repository <https://github.com/medkey-org> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open source Hospital Information System for your clinic automation"@en ;
+    rdfs:label "Medkey"@en .
+
+:MedkeyAppHIS
+    a :ApplicationSystemCitation ;
+    rdfs:label "Hospital Information System (HIS)"@en .
+
+:Metavision
+    :applicationSystem :MetavisionAppClinicalInformationSystem .
+
+:OpenClinicAppGA
+    a :ApplicationSystemCitation ;
+    rdfs:label "hospital information management system"@en .
+
+:OpenClinicGA
+    :applicationSystem :OpenClinicAppGA ;
+    :homepage <https://sourceforge.net/projects/open-clinic/> ;
+    :interoperability :DICOM, :HL7, :HL7_FHIR, :ICD10, :ICPC2, :LOINC, :SNOMED_CT ;
+    :language dbr:Dutch_language, dbr:English_language, dbr:French_language, dbr:Portuguese_language, dbr:Spanish_language ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    :repository <https://sourceforge.net/projects/open-clinic/> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source Integrated Hospital Information Management System"@en ;
+    rdfs:label "OpenClinic GA"@en .
 

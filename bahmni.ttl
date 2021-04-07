@@ -12,7 +12,9 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:Bahmni
+    hito:applicationSystem hito:BahmniAppHospitalSystem ;
     hito:client hito:WebBased ;
+    rdfs:comment "easy-to-use EMR & hospital system"@en ;
     hito:databaseSystem hito:MySql, hito:PostgreSql ;
     hito:enterpriseFunction hito:BahmniFuncBilling, hito:BahmniFuncClinicalServices, hito:BahmniFuncInpatientManagement, hito:BahmniFuncLaboratory, hito:BahmniFuncPatientRegistration, hito:BahmniFuncReporting, hito:BahmniFuncStockManagement ;
     hito:feature hito:BahmniFeatCaptureClinicalRecords, hito:BahmniFeatCaptureDrugPrescriptions, hito:BahmniFeatClinicalReporting, hito:BahmniFeatCreateDiseaseSpecificForms, hito:BahmniFeatCreateGeneralForms, hito:BahmniFeatDisplayLaboratoryWorkload, hito:BahmniFeatMaintainAccurateRecords, hito:BahmniFeatMaintainClinicalRecords, hito:BahmniFeatManageAccurateRecords, hito:BahmniFeatManagePatientOrders, hito:BahmniFeatManagePatientsAdmissions, hito:BahmniFeatManageSamples, hito:BahmniFeatManageStock, hito:BahmniFeatManageTests, hito:BahmniFeatMonitorStockLevels, hito:BahmniFeatMoveStock, hito:BahmniFeatOrderInvestigation, hito:BahmniFeatOrderLab, hito:BahmniFeatOrderRadiology, hito:BahmniFeatPerformBedAssignments, hito:BahmniFeatPerformOperationalReporting, hito:BahmniFeatPrintPatientId, hito:BahmniFeatPublicHealthReporting, hito:BahmniFeatReorderStock, hito:BahmniFeatSearchPatients, hito:BahmniFeatSendSamplesForReferrals, hito:BahmniFeatTrackStock, hito:BahmniFeatTrackWardOccupancy, hito:BahmniFeatUseDrugPrescriptionTemplates ;
@@ -25,6 +27,10 @@ hito:Bahmni
     dcterms:source <https://www.medfloss.org/node/1103> ;
     a hito:SoftwareProduct ;
     rdfs:label "Bahmni"@en .
+
+hito:BahmniAppHospitalSystem
+    a hito:ApplicationSystemCitation ;
+    rdfs:label "Hospital System"@en .
 
 hito:BahmniEmergency
     hito:organizationalUnitClassified hito:SnomedAccidentAndEmergencyDepartmentEnvironment ;
