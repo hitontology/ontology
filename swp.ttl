@@ -945,6 +945,521 @@
     a :FeatureCitation ;
     rdfs:label "forward into archive"@en .
 
+:GnuHealth
+    :applicationSystem :GnuHealthAppElectronicMedicalRecordEmr, :GnuHealthAppHealthInformationSystemHis, :GnuHealthAppHospitalManagementInformationSystem ;
+    :client :Mobile, :Native, :WebBased ;
+    :databaseSystem :PostgreSql, :TinyDb ;
+    :enterpriseFunction :GnuHealthFuncAccessManagement, :GnuHealthFuncAdmissionManagement, :GnuHealthFuncAnalyticAccounting, :GnuHealthFuncFinancialAccounting, :GnuHealthFuncGenetics, :GnuHealthFuncGynecologicCare, :GnuHealthFuncHospitalManagement, :GnuHealthFuncIntensiveCare, :GnuHealthFuncLaboratoryManagement, :GnuHealthFuncNeglectedTropicalDiseasesCare, :GnuHealthFuncNursing, :GnuHealthFuncObstetrics, :GnuHealthFuncPatientAppointment, :GnuHealthFuncPatientEvaluations, :GnuHealthFuncPatientManagement, :GnuHealthFuncPediatricCare, :GnuHealthFuncProductsManagement, :GnuHealthFuncPurchaseAdministration, :GnuHealthFuncServicesManagementinvoicingPatients, :GnuHealthFuncSocioeconomics, :GnuHealthFuncStockManagement, :GnuHealthFuncSurgery ;
+    :feature :GnuHealthFeatAccessManagementOverview, :GnuHealthFeatAccountTypes, :GnuHealthFeatAdministrationOrthancModule, :GnuHealthFeatAdministrativeData, :GnuHealthFeatAllSurgeriesInformation, :GnuHealthFeatAppointments, :GnuHealthFeatAppointmentsCalendar, :GnuHealthFeatAppointmentsReport, :GnuHealthFeatBioinformatics, :GnuHealthFeatBloodAndSkin, :GnuHealthFeatCardiovascular, :GnuHealthFeatCarePlan, :GnuHealthFeatChagasDiseaseInformation, :GnuHealthFeatChartOfAccounts, :GnuHealthFeatConfiguringAccounts, :GnuHealthFeatConfiguringAvailableTests, :GnuHealthFeatConfiguringJournals, :GnuHealthFeatContactTracing, :GnuHealthFeatCreatingAPartyWithThePatientProperty, :GnuHealthFeatCreatingAPatientRecord, :GnuHealthFeatCreatingARequestForImage, :GnuHealthFeatCreatingNewMedicationProducts, :GnuHealthFeatCreatingTheInvoice, :GnuHealthFeatDefaultImagingModule, :GnuHealthFeatDemographics, :GnuHealthFeatDengueFever, :GnuHealthFeatDigestiveAndAbdomen, :GnuHealthFeatDocumentRoundingsForInpatients, :GnuHealthFeatDomesticViolence, :GnuHealthFeatDrainages, :GnuHealthFeatEpidemiology, :GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, :GnuHealthFeatEvaluationsHistory, :GnuHealthFeatEvaluationsReport, :GnuHealthFeatFunctioningAndDisability, :GnuHealthFeatGeneralPregnancyInformation, :GnuHealthFeatGeneratingResults, :GnuHealthFeatGeneticFamilyHistory, :GnuHealthFeatGeneticInformation, :GnuHealthFeatGroupsAccessManagement, :GnuHealthFeatIcuFunctionalityInformation, :GnuHealthFeatInfectiousDisease, :GnuHealthFeatInformationStoredPerAppointment, :GnuHealthFeatInfrastructureOfSocioeconomics, :GnuHealthFeatInjurySurveillanceSystemRegistrationReport, :GnuHealthFeatInpatientManagementInformation, :GnuHealthFeatInterfacesWithLaboratoriesAndLims, :GnuHealthFeatInventories, :GnuHealthFeatInvoicingPatients, :GnuHealthFeatLabOrdersAndHealthServices, :GnuHealthFeatLaboratoryReports, :GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, :GnuHealthFeatListOfAllAppointments, :GnuHealthFeatListOfAppointmentsForASpecificPatient, :GnuHealthFeatListingHealthServicesToBeInvoiced, :GnuHealthFeatListingTheCurrentPatients, :GnuHealthFeatManagingLaboratoryTests, :GnuHealthFeatMedicationPlan, :GnuHealthFeatNeglectedTropicalDiseasesInformation, :GnuHealthFeatNutritionInformation, :GnuHealthFeatOrganizationStructure, :GnuHealthFeatOrthancIntegrationModule, :GnuHealthFeatPatientEvaluationsReport, :GnuHealthFeatPatientIcuInformation, :GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, :GnuHealthFeatPerinatalAndIntrapartumInformation, :GnuHealthFeatPrenatalEvaluations, :GnuHealthFeatPrintingAPatientIdCard, :GnuHealthFeatProteinRelatedDiseases, :GnuHealthFeatPscPediatricsSymptomChecklist, :GnuHealthFeatPuerperiumMonitor, :GnuHealthFeatReporting, :GnuHealthFeatRequestingALaboratoryTest, :GnuHealthFeatShipments, :GnuHealthFeatSocialMedicine, :GnuHealthFeatStockLocations, :GnuHealthFeatStockMovements, :GnuHealthFeatStoringLaboratoryTestResults, :GnuHealthFeatSurgeriesForm, :GnuHealthFeatSurgeriesPerPatient, :GnuHealthFeatSynchronizationOrthancModule, :GnuHealthFeatTopDiseasesReport, :GnuHealthFeatTroubleshootingOrthancModule, :GnuHealthFeatUsageOrthancModule, :GnuHealthFeatUsersAccessManagement, :GnuHealthFeatViewResults ;
+    :homepage <https://www.gnuhealth.org/#/> ;
+    :interoperability :HL7, :HL7_FHIR, :ICD10, :ICD9, :ICPM ;
+    :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
+    :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
+    :organizationalUnit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
+    :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
+    :softwareProductComponent :Occhiolino ;
+    a :SoftwareProduct ;
+    rdfs:comment "free/libre health and hospital information system with strong focus on public health and social medicine"@en ;
+    rdfs:label "GNU Health"@en .
+
+:GnuHealthAppElectronicMedicalRecordEmr
+    :applicationSystemClassified :WhoDhiSharedHealthRecordAndHealthInformationRespositories ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic Medical Record (EMR)"@en .
+
+:GnuHealthAppHealthInformationSystemHis
+    :applicationSystemClassified :BbClinicalInformationSystem, :BbElectronicPatientRecordSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "Health Information System (HIS)"@en .
+
+:GnuHealthAppHospitalManagementInformationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Hospital management Information System"@en .
+
+:GnuHealthFeatAccessManagementOverview
+    :featureClassified :EhrSfmPatientAccessManagement ;
+    a :FeatureCitation ;
+    rdfs:label "Access Management Overview"@en .
+
+:GnuHealthFeatAccountTypes
+    a :FeatureCitation ;
+    rdfs:label "Account Types"@en .
+
+:GnuHealthFeatAdministrationOrthancModule
+    a :FeatureCitation ;
+    rdfs:label "Administration Orthanc module"@en .
+
+:GnuHealthFeatAdministrativeData
+    :featureClassified :EhrSfmAdministrationSupport ;
+    a :FeatureCitation ;
+    rdfs:label "Administrative Data"@en .
+
+:GnuHealthFeatAllSurgeriesInformation
+    a :FeatureCitation ;
+    rdfs:label "All Surgeries information"@en .
+
+:GnuHealthFeatAppointments
+    a :FeatureCitation ;
+    rdfs:label "Appointments"@en .
+
+:GnuHealthFeatAppointmentsCalendar
+    a :FeatureCitation ;
+    rdfs:label "Appointments Calendar"@en .
+
+:GnuHealthFeatAppointmentsReport
+    a :FeatureCitation ;
+    rdfs:label "Appointments Report"@en .
+
+:GnuHealthFeatBioinformatics
+    a :FeatureCitation ;
+    rdfs:label "Bioinformatics"@en .
+
+:GnuHealthFeatBloodAndSkin
+    :featureClassified :EhrSfmSupportOrdersForBloodProductsAndOtherBiologics ;
+    a :FeatureCitation ;
+    rdfs:label "Blood and Skin"@en .
+
+:GnuHealthFeatCardiovascular
+    a :FeatureCitation ;
+    rdfs:label "Cardiovascular"@en .
+
+:GnuHealthFeatCarePlan
+    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    a :FeatureCitation ;
+    rdfs:label "Care Plan"@en .
+
+:GnuHealthFeatChagasDiseaseInformation
+    a :FeatureCitation ;
+    rdfs:label "Chagas Disease information"@en .
+
+:GnuHealthFeatChartOfAccounts
+    a :FeatureCitation ;
+    rdfs:label "Chart of accounts"@en .
+
+:GnuHealthFeatConfiguringAccounts
+    a :FeatureCitation ;
+    rdfs:label "Configuring Accounts"@en .
+
+:GnuHealthFeatConfiguringAvailableTests
+    a :FeatureCitation ;
+    rdfs:label "Configuring available tests"@en .
+
+:GnuHealthFeatConfiguringJournals
+    a :FeatureCitation ;
+    rdfs:label "Configuring Journals"@en .
+
+:GnuHealthFeatContactTracing
+    a :FeatureCitation ;
+    rdfs:label "Contact tracing"@en .
+
+:GnuHealthFeatCreatingAPartyWithThePatientProperty
+    a :FeatureCitation ;
+    rdfs:label "Creating a party with the patient property"@en .
+
+:GnuHealthFeatCreatingAPatientRecord
+    a :FeatureCitation ;
+    rdfs:label "Creating a patient record"@en .
+
+:GnuHealthFeatCreatingARequestForImage
+    a :FeatureCitation ;
+    rdfs:label "Creating a request for image"@en .
+
+:GnuHealthFeatCreatingNewMedicationProducts
+    a :FeatureCitation ;
+    rdfs:label "Creating new medication products"@en .
+
+:GnuHealthFeatCreatingTheInvoice
+    a :FeatureCitation ;
+    rdfs:label "Creating the Invoice"@en .
+
+:GnuHealthFeatDefaultImagingModule
+    a :FeatureCitation ;
+    rdfs:label "Default imaging module"@en .
+
+:GnuHealthFeatDemographics
+    :featureClassified :EhrSfmManagePatientDemographics ;
+    a :FeatureCitation ;
+    rdfs:label "Demographics"@en .
+
+:GnuHealthFeatDengueFever
+    a :FeatureCitation ;
+    rdfs:label "Dengue Fever"@en .
+
+:GnuHealthFeatDigestiveAndAbdomen
+    a :FeatureCitation ;
+    rdfs:label "Digestive and Abdomen"@en .
+
+:GnuHealthFeatDocumentRoundingsForInpatients
+    a :FeatureCitation ;
+    rdfs:label "document Roundings for inpatients (Main information, ICU information, Procedures information, Medication information,Stock Moves information)"@en .
+
+:GnuHealthFeatDomesticViolence
+    a :FeatureCitation ;
+    rdfs:label "Domestic Violence"@en .
+
+:GnuHealthFeatDrainages
+    a :FeatureCitation ;
+    rdfs:label "Drainages"@en .
+
+:GnuHealthFeatEpidemiology
+    :featureClassified :EhrSfmSupportForEpidemiologicDataAnalysis, :EhrSfmSupportForEpidemiologicalInvestigationDataCollection, :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
+    a :FeatureCitation ;
+    rdfs:label "Epidemiology"@en .
+
+:GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis
+    a :FeatureCitation ;
+    rdfs:label "Evaluations Form (Main Info, Clinical, Mental Status. Diagnosis)"@en .
+
+:GnuHealthFeatEvaluationsHistory
+    a :FeatureCitation ;
+    rdfs:label "Evaluations History"@en .
+
+:GnuHealthFeatEvaluationsReport
+    a :FeatureCitation ;
+    rdfs:label "Evaluations Report"@en .
+
+:GnuHealthFeatFunctioningAndDisability
+    a :FeatureCitation ;
+    rdfs:label "Functioning and Disability"@en .
+
+:GnuHealthFeatGeneralPregnancyInformation
+    a :FeatureCitation ;
+    rdfs:label "General Pregnancy Information"@en .
+
+:GnuHealthFeatGeneratingResults
+    a :FeatureCitation ;
+    rdfs:label "Generating results"@en .
+
+:GnuHealthFeatGeneticFamilyHistory
+    a :FeatureCitation ;
+    rdfs:label "Genetic Family History"@en .
+
+:GnuHealthFeatGeneticInformation
+    a :FeatureCitation ;
+    rdfs:label "Genetic Information"@en .
+
+:GnuHealthFeatGroupsAccessManagement
+    a :FeatureCitation ;
+    rdfs:label "Groups Access Management"@en .
+
+:GnuHealthFeatIcuFunctionalityInformation
+    a :FeatureCitation ;
+    rdfs:label "ICU Functionality information"@en .
+
+:GnuHealthFeatInfectiousDisease
+    a :FeatureCitation ;
+    rdfs:label "infectious disease"@en .
+
+:GnuHealthFeatInformationStoredPerAppointment
+    a :FeatureCitation ;
+    rdfs:label "Information stored per appointment"@en .
+
+:GnuHealthFeatInfrastructureOfSocioeconomics
+    a :FeatureCitation ;
+    rdfs:label "Infrastructure of Socioeconomics"@en .
+
+:GnuHealthFeatInjurySurveillanceSystemRegistrationReport
+    a :FeatureCitation ;
+    rdfs:label "Injury Surveillance System Registration report"@en .
+
+:GnuHealthFeatInpatientManagementInformation
+    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords ;
+    a :FeatureCitation ;
+    rdfs:label "Inpatient Management information"@en .
+
+:GnuHealthFeatInterfacesWithLaboratoriesAndLims
+    a :FeatureCitation ;
+    rdfs:label "Interfaces with Laboratories and LIMS"@en .
+
+:GnuHealthFeatInventories
+    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    a :FeatureCitation ;
+    rdfs:label "Inventories"@en .
+
+:GnuHealthFeatInvoicingPatients
+    a :FeatureCitation ;
+    rdfs:label "Invoicing Patients"@en .
+
+:GnuHealthFeatLabOrdersAndHealthServices
+    a :FeatureCitation ;
+    rdfs:label "Lab orders and Health Services"@en .
+
+:GnuHealthFeatLaboratoryReports
+    a :FeatureCitation ;
+    rdfs:label "Laboratory Reports"@en .
+
+:GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety
+    a :FeatureCitation ;
+    rdfs:label "Lifestyle (Diet and Exercise, Addictions, Sexuality, Safety)"@en .
+
+:GnuHealthFeatListOfAllAppointments
+    a :FeatureCitation ;
+    rdfs:label "List of all appointments"@en .
+
+:GnuHealthFeatListOfAppointmentsForASpecificPatient
+    a :FeatureCitation ;
+    rdfs:label "List of appointments for a specific patient"@en .
+
+:GnuHealthFeatListingHealthServicesToBeInvoiced
+    a :FeatureCitation ;
+    rdfs:label "Listing Health Services to be Invoiced"@en .
+
+:GnuHealthFeatListingTheCurrentPatients
+    a :FeatureCitation ;
+    rdfs:label "Listing the current patients"@en .
+
+:GnuHealthFeatManagingLaboratoryTests
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    a :FeatureCitation ;
+    rdfs:label "Managing Laboratory Tests"@en .
+
+:GnuHealthFeatMedicationPlan
+    :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList ;
+    a :FeatureCitation ;
+    rdfs:label "Medication Plan"@en .
+
+:GnuHealthFeatNeglectedTropicalDiseasesInformation
+    a :FeatureCitation ;
+    rdfs:label "Neglected Tropical Diseases information"@en .
+
+:GnuHealthFeatNutritionInformation
+    a :FeatureCitation ;
+    rdfs:label "Nutrition information"@en .
+
+:GnuHealthFeatOrganizationStructure
+    a :FeatureCitation ;
+    rdfs:label "Organization structure"@en .
+
+:GnuHealthFeatOrthancIntegrationModule
+    a :FeatureCitation ;
+    rdfs:label "Orthanc Integration module"@en .
+
+:GnuHealthFeatPatientEvaluationsReport
+    a :FeatureCitation ;
+    rdfs:label "Patient Evaluations report"@en .
+
+:GnuHealthFeatPatientIcuInformation
+    a :FeatureCitation ;
+    rdfs:label "Patient ICU Information"@en .
+
+:GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray
+    a :FeatureCitation ;
+    rdfs:label "Patient Rounding information (Neurologic Respiratory, incl. X-Ray)"@en .
+
+:GnuHealthFeatPerinatalAndIntrapartumInformation
+    a :FeatureCitation ;
+    rdfs:label "Perinatal and Intrapartum Information"@en .
+
+:GnuHealthFeatPrenatalEvaluations
+    a :FeatureCitation ;
+    rdfs:label "Prenatal Evaluations"@en .
+
+:GnuHealthFeatPrintingAPatientIdCard
+    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
+    a :FeatureCitation ;
+    rdfs:label "Printing a patient ID card"@en .
+
+:GnuHealthFeatProteinRelatedDiseases
+    a :FeatureCitation ;
+    rdfs:label "Protein Related Diseases"@en .
+
+:GnuHealthFeatPscPediatricsSymptomChecklist
+    a :FeatureCitation ;
+    rdfs:label "PSC (Pediatrics Symptom Checklist)"@en .
+
+:GnuHealthFeatPuerperiumMonitor
+    a :FeatureCitation ;
+    rdfs:label "Puerperium Monitor"@en .
+
+:GnuHealthFeatReporting
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    a :FeatureCitation ;
+    rdfs:label "Reporting"@en .
+
+:GnuHealthFeatRequestingALaboratoryTest
+    :featureClassified :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    a :FeatureCitation ;
+    rdfs:label "Requesting a Laboratory Test"@en .
+
+:GnuHealthFeatShipments
+    a :FeatureCitation ;
+    rdfs:label "Shipments"@en .
+
+:GnuHealthFeatSocialMedicine
+    a :FeatureCitation ;
+    rdfs:label "Social Medicine"@en .
+
+:GnuHealthFeatStockLocations
+    a :FeatureCitation ;
+    rdfs:label "Stock Locations"@en .
+
+:GnuHealthFeatStockMovements
+    a :FeatureCitation ;
+    rdfs:label "Stock Movements"@en .
+
+:GnuHealthFeatStoringLaboratoryTestResults
+    a :FeatureCitation ;
+    rdfs:label "Storing Laboratory Test Results"@en .
+
+:GnuHealthFeatSurgeriesForm
+    a :FeatureCitation ;
+    rdfs:label "Surgeries Form"@en .
+
+:GnuHealthFeatSurgeriesPerPatient
+    a :FeatureCitation ;
+    rdfs:label "Surgeries per Patient"@en .
+
+:GnuHealthFeatSynchronizationOrthancModule
+    a :FeatureCitation ;
+    rdfs:label "Synchronization Orthanc module"@en .
+
+:GnuHealthFeatTopDiseasesReport
+    a :FeatureCitation ;
+    rdfs:label "Top Diseases report"@en .
+
+:GnuHealthFeatTroubleshootingOrthancModule
+    a :FeatureCitation ;
+    rdfs:label "Troubleshooting Orthanc module"@en .
+
+:GnuHealthFeatUsageOrthancModule
+    a :FeatureCitation ;
+    rdfs:label "Usage Orthanc module"@en .
+
+:GnuHealthFeatUsersAccessManagement
+    a :FeatureCitation ;
+    rdfs:label "Users Access Management"@en .
+
+:GnuHealthFeatViewResults
+    :featureClassified :EhrSfmManageResults ;
+    a :FeatureCitation ;
+    rdfs:label "View results"@en .
+
+:GnuHealthFuncAccessManagement
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Access Management"@en .
+
+:GnuHealthFuncAdmissionManagement
+    :enterpriseFunctionClassified :BbAdministrativeAdmission, :WhoDhiClientIdentificationAndRegistration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Admission Management"@en .
+
+:GnuHealthFuncAnalyticAccounting
+    :enterpriseFunctionClassified :BbCostAndResultsAccounting ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Analytic Accounting"@en .
+
+:GnuHealthFuncFinancialAccounting
+    :enterpriseFunctionClassified :BbFinancialAccounting, :WhoDhiHealthFinancing ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Financial Accounting"@en .
+
+:GnuHealthFuncGenetics
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Genetics"@en .
+
+:GnuHealthFuncGynecologicCare
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Gynecologic Care"@en .
+
+:GnuHealthFuncHospitalManagement
+    :enterpriseFunctionClassified :BbHospitalManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Hospital Management"@en .
+
+:GnuHealthFuncIntensiveCare
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Intensive Care"@en .
+
+:GnuHealthFuncLaboratoryManagement
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Laboratory Management"@en .
+
+:GnuHealthFuncNeglectedTropicalDiseasesCare
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Neglected Tropical Diseases Care"@en .
+
+:GnuHealthFuncNursing
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Nursing"@en .
+
+:GnuHealthFuncObstetrics
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Obstetrics"@en .
+
+:GnuHealthFuncPatientAppointment
+    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Appointment"@en .
+
+:GnuHealthFuncPatientEvaluations
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbMedicalAdmission ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Evaluations"@en .
+
+:GnuHealthFuncPatientManagement
+    :enterpriseFunctionClassified :BbPatientAdministration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient Management"@en .
+
+:GnuHealthFuncPediatricCare
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Pediatric Care"@en .
+
+:GnuHealthFuncProductsManagement
+    :enterpriseFunctionClassified :BbMaterialAndMedicationManagement, :WhoDhiEquipmentAndAssetManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Products Management"@en .
+
+:GnuHealthFuncPurchaseAdministration
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Purchase Administration"@en .
+
+:GnuHealthFuncServicesManagementinvoicingPatients
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndFinalBilling, :WhoDhiHealthFinancing ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Services Management/Invoicing Patients"@en .
+
+:GnuHealthFuncSocioeconomics
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Socioeconomics"@en .
+
+:GnuHealthFuncStockManagement
+    :enterpriseFunctionClassified :BbSupplyAndDisposalManagement, :WhoDhiSupplyChainManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Stock Management"@en .
+
+:GnuHealthFuncSurgery
+    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Surgery"@en .
+
+:GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003
+    :organizationalUnitClassified :SnomedGeneralPractitionerPracticeSiteEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 394761003"@en ;
+    rdfs:label "General Practitioner Practice Site Environment"@en .
+
+:GnuHealthOrgHealthCenterEnvironmentSctid264361005
+    :organizationalUnitClassified :SnomedHealthCenterEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 264361005"@en ;
+    rdfs:label "Health Center Environment"@en .
+
+:GnuHealthOrgHospitalEnvironmentSctid22232009
+    :organizationalUnitClassified :SnomedHospitalEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:comment "SCTID: 22232009"@en ;
+    rdfs:label "Hospital Environment"@en .
+
 :HnaMillenium
     :applicationSystem :HnaMilleniumAppPharmacyManagementSystem ;
     :feature :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPre-definedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
