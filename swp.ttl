@@ -2667,23 +2667,24 @@
     rdfs:label "Nurses"@en .
 
 :Orthanc
-    :applicationSystem :OrthancAppDicomServer, :OrthancAppMiniPacs ;
+    :applicationSystem :OrthancAppDicomServer, :OrthancAppMiniPacs, :OrthancAppVNA, :OrthancAppViewerOfMedicalImages, :OrthancAppWebViewer ;
     :client :WebBased ;
-    :databaseSystem :PostgreSql ;
+    :databaseSystem :MySql, :PostgreSql ;
     :directEnterpriseFunction :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbResearchAndEducation, :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    :directFeature :CaptureFromDigitalDevices ;
+    :directFeature :WhoDhiCaptureFromDigitalDevices ;
     :enterpriseFunction :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
     :feature :OrthancFeatBringDicomImagesToComputerVisionCommunity, :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWado-RsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStow-RsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
     :homepage <https://www.orthanc-server.com/> ;
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
-    :operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
-    :organizationalUnit :OrthancOrgRadiologyDepartmentSctid309964003 ;
-    :programmingLanguage <http://dbpedia.org/resource/C++> ;
+    :operatingSystem dbr:Cross-platform, dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
+    :organizationalUnit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
+    :programmingLanguage <http://dbpedia.org/resource/C%2B%2B>, dbr:JavaScript, <http://dbpedia.org/resource/Python_%28programming_language%29> ;
     :repository <https://hg.orthanc-server.com/> ;
-    :userGroup :OrthancUgRadiologistSctid66862007, :OrthancUgResearcherSctid769038007 ;
+    :userGroup :OrthancUgRadiologistSctid66862007, :OrthancUgResearcherSctid769038007, :OrthancUserIntegrators, :OrthancUserNetworkEngineer, :OrthancUserPhysicist, :OrthancUserSystemEngineer ;
     a :SoftwareProduct ;
+    rdfs:comment "Open-source, lightweight DICOM server."@en ;
     rdfs:label "Orthanc"@en .
 
 :OrthancAppDicomServer
@@ -2695,6 +2696,18 @@
     :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "mini-PACS"@en .
+
+:OrthancAppVNA
+    a :ApplicationSystemCitation ;
+    rdfs:label "VNA (Vendor Neutral Archive)"@en .
+
+:OrthancAppViewerOfMedicalImages
+    a :ApplicationSystemCitation ;
+    rdfs:label "Viewer of medical images"@en .
+
+:OrthancAppWebViewer
+    a :ApplicationSystemCitation ;
+    rdfs:label "Web Viewer"@en .
 
 :OrthancFeatBringDicomImagesToComputerVisionCommunity
     a :FeatureCitation ;
@@ -2785,6 +2798,16 @@
     a :EnterpriseFunctionCitation ;
     rdfs:label "research about the automated analysis of medical images"@en .
 
+:OrthancOrgHealthCenters
+    :organizationalUnitClassified :SnomedHealthCenterEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Health Centers"@en .
+
+:OrthancOrgHospitalEnvironment
+    :organizationalUnitClassified :SnomedHospitalEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Hospital Environment"@en .
+
 :OrthancOrgRadiologyDepartmentSctid309964003
     :organizationalUnitClassified :SnomedRadiologyDepartmentEnvironment ;
     a :OrganizationalUnitCitation ;
@@ -2802,6 +2825,22 @@
     a :UserGroupCitation ;
     rdfs:comment "SCTID: 769038007"@en ;
     rdfs:label "Researcher"@en .
+
+:OrthancUserIntegrators
+    a :UserGroupCitation ;
+    rdfs:label "Software/hardware integrators in the medical field"@en .
+
+:OrthancUserNetworkEngineer
+    a :UserGroupCitation ;
+    rdfs:label "Network engineer"@en .
+
+:OrthancUserPhysicist
+    a :UserGroupCitation ;
+    rdfs:label "Physicist"@en .
+
+:OrthancUserSystemEngineer
+    a :UserGroupCitation ;
+    rdfs:label "System engineer"@en .
 
 :OscarEmr
     :applicationSystem :OscarEmrAppEmr ;
@@ -3032,7 +3071,7 @@
 :Ris1
     :client :WebBased ;
     :enterpriseFunction :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncProtectTheDataOfVIPPatients, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTransferOfTheOrderData ;
-    :feature :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatProtectTheDataOfVIPPatients, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatTrackAllOrder ;
+    :feature :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatProtectTheDataOfVIPPatients, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTrackAllOrder, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition ;
     :interoperability :DICOM, :GDT, :HL7 ;
     :language dbr:English_language, dbr:German_language ;
     :operatingSystem dbr:Linux, dbr:Macintosh, dbr:Microsoft_Windows, dbr:Unix ;
@@ -3092,6 +3131,10 @@
 :Ris1FeatSupplementBillingRelevantDataToOrder
     a :FeatureCitation ;
     rdfs:label "Supplement billing relevant data to order"@en .
+
+:Ris1FeatTrackAllOrder
+    a :FeatureCitation ;
+    rdfs:label "Track all order"@en .
 
 :Ris1FeatTransferOfOrderData
     a :FeatureCitation ;
