@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 :AbbotIStatFeatureCompleteTestResults
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
@@ -93,7 +94,8 @@
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:CentOS ;
     :organizationalUnit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
-    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    dcterms:source <https://www.medfloss.org/node/1103> ;
     a :SoftwareProduct ;
     rdfs:comment "easy-to-use EMR & hospital system"@en ;
     rdfs:label "Bahmni"@en .
