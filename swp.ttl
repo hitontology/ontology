@@ -780,9 +780,16 @@
     a :ApplicationSystemCitation ;
     rdfs:label "health management information system (HMIS)"@en .
 
-:DentalPracticeManagementSoftware
-    a :ApplicationSystemCitation ;
-    rdfs:label "Dental Practice Management Software"@en .
+:EChasqui
+    :applicationSystem :EChasquiLaboratoryInformationSystem ;
+    :feature :EChasquiEmailNotificationOfNewResults, :EChasquiFeatReportsOnTestsPerformed, :EChasquiFeatureConsolidatedListOfResultsForJurisdiction, :EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample, :EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed, :EChasquiFeatureToolsForQualityControl, :EChasquiFeatureUserDirectoryToControlAnyAccess, :EChasquiFeatureWarningsForDelayedReportingOfResults ;
+    a :SoftwareProduct ;
+    rdfs:label "e Chasqui"@en .
+
+:EChasquiEmailNotificationOfNewResults
+    :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    a :FeatureCitation ;
+    rdfs:label "email notification of new results"@en .
 
 :EChasquiFeatReportsOnTestsPerformed
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
@@ -822,6 +829,20 @@
 :EChasquiLaboratoryInformationSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information System"@en .
+
+:EDoc
+    :applicationSystem :EDocAppDigitalFilingSystem, :EDocAppDocumentManagementSoftware ;
+    :feature :EDocFeatureCapturingDataForAllPatientVisits ;
+    a :SoftwareProduct ;
+    rdfs:label "e Doc"@en .
+
+:EDocAppDigitalFilingSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Digital Filing System"@en .
+
+:EDocAppDocumentManagementSoftware
+    a :ApplicationSystemCitation ;
+    rdfs:label "Document Management Software"@en .
 
 :EDocFeatureCapturingDataForAllPatientVisits
     :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManagePatientHistory ;
@@ -1023,7 +1044,11 @@
     rdfs:comment "Telemedicine Network"@en ;
     rdfs:label "iPath"@en .
 
-:iPathFeatCooperationBetweenProfessionals
+:IPathAppTelemedicinePlatform
+    a :ApplicationSystemCitation ;
+    rdfs:label "Telemedicine Platform"@en .
+
+:IPathFeatCooperationBetweenProfessionals
     :featureClassified :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Cooperation between professionals"@en .
@@ -1033,10 +1058,7 @@
     a :FeatureCitation ;
     rdfs:label "Online case discussion"@en .
 
-
-
-
-:iPathFeatTeachingAndConferencingSessions
+:IPathFeatTeachingAndConferencingSessions
     :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders, :WhoDhiProvideTrainingContentToHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Teaching and conferencing sessions"@en .
@@ -1051,15 +1073,11 @@
     a :EnterpriseFunctionCitation ;
     rdfs:label "Transmit and discuss medical results"@en .
 
-:iPathTelemedicinePlatform
-    a :ApplicationSystemCitation ;
-    rdfs:label "Telemedicine Platform"@en .
-
-:iPathUserMedicalProfessional
+:IPathUserMedicalProfessional
     a :UserGroupCitation ;
     rdfs:label "Medical professional"@en .
 
-:iPathUserTechnician
+:IPathUserTechnician
     a :UserGroupCitation ;
     rdfs:label "Technician"@en .
 
@@ -1167,6 +1185,15 @@
     :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ;
     a :FeatureCitation ;
     rdfs:label "triggering the CDSS to query the tidal volume"@en .
+
+:Occhiolino
+    :applicationSystem :OcchiolinoAppLaboratoryInformationManagementSystem ;
+    a :SoftwareProduct ;
+    rdfs:label "Occhiolino"@en .
+
+:OcchiolinoAppLaboratoryInformationManagementSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Laboratory Information Management System"@en .
 
 :OpenClinicAppGA
     a :ApplicationSystemCitation ;
@@ -2306,7 +2333,7 @@
     rdfs:label "Zero-footprint viewer"@en .
 
 :Pik
-    :applicationSystem :PIkAppPflegeinformationsKommunikationssystem ;
+    :applicationSystem :PikAppPflegeinformationsKommunikationssystem ;
     :feature :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning, :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry, :PikFeatureCreationOfNursingCarePlans, :PikFeatureSupportingAllPhasesOfTheNursingProcess, :PikFeatureWardManagement, :PikFeatureWritingOfNursingLetters, :PikNursingDocumentationForms ;
     a :SoftwareProduct ;
     rdfs:label "PIK"@en .
@@ -2350,81 +2377,302 @@
     a :FeatureCitation ;
     rdfs:label "nursing documentation forms"@en .
 
-:SAPR3BusinessProcessControlSystemSoftware rdf:type :SoftwareProduct ;
-                                                 :feature :planningView ,
-                                                                :requestFormAssignedATimeslotRoomAndStaff ;
-                                                 rdfs:label "SAP R3 Business Process Control System software"@en .
+:Ris1
+    :client :WebBased ;
+    :enterpriseFunction :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncProtectTheDataOfVIPPatients, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTransferOfTheOrderData ;
+    :feature :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatProtectTheDataOfVIPPatients, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatTrackAllOrder ;
+    :interoperability :DICOM, :GDT, :HL7 ;
+    :language dbr:English_language, dbr:German_language ;
+    :operatingSystem dbr:Linux, dbr:Macintosh, dbr:Microsoft_Windows, dbr:Unix ;
+    :programmingLanguage <http://dbpedia.org/resource/C%2B%2B>, <http://dbpedia.org/resource/C_Sharp_%28programming_language%29> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Commercial Radiology Information System (RIS) Dummy 1"@en ;
+    rdfs:label "Commercial RIS 1"@en .
 
+:Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial
+    :featureClassified :WhoDhiManageBudgetAndExpenditures, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    a :FeatureCitation ;
+    rdfs:label "Add or change or delete billing codes and material"@en .
 
-:SysmexXS_1000iHaematologyAnalyser rdf:type :SoftwareProduct ;
-                                      :feature :SysmexCompleteTestResults ,
-                                                     :SysmexReadBarCodeLabel ;
-                                      rdfs:label "Sysmex XS 1000i haematology analyser"@en .
+:Ris1FeatAssignFreeAndAvailableModalities
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Assign free and available modalities"@en .
 
-:SysmexCompleteTestResults a :FeatureCitation;
-                           rdfs:label "complete test results"@en.
+:Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing
+    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    a :FeatureCitation ;
+    rdfs:label "Cancellation of transferred billing data and subsequent processing "@en .
 
-:SysmexReadBarCodeLabel a :FeatureCitation;
-                           rdfs:label "read bar code label"@en.
+:Ris1FeatCoordinationOfRisAndPACS
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Coordination of RIS and PACS"@en .
 
+:Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers
+    a :FeatureCitation ;
+    rdfs:label "Influencing the order status by authorized users"@en .
 
-:TeleDICOM rdf:type :SoftwareProduct ;
-           :feature :interactiveConsultationBetweenTwoOrMoreCenters ,
-                          :offlineMode ,
-                          :real-timeVoiceCommunication ,
-                          :useOfInteractivePointersAndSpecificCalculationTools ,
-                          :visualizationOfSynchronizedDICOMImages ;
-           rdfs:label "Tele DICOM"@en .
+:Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
+    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    a :FeatureCitation ;
+    rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
+:Ris1FeatPatientRegistration
+    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
+    a :FeatureCitation ;
+    rdfs:label "Patient registration"@en .
 
-:Theriak rdf:type :SoftwareProduct ;
-         :feature :TheriakMedicationControlBasedOnNationalDrugDatabase ,
-                        :TheriakMedicationSelection ,
-                        :possibilityToContinuePrescribingWhileSafetyAlert ,
-                        :TheriakPossibilityToContinuePrescribingWhileSafetyAlert ,
-                        :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses ,
-                        :safetyAlertsInCaseOfAllergies ,
-                        :TheriakSafetyAlertsInCaseOfDrugDrugInteractions ,
-                        :safetyAlertsInCaseOfOverdosing ,
-                        :TheriakSafetyAlertsInRealTime ,
-                        :standardizedPrescriptionsAndMedicationProtocols ;
-         rdfs:label "Theriak"@en .
+:Ris1FeatProtectTheDataOfVIPPatients
+    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Protect the data of VIP patients"@en .
 
-:TheriakMedicationSelection a :FeatureCitation;
-                            rdfs:label "medication selection from menu in which medication from the ward stock or the pharmacy is shown."@en .
+:Ris1FeatQualityAssuranceThroughCompletePatientHistory
+    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    a :FeatureCitation ;
+    rdfs:label "Quality assurance through complete patient history"@en .
 
-:TheriakPossibilityToContinuePrescribingWhileSafetyAlert a :FeatureCitation;
-                                                         rdfs:label "possibility to continue prescribing while safety alert"@en .
+:Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering
+    a :FeatureCitation ;
+    rdfs:label "Search for specific category or restrictions while ordering"@en .
 
-:TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses  a :FeatureCitation;
-                                                                                              rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
+:Ris1FeatSupplementBillingRelevantDataToOrder
+    a :FeatureCitation ;
+    rdfs:label "Supplement billing relevant data to order"@en .
 
-:TheriakMedicationControlBasedOnNationalDrugDatabase a :FeatureCitation;
-                                                     rdfs:label "medication control based on national drug database"@en .
+:Ris1FeatTransferOfOrderData
+    a :FeatureCitation ;
+    rdfs:label "Transfer of the order data"@en .
 
-:TheriakSafetyAlertsInCaseOfDrugDrugInteractions a :FeatureCitation;
-                                                 rdfs:label "safety alerts in case of drug-drug interactions"@en .
+:Ris1FeatVoiceRecognition
+    :featureClassified :WhoDhiDataExchangeAndInteroperability ;
+    a :FeatureCitation ;
+    rdfs:label "Voice recognition"@en .
 
-:TheriakSafetyAlertsInRealTime a :FeatureCitation;
-                               rdfs:label "safety alerts in real time"@en .
+:Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Add or change or delete billing codes and material"@en .
 
-:eChasqui rdf:type :SoftwareProduct ;
-          :feature :consolidatedListOfResultsForJurisdiction ,
-                         :emailNotificationOfNewResults ,
-                         :patientPageContainingDetailsOfAnySingleSample ,
-                         :patientPageContainingTheHistoryOfAllTestsPerformed ,
-                         :reportsOnTestsPerformed ,
-                         :toolsForQualityControl ,
-                         :userDirectoryToControlAnyAccess ,
-                         :warningsForDelayedReportingOfResults ;
-          rdfs:label "e Chasqui"@en .
+:Ris1FuncAssignFreeAndAvailableModalities
+    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Assign free and available modalities"@en .
 
+:Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Cancellation of transferred billing data and subsequent processing "@en .
 
-:eDoc rdf:type :SoftwareProduct ;
-       :feature :capturingDataForAllPatientVisits ;
-       rdfs:label "e Doc"@en .
+:Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Influencing the order status by authorized users"@en .
 
+:Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
+    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
-:Occhiolino rdf:type :SoftwareProduct ;
-       rdfs:label "Occhiolino" .
+:Ris1FuncPatientRegistration
+    :enterpriseFunctionClassified :BbPatientAdministration, :BbPatientAdmission ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Patient registration"@en .
+
+:Ris1FuncProtectTheDataOfVIPPatients
+    :enterpriseFunctionClassified :BbArchivingOfPatientInformation ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Protect the data of VIP patients"@en .
+
+:Ris1FuncQualityAssuranceThroughCompletePatientHistory
+    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbPatientAdministration, :BbQualityManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Quality assurance through complete patient history"@en .
+
+:Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Search for specific category or restrictions while ordering"@en .
+
+:Ris1FuncSupplementBillingRelevantDataToOrder
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Supplement billing relevant data to order"@en .
+
+:Ris1FuncTrackAllOrder
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Track all order"@en .
+
+:Ris1FuncTransferOfTheOrderData
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Transfer of the order data"@en .
+
+:Ris2
+    :client :WebBased ;
+    :interoperability :DICOM, :HL7 ;
+    :language dbr:German_language ;
+    :operatingSystem dbr:Windows_7, dbr:Windows_Vista ;
+    :programmingLanguage dbr:JHTML, <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Commercial Radiology Information System (RIS) Dummy 2"@en ;
+    rdfs:label "Commercial RIS 2"@en .
+
+:SapR3AppBusinessProcessControlSystemSoftware
+    a :ApplicationSystemCitation ;
+    rdfs:label "Business Process Control System Software"@en .
+
+:SapR3AppEnterpriseResourcePlanningSoftware
+    a :ApplicationSystemCitation ;
+    rdfs:label "Enterprise Resource Planning Software"@en .
+
+:SapR3BusinessProcessControlSystemSoftware
+    :applicationSystem :SapR3AppBusinessProcessControlSystemSoftware, :SapR3AppEnterpriseResourcePlanningSoftware ;
+    :feature :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView, :SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff ;
+    a :SoftwareProduct ;
+    rdfs:label "SAP R3 Business Process Control System software"@en .
+
+:SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
+    a :FeatureCitation ;
+    rdfs:label "planning view"@en .
+
+:SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff
+    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
+    a :FeatureCitation ;
+    rdfs:label "request form assigned a timeslot room and staff"@en .
+
+:Senaite
+    :applicationSystem :SenaiteAppLaboratoryInformationManagementSystem ;
+    :homepage <https://www.senaite.com> ;
+    :repository <https://github.com/senaite> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Enterprise Open Source Laboratory System"@en ;
+    rdfs:label "SENAITE"@en .
+
+:SenaiteAppLaboratoryInformationManagementSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Laboratory Information Management System (LIMS)"@en .
+
+:SoarianAppEnterpriseRevenueCycleManagementSoftware
+    a :ApplicationSystemCitation ;
+    rdfs:label "Enterprise Revenue Cycle Management software"@en .
+
+:SoarianAppFinancialsSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Financials System"@en .
+
+:SysmexXs1000iHaematologyAnalyser
+    :applicationSystem :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser ;
+    :feature :SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults, :SysmexXs1000iHaematologyAnalyserFeatReadBarCodeLabel ;
+    a :SoftwareProduct ;
+    rdfs:label "Sysmex XS 1000i haematology analyser"@en .
+
+:SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser
+    a :ApplicationSystemCitation ;
+    rdfs:label "Haematology Analyser"@en .
+
+:SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults
+    a :FeatureCitation ;
+    rdfs:label "complete test results"@en .
+
+:SysmexXs1000iHaematologyAnalyserFeatReadBarCodeLabel
+    a :FeatureCitation ;
+    rdfs:label "read bar code label"@en .
+
+:TeleDicom
+    :feature :TeleDicomFeatRealTimeVoiceCommunication, :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters, :TeleDicomFeatureOfflineMode, :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools, :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages ;
+    a :SoftwareProduct ;
+    rdfs:label "Tele DICOM"@en .
+
+:TeleDicomFeatRealTimeVoiceCommunication
+    :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
+    a :FeatureCitation ;
+    rdfs:label "real-time voice communication"@en .
+
+:TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
+    a :FeatureCitation ;
+    rdfs:label "interactive consultation between two or more centers"@en .
+
+:TeleDicomFeatureOfflineMode
+    :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
+    a :FeatureCitation ;
+    rdfs:label "offline mode"@en .
+
+:TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "use of interactive pointers and specific calculation tools"@en .
+
+:TeleDicomFeatureVisualizationOfSynchronizedDICOMImages
+    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    a :FeatureCitation ;
+    rdfs:label "visualization of synchronized DICOM images"@en .
+
+:Theriak
+    :feature :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
+    a :SoftwareProduct ;
+    rdfs:label "Theriak"@en .
+
+:TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert
+    :featureClassified :EhrSfmMedicationAlertOverrides ;
+    a :FeatureCitation ;
+    rdfs:label "possibility to continue prescribing while safety alert"@en .
+
+:TheriakFeatureSafetyAlertsInCaseOfAllergies
+    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of allergies"@en .
+
+:TheriakFeatureSafetyAlertsInCaseOfOverdosing
+    :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of overdosing"@en .
+
+:TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols
+    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    a :FeatureCitation ;
+    rdfs:label "standardized prescriptions and medication protocols"@en .
+
+:TheriakMedicationControlBasedOnNationalDrugDatabase
+    a :FeatureCitation ;
+    rdfs:label "medication control based on national drug database"@en .
+
+:TheriakMedicationSelection
+    a :FeatureCitation ;
+    rdfs:label "medication selection from menu in which medication from the ward stock or the pharmacy is shown."@en .
+
+:TheriakPossibilityToContinuePrescribingWhileSafetyAlert
+    a :FeatureCitation ;
+    rdfs:label "possibility to continue prescribing while safety alert"@en .
+
+:TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses
+    a :FeatureCitation ;
+    rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
+
+:TheriakSafetyAlertsInCaseOfDrugDrugInteractions
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in case of drug-drug interactions"@en .
+
+:TheriakSafetyAlertsInRealTime
+    a :FeatureCitation ;
+    rdfs:label "safety alerts in real time"@en .
+
+:WorldVistA
+    :applicationSystem :WorldVistAdVistaAppHis, :WorldVistaAppEhr ;
+    :homepage <https://worldvista.org> ;
+    a :SoftwareProduct ;
+    rdfs:comment "public domain electronic health record"@en ;
+    rdfs:label "WorldVistA"@en .
+
+:WorldVistAdVistaAppHis
+    a :ApplicationSystemCitation ;
+    rdfs:label "Health Information System (HIS)"@en .
+
+:WorldVistaAppEhr
+    a :ApplicationSystemCitation ;
+    rdfs:label "Electronic health record (EHR)"@en .
 
