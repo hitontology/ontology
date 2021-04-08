@@ -1710,12 +1710,8 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information Management System"@en .
 
-:OpenClinicAppGA
-    a :ApplicationSystemCitation ;
-    rdfs:label "hospital information management system"@en .
-
 :OpenClinicGa
-    :applicationSystem :OpenClinicAppGA ;
+    :applicationSystem :OpenClinicGaAppHims ;
     :homepage <https://sourceforge.net/projects/open-clinic/> ;
     :interoperability :DICOM, :HL7, :HL7_FHIR, :ICD10, :ICPC2, :LOINC, :SNOMED_CT ;
     :language dbr:Dutch_language, dbr:English_language, dbr:French_language, dbr:Portuguese_language, dbr:Spanish_language ;
@@ -1724,6 +1720,10 @@
     a :SoftwareProduct ;
     rdfs:comment "Open Source Integrated Hospital Information Management System"@en ;
     rdfs:label "OpenClinic GA"@en .
+
+:OpenClinicGaAppHims
+    a :ApplicationSystemCitation ;
+    rdfs:label "hospital information management system"@en .
 
 :OpenDental
     :applicationSystem :OpenDentalPracticeManagementSoftware ;
