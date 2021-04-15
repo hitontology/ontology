@@ -61,7 +61,7 @@ hito:WhoDhiCaptureFromDigitalDevices
     hito:internalId "2.10.3" ;
     hito:supportsFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Capture from digital devices"@en ;
+    rdfs:label "Capture diagnostic results from digital devices"@en ;
     skos:altLabel "diagnostic accessories added to digital devices"@en, "point of care diagnostics"@en .
 
 hito:WhoDhiCensusPopulationInformationDataWarehouse
@@ -179,7 +179,7 @@ hito:WhoDhiCommunicationAndPerformanceFeedbackToHealthcareProviders
     hito:internalId "2.5.2" ;
     hito:supportsFunctionClassified hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
-    rdfs:label "Communication and performance feedback to healthcare provider(s)"@en ;
+    rdfs:label "Communication and performance feedback to healthcare provider"@en ;
     skos:altLabel "audit and feedback"@en, "coaching/mentoring"@en, "communication to healthcare provider based on their performance"@en, "supportive supervision"@en .
 
 hito:WhoDhiCommunicationFromHealthcareProvidersToSupervisor
@@ -187,7 +187,7 @@ hito:WhoDhiCommunicationFromHealthcareProvidersToSupervisor
     hito:internalId "2.5.1" ;
     hito:supportsFunctionClassified hito:WhoDhiHealthcareProviderCommunication ;
     a hito:FeatureClassified ;
-    rdfs:label "Communication from healthcare provider(s) to supervisor"@en .
+    rdfs:label "Communication from healthcare provider to supervisor"@en .
 
 hito:WhoDhiCommunitybasedInformationSystem
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
@@ -424,7 +424,7 @@ hito:WhoDhiIdentifyClientsInNeedOfServices
     hito:internalId "2.7.1" ;
     hito:supportsFunctionClassified hito:WhoDhiHealthWorkerActivityPlanningAndScheduling ;
     a hito:FeatureClassified ;
-    rdfs:label "Identify client(s) in need of services"@en ;
+    rdfs:label "Identify clients in need of services"@en ;
     skos:altLabel "automated scheduling of client’s health appointments"@en .
 
 hito:WhoDhiKnowledgeManagementSystem
@@ -486,7 +486,7 @@ hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices
     hito:internalId "2.2.1" ;
     hito:supportsFunctionClassified hito:WhoDhiClientHealthRecords ;
     a hito:FeatureClassified ;
-    rdfs:label "Longitudinal tracking of client’s health status and services"@en ;
+    rdfs:label "Longitudinal tracking of client’s health status and services received"@en ;
     skos:altLabel "case management logs within specific target populations, including migrant populations"@en, "digital register"@en, "digital service record"@en, "digitized registers for longitudinal health program"@en, "domain-specific registers"@en, "eRegister"@en, "eRegistries"@en, "immunization registry"@en, "including tracking of migrant populations’ benefits and health status"@en .
 
 hito:WhoDhiManageBudgetAndExpenditures
@@ -813,7 +813,7 @@ hito:WhoDhiReportEffectsAdverseDrug
     hito:internalId "2.9.3" ;
     hito:supportsFunctionClassified hito:WhoDhiPrescriptionAndMedicationManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Report effects adverse drug"@en ;
+    rdfs:label "Report adverse drug effects"@en ;
     skos:altLabel "reporting contraindications, drug interactions, adverse effects"@en .
 
 hito:WhoDhiReportingOfHealthSystemFeedbackByClients
@@ -962,7 +962,7 @@ hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
     hito:internalId "2.10.2" ;
     hito:supportsFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Transmit diagnostic orders diagnostic results"@en ;
+    rdfs:label "Transmit and track diagnostic orders"@en ;
     skos:altLabel "laboratory test requisition and management"@en .
 
 hito:WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients
@@ -1066,7 +1066,7 @@ hito:WhoDhiTransmitToHealthcareProviderAndTrack
     hito:internalId "2.10.1" ;
     hito:supportsFunctionClassified hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a hito:FeatureClassified ;
-    rdfs:label "Transmit to healthcare provider and track"@en ;
+    rdfs:label "Transmit diagnostic result to healthcare provider"@en ;
     skos:altLabel "laboratory results management"@en, "tests results communication between healthcare providers"@en .
 
 hito:WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup
