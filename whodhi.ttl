@@ -874,7 +874,7 @@ hito:WhoDhiSharedHealthRecordAndHealthInformationRespositories
     hito:applicationSystemCatalogue hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
     hito:internalId "24" ;
     a hito:ApplicationSystemClassified ;
-    rdfs:label "Shared Health Record and health information respositories"@en .
+    rdfs:label "Shared Health Record and health information repositories"@en .
 
 hito:WhoDhiSupplyChainManagement
     hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
