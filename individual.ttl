@@ -10,6 +10,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
+@prefix bibo: <http://purl.org/ontology/bibo/>. 
 @base <http://hitontology.eu/ontology/> .
 
 #################################################################
@@ -301,7 +302,7 @@
                                                        :warningsForDelayedReportingOfResults ;
               :evaluatesApplicationSystemUsedInUnit :healthCenters ,
                                                     :laboratory ;
-              :doi :i10.1371-journal.pone.0090110 ;
+              bibo:doi "10.1371/journal.pone.0090110" ;
               :hasFirstAuthor :BlayaAJ ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid :i24721980 ;
@@ -329,7 +330,7 @@
                                                           :surgeons ,
                                                           :theatrePlanningManager ;
                :evaluatesApplicationSystemUsedInUnit :surgery ;
-               :doi :i10.4338-ACI-2016-06-RA-0100 ;
+               bibo:doi "10.4338/ACI-2016-06-RA-0100" ;
                :hasFirstAuthor :EngelmannC ;
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
@@ -364,7 +365,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
-               :doi :i10.1186-1472-6947-13-107 ;
+               bibo:doi "10.1186/1472-6947-13-107" ;
                :hasFirstAuthor :CastellanosI ;
                :outcomeCriteria :costBenefit ;
                :pmid :i24041117 ;
@@ -392,7 +393,7 @@
                                                         :triggeringTheCDSSToQueryTheTidalVolume ;
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
-               :doi :i10.1016-j.jcrc.2011.07.082 ;
+               bibo:doi "10.1016/j.jcrc.2011.07.082" ;
                :hasFirstAuthor :EslamiS ;
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
@@ -419,7 +420,7 @@
                                                           :informationTechnologyITManager ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :orthopedy ;
-               :doi :i10.1080-17538157.2017.1290638 ;
+               bibo:doi "10.1080/17538157.2017.1290638" ;
                :hasFirstAuthor :AdabaBG ;
                :outcomeCriteria :dataEntriesInRealTime ;
                :pmid :i28350236 ;
@@ -455,7 +456,7 @@
                :evaluatesApplicationSystemUsedInUnit :gynaecology ,
                                                      :infectiology ,
                                                      :orthopedy ;
-               :doi :i10.1016-j.ijmedinf.2014.02.003 ;
+               bibo:doi "10.1016/j.ijmedinf.2014.02.003" ;
                :hasFirstAuthor :JanolsR ;
                :outcomeCriteria :userAdoption ;
                :pmid :i24630924 ;
@@ -485,7 +486,7 @@
                :evaluatesApplicationSystemUsedInUnit :dermatology ,
                                                      :pediatrics ,
                                                      :psychiatryWard ;
-               :doi :i10.1197-jamia.M1118 ;
+               bibo:doi "10.1197/jamia.M1118" ;
                :hasFirstAuthor :AmmenwerthE ;
                :outcomeCriteria :userAcceptance ;
                :pmid :i12509358 ;
@@ -517,7 +518,7 @@
                                                         :useOfClinicalPathways ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :evaluatesApplicationSystemUsedInUnit :universityHospital ;
-               :doi :i10.1016-j.ijmedinf.2010.10.010 ;
+               bibo:doi "10.1016/j.ijmedinf.2010.10.010" ;
                :hasFirstAuthor :AmmenwerthE ;
                :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid :i21115392 ;
@@ -564,7 +565,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :doi :i10.1016-j.ijmedinf.2014.08.010 ;
+               bibo:doi "10.1016/j.ijmedinf.2014.08.010" ;
                :hasFirstAuthor :CallenJ ;
                :outcomeCriteria :workChanges ;
                :pmid :i25241155 ;
@@ -588,7 +589,7 @@
                :evaluatesApplicationSystemHavingFeature :capturingDataForAllPatientVisits ;
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :doi :i10.1016-j.annemergmed.2017.05.032 ;
+               bibo:doi "10.1016/j.annemergmed.2017.05.032" ;
                :hasFirstAuthor :FeblowitzJ ;
                :outcomeCriteria :operationalPerformance ;
                :pmid :i28712608 ;
@@ -618,7 +619,7 @@
               :evaluatesApplicationSystemUsedInUnit :cardiologyWard ,
                                                     :geriatryWard ,
                                                     :psychiatryWard ;
-              :doi :i10.1136-amiajnl-2013-001745 ;
+              bibo:doi "10.1136/amiajnl-2013-001745" ;
               :hasFirstAuthor :WestbrookIJ ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid :i23721982 ;
@@ -641,7 +642,7 @@
                                                           :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :endocrinology ;
-               :doi :i10.4314-mmj.v29i4.8 ;
+               bibo:doi "10.4314/mmj.v29i4.8" ;
                :hasFirstAuthor :AllainTJ ;
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
@@ -671,7 +672,7 @@
                                                           :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :pediatricIntensiveCare ;
-               :doi :i10.1186-1472-6947-1-3 ;
+               bibo:doi "10.1186/1472-6947-1-3" ;
                :hasFirstAuthor :MenkeAJ ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :decisionMaking ,
@@ -702,7 +703,7 @@
                :evaluatesApplicationSystemUsedInUnit :generalInternalMedicine ,
                                                      :intensiveCareUnit ,
                                                      :surgery ;
-               :doi :i10.1056-NEJMsa0907115 ;
+               bibo:doi "10.1056/NEJMsa0907115" ;
                :hasFirstAuthor :PoonGE ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
@@ -727,7 +728,7 @@
                :evaluatesApplicationSystemHavingFeature :completeTestResults ,
                                                         :readBarCodeLabel ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :doi :i10.1136-bmjquality.u201027.w685 ;
+               bibo:doi "10.1136/bmjquality.u201027.w685" ;
                :hasFirstAuthor :GilkarA ;
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
@@ -756,7 +757,7 @@
                                                           :pharmacists ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :nephrology ;
-               :doi :i10.1136-bmj.320.7237.750 ;
+               bibo:doi "10.1136/bmj.320.7237.750" ;
                :hasFirstAuthor :NightingaleGP ;
                :outcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
@@ -784,7 +785,7 @@
                                                         :visualizationOfDiameterProgression ;
                :evaluatesApplicationSystemHavingUserGroup :radiologists ;
                :evaluatesApplicationSystemUsedInUnit :medicalCenter ;
-               :doi <http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> ;
+               bibo:doi "10.1007/s10554-018-1488-9" ;
                :hasFirstAuthor :GaoX ;
                :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
                :studyMethod :qualityAssessmentOfCTScans ;
@@ -807,7 +808,7 @@
                                                          :pharmacists ,
                                                          :physicians ;
               :evaluatesApplicationSystemUsedInUnit :neonatalIntensiveCare ;
-              :doi :i10.4338-ACI-2016-09-RA-0153 ;
+              bibo:doi "10.4338/ACI-2016-09-RA-0153" ;
               :hasFirstAuthor :BeamSK ;
               :outcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
@@ -845,7 +846,7 @@
                                                     :generalInternalMedicineWard ,
                                                     :geriatryWard ,
                                                     :rheumatologyWard ;
-              :doi :i10.1197-jamia.M3099 ;
+              bibo:doi "10.1197/jamia.M3099" ;
               :hasFirstAuthor :VanDoormaalEJ ;
               :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
@@ -876,7 +877,7 @@
               :evaluatesApplicationSystemUsedInUnit :cardiologyWard ,
                                                     :hospitals ,
                                                     :radiology ;
-              :doi :i10.1007-s10278-010-9303-8 ;
+              bibo:doi "10.1007/s10278-010-9303-8" ;
               :hasFirstAuthor :GachowskiA ;
               :outcomeCriteria :availability ,
                                   :clinicalUtility ,
@@ -915,7 +916,7 @@
                                                          :radiologists ,
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :radiology ;
-              :doi :i10.1007-s10278-006-0858-3 ;
+              bibo:doi "10.1007/s10278-006-0858-3" ;
               :hasFirstAuthor :MarianiC ;
               :outcomeCriteria :comparisionOfWorkflow ;
               :pmid :i16955380 ;
@@ -942,7 +943,7 @@
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ,
                                                     :radiology ;
-              :doi :i10.1007-s10278-002-0024-5 ;
+              bibo:doi "10.1007/s10278-002-0024-5" ;
               :hasFirstAuthor :RedfernOR ;
               :outcomeCriteria :timeForProducingImages ;
               :pmid :i12415466 ;
@@ -1022,7 +1023,7 @@
                                                          :translatedIntoSpanish ;
                 :evaluatesApplicationSystemHavingUserGroup :womenOfReproductiveAge ;
                 :evaluatesApplicationSystemUsedInUnit :geneticCounseling ;
-                :doi :i10.1038-s41436-018-0283-2 ;
+                bibo:doi "10.1038/s41436-018-0283-2" ;
                 :hasFirstAuthor :CarlsonLM ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid :i30214066 ;
@@ -1858,120 +1859,6 @@
 :healthCenters rdf:type :OrganizationalUnitCitation ;
                 :organizationalUnitClassified :HealthCenter ;
                 rdfs:label "health centers"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1007-s10278-002-0024-5
-:i10.1007-s10278-002-0024-5 rdf:type :Doi ;
-                            rdfs:label "i10.1007-s10278-002-0024-5"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1007-s10278-006-0858-3
-:i10.1007-s10278-006-0858-3 rdf:type :Doi ;
-                            rdfs:label "i10.1007-s10278-006-0858-3"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1007-s10278-010-9303-8
-:i10.1007-s10278-010-9303-8 rdf:type :Doi ;
-                            rdfs:label "i10.1007-s10278-010-9303-8"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1016-j.annemergmed.2017.05.032
-:i10.1016-j.annemergmed.2017.05.032 rdf:type :Doi ;
-                                    rdfs:label "i10.1016-j.annemergmed.2017.05.032"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2010.10.010
-:i10.1016-j.ijmedinf.2010.10.010 rdf:type :Doi ;
-                                 rdfs:label "i10.1016-j.ijmedinf.2010.10.010"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2014.02.003
-:i10.1016-j.ijmedinf.2014.02.003 rdf:type :Doi ;
-                                 rdfs:label "i10.1016-j.ijmedinf.2014.02.003"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2014.08.010
-:i10.1016-j.ijmedinf.2014.08.010 rdf:type :Doi ;
-                                 rdfs:label "i10.1016-j.ijmedinf.2014.08.010"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1016-j.jcrc.2011.07.082
-:i10.1016-j.jcrc.2011.07.082 rdf:type :Doi ;
-                             rdfs:label "i10.1016-j.jcrc.2011.07.082"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1038-s41436-018-0283-2
-:i10.1038-s41436-018-0283-2 rdf:type :Doi ;
-                            rdfs:label "10.1038/s41436-018-0283-2" .
-
-
-###  http://hitontology.eu/ontology/i10.1038s41436-018-0283-2
-:i10.1038s41436-018-0283-2 rdf:type owl:NamedIndividual .
-
-
-###  http://hitontology.eu/ontology/i10.1056-NEJMsa0907115
-:i10.1056-NEJMsa0907115 rdf:type :Doi ;
-                        rdfs:label "i10.1056-NEJMsa0907115"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1080-17538157.2017.1290638
-:i10.1080-17538157.2017.1290638 rdf:type :Doi ;
-                                rdfs:label "i10.1080-17538157.2017.1290638"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1136-amiajnl-2013-001745
-:i10.1136-amiajnl-2013-001745 rdf:type :Doi ;
-                              rdfs:label "i10.1136-amiajnl-2013-001745"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1136-bmj.320.7237.750
-:i10.1136-bmj.320.7237.750 rdf:type :Doi ;
-                           rdfs:label "i10.1136-bmj.320.7237.750"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1136-bmjquality.u201027.w685
-:i10.1136-bmjquality.u201027.w685 rdf:type :Doi ;
-                                  rdfs:label "i10.1136-bmjquality.u201027.w685"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1186-1472-6947-1-3
-:i10.1186-1472-6947-1-3 rdf:type :Doi ;
-                        rdfs:label "i10.1186-1472-6947-1-3"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1186-1472-6947-13-107
-:i10.1186-1472-6947-13-107 rdf:type :Doi ;
-                           rdfs:label "i10.1186-1472-6947-13-107"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1197-jamia.M1118
-:i10.1197-jamia.M1118 rdf:type :Doi ;
-                      rdfs:label "i10.1197-jamia.M1118"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1197-jamia.M3099
-:i10.1197-jamia.M3099 rdf:type :Doi ;
-                      rdfs:label "i10.1197-jamia.M3099"@en .
-
-
-###  http://hitontology.eu/ontology/i10.1371-journal.pone.0090110
-:i10.1371-journal.pone.0090110 rdf:type :Doi ;
-                               rdfs:label "i10.1371-journal.pone.0090110"@en .
-
-
-###  http://hitontology.eu/ontology/i10.4314-mmj.v29i4.8
-:i10.4314-mmj.v29i4.8 rdf:type :Doi ;
-                      rdfs:label "i10.4314-mmj.v29i4.8"@en .
-
-
-###  http://hitontology.eu/ontology/i10.4338-ACI-2016-06-RA-0100
-:i10.4338-ACI-2016-06-RA-0100 rdf:type :Doi ;
-                              rdfs:label "i10.4338-ACI-2016-06-RA-0100"@en .
-
-
-###  http://hitontology.eu/ontology/i10.4338-ACI-2016-09-RA-0153
-:i10.4338-ACI-2016-09-RA-0153 rdf:type :Doi ;
-                              rdfs:label "i10.4338-ACI-2016-09-RA-0153"@en .
 
 
 ###  http://hitontology.eu/ontology/i10720357
@@ -3169,13 +3056,4 @@
 :writingOfNursingLetters rdf:type :FeatureCitation ;
                             :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
                             rdfs:label "writing of nursing letters"@en .
-
-
-###  http://hitontology.eu/ontology/10.1007-s10554-018-1488-9
-<http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> rdf:type :Doi ;
-                                                           rdfs:label "10.1007/s10554-018-1488-9" .
-
-
-###  http://hitontology.eu/ontology/i10.1038/s41436-018-0283-2
-<http://hitontology.eu/ontology/i10.1038/s41436-018-0283-2> rdf:type owl:NamedIndividual .
 

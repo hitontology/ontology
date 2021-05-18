@@ -10,6 +10,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
+@prefix bibo: <http://purl.org/ontology/bibo/>.
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
@@ -20,7 +21,6 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
      rdfs:comment "finding evidence in health IT evaluation studies"@en ;
-     ov:defines :Doi;
      ov:defines :ExperimentalStudyRCT;
      ov:defines :FeatureCatalogue;
      ov:defines :FeatureClassified;
@@ -246,13 +246,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:domain :FeatureClassified ;
                            rdfs:range :FeatureCatalogue ;
                            rdfs:label "feature catalogue"@en .
-
-
-###  http://hitontology.eu/ontology/doi
-:doi rdf:type owl:ObjectProperty ;
-        rdfs:domain :Study ;
-        rdfs:range :Doi ;
-        rdfs:label "has DOI"@en .
 
 
 ###  http://hitontology.eu/ontology/hasFirstAuthor
@@ -608,11 +601,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/DatabaseSystem
 :DatabaseSystem rdf:type owl:Class ;
           rdfs:label "Database System"@en .
-
-
-###  http://hitontology.eu/ontology/Doi
-:Doi rdf:type owl:Class ;
-     rdfs:label "DOI"@en .
 
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionClassified
