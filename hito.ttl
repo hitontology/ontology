@@ -20,7 +20,7 @@
 :uc1 rdf:type owl:Ontology ;
      rdfs:label "Evaluation Studies"@en ;
      rdfs:comment "finding evidence in health IT evaluation studies"@en ;
-     ov:defines :DOI;
+     ov:defines :Doi;
      ov:defines :ExperimentalStudyRCT;
      ov:defines :FeatureCatalogue;
      ov:defines :FeatureClassified;
@@ -251,7 +251,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/doi
 :doi rdf:type owl:ObjectProperty ;
         rdfs:domain :Study ;
-        rdfs:range :DOI ;
+        rdfs:range :Doi ;
         rdfs:label "has DOI"@en .
 
 
@@ -610,8 +610,8 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:label "Database System"@en .
 
 
-###  http://hitontology.eu/ontology/DOI
-:DOI rdf:type owl:Class ;
+###  http://hitontology.eu/ontology/Doi
+:Doi rdf:type owl:Class ;
      rdfs:label "DOI"@en .
 
 

@@ -1861,47 +1861,47 @@
 
 
 ###  http://hitontology.eu/ontology/i10.1007-s10278-002-0024-5
-:i10.1007-s10278-002-0024-5 rdf:type :DOI ;
+:i10.1007-s10278-002-0024-5 rdf:type :Doi ;
                             rdfs:label "i10.1007-s10278-002-0024-5"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1007-s10278-006-0858-3
-:i10.1007-s10278-006-0858-3 rdf:type :DOI ;
+:i10.1007-s10278-006-0858-3 rdf:type :Doi ;
                             rdfs:label "i10.1007-s10278-006-0858-3"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1007-s10278-010-9303-8
-:i10.1007-s10278-010-9303-8 rdf:type :DOI ;
+:i10.1007-s10278-010-9303-8 rdf:type :Doi ;
                             rdfs:label "i10.1007-s10278-010-9303-8"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1016-j.annemergmed.2017.05.032
-:i10.1016-j.annemergmed.2017.05.032 rdf:type :DOI ;
+:i10.1016-j.annemergmed.2017.05.032 rdf:type :Doi ;
                                     rdfs:label "i10.1016-j.annemergmed.2017.05.032"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2010.10.010
-:i10.1016-j.ijmedinf.2010.10.010 rdf:type :DOI ;
+:i10.1016-j.ijmedinf.2010.10.010 rdf:type :Doi ;
                                  rdfs:label "i10.1016-j.ijmedinf.2010.10.010"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2014.02.003
-:i10.1016-j.ijmedinf.2014.02.003 rdf:type :DOI ;
+:i10.1016-j.ijmedinf.2014.02.003 rdf:type :Doi ;
                                  rdfs:label "i10.1016-j.ijmedinf.2014.02.003"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1016-j.ijmedinf.2014.08.010
-:i10.1016-j.ijmedinf.2014.08.010 rdf:type :DOI ;
+:i10.1016-j.ijmedinf.2014.08.010 rdf:type :Doi ;
                                  rdfs:label "i10.1016-j.ijmedinf.2014.08.010"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1016-j.jcrc.2011.07.082
-:i10.1016-j.jcrc.2011.07.082 rdf:type :DOI ;
+:i10.1016-j.jcrc.2011.07.082 rdf:type :Doi ;
                              rdfs:label "i10.1016-j.jcrc.2011.07.082"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1038-s41436-018-0283-2
-:i10.1038-s41436-018-0283-2 rdf:type :DOI ;
+:i10.1038-s41436-018-0283-2 rdf:type :Doi ;
                             rdfs:label "10.1038/s41436-018-0283-2" .
 
 
@@ -1910,67 +1910,67 @@
 
 
 ###  http://hitontology.eu/ontology/i10.1056-NEJMsa0907115
-:i10.1056-NEJMsa0907115 rdf:type :DOI ;
+:i10.1056-NEJMsa0907115 rdf:type :Doi ;
                         rdfs:label "i10.1056-NEJMsa0907115"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1080-17538157.2017.1290638
-:i10.1080-17538157.2017.1290638 rdf:type :DOI ;
+:i10.1080-17538157.2017.1290638 rdf:type :Doi ;
                                 rdfs:label "i10.1080-17538157.2017.1290638"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1136-amiajnl-2013-001745
-:i10.1136-amiajnl-2013-001745 rdf:type :DOI ;
+:i10.1136-amiajnl-2013-001745 rdf:type :Doi ;
                               rdfs:label "i10.1136-amiajnl-2013-001745"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1136-bmj.320.7237.750
-:i10.1136-bmj.320.7237.750 rdf:type :DOI ;
+:i10.1136-bmj.320.7237.750 rdf:type :Doi ;
                            rdfs:label "i10.1136-bmj.320.7237.750"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1136-bmjquality.u201027.w685
-:i10.1136-bmjquality.u201027.w685 rdf:type :DOI ;
+:i10.1136-bmjquality.u201027.w685 rdf:type :Doi ;
                                   rdfs:label "i10.1136-bmjquality.u201027.w685"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1186-1472-6947-1-3
-:i10.1186-1472-6947-1-3 rdf:type :DOI ;
+:i10.1186-1472-6947-1-3 rdf:type :Doi ;
                         rdfs:label "i10.1186-1472-6947-1-3"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1186-1472-6947-13-107
-:i10.1186-1472-6947-13-107 rdf:type :DOI ;
+:i10.1186-1472-6947-13-107 rdf:type :Doi ;
                            rdfs:label "i10.1186-1472-6947-13-107"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1197-jamia.M1118
-:i10.1197-jamia.M1118 rdf:type :DOI ;
+:i10.1197-jamia.M1118 rdf:type :Doi ;
                       rdfs:label "i10.1197-jamia.M1118"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1197-jamia.M3099
-:i10.1197-jamia.M3099 rdf:type :DOI ;
+:i10.1197-jamia.M3099 rdf:type :Doi ;
                       rdfs:label "i10.1197-jamia.M3099"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.1371-journal.pone.0090110
-:i10.1371-journal.pone.0090110 rdf:type :DOI ;
+:i10.1371-journal.pone.0090110 rdf:type :Doi ;
                                rdfs:label "i10.1371-journal.pone.0090110"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.4314-mmj.v29i4.8
-:i10.4314-mmj.v29i4.8 rdf:type :DOI ;
+:i10.4314-mmj.v29i4.8 rdf:type :Doi ;
                       rdfs:label "i10.4314-mmj.v29i4.8"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.4338-ACI-2016-06-RA-0100
-:i10.4338-ACI-2016-06-RA-0100 rdf:type :DOI ;
+:i10.4338-ACI-2016-06-RA-0100 rdf:type :Doi ;
                               rdfs:label "i10.4338-ACI-2016-06-RA-0100"@en .
 
 
 ###  http://hitontology.eu/ontology/i10.4338-ACI-2016-09-RA-0153
-:i10.4338-ACI-2016-09-RA-0153 rdf:type :DOI ;
+:i10.4338-ACI-2016-09-RA-0153 rdf:type :Doi ;
                               rdfs:label "i10.4338-ACI-2016-09-RA-0153"@en .
 
 
@@ -3172,7 +3172,7 @@
 
 
 ###  http://hitontology.eu/ontology/10.1007-s10554-018-1488-9
-<http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> rdf:type :DOI ;
+<http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> rdf:type :Doi ;
                                                            rdfs:label "10.1007/s10554-018-1488-9" .
 
 
