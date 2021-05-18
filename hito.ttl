@@ -248,8 +248,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "feature catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/hasDOI
-:hasDOI rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/doi
+:doi rdf:type owl:ObjectProperty ;
         rdfs:domain :Study ;
         rdfs:range :DOI ;
         rdfs:label "has DOI"@en .

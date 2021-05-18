@@ -301,7 +301,7 @@
                                                        :warningsForDelayedReportingOfResults ;
               :evaluatesApplicationSystemUsedInUnit :healthCenters ,
                                                     :laboratory ;
-              :hasDOI :i10.1371-journal.pone.0090110 ;
+              :doi :i10.1371-journal.pone.0090110 ;
               :hasFirstAuthor :BlayaAJ ;
               :hasOutcomeCriteria :laboratoyTurnaroundTime ;
               :pmid :i24721980 ;
@@ -329,7 +329,7 @@
                                                           :surgeons ,
                                                           :theatrePlanningManager ;
                :evaluatesApplicationSystemUsedInUnit :surgery ;
-               :hasDOI :i10.4338-ACI-2016-06-RA-0100 ;
+               :doi :i10.4338-ACI-2016-06-RA-0100 ;
                :hasFirstAuthor :EngelmannC ;
                :hasOutcomeCriteria :functionality ,
                                    :socialRepercussions ;
@@ -364,7 +364,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
-               :hasDOI :i10.1186-1472-6947-13-107 ;
+               :doi :i10.1186-1472-6947-13-107 ;
                :hasFirstAuthor :CastellanosI ;
                :hasOutcomeCriteria :costBenefit ;
                :pmid :i24041117 ;
@@ -392,7 +392,7 @@
                                                         :triggeringTheCDSSToQueryTheTidalVolume ;
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
-               :hasDOI :i10.1016-j.jcrc.2011.07.082 ;
+               :doi :i10.1016-j.jcrc.2011.07.082 ;
                :hasFirstAuthor :EslamiS ;
                :hasOutcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
@@ -419,7 +419,7 @@
                                                           :informationTechnologyITManager ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :orthopedy ;
-               :hasDOI :i10.1080-17538157.2017.1290638 ;
+               :doi :i10.1080-17538157.2017.1290638 ;
                :hasFirstAuthor :AdabaBG ;
                :hasOutcomeCriteria :dataEntriesInRealTime ;
                :pmid :i28350236 ;
@@ -455,7 +455,7 @@
                :evaluatesApplicationSystemUsedInUnit :gynaecology ,
                                                      :infectiology ,
                                                      :orthopedy ;
-               :hasDOI :i10.1016-j.ijmedinf.2014.02.003 ;
+               :doi :i10.1016-j.ijmedinf.2014.02.003 ;
                :hasFirstAuthor :JanolsR ;
                :hasOutcomeCriteria :userAdoption ;
                :pmid :i24630924 ;
@@ -485,7 +485,7 @@
                :evaluatesApplicationSystemUsedInUnit :dermatology ,
                                                      :pediatrics ,
                                                      :psychiatryWard ;
-               :hasDOI :i10.1197-jamia.M1118 ;
+               :doi :i10.1197-jamia.M1118 ;
                :hasFirstAuthor :AmmenwerthE ;
                :hasOutcomeCriteria :userAcceptance ;
                :pmid :i12509358 ;
@@ -517,7 +517,7 @@
                                                         :useOfClinicalPathways ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :evaluatesApplicationSystemUsedInUnit :universityHospital ;
-               :hasDOI :i10.1016-j.ijmedinf.2010.10.010 ;
+               :doi :i10.1016-j.ijmedinf.2010.10.010 ;
                :hasFirstAuthor :AmmenwerthE ;
                :hasOutcomeCriteria :qualityOfInformationProcessing ;
                :pmid :i21115392 ;
@@ -564,7 +564,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :hasDOI :i10.1016-j.ijmedinf.2014.08.010 ;
+               :doi :i10.1016-j.ijmedinf.2014.08.010 ;
                :hasFirstAuthor :CallenJ ;
                :hasOutcomeCriteria :workChanges ;
                :pmid :i25241155 ;
@@ -588,7 +588,7 @@
                :evaluatesApplicationSystemHavingFeature :capturingDataForAllPatientVisits ;
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :hasDOI :i10.1016-j.annemergmed.2017.05.032 ;
+               :doi :i10.1016-j.annemergmed.2017.05.032 ;
                :hasFirstAuthor :FeblowitzJ ;
                :hasOutcomeCriteria :operationalPerformance ;
                :pmid :i28712608 ;
@@ -618,7 +618,7 @@
               :evaluatesApplicationSystemUsedInUnit :cardiologyWard ,
                                                     :geriatryWard ,
                                                     :psychiatryWard ;
-              :hasDOI :i10.1136-amiajnl-2013-001745 ;
+              :doi :i10.1136-amiajnl-2013-001745 ;
               :hasFirstAuthor :WestbrookIJ ;
               :hasOutcomeCriteria :reductionOfPrescribingErrors ;
               :pmid :i23721982 ;
@@ -641,7 +641,7 @@
                                                           :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :endocrinology ;
-               :hasDOI :i10.4314-mmj.v29i4.8 ;
+               :doi :i10.4314-mmj.v29i4.8 ;
                :hasFirstAuthor :AllainTJ ;
                :hasOutcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
@@ -671,7 +671,7 @@
                                                           :nurses ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :pediatricIntensiveCare ;
-               :hasDOI :i10.1186-1472-6947-1-3 ;
+               :doi :i10.1186-1472-6947-1-3 ;
                :hasFirstAuthor :MenkeAJ ;
                :hasOutcomeCriteria :amountMedicationErrors ,
                                    :decisionMaking ,
@@ -702,7 +702,7 @@
                :evaluatesApplicationSystemUsedInUnit :generalInternalMedicine ,
                                                      :intensiveCareUnit ,
                                                      :surgery ;
-               :hasDOI :i10.1056-NEJMsa0907115 ;
+               :doi :i10.1056-NEJMsa0907115 ;
                :hasFirstAuthor :PoonGE ;
                :hasOutcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
@@ -727,7 +727,7 @@
                :evaluatesApplicationSystemHavingFeature :completeTestResults ,
                                                         :readBarCodeLabel ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
-               :hasDOI :i10.1136-bmjquality.u201027.w685 ;
+               :doi :i10.1136-bmjquality.u201027.w685 ;
                :hasFirstAuthor :GilkarA ;
                :hasOutcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
@@ -756,7 +756,7 @@
                                                           :pharmacists ,
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :nephrology ;
-               :hasDOI :i10.1136-bmj.320.7237.750 ;
+               :doi :i10.1136-bmj.320.7237.750 ;
                :hasFirstAuthor :NightingaleGP ;
                :hasOutcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
@@ -784,7 +784,7 @@
                                                         :visualizationOfDiameterProgression ;
                :evaluatesApplicationSystemHavingUserGroup :radiologists ;
                :evaluatesApplicationSystemUsedInUnit :medicalCenter ;
-               :hasDOI <http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> ;
+               :doi <http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> ;
                :hasFirstAuthor :GaoX ;
                :hasOutcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
                :hasStudyMethod :qualityAssessmentOfCTScans ;
@@ -807,7 +807,7 @@
                                                          :pharmacists ,
                                                          :physicians ;
               :evaluatesApplicationSystemUsedInUnit :neonatalIntensiveCare ;
-              :hasDOI :i10.4338-ACI-2016-09-RA-0153 ;
+              :doi :i10.4338-ACI-2016-09-RA-0153 ;
               :hasFirstAuthor :BeamSK ;
               :hasOutcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
@@ -845,7 +845,7 @@
                                                     :generalInternalMedicineWard ,
                                                     :geriatryWard ,
                                                     :rheumatologyWard ;
-              :hasDOI :i10.1197-jamia.M3099 ;
+              :doi :i10.1197-jamia.M3099 ;
               :hasFirstAuthor :VanDoormaalEJ ;
               :hasOutcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
@@ -876,7 +876,7 @@
               :evaluatesApplicationSystemUsedInUnit :cardiologyWard ,
                                                     :hospitals ,
                                                     :radiology ;
-              :hasDOI :i10.1007-s10278-010-9303-8 ;
+              :doi :i10.1007-s10278-010-9303-8 ;
               :hasFirstAuthor :GachowskiA ;
               :hasOutcomeCriteria :availability ,
                                   :clinicalUtility ,
@@ -915,7 +915,7 @@
                                                          :radiologists ,
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :radiology ;
-              :hasDOI :i10.1007-s10278-006-0858-3 ;
+              :doi :i10.1007-s10278-006-0858-3 ;
               :hasFirstAuthor :MarianiC ;
               :hasOutcomeCriteria :comparisionOfWorkflow ;
               :pmid :i16955380 ;
@@ -942,7 +942,7 @@
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ,
                                                     :radiology ;
-              :hasDOI :i10.1007-s10278-002-0024-5 ;
+              :doi :i10.1007-s10278-002-0024-5 ;
               :hasFirstAuthor :RedfernOR ;
               :hasOutcomeCriteria :timeForProducingImages ;
               :pmid :i12415466 ;
@@ -1022,7 +1022,7 @@
                                                          :translatedIntoSpanish ;
                 :evaluatesApplicationSystemHavingUserGroup :womenOfReproductiveAge ;
                 :evaluatesApplicationSystemUsedInUnit :geneticCounseling ;
-                :hasDOI :i10.1038-s41436-018-0283-2 ;
+                :doi :i10.1038-s41436-018-0283-2 ;
                 :hasFirstAuthor :CarlsonLM ;
                 :hasOutcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid :i30214066 ;
