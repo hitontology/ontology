@@ -269,8 +269,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "has Outcome Criteria"@en .
 
 
-###  http://hitontology.eu/ontology/hasPMID
-:hasPMID rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/pmid
+:pmid rdf:type owl:ObjectProperty ;
          rdfs:domain :Study ;
          rdfs:range :PMID ;
          rdfs:label "has PMID"@en .

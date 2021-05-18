@@ -304,7 +304,7 @@
               :hasDOI :i10.1371-journal.pone.0090110 ;
               :hasFirstAuthor :BlayaAJ ;
               :hasOutcomeCriteria :laboratoyTurnaroundTime ;
-              :hasPMID :i24721980 ;
+              :pmid :i24721980 ;
               :hasStudyMethod :inferentialStatistics ,
                               :intentToTreatAnalysis ,
                               :secondaryUseOfClinicalData ,
@@ -333,7 +333,7 @@
                :hasFirstAuthor :EngelmannC ;
                :hasOutcomeCriteria :functionality ,
                                    :socialRepercussions ;
-               :hasPMID :i28512663 ;
+               :pmid :i28512663 ;
                :hasStudyMethod :documentAnalysis ,
                                :interviews ,
                                :survey ;
@@ -367,7 +367,7 @@
                :hasDOI :i10.1186-1472-6947-13-107 ;
                :hasFirstAuthor :CastellanosI ;
                :hasOutcomeCriteria :costBenefit ;
-               :hasPMID :i24041117 ;
+               :pmid :i24041117 ;
                :hasStudyMethod :costAnalysis ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
                :publishedInYear 2013 ;
@@ -396,7 +396,7 @@
                :hasFirstAuthor :EslamiS ;
                :hasOutcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
-               :hasPMID :i22172793 ;
+               :pmid :i22172793 ;
                :hasStudyMethod :dataAnalysisOutOfIntervention ,
                                :inferentialStatistics ,
                                :timeMeasurement ;
@@ -422,7 +422,7 @@
                :hasDOI :i10.1080-17538157.2017.1290638 ;
                :hasFirstAuthor :AdabaBG ;
                :hasOutcomeCriteria :dataEntriesInRealTime ;
-               :hasPMID :i28350236 ;
+               :pmid :i28350236 ;
                :hasStudyMethod :documentAnalysis ,
                                :interviews ,
                                :observations ;
@@ -458,7 +458,7 @@
                :hasDOI :i10.1016-j.ijmedinf.2014.02.003 ;
                :hasFirstAuthor :JanolsR ;
                :hasOutcomeCriteria :userAdoption ;
-               :hasPMID :i24630924 ;
+               :pmid :i24630924 ;
                :hasStudyMethod :interviews ,
                                :observations ,
                                :questionnaires ;
@@ -488,7 +488,7 @@
                :hasDOI :i10.1197-jamia.M1118 ;
                :hasFirstAuthor :AmmenwerthE ;
                :hasOutcomeCriteria :userAcceptance ;
-               :hasPMID :i12509358 ;
+               :pmid :i12509358 ;
                :hasStudyMethod :interviews ,
                                :questionnairesQuantitative ;
                :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
@@ -520,7 +520,7 @@
                :hasDOI :i10.1016-j.ijmedinf.2010.10.010 ;
                :hasFirstAuthor :AmmenwerthE ;
                :hasOutcomeCriteria :qualityOfInformationProcessing ;
-               :hasPMID :i21115392 ;
+               :pmid :i21115392 ;
                :hasStudyMethod :surveyWithOpenQuestions ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear 2011 ;
@@ -539,7 +539,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :hasFirstAuthor :LiaskosJ ;
                :hasOutcomeCriteria :userInteractionSatisfaction ;
-               :hasPMID :i16482381 ;
+               :pmid :i16482381 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :questionnairesQuantitative ,
                                :scenarios ;
@@ -567,7 +567,7 @@
                :hasDOI :i10.1016-j.ijmedinf.2014.08.010 ;
                :hasFirstAuthor :CallenJ ;
                :hasOutcomeCriteria :workChanges ;
-               :hasPMID :i25241155 ;
+               :pmid :i25241155 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :focusGroups ,
                                :inferentialStatistics ,
@@ -591,7 +591,7 @@
                :hasDOI :i10.1016-j.annemergmed.2017.05.032 ;
                :hasFirstAuthor :FeblowitzJ ;
                :hasOutcomeCriteria :operationalPerformance ;
-               :hasPMID :i28712608 ;
+               :pmid :i28712608 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :secondaryUseOfOperationalData ;
                :publishedInJournal :AnnalsOfEmergencyMedicine ;
@@ -621,7 +621,7 @@
               :hasDOI :i10.1136-amiajnl-2013-001745 ;
               :hasFirstAuthor :WestbrookIJ ;
               :hasOutcomeCriteria :reductionOfPrescribingErrors ;
-              :hasPMID :i23721982 ;
+              :pmid :i23721982 ;
               :hasStudyMethod :clinicalEhrSfmAudit ,
                               :contentAnalysis ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
@@ -645,7 +645,7 @@
                :hasFirstAuthor :AllainTJ ;
                :hasOutcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
-               :hasPMID :i29963288 ;
+               :pmid :i29963288 ;
                :hasStudyMethod :contentAnalysis ,
                                :dataAnalysisOutOfIntervention ,
                                :descriptiveStatistics ;
@@ -678,7 +678,7 @@
                                    :qualityOfDocumentation ,
                                    :shiftToShiftContinuity ,
                                    :timeSpent ;
-               :hasPMID :i11604105 ;
+               :pmid :i11604105 ;
                :hasStudyMethod :documentAnalysis ,
                                :questionnaires ,
                                :timeMeasurement ;
@@ -706,7 +706,7 @@
                :hasFirstAuthor :PoonGE ;
                :hasOutcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
-               :hasPMID :i20445181 ;
+               :pmid :i20445181 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :documentAnalysis ,
                                :inferentialStatistics ,
@@ -731,7 +731,7 @@
                :hasFirstAuthor :GilkarA ;
                :hasOutcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
-               :hasPMID :i26734177 ;
+               :pmid :i26734177 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :timeMeasurement ;
                :publishedInJournal :BMJQualityImprovementReports ;
@@ -761,7 +761,7 @@
                :hasOutcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
                                    :userOpinion ;
-               :hasPMID :i10720357 ;
+               :pmid :i10720357 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :performanceAnalysis ,
                                :questionnaires ;
@@ -812,7 +812,7 @@
               :hasOutcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
-              :hasPMID :i28378024 ;
+              :pmid :i28378024 ;
               :hasStudyMethod :inferentialStatistics ,
                               :survey ;
               :publishedInJournal :AppliedClinicalInformaticsACI ;
@@ -849,7 +849,7 @@
               :hasFirstAuthor :VanDoormaalEJ ;
               :hasOutcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
-              :hasPMID :i19717798 ;
+              :pmid :i19717798 ;
               :hasStudyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :documentAnalysis ;
@@ -887,7 +887,7 @@
                                   :imageQuality ,
                                   :qualityOfRealTimeSynchronizedViewing ,
                                   :softwareStability ;
-              :hasPMID :i20495992 ;
+              :pmid :i20495992 ;
               :hasStudyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :inferentialStatistics ,
@@ -918,7 +918,7 @@
               :hasDOI :i10.1007-s10278-006-0858-3 ;
               :hasFirstAuthor :MarianiC ;
               :hasOutcomeCriteria :comparisionOfWorkflow ;
-              :hasPMID :i16955380 ;
+              :pmid :i16955380 ;
               :hasStudyMethod :descriptiveStatistics ,
                               :processAnalysis ,
                               :timeMeasurement ;
@@ -945,7 +945,7 @@
               :hasDOI :i10.1007-s10278-002-0024-5 ;
               :hasFirstAuthor :RedfernOR ;
               :hasOutcomeCriteria :timeForProducingImages ;
-              :hasPMID :i12415466 ;
+              :pmid :i12415466 ;
               :hasStudyMethod :dataAnalysisOutOfIntervention ,
                               :inferentialStatistics ,
                               :timeMeasurement ;
@@ -967,7 +967,7 @@
               :evaluatesApplicationSystemUsedInUnit :laboratory ;
               :hasFirstAuthor :ChienTI ;
               :hasOutcomeCriteria :analyticalTurnaroundTime ;
-              :hasPMID :i17660145 ;
+              :pmid :i17660145 ;
               :hasStudyMethod :timeMeasurement ;
               :publishedInJournal :JournalOfTheFormosanMedicalAssociation ;
               :publishedInYear 2007 ;
@@ -1000,7 +1000,7 @@
                                   :usersViewOnUsability ,
                                   :usersViewOnUsefulness ,
                                   :usersViewOnUserSupport ;
-              :hasPMID :i16160324 ;
+              :pmid :i16160324 ;
               :hasStudyMethod :contentAnalysis ,
                               :descriptiveStatistics ,
                               :surveyWithOpenQuestions ;
@@ -1025,7 +1025,7 @@
                 :hasDOI :i10.1038-s41436-018-0283-2 ;
                 :hasFirstAuthor :CarlsonLM ;
                 :hasOutcomeCriteria :notInferiorToAConsultingVisit ;
-                :hasPMID :i30214066 ;
+                :pmid :i30214066 ;
                 :hasStudyMethod :decisionalConflictScale ,
                                 :demographicsSurvey ,
                                 :knowledgeQuestionnaire ;
