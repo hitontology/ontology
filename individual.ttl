@@ -303,7 +303,7 @@
                                                     :laboratory ;
               :doi :i10.1371-journal.pone.0090110 ;
               :hasFirstAuthor :BlayaAJ ;
-              :hasOutcomeCriteria :laboratoyTurnaroundTime ;
+              :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid :i24721980 ;
               :hasStudyMethod :inferentialStatistics ,
                               :intentToTreatAnalysis ,
@@ -331,7 +331,7 @@
                :evaluatesApplicationSystemUsedInUnit :surgery ;
                :doi :i10.4338-ACI-2016-06-RA-0100 ;
                :hasFirstAuthor :EngelmannC ;
-               :hasOutcomeCriteria :functionality ,
+               :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
                :pmid :i28512663 ;
                :hasStudyMethod :documentAnalysis ,
@@ -366,7 +366,7 @@
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                :doi :i10.1186-1472-6947-13-107 ;
                :hasFirstAuthor :CastellanosI ;
-               :hasOutcomeCriteria :costBenefit ;
+               :outcomeCriteria :costBenefit ;
                :pmid :i24041117 ;
                :hasStudyMethod :costAnalysis ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
@@ -394,7 +394,7 @@
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                :doi :i10.1016-j.jcrc.2011.07.082 ;
                :hasFirstAuthor :EslamiS ;
-               :hasOutcomeCriteria :adherenceToRecommendations ,
+               :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
                :pmid :i22172793 ;
                :hasStudyMethod :dataAnalysisOutOfIntervention ,
@@ -421,7 +421,7 @@
                :evaluatesApplicationSystemUsedInUnit :orthopedy ;
                :doi :i10.1080-17538157.2017.1290638 ;
                :hasFirstAuthor :AdabaBG ;
-               :hasOutcomeCriteria :dataEntriesInRealTime ;
+               :outcomeCriteria :dataEntriesInRealTime ;
                :pmid :i28350236 ;
                :hasStudyMethod :documentAnalysis ,
                                :interviews ,
@@ -457,7 +457,7 @@
                                                      :orthopedy ;
                :doi :i10.1016-j.ijmedinf.2014.02.003 ;
                :hasFirstAuthor :JanolsR ;
-               :hasOutcomeCriteria :userAdoption ;
+               :outcomeCriteria :userAdoption ;
                :pmid :i24630924 ;
                :hasStudyMethod :interviews ,
                                :observations ,
@@ -487,7 +487,7 @@
                                                      :psychiatryWard ;
                :doi :i10.1197-jamia.M1118 ;
                :hasFirstAuthor :AmmenwerthE ;
-               :hasOutcomeCriteria :userAcceptance ;
+               :outcomeCriteria :userAcceptance ;
                :pmid :i12509358 ;
                :hasStudyMethod :interviews ,
                                :questionnairesQuantitative ;
@@ -519,7 +519,7 @@
                :evaluatesApplicationSystemUsedInUnit :universityHospital ;
                :doi :i10.1016-j.ijmedinf.2010.10.010 ;
                :hasFirstAuthor :AmmenwerthE ;
-               :hasOutcomeCriteria :qualityOfInformationProcessing ;
+               :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid :i21115392 ;
                :hasStudyMethod :surveyWithOpenQuestions ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
@@ -538,7 +538,7 @@
                                                         :creationOfNursingCarePlans ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :hasFirstAuthor :LiaskosJ ;
-               :hasOutcomeCriteria :userInteractionSatisfaction ;
+               :outcomeCriteria :userInteractionSatisfaction ;
                :pmid :i16482381 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :questionnairesQuantitative ,
@@ -566,7 +566,7 @@
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                :doi :i10.1016-j.ijmedinf.2014.08.010 ;
                :hasFirstAuthor :CallenJ ;
-               :hasOutcomeCriteria :workChanges ;
+               :outcomeCriteria :workChanges ;
                :pmid :i25241155 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :focusGroups ,
@@ -590,7 +590,7 @@
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                :doi :i10.1016-j.annemergmed.2017.05.032 ;
                :hasFirstAuthor :FeblowitzJ ;
-               :hasOutcomeCriteria :operationalPerformance ;
+               :outcomeCriteria :operationalPerformance ;
                :pmid :i28712608 ;
                :hasStudyMethod :descriptiveStatistics ,
                                :secondaryUseOfOperationalData ;
@@ -620,7 +620,7 @@
                                                     :psychiatryWard ;
               :doi :i10.1136-amiajnl-2013-001745 ;
               :hasFirstAuthor :WestbrookIJ ;
-              :hasOutcomeCriteria :reductionOfPrescribingErrors ;
+              :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid :i23721982 ;
               :hasStudyMethod :clinicalEhrSfmAudit ,
                               :contentAnalysis ;
@@ -643,7 +643,7 @@
                :evaluatesApplicationSystemUsedInUnit :endocrinology ;
                :doi :i10.4314-mmj.v29i4.8 ;
                :hasFirstAuthor :AllainTJ ;
-               :hasOutcomeCriteria :glycaemicControl ,
+               :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
                :pmid :i29963288 ;
                :hasStudyMethod :contentAnalysis ,
@@ -673,7 +673,7 @@
                :evaluatesApplicationSystemUsedInUnit :pediatricIntensiveCare ;
                :doi :i10.1186-1472-6947-1-3 ;
                :hasFirstAuthor :MenkeAJ ;
-               :hasOutcomeCriteria :amountMedicationErrors ,
+               :outcomeCriteria :amountMedicationErrors ,
                                    :decisionMaking ,
                                    :qualityOfDocumentation ,
                                    :shiftToShiftContinuity ,
@@ -704,7 +704,7 @@
                                                      :surgery ;
                :doi :i10.1056-NEJMsa0907115 ;
                :hasFirstAuthor :PoonGE ;
-               :hasOutcomeCriteria :amountMedicationErrors ,
+               :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
                :pmid :i20445181 ;
                :hasStudyMethod :descriptiveStatistics ,
@@ -729,7 +729,7 @@
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                :doi :i10.1136-bmjquality.u201027.w685 ;
                :hasFirstAuthor :GilkarA ;
-               :hasOutcomeCriteria :patientWaitingTimes ,
+               :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
                :pmid :i26734177 ;
                :hasStudyMethod :descriptiveStatistics ,
@@ -758,7 +758,7 @@
                :evaluatesApplicationSystemUsedInUnit :nephrology ;
                :doi :i10.1136-bmj.320.7237.750 ;
                :hasFirstAuthor :NightingaleGP ;
-               :hasOutcomeCriteria :cancelledPrescriptions ,
+               :outcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
                                    :userOpinion ;
                :pmid :i10720357 ;
@@ -786,7 +786,7 @@
                :evaluatesApplicationSystemUsedInUnit :medicalCenter ;
                :doi <http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> ;
                :hasFirstAuthor :GaoX ;
-               :hasOutcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
+               :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
                :hasStudyMethod :qualityAssessmentOfCTScans ;
                :publishedInJournal :TheInternationalJournalOfCardiovascularImaging ;
                :publishedInYear 2019 ;
@@ -809,7 +809,7 @@
               :evaluatesApplicationSystemUsedInUnit :neonatalIntensiveCare ;
               :doi :i10.4338-ACI-2016-09-RA-0153 ;
               :hasFirstAuthor :BeamSK ;
-              :hasOutcomeCriteria :implementationOfTheApplicationSystem ,
+              :outcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
               :pmid :i28378024 ;
@@ -847,7 +847,7 @@
                                                     :rheumatologyWard ;
               :doi :i10.1197-jamia.M3099 ;
               :hasFirstAuthor :VanDoormaalEJ ;
-              :hasOutcomeCriteria :amountOfAdverseDrugEvents ,
+              :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
               :pmid :i19717798 ;
               :hasStudyMethod :dataAnalysisOutOfIntervention ,
@@ -878,7 +878,7 @@
                                                     :radiology ;
               :doi :i10.1007-s10278-010-9303-8 ;
               :hasFirstAuthor :GachowskiA ;
-              :hasOutcomeCriteria :availability ,
+              :outcomeCriteria :availability ,
                                   :clinicalUtility ,
                                   :comparisionOfRemoteAndOnSiteConsultations ,
                                   :comparisionWithOnSiteEchocardiographicMachines ,
@@ -917,7 +917,7 @@
               :evaluatesApplicationSystemUsedInUnit :radiology ;
               :doi :i10.1007-s10278-006-0858-3 ;
               :hasFirstAuthor :MarianiC ;
-              :hasOutcomeCriteria :comparisionOfWorkflow ;
+              :outcomeCriteria :comparisionOfWorkflow ;
               :pmid :i16955380 ;
               :hasStudyMethod :descriptiveStatistics ,
                               :processAnalysis ,
@@ -944,7 +944,7 @@
                                                     :radiology ;
               :doi :i10.1007-s10278-002-0024-5 ;
               :hasFirstAuthor :RedfernOR ;
-              :hasOutcomeCriteria :timeForProducingImages ;
+              :outcomeCriteria :timeForProducingImages ;
               :pmid :i12415466 ;
               :hasStudyMethod :dataAnalysisOutOfIntervention ,
                               :inferentialStatistics ,
@@ -966,7 +966,7 @@
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :laboratory ;
               :hasFirstAuthor :ChienTI ;
-              :hasOutcomeCriteria :analyticalTurnaroundTime ;
+              :outcomeCriteria :analyticalTurnaroundTime ;
               :pmid :i17660145 ;
               :hasStudyMethod :timeMeasurement ;
               :publishedInJournal :JournalOfTheFormosanMedicalAssociation ;
@@ -996,7 +996,7 @@
                                                          :secretaries ;
               :evaluatesApplicationSystemUsedInUnit :surgery ;
               :hasFirstAuthor :LemmettyK ;
-              :hasOutcomeCriteria :usersViewOnTraining ,
+              :outcomeCriteria :usersViewOnTraining ,
                                   :usersViewOnUsability ,
                                   :usersViewOnUsefulness ,
                                   :usersViewOnUserSupport ;
@@ -1024,7 +1024,7 @@
                 :evaluatesApplicationSystemUsedInUnit :geneticCounseling ;
                 :doi :i10.1038-s41436-018-0283-2 ;
                 :hasFirstAuthor :CarlsonLM ;
-                :hasOutcomeCriteria :notInferiorToAConsultingVisit ;
+                :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid :i30214066 ;
                 :hasStudyMethod :decisionalConflictScale ,
                                 :demographicsSurvey ,

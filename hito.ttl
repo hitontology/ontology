@@ -262,8 +262,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                 rdfs:label "has First Author"@en .
 
 
-###  http://hitontology.eu/ontology/hasOutcomeCriteria
-:hasOutcomeCriteria rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/outcomeCriteria
+:outcomeCriteria rdf:type owl:ObjectProperty ;
                     rdfs:domain :Study ;
                     rdfs:range :OutcomeCriteriaCitation ;
                     rdfs:label "has Outcome Criteria"@en .
