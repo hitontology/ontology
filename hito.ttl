@@ -276,8 +276,8 @@ xsd:gYear rdf:type rdfs:Datatype .
          rdfs:label "has PMID"@en .
 
 
-###  http://hitontology.eu/ontology/hasStudyMethod
-:hasStudyMethod rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/studyMethod
+:studyMethod rdf:type owl:ObjectProperty ;
                 rdfs:domain :Study ;
                 rdfs:range :StudyMethodCitation ;
                 rdfs:label "has Study Method"@en .

@@ -305,7 +305,7 @@
               :hasFirstAuthor :BlayaAJ ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid :i24721980 ;
-              :hasStudyMethod :inferentialStatistics ,
+              :studyMethod :inferentialStatistics ,
                               :intentToTreatAnalysis ,
                               :secondaryUseOfClinicalData ,
                               :timeMeasurement ;
@@ -334,7 +334,7 @@
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
                :pmid :i28512663 ;
-               :hasStudyMethod :documentAnalysis ,
+               :studyMethod :documentAnalysis ,
                                :interviews ,
                                :survey ;
                :publishedInJournal :AppliedClinicalInformaticsACI ;
@@ -368,7 +368,7 @@
                :hasFirstAuthor :CastellanosI ;
                :outcomeCriteria :costBenefit ;
                :pmid :i24041117 ;
-               :hasStudyMethod :costAnalysis ;
+               :studyMethod :costAnalysis ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
                :publishedInYear 2013 ;
                :vancouverReference "Castellanos I, Schüttler J, Prokosch H-U, Bürkle T. Does introduction of a Patient Data Management System (PDMS) improve the financial situation of an intensive care unit? BMC Med Inform Decis Mak. 2013 Sep 16;13:107"@en ;
@@ -397,7 +397,7 @@
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
                :pmid :i22172793 ;
-               :hasStudyMethod :dataAnalysisOutOfIntervention ,
+               :studyMethod :dataAnalysisOutOfIntervention ,
                                :inferentialStatistics ,
                                :timeMeasurement ;
                :publishedInJournal :JournalOfCriticalCare ;
@@ -423,7 +423,7 @@
                :hasFirstAuthor :AdabaBG ;
                :outcomeCriteria :dataEntriesInRealTime ;
                :pmid :i28350236 ;
-               :hasStudyMethod :documentAnalysis ,
+               :studyMethod :documentAnalysis ,
                                :interviews ,
                                :observations ;
                :publishedInJournal :InformaticsForHealthAndSocialCare ;
@@ -459,7 +459,7 @@
                :hasFirstAuthor :JanolsR ;
                :outcomeCriteria :userAdoption ;
                :pmid :i24630924 ;
-               :hasStudyMethod :interviews ,
+               :studyMethod :interviews ,
                                :observations ,
                                :questionnaires ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
@@ -489,7 +489,7 @@
                :hasFirstAuthor :AmmenwerthE ;
                :outcomeCriteria :userAcceptance ;
                :pmid :i12509358 ;
-               :hasStudyMethod :interviews ,
+               :studyMethod :interviews ,
                                :questionnairesQuantitative ;
                :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
                :publishedInYear 2003 ;
@@ -521,7 +521,7 @@
                :hasFirstAuthor :AmmenwerthE ;
                :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid :i21115392 ;
-               :hasStudyMethod :surveyWithOpenQuestions ;
+               :studyMethod :surveyWithOpenQuestions ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear 2011 ;
                :vancouverReference "Ammenwerth E, Rauchegger F, Ehlers F, Hirsch B, Schaubmayr C. Effect of a nursing information system on the quality of information processing in nursing: An evaluation study using the HIS-monitor instrument. Int J Med Inform. 2011 Jan;80(1):25–38" ;
@@ -540,7 +540,7 @@
                :hasFirstAuthor :LiaskosJ ;
                :outcomeCriteria :userInteractionSatisfaction ;
                :pmid :i16482381 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :questionnairesQuantitative ,
                                :scenarios ;
                :publishedInJournal :MethodsOfInformationInMedicine ;
@@ -568,7 +568,7 @@
                :hasFirstAuthor :CallenJ ;
                :outcomeCriteria :workChanges ;
                :pmid :i25241155 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :focusGroups ,
                                :inferentialStatistics ,
                                :interviews ,
@@ -592,7 +592,7 @@
                :hasFirstAuthor :FeblowitzJ ;
                :outcomeCriteria :operationalPerformance ;
                :pmid :i28712608 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :secondaryUseOfOperationalData ;
                :publishedInJournal :AnnalsOfEmergencyMedicine ;
                :publishedInYear 2017 ;
@@ -622,7 +622,7 @@
               :hasFirstAuthor :WestbrookIJ ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid :i23721982 ;
-              :hasStudyMethod :clinicalEhrSfmAudit ,
+              :studyMethod :clinicalEhrSfmAudit ,
                               :contentAnalysis ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
               :publishedInYear 2013 ;
@@ -646,7 +646,7 @@
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
                :pmid :i29963288 ;
-               :hasStudyMethod :contentAnalysis ,
+               :studyMethod :contentAnalysis ,
                                :dataAnalysisOutOfIntervention ,
                                :descriptiveStatistics ;
                :publishedInJournal :MalawiMedicalJournal ;
@@ -679,7 +679,7 @@
                                    :shiftToShiftContinuity ,
                                    :timeSpent ;
                :pmid :i11604105 ;
-               :hasStudyMethod :documentAnalysis ,
+               :studyMethod :documentAnalysis ,
                                :questionnaires ,
                                :timeMeasurement ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
@@ -707,7 +707,7 @@
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
                :pmid :i20445181 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :documentAnalysis ,
                                :inferentialStatistics ,
                                :observations ;
@@ -732,7 +732,7 @@
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
                :pmid :i26734177 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :timeMeasurement ;
                :publishedInJournal :BMJQualityImprovementReports ;
                :publishedInYear 2013 ;
@@ -762,7 +762,7 @@
                                    :overridenWarningMessages ,
                                    :userOpinion ;
                :pmid :i10720357 ;
-               :hasStudyMethod :descriptiveStatistics ,
+               :studyMethod :descriptiveStatistics ,
                                :performanceAnalysis ,
                                :questionnaires ;
                :publishedInJournal :BMJ ;
@@ -787,7 +787,7 @@
                :doi <http://hitontology.eu/ontology/10.1007-s10554-018-1488-9> ;
                :hasFirstAuthor :GaoX ;
                :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
-               :hasStudyMethod :qualityAssessmentOfCTScans ;
+               :studyMethod :qualityAssessmentOfCTScans ;
                :publishedInJournal :TheInternationalJournalOfCardiovascularImaging ;
                :publishedInYear 2019 ;
                :vancouverReference "Gao X, Boccalini S, Kitslaar PH, Budde RPJ, Tu S, Lelieveldt BPF, et al. A novel software tool for semi-automatic quantification of thoracic aorta dilatation on baseline and follow-up computed tomography angiography. Int J Cardiovasc Imaging. 2019 Apr;35(4):711–23" ;
@@ -813,7 +813,7 @@
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
               :pmid :i28378024 ;
-              :hasStudyMethod :inferentialStatistics ,
+              :studyMethod :inferentialStatistics ,
                               :survey ;
               :publishedInJournal :AppliedClinicalInformaticsACI ;
               :publishedInYear 2017 ;
@@ -850,7 +850,7 @@
               :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
               :pmid :i19717798 ;
-              :hasStudyMethod :dataAnalysisOutOfIntervention ,
+              :studyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :documentAnalysis ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
@@ -888,7 +888,7 @@
                                   :qualityOfRealTimeSynchronizedViewing ,
                                   :softwareStability ;
               :pmid :i20495992 ;
-              :hasStudyMethod :dataAnalysisOutOfIntervention ,
+              :studyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :inferentialStatistics ,
                               :surveyWithOpenQuestions ;
@@ -919,7 +919,7 @@
               :hasFirstAuthor :MarianiC ;
               :outcomeCriteria :comparisionOfWorkflow ;
               :pmid :i16955380 ;
-              :hasStudyMethod :descriptiveStatistics ,
+              :studyMethod :descriptiveStatistics ,
                               :processAnalysis ,
                               :timeMeasurement ;
               :publishedInJournal :JournalOfDigitalImaging ;
@@ -946,7 +946,7 @@
               :hasFirstAuthor :RedfernOR ;
               :outcomeCriteria :timeForProducingImages ;
               :pmid :i12415466 ;
-              :hasStudyMethod :dataAnalysisOutOfIntervention ,
+              :studyMethod :dataAnalysisOutOfIntervention ,
                               :inferentialStatistics ,
                               :timeMeasurement ;
               :publishedInJournal :JournalOfDigitalImaging ;
@@ -968,7 +968,7 @@
               :hasFirstAuthor :ChienTI ;
               :outcomeCriteria :analyticalTurnaroundTime ;
               :pmid :i17660145 ;
-              :hasStudyMethod :timeMeasurement ;
+              :studyMethod :timeMeasurement ;
               :publishedInJournal :JournalOfTheFormosanMedicalAssociation ;
               :publishedInYear 2007 ;
               :vancouverReference "Chien T-I, Lu J-Y, Kao J-T, Cheng Y-C, Lee Y-F. Evaluation and Improvement Strategy of Analytical Turnaround Time in the Stat Laboratory. J Formos Med Assoc. 2007 Jul;106(7):558–64" ;
@@ -1001,7 +1001,7 @@
                                   :usersViewOnUsefulness ,
                                   :usersViewOnUserSupport ;
               :pmid :i16160324 ;
-              :hasStudyMethod :contentAnalysis ,
+              :studyMethod :contentAnalysis ,
                               :descriptiveStatistics ,
                               :surveyWithOpenQuestions ;
               :publishedInJournal :ConnectingMedicalInformaticsAndBio-informaticsProceedingsOfMIE2005 ;
@@ -1026,7 +1026,7 @@
                 :hasFirstAuthor :CarlsonLM ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid :i30214066 ;
-                :hasStudyMethod :decisionalConflictScale ,
+                :studyMethod :decisionalConflictScale ,
                                 :demographicsSurvey ,
                                 :knowledgeQuestionnaire ;
                 :publishedInJournal :GeneticsInMedicine-officialJournalOfTheAmericanCollegeOfMedicalGenetics ;
