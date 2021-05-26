@@ -472,7 +472,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/internalId
 :internalId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain owl:Thing ;
+          rdfs:domain :Classified ;
           rdfs:range xsd:string ;
           rdfs:label "internal identifier"@en;
           rdfs:comment "Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "@en.
