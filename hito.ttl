@@ -478,13 +478,22 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:comment "Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "@en.
 
 
-###  http://hitontology.eu/ontology/hasSCTID
-:hasSCTID rdf:type owl:DatatypeProperty ,
+###  http://hitontology.eu/ontology/organizationalUnitSctid
+:organizationalUnitSctid rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain :OrganizationalUnitClassified ,
-                      :UserGroupClassified ;
+          rdfs:domain :OrganizationalUnitClassified ;
           rdfs:range xsd:nonNegativeInteger ;
-          rdfs:label "has SCTID"@en .
+          rdfs:label "unit SCTID"@en ;
+          rdfs:comment "SCTID of an organizational unit"@en .
+
+
+###  http://hitontology.eu/ontology/userGroupSctid
+:userGroupSctid rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :UserGroupClassified ;
+          rdfs:range xsd:nonNegativeInteger ;
+          rdfs:label "group SCTID"@en ;
+          rdfs:label "SCTID of a user group"@en .
 
 
 ###  http://hitontology.eu/ontology/publishedInYear
