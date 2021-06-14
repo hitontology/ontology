@@ -25,7 +25,7 @@
 ###  http://hitontology.eu/ontology/SnomedAccidentAndEmergencyDepartmentEnvironment
 :SnomedAccidentAndEmergencyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                                :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                               :hasSCTID 225728007 ;
+                                               :organizationalUnitSctid 225728007 ;
                                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                                rdfs:comment "Accident and Emergency department (environment)"@en ;
                                                rdfs:label "Accident and Emergency department environment"@en .
@@ -35,7 +35,7 @@
 ###  http://hitontology.eu/ontology/SnomedCardiologyDepartmentEnvironment
 :SnomedCardiologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                    :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                   :hasSCTID 418019003 ;
+                                   :organizationalUnitSctid 418019003 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                    rdfs:comment "Cardiology department (environment)"@en ;
                                    rdfs:label "Cardiology department environment"@en .
@@ -44,7 +44,7 @@
 ###  http://hitontology.eu/ontology/SnomedCareOfTheElderlyDepartmentEnvironment
 :SnomedCareOfTheElderlyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                             :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                            :hasSCTID 309933000 ;
+                                            :organizationalUnitSctid 309933000 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                             rdfs:comment "Care of the elderly department (environment)"@en ;
                                             rdfs:label "Care of the elderly department environment"@en .
@@ -53,7 +53,7 @@
 ###  http://hitontology.eu/ontology/SnomedDermatologyDepartmentEnvironment
 :SnomedDermatologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                     :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                    :hasSCTID 309923008 ;
+                                    :organizationalUnitSctid 309923008 ;
                                     :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                     rdfs:comment "Dermatology department (environment)"@en ;
                                     rdfs:label "Dermatology department environment"@en .
@@ -62,7 +62,7 @@
 ###  http://hitontology.eu/ontology/SnomedEndocrinologyDepartmentEnvironment
 :SnomedEndocrinologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                       :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                      :hasSCTID 309925001 ;
+                                      :organizationalUnitSctid 309925001 ;
                                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                       rdfs:comment "Endocrinology department (environment)"@en ;
                                       rdfs:label "Endocrinology department environment"@en .
@@ -71,7 +71,7 @@
 ###  http://hitontology.eu/ontology/SnomedGastroenterologyDepartmentEnvironment
 :SnomedGastroenterologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                          :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                         :hasSCTID 309926000 ;
+                                         :organizationalUnitSctid 309926000 ;
                                          :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                          rdfs:comment "Gastroenterology department (environment)"@en ;
                                          rdfs:label "Gastroenterology department environment"@en .
@@ -80,7 +80,7 @@
 ###  http://hitontology.eu/ontology/SnomedGeneralMedicalDepartmentEnvironment
 :SnomedGeneralMedicalDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                         :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                        :hasSCTID 309927009 ;
+                                        :organizationalUnitSctid 309927009 ;
                                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                         rdfs:comment "General medical department (environment)"@en ;
                                         rdfs:label "General medical department environment"@en .
@@ -89,7 +89,7 @@
 ###  http://hitontology.eu/ontology/SnomedGeneticsDepartmentEnvironment
 :SnomedGeneticsDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                  :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                 :hasSCTID 309928004 ;
+                                 :organizationalUnitSctid 309928004 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                  rdfs:comment "Genetics department (environment)"@en ;
                                  rdfs:label "Genetics department environment"@en .
@@ -98,7 +98,7 @@
 ###  http://hitontology.eu/ontology/SnomedGeneralPractitionerPracticeSiteEnvironment
 :SnomedGeneralPractitionerPracticeSiteEnvironment rdf:type :OrganizationalUnitClassified ;
                                  :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                 :hasSCTID 394761003 ;
+                                 :organizationalUnitSctid 394761003 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                  rdfs:comment "General practicioner practice site (environment)"@en ;
                                  rdfs:label "General practicioner practice site environment"@en .
@@ -107,7 +107,7 @@
 ###  http://hitontology.eu/ontology/SnomedGynecologyDepartmentEnvironment
 :SnomedGynecologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                    :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                   :hasSCTID 309943002 ;
+                                   :organizationalUnitSctid 309943002 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                    rdfs:comment "Gynecology department (environment)"@en ;
                                    rdfs:isDefinedBy "SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en ;
@@ -117,7 +117,7 @@
 ###  http://hitontology.eu/ontology/SnomedHealthCenterEnvironment
 :SnomedHealthCenterEnvironment rdf:type :OrganizationalUnitClassified ;
                       :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                      :hasSCTID 264361005 ;
+                      :organizationalUnitSctid 264361005 ;
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                       rdfs:comment "Health center (environment)"@en ;
                       rdfs:label "Health center environment"@en .
@@ -126,7 +126,7 @@
 ###  http://hitontology.eu/ontology/SnomedHospitalEnvironment
 :SnomedHospitalEnvironment rdf:type :OrganizationalUnitClassified ;
                       :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                      :hasSCTID 22232009 ;
+                      :organizationalUnitSctid 22232009 ;
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                       rdfs:comment "Hospital (environment)"@en ;
                       rdfs:label "Hospital environment"@en .
@@ -135,7 +135,7 @@
 ###  http://hitontology.eu/ontology/SnomedInfectiousDiseasesDepartmentEnvironment
 :SnomedInfectiousDiseasesDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                             :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                            :hasSCTID 309934006 ;
+                                            :organizationalUnitSctid 309934006 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                             rdfs:comment "Infectious diseases department (environment)"@en ;
                                             rdfs:isDefinedBy "SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en ;
@@ -145,7 +145,7 @@
 ###  http://hitontology.eu/ontology/SnomedIntensiveCareUnitEnvironment
 :SnomedIntensiveCareUnitEnvironment rdf:type :OrganizationalUnitClassified ;
                                  :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                 :hasSCTID 309904001 ;
+                                 :organizationalUnitSctid 309904001 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                  rdfs:comment "Intensive care unit (environment)"@en ;
                                  rdfs:label "Intensive care unit environment"@en .
@@ -154,7 +154,7 @@
 ###  http://hitontology.eu/ontology/SnomedLaboratoryEnvironment
 :SnomedLaboratoryEnvironment rdf:type :OrganizationalUnitClassified ;
                         :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                        :hasSCTID 261904005 ;
+                        :organizationalUnitSctid 261904005 ;
                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                         rdfs:comment "Laboratory (environment)"@en ;
                         rdfs:label "Laboratory environment"@en .
@@ -163,7 +163,7 @@
 ###  http://hitontology.eu/ontology/SnomedMedicalCenterEnvironment
 :SnomedMedicalCenterEnvironment rdf:type :OrganizationalUnitClassified ;
                             :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                            :hasSCTID 309928004 ;
+                            :organizationalUnitSctid 309928004 ;
                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                             rdfs:comment "Medical center (environment)"@en ;
                             rdfs:label "Medical center environment"@en .
@@ -172,7 +172,7 @@
 ###  http://hitontology.eu/ontology/SnomedPediatricDepartmentEnvironment
 :SnomedPediatricDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                   :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                  :hasSCTID 309945009 ;
+                                  :organizationalUnitSctid 309945009 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                   rdfs:comment "Pediatric department (environment)"@en ;
                                   rdfs:label "Pediatric department environment"@en .
@@ -181,7 +181,7 @@
 ###  http://hitontology.eu/ontology/SnomedPediatricIntensiveCareUnitEnvironment
 :SnomedPediatricIntensiveCareUnitEnvironment rdf:type :OrganizationalUnitClassified ;
                                            :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                           :hasSCTID 309910001 ;
+                                           :organizationalUnitSctid 309910001 ;
                                            :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                            rdfs:comment "Pediatric intensive care unit (environment)"@en ;
                                            rdfs:label "Pediatric intensive care unit environment"@en .
@@ -190,7 +190,7 @@
 ###  http://hitontology.eu/ontology/SnomedPsychiatryDepartmentEnvironment
 :SnomedPsychiatryDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                    :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                   :hasSCTID 309958005 ;
+                                   :organizationalUnitSctid 309958005 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                    rdfs:comment "Psychiatry department (environment)"@en ;
                                    rdfs:label "Psychiatry department environment"@en .
@@ -199,7 +199,7 @@
 ###  http://hitontology.eu/ontology/SnomedRadiologyDepartmentEnvironment
 :SnomedRadiologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                   :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                  :hasSCTID 309964003 ;
+                                  :organizationalUnitSctid 309964003 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                   rdfs:comment "Radiology department (environment)"@en ;
                                   rdfs:label "Radiology department environment"@en .
@@ -208,7 +208,7 @@
 ###  http://hitontology.eu/ontology/SnomedRheumatologyDepartmentEnvironment
 :SnomedRheumatologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                      :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                     :hasSCTID 309941000 ;
+                                     :organizationalUnitSctid 309941000 ;
                                      :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                      rdfs:comment "Rheumatology department (environment)"@en ;
                                      rdfs:label "Rheumatology department environment"@en .
@@ -217,7 +217,7 @@
 ###  http://hitontology.eu/ontology/SnomedSurgicalDepartmentEnvironment
 :SnomedSurgicalDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                  :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                 :hasSCTID 309967005 ;
+                                 :organizationalUnitSctid 309967005 ;
                                  :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                  rdfs:comment "Surgical department (environment)"@en ;
                                  rdfs:label "Surgical department environment"@en .
@@ -226,7 +226,7 @@
 ###  http://hitontology.eu/ontology/SnomedNeonatalIntensiveCareUnitEnvironment
 :SnomedNeonatalIntensiveCareUnitEnvironment rdf:type :OrganizationalUnitClassified ;
                                           :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                          :hasSCTID 405269005 ;
+                                          :organizationalUnitSctid 405269005 ;
                                           :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                           rdfs:comment "Neonatal intensive care unit (environment)"@en ;
                                           rdfs:label "Neonatal intensive care unit environment"@en .
@@ -235,7 +235,7 @@
 ###  http://hitontology.eu/ontology/SnomedNephrologyDepartmentEnvironment
 :SnomedNephrologyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                    :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                   :hasSCTID 309936008 ;
+                                   :organizationalUnitSctid 309936008 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                    rdfs:comment "Nephrology department (environment)"@en ;
                                    rdfs:label "Nephrology department environment"@en .
@@ -244,7 +244,7 @@
 ###  http://hitontology.eu/ontology/SnomedOrthopedicDepartmentEnvironment
 :SnomedOrthopedicDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
                                    :organizationalUnitCatalogue :SnomedEnvironmentOrganizationalUnitCatalogue ;
-                                   :hasSCTID 309989009 ;
+                                   :organizationalUnitSctid 309989009 ;
                                    :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                    rdfs:comment "Orthopedic department (environment)"@en ;
                                    rdfs:label "Orthopedic department environment"@en .
@@ -410,7 +410,7 @@
 ###  http://hitontology.eu/ontology/SnomedAdministrativeHealthcareStaffOccupation
 :SnomedAdministrativeHealthcareStaffOccupation rdf:type :UserGroupClassified ;
                                      	    :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                                            :hasSCTID 224608005 ;
+                                            :userGroupSctid 224608005 ;
                                             :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                             rdfs:comment "Administrative healthcare staff (occupation)"@en ;
                                             rdfs:label "Administrative healthcare staff occupation"@en .
@@ -419,7 +419,7 @@
 ###  http://hitontology.eu/ontology/SnomedClericalOccupationOccupation
 :SnomedClericalOccupationOccupation rdf:type :UserGroupClassified ;
                                 :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                                :hasSCTID 159483005 ;
+                                :userGroupSctid 159483005 ;
                                 :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                 rdfs:comment "Clerical occupation (occupation)"@en ;
                                 rdfs:label "Clerical occupation occupation"@en .
@@ -428,7 +428,7 @@
 ###  http://hitontology.eu/ontology/SnomedClerkOccupation
 :SnomedClerkOccupation rdf:type :UserGroupClassified ;
                   :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                  :hasSCTID 106353008 ;
+                  :userGroupSctid 106353008 ;
                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                   rdfs:comment "Clerk (occupation)"@en ;
                   rdfs:label "Clerk occupation"@en .
@@ -437,7 +437,7 @@
 ###  http://hitontology.eu/ontology/SnomedLaboratoryTechnicianOccupation
 :SnomedLaboratoryTechnicianOccupation rdf:type :UserGroupClassified ;
                                   :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                                  :hasSCTID 159282002 ;
+                                  :userGroupSctid 159282002 ;
                                   :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                   rdfs:comment "Laboratory technician (occupation)"@en ;
                                   rdfs:label "Laboratory technician occupation"@en .
@@ -446,7 +446,7 @@
 ###  http://hitontology.eu/ontology/SnomedMedicalTechnicianOccupation
 :SnomedMedicalTechnicianOccupation rdf:type :UserGroupClassified ;
                                :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                               :hasSCTID 307988006 ;
+                               :userGroupSctid 307988006 ;
                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                rdfs:comment "Medical technician (occupation)"@en ;
                                rdfs:label "Medical technician occupation"@en .
@@ -455,7 +455,7 @@
 ###  http://hitontology.eu/ontology/SnomedPharmacistOccupation
 :SnomedPharmacistOccupation rdf:type :UserGroupClassified ;
                        :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                       :hasSCTID 46255001 ;
+                       :userGroupSctid 46255001 ;
                        :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                        rdfs:comment "Pharmacist (occupation)"@en ;
                        rdfs:label "Pharmacist occupation"@en .
@@ -464,7 +464,7 @@
 ###  http://hitontology.eu/ontology/SnomedPhysicianOccupation
 :SnomedPhysicianOccupation rdf:type :UserGroupClassified ;
                       :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                      :hasSCTID 309343006 ;
+                      :userGroupSctid 309343006 ;
                       :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                       rdfs:comment "Physician (occupation)"@en ;
                       rdfs:label "Physician occupation"@en .
@@ -473,7 +473,7 @@
 ###  http://hitontology.eu/ontology/SnomedProfessionalNurseOccupation
 :SnomedProfessionalNurseOccupation rdf:type :UserGroupClassified ;
                                :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                               :hasSCTID 106292003 ;
+                               :userGroupSctid 106292003 ;
                                :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                                rdfs:comment "Professional nurse (occupation)"@en ;
                                rdfs:label "Professional nurse occupation"@en .
@@ -482,7 +482,7 @@
 ###  http://hitontology.eu/ontology/SnomedResearcherOccupation
 :SnomedResearcherOccupation rdf:type :UserGroupClassified ;
                         :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                        :hasSCTID 769038007 ;
+                        :userGroupSctid 769038007 ;
                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                         rdfs:comment "Researcher (occupation)"@en ;
                         rdfs:label "Researcher occupation"@en .
@@ -491,7 +491,7 @@
 ###  http://hitontology.eu/ontology/SnomedRadiologistOccupation
 :SnomedRadiologistOccupation rdf:type :UserGroupClassified ;
                         :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                        :hasSCTID 66862007 ;
+                        :userGroupSctid 66862007 ;
                         :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                         rdfs:comment "Radiologist (occupation)"@en ;
                         rdfs:label "Radiologist occupation"@en .
@@ -500,7 +500,7 @@
 ###  http://hitontology.eu/ontology/SnomedSurgeonOccupation
 :SnomedSurgeonOccupation rdf:type :UserGroupClassified ;
                     :userGroupCatalogue :SnomedUserGroupCatalogue ;
-                    :hasSCTID 304292004 ;
+                    :userGroupSctid 304292004 ;
                     :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
                     rdfs:comment "Surgeon (occupation)"@en ;
                     rdfs:label "Surgeon occupation"@en .
@@ -509,7 +509,7 @@
 ###  http://hitontology.eu/ontology/SnomedWomanPerson
 :SnomedWomanPerson rdf:type :UserGroupClassified ;
               :userGroupCatalogue :SnomedUserGroupCatalogue ;
-              :hasSCTID 224526002 ;
+              :userGroupSctid 224526002 ;
               :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
               rdfs:comment "Woman (person)"@en ;
               rdfs:label "Woman person"@en .

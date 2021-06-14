@@ -160,8 +160,9 @@
 
 
 ###  http://hitontology.eu/ontology/Geriatry
-:Geriatry rdf:type owl:NamedIndividual ;
-          :hasSCTID 309933000 ;
+:Geriatry rdf:type owl:NamedIndividual ,
+                   :OrganizationalUnitCitation ;
+          :organizationalUnitSctid 309933000 ;
           rdfs:label "Geriatry"@en .
 
 
@@ -183,8 +184,9 @@
 
 
 ###  http://hitontology.eu/ontology/HealthCenter
-:HealthCenter rdf:type owl:NamedIndividual ;
-               :hasSCTID 264361005 ;
+:HealthCenter rdf:type owl:NamedIndividual ,
+                       :OrganizationalUnitCitation ;
+               :organizationalUnitSctid 264361005 ;
                rdfs:label "Health center"@en .
 
 
@@ -1111,8 +1113,9 @@
 
 
 ###  http://hitontology.eu/ontology/Radiologists
-:Radiologists rdf:type owl:NamedIndividual ;
-              :hasSCTID 66862007 ;
+:Radiologists rdf:type owl:NamedIndividual ,
+              :UserGroupCitation ;
+              :userGroupSctid 66862007 ;
               rdfs:label "Radiologists"@en .
 
 
@@ -1133,8 +1136,9 @@
 
 
 ###  http://hitontology.eu/ontology/Technicians
-:Technicians rdf:type owl:NamedIndividual ;
-             :hasSCTID 307988006 ;
+:Technicians rdf:type owl:NamedIndividual ,
+                      :UserGroupCitation ;
+             :userGroupSctid 307988006 ;
              rdfs:label "Technicians"@en .
 
 
