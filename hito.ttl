@@ -25,7 +25,6 @@
      ov:defines :FeatureCatalogue;
      ov:defines :FeatureClassified;
      ov:defines :FeatureCitation;
-     ov:defines :FirstAuthor;
      ov:defines :Journal;
      ov:defines :LabStudy;
      ov:defines :NonExperimentalStudy;
@@ -248,11 +247,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:label "feature catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/hasFirstAuthor
-:hasFirstAuthor rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/firstAuthor
+:firstAuthor rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Study ;
-                rdfs:range :FirstAuthor ;
-                rdfs:label "has First Author"@en .
+                rdfs:range xsd:String ;
+                rdfs:label "first author"@en .
 
 
 ###  http://hitontology.eu/ontology/outcomeCriteria
@@ -646,11 +645,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 :FeatureCitation rdf:type owl:Class ;
                  rdfs:subClassOf :Citation;
                  rdfs:label "Feature Citation"@en .
-
-
-###  http://hitontology.eu/ontology/FirstAuthor
-:FirstAuthor rdf:type owl:Class ;
-             rdfs:label "First Author"@en .
 
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCatalogue
