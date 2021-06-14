@@ -17,20 +17,6 @@
 #    Individuals
 #################################################################
 
-###  http://hitontology.eu/ontology/AdabaBG
-:AdabaBG rdf:type :FirstAuthor ;
-         rdfs:label "Adaba BG"@en .
-
-
-###  http://hitontology.eu/ontology/AllainTJ
-:AllainTJ rdf:type :FirstAuthor ;
-          rdfs:label "Allain TJ"@en .
-
-
-###  http://hitontology.eu/ontology/AmmenwerthE
-:AmmenwerthE rdf:type :FirstAuthor ;
-             rdfs:label "Ammenwerth E"@en .
-
 
 ###  http://hitontology.eu/ontology/AnnalsOfEmergencyMedicine
 :AnnalsOfEmergencyMedicine rdf:type :Journal ;
@@ -60,36 +46,6 @@
 :BMJQualityImprovementReports rdf:type :Journal ;
                                  rdfs:isDefinedBy "PubMed. NLM Catalog - NCBI [Internet]. [cited 2019 Apr 2]. Available from: https://www.ncbi.nlm.nih.gov/nlmcatalog" ;
                                  rdfs:label "BMJ quality improvement reports"@en .
-
-
-###  http://hitontology.eu/ontology/BeamSK
-:BeamSK rdf:type :FirstAuthor ;
-        rdfs:label "Beam SK"@en .
-
-
-###  http://hitontology.eu/ontology/BlayaAJ
-:BlayaAJ rdf:type :FirstAuthor ;
-         rdfs:label "Blaya AJ"@en .
-
-
-###  http://hitontology.eu/ontology/CallenJ
-:CallenJ rdf:type :FirstAuthor ;
-         rdfs:label "Callen J"@en .
-
-
-###  http://hitontology.eu/ontology/CarlsonLM
-:CarlsonLM rdf:type :FirstAuthor ;
-           rdfs:label "Carlson LM" .
-
-
-###  http://hitontology.eu/ontology/CastellanosI
-:CastellanosI rdf:type :FirstAuthor ;
-              rdfs:label "Castellanos I"@en .
-
-
-###  http://hitontology.eu/ontology/ChienTI
-:ChienTI rdf:type :FirstAuthor ;
-         rdfs:label "Chien TI"@en .
 
 
 ###  http://hitontology.eu/ontology/Communication
@@ -123,31 +79,6 @@
                                                                rdfs:label "Emergency Department provider electronic documentation system"@en .
 
 
-###  http://hitontology.eu/ontology/EngelmannC
-:EngelmannC rdf:type :FirstAuthor ;
-            rdfs:label "Engelmann C"@en .
-
-
-###  http://hitontology.eu/ontology/EslamiS
-:EslamiS rdf:type :FirstAuthor ;
-         rdfs:label "Eslami S"@en .
-
-
-###  http://hitontology.eu/ontology/FeblowitzJ
-:FeblowitzJ rdf:type :FirstAuthor ;
-            rdfs:label "Feblowitz J"@en .
-
-
-###  http://hitontology.eu/ontology/GachowskiA
-:GachowskiA rdf:type :FirstAuthor ;
-            rdfs:label "Gachowski A"@en .
-
-
-###  http://hitontology.eu/ontology/GaoX
-:GaoX rdf:type :FirstAuthor ;
-      rdfs:label "Gao X" .
-
-
 ###  http://hitontology.eu/ontology/Gastroenterology
 :Gastroenterology rdf:type :OrganizationalUnitCitation ;
                   rdfs:label "gastroenterology"@en .
@@ -164,11 +95,6 @@
                    :OrganizationalUnitCitation ;
           :organizationalUnitSctid 309933000 ;
           rdfs:label "Geriatry"@en .
-
-
-###  http://hitontology.eu/ontology/GilkarA
-:GilkarA rdf:type :FirstAuthor ;
-         rdfs:label "Gilkar A"@en .
 
 
 ###  http://hitontology.eu/ontology/HardwareQuality
@@ -226,11 +152,6 @@
                                               rdfs:label "International journal of medical informatics"@en .
 
 
-###  http://hitontology.eu/ontology/JanolsR
-:JanolsR rdf:type :FirstAuthor ;
-         rdfs:label "Janols R"@en .
-
-
 ###  http://hitontology.eu/ontology/JournalOfCriticalCare
 :JournalOfCriticalCare rdf:type :Journal ;
                           rdfs:isDefinedBy "PubMed. NLM Catalog - NCBI [Internet]. [cited 2019 Apr 2]. Available from: https://www.ncbi.nlm.nih.gov/nlmcatalog" ;
@@ -255,30 +176,10 @@
                                              rdfs:label "Journal of the Formosan Medical Association"@en .
 
 
-###  http://hitontology.eu/ontology/LemmettyK
-:LemmettyK rdf:type :FirstAuthor ;
-           rdfs:label "Lemmetty K"@en .
-
-
-###  http://hitontology.eu/ontology/LiaskosJ
-:LiaskosJ rdf:type :FirstAuthor ;
-          rdfs:label "Liaskos J"@en .
-
-
 ###  http://hitontology.eu/ontology/MalawiMedicalJournal
 :MalawiMedicalJournal rdf:type :Journal ;
                         rdfs:isDefinedBy "PubMed. NLM Catalog - NCBI [Internet]. [cited 2019 Apr 2]. Available from: https://www.ncbi.nlm.nih.gov/nlmcatalog" ;
                         rdfs:label "Malawi medical journal"@en .
-
-
-###  http://hitontology.eu/ontology/MarianiC
-:MarianiC rdf:type :FirstAuthor ;
-          rdfs:label "Mariani C"@en .
-
-
-###  http://hitontology.eu/ontology/MenkeAJ
-:MenkeAJ rdf:type :FirstAuthor ;
-         rdfs:label "Menke AJ"@en .
 
 
 ###  http://hitontology.eu/ontology/MethodsOfInformationInMedicine
@@ -305,7 +206,7 @@
               :evaluatesApplicationSystemUsedInUnit :healthCenters ,
                                                     :laboratory ;
               bibo:doi "10.1371/journal.pone.0090110" ;
-              :hasFirstAuthor :BlayaAJ ;
+              :firstAuthor ":Blaya AJ" ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid :i24721980 ;
               :studyMethod :inferentialStatistics ,
@@ -333,7 +234,7 @@
                                                           :theatrePlanningManager ;
                :evaluatesApplicationSystemUsedInUnit :surgery ;
                bibo:doi "10.4338/ACI-2016-06-RA-0100" ;
-               :hasFirstAuthor :EngelmannC ;
+               :firstAuthor ":Engelmann C" ;
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
                :pmid :i28512663 ;
@@ -368,7 +269,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                bibo:doi "10.1186/1472-6947-13-107" ;
-               :hasFirstAuthor :CastellanosI ;
+               :firstAuthor ":Castellanos I" ;
                :outcomeCriteria :costBenefit ;
                :pmid :i24041117 ;
                :studyMethod :costAnalysis ;
@@ -396,7 +297,7 @@
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                bibo:doi "10.1016/j.jcrc.2011.07.082" ;
-               :hasFirstAuthor :EslamiS ;
+               :firstAuthor ":Eslami S" ;
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
                :pmid :i22172793 ;
@@ -423,7 +324,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :orthopedy ;
                bibo:doi "10.1080/17538157.2017.1290638" ;
-               :hasFirstAuthor :AdabaBG ;
+               :firstAuthor ":Adaba BG" ;
                :outcomeCriteria :dataEntriesInRealTime ;
                :pmid :i28350236 ;
                :studyMethod :documentAnalysis ,
@@ -459,7 +360,7 @@
                                                      :infectiology ,
                                                      :orthopedy ;
                bibo:doi "10.1016/j.ijmedinf.2014.02.003" ;
-               :hasFirstAuthor :JanolsR ;
+               :firstAuthor ":Janols R" ;
                :outcomeCriteria :userAdoption ;
                :pmid :i24630924 ;
                :studyMethod :interviews ,
@@ -489,7 +390,7 @@
                                                      :pediatrics ,
                                                      :psychiatryWard ;
                bibo:doi "10.1197/jamia.M1118" ;
-               :hasFirstAuthor :AmmenwerthE ;
+               :firstAuthor ":Ammenwerth E" ;
                :outcomeCriteria :userAcceptance ;
                :pmid :i12509358 ;
                :studyMethod :interviews ,
@@ -521,7 +422,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :evaluatesApplicationSystemUsedInUnit :universityHospital ;
                bibo:doi "10.1016/j.ijmedinf.2010.10.010" ;
-               :hasFirstAuthor :AmmenwerthE ;
+               :firstAuthor ":Ammenwerth E" ;
                :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid :i21115392 ;
                :studyMethod :surveyWithOpenQuestions ;
@@ -540,7 +441,7 @@
                                                         :creationAndStorageOfNursingDiagnosesAndNursingOutcomes ,
                                                         :creationOfNursingCarePlans ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
-               :hasFirstAuthor :LiaskosJ ;
+               :firstAuthor ":Liaskos J" ;
                :outcomeCriteria :userInteractionSatisfaction ;
                :pmid :i16482381 ;
                :studyMethod :descriptiveStatistics ,
@@ -568,7 +469,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1016/j.ijmedinf.2014.08.010" ;
-               :hasFirstAuthor :CallenJ ;
+               :firstAuthor ":Callen J" ;
                :outcomeCriteria :workChanges ;
                :pmid :i25241155 ;
                :studyMethod :descriptiveStatistics ,
@@ -592,7 +493,7 @@
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1016/j.annemergmed.2017.05.032" ;
-               :hasFirstAuthor :FeblowitzJ ;
+               :firstAuthor ":Feblowitz J" ;
                :outcomeCriteria :operationalPerformance ;
                :pmid :i28712608 ;
                :studyMethod :descriptiveStatistics ,
@@ -622,7 +523,7 @@
                                                     :geriatryWard ,
                                                     :psychiatryWard ;
               bibo:doi "10.1136/amiajnl-2013-001745" ;
-              :hasFirstAuthor :WestbrookIJ ;
+              :firstAuthor ":Westbrook IJ" ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid :i23721982 ;
               :studyMethod :clinicalEhrSfmAudit ,
@@ -645,7 +546,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :endocrinology ;
                bibo:doi "10.4314/mmj.v29i4.8" ;
-               :hasFirstAuthor :AllainTJ ;
+               :firstAuthor ":Allain TJ" ;
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
                :pmid :i29963288 ;
@@ -675,7 +576,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :pediatricIntensiveCare ;
                bibo:doi "10.1186/1472-6947-1-3" ;
-               :hasFirstAuthor :MenkeAJ ;
+               :firstAuthor ":Menke AJ" ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :decisionMaking ,
                                    :qualityOfDocumentation ,
@@ -706,7 +607,7 @@
                                                      :intensiveCareUnit ,
                                                      :surgery ;
                bibo:doi "10.1056/NEJMsa0907115" ;
-               :hasFirstAuthor :PoonGE ;
+               :firstAuthor ":Poon GE" ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
                :pmid :i20445181 ;
@@ -731,7 +632,7 @@
                                                         :readBarCodeLabel ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1136/bmjquality.u201027.w685" ;
-               :hasFirstAuthor :GilkarA ;
+               :firstAuthor ":Gilkar A" ;
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
                :pmid :i26734177 ;
@@ -760,7 +661,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :nephrology ;
                bibo:doi "10.1136/bmj.320.7237.750" ;
-               :hasFirstAuthor :NightingaleGP ;
+               :firstAuthor ":Nightingale GP" ;
                :outcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
                                    :userOpinion ;
@@ -788,7 +689,7 @@
                :evaluatesApplicationSystemHavingUserGroup :radiologists ;
                :evaluatesApplicationSystemUsedInUnit :medicalCenter ;
                bibo:doi "10.1007/s10554-018-1488-9" ;
-               :hasFirstAuthor :GaoX ;
+               :firstAuthor ":Gao X" ;
                :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
                :studyMethod :qualityAssessmentOfCTScans ;
                :publishedInJournal :TheInternationalJournalOfCardiovascularImaging ;
@@ -811,7 +712,7 @@
                                                          :physicians ;
               :evaluatesApplicationSystemUsedInUnit :neonatalIntensiveCare ;
               bibo:doi "10.4338/ACI-2016-09-RA-0153" ;
-              :hasFirstAuthor :BeamSK ;
+              :firstAuthor ":Beam SK" ;
               :outcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
@@ -849,7 +750,7 @@
                                                     :geriatryWard ,
                                                     :rheumatologyWard ;
               bibo:doi "10.1197/jamia.M3099" ;
-              :hasFirstAuthor :VanDoormaalEJ ;
+              :firstAuthor "Van Doormaal EJ" ;
               :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
               :pmid :i19717798 ;
@@ -880,7 +781,7 @@
                                                     :hospitals ,
                                                     :radiology ;
               bibo:doi "10.1007/s10278-010-9303-8" ;
-              :hasFirstAuthor :GachowskiA ;
+              :firstAuthor ":Gachowski A" ;
               :outcomeCriteria :availability ,
                                   :clinicalUtility ,
                                   :comparisionOfRemoteAndOnSiteConsultations ,
@@ -919,7 +820,7 @@
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :radiology ;
               bibo:doi "10.1007/s10278-006-0858-3" ;
-              :hasFirstAuthor :MarianiC ;
+              :firstAuthor ":Mariani C" ;
               :outcomeCriteria :comparisionOfWorkflow ;
               :pmid :i16955380 ;
               :studyMethod :descriptiveStatistics ,
@@ -946,7 +847,7 @@
               :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ,
                                                     :radiology ;
               bibo:doi "10.1007/s10278-002-0024-5" ;
-              :hasFirstAuthor :RedfernOR ;
+              :firstAuthor ":Redfern OR" ;
               :outcomeCriteria :timeForProducingImages ;
               :pmid :i12415466 ;
               :studyMethod :dataAnalysisOutOfIntervention ,
@@ -968,7 +869,7 @@
               :evaluatesApplicationSystemHavingUserGroup :physicians ,
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :laboratory ;
-              :hasFirstAuthor :ChienTI ;
+              :firstAuthor ":Chien TI" ;
               :outcomeCriteria :analyticalTurnaroundTime ;
               :pmid :i17660145 ;
               :studyMethod :timeMeasurement ;
@@ -998,7 +899,7 @@
                                                          :physicians ,
                                                          :secretaries ;
               :evaluatesApplicationSystemUsedInUnit :surgery ;
-              :hasFirstAuthor :LemmettyK ;
+              :firstAuthor ":Lemmetty K" ;
               :outcomeCriteria :usersViewOnTraining ,
                                   :usersViewOnUsability ,
                                   :usersViewOnUsefulness ,
@@ -1026,7 +927,7 @@
                 :evaluatesApplicationSystemHavingUserGroup :womenOfReproductiveAge ;
                 :evaluatesApplicationSystemUsedInUnit :geneticCounseling ;
                 bibo:doi "10.1038/s41436-018-0283-2" ;
-                :hasFirstAuthor :CarlsonLM ;
+                :firstAuthor ":Carlson LM" ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid :i30214066 ;
                 :studyMethod :decisionalConflictScale ,
@@ -1039,11 +940,6 @@
                 rdfs:isDefinedBy "http://www.ncbi.nlm.nih.gov/pubmed/30214066" ;
                 rdfs:label "Use of a novel computerized decision aid for aneuploidy screening: a randomized controlled trial" ;
                 rdfs:seeAlso "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6417985/pdf/nihms-1507901.pdf" .
-
-
-###  http://hitontology.eu/ontology/NightingaleGP
-:NightingaleGP rdf:type :FirstAuthor ;
-               rdfs:label "Nightingale GP"@en .
 
 
 ###  http://hitontology.eu/ontology/PACSInterface
@@ -1074,11 +970,6 @@
 :PatientSatisfaction rdf:type :OutcomeCriteriaClassified ;
                       :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                       rdfs:label "Patient satisfaction"@en .
-
-
-###  http://hitontology.eu/ontology/PoonGE
-:PoonGE rdf:type :FirstAuthor ;
-        rdfs:label "Poon GE"@en .
 
 
 ###  http://hitontology.eu/ontology/ProcessEfficiency
@@ -1117,11 +1008,6 @@
               :UserGroupCitation ;
               :userGroupSctid 66862007 ;
               rdfs:label "Radiologists"@en .
-
-
-###  http://hitontology.eu/ontology/RedfernOR
-:RedfernOR rdf:type :FirstAuthor ;
-           rdfs:label "Redfern OR"@en .
 
 
 ###  http://hitontology.eu/ontology/Rheumatology
@@ -1225,16 +1111,6 @@
                    :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                    rdfs:label "User satisfaction"@en .
 
-
-###  http://hitontology.eu/ontology/VanDoormaalEJ
-:VanDoormaalEJ rdf:type :FirstAuthor ;
-               rdfs:label "Van Doormaal EJ"@en .
-
-
-
-###  http://hitontology.eu/ontology/WestbrookIJ
-:WestbrookIJ rdf:type :FirstAuthor ;
-             rdfs:label "Westbrook IJ"@en .
 
 
 ###  http://hitontology.eu/ontology/adaptionOfNursingCarePlansDuringCarePlanning
