@@ -36,6 +36,7 @@
      ov:defines :PMID;
      ov:defines :QuasiExperimentalStudy;
      ov:defines :SoftwareProduct;
+     ov:defines :SoftwareProductInstallation;
      ov:defines :Study;
      ov:defines :StudyMethodClassified;
      ov:defines :StudyMethodCitation;
@@ -363,6 +364,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct;
                     rdfs:range :SoftwareProduct;
                     rdfs:label "software product component"@en .
+
+
+###  http://hitontology.eu/ontology/softwareProductInstallation
+:softwareProductInstallation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareProduct;
+                    rdfs:range :SoftwareProductInstallation;
+                    rdfs:label "software product installation"@en .
 
 
 ###  http://hitontology.eu/ontology/subClassifiedOf
@@ -731,6 +739,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 :SoftwareProduct rdf:type owl:Class ;
                  skos:closeMatch doap:Project ;
                  rdfs:label "Software Product"@en .
+
+
+###  http://hitontology.eu/ontology/SoftwareProductInstallation
+:SoftwareProductInstallation rdf:type owl:Class ;
+                 rdfs:label "Software Product Installation"@en .
 
 
 ###  http://hitontology.eu/ontology/Study
