@@ -1,0 +1,39 @@
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix medfloss: <https://www.medfloss.org/node/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:Bahmni dcterms:source medfloss:1103.
+:GnuHealth dcterms:source medfloss:155.
+:FreeMedForms dcterms:source medfloss:375.
+#:AgfaPacsImpax dcterms:source medfloss:.
+#:Occhiolino dcterms:source medfloss:.
+:Orthanc dcterms:source medfloss:825.
+:Elexis dcterms:source medfloss:213.
+#:BetterMeds dcterms:source medfloss:.
+:HospitalRun dcterms:source medfloss:1207.
+#:AgfaRisElefante dcterms:source medfloss:.
+:Medkey dcterms:source medfloss:1246.
+:Dhis2 dcterms:source medfloss:140.
+#:GePatchspecdPacs dcterms:source medfloss:.
+#:CernerSoarianCpoePlatform dcterms:source medfloss:.
+#:CscMedChart dcterms:source medfloss:.
+:Dcm4Che dcterms:source medfloss:71.
+:BikaLims dcterms:source medfloss:206.
+#:EclipsysContinuum200Cds dcterms:source medfloss:.
+:OpenEmr dcterms:source medfloss:159.
+:OpenHospital dcterms:source medfloss:184.
+:OpenElis dcterms:source medfloss:209.
+:IPath dcterms:source medfloss:226.
+:OpenDental dcterms:source medfloss:501.
+:OpenEyes dcterms:source medfloss:647.
+:OpenClinicGa dcterms:source medfloss:722.
+:OpenEObs dcterms:source medfloss:952.
+:OpenImis dcterms:source medfloss:1201.
+#:HnaMillenium dcterms:source medfloss:.
+:OpenMaxims dcterms:source medfloss:950.
+:OpenMrs dcterms:source medfloss:40.
+:OscarEmr dcterms:source medfloss:160.
+#:EChasqui dcterms:source medfloss:.
+#:EDoc dcterms:source medfloss:.
+#:Pik dcterms:source medfloss:.
+
