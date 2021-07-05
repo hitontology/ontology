@@ -468,14 +468,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://hitontology.eu/ontology/medflossRating
-:medflossRating rdf:type owl:DatatypeProperty ,
-			owl:FunctionalProperty ;
-		rdfs:domain :SoftwareProduct ;
-		rdfs:range xsd:decimal ;
-		rdfs:label "medfloss rating" ;
-		rdfs:comment "average medfloss.org rating" .
-
 ###  http://hitontology.eu/ontology/internalId
 :internalId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
