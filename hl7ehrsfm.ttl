@@ -783,7 +783,7 @@ hito:EhrSfmExtraordinaryUserAccessBreakTheGlassSecurityAuditTrigger
 hito:EhrSfmFeatureCatalogue
     a hito:FeatureCatalogue ;
     rdfs:comment "HL7 Electronic Health Record System Functional Model Feature Catalogue"@en ;
-    rdfs:label "EHR-S FM Feature Catalogue"@en ;
+    rdfs:label "HL7 EHR-S FM Feature Catalogue"@en ;
     rdfs:seeAlso <http://www.hl7.org/implement/standards/product_brief.cfm?product_id=528> .
 
 hito:EhrSfmGenerateRecordAndDistributePatientSpecificInstructions
@@ -1599,8 +1599,8 @@ hito:EhrSfmManageResults
     hito:internalId "CP.5" ;
     hito:subFeatureOf hito:EhrSfmCareProvision ;
     a hito:FeatureClassified ;
-    rdfs:comment """Present, annotate, and route current and historical test results to appropriate providers for review. Provide the
-ability to filter and compare results."""@en ;
+    rdfs:comment "Present, annotate, and route current and historical test results to appropriate providers for review. Provide the ability to filter and compare results."@en ;
+    rdfs:label "CP.5 Manage Results"@en ;
     rdfs:label "CP.5 Manage Results"@en ;
     skos:altLabel "Manage Results"@en ;
     skos:definition "Results of tests are presented in an easily accessible manner to the appropriate providers. For example, flow sheets, graphs, or other tools allow care providers to view or uncover trends in test data over time. The provider may desire to annotate, filter, and/or compare results. In addition to making results viewable, it is often necessary to send results to appropriate providers using electronic messaging systems, pagers, or other mechanisms. In addition, the system may have the ability to redirect or copy specific test results to a specified individual. Documentation of notification is accommodated. Results may also be routed to patients electronically or non electronically (e.g., by hard copy). Note: “Results” are understood as applying to any type of test, whether biological or psychological. Management of the results may also require the provider's communication of the results to the patient (see function CPS.8.4 (Support for Communications between Provider and the Patient, and/or the Patient's Representative)). There may also be a need to notify public health agencies based on the result. See function POP.2 (Support Population-based Epidemiological Investigation)."@en .
