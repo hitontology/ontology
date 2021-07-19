@@ -389,6 +389,14 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:label "subfeature of"@en .
 
 
+###  http://hitontology.eu/ontology/subFunctionOf
+:subFunctionOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :subClassifiedOf ;
+                    rdfs:domain :EnterpriseFunctionClassified;
+                    rdfs:range :EnterpriseFunctionClassified;
+                    rdfs:label "subfunction of"@en .
+
+
 ###  http://hitontology.eu/ontology/subInteroperabilityOf
 :subInteroperabilityOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :Interoperability;
