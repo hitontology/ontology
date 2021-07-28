@@ -14,13 +14,9 @@
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
-	rdfs:label "Health IT Ontology"@en;
-	skos:altLabel "HITO"@en;
-	doap:repository <https://github.com/hitontology/ontology>.
-
-:uc1 rdf:type owl:Ontology ;
-     rdfs:label "Evaluation Studies"@en ;
-     rdfs:comment "finding evidence in health IT evaluation studies"@en ;
+     rdfs:label "Health IT Ontology"@en;
+     skos:altLabel "HITO"@en;
+     doap:repository <https://github.com/hitontology/ontology>.
      ov:defines :ExperimentalStudyRCT;
      ov:defines :FeatureCatalogue;
      ov:defines :FeatureClassified;
@@ -44,10 +40,6 @@
      ov:defines :UserGroupClassified;
      ov:defines :UserGroupCitation;
      ov:defines :ValidationStudy.
-
-:uc2 rdf:type owl:Ontology ;
-     rdfs:label "MEDFLOSS"@en ;
-     rdfs:comment "selecting medical free/libre open source software"@en ;
      ov:defines :ApplicationSystemCatalogue;
      ov:defines :ApplicationSystemClassified;
      ov:defines :ApplicationSystemCitation;
@@ -63,9 +55,17 @@
      ov:defines :Interoperability;
      ov:defines :Terminology.
 
-:uc3 rdf:type owl:Ontology ;
-     rdfs:label "commercial software"@en ;
-     rdfs:comment "selecting commercial software"@en .
+#:uc1 rdf:type owl:Ontology ;
+#     rdfs:label "Evaluation Studies"@en ;
+#     rdfs:comment "finding evidence in health IT evaluation studies"@en ;
+
+#:uc2 rdf:type owl:Ontology ;
+#     rdfs:label "MEDFLOSS"@en ;
+#     rdfs:comment "selecting medical free/libre open source software"@en ;
+
+#:uc3 rdf:type owl:Ontology ;
+#     rdfs:label "commercial software"@en ;
+#     rdfs:comment "selecting commercial software"@en .
 
 #################################################################
 #    Datatypes
@@ -574,7 +574,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/ApplicationSystemCitation
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
-                           rdfs:label "Application System Citation"@en .
+                           rdfs:label "Application System Citation"@en ;
+                           rdfs:comment "The term an author uses for the application system, which is evaluated in the study. The term is counted as to be in natural language."@en .
+
 
 
 ###  http://hitontology.eu/ontology/Catalogue
