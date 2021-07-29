@@ -1,1 +1,1 @@
-widoco -ontFile hito.ttl -rewriteAll -uniteSections -outFolder /tmp/doc
+widoco -ontFile hito.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder /tmp/doc
