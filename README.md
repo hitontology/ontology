@@ -10,3 +10,7 @@ This file can then be uploaded to the HITO SPARQL endpoint:
 3. Upload the file at Linked Data -> Quad Store Upload
 
 Warning: This is the old procedure and will not include updated software products from the database.
+
+## Documentation
+[Download widoco](https://github.com/dgarijo/Widoco/releases) and make it available as `widoco`, then run `./doc` under Linux to generate the ontology documentation.
+Adapt the `doc` script accordingly on other operating systems.
