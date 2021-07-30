@@ -1,2 +1,1 @@
-./combine
-widoco -ontFile /tmp/hito-all.ttl -oops -outFolder /tmp/doc
+widoco -ontFile hito.ttl -rewriteAll -uniteSections -outFolder /tmp/doc

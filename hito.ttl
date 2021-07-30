@@ -6,17 +6,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ov: <http://open.vocab.org/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
 @prefix yago: <http://dbpedia.org/class/yago/>.
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
+@prefix swol: <http://www.ebi.ac.uk/swo/license/>.
 @prefix bibo: <http://purl.org/ontology/bibo/>.
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
      rdfs:label "Health IT Ontology"@en;
      skos:altLabel "HITO"@en;
-     doap:repository <https://github.com/hitontology/ontology>.
+     doap:repository <https://github.com/hitontology/ontology>;
      ov:defines :ExperimentalStudyRCT;
      ov:defines :FeatureCatalogue;
      ov:defines :FeatureClassified;
@@ -39,7 +43,7 @@
      ov:defines :UserGroupCatalogue;
      ov:defines :UserGroupClassified;
      ov:defines :UserGroupCitation;
-     ov:defines :ValidationStudy.
+     ov:defines :ValidationStudy;
      ov:defines :ApplicationSystemCatalogue;
      ov:defines :ApplicationSystemClassified;
      ov:defines :ApplicationSystemCitation;
@@ -186,7 +190,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :OrganizationalUnitCitation ;
-                    rdfs:label "used in organizational unit"@en .
+                    rdfs:label "used in organizational unit"@en ;
+					rdfs:comment "Shows in which organizational unit the software product is used."@en .
 
 
 ###  http://hitontology.eu/ontology/userGroup
@@ -252,7 +257,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 :firstAuthor rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Study ;
                 rdfs:range xsd:String ;
-                rdfs:label "first author"@en .
+                rdfs:label "first author"@en ;
+				#skos:example "AllainTJ", "AmmenwerthE";
+				rdfs:comment "The surname and the initials of the first author of the modelled evaluation study."@en .
 
 
 ###  http://hitontology.eu/ontology/outcomeCriteria
@@ -279,9 +286,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/homepage
 :homepage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-		    skos:closeMatch doap:homepage ;
+					skos:closeMatch doap:homepage ;
                     rdfs:range rdfs:Resource;
-                    rdfs:label "homepage"@en .
+                    rdfs:label "homepage"@en ;
+					rdfs:comment "The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository."@en .
+
 
 
 ###  http://hitontology.eu/ontology/implements
@@ -303,7 +312,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 :license rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range swo:SWO_0000002 ;
-                    rdfs:label "license"@en .
+                    rdfs:label "license"@en ;
+					vann:example swol:SWO_9000085, swol:SWO_9000084, swol:SWO_1000046 ; 
+					rdfs:comment "the license under which a software product is distributed."@en .
 
 
 ###  http://hitontology.eu/ontology/feature
@@ -325,30 +336,36 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/repository
 :repository rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-		    skos:closeMatch doap:repository;
+                    skos:closeMatch doap:repository;
                     rdfs:range rdfs:Resource;
-                    rdfs:label "repository"@en .
+                    rdfs:label "repository"@en ;
+					rdfs:comment "Is a storage location for software-code, along with relevant metadata. Is represented through an URL that links to the repository."@en .
 
 
 ###  http://hitontology.eu/ontology/programmingLanguage
 :programmingLanguage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range yago:WikicatProgrammingLanguages;
-                    rdfs:label "programming language"@en .
+                    rdfs:range yago:WikicatProgrammingLanguages ;
+                    rdfs:label "programming language"@en ;
+					vann:example <http://dbpedia.org/resource/Java_(programming_language)>, dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
+					rdfs:comment "The programming language used to develop a software product."@en .
 
 
 ###  http://hitontology.eu/ontology/programmingLibrary
 :programmingLibrary rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :ProgrammingLibrary ;
-                    rdfs:label "programming library"@en .
+                    rdfs:label "programming library or toolkit"@en ;
+					#vann:example # no instances yet
+					rdfs:comment "Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner."@en .
 
 
 ###  http://hitontology.eu/ontology/publishedInJournal
 :publishedInJournal rdf:type owl:ObjectProperty ;
                     rdfs:domain :Study ;
                     rdfs:range :Journal ;
-                    rdfs:label "published In Journal"@en .
+                    rdfs:label "published In Journal"@en ;
+					rdfs:comment "The journal the evaluation study is published in."@en .
 
 
 ###  http://hitontology.eu/ontology/operatingSystem
@@ -356,7 +373,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :OperatingSystem;
                     rdfs:label "operating system"@en ;
-                    rdfs:comment "runs on operating system"@en .
+                    rdfs:comment "The operating system a software uses. A software product might be able to run on a variety of operating systems."@en .
 
 
 ###  http://hitontology.eu/ontology/softwareProductComponent
@@ -370,7 +387,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 :softwareProductInstallation rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct;
                     rdfs:range :SoftwareProductInstallation;
-                    rdfs:label "software product installation"@en .
+                    rdfs:label "software product installation"@en ;
+					dcterms:source <insertbluebookhere> ;
+					#vann:example 
+					rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
 
 
 ###  http://hitontology.eu/ontology/subClassifiedOf
@@ -424,7 +444,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 :client rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :Client ;
-                    rdfs:label "client"@en .
+                    rdfs:label "client"@en ;
+					rdfs:comment "The client type on which a software product is able to be run."@en .
 
 
 ###  http://hitontology.eu/ontology/supportedByFeatureCitation
@@ -446,7 +467,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 :language rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range dbo:Language;
-                    rdfs:label "language"@en .
+                    rdfs:label "language"@en ;
+					rdfs:comment "The language supported by a software product. A software product can offer multiple languages the user can choose from."@en .
 
 
 ###  http://hitontology.eu/ontology/userGroupClassified
@@ -469,7 +491,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 :databaseSystem rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :DatabaseSystem ;
-                    rdfs:label "database system"@en .
+                    rdfs:label "database system"@en ;
+					rdfs:comment "The database system a software product uses."@en .
 
 
 #################################################################
@@ -575,7 +598,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Citation"@en ;
-                           rdfs:comment "The term an author uses for the application system, which is evaluated in the study. The term is counted as to be in natural language."@en .
+                           rdfs:comment "The natural language term an author uses for the application system, which is evaluated in the study."@en .
 
 
 
@@ -624,13 +647,17 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/EnterpriseFunctionClassified
 :EnterpriseFunctionClassified rdf:type owl:Class ;
                       rdfs:subClassOf :Classified ;
-                      rdfs:label "Enterprise Function Classified"@en .
+                      rdfs:label "Enterprise Function Classified"@en ;
+				   	  vann:example :BbAdministrativeAdmission, :WhoDhiCertifyBirthEvent ;
+					  rdfs:comment "The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification"@en .
 
-
+# todo: add dcterms:source paper Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011.
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCitation
 :EnterpriseFunctionCitation rdf:type owl:Class ;
                       rdfs:subClassOf :Citation;
-                      rdfs:label "Enterprise Function Citation"@en .
+                      rdfs:label "Enterprise Function Citation"@en ;
+                      vann:example :BahmniFuncBilling, :BikaLimsFuncQualityControl, :ElexisFuncAbrechnungssystem ;
+					  rdfs:comment "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."@en .
 
 
 ###  http://hitontology.eu/ontology/ExperimentalStudyRCT
@@ -642,33 +669,47 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/FeatureCatalogue
 :FeatureCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
-                   rdfs:label "Feature Catalogue"@en .
+                   rdfs:label "Feature Catalogue"@en ;
+				   rdfs:comment "A catalogue containing a list of possible classifications for software features."@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureClassified
 :FeatureClassified rdf:type owl:Class ;
                    rdfs:subClassOf :Classified ;
-                   rdfs:label "Feature Classified"@en .
+                   rdfs:label "Feature Classified"@en ;
+				   vann:example :BbAdmitPatientsToTheWard, :WhoDhiRegisterBirthEvent, :EhrSfmManageClinicalDocumentation ;
+				   rdfs:comment "The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification"@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureCitation
 :FeatureCitation rdf:type owl:Class ;
                  rdfs:subClassOf :Citation;
-                 rdfs:label "Feature Citation"@en .
+                 rdfs:label "Feature Citation"@en ;
+				 rdfs:comment "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en .
+
 
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCatalogue
 :EnterpriseFunctionCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
-                   rdfs:label "Function Catalogue"@en .
+                   rdfs:label "Function Catalogue"@en ;
+				   vann:example :WhoDhiHealthSystemManagerFunctionCatalogue, :BbFunctionCatalogue ;
+				   rdfs:comment "A catalogue containing a list of possible classifications for enterprise functions."@en .
 
 ### http://hitontology.eu/ontology/OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
-                 rdfs:label "Operating System"@en .
+                 rdfs:label "Operating System"@en ;
+				 vann:example dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+				 rdfs:comment "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."@en . 
 
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
-          rdfs:label "Interoperability"@en .
+          rdfs:label "Interoperability"@en ;
+		  vann:example "ICD9", "HL7_FHIR", "OpenEHR" ;
+		  #dcterms:source <insertbluebookdoihere> ;
+		  dcterms:source <https://www.himss.org/resources/interoperability-healthcare> ;
+		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier."@en .
+
 
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
@@ -702,18 +743,24 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/OrganizationalUnitCitation
 :OrganizationalUnitCitation rdf:type owl:Class ;
                             rdfs:subClassOf :Citation;
-                            rdfs:label "Organizational Unit Citation"@en .
+                            rdfs:label "Organizational Unit Citation"@en ;
+							vann:example :organizationalUnit, :GnuHealthOrgHospitalEnvironmentSctid22232009, :ElexisOrgArztpraxis, :MedkeyOrgDentalClinic ;
+							rdfs:comment "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaClassified
 :OutcomeCriteriaClassified rdf:type owl:Class ;
-                           rdfs:label "Outcome Criteria Classified"@en .
+                           rdfs:label "Outcome Criteria Classified"@en ;
+						   vann:example :Communication, :EconomicOutcome, :OutcomeCriteriaClassified ;
+						   rdfs:comment "classified catalogue entry of an outcome criteria"@en .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
 :OutcomeCriteriaCitation rdf:type owl:Class ;
-#                         rdfs:subClassOf :Citation;
-                         rdfs:label "Outcome Criteria Citation"@en .
+#                        rdfs:subClassOf :Citation;
+                         rdfs:label "Outcome Criteria Citation"@en ;
+						 vann:example :softwareStability, :strengthsAndWeaknessesOfIntervention, :timeForProducingImages ;
+						 rdfs:comment "The term an author uses for the outcome criteria of the evaluation study."@en .
 
 
 ###  http://hitontology.eu/ontology/Popularity
@@ -728,13 +775,17 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/PMID
 :PMID rdf:type owl:Class ;
-      rdfs:label "PMID"@en .
+      rdfs:label "PMID"@en ;
+	  vann:example :i16955380, :i17660145, :i19717798;
+	  rdfs:comment "The PMID extracted from PubMed for each study."@en .
 
 
 ###  http://hitontology.eu/ontology/QuasiExperimentalStudy
 :QuasiExperimentalStudy rdf:type owl:Class ;
                         rdfs:subClassOf :Study ;
-                        rdfs:label "Quasi Experimental Study"@en .
+                        rdfs:label "Quasi Experimental Study"@en ;
+						#vann:example 
+						rdfs:comment ""@en .
 
 
 ###  http://hitontology.eu/ontology/SoftwareProduct
@@ -750,36 +801,49 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Study
 :Study rdf:type owl:Class ;
-       rdfs:label "Study"@en .
+       rdfs:label "Study"@en ;
+       vann:example :NamedStudy1, :NamedStudy2, :NamedStudy3 ;
+       rdfs:comment "An evaluation study"@en .
 
 
 ###  http://hitontology.eu/ontology/StudyMethodClassified
 :StudyMethodClassified rdf:type owl:Class ;
-#                       rdfs:subClassOf :Classified ;
-                       rdfs:label "Study Method Classified"@en .
+#                      rdfs:subClassOf :Classified ;
+                       rdfs:label "Study Method Classified"@en ;
+					   vann:example :Qualitative, :Quantitative ;
+					   rdfs:comment "The study method, qualitative or quantitative."@en .
 
 
 ###  http://hitontology.eu/ontology/StudyMethodCitation
 :StudyMethodCitation rdf:type owl:Class ;
 #                     rdfs:subClassOf :Citation;
-                     rdfs:label "Study Method Citation"@en .
+                     rdfs:label "Study Method Citation"@en ;
+					 vann:example :intentToTreatAnalysis, :interviews, :knowledgeQuestionnaire ;
+					 rdfs:comment "The natural language term an author uses for a study method which is used in the evaluation study."@en .
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;
                      rdfs:subClassOf :Classified ;
-                     rdfs:label "User Group Classified"@en .
+                     rdfs:label "User Group Classified"@en ;
+                     vann:example :SnomedProfessionalNurseOccupation, :SnomedResearcherOccupation, :SnomedRadiologistOccupation ;
+					 dcterms:source <insertsourcehere> ;
+					 rdfs:comment "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en .
 
 
 ###  http://hitontology.eu/ontology/UserGroupCatalogue
 :UserGroupCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
-                   rdfs:label "User Group Catalogue"@en .
+                   rdfs:label "User Group Catalogue"@en ;
+				   vann:example :SnomedUserGroupCatalogue ;
+				   rdfs:comment "A catalogue containing a list of possible classifications for user groups."@en .
 
 
 ###  http://hitontology.eu/ontology/UserGroupCitation
 :UserGroupCitation rdf:type owl:Class ;
                    rdfs:subClassOf :Citation;
-                   rdfs:label "User Group Citation"@en .
+                   rdfs:label "User Group Citation"@en ;
+				   vann:example :OpenDentalUserDentist, :OpenMrsUserAdministrativeStaff, :OrthancUserNetworkEngineer ;
+				   rdfs:comment "The natural language term an author uses for the user group of an application system."@en .
 
 
 ###  http://hitontology.eu/ontology/ValidationStudy
