@@ -17,6 +17,7 @@
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
@@ -608,14 +609,17 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/ApplicationSystemCatalogue
 :ApplicationSystemCatalogue rdf:type owl:Class ;
-                             rdfs:subClassOf :Catalogue ;
-                             rdfs:label "Application System Catalogue"@en .
+                            rdfs:subClassOf :Catalogue ;
+                            rdfs:label "Application System Catalogue"@en ;
+							vann:example :BbApplicationSystemCatalogue, :WhoDhiSystemCategoryApplicationSystemCatalogue ;
+							rdfs:comment "A collection of classified application systems."@en .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemClassified
 :ApplicationSystemClassified rdf:type owl:Class ;
                              rdfs:subClassOf :Classified ;
                              rdfs:label "Application System Classified"@en ;
+							 vann:example :BbDialysisInformationSystem, :BbDigitalDictationSystem, :WhoDhiElectronicMedicalRecord ;
                              rdfs:comment "The term for an application system, which is used in the classification of application systems."@en;
                              dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>.
 
@@ -624,18 +628,23 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Citation"@en ;
+						   vann:example :BahmniAppHospitalSystem, :FreeMedFormsAppElectronicMedicalHealthRecord, :EChasquiLaboratoryInformationSystem ; 
                            rdfs:comment "The natural language term an author uses for the application system, which is evaluated in the study."@en .
-
 
 
 ###  http://hitontology.eu/ontology/Catalogue
 :Catalogue rdf:type owl:Class ;
-                rdfs:label "Catalogue"@en .
+           rdfs:label "Catalogue"@en ;
+		   vann:example :BbFeatureCatalogue, :BbFunctionCatalogue, :BbApplicationSystemCatalogue, :SnomedUserGroupCatalogue ;
+           rdfs:comment "A collection of classifieds of the same type from the same source."@en .
 
 
 ###  http://hitontology.eu/ontology/Certification
 :Certification rdf:type owl:Class ;
-                     rdfs:label "Certification"@en .
+                     rdfs:label "Certification"@en ;
+				     dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
+					 # vann:example ... ;
+					 rdfs:comment "Certificate of a software product to assess the compliance with quality management standards."@en .
 
 
 ###  http://hitontology.eu/ontology/Citation
@@ -654,7 +663,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Client
 :Client rdf:type owl:Class ;
-                     rdfs:label "Client"@en .
+                     rdfs:label "Client"@en ;
+					 rdfs:comment "The client type on which a software product is able to be run."@en .
 
 ###  http://hitontology.eu/ontology/Mobile
 :Mobile a :Client; rdfs:label "mobile"@en .
@@ -667,7 +677,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/DatabaseSystem
 :DatabaseSystem rdf:type owl:Class ;
-          rdfs:label "Database System"@en .
+          rdfs:label "Database System"@en ;
+		  vann:example :MySql, :PostgreSql, :OracleDatabase .
 
 
 ###  http://hitontology.eu/ontology/EnterpriseFunctionClassified
@@ -696,7 +707,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 :FeatureCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Feature Catalogue"@en ;
-				   rdfs:comment "A catalogue containing a list of possible classifications for software features."@en .
+				   vann:example :WhoDhiHealthSystemManagerFeatureCatalogue, :EhrSfmFeatureCatalogue, :BbFeatureCatalogue ;
+				   rdfs:comment "A collection of classified software features."@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureClassified
@@ -720,7 +732,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Function Catalogue"@en ;
 				   vann:example :WhoDhiHealthSystemManagerFunctionCatalogue, :BbFunctionCatalogue ;
-				   rdfs:comment "A catalogue containing a list of possible classifications for enterprise functions."@en .
+				   rdfs:comment "A collection of classified enterprise functions."@en .
 
 ### http://hitontology.eu/ontology/OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
@@ -731,9 +743,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
           rdfs:label "Interoperability"@en ;
-		  vann:example "ICD9", "HL7_FHIR", "OpenEHR" ;
-		  #dcterms:source <insertbluebookdoihere> ;
-		  dcterms:source <https://www.himss.org/resources/interoperability-healthcare> ;
+		  vann:example :HL7, <http://hitontology.eu/ontology/HL7_V2.x>, <http://hitontology.eu/ontology/HL7_V3.0>, :ICD10, :HL7_FHIR, :HL7_FHIR, :OpenEHR ;
+		  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>, <https://www.himss.org/resources/interoperability-healthcare> ;
 		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier."@en .
 
 
@@ -757,7 +768,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/OrganizationalUnitCatalogue
 :OrganizationalUnitCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
-                   rdfs:label "Organizational Unit Catalogue"@en .
+                   rdfs:label "Organizational Unit Catalogue"@en ;
+				   rdfs:comment "A collection of classified organizational units."@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
@@ -810,8 +822,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 :QuasiExperimentalStudy rdf:type owl:Class ;
                         rdfs:subClassOf :Study ;
                         rdfs:label "Quasi Experimental Study"@en ;
-						#vann:example 
-						rdfs:comment ""@en .
+						vann:example :NamedStudy3, :NamedStudy4, :NamedStudy22 .
+#						rdfs:comment ""@en .
 
 
 ###  http://hitontology.eu/ontology/SoftwareProduct
@@ -861,7 +873,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "User Group Catalogue"@en ;
 				   vann:example :SnomedUserGroupCatalogue ;
-				   rdfs:comment "A catalogue containing a list of possible classifications for user groups."@en .
+				   rdfs:comment "A collection of classified user groups."@en .
 
 
 ###  http://hitontology.eu/ontology/UserGroupCitation
