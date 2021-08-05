@@ -649,16 +649,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://hitontology.eu/ontology/Citation
 :Citation rdf:type owl:Class ;
-         	rdfs:label "Citation"@en .
+         	rdfs:label "Citation"@en ;
+			rdfs:comment "Natural language description of a software product from that products documentation, such as a web page."@en .
 
 ###  http://hitontology.eu/ontology/Classification
 :Classification rdf:type owl:Class ;
-         	rdfs:label "Classification"@en .
+         	rdfs:label "Classification"@en ;
+			vann:example :WhoDhi1-0, :Snomed, :EhrSfm, :Bb ;
+			rdfs:comment "Group of catalogues of different catalogue types from the same source."@en .
 
 
 ###  http://hitontology.eu/ontology/Classified
 :Classified rdf:type owl:Class ;
-         	rdfs:label "Classified"@en .
+         	rdfs:label "Classified"@en ;
+			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function."@en .
 
 
 ###  http://hitontology.eu/ontology/Client
