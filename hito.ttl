@@ -413,7 +413,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:domain :SoftwareProduct;
                     rdfs:range :SoftwareProductInstallation;
                     rdfs:label "software product installation"@en ;
-					dcterms:source <insertbluebookhere> ;
+                    dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
 					#vann:example 
 					rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
 
@@ -694,6 +694,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                       rdfs:subClassOf :Citation;
                       rdfs:label "Enterprise Function Citation"@en ;
                       vann:example :BahmniFuncBilling, :BikaLimsFuncQualityControl, :ElexisFuncAbrechnungssystem ;
+                      dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
 					  rdfs:comment "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."@en .
 
 
@@ -769,13 +770,17 @@ xsd:gYear rdf:type rdfs:Datatype .
 :OrganizationalUnitCatalogue rdf:type owl:Class ;
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Organizational Unit Catalogue"@en ;
+				   vann:example :SnomedEnvironmentOrganizationalUnitCatalogue ;
 				   rdfs:comment "A collection of classified organizational units."@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
 :OrganizationalUnitClassified rdf:type owl:Class ;
                               rdfs:subClassOf :Classified ;
-                              rdfs:label "Organizational Unit Classified"@en .
+                              rdfs:label "Organizational Unit Classified"@en ;
+							  vann:example :SnomedRadiologyDepartmentEnvironment, :SnomedCardiologyDepartmentEnvironment, :SnomedMedicalCenterEnvironment ;
+							  rdfs:seeAlso <https://browser.ihtsdotools.org/> ;
+							  rdfs:comment "Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International."@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCitation
@@ -790,7 +795,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 :OutcomeCriteriaClassified rdf:type owl:Class ;
                            rdfs:label "Outcome Criteria Classified"@en ;
 						   vann:example :Communication, :EconomicOutcome, :OutcomeCriteriaClassified ;
-						   rdfs:comment "classified catalogue entry of an outcome criteria"@en .
+						   # TODO: Add DOI of "An inventory of evaluation studies of information technology in health care: trends in evaluation research"
+						   # dcterms:source ... 
+ 						   rdfs:comment "Classified catalogue entry of an outcome criteria."@en .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
@@ -829,12 +836,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/SoftwareProduct
 :SoftwareProduct rdf:type owl:Class ;
                  skos:closeMatch doap:Project ;
+				 vann:example :GnuHealth, :Bahmni, :Orthanc ;
                  rdfs:label "Software Product"@en .
 
 
 ###  http://hitontology.eu/ontology/SoftwareProductInstallation
 :SoftwareProductInstallation rdf:type owl:Class ;
-                 rdfs:label "Software Product Installation"@en .
+                 rdfs:label "Software Product Installation"@en ;
+                  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
+				 rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
 
 
 ###  http://hitontology.eu/ontology/Study
