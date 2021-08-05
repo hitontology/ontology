@@ -859,6 +859,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 #                      rdfs:subClassOf :Classified ;
                        rdfs:label "Study Method Classified"@en ;
 					   vann:example :Qualitative, :Quantitative ;
+                       dcterms:source <http://dx.doi.org/10.1007/s10916-006-7397-9> ;
 					   rdfs:comment "The study method, qualitative or quantitative."@en .
 
 
@@ -874,7 +875,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                      rdfs:subClassOf :Classified ;
                      rdfs:label "User Group Classified"@en ;
                      vann:example :SnomedProfessionalNurseOccupation, :SnomedResearcherOccupation, :SnomedRadiologistOccupation ;
-					 dcterms:source <insertsourcehere> ;
+					 rdfs:seeAlso <https://browser.ihtsdotools.org/> ;
 					 rdfs:comment "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en .
 
 
