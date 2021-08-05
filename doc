@@ -1,1 +1,2 @@
 widoco -ontFile hito.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder /tmp/doc
+# -licensius
