@@ -812,11 +812,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 						 rdfs:comment "The term an author uses for the outcome criteria of the evaluation study."@en .
 
 
-###  http://hitontology.eu/ontology/Popularity
-:Popularity rdf:type owl:Class ;
-          rdfs:label "Popularity"@en .
-
-
 ###  http://hitontology.eu/ontology/ProgrammingLibrary
 :ProgrammingLibrary rdf:type owl:Class ;
           rdfs:label "Programming Library"@en .
