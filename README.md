@@ -14,3 +14,36 @@ Warning: This is the old procedure and will not include updated software product
 ## Documentation
 [Download widoco](https://github.com/dgarijo/Widoco/releases) and make it available as `widoco`, then run `./doc` under Linux to generate the ontology documentation.
 Adapt the `doc` script accordingly on other operating systems.
+
+## List of files
+
+file			| source of truth	| description
+--			| --			| --
+bb.ttl			| csv2rdf	 	|
+combine			| 			|
+database.ttl		| database		|
+dbpedia/os.nt		| dbpedia		| 	
+dbpedia			| 			|
+dbpedia.nt		| dbpedia		|
+doc			| 			|
+hito.ttl		| here			|
+hl7ehrsfm.ttl		| csv2rdf		|
+individual.ttl		| here			|
+joshipacs.ttl		| csv2rdf		|
+limes			| 			|
+medfloss.ttl		| ?			|
+prefix.ttl		| 			|
+programminglibrary.ttl	| ? 			|
+README.md		| 			|
+snomed.ttl		| csv2rdf		|
+sparql			| 			|
+standard.ttl		| ?			|
+swp.ttl			| ?			|
+whodhi.ttl		| csv2rdf		|
+
+
+## Import software products from the database
+See <https://github.com/hitontology/database>.
+
+## Import catalogues
+See <https://github.com/hitontology/csv2rdf>.
