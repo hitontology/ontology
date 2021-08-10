@@ -7,7 +7,7 @@ This file can then be uploaded to the HITO SPARQL endpoint:
 
 1. Login to <https://hitontology.eu/conductor/>
 2. Delete graph http://hitontology.eu/ontology at Linked Data -> Graphs -> Graphs
-3. Upload the file at Linked Data -> Quad Store Upload
+3. Upload the file at Linked Data -> Quad Store Upload to the graph <http://hitontology.eu>
 
 Warning: This is the old procedure and will not include updated software products from the database.
 
