@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import mplcursors
 import random
+import math
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -28,6 +29,11 @@ QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target;
  ?p rdfs:subPropertyOf hito:citation.
  ?q rdfs:subPropertyOf hito:classified.
 } GROUP BY ?source ?label"""
+
+def randompoint():
+    deg = 2 * math.pi * random.random()
+    R = 80
+    return (math.cos(deg)*R,math.sin(deg)*R)
 
 # use sklearn dict vectorizers and feature extraction
 def cluster():
@@ -51,7 +57,7 @@ def cluster():
     kmeans.fit(reduced_data)
 
     # Step size of the mesh. Decrease to increase the quality of the VQ.
-    h = 0.01  # point in the mesh [x_min, x_max]x[y_min, y_max].
+    h = 0.001  # point in the mesh [x_min, x_max]x[y_min, y_max].
 
     # Plot the decision boundary. For that, we will assign a color to each
     x_min, x_max = reduced_data[:, 0].min() - 0.2, reduced_data[:, 0].max() + 0.2
@@ -63,7 +69,7 @@ def cluster():
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
-    plt.figure(1)
+    plt.figure(figsize=[30, 20])
     plt.clf()
     plt.imshow(
         Z,
@@ -86,10 +92,7 @@ def cluster():
     #    color="w",
     #    zorder=10,
     #)
-    plt.title(
-        "Clustering on the HITO software products (PCA-reduced data)\n"
-        #"Centroids are marked with white cross"
-    )
+    #plt.title("Clustering on the HITO software products (PCA-reduced data)"#"Centroids are marked with white cross")
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
     plt.xticks(())
@@ -100,10 +103,10 @@ def cluster():
 
     #ax = plt.figure().add_subplot(111,autoscale_on=True)
     for i in range(len(D)):
-        plt.annotate(E[i]["label"], xy=(reduced_data[i][0],reduced_data[i][1]),xytext=(2+random.randint(0,80),2+random.randint(0,80)),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
+        plt.annotate(E[i]["label"], xy=reduced_data[i],xytext=randompoint(),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
 
-
-
+    plt.tight_layout()
+    plt.savefig("cluster.pdf",pad_inches=0)
     plt.show()
 
 
