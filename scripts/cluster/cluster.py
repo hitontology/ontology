@@ -1,15 +1,19 @@
 from collections import defaultdict
 from rdflib import Graph
-from sklearn.cluster import AffinityPropagation, KMeans
+from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation
 from sklearn.feature_extraction import DictVectorizer
 from sklearn import preprocessing
 
 from sklearn.decomposition import PCA
 import numpy as np
 import matplotlib.pyplot as plt
+from adjustText import adjust_text
 import mplcursors
 import random
 import math
+
+# slow but nice
+ADJUST_TEXT = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -20,7 +24,7 @@ g.bind("hito", HITO)
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
+CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
   ?source   a hito:SoftwareProduct;
             rdfs:label ?label;
             ?p ?citation.
@@ -30,10 +34,26 @@ QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target;
  ?q rdfs:subPropertyOf hito:classified.
 } GROUP BY ?source ?label"""
 
+QUERY = """PREFIX :<http://hitontology.eu/ontology/>
+SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
+
+  ?source   a hito:SoftwareProduct;
+            rdfs:label ?label;
+            ?p ?citation.
+ {
+  ?citation ?q ?target.
+ }
+ UNION {?source :license|:programmingLanguage|:interoperability|:operatingSystem|:client|:databaseSystem|:language ?target.}
+
+ ?p rdfs:subPropertyOf hito:citation.
+ ?q rdfs:subPropertyOf hito:classified.
+} GROUP BY ?source ?label"""
+
 def randompoint():
     deg = 2 * math.pi * random.random()
     R = 80
-    return (math.cos(deg)*R,math.sin(deg)*R)
+    return (math.cos(deg) * R, math.sin(deg) * R)
+
 
 # use sklearn dict vectorizers and feature extraction
 def cluster():
@@ -43,29 +63,36 @@ def cluster():
     E = []
     for row in result:
         D.append({"classifieds": row["targets"].split()})
-        E.append({"uri": str(row["source"]), "label": ([row["label"].value][0]), "classifieds": row["targets"].split()})
+        E.append(
+            {
+                "uri": str(row["source"]),
+                "label": ([row["label"].value][0]),
+                "classifieds": row["targets"].split(),
+            }
+        )
     print(E[0]["label"])
     vec = DictVectorizer(sparse=False)
-    
+
     data = vec.fit_transform(D)
-    data = preprocessing.normalize(data, norm='l2')
-    #print(vec.get_feature_names())
-    reduced_data = PCA(n_components=2,whiten=True).fit_transform(data)
+    data = preprocessing.normalize(data, norm="max")
+    # print(vec.get_feature_names())
+    reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
     print(reduced_data)
-    # clusters = AffinityPropagation(random_state=0).fit(reduced)
-    kmeans = KMeans(init="k-means++", n_clusters=4, n_init=2)
-    kmeans.fit(reduced_data)
+    clustering = AffinityPropagation(random_state=0).fit(reduced_data)
+    #clustering = KMeans(init="k-means++", n_clusters=4, n_init=2)
+    #clustering.fit(reduced_data)
+    #clustering = DBSCAN(eps=0.3, min_samples=10).fit(reduced_data)
 
     # Step size of the mesh. Decrease to increase the quality of the VQ.
     h = 0.001  # point in the mesh [x_min, x_max]x[y_min, y_max].
 
     # Plot the decision boundary. For that, we will assign a color to each
     x_min, x_max = reduced_data[:, 0].min() - 0.2, reduced_data[:, 0].max() + 0.2
-    y_min, y_max = reduced_data[:, 1].min() - 0.2 , reduced_data[:, 1].max() + 0.2
+    y_min, y_max = reduced_data[:, 1].min() - 0.2, reduced_data[:, 1].max() + 0.2
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
     # Obtain labels for each point in mesh. Use last trained model.
-    Z = kmeans.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = clustering.predict(np.c_[xx.ravel(), yy.ravel()])
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
@@ -82,8 +109,8 @@ def cluster():
 
     plt.plot(reduced_data[:, 0], reduced_data[:, 1], "k.", markersize=5)
     # Plot the centroids as a white X
-    #centroids = kmeans.cluster_centers_
-    #plt.scatter(
+    # centroids = kmeans.cluster_centers_
+    # plt.scatter(
     #    centroids[:, 0],
     #    centroids[:, 1],
     #    marker="x",
@@ -91,22 +118,29 @@ def cluster():
     #    linewidths=3,
     #    color="w",
     #    zorder=10,
-    #)
-    #plt.title("Clustering on the HITO software products (PCA-reduced data)"#"Centroids are marked with white cross")
+    # )
+    # plt.title("Clustering on the HITO software products (PCA-reduced data)"#"Centroids are marked with white cross")
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
     plt.xticks(())
     plt.yticks(())
 
-    #cursor = mplcursors.cursor(hover=True)
-    #cursor.connect("add", lambda sel: sel.annotation.set_text(D[sel.target.index]["uri"]))
+    # cursor = mplcursors.cursor(hover=True)
+    # cursor.connect("add", lambda sel: sel.annotation.set_text(D[sel.target.index]["uri"]))
 
-    #ax = plt.figure().add_subplot(111,autoscale_on=True)
+    # ax = plt.figure().add_subplot(111,autoscale_on=True)
+    texts = []
     for i in range(len(D)):
-        plt.annotate(E[i]["label"], xy=reduced_data[i],xytext=randompoint(),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
+        # a = plt.annotate(E[i]["label"], xy=reduced_data[i],xytext=randompoint(),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
+        a = plt.text(reduced_data[i][0], reduced_data[i][1], E[i]["label"])
+        texts.append(a)
+
+    if ADJUST_TEXT:
+        adjust_text(texts, lim=10)
 
     plt.tight_layout()
-    plt.savefig("cluster.pdf",pad_inches=0)
+    plt.savefig("cluster.pdf", pad_inches=0)
+    plt.savefig("cluster.png", pad_inches=0)
     plt.show()
 
 
