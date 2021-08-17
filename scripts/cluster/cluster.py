@@ -1,39 +1,36 @@
 from collections import defaultdict
 from rdflib import Graph
 from sklearn.cluster import KMeans
+from sklearn.feature_extraction import DictVectorizer
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
 g.bind("hito", HITO)
+# rdflib v5 as installed by pip doesn't support remote SPARQL querying.
+# When rdflib v6 is officially release this can be changed using the SERVICE keyword.
+# The ontology/combine script needs to be executed first to created the file.
 FILENAME = "/tmp/hito-all.nt"
-#with open(FILENAME,"r") as f:
 g.parse(FILENAME, format="nt")
 
-QUERY = """SELECT DISTINCT ?source ?target {
+QUERY = """SELECT ?source (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
   ?source   a hito:SoftwareProduct;
             ?p ?citation.
   ?citation ?q ?target.
 
  ?p rdfs:subPropertyOf hito:citation.
  ?q rdfs:subPropertyOf hito:classified.
-}"""
+} GROUP BY ?source"""
 
-result = g.query(QUERY)
+# use sklearn dict vectorizers and feature extraction
+def vectorize():
+    result = g.query(QUERY)
+    print(len(result))
+    D = []
+    for row in result:
+        D.append({"uri": str(row["source"]), "classifieds": row["targets"].split()})
+    vec = DictVectorizer()
+    X = vec.fit_transform(D)
+    print(X)
 
-m = defaultdict(set)
-targets = set()
-print(len(result))
 
-for row in result:
-    targets.add(row.target)
-
-targets = list(targets)
-index = dict()
-
-for i in range(len(targets)):
-        index[targets[i]]=i
-
-for row in result:
-    m[row.source].add(index[row.target])
-
-print(m)
+vectorize()
