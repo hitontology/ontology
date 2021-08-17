@@ -8,6 +8,7 @@ from sklearn.decomposition import PCA
 import numpy as np
 import matplotlib.pyplot as plt
 import mplcursors
+import random
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -18,24 +19,28 @@ g.bind("hito", HITO)
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-QUERY = """SELECT ?source (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
+QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
   ?source   a hito:SoftwareProduct;
+            rdfs:label ?label;
             ?p ?citation.
   ?citation ?q ?target.
 
  ?p rdfs:subPropertyOf hito:citation.
  ?q rdfs:subPropertyOf hito:classified.
-} GROUP BY ?source"""
+} GROUP BY ?source ?label"""
 
 # use sklearn dict vectorizers and feature extraction
 def cluster():
     result = g.query(QUERY)
     print(len(result))
     D = []
+    E = []
     for row in result:
-        #D.append({"uri": str(row["source"]), "classifieds": row["targets"].split()})
         D.append({"classifieds": row["targets"].split()})
+        E.append({"uri": str(row["source"]), "label": ([row["label"].value][0]), "classifieds": row["targets"].split()})
+    print(E[0]["label"])
     vec = DictVectorizer(sparse=False)
+    
     data = vec.fit_transform(D)
     data = preprocessing.normalize(data, norm='l2')
     #print(vec.get_feature_names())
@@ -49,8 +54,8 @@ def cluster():
     h = 0.01  # point in the mesh [x_min, x_max]x[y_min, y_max].
 
     # Plot the decision boundary. For that, we will assign a color to each
-    x_min, x_max = reduced_data[:, 0].min() - 1, reduced_data[:, 0].max() + 1
-    y_min, y_max = reduced_data[:, 1].min() - 1, reduced_data[:, 1].max() + 1
+    x_min, x_max = reduced_data[:, 0].min() - 0.2, reduced_data[:, 0].max() + 0.2
+    y_min, y_max = reduced_data[:, 1].min() - 0.2 , reduced_data[:, 1].max() + 0.2
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
     # Obtain labels for each point in mesh. Use last trained model.
@@ -69,7 +74,7 @@ def cluster():
         origin="lower",
     )
 
-    plt.plot(reduced_data[:, 0], reduced_data[:, 1], "k.", markersize=2)
+    plt.plot(reduced_data[:, 0], reduced_data[:, 1], "k.", markersize=5)
     # Plot the centroids as a white X
     #centroids = kmeans.cluster_centers_
     #plt.scatter(
@@ -82,7 +87,7 @@ def cluster():
     #    zorder=10,
     #)
     plt.title(
-        "Clustering on the HITO software products PCA-reduced data)\n"
+        "Clustering on the HITO software products (PCA-reduced data)\n"
         #"Centroids are marked with white cross"
     )
     plt.xlim(x_min, x_max)
@@ -90,8 +95,14 @@ def cluster():
     plt.xticks(())
     plt.yticks(())
 
-    cursor = mplcursors.cursor(hover=True)
-    #cursor.connect("add"
+    #cursor = mplcursors.cursor(hover=True)
+    #cursor.connect("add", lambda sel: sel.annotation.set_text(D[sel.target.index]["uri"]))
+
+    #ax = plt.figure().add_subplot(111,autoscale_on=True)
+    for i in range(len(D)):
+        plt.annotate(E[i]["label"], xy=(reduced_data[i][0],reduced_data[i][1]),xytext=(2+random.randint(0,80),2+random.randint(0,80)),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
+
+
 
     plt.show()
 
