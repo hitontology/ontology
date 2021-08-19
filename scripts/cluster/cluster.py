@@ -14,6 +14,8 @@ import math
 
 # slow but nice
 ADJUST_TEXT = True
+NORM = "max" # l1, l2, max
+CLASSIFIED_ONLY = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -57,7 +59,7 @@ def randompoint():
 
 # use sklearn dict vectorizers and feature extraction
 def cluster():
-    result = g.query(QUERY)
+    result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
     print(len(result))
     D = []
     E = []
@@ -74,7 +76,7 @@ def cluster():
     vec = DictVectorizer(sparse=False)
 
     data = vec.fit_transform(D)
-    data = preprocessing.normalize(data, norm="max")
+    data = preprocessing.normalize(data, norm=NORM)
     # print(vec.get_feature_names())
     reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
     print(reduced_data)
@@ -139,7 +141,7 @@ def cluster():
         adjust_text(texts, lim=10)
 
     plt.tight_layout()
-    plt.savefig("cluster.pdf", pad_inches=0)
+    plt.savefig("cluster-"+("classifiedonly-" if CLASSIFIED_ONLY else "")+NORM+".pdf", pad_inches=0)
     plt.savefig("cluster.png", pad_inches=0)
     plt.show()
 
