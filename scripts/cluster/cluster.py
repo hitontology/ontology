@@ -2,6 +2,7 @@ from collections import defaultdict
 from rdflib import Graph
 from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation
 from sklearn.feature_extraction import DictVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import preprocessing
 
 from sklearn.decomposition import PCA
@@ -51,6 +52,20 @@ SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); 
  ?q rdfs:subPropertyOf hito:classified.
 } GROUP BY ?source ?label"""
 
+#CLASSIFIED_BAG_OF_WORDS = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(REPLACE(?target,"[A-Z]{2,3}\\.[0-9](\\.[0-9](\\.[0-9])?)? ","","i"); separator=" ") AS ?targets) {
+CLASSIFIED_BAG_OF_WORDS = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
+SERVICE <https://hitontology.eu/sparql>
+{
+  ?source   a hito:SoftwareProduct;
+            rdfs:label ?label;
+            ?p ?citation.
+  ?citation ?q [rdfs:label ?target].
+
+ ?p rdfs:subPropertyOf hito:citation.
+ ?q rdfs:subPropertyOf hito:classified.
+}
+} GROUP BY ?source ?label"""
+
 def randompoint():
     deg = 2 * math.pi * random.random()
     R = 80
@@ -59,12 +74,14 @@ def randompoint():
 
 # use sklearn dict vectorizers and feature extraction
 def cluster():
-    result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
+    #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
+    result = g.query(CLASSIFIED_BAG_OF_WORDS)
     print(len(result))
     D = []
     E = []
     for row in result:
-        D.append({"classifieds": row["targets"].split()})
+        #D.append({"classifieds": row["targets"].split()}) # labels for one-hot encoding
+        D.append( str(row["targets"])) # bag of words
         E.append(
             {
                 "uri": str(row["source"]),
@@ -73,9 +90,13 @@ def cluster():
             }
         )
     print(E[0]["label"])
-    vec = DictVectorizer(sparse=False)
+    #print(D)
+    #vec = DictVectorizer(sparse=False)
+    vec = CountVectorizer()
 
-    data = vec.fit_transform(D)
+    #data = vec.fit_transform(D)
+    data = vec.fit_transform(D).toarray()
+    print(data)
     data = preprocessing.normalize(data, norm=NORM)
     # print(vec.get_feature_names())
     reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
@@ -141,7 +162,8 @@ def cluster():
         adjust_text(texts, lim=10)
 
     plt.tight_layout()
-    plt.savefig("cluster-"+("classifiedonly-" if CLASSIFIED_ONLY else "")+NORM+".pdf", pad_inches=0)
+    #plt.savefig("cluster-"+("classifiedonly-" if CLASSIFIED_ONLY else "")+NORM+".pdf", pad_inches=0)
+    plt.savefig("cluster-bagofwords.pdf", pad_inches=0)
     plt.savefig("cluster.png", pad_inches=0)
     plt.show()
 
