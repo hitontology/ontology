@@ -7,11 +7,14 @@ from sklearn import preprocessing
 
 from sklearn.decomposition import PCA
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from adjustText import adjust_text
 import mplcursors
 import random
 import math
+import umap
 
 # slow but nice
 ADJUST_TEXT = True
@@ -99,7 +102,8 @@ def cluster():
     print(data)
     data = preprocessing.normalize(data, norm=NORM)
     # print(vec.get_feature_names())
-    reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
+    #reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
+    reduced_data = umap.UMAP(n_neighbors=15).fit_transform(data)
     print(reduced_data)
     clustering = AffinityPropagation(random_state=0).fit(reduced_data)
     #clustering = KMeans(init="k-means++", n_clusters=4, n_init=2)
