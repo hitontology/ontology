@@ -1,0 +1,5 @@
+mplcursors
+adjustText
+umap
+git+https://github.com/RDFLib/rdflib.git@master#egg=rdflib
+matplotlib
