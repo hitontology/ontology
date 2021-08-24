@@ -20,6 +20,7 @@ import umap
 ADJUST_TEXT = True
 NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
+BAG_OF_WORDS = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -55,8 +56,7 @@ SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); 
  ?q rdfs:subPropertyOf hito:classified.
 } GROUP BY ?source ?label"""
 
-#CLASSIFIED_BAG_OF_WORDS = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(REPLACE(?target,"[A-Z]{2,3}\\.[0-9](\\.[0-9](\\.[0-9])?)? ","","i"); separator=" ") AS ?targets) {
-CLASSIFIED_BAG_OF_WORDS = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
+CLASSIFIED_ONLY_BAG_OF_WORDS = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
 SERVICE <https://hitontology.eu/sparql>
 {
   ?source   a hito:SoftwareProduct;
@@ -69,6 +69,25 @@ SERVICE <https://hitontology.eu/sparql>
 }
 } GROUP BY ?source ?label"""
 
+BAG_OF_WORDS = """PREFIX :<http://hitontology.eu/ontology/>
+SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
+SERVICE <https://hitontology.eu/sparql>
+{
+  ?source   a hito:SoftwareProduct;
+            rdfs:label ?label;
+            ?p ?citation.
+ {
+  ?citation ?q [rdfs:label ?target].
+ }
+ UNION {?source :license|:programmingLanguage|:interoperability|:operatingSystem|:client|:databaseSystem|:language [rdfs:label ?target].}
+
+ ?p rdfs:subPropertyOf hito:citation.
+ ?q rdfs:subPropertyOf hito:classified.
+}
+} GROUP BY ?source ?label"""
+
+
+
 def randompoint():
     deg = 2 * math.pi * random.random()
     R = 80
@@ -78,7 +97,7 @@ def randompoint():
 # use sklearn dict vectorizers and feature extraction
 def cluster():
     #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
-    result = g.query(CLASSIFIED_BAG_OF_WORDS)
+    result = g.query(CLASSIFIED_ONLY_BAG_OF_WORDS if CLASSIFIED_ONLY else BAG_OF_WORDS)
     print(len(result))
     D = []
     E = []
@@ -167,7 +186,7 @@ def cluster():
 
     plt.tight_layout()
     #plt.savefig("cluster-"+("classifiedonly-" if CLASSIFIED_ONLY else "")+NORM+".pdf", pad_inches=0)
-    plt.savefig("cluster-bagofwords.pdf", pad_inches=0)
+    plt.savefig("cluster-bagofwords-"+("classifiedonly-" if CLASSIFIED_ONLY else "")+NORM+".pdf", pad_inches=0)
     plt.savefig("cluster.png", pad_inches=0)
     plt.show()
 
