@@ -20,6 +20,7 @@ hito:Bb
 hito:BbAdministrateTheMasterPatientIndexMpi
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientIdentificationAndCheckingForRecurrent ;
+    dcterms:source bb:AdministrateTheMasterPatientIndex ;
     a hito:FeatureClassified ;
     rdfs:label "Administrate the master patient index (MPI)"@en .
 
@@ -262,6 +263,7 @@ hito:BbCostAndResultsAccounting
 hito:BbCreateWorkListForAGroupOfPatients
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    dcterms:source bb:FeatureCreateWorklistForAGroupOfPatients ;
     a hito:FeatureClassified ;
     rdfs:label "Create work list for a group of patients"@en .
 
@@ -662,6 +664,7 @@ hito:BbNursingManagementAndDocumentationSystem
 hito:BbOfferDecisionsupportForCarePlanning
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
+    dcterms:source bb:OfferDecisionSupportForCarePlanning ;
     a hito:FeatureClassified ;
     rdfs:label "Offer decision-support for care planning"@en .
 
@@ -844,6 +847,7 @@ hito:BbProvideAccessToArchivedInformation
 hito:BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
+    dcterms:source bb:FeatureProvideCatalogsAndOtherMeansForCodingPatientsDiagnoses ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of diagnoses"@en .
 
@@ -864,12 +868,14 @@ hito:BbProvideCatalogsAndOtherMeansForCodingOfNursingProcedures
 hito:BbProvideCatalogsAndOtherMeansForCodingOfProcedures
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
+    dcterms:source bb:FeatureProvideCatalogsAndOtherMeansForCodingPatientRelatedProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of procedures"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
+    dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingPatientRelatedProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding patient-related procedures"@en .
 
@@ -1009,12 +1015,14 @@ hito:BbProvideFormsForDocumentingTheOutcomeOfNursingTasks
 hito:BbProvideFormsForEnteringClinicalDataFreetextOrStructured
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    dcterms:source bb:ProvideFormsForEnteringClinicalData ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for entering clinical data (free-text or structured)"@en .
 
 hito:BbProvideFormsForEnteringOrUpdatingPatientAdministrativeInformationNameaddressBirthDateRelativesAdmissionDiagnosisEtc
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
+    dcterms:source bb:FeatureProvideFormsForEnteringOrUpdatingPatientAdministrativeInformation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for entering or updating patient administrative information (name,address, birth date, relatives, admission diagnosis etc.)"@en .
 
@@ -1119,6 +1127,7 @@ hito:BbProvideMeansForAssetAccounting
 hito:BbProvideMeansForCheckinOfPatient
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAdmission ;
+    dcterms:source bb:FeatureProvideMeansForCheckInOfPatient ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for check-in of patient"@en .
 
@@ -1153,6 +1162,7 @@ hito:BbProvideMeansForCreatingARoster
 hito:BbProvideMeansForCreatingOperationPlansDailyWeekly
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
+    dcterms:source bb:FeatureProvideMeansForCreatingOperationPlans ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for creating operation plans (daily, weekly)"@en .
 
@@ -1397,6 +1407,7 @@ hito:BbProvideMeansForPreparingStatistics
 hito:BbProvideMeansForPreparingWardrelatedStatistics
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation ;
+    dcterms:source bb:ProvideMeansForPreparingWardRelatedStatistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing ward-related statistics"@en .
 
@@ -1445,18 +1456,21 @@ hito:BbProvideMeansForStockKeeping
 hito:BbProvideMeansForVerifyingCodingsDoneInDepartments
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
+    dcterms:source bb:FeatureProvideMeansForVerifyingCodingDoneInDepartments ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for verifying codings done in departments"@en .
 
 hito:BbProvideOrdersForPatientrelatedDrugs
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
+    dcterms:source bb:FeatureProvideOrdersForPatientRelatedDrugs ;
     a hito:FeatureClassified ;
     rdfs:label "Provide orders for patient-related drugs"@en .
 
 hito:BbProvideOrdersForPatientrelatedExaminations
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
+    dcterms:source bb:FeatureProvideOrdersForPatientRelatedExaminations ;
     a hito:FeatureClassified ;
     rdfs:label "Provide orders for patient-related examinations"@en .
 
@@ -1573,6 +1587,7 @@ hito:BbSchedulingAndResourcePlanningWithThePatientTransportService
 hito:BbScoringOfThePatientEgTissSapsii
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
+    dcterms:source bb:ScoringOfThePatient ;
     a hito:FeatureClassified ;
     rdfs:label "Scoring of the patient (e.g., TISS, SAPSII)"@en .
 
@@ -1599,6 +1614,7 @@ hito:BbStrategicInformationManagement
 hito:BbStructureData
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHospitalManagement ;
+    dcterms:source bb:FeatureStructureData ;
     a hito:FeatureClassified ;
     rdfs:label "Structure data"@en .
 
@@ -1646,6 +1662,7 @@ hito:BbValidateResults
 hito:BbViewPatientrelatedAppointments
     hito:featureCatalogue hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
+    dcterms:source bb:FeatureViewPatientRelatedAppointments ;
     a hito:FeatureClassified ;
     rdfs:label "View patient-related appointments"@en .
 
