@@ -220,7 +220,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://hitontology.eu/ontology/userGroup
-:userGroup :rdf:type owl:ObjectProperty ;
+:userGroup rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :UserGroupClassified ;
