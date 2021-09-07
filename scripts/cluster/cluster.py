@@ -1,9 +1,10 @@
 from collections import defaultdict
 from rdflib import Graph
-from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation
+from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation, AgglomerativeClustering
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import preprocessing
+from scipy.cluster.hierarchy import dendrogram
 
 from sklearn.decomposition import PCA
 import numpy as np
@@ -15,11 +16,14 @@ import random
 import math
 import umap
 
+plt.style.use('dark_background')
+
 # slow but nice
 ADJUST_TEXT = True
-NORM = "max" # l1, l2, max
+NORM = "l1" # l1, l2, max
 CLASSIFIED_ONLY = True
 BAG_OF_WORDS = False
+HIERARCHICAL = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -85,21 +89,17 @@ SERVICE <https://hitontology.eu/sparql>
 }
 } GROUP BY ?source ?label"""
 
+D = []
+E = []
+L = []
 
-
-def randompoint():
-    deg = 2 * math.pi * random.random()
-    R = 80
-    return (math.cos(deg) * R, math.sin(deg) * R)
-
-
-# use sklearn dict vectorizers and feature extraction
-def cluster():
+def createData():
     #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
     result = g.query(CLASSIFIED_ONLY_BAG_OF_WORDS if CLASSIFIED_ONLY else BAG_OF_WORDS)
     print(len(result))
-    D = []
-    E = []
+    global D
+    global E
+    global L 
     for row in result:
         #D.append({"classifieds": row["targets"].split()}) # labels for one-hot encoding
         D.append( str(row["targets"])) # bag of words
@@ -110,6 +110,7 @@ def cluster():
                 "classifieds": row["targets"].split(),
             }
         )
+        L.append([row["label"].value][0])
     print(E[0]["label"])
     #print(D)
     #vec = DictVectorizer(sparse=False)
@@ -118,6 +119,10 @@ def cluster():
     #data = vec.fit_transform(D)
     data = vec.fit_transform(D).toarray()
     print(data)
+    return data
+
+# use sklearn dict vectorizers and feature extraction
+def clusterPlot(data):
     data = preprocessing.normalize(data, norm=NORM)
     # print(vec.get_feature_names())
     #reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
@@ -176,7 +181,6 @@ def cluster():
     # ax = plt.figure().add_subplot(111,autoscale_on=True)
     texts = []
     for i in range(len(D)):
-        # a = plt.annotate(E[i]["label"], xy=reduced_data[i],xytext=randompoint(),textcoords="offset points", arrowprops=dict(facecolor='black', shrink=0.05, width=0.01, headwidth=0.01))
         a = plt.text(reduced_data[i][0], reduced_data[i][1], E[i]["label"])
         texts.append(a)
 
@@ -189,5 +193,41 @@ def cluster():
     plt.savefig("cluster.png", pad_inches=0)
     plt.show()
 
+# https://github.com/scikit-learn/scikit-learn/blob/70cf4a676caa2d2dad2e3f6e4478d64bcb0506f7/examples/cluster/plot_hierarchical_clustering_dendrogram.py
+def plot_dendrogram(model, **kwargs):
+    # Children of hierarchical clustering
+    children = model.children_
 
-cluster()
+    # Distances between each pair of children
+    # Since we don't have this information, we can use a uniform one for plotting
+    distance = np.arange(children.shape[0])
+
+    # The number of observations contained in each cluster level
+    no_of_observations = np.arange(2, children.shape[0]+2)
+
+    # Create linkage matrix and then plot the dendrogram
+    linkage_matrix = np.column_stack([children, distance, no_of_observations]).astype(float)
+
+    # Plot the corresponding dendrogram
+    dendrogram(linkage_matrix, **kwargs)
+
+
+def clusterTree(data):
+    N_CLUSTERS = 10
+    print("todo: hierarchical clustering")
+    clustering = AgglomerativeClustering(linkage="single", n_clusters=N_CLUSTERS)
+    clustering.fit(data)
+    clustering.labels = L
+    print(clustering.linkage_matrix)
+
+    plt.title("Hierarchical Clustering Dendrogram")
+    #plot_dendrogram(clustering, labels=clustering.labels_)
+    plot_dendrogram(clustering, labels=L,show_leaf_counts=False)
+    plt.show()
+
+
+data = createData()
+if(HIERARCHICAL):
+    clusterTree(data)
+else:
+    clusterPlot(data)
