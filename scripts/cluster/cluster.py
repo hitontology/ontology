@@ -19,7 +19,7 @@ import umap
 ADJUST_TEXT = True
 NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
-BAG_OF_WORDS = True
+BAG_OF_WORDS = False
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -30,7 +30,7 @@ g.bind("hito", HITO)
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(?target; separator=" ") AS ?targets) {
+CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
   ?source   a hito:SoftwareProduct;
             rdfs:label ?label;
             ?p ?citation.
