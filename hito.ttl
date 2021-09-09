@@ -113,7 +113,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :citation ;
                            rdfs:domain :SoftwareProduct ;
                            rdfs:range :ApplicationSystemCitation ;
-                           rdfs:label "application system catalogue"@en .
+                           rdfs:label "application system type catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/applicationSystemCatalogue
@@ -121,7 +121,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :catalogue ;
                            rdfs:domain :ApplicationSystemClassified ;
                            rdfs:range :ApplicationSystemCatalogue ;
-                           rdfs:label "application system catalogue"@en .
+                           rdfs:label "application system type catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/applicationSystemClassified
@@ -129,7 +129,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                              rdfs:subPropertyOf :classified ;
                              rdfs:domain :ApplicationSystemCitation ;
                              rdfs:range :ApplicationSystemClassified ;
-                             rdfs:label "classified application system"@en .
+                             rdfs:label "classified application system type"@en .
 
 
 ###  http://hitontology.eu/ontology/certification
@@ -231,7 +231,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :evaluatesApplicationSystem rdf:type owl:ObjectProperty ;
                             rdfs:domain :Study ;
                             rdfs:range :ApplicationSystemCitation ;
-                            rdfs:label "evaluates Application System"@en .
+                            rdfs:label "evaluates Application System Type"@en .
 
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionCatalogue
@@ -246,28 +246,28 @@ xsd:gYear rdf:type rdfs:Datatype .
 :evaluatesApplicationSystemBasedOnProduct rdf:type owl:ObjectProperty ;
                                           rdfs:domain :Study ;
                                           rdfs:range :SoftwareProduct ;
-                                          rdfs:label "evaluates Application System Based On Product"@en .
+                                          rdfs:label "evaluates Application System Type Based On Product"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemHavingFeature
 :evaluatesApplicationSystemHavingFeature rdf:type owl:ObjectProperty ;
                                          rdfs:domain :Study ;
                                          rdfs:range :FeatureCitation ;
-                                         rdfs:label "evaluates Application System Having Feature"@en .
+                                         rdfs:label "evaluates Application System Type Having Feature"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemHavingUserGroup
 :evaluatesApplicationSystemHavingUserGroup rdf:type owl:ObjectProperty ;
                                            rdfs:domain :Study ;
                                            rdfs:range :UserGroupCitation ;
-                                           rdfs:label "evaluates Application System Having User Group"@en .
+                                           rdfs:label "evaluates Application System Type Having User Group"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemUsedInUnit
 :evaluatesApplicationSystemUsedInUnit rdf:type owl:ObjectProperty ;
                                       rdfs:domain :Study ;
                                       rdfs:range :OrganizationalUnitCitation ;
-                                      rdfs:label "evaluates Application System Used In Unit"@en .
+                                      rdfs:label "evaluates Application System Type Used In Unit"@en .
 
 
 ###  http://hitontology.eu/ontology/featureCatalogue
@@ -610,7 +610,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/ApplicationSystemCatalogue
 :ApplicationSystemCatalogue rdf:type owl:Class ;
                             rdfs:subClassOf :Catalogue ;
-                            rdfs:label "Application System Catalogue"@en ;
+                            rdfs:label "Application System Type Catalogue"@en ;
 							vann:example :BbApplicationSystemCatalogue, :WhoDhiSystemCategoryApplicationSystemCatalogue ;
 							rdfs:comment "A collection of classified application systems."@en .
 
@@ -618,7 +618,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/ApplicationSystemClassified
 :ApplicationSystemClassified rdf:type owl:Class ;
                              rdfs:subClassOf :Classified ;
-                             rdfs:label "Application System Classified"@en ;
+                             rdfs:label "Application System Type Classified"@en ;
 							 vann:example :BbDialysisInformationSystem, :BbDigitalDictationSystem, :WhoDhiElectronicMedicalRecord ;
                              rdfs:comment "The term for an application system, which is used in the classification of application systems."@en;
                              dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>.
@@ -627,7 +627,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://hitontology.eu/ontology/ApplicationSystemCitation
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
-                           rdfs:label "Application System Citation"@en ;
+                           rdfs:label "Application System Type Citation"@en ;
 						   vann:example :BahmniAppHospitalSystem, :FreeMedFormsAppElectronicMedicalHealthRecord, :EChasquiLaboratoryInformationSystem ; 
                            rdfs:comment "The natural language term an author uses for the application system, which is evaluated in the study."@en .
 
