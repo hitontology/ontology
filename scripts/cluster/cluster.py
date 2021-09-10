@@ -20,9 +20,9 @@ plt.style.use('dark_background')
 
 # slow but nice
 ADJUST_TEXT = True
-NORM = "l1" # l1, l2, max
+NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
-BAG_OF_WORDS = False
+BAG_OF_WORDS = True
 HIERARCHICAL = True
 
 g = Graph()
@@ -44,7 +44,7 @@ CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP
  ?q rdfs:subPropertyOf hito:classified.
 } GROUP BY ?source ?label"""
 
-QUERY = """PREFIX :<http://hitontology.eu/ontology/>
+DEFAULT_QUERY = """PREFIX :<http://hitontology.eu/ontology/>
 SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
 
   ?source   a hito:SoftwareProduct;
@@ -72,7 +72,7 @@ SERVICE <https://hitontology.eu/sparql>
 }
 } GROUP BY ?source ?label"""
 
-BAG_OF_WORDS = """PREFIX :<http://hitontology.eu/ontology/>
+BAG_OF_WORDS_QUERY = """PREFIX :<http://hitontology.eu/ontology/>
 SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
 SERVICE <https://hitontology.eu/sparql>
 {
@@ -94,8 +94,18 @@ E = []
 L = []
 
 def createData():
-    #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else QUERY)
-    result = g.query(CLASSIFIED_ONLY_BAG_OF_WORDS if CLASSIFIED_ONLY else BAG_OF_WORDS)
+    #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else DEFAULT_QUERY)
+    if(CLASSIFIED_ONLY):
+        if(BAG_OF_WORDS):
+            QUERY = CLASSIFIED_ONLY_BAG_OF_WORDS
+        else:
+            QUERY = CLASSIFIED_ONLY_QUERY
+    else:
+        if(BAG_OF_WORDS):
+            QUERY = BAG_OF_WORDS_QUERY
+        else:
+            QUERY = DEFAULT_QUERY
+    result = g.query(QUERY)
     print(len(result))
     global D
     global E
@@ -217,12 +227,15 @@ def clusterTree(data):
     print("todo: hierarchical clustering")
     clustering = AgglomerativeClustering(linkage="single", n_clusters=N_CLUSTERS)
     clustering.fit(data)
-    clustering.labels = L
-    print(clustering.linkage_matrix)
-
-    plt.title("Hierarchical Clustering Dendrogram")
+    abbr = []
+    for l in L:
+        abbr.append(l[:16])
+    clustering.labels = abbr
+    #print(clustering.linkage_matrix)
+    paramStr  = ("BOW " if BAG_OF_WORDS else "") + ("classified only " if CLASSIFIED_ONLY else "") 
+    #plt.title("Hierarchical Clustering " + paramStr)
     #plot_dendrogram(clustering, labels=clustering.labels_)
-    plot_dendrogram(clustering, labels=L,show_leaf_counts=False)
+    plot_dendrogram(clustering, labels=abbr,show_leaf_counts=False)
     plt.show()
 
 
