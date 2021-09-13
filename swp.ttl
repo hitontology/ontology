@@ -1878,35 +1878,6 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Emergency Medicine Information System"@en .
 
-:FreeMedForms
-    :applicationSystem :FreeMedFormsAppElectronicHealthRecord, :FreeMedFormsAppElectronicMedicalHealthRecord, :FreeMedFormsAppElectronicMedicalRecord ;
-    :client :Native ;
-    :databaseSystem :MySql ;
-    :homepage <https://freemedforms.com/en/start> ;
-    :language dbr:French_language, dbr:Modern_English ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem dbr:FreeBSD, dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
-    :programmingLanguage <http://dbpedia.org/resource/C++> ;
-    :repository <https://github.com/filianhouse/freemedforms> ;
-    a :SoftwareProduct ;
-    rdfs:comment "Open source electronic medical/health record"@en ;
-    rdfs:label "FreeMedForms"@en .
-
-:FreeMedFormsAppElectronicHealthRecord
-    :applicationSystemClassified :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
-    rdfs:label "Electronic health record manager (EHR)"@en .
-
-:FreeMedFormsAppElectronicMedicalHealthRecord
-    :applicationSystemClassified :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
-    rdfs:label "electronic medical/health record"@en .
-
-:FreeMedFormsAppElectronicMedicalRecord
-    :applicationSystemClassified :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
-    rdfs:label "Electronic medical record manager (EMR)"@en .
-
 :GePatchspecdPacs
     :feature :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
     a :SoftwareProduct ;

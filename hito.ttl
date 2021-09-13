@@ -628,7 +628,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Type Citation"@en ;
-						   vann:example :BahmniAppHospitalSystem, :FreeMedFormsAppElectronicMedicalHealthRecord, :EChasquiLaboratoryInformationSystem ; 
+						   vann:example :BahmniAppHospitalSystem, :EChasquiLaboratoryInformationSystem ; 
                            rdfs:comment "The natural language term an author uses for the application system, which is evaluated in the study."@en .
 
 
