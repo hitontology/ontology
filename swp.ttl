@@ -1,13 +1,31 @@
 @base <http://hitontology.eu/ontology/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix : <http://hitontology.eu/ontology/> .
-@prefix dbr: <http://dbpedia.org/resource/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix yago: <http://dbpedia.org/class/yago/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swo: <http://www.ebi.ac.uk/swo/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ui: <http://www.w3.org/ns/ui#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://hitontology.eu/ontology/3LGM2Baukasten>
+    :client :Native ;
+    :homepage <https://www.3lgm2.de> ;
+    :interoperability :XML ;
+    :language dbr:English_language, dbr:German_language ;
+    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    a :SoftwareProduct ;
+    rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
+    rdfs:label "3LGM2 Baukasten"@en .
 
 :AbbotIStatFeatureCompleteTestResults
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
@@ -1047,7 +1065,7 @@
     :client :Native, :WebBased ;
     :databaseSystem :IbmDb2, :MicrosoftSqlServer, :MySql, :OracleDatabase, :PostgreSql ;
     :enterpriseFunction :Dcm4CheFuncClinicalImageManagement, :Dcm4CheFuncClinicalObjectManagement, :Dcm4CheFuncRetrieval, :Dcm4CheFuncStorage, :Dcm4CheFuncWorkflow ;
-    :feature :Dcm4CheFeatAdtOrmAndOruMessageTypes, :Dcm4CheFeatCompressionOfDicomObject, :Dcm4CheFeatConvertDicomFileToXml, :Dcm4CheFeatDicomGeneralPurposeWorklist, :Dcm4CheFeatDicomHangingProtocols, :Dcm4CheFeatDicomStorageCommitment, :Dcm4CheFeatInstanceAvailabilityNotification, :Dcm4CheFeatIntegratedHl7Server, :Dcm4CheFeatManipulatingHeaderData, :Dcm4CheFeatOutputContentToCdMedia, :Dcm4CheFeatQueryArchiveForDicomObjects, :Dcm4CheFeatReadingDicomFiles, :Dcm4CheFeatRetrieveDicomObjects, :Dcm4CheFeatStoreAnyTypeOfDicomObject, :Dcm4CheFeatStudyContentNotification, :Dcm4CheFeatTransformingDicomFiles, :Dcm4CheFeatWebAccessToArchivedContent, :Dcm4CheFeatWritingDicomFiles ;
+    :feature :Dcm4CheFeatAdtOrmAndOruMessageTypes, :Dcm4CheFeatCompressionOfDicomObject, :Dcm4CheFeatConvertDicomFileToXml, :Dcm4CheFeatDicomGeneralPurposeWorklist, :Dcm4CheFeatDicomHangingProtocols, :Dcm4CheFeatDicomStorageCommitment, :Dcm4CheFeatInstanceAvailabilityNotification, :Dcm4CheFeatIntegratedHl7Server, :Dcm4CheFeatManipulatingHeaderData, :Dcm4CheFeatModalityPerformedProcedureStep, :Dcm4CheFeatModalityWorklist, :Dcm4CheFeatOutputContentToCdMedia, :Dcm4CheFeatQueryArchiveForDicomObjects, :Dcm4CheFeatReadingDicomFiles, :Dcm4CheFeatRetrieveDicomObjects, :Dcm4CheFeatStoreAnyTypeOfDicomObject, :Dcm4CheFeatStudyContentNotification, :Dcm4CheFeatTransformingDicomFiles, :Dcm4CheFeatWebAccessToArchivedContent, :Dcm4CheFeatWritingDicomFiles ;
     :homepage <https://www.dcm4che.org> ;
     :interoperability :DICOM, <http://hitontology.eu/ontology/HL7_V2.x>, :IHE_XDS, :IHE_XDS_I, :WADO ;
     :language dbr:English_language ;
@@ -1192,6 +1210,7 @@
     rdfs:label "Workflow"@en .
 
 :Dcm4CheOrgHealthcareEnvironment
+    :organizationalUnitClassified :SnomedMedicalCenterEnvironment ;
     a :OrganizationalUnitCitation ;
     rdfs:label "Healthcare environment"@en .
 
@@ -2735,11 +2754,13 @@
     rdfs:label "Medical professional"@en .
 
 :IPathUserTechnician
+    :userGroupClassified :SnomedMedicalTechnicianOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Technician"@en .
 
 :Medicator
     :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions, :MedicatorFeatureSafetyAlertsInRealTime, :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert, :MedicatorSafetyAlertsInCaseOfAllergies, :MedicatorSafetyAlertsInCaseOfOverdosing, :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
+    :userGroup :HospitalRunUserDoctor ;
     a :SoftwareProduct ;
     rdfs:label "Medicator"@en .
 
@@ -2789,7 +2810,7 @@
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
     :enterpriseFunction :MedkeyFuncMedicalAccounting, :MedkeyFuncMedicalBilling, :MedkeyFuncOrders, :MedkeyFuncPatientAppointments, :MedkeyFuncPracticeManagementAutomation ;
-    :feature :MedkeyFeatAccessControl, :MedkeyFeatCRMFunctions, :MedkeyFeatCashdesk, :MedkeyFeatExpendableMaterialsAccounting, :MedkeyFeatHandlingMedicalReferrals, :MedkeyFeatInsurancePoliciesAccounting, :MedkeyFeatInternalUserStorage, :MedkeyFeatInventory, :MedkeyFeatOnlineAppointmentViaWebsite, :MedkeyFeatOrganizationStructureHandling, :MedkeyFeatPatientRegistration, :MedkeyFeatPatientRegistry, :MedkeyFeatPersonnelAccounting, :MedkeyFeatSpecialistsLoadForecasting, :MedkeyFeatSpecialistsLoadPlanning, :MedkeyFeatVisits, :MedkeyFuncPatientEngagement ;
+    :feature :MedkeyFeatAccessControl, :MedkeyFeatCRMFunctions, :MedkeyFeatCashdesk, :MedkeyFeatDashboardVisualAnalytics, :MedkeyFeatExpendableMaterialsAccounting, :MedkeyFeatHandlingMedicalReferrals, :MedkeyFeatInsurancePoliciesAccounting, :MedkeyFeatInternalUserStorage, :MedkeyFeatInventory, :MedkeyFeatOnlineAppointmentViaWebsite, :MedkeyFeatOrganizationStructureHandling, :MedkeyFeatPatientRegistration, :MedkeyFeatPatientRegistry, :MedkeyFeatPersonnelAccounting, :MedkeyFeatSpecialistsLoadForecasting, :MedkeyFeatSpecialistsLoadPlanning, :MedkeyFeatVisits, :MedkeyFuncPatientEngagement ;
     :homepage <https://medkey.org/en/> ;
     :interoperability :HL7, :OpenEHR ;
     :language dbr:English_language, dbr:Russian_language ;
@@ -2992,6 +3013,21 @@
 :OcchiolinoAppLaboratoryInformationManagementSystem
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information Management System"@en .
+
+:Odoo
+    :client :Mobile, :Native, :WebBased ;
+    :databaseSystem :PostgreSql ;
+    :homepage <https://www.odoo.com> ;
+    :interoperability :XML ;
+    :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000068> ;
+    :operatingSystem <http://dbpedia.org/resource/Android_(operating_system)>, dbr:IOS, dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
+    :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
+    :repository <https://github.com/odoo/odoo> ;
+    :softwareProductComponent :Bahmni ;
+    a :SoftwareProduct ;
+    rdfs:comment "Open Source ERP"@en ;
+    rdfs:label "Odoo"@en .
 
 :OpenClinicGa
     :applicationSystem :OpenClinicGaAppHims, :OpenClinicGaAppPacs ;
@@ -4498,14 +4534,17 @@
     rdfs:label "User Management and Access Control"@en .
 
 :OpenMrsUseClinicians
+    :userGroupClassified :SnomedPhysicianOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Clinicians"@en .
 
 :OpenMrsUserAdministrativeStaff
+    :userGroupClassified :SnomedAdministrativeHealthcareStaffOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Administrative staff"@en .
 
 :OpenMrsUserDataEntryClerks
+    :userGroupClassified :SnomedClerkOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Data entry clerks"@en .
 
@@ -4514,6 +4553,7 @@
     rdfs:label "Health care providers"@en .
 
 :OpenMrsUserNurses
+    :userGroupClassified :SnomedProfessionalNurseOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Nurses"@en .
 
@@ -4686,6 +4726,7 @@
     rdfs:label "Network engineer"@en .
 
 :OrthancUserPhysicist
+    :userGroupClassified :SnomedPhysicianOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Physicist"@en .
 
@@ -4927,6 +4968,146 @@
     a :FeatureCitation ;
     rdfs:label "nursing documentation forms"@en .
 
+:RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory
+    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    a :FeatureCitation ;
+    rdfs:label "Contextual information such as the examination and findings history"@en .
+
+:RIS2FeatCoordinationOfRISAndPACS
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Coordination of RIS and PACS"@en .
+
+:RIS2FeatCreationOfCustomizedReports
+    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Creation of customized reports"@en .
+
+:RIS2FeatElectronicRecordingOfResultsAndExaminations
+    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    a :FeatureCitation ;
+    rdfs:label "Electronic recording of results and examinations"@en .
+
+:RIS2FeatElectronicSignature
+    :featureClassified :WhoDhiVerifyClientUniqueIdentity ;
+    a :FeatureCitation ;
+    rdfs:label "Electronic signature"@en .
+
+:RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting
+    :featureClassified :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
+    a :FeatureCitation ;
+    rdfs:label "Extensive statistics through integrated reporting and charting"@en .
+
+:RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    a :FeatureCitation ;
+    rdfs:label "Influencing the order status by authorized users"@en .
+
+:RIS2FeatInterfaceToPrinterAndPrinterView
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Interface to printer and printer view"@en .
+
+:RIS2FeatPhoneIntegration
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Phone integration"@en .
+
+:RIS2FeatRemoteCreationOfResultsLetters
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Remote creation of results letters"@en .
+
+:RIS2FeatRetrieveResults
+    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Retrieve results"@en .
+
+:RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile
+    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    a :FeatureCitation ;
+    rdfs:label "Save image or sound or text data in the patient file"@en .
+
+:RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    a :FeatureCitation ;
+    rdfs:label "Search for specific category or restrictions while ordering"@en .
+
+:RIS2FeatSpecialSettingsForImageView
+    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    a :FeatureCitation ;
+    rdfs:label "Special settings for image view"@en .
+
+:RIS2FeatTextProcessing
+    :featureClassified :WhoDhiDataCollectionManagementAndUse ;
+    a :FeatureCitation ;
+    rdfs:label "Text processing"@en .
+
+:RIS2FeatTrackAllOrder
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    a :FeatureCitation ;
+    rdfs:label "Track all order"@en .
+
+:RIS2FeatTrackMaterialAndFilmConsumption
+    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    a :FeatureCitation ;
+    rdfs:label "Track material and film consumption"@en .
+
+:RIS2FeatTransferOfOrderData
+    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    a :FeatureCitation ;
+    rdfs:label "Transfer of order data"@en .
+
+:RIS2FeatVoiceRecognition
+    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    a :FeatureCitation ;
+    rdfs:label "Voice recognition"@en .
+
+:RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory
+    :enterpriseFunctionClassified :BbArchivingOfPatientInformation ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Contextual information such as the examination and findings history"@en .
+
+:RIS2FuncCreationOfCustomizedReports
+    :enterpriseFunctionClassified :BbInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Creation of customized reports"@en .
+
+:RIS2FuncElectronicRecordingOfResultsAndExaminations
+    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Electronic recording of results and examinations"@en .
+
+:RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Influencing the order status by authorized users"@en .
+
+:RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile
+    :enterpriseFunctionClassified :BbLongTermArchiving ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Save image or sound or text data in the patient file"@en .
+
+:RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Search for specific category or restrictions while ordering"@en .
+
+:RIS2FuncTrackAllOrder
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Track all order"@en .
+
+:RIS2FuncTrackMaterialAndFilmConsumption
+    :enterpriseFunctionClassified :BbSupplyAndDisposalManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Track material and film consumption"@en .
+
+:RIS2FuncTransferOfOrderData
+    :enterpriseFunctionClassified :BbOrderEntry ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Transfer of order data"@en .
+
 :Ris1
     :client :WebBased ;
     :enterpriseFunction :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FuncCreationOfCustomizedReports, :Ris1FuncElectronicRecordingOfResultsAndExaminations, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTrackMaterialAndFilmConsumption, :Ris1FuncTransferOfTheOrderData ;
@@ -5136,8 +5317,8 @@
 
 :Ris2
     :client :WebBased ;
-    :enterpriseFunction :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2FuncAssignFreeAndAvailableModalities, :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris2FuncFastAndSecureDispathOfTheQuarterlyStatement, :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FuncPatientRegistration, :Ris2FuncQualityAssuranceThroughCompletePatientHistory ;
-    :feature :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispathOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
+    :enterpriseFunction :RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FuncCreationOfCustomizedReports, :RIS2FuncElectronicRecordingOfResultsAndExaminations, :RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin, :RIS2FuncTrackAllOrder, :RIS2FuncTrackMaterialAndFilmConsumption, :RIS2FuncTransferOfOrderData, :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2FuncAssignFreeAndAvailableModalities, :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FuncPatientRegistration, :Ris2FuncQualityAssuranceThroughCompletePatientHistory ;
+    :feature :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FeatCoordinationOfRISAndPACS, :RIS2FeatCreationOfCustomizedReports, :RIS2FeatElectronicRecordingOfResultsAndExaminations, :RIS2FeatElectronicSignature, :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting, :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FeatInterfaceToPrinterAndPrinterView, :RIS2FeatPhoneIntegration, :RIS2FeatRemoteCreationOfResultsLetters, :RIS2FeatRetrieveResults, :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering, :RIS2FeatSpecialSettingsForImageView, :RIS2FeatTextProcessing, :RIS2FeatTrackAllOrder, :RIS2FeatTrackMaterialAndFilmConsumption, :RIS2FeatTransferOfOrderData, :RIS2FeatVoiceRecognition, :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
     :interoperability :DICOM, :HL7 ;
     :language dbr:German_language ;
     :operatingSystem dbr:Windows_7, dbr:Windows_Vista ;
@@ -5156,7 +5337,7 @@
     a :FeatureCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
-:Ris2FeatFastAndSecureDispathOfTheQuarterlyStatement
+:Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement
     :featureClassified :WhoDhiManageBudgetAndExpenditures ;
     a :FeatureCitation ;
     rdfs:label "Fast and secure dispatch of the quarterly statement"@en .
@@ -5186,7 +5367,7 @@
     a :EnterpriseFunctionCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
-:Ris2FuncFastAndSecureDispathOfTheQuarterlyStatement
+:Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement
     :enterpriseFunctionClassified :BbControlling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Fast and secure dispatch of the quarterly statement"@en .
