@@ -20,6 +20,7 @@ plt.style.use('dark_background')
 
 # slow but nice
 ADJUST_TEXT = True
+NORMALIZE = False
 NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
 BAG_OF_WORDS = True
@@ -133,7 +134,8 @@ def createData():
 
 # use sklearn dict vectorizers and feature extraction
 def clusterPlot(data):
-    data = preprocessing.normalize(data, norm=NORM)
+    if(NORMALIZE):
+        data = preprocessing.normalize(data, norm=NORM)
     # print(vec.get_feature_names())
     #reduced_data = PCA(n_components=2, whiten=True).fit_transform(data)
     reduced_data = umap.UMAP(n_neighbors=15).fit_transform(data)
