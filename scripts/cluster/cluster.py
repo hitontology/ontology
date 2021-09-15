@@ -16,6 +16,10 @@ import random
 import math
 import umap
 
+import networkx as nx
+import pydot
+import graphviz
+
 plt.style.use('dark_background')
 
 # slow but nice
@@ -38,11 +42,9 @@ g.parse(FILENAME, format="nt")
 CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
   ?source   a hito:SoftwareProduct;
             rdfs:label ?label;
-            ?p ?citation.
-  ?citation ?q ?target.
-
- ?p rdfs:subPropertyOf hito:citation.
- ?q rdfs:subPropertyOf hito:classified.
+            hito:feature|hito:enterpriseFunction ?citation.
+  ?citation hito:featureClassified|hito:enterpriseFunctionClassified ?target.
+ 
 } GROUP BY ?source ?label"""
 
 DEFAULT_QUERY = """PREFIX :<http://hitontology.eu/ontology/>
@@ -212,22 +214,41 @@ def plot_dendrogram(model, **kwargs):
 
     # Distances between each pair of children
     # Since we don't have this information, we can use a uniform one for plotting
-    distance = np.arange(children.shape[0])
+    #distance = np.arange(children.shape[0])
 
     # The number of observations contained in each cluster level
     no_of_observations = np.arange(2, children.shape[0]+2)
 
     # Create linkage matrix and then plot the dendrogram
-    linkage_matrix = np.column_stack([children, distance, no_of_observations]).astype(float)
+    linkage_matrix = np.column_stack([children, model.distances_, no_of_observations]).astype(float)
 
     # Plot the corresponding dendrogram
     dendrogram(linkage_matrix, **kwargs)
+    
+    return linkage_matrix
 
+def label(i):
+    if(i<len(L)):
+        return L[i]
+    return i
+
+def showTree(linkage_matrix):
+    G = nx.Graph()
+    n = len(linkage_matrix)
+    for i in range(n):
+        row = linkage_matrix[i]
+        G.add_edge(label(int(row[0])),label(n+i+1),len=1+0.1*(math.log(1+row[2])))
+        G.add_edge(label(int(row[1])),label(n+i+1),len=1+0.1*(math.log(1+row[2])))
+    
+    dot = nx.nx_pydot.to_pydot(G).to_string()
+    dot = graphviz.Source(dot, engine='neato')
+    dot.render(format='pdf',filename='tree')
 
 def clusterTree(data):
     N_CLUSTERS = 10
     print("todo: hierarchical clustering")
-    clustering = AgglomerativeClustering(linkage="single", n_clusters=N_CLUSTERS)
+    #clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, affinity="l1")
+    clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
     clustering.fit(data)
     abbr = []
     for l in L:
@@ -237,8 +258,10 @@ def clusterTree(data):
     paramStr  = ("BOW " if BAG_OF_WORDS else "") + ("classified only " if CLASSIFIED_ONLY else "") 
     #plt.title("Hierarchical Clustering " + paramStr)
     #plot_dendrogram(clustering, labels=clustering.labels_)
-    plot_dendrogram(clustering, labels=abbr,show_leaf_counts=False)
-    plt.show()
+    linkage_matrix = plot_dendrogram(clustering, labels=abbr,show_leaf_counts=False)
+    print(linkage_matrix)
+    showTree(linkage_matrix)
+    #plt.show()
 
 
 data = createData()
