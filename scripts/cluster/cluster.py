@@ -10,6 +10,7 @@ from sklearn.decomposition import PCA
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 from adjustText import adjust_text
 import mplcursors
 import random
@@ -27,25 +28,30 @@ ADJUST_TEXT = True
 NORMALIZE = False
 NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
-BAG_OF_WORDS = True
+BAG_OF_WORDS = False
 HIERARCHICAL = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
 g.bind("hito", HITO)
 # rdflib v5 as installed by pip doesn't support remote SPARQL querying.
-# When rdflib v6 is officially release this can be changed using the SERVICE keyword.
+# When rdflib v6 is officially released, this can be changed using the SERVICE keyword.
 # The ontology/combine script needs to be executed first to created the file.
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
-  ?source   a hito:SoftwareProduct;
+CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) (GROUP_CONCAT(DISTINCT(STR(?ast)); separator="|") AS ?asts) {
+SERVICE <https://hitontology.eu/sparql>
+{
+?source   a hito:SoftwareProduct;
             rdfs:label ?label;
             hito:feature|hito:enterpriseFunction ?citation.
   ?citation hito:featureClassified|hito:enterpriseFunctionClassified ?target.
- 
-} GROUP BY ?source ?label"""
+
+  OPTIONAL {?source hito:applicationSystem/hito:applicationSystemClassified/rdfs:label ?ast.}
+} 
+}
+GROUP BY ?source ?label"""
 
 DEFAULT_QUERY = """PREFIX :<http://hitontology.eu/ontology/>
 SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) {
@@ -95,6 +101,8 @@ SERVICE <https://hitontology.eu/sparql>
 D = []
 E = []
 L = []
+ast_set = set()
+ast_list = []
 
 def createData():
     #result = g.query(CLASSIFIED_ONLY_QUERY if CLASSIFIED_ONLY else DEFAULT_QUERY)
@@ -112,26 +120,39 @@ def createData():
     print(len(result))
     global D
     global E
-    global L 
+    global L
+    global ast_set
+    global ast_list
     for row in result:
         #D.append({"classifieds": row["targets"].split()}) # labels for one-hot encoding
-        D.append( str(row["targets"])) # bag of words
+        D.append(str(row["targets"])) # bag of words
+        row_asts = row["asts"].split("|")
+        if(len(row_asts)>0): # SPARQL "None" bug(?) workaround
+            if(row_asts[0]=="None"):
+                row_asts=[]
+
+        #print("asts of",row["source"],row_asts)
+        ast_set.update(row_asts)
         E.append(
             {
                 "uri": str(row["source"]),
                 "label": ([row["label"].value][0]),
                 "classifieds": row["targets"].split(),
+                "asts": row_asts
             }
         )
         L.append([row["label"].value][0])
-    print(E[0]["label"])
+    #print(E[0]["label"])
+    #print(E)
     #print(D)
     #vec = DictVectorizer(sparse=False)
     vec = CountVectorizer()
 
     #data = vec.fit_transform(D)
     data = vec.fit_transform(D).toarray()
-    print(data)
+    #print(data)
+    ast_list = list(ast_set)
+    #print(ast_list)
     return data
 
 # use sklearn dict vectorizers and feature extraction
@@ -209,22 +230,12 @@ def clusterPlot(data):
 
 # https://github.com/scikit-learn/scikit-learn/blob/70cf4a676caa2d2dad2e3f6e4478d64bcb0506f7/examples/cluster/plot_hierarchical_clustering_dendrogram.py
 def plot_dendrogram(model, **kwargs):
-    # Children of hierarchical clustering
-    children = model.children_
-
-    # Distances between each pair of children
-    # Since we don't have this information, we can use a uniform one for plotting
-    #distance = np.arange(children.shape[0])
-
     # The number of observations contained in each cluster level
-    no_of_observations = np.arange(2, children.shape[0]+2)
-
+    no_of_observations = np.arange(2, model.children_.shape[0]+2)
     # Create linkage matrix and then plot the dendrogram
-    linkage_matrix = np.column_stack([children, model.distances_, no_of_observations]).astype(float)
-
+    linkage_matrix = np.column_stack([model.children_, model.distances_, no_of_observations]).astype(float)
     # Plot the corresponding dendrogram
     dendrogram(linkage_matrix, **kwargs)
-    
     return linkage_matrix
 
 def label(i):
@@ -232,29 +243,49 @@ def label(i):
         return L[i]
     return i
 
+colors = ["red","green","blue","yellow","magenta","lightblue","turquoise","aqua","lightsalmon","chartreuse","chocolate","khaki","lavender","maroon","olive","gold","lemonchiffon","whitesmoke","lightgreen","crimson","yellowgreen","mistyrose","lightsteelblue"]
+astcolors = dict()
+
+def color(index):
+    if(index>=len(E)):
+        return "white"
+    e = E[index]
+    asts = e["asts"]
+    if(len(asts)==0):
+        return "white"
+    ast = asts[0]
+    astindex = ast_list.index(ast)
+    #color = cm.get_cmap("Pastel1")(astindex) # does not accept this tuple format
+    color = colors[astindex]
+    global astcolors
+    astcolors[ast]=color
+    return color
+
+# https://stackoverflow.com/questions/9838861/scipy-linkage-format
+# https://datascience.stackexchange.com/questions/101854/how-to-visualize-a-hierarchical-clustering-as-a-tree-of-labelled-nodes-in-python
 def showTree(linkage_matrix):
     G = nx.Graph()
     n = len(linkage_matrix)
     for i in range(n):
         row = linkage_matrix[i]
+        G.add_node(label(int(row[0])),fillcolor=color(int(row[0])),style="filled")
+        G.add_node(label(int(row[1])),fillcolor=color(int(row[1])),style="filled")
         G.add_edge(label(int(row[0])),label(n+i+1),len=1+0.1*(math.log(1+row[2])))
         G.add_edge(label(int(row[1])),label(n+i+1),len=1+0.1*(math.log(1+row[2])))
-    
+    for key,value in astcolors.items():
+        G.add_node(key,fillcolor=value,style="filled")
     dot = nx.nx_pydot.to_pydot(G).to_string()
     dot = graphviz.Source(dot, engine='neato')
     dot.render(format='pdf',filename='tree')
 
 def clusterTree(data):
     N_CLUSTERS = 10
-    print("todo: hierarchical clustering")
-    #clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, affinity="l1")
     clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
     clustering.fit(data)
     abbr = []
     for l in L:
         abbr.append(l[:16])
     clustering.labels = abbr
-    #print(clustering.linkage_matrix)
     paramStr  = ("BOW " if BAG_OF_WORDS else "") + ("classified only " if CLASSIFIED_ONLY else "") 
     #plt.title("Hierarchical Clustering " + paramStr)
     #plot_dendrogram(clustering, labels=clustering.labels_)
@@ -269,3 +300,5 @@ if(HIERARCHICAL):
     clusterTree(data)
 else:
     clusterPlot(data)
+
+print(astcolors)
