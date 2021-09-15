@@ -38,6 +38,7 @@
     rdfs:label "read bar code label"@en .
 
 :AbbottAppBloodAnalysisSystem
+    :applicationSystemClassified :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Blood Analysis System"@en .
 
@@ -45,19 +46,23 @@
     :applicationSystem :AbbottAppBloodAnalysisSystem ;
     :feature :AbbotIStatFeatureCompleteTestResults, :AbbotIStatFeatureReadBarCodeLabel ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Abbott i-Stat"@en .
 
 :AgfaPacsImpax
     :applicationSystem :AgfaPacsImpaxAppPacs, :AgfaPacsImpaxAppRisPacsReporting ;
     :feature :AgfaPacsImpaxFeatureBookingOfExaminations, :AgfaPacsImpaxFeaturePatientRegistration, :AgfaPacsImpaxFeatureSpeechRecognition ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa PACS IMPAX"@en .
 
 :AgfaPacsImpaxAppPacs
+    :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Picture Archiving and Communication System (PACS)"@en .
 
 :AgfaPacsImpaxAppRisPacsReporting
+    :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem, :BbRadiologyInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "RIS/PACS/Reporting (Radiology Information System/Picture Archiving and Communications System) Solution"@en .
 
@@ -78,9 +83,11 @@
     :applicationSystem :AgfaRisElefanteAppRis ;
     :feature :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations, :AgfaRisElefanteFeatureBookingOfExaminations, :AgfaRisElefanteFeaturePatientRegistration, :AgfaRisElefanteFeatureSpeechRecognition ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa RIS Elefante"@en .
 
 :AgfaRisElefanteAppRis
+    :applicationSystemClassified :BbRadiologyInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Radiology Information System (RIS)"@en .
 
@@ -119,6 +126,7 @@
     rdfs:label "Bahmni"@en .
 
 :BahmniAppHospitalSystem
+    :applicationSystemClassified :BbClinicalInformationSystem, :WhoDhiHealthManagementInformationSystemHmis ;
     a :ApplicationSystemCitation ;
     rdfs:label "Hospital System"@en .
 
@@ -353,6 +361,7 @@
     rdfs:label "BetterMeds"@en .
 
 :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution
+    :applicationSystemClassified :BbDecisionSupportSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic Prescribing and Medication Administration Solution"@en .
 
@@ -761,6 +770,7 @@
     :applicationSystem :FirstNetAppEmergencyMedicineInformationSystem ;
     :feature :CernerFirstNetFeatureCreationOfDataRelationToTriage, :CernerFirstNetFeatureDischargeSummaries, :CernerFirstNetFeatureMandatoryReporting, :CernerFirstNetPatientManagementPlans ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner First Net"@en .
 
 :CernerFirstNetFeatureCreationOfDataRelationToTriage
@@ -787,9 +797,11 @@
     :applicationSystem :CernerMilleniumPowerOrdersAppCPOE ;
     :feature :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Millenium Power Orders"@en .
 
 :CernerMilleniumPowerOrdersAppCPOE
+    :applicationSystemClassified :BbProviderOrPhysicianOrderEntrySystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Computerized Physician Order Entry (CPOE) System"@en .
 
@@ -807,6 +819,7 @@
     :applicationSystem :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
     :feature :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet, :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Soarian CPOE platform"@en .
 
 :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet
@@ -820,6 +833,7 @@
     rdfs:label "unit-specific oder set"@en .
 
 :Cis1
+    :applicationSystem :CommercialCis1AppSys ;
     :client :Mobile, :Native ;
     :enterpriseFunction :Cis1FuncAccounting, :Cis1FuncControlling, :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FuncKnowledgeManagement, :Cis1FuncLogistics, :Cis1FuncManageVariousClinicalAndDiagnosticResults, :Cis1FuncMedicationOrderingAndMedicationDocumentation, :Cis1FuncNursingDocumentation, :Cis1FuncQualityAssurance, :Cis1FuncScheduling, :Cis1FuncServiceRecording, :Cis1FuncSurveillanceOfInfectiousDiseases, :Cis1FuncVariousTypesOfBilling, :Cis1FuncWardOrganization, :CisFuncTriage ;
     :feature :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :Cis1FeatSupportOfNursingDocumentation, :Cis1FeatSupportOfQualityAssurance, :Cis1FeatSupportOfTriage, :Cis1FeatSupportOfVariousTypesOfBilling, :Cis1FeatSupportOfWardOrganization, :Cis1FeatSupportSurveillanceOfInfectiousDiseases, :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CisFeatSupportOfServiceRecording ;
@@ -943,6 +957,7 @@
     rdfs:label "Ward organization"@en .
 
 :Cis2
+    :applicationSystem :CommercialCis2AppSys ;
     :client :Mobile, :Native ;
     :enterpriseFunction :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
     :feature :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, :Cis2FeatSupportForTheAmbulance, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
@@ -1035,10 +1050,41 @@
     a :EnterpriseFunctionCitation ;
     rdfs:label "Triage"@en .
 
+:CommercialCis1AppSys
+    :applicationSystemClassified :BbClinicalInformationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "CIS"@en .
+
+:CommercialCis2AppSys
+    :applicationSystemClassified :BbClinicalInformationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "CIS"@en .
+
+:CommercialPacs1AppSys
+    :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "PACS"@en .
+
+:CommercialPacs2AppSys
+    :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "PACS"@en .
+
+:CommercialRis1AppSys
+    :applicationSystemClassified :BbRadiologyInformationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "RIS"@en .
+
+:CommercialRis2AppSys
+    :applicationSystemClassified :BbRadiologyInformationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "RIS"@en .
+
 :CscMedChart
     :applicationSystem :CscMedChartAppMedicationManagementSystem ;
     :feature :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists, :CscMedChartFeaturePrescribeLonghand ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "CSC Med Chart"@en .
 
 :CscMedChartAppMedicationManagementSystem
@@ -1080,14 +1126,17 @@
     rdfs:label "dcm4che"@en .
 
 :Dcm4CheAppDicomToolkitLibrary
+    :applicationSystemClassified :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
     a :ApplicationSystemCitation ;
     rdfs:label "DICOM toolkit & library"@en .
 
 :Dcm4CheAppImageArchive
+    :applicationSystemClassified :BbDocumentArchivingSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Image Archive"@en .
 
 :Dcm4CheAppImageManager
+    :applicationSystemClassified :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
     a :ApplicationSystemCitation ;
     rdfs:label "Image Manager"@en .
 
@@ -1497,6 +1546,7 @@
     :applicationSystem :EChasquiLaboratoryInformationSystem ;
     :feature :EChasquiEmailNotificationOfNewResults, :EChasquiFeatReportsOnTestsPerformed, :EChasquiFeatureConsolidatedListOfResultsForJurisdiction, :EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample, :EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed, :EChasquiFeatureToolsForQualityControl, :EChasquiFeatureUserDirectoryToControlAnyAccess, :EChasquiFeatureWarningsForDelayedReportingOfResults ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Chasqui"@en .
 
 :EChasquiEmailNotificationOfNewResults
@@ -1540,6 +1590,7 @@
     rdfs:label "warnings for delayed reporting of results"@en .
 
 :EChasquiLaboratoryInformationSystem
+    :applicationSystemClassified :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information System"@en .
 
@@ -1547,13 +1598,16 @@
     :applicationSystem :EDocAppDigitalFilingSystem, :EDocAppDocumentManagementSoftware ;
     :feature :EDocFeatureCapturingDataForAllPatientVisits ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Doc"@en .
 
 :EDocAppDigitalFilingSystem
+    :applicationSystemClassified :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
     a :ApplicationSystemCitation ;
     rdfs:label "Digital Filing System"@en .
 
 :EDocAppDocumentManagementSoftware
+    :applicationSystemClassified :BbDocumentArchivingSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Document Management Software"@en .
 
@@ -1566,9 +1620,11 @@
     :applicationSystem :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem ;
     :feature :EclipsysContinuum2000CdsFeatAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Eclipsys Continuum 2000 CDS"@en .
 
 :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem
+    :applicationSystemClassified :BbMedicalDocumentationSystem, :BbNursingManagementAndDocumentationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Clinical Documentation System (CDS)"@en .
 
@@ -1617,10 +1673,12 @@
     rdfs:label "Elexis"@en .
 
 :ElexisAppElektronischeKrankengeschichte
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Elektronische Krankengeschichte"@en .
 
 :ElexisAppSoftwareArztpraxis
+    :applicationSystemClassified :BbOutpatientManagementSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Software für die Arztpraxis"@en .
 
@@ -1878,9 +1936,16 @@
     a :ApplicationSystemCitation ;
     rdfs:label "Emergency Medicine Information System"@en .
 
+:GePatchspecdAppSysPacs
+    :applicationSystemClassified :BbPictureArchivingAndCommunicationSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "PACS"@en .
+
 :GePatchspecdPacs
+    :applicationSystem :GePatchspecdAppSysPacs ;
     :feature :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "GE Patchspecd PACS"@en .
 
 :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages
@@ -1922,6 +1987,7 @@
     rdfs:label "Health Information System (HIS)"@en .
 
 :GnuHealthAppHospitalManagementInformationSystem
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Hospital management Information System"@en .
 
@@ -2412,6 +2478,7 @@
     :applicationSystem :HnaMilleniumAppPharmacyManagementSystem ;
     :feature :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPredefinedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "HNA Millenium"@en .
 
 :HnaMilleniumAllowingToReuseEarlierAnamnesticData
@@ -2420,6 +2487,7 @@
     rdfs:label "allowing to reuse earlier anamnestic data"@en .
 
 :HnaMilleniumAppPharmacyManagementSystem
+    :applicationSystemClassified :BbPharmacyInformationSystem, :WhoDhiPharmacyInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Pharmacy Management System"@en .
 
@@ -2486,10 +2554,12 @@
     rdfs:label "HospitalRun"@en .
 
 :HospitalRunAppEHR
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "electronic health record (EHR)"@en .
 
 :HospitalRunAppHIS
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "hospital information system (HIS)"@en .
 
@@ -2692,6 +2762,7 @@
     rdfs:label "iPath"@en .
 
 :IPathAppTelemedicinePlatform
+    :applicationSystemClassified :WhoDhiTelemedicineCategory ;
     a :ApplicationSystemCitation ;
     rdfs:label "Telemedicine Platform"@en .
 
@@ -2733,6 +2804,7 @@
     :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions, :MedicatorFeatureSafetyAlertsInRealTime, :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert, :MedicatorSafetyAlertsInCaseOfAllergies, :MedicatorSafetyAlertsInCaseOfOverdosing, :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
     :userGroup :HospitalRunUserDoctor ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Medicator"@en .
 
 :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
@@ -2940,9 +3012,11 @@
     :applicationSystem :MetavisionAppClinicalInformationSystem ;
     :feature :MetavisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Metavision"@en .
 
 :MetavisionAppClinicalInformationSystem
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Clinical Information System"@en .
 
@@ -2982,10 +3056,12 @@
     rdfs:label "Occhiolino"@en .
 
 :OcchiolinoAppLaboratoryInformationManagementSystem
+    :applicationSystemClassified :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Laboratory Information Management System"@en .
 
 :Odoo
+    :applicationSystem :OdooAppsysErp ;
     :client :Mobile, :Native, :WebBased ;
     :databaseSystem :PostgreSql ;
     :homepage <https://www.odoo.com> ;
@@ -2999,6 +3075,11 @@
     a :SoftwareProduct ;
     rdfs:comment "Open Source ERP"@en ;
     rdfs:label "Odoo"@en .
+
+:OdooAppsysErp
+    :applicationSystemClassified :BbEnterpriseResourcePlanningSystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "ERP Interface"@en .
 
 :OpenClinicGa
     :applicationSystem :OpenClinicGaAppHims, :OpenClinicGaAppPacs ;
@@ -3014,6 +3095,7 @@
     rdfs:label "OpenClinic GA"@en .
 
 :OpenClinicGaAppHims
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "hospital information management system"@en .
 
@@ -3773,6 +3855,7 @@
     rdfs:label "OpenEMR"@en .
 
 :OpenEmrAppElectronicHealthRecord
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic health record application"@en .
 
@@ -4039,6 +4122,7 @@
     rdfs:label "auto-populate a templated letter"@en .
 
 :OpenEyesSystemElectronicPatientRecordForOphthalmology
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "electronic patient record for ophthalmology"@en .
 
@@ -4068,6 +4152,7 @@
     rdfs:label "Electronic Health Record (EHR)"@en .
 
 :OpenHospitalAppHospitalInformationSystem
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Hospital Information System"@en .
 
@@ -4278,6 +4363,7 @@
     rdfs:label "OpenIMIS"@en .
 
 :OpenImisAppInsuranceManagementInformationSystem
+    :applicationSystemClassified :WhoDhiHealthFinanceAndInsuranceInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Insurance Management Information System"@en .
 
@@ -4368,10 +4454,12 @@
     rdfs:label "OpenMAXIMS"@en .
 
 :OpenMaximsAppEpr
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic Patient Record (EPR)"@en .
 
 :OpenMaximsAppPas
+    :applicationSystemClassified :BbPatientAdministrationSystem, :WhoDhiIdentificationRegistriesAndDirectories ;
     a :ApplicationSystemCitation ;
     rdfs:label "Patient Administration System (PAS)"@en .
 
@@ -4394,6 +4482,7 @@
     rdfs:label "OpenMRS"@en .
 
 :OpenMrsAppEmr
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic medical record system (EMR)"@en .
 
@@ -4722,10 +4811,12 @@
     rdfs:label "OSCAREMR"@en .
 
 :OscarEmrAppEmr
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
 :Pacs1
+    :applicationSystem :CommercialPacs1AppSys ;
     :client :Native, :WebBased ;
     :feature :Pacs1Feat3DAnd4DFunctionality, :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines, :Pacs1FeatApprovalConcept, :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities, :Pacs1FeatDataArchivingAndManagemnt, :Pacs1FeatDirectIntegrationInClinicalInformationSystem, :Pacs1FeatDistributionOfImages, :Pacs1FeatHangingProtocols, :Pacs1FeatMovingCTImages, :Pacs1FeatMulticenterInstallationWithCentralDataArchiving, :Pacs1FeatOnlineAndOfflineArchiveManagement, :Pacs1FeatProtocolOfAllTasksTakenByUsers, :Pacs1FeatQueryingOverVariousArchives, :Pacs1FeatRetrievalOfVariousArchives, :Pacs1FeatSnapshots, :Pacs1FeatStandardConformityForInterfacesToModalities, :Pacs1FeatStatisticalAnalyses, :Pacs1FeatVariousMeasurementAndAnalysesTools, :Pacs1FeatWorkLists, :Pacs1LosslessImageDataCompression ;
     :interoperability :DICOM, :HL7, :IHE ;
@@ -4835,6 +4926,7 @@
     rdfs:label "Lossless image data compression"@en .
 
 :Pacs2
+    :applicationSystem :CommercialPacs2AppSys ;
     :client :Mobile, :WebBased ;
     :feature :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
     :interoperability :DICOM ;
@@ -4898,9 +4990,11 @@
     :applicationSystem :PikAppPflegeinformationsKommunikationssystem ;
     :feature :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning, :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry, :PikFeatureCreationOfNursingCarePlans, :PikFeatureSupportingAllPhasesOfTheNursingProcess, :PikFeatureWardManagement, :PikFeatureWritingOfNursingLetters, :PikNursingDocumentationForms ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "PIK"@en .
 
 :PikAppPflegeinformationsKommunikationssystem
+    :applicationSystemClassified :BbNursingManagementAndDocumentationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Pflegeinformations- und Kommunikationssystem"@en .
 
@@ -5080,6 +5174,7 @@
     rdfs:label "Transfer of order data"@en .
 
 :Ris1
+    :applicationSystem :CommercialRis1AppSys ;
     :client :WebBased ;
     :enterpriseFunction :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FuncCreationOfCustomizedReports, :Ris1FuncElectronicRecordingOfResultsAndExaminations, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTrackMaterialAndFilmConsumption, :Ris1FuncTransferOfTheOrderData ;
     :feature :Ris1FeatAccessToExaminationComments, :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatCreationOfCustomizedReports, :Ris1FeatElectronicRecordingOfResultsAndExaminations, :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting, :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTrackAllOrder, :Ris1FeatTrackMaterialAndFilmConsumption, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatWYSIWYGEditorOrSimpleVies, :Ris1InterfaceToPrinterAndPrinterView ;
@@ -5287,6 +5382,7 @@
     rdfs:label "Interface to printer and printer view"@en .
 
 :Ris2
+    :applicationSystem :CommercialRis2AppSys ;
     :client :WebBased ;
     :enterpriseFunction :RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FuncCreationOfCustomizedReports, :RIS2FuncElectronicRecordingOfResultsAndExaminations, :RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin, :RIS2FuncTrackAllOrder, :RIS2FuncTrackMaterialAndFilmConsumption, :RIS2FuncTransferOfOrderData, :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2FuncAssignFreeAndAvailableModalities, :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FuncPatientRegistration, :Ris2FuncQualityAssuranceThroughCompletePatientHistory ;
     :feature :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FeatCoordinationOfRISAndPACS, :RIS2FeatCreationOfCustomizedReports, :RIS2FeatElectronicRecordingOfResultsAndExaminations, :RIS2FeatElectronicSignature, :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting, :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FeatInterfaceToPrinterAndPrinterView, :RIS2FeatPhoneIntegration, :RIS2FeatRemoteCreationOfResultsLetters, :RIS2FeatRetrieveResults, :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering, :RIS2FeatSpecialSettingsForImageView, :RIS2FeatTextProcessing, :RIS2FeatTrackAllOrder, :RIS2FeatTrackMaterialAndFilmConsumption, :RIS2FeatTransferOfOrderData, :RIS2FeatVoiceRecognition, :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
@@ -5373,6 +5469,7 @@
     rdfs:label "Business Process Control System Software"@en .
 
 :SapR3AppEnterpriseResourcePlanningSoftware
+    :applicationSystemClassified :BbEnterpriseResourcePlanningSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Enterprise Resource Planning Software"@en .
 
@@ -5380,6 +5477,7 @@
     :applicationSystem :SapR3AppBusinessProcessControlSystemSoftware, :SapR3AppEnterpriseResourcePlanningSoftware ;
     :feature :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView, :SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "SAP R3 Business Process Control System software"@en .
 
 :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView
@@ -5602,6 +5700,7 @@
     rdfs:label "Laboratory Manager"@en .
 
 :SoarianAppEnterpriseRevenueCycleManagementSoftware
+    :applicationSystemClassified :BbEnterpriseResourcePlanningSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Enterprise Revenue Cycle Management software"@en .
 
@@ -5613,9 +5712,11 @@
     :applicationSystem :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser ;
     :feature :SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults, :SysmexXs1000iHaematologyAnalyserFeatReadBarCodeLabel ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Sysmex XS 1000i haematology analyser"@en .
 
 :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser
+    :applicationSystemClassified :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Haematology Analyser"@en .
 
@@ -5630,6 +5731,7 @@
 :TeleDicom
     :feature :TeleDicomFeatRealTimeVoiceCommunication, :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters, :TeleDicomFeatureOfflineMode, :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools, :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Tele DICOM"@en .
 
 :TeleDicomFeatRealTimeVoiceCommunication
@@ -5660,6 +5762,7 @@
 :Theriak
     :feature :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
     a :SoftwareProduct ;
+    rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Theriak"@en .
 
 :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert
@@ -5714,10 +5817,12 @@
     rdfs:label "WorldVistA"@en .
 
 :WorldVistAdVistaAppHis
+    :applicationSystemClassified :BbClinicalInformationSystem ;
     a :ApplicationSystemCitation ;
     rdfs:label "Health Information System (HIS)"@en .
 
 :WorldVistaAppEhr
+    :applicationSystemClassified :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic health record (EHR)"@en .
 
