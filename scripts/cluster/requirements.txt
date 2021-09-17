@@ -3,3 +3,5 @@ adjustText
 umap-learn
 git+https://github.com/RDFLib/rdflib.git@master#egg=rdflib
 matplotlib
+networkx
+pydot
