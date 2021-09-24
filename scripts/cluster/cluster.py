@@ -3,6 +3,7 @@ from rdflib import Graph
 from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation, AgglomerativeClustering
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics import pairwise_distances
 from sklearn import preprocessing
 from scipy.cluster.hierarchy import dendrogram
 
@@ -30,6 +31,7 @@ NORM = "max" # l1, l2, max
 CLASSIFIED_ONLY = True
 BAG_OF_WORDS = False
 HIERARCHICAL = True
+MIN_TARGETS = 10
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -40,13 +42,16 @@ g.bind("hito", HITO)
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets) (GROUP_CONCAT(DISTINCT(STR(?ast)); separator="|") AS ?asts) {
+#?citation hito:featureClassified|hito:enterpriseFunctionClassified ?target.
+CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets)
+(GROUP_CONCAT(DISTINCT(STR(?ast)); separator="|") AS ?asts)
+{
 SERVICE <https://hitontology.eu/sparql>
 {
 ?source   a hito:SoftwareProduct;
             rdfs:label ?label;
             hito:feature|hito:enterpriseFunction ?citation.
-  ?citation hito:featureClassified|hito:enterpriseFunctionClassified ?target.
+  ?citation (hito:featureClassified|hito:enterpriseFunctionClassified)/(hito:subFeatureOf|hito:subFunctionOf)? ?target.
 
   OPTIONAL {?source hito:applicationSystem/hito:applicationSystemClassified/rdfs:label ?ast.}
 } 
@@ -124,8 +129,14 @@ def createData():
     global ast_set
     global ast_list
     for row in result:
-        #D.append({"classifieds": row["targets"].split()}) # labels for one-hot encoding
-        D.append(str(row["targets"])) # bag of words
+        targets = row["targets"].split()
+        if(len(targets)<MIN_TARGETS):
+            continue
+        print(row["source"],len(targets))
+        D.append({"classifieds": targets}) # labels for one-hot encoding, dict vectorizer
+        #D.append(str(row["targets"])) # bag of words
+        #D.append(targets)
+        #application system types are only used for coloring, as they would bias the result towards the exising classification
         row_asts = row["asts"].split("|")
         if(len(row_asts)>0): # SPARQL "None" bug(?) workaround
             if(row_asts[0]=="None"):
@@ -142,14 +153,16 @@ def createData():
             }
         )
         L.append([row["label"].value][0])
+    print(len(D),"/",len(result),"products with number of features >",MIN_TARGETS)
     #print(E[0]["label"])
     #print(E)
     #print(D)
-    #vec = DictVectorizer(sparse=False)
-    vec = CountVectorizer()
-
-    #data = vec.fit_transform(D)
-    data = vec.fit_transform(D).toarray()
+    if(BAG_OF_WORDS):
+        vec = CountVectorizer() # bag of words
+        data = vec.fit_transform(D).toarray()
+    else:
+        vec = DictVectorizer(sparse=False)
+        data = vec.fit_transform(D)
     #print(data)
     ast_list = list(ast_set)
     #print(ast_list)
@@ -243,7 +256,7 @@ def label(i):
         return L[i]
     return i
 
-colors = ["red","green","blue","yellow","magenta","lightblue","turquoise","aqua","lightsalmon","chartreuse","chocolate","khaki","lavender","maroon","olive","gold","lemonchiffon","whitesmoke","lightgreen","crimson","yellowgreen","mistyrose","lightsteelblue"]
+colors = ["red","green","blue","yellow","magenta","lightblue","turquoise","aqua","lightsalmon","chocolate","khaki","lavender","maroon","olive","gold","lemonchiffon","whitesmoke","lightgreen","crimson","yellowgreen","mistyrose","lightsteelblue"]
 astcolors = dict()
 
 def color(index):
@@ -280,8 +293,11 @@ def showTree(linkage_matrix):
 
 def clusterTree(data):
     N_CLUSTERS = 10
-    clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
-    clustering.fit(data)
+    clustering = AgglomerativeClustering(linkage="single", n_clusters=N_CLUSTERS, compute_distances=True, affinity="precomputed")
+    distances = pairwise_distances(data,metric="dice")
+    clustering.fit(distances)
+    #clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
+    #clustering.fit(data)
     abbr = []
     for l in L:
         abbr.append(l[:16])
@@ -290,10 +306,11 @@ def clusterTree(data):
     #plt.title("Hierarchical Clustering " + paramStr)
     #plot_dendrogram(clustering, labels=clustering.labels_)
     linkage_matrix = plot_dendrogram(clustering, labels=abbr,show_leaf_counts=False)
-    print(linkage_matrix)
+    #print(linkage_matrix)
     showTree(linkage_matrix)
     #plt.show()
 
+    
 
 data = createData()
 if(HIERARCHICAL):
