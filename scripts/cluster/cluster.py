@@ -32,6 +32,7 @@ CLASSIFIED_ONLY = True
 BAG_OF_WORDS = False
 HIERARCHICAL = True
 MIN_TARGETS = 10
+GRAPH = True
 
 g = Graph()
 HITO = "http://hitontology.eu/ontology/"
@@ -291,10 +292,32 @@ def showTree(linkage_matrix):
     dot = graphviz.Source(dot, engine='neato')
     dot.render(format='pdf',filename='tree')
 
+def showGraph(distances):
+    THRESHOLD = 0.5
+    G = nx.Graph()
+    n = len(distances)
+    for i in range(n):
+        for j in range(i+1,n):
+            dist = distances[i][j]
+            if(dist>THRESHOLD):
+                continue
+            print(dist,i,j,label(i),label(j))
+            G.add_node(label(i),fillcolor=color(i),style="filled")
+            G.add_node(label(j),fillcolor=color(j),style="filled")
+            G.add_edge(label(i),label(j),weight=dist)
+    #for key,value in astcolors.items():
+    #    G.add_node(key,fillcolor=value,style="filled")
+    dot = nx.nx_pydot.to_pydot(G).to_string()
+    dot = graphviz.Source(dot, engine='neato')
+    dot.render(format='pdf',filename='graph')
+
 def clusterTree(data):
     N_CLUSTERS = 10
     clustering = AgglomerativeClustering(linkage="single", n_clusters=N_CLUSTERS, compute_distances=True, affinity="precomputed")
     distances = pairwise_distances(data,metric="dice")
+    if(GRAPH):
+        showGraph(distances)
+        return
     clustering.fit(distances)
     #clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
     #clustering.fit(data)
