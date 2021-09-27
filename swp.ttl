@@ -22,7 +22,7 @@
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
     :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
-    :programmingLanguage <http://dbpedia.org/resource/Java_%28programming_language%29> ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
     rdfs:label "3LGM2 Baukasten"@en .
@@ -4621,8 +4621,8 @@
     :applicationSystem :OrthancAppDicomServer, :OrthancAppMiniPacs, :OrthancAppVNA, :OrthancAppViewerOfMedicalImages, :OrthancAppWebViewer ;
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
-    :directEnterpriseFunction :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbResearchAndEducation, :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
-    :directFeature :WhoDhiCaptureFromDigitalDevices ;
+    :directEnterpriseFunction :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ; # source unknown but approved by Michelle
+    :directFeature :WhoDhiCaptureFromDigitalDevices ; # source unknown but approved by Michelle
     :enterpriseFunction :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
     :feature :OrthancFeatBringDicomImagesToComputerVisionCommunity, :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
     :homepage <https://www.orthanc-server.com/> ;
