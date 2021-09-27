@@ -1040,66 +1040,6 @@
                                                      rdfs:label "The international journal of cardiovascular imaging" .
 
 
-###  http://hitontology.eu/ontology/UnknownApplicationSystemCatalogue
-:UnknownApplicationSystemCatalogue rdf:type :ApplicationSystemCatalogue ;
-	rdfs:label "Unknown Application System Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified application system." .
-
-
-###  http://hitontology.eu/ontology/UnknownApplicationSystemClassified
-	:UnknownApplicationSystemClassified rdf:type :ApplicationSystemClassified ;
-	rdfs:label "Unknown Classified Application System"@en ;
-	:applicationSystemCatalogue :UnknownApplicationSystemCatalogue .
-
-
-###  http://hitontology.eu/ontology/UnknownFunctionCatalogue
-:UnknownFunctionCatalogue rdf:type :EnterpriseFunctionCatalogue ;
-	rdfs:label "Unknown Enterprise Function Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified enterprise function." .
-
-
-###  http://hitontology.eu/ontology/UnknownFunctionClassified
-	:UnknownFunctionClassified rdf:type :EnterpriseFunctionClassified ;
-	rdfs:label "Unknown Classified Enterprise Function"@en ;
-	:enterpriseFunctionCatalogue :UnknownFunctionCatalogue .
-
-
-###  http://hitontology.eu/ontology/UnknownFeatureCatalogue
-:UnknownFeatureCatalogue rdf:type :FeatureCatalogue ;
-	rdfs:label "Unknown Feature Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
-
-
-###  http://hitontology.eu/ontology/UnknownFeatureClassified
-	:UnknownFeatureClassified rdf:type :FeatureClassified ;
-	rdfs:label "Unknown Classified Feature"@en ;
-	:featureCatalogue :UnknownFeatureCatalogue .
-
-
-###  http://hitontology.eu/ontology/UnknownOrganizationalUnitCatalogue
-:UnknownOrganizationalUnitCatalogue rdf:type :OrganizationalUnitCatalogue ;
-	rdfs:label "Unknown Organizational Unit Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified organizational unit." .
-
-
-###  http://hitontology.eu/ontology/UnknownOrganizationalUnitClassified
-	:UnknownOrganizationalUnitClassified rdf:type :OrganizationalUnitClassified ;
-	rdfs:label "Unknown Classified Organizational Unit"@en ;
-	:organizationalUnitCatalogue :UnknownOrganizationalUnitCatalogue .
-
-
-###  http://hitontology.eu/ontology/UnknownUserGroupCatalogue
-:UnknownUserGroupCatalogue rdf:type :UserGroupCatalogue ;
-	rdfs:label "Unknown User Group Catalogue"@en ;
-	rdfs:comment "residual catalogue for assigning citations with unknown classified feature." .
-
-
-###  http://hitontology.eu/ontology/UnknownUserGroupClassified
-	:UnknownUserGroupClassified rdf:type :UserGroupClassified ;
-	rdfs:label "Unknown Classified User Group"@en ;
-	:userGroupCatalogue :UnknownUserGroupCatalogue .
-
-
 ###  http://hitontology.eu/ontology/UsagePattern
 :UsagePattern rdf:type :OutcomeCriteriaClassified ;
                :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
