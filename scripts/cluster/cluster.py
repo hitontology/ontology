@@ -3,9 +3,10 @@ from rdflib import Graph
 from sklearn.cluster import KMeans, DBSCAN, AffinityPropagation, AgglomerativeClustering
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics import pairwise_distances
+from sklearn.metrics import pairwise_distances,matthews_corrcoef
 from sklearn import preprocessing
 from scipy.cluster.hierarchy import dendrogram
+import scipy.spatial.distance as distance
 
 from sklearn.decomposition import PCA
 import numpy as np
@@ -318,6 +319,7 @@ def clusterTree(data):
     if(GRAPH):
         showGraph(distances)
         return
+    distances = pairwise_distances(data,metric=lambda u,v: (1-matthews_corrcoef(u,v))/2) # invert similarity to distance and normalize [-1,1] to [0,1]
     clustering.fit(distances)
     #clustering = AgglomerativeClustering(linkage="average", n_clusters=N_CLUSTERS, compute_distances=True, affinity="l1")
     #clustering.fit(data)
