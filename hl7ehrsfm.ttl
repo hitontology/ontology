@@ -1185,18 +1185,14 @@ hito:EhrSfmManageMedicationOrders
     rdfs:label "Manage Medication Orders"@en ;
     skos:altLabel "CP.4.2 Manage Medication Orders"@en ;
     skos:definition """Medications include prescribed and over the counter (OTC) drugs, allergy shots, oxygen, anesthetics, chemotherapy, and dietary supplements that were ordered, supplied, administered, or continued. Different medication orders, including new, discontinue, refill/continue, and renew require different levels and kinds of detail, as do medication orders placed in different situations. Administration
-or patient instructions are available for selection by the ordering clinician, or the ordering clinician is facilitated in creating such instructions. The system may allow for the creation of common content for prescription details. Appropriate time stamps for all medication related activity are generated. This includes series of orders that are part of a therapeutic regimen, e.g., Renal Dialysis, Oncology. When it
-comes to capturing the medication rationale, it is not mandatory that the provider always provide this information.
-In addition, the system should present the clinician with clinical decision support functionality (such as the presentation of allergies, drugdrug interactions) during the medication ordering process. When a clinician places an order for a medication, that order may or may not comply with a formulary specific to the patient’s location or insurance coverage, if applicable. Whether the order complies with the
-formulary should be communicated to the ordering clinician at an appropriate point to allow the ordering clinician to decide whether to continue with the order. Formulary-compliant alternatives to the medication being ordered may also be presented."""@en .
+or patient instructions are available for selection by the ordering clinician, or the ordering clinician is facilitated in creating such instructions. The system may allow for the creation of common content for prescription details. Appropriate time stamps for all medication related activity are generated. This includes series of orders that are part of a therapeutic regimen, e.g., Renal Dialysis, Oncology. When it comes to capturing the medication rationale, it is not mandatory that the provider always provide this information. In addition, the system should present the clinician with clinical decision support functionality (such as the presentation of allergies, drugdrug interactions) during the medication ordering process. When a clinician places an order for a medication, that order may or may not comply with a formulary specific to the patient’s location or insurance coverage, if applicable. Whether the order complies with the formulary should be communicated to the ordering clinician at an appropriate point to allow the ordering clinician to decide whether to continue with the order. Formulary-compliant alternatives to the medication being ordered may also be presented."""@en .
 
 hito:EhrSfmManageNonmedicationPatientCareOrders
     hito:featureCatalogue hito:EhrSfmFeatureCatalogue ;
     hito:internalId "CP.4.3" ;
     hito:subFeatureOf hito:EhrSfmManageOrders ;
     a hito:FeatureClassified ;
-    rdfs:comment """Enable the origination, documentation, capture, transmission, tracking and maintenance of non-medication patient
-care orders."""@en ;
+    rdfs:comment "Enable the origination, documentation, capture, transmission, tracking and maintenance of non-medication patient care orders."@en ;
     rdfs:label "Manage Non-Medication Patient Care Orders"@en ;
     skos:altLabel "CP.4.3 Manage Non-Medication Patient Care Orders"@en ;
     skos:definition "Non-medication orders that request actions or items can be captured and tracked including new, renewal and discontinue orders. Examples include orders to transfer a patient between units, to ambulate a patient, for medical supplies, wound care, durable medical equipment, home IV, and diet or therapy orders. Additionally, psychotherapy and other mental health counseling, behavioral counseling (e.g., smoking cessation, alcohol treatment) other surgical and non-surgical procedures, and complementary alternative medicine are included in non-medication treatments. Each item ordered includes the appropriate detail, such as order identification and instructions. Orders should be communicated to the correct service provider for completion"@en .
@@ -1247,9 +1243,7 @@ hito:EhrSfmManageOrdersForReferral
     hito:internalId "CP.4.6" ;
     hito:subFeatureOf hito:EhrSfmManageOrders ;
     a hito:FeatureClassified ;
-    rdfs:comment """Enable the origination, documentation and tracking of referrals between care providers or healthcare organizations,
-including clinical and administrative details of the referral, and consents and authorizations for disclosures as
-required."""@en ;
+    rdfs:comment "Enable the origination, documentation and tracking of referrals between care providers or healthcare organizations, including clinical and administrative details of the referral, and consents and authorizations for disclosures as required."@en ;
     rdfs:label "Manage Orders for Referral"@en ;
     skos:altLabel "CP.4.6 Manage Orders for Referral"@en ;
     skos:definition "Documentation and tracking of a referral from one care provider to another is supported, whether the referred to or referring providers are internal or external to the healthcare organization. Guidelines for whether a particular referral for a particular patient is appropriate in a clinical context and with regard to administrative factors such as insurance may be provided to the care provider at the time the referral is created. The EHR-S provides the ability to receive and act upon referral responses from providers. The EHR-S may provide the ability to capture completion of the referral appointment. Referrals may be received electronically (i.e. e-Referrals); or may be received non-electronically. If non-electronic, the system needs to allow the user to capture the referral information and manage referral request. If the system supports e-Referrals, then the system will also need to support additional functionality to manage the receipt of the referral request."@en .
