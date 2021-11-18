@@ -1,5 +1,5 @@
-F="/tmp/hito-all.nt"
-FT="/tmp/hito-all.ttl"
+F="/tmp/hito.nt"
+FT="/tmp/hito.ttl"
 echo "Writing to $F"
 echo "" > $F
 ls *.ttl | xargs -I @ rapper -i turtle -o ntriples @ >> $F
