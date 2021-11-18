@@ -24,7 +24,7 @@
 	
 	<SOURCE>
 		<ID>dickinson</ID>
-		<ENDPOINT>../dickinson.ttl</ENDPOINT>
+		<ENDPOINT>../../dickinson.ttl</ENDPOINT>
 		<VAR>?di</VAR>
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?di a hito:FeatureClassified; hito:featureCatalogue hito:Dickinson.</RESTRICTION>
@@ -34,7 +34,7 @@
 
 	<TARGET>
 		<ID></ID>
-		<ENDPOINT>../hl7ehrsfm.ttl</ENDPOINT>
+		<ENDPOINT>../../hl7ehrsfm.ttl</ENDPOINT>
 		<VAR>?ehr</VAR>
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?ehr a hito:FeatureClassified; hito:featureCatalogue hito:EhrSfmFeatureCatalogue.</RESTRICTION>
