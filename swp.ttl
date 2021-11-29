@@ -355,7 +355,7 @@
     :feature :BetterMedsFeatClinicalPharmacistReview, :BetterMedsFeatCreatesAMedicationListOnAdmission, :BetterMedsFeatCreatesDailyMedicationAdministrationPlans, :BetterMedsFeatDischargeSummary, :BetterMedsFeatEnablesBarcodeScanning, :BetterMedsFeatEquippedWithMedicationDischargePrescription, :BetterMedsFeatGeneratesAutomatedTasks, :BetterMedsFeatGivesRealtimeWarningsWithADecisionsupportSystem, :BetterMedsFeatIncreasedSafetyWithAllergyrelatedWarnings, :BetterMedsFeatInpatientPrescribing, :BetterMedsFeatMedicationAdministrationRecord, :BetterMedsFeatMedicationReconciliation, :BetterMedsFeatOrderSetsAvailableOnAHospitalwideLevel, :BetterMedsFeatOrderSetsCustomisable, :BetterMedsFeatOutpatientPrescribing, :BetterMedsFeatPediatricPrescriptions, :BetterMedsFeatPharmacyIntegration, :BetterMedsFeatProvidesATimelineForUpcomingMedicationAdministrations, :BetterMedsFeatProvidesAnAuditLogOfPrescriptionsAndChanges, :BetterMedsFeatReconcilesThePrescriptionListUponDischarge, :BetterMedsFeatShowsAClearOverviewOfMedicationsAtEveryStep, :BetterMedsFeatSimpleAndComplexIVPrescriptions, :BetterMedsFeatSupportsMedicationTitration, :BetterMedsFeatWitnessingOption, :BetterMedsFeatcapturesPrescriptionsFromDifferentSources ;
     :homepage <https://meds.better.care> ;
     :interoperability :HL7_FHIR, :OpenEHR, :SNOMED_CT ;
-    :language dbr:English_language, dbr:Modern_English ;
+    :language dbr:English_language ;
     a :SoftwareProduct ;
     rdfs:comment "Better Meds (formerly OPENeP) is an electronic prescribing and medication administration solution."@en ;
     rdfs:label "BetterMeds"@en .
@@ -3288,7 +3288,7 @@
     :enterpriseFunction :OpenDentalFuncAccounting, :OpenDentalFuncBilling, :OpenDentalFuncImaging, :OpenDentalFuncManagePatientAppointments, :OpenDentalFuncManagePatientInformation, :OpenDentalFuncTimeManagement, :OpenDentalFuncTreatmentAdministration, :OpenDentalFuncUserManagement ;
     :feature :OpenDentalFeatAddFormTemplate, :OpenDentalFeatAddPatientAppointment, :OpenDentalFeatBackup, :OpenDentalFeatCalendar, :OpenDentalFeatCreateReferralLetters, :OpenDentalFeatCreateTasks, :OpenDentalFeatCustomReports, :OpenDentalFeatEditPatientAppointment, :OpenDentalFeatEditTreatmentPlan, :OpenDentalFeatElectronicPatientForms, :OpenDentalFeatElectronicPrescriptions, :OpenDentalFeatEmailInbox, :OpenDentalFeatEnhanceRadiographImages, :OpenDentalFeatEnterClinicalPatientInformation, :OpenDentalFeatGraphicalToothChart, :OpenDentalFeatManageInsuranceInformation, :OpenDentalFeatManageTreatmentPlans, :OpenDentalFeatMessaging, :OpenDentalFeatOrganizeClinicalPatientInformation, :OpenDentalFeatPatientPortal, :OpenDentalFeatPrintPatientSchedule, :OpenDentalFeatPrintTreatmentPlan, :OpenDentalFeatProgressNotes, :OpenDentalFeatScanFormsAndLetters, :OpenDentalFeatSchedulePatientAppointment, :OpenDentalFeatSendClaims, :OpenDentalFeatSendTasks, :OpenDentalFeatSignTreatmentPlan, :OpenDentalFeatStoreFormsAndLetters, :OpenDentalFeatStoreImageFiles, :OpenDentalFeatSupplyInventory, :OpenDentalFeatTrackLabCases, :OpenDentalFeatTrackReferredTreatments, :OpenDentalFeatTrackUserAccess, :OpenDentalFeatViewAppointmentList, :OpenDentalFeatViewInsurancePlans, :OpenDentalFeatViewPatientClaimHistory, :OpenDentalFeatViewPatientFinancialHistory, :OpenDentalFeatViewPatientInformation, :OpenDentalFeatViewPatientPaymentPlan, :OpenDentalFeatViewPlannedProcedures, :OpenDentalFeatViewTreatmentPlan, :OpenDentalFeatWaitingRoomTracker, :OpenDentalFeatWebForms ;
     :homepage <https://opendental.com> ;
-    :language dbr:English_language, dbr:Modern_English ;
+    :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
     :organizationalUnit :OpenDentalOrgDentalPractice ;
@@ -3566,7 +3566,7 @@
     :enterpriseFunction :OpenEObsFunctionPatientObservation, :OpenEObsFunctionWardManagement ;
     :feature :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling, :OpenEObsFeatureBedsideOrCommunityUseWithMobileDevices, :OpenEObsFeatureCalculatesAScore, :OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators, :OpenEObsFeatureHighLevelWardDashboard, :OpenEObsFeatureIdentifyAndRespondToHighRiskPatients, :OpenEObsFeatureInteractiveChartsOfObservationData, :OpenEObsFeaturePatientAcuityBoard, :OpenEObsFeaturePatientRecord, :OpenEObsFeaturePatientReport, :OpenEObsFeaturePatientVisitManagement, :OpenEObsFeatureRecordObservationsOfPatients, :OpenEObsFeatureStaffAllocationToPatients ;
     :homepage <https://opusvl.com/solutions/open-eobs> ;
-    :language dbr:English_language, dbr:Modern_English ;
+    :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/AppertaFoundation/openeobs/> ;
@@ -4064,7 +4064,7 @@
     :client :WebBased ;
     :feature :OpenEyesFeatDocumentPatientExamination, :OpenEyesFeatDocumentTheAppearanceOfTheEye, :OpenEyesFeatEntryOfInformationOperations, :OpenEyesFeatImportClinicWorkLists, :OpenEyesFeatMDataCollectionAndDisplay, :OpenEyesFeatMessaging, :OpenEyesFeatPatientOverview, :OpenEyesFeatPrescribing, :OpenEyesFeatViewingOfDocuments, :OpenEyesFeatureAutoPopulateATemplatedLetter ;
     :homepage <https://openeyes.org.uk/> ;
-    :language dbr:English_language, dbr:Modern_English ;
+    :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:Cross-platform ;
     :organizationalUnit :OpenEyesUnitOphthalmicUnit ;
@@ -4353,7 +4353,7 @@
     :enterpriseFunction :OpenImisFuncHealthFinancingProcessManagement ;
     :feature :OpenImisFeatAccessToAllBeneficiaryData, :OpenImisFeatClaimEntry, :OpenImisFeatClaimReview, :OpenImisFeatClaimSubmission, :OpenImisFeatDigitalBeneficiaryManagementAndVerification, :OpenImisFeatDigitalClaimsSubmissionAndautomatedReview, :OpenImisFeatManageBeneficiaries, :OpenImisFeatManageBenefitPackages, :OpenImisFeatManageClientFeedback, :OpenImisFeatManageProviders, :OpenImisFeatMonitoringAndDataAnalysis, :OpenImisFeatPatientVerification, :OpenImisFeatPaymentApproval, :OpenImisFeatServiceClaimsGeneration ;
     :homepage <http://openimis.org/> ;
-    :language dbr:English_language, dbr:Modern_English ;
+    :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
