@@ -2546,7 +2546,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000074> ;
     :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
-    :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Node.js> ;
+    :programmingLanguage dbr:JavaScript ;
     :repository <https://github.com/HospitalRun/> ;
     :userGroup :HospitalRunUserHospitalAdministrator, :HospitalRunUserImagingTechnician, :HospitalRunUserInventoryManager, :HospitalRunUserLabTechnician, :HospitalRunUserNurse, :HospitalRunUserNurseManager, :HospitalRunUserPatientAdministrator, :HospitalRunUserPharmacist, :HospitalRunUserSocialWorker ;
     a :SoftwareProduct ;
@@ -5389,7 +5389,7 @@
     :interoperability :DICOM, :HL7 ;
     :language dbr:German_language ;
     :operatingSystem dbr:Windows_7, dbr:Windows_Vista ;
-    :programmingLanguage dbr:JHTML, <http://dbpedia.org/resource/Java_(programming_language)> ;
+    :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
     rdfs:comment "Commercial Radiology Information System (RIS) Dummy 2"@en ;
     rdfs:label "Commercial RIS 2"@en .
