@@ -10,6 +10,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix swo: <http://www.ebi.ac.uk/swo/> .
+@prefix swol:	<http://www.ebi.ac.uk/swo/license/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix ui: <http://www.w3.org/ns/ui#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
