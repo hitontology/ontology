@@ -1,6 +1,7 @@
 PREFIX swo:<http://www.ebi.ac.uk/swo/>
 CONSTRUCT
-{ ?x rdf:type ?type; rdfs:label ?label; rdfs:subClassOf ?super.}
+{ ?x rdf:type ?type; rdf:type hito:License; rdfs:label ?label; rdfs:subClassOf ?super.}
 WHERE
 {?x rdfs:subClassOf+ swo:SWO_0000002; rdfs:subClassOf ?super; rdfs:label ?label; rdf:type ?type. FILTER(!ISBLANK(?super))}
+ORDER BY ASC(?x)
 

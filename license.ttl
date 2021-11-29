@@ -1,446 +1,570 @@
-@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix swol:	<http://www.ebi.ac.uk/swo/license/> .
-@prefix owl:	<http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix swo:	<http://www.ebi.ac.uk/swo/> .
+@base <http://www.ebi.ac.uk/swo/license/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix yago: <http://dbpedia.org/class/yago/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swo: <../> .
+@prefix swol: <> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ui: <http://www.w3.org/ns/ui#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix medfloss: <https://wwww.medfloss.org/node/> .
 
 swol:SWO_1000001
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Creative Commons" .
+    a :License, owl:Class ;
+    rdfs:label "Creative Commons" ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
 swol:SWO_1000002
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Proprietary commercial software license" .
-swol:SWO_1000005
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000044 , swo:SWO_0000002 ;
-	rdfs:label	"Apache License Version 2.0" .
-swol:SWO_1000006
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"Academic Free License version 3" .
-swol:SWO_1000007
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swo:SWO_0000002 ;
-	rdfs:label	"FreeBSD" .
-swol:SWO_1000008
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Open source software license" .
-swol:SWO_1000009
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"License without restrictions on derivatives" .
-swol:SWO_1000043
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000008 , swo:SWO_0000002 ;
-	rdfs:label	"GNU Project Free License Type" .
-swol:SWO_1000044
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 ;
-	rdfs:label	"GNU GPL Compatible License Type" .
-swol:SWO_1000049
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000009 , swol:SWO_1000044 ;
-	rdfs:label	"CC0 1.0" .
-swol:SWO_1000050
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 2.0"@en .
-swol:SWO_1000052
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000043 ;
-	rdfs:label	"CC BY-SA 2.0" .
-swol:SWO_1000053
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_9000086 ;
-	rdfs:label	"LPPL v1.3c" .
-swol:SWO_1000054
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_9000086 ;
-	rdfs:label	"LPPL v1.2"@en .
-swol:SWO_1000056
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Artistic License" .
-swol:SWO_1000057
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_1000056 ;
-	rdfs:label	"Artistic License 2.0" .
-swol:SWO_1000061
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"free to use license"@en .
-swol:SWO_1000065
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 4.0"@en .
-swol:SWO_1000067
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 2.0 UK"@en .
-swol:SWO_1000069
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"GNU AGPL"@en .
-swol:SWO_1000071
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_9000080 ;
-	rdfs:label	"GNU LGPL v2.1"@en .
-swol:SWO_1000072
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 2.1 JP" .
-swol:SWO_1000073
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 2.5"@en .
-swol:SWO_1000074
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 3.0 AU"@en .
-swol:SWO_1000075
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 3.0"@en .
-swol:SWO_1000076
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000044 ;
-	rdfs:label	"CC BY 3.0 US"@en .
-swol:SWO_1000077
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 ;
-	rdfs:label	"CC BY-ND 3.0"@en .
-swol:SWO_1000078
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 ;
-	rdfs:label	"CC BY-ND 4.0"@en .
-swol:SWO_1000079
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC 3.0"@en .
-swol:SWO_1000080
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC 4.0" .
-swol:SWO_1000081
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-ND 3.0"@en .
-swol:SWO_1000083
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-ND 2.5"@en .
-swol:SWO_1000084
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-ND 2.5 CH"@en .
-swol:SWO_1000085
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-ND 4.0"@en .
-swol:SWO_1000086
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-SA 2.5"@en .
-swol:SWO_1000087
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-SA 3.0"@en .
-swol:SWO_1000088
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-SA 3.0 US"@en .
-swol:SWO_1000089
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-SA 2.5 IN"@en .
-swol:SWO_1000090
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000140 ;
-	rdfs:label	"CC BY-NC-SA 4.0"@en .
-swol:SWO_1000091
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000043 ;
-	rdfs:label	"CC BY-SA 2.1 JP" .
-swol:SWO_1000092
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000043 ;
-	rdfs:label	"CC BY-SA 3.0"@en .
-swol:SWO_1000093
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000043 ;
-	rdfs:label	"CC BY-SA 3.0 US"@en .
-swol:SWO_1000094
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000001 , swol:SWO_1000043 ;
-	rdfs:label	"CC BY-SA 4.0"@en .
-swol:SWO_1000095
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Open Data Commons"@en .
-swol:SWO_1000096
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swol:SWO_1000095 ;
-	rdfs:label	"ODbL v1.0"@en .
-swol:SWO_1000097
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swol:SWO_1000095 ;
-	rdfs:label	"DbCL v1.0"@en .
-swol:SWO_1000098
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"EMBLEM ELM Academic License"@en .
-swol:SWO_1000099
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"FlowRepository Open Access Terms of Use"@en .
-swol:SWO_1000100
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swol:SWO_1000095 ;
-	rdfs:label	"ODC-By v1.0"@en .
-swol:SWO_1000101
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000044 , swol:SWO_1000095 ;
-	rdfs:label	"PDDL v1.0"@en .
-swol:SWO_1000103
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Vendor-specific License"@en .
-swol:SWO_1000104
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"NIDA NIH Data Access Policy"@en .
-swol:SWO_1000105
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"Addgene Terms of Use"@en .
-swol:SWO_1000106
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"CAS Information Use Policy" .
-swol:SWO_1000107
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"CellFinder Copyright"@en .
-swol:SWO_1000108
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"LINCS Data Policy"@en .
-swol:SWO_1000109
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"GeneNetwork Conditions of Use"@en .
-swol:SWO_1000110
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"GMD Academic License"@en .
-swol:SWO_1000111
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"GeneProf Academic License"@en .
-swol:SWO_1000112
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"European Medicines Agency Copyright"@en .
-swol:SWO_1000113
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"miRTaBase Data License"@en .
-swol:SWO_1000114
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"GBIF Data Sharing Agreement"@en .
-swol:SWO_1000115
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"IUPAC/InChI-Trust InChI Licence No. 1.0"@en .
-swol:SWO_1000116
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"Labome Copyright"@en .
-swol:SWO_1000117
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"CTD Legal Notice and Terms of Data Use"@en .
-swol:SWO_1000118
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"LOINC RELMA Terms of Use"@en .
-swol:SWO_1000119
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000008 , swol:SWO_1000103 ;
-	rdfs:label	"MIACA Full Copyright"@en .
-swol:SWO_1000120
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_1000103 ;
-	rdfs:label	"ORCID MIT-Style License (MIT)"@en .
-swol:SWO_1000121
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"NIH Genomic Data Sharing Policy"@en .
-swol:SWO_1000122
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"Facebase Data Access Policy"@en .
-swol:SWO_1000123
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"ORCID Terms of Use"@en .
-swol:SWO_1000124
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"PPDB Academic License"@en .
-swol:SWO_1000125
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"SciCrunch Terms and Conditions"@en .
-swol:SWO_1000126
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 , swol:SWO_1000137 ;
-	rdfs:label	"ProDom Commercial License"@en .
-swol:SWO_1000127
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"SBGN Open License with Attribution"@en .
-swol:SWO_1000128
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"NLM Open License with Attribution"@en .
-swol:SWO_1000129
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"RegenBase Terms of Use"@en .
-swol:SWO_1000130
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"SABIO-RK Non-Commercial Purpose License"@en .
-swol:SWO_1000131
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"Terms of Use for EMBL-EBI Services"@en .
-swol:SWO_1000132
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"UCUM Terms of Use"@en .
-swol:SWO_1000133
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"UMLS Metathesaurus License"@en .
-swol:SWO_1000134
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"MHAS Data Policy"@en .
-swol:SWO_1000135
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"ALFRED Copyright"@en .
-swol:SWO_1000137
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Fee-Based Commercial License"@en .
-swol:SWO_1000138
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"BRENDA License"@en .
-swol:SWO_1000139
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"TCGA Data Use Certification"@en .
-swol:SWO_1000140
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swo:SWO_0000002 ;
-	rdfs:label	"Non-Commercial No-Fee License"@en .
-swol:SWO_1000141
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"DrugBank Academic License"@en .
-swol:SWO_1000142
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 , swol:SWO_1000137 ;
-	rdfs:label	"UCSC Genome Browser Commercial Software License"@en .
-swol:SWO_1000145
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"Xenbase Academic Conditions of Use"@en .
-swol:SWO_1000146
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"RIKEN Copyright"@en .
-swol:SWO_1000147
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"Design Science License"@en .
-swol:SWO_1000148
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"University of Concordia Terms of Use"@en .
-swol:SWO_1000149
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swol:SWO_1000103 ;
-	rdfs:label	"OME Software Conditons of Use"@en .
-swol:SWO_1000150
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000103 ;
-	rdfs:label	"ImmPort Conditions of Use"@en .
-swol:SWO_9000082
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000056 ;
-	rdfs:label	"Artistic License 1.0" .
-swol:SWO_9000086
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"LPPL" .
-swol:SWO_9000087
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000008 , swo:SWO_0000002 ;
-	rdfs:label	"OPL v1.0" .
-swol:SWO_9000088
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000008 , swo:SWO_0000002 ;
-	rdfs:label	"MPL" .
-swol:SWO_9000085
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swo:SWO_0000002 ;
-	rdfs:label	"Modified BSD" .
-swol:SWO_1000046
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000004 ;
-	rdfs:label	"GNU GPL v3"@en .
-swol:SWO_9000084
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"EPL v1" .
+    a :License, owl:Class ;
+    rdfs:label "Proprietary commercial software license" ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
 swol:SWO_1000003
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_9000088 ;
-	rdfs:label	"MPL v1.1" .
+    a :License, owl:Class ;
+    rdfs:label "MPL v1.1" ;
+    rdfs:subClassOf swol:SWO_9000088 .
+
 swol:SWO_1000004
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"GNU GPL" .
+    a :License, owl:Class ;
+    rdfs:label "GNU GPL" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000043 .
+
+swol:SWO_1000005
+    a :License, owl:Class ;
+    rdfs:label "Apache License Version 2.0" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000009, swol:SWO_1000044 .
+
+swol:SWO_1000006
+    a :License, owl:Class ;
+    rdfs:label "Academic Free License version 3" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000043 .
+
+swol:SWO_1000007
+    a :License, owl:Class ;
+    rdfs:label "FreeBSD" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000044 .
+
+swol:SWO_1000008
+    a :License, owl:Class ;
+    rdfs:label "Open source software license" ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000009
+    a :License, owl:Class ;
+    rdfs:label "License without restrictions on derivatives" ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000043
+    a :License, owl:Class ;
+    rdfs:label "GNU Project Free License Type" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000008 .
+
+swol:SWO_1000044
+    a :License, owl:Class ;
+    rdfs:label "GNU GPL Compatible License Type" ;
+    rdfs:subClassOf swol:SWO_1000043 .
+
+swol:SWO_1000046
+    a :License, owl:Class ;
+    rdfs:label "GNU GPL v3"@en ;
+    rdfs:subClassOf swol:SWO_1000004 .
+
 swol:SWO_1000047
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000004 ;
-	rdfs:label	"GNU GPL v2"@en .
+    a :License, owl:Class ;
+    rdfs:label "GNU GPL v2"@en ;
+    rdfs:subClassOf swol:SWO_1000004 .
+
+swol:SWO_1000049
+    a :License, owl:Class ;
+    rdfs:label "CC0 1.0" ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000009, swol:SWO_1000044 .
+
+swol:SWO_1000050
+    a :License, owl:Class ;
+    rdfs:label "CC BY 2.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000052
+    a :License, owl:Class ;
+    rdfs:label "CC BY-SA 2.0" ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000043 .
+
+swol:SWO_1000053
+    a :License, owl:Class ;
+    rdfs:label "LPPL v1.3c" ;
+    rdfs:subClassOf swol:SWO_9000086 .
+
+swol:SWO_1000054
+    a :License, owl:Class ;
+    rdfs:label "LPPL v1.2"@en ;
+    rdfs:subClassOf swol:SWO_9000086 .
+
 swol:SWO_1000055
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_9000088 ;
-	rdfs:label	"Mozilla Public License Version 2.0" , "MPL v2.0"@en .
+    a :License, owl:Class ;
+    rdfs:label "MPL v2.0"@en, "Mozilla Public License Version 2.0" ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_9000088 .
+
+swol:SWO_1000056
+    a :License, owl:Class ;
+    rdfs:label "Artistic License" ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000057
+    a :License, owl:Class ;
+    rdfs:label "Artistic License 2.0" ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_1000056 .
+
+swol:SWO_1000061
+    a :License, owl:Class ;
+    rdfs:label "free to use license"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000065
+    a :License, owl:Class ;
+    rdfs:label "CC BY 4.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000067
+    a :License, owl:Class ;
+    rdfs:label "CC BY 2.0 UK"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
 swol:SWO_1000068
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_9000080 ;
-	rdfs:label	"GNU LGPL v3" .
+    a :License, owl:Class ;
+    rdfs:label "GNU LGPL v3" ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_9000080 .
+
+swol:SWO_1000069
+    a :License, owl:Class ;
+    rdfs:label "GNU AGPL"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
 swol:SWO_1000070
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swol:SWO_1000069 ;
-	rdfs:label	"GNU AGPL v3"@en .
+    a :License, owl:Class ;
+    rdfs:label "GNU AGPL v3"@en ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_1000069 .
+
+swol:SWO_1000071
+    a :License, owl:Class ;
+    rdfs:label "GNU LGPL v2.1"@en ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_9000080 .
+
+swol:SWO_1000072
+    a :License, owl:Class ;
+    rdfs:label "CC BY 2.1 JP" ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000073
+    a :License, owl:Class ;
+    rdfs:label "CC BY 2.5"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000074
+    a :License, owl:Class ;
+    rdfs:label "CC BY 3.0 AU"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000075
+    a :License, owl:Class ;
+    rdfs:label "CC BY 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000076
+    a :License, owl:Class ;
+    rdfs:label "CC BY 3.0 US"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000044 .
+
+swol:SWO_1000077
+    a :License, owl:Class ;
+    rdfs:label "CC BY-ND 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001 .
+
+swol:SWO_1000078
+    a :License, owl:Class ;
+    rdfs:label "CC BY-ND 4.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001 .
+
+swol:SWO_1000079
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000080
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC 4.0" ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000081
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-ND 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000083
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-ND 2.5"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000084
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-ND 2.5 CH"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000085
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-ND 4.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000086
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-SA 2.5"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000087
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-SA 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000088
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-SA 3.0 US"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000089
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-SA 2.5 IN"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000090
+    a :License, owl:Class ;
+    rdfs:label "CC BY-NC-SA 4.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000140 .
+
+swol:SWO_1000091
+    a :License, owl:Class ;
+    rdfs:label "CC BY-SA 2.1 JP" ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000043 .
+
+swol:SWO_1000092
+    a :License, owl:Class ;
+    rdfs:label "CC BY-SA 3.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000043 .
+
+swol:SWO_1000093
+    a :License, owl:Class ;
+    rdfs:label "CC BY-SA 3.0 US"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000043 .
+
+swol:SWO_1000094
+    a :License, owl:Class ;
+    rdfs:label "CC BY-SA 4.0"@en ;
+    rdfs:subClassOf swol:SWO_1000001, swol:SWO_1000043 .
+
+swol:SWO_1000095
+    a :License, owl:Class ;
+    rdfs:label "Open Data Commons"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000096
+    a :License, owl:Class ;
+    rdfs:label "ODbL v1.0"@en ;
+    rdfs:subClassOf swol:SWO_1000043, swol:SWO_1000095 .
+
+swol:SWO_1000097
+    a :License, owl:Class ;
+    rdfs:label "DbCL v1.0"@en ;
+    rdfs:subClassOf swol:SWO_1000043, swol:SWO_1000095 .
+
+swol:SWO_1000098
+    a :License, owl:Class ;
+    rdfs:label "EMBLEM ELM Academic License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000099
+    a :License, owl:Class ;
+    rdfs:label "FlowRepository Open Access Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000100
+    a :License, owl:Class ;
+    rdfs:label "ODC-By v1.0"@en ;
+    rdfs:subClassOf swol:SWO_1000043, swol:SWO_1000095 .
+
+swol:SWO_1000101
+    a :License, owl:Class ;
+    rdfs:label "PDDL v1.0"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000044, swol:SWO_1000095 .
+
+swol:SWO_1000103
+    a :License, owl:Class ;
+    rdfs:label "Vendor-specific License"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000104
+    a :License, owl:Class ;
+    rdfs:label "NIDA NIH Data Access Policy"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000105
+    a :License, owl:Class ;
+    rdfs:label "Addgene Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000106
+    a :License, owl:Class ;
+    rdfs:label "CAS Information Use Policy" ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000107
+    a :License, owl:Class ;
+    rdfs:label "CellFinder Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000108
+    a :License, owl:Class ;
+    rdfs:label "LINCS Data Policy"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000109
+    a :License, owl:Class ;
+    rdfs:label "GeneNetwork Conditions of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000110
+    a :License, owl:Class ;
+    rdfs:label "GMD Academic License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000111
+    a :License, owl:Class ;
+    rdfs:label "GeneProf Academic License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000112
+    a :License, owl:Class ;
+    rdfs:label "European Medicines Agency Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000113
+    a :License, owl:Class ;
+    rdfs:label "miRTaBase Data License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000114
+    a :License, owl:Class ;
+    rdfs:label "GBIF Data Sharing Agreement"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000115
+    a :License, owl:Class ;
+    rdfs:label "IUPAC/InChI-Trust InChI Licence No. 1.0"@en ;
+    rdfs:subClassOf swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000116
+    a :License, owl:Class ;
+    rdfs:label "Labome Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000117
+    a :License, owl:Class ;
+    rdfs:label "CTD Legal Notice and Terms of Data Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000118
+    a :License, owl:Class ;
+    rdfs:label "LOINC RELMA Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000119
+    a :License, owl:Class ;
+    rdfs:label "MIACA Full Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000008, swol:SWO_1000103 .
+
+swol:SWO_1000120
+    a :License, owl:Class ;
+    rdfs:label "ORCID MIT-Style License (MIT)"@en ;
+    rdfs:subClassOf swol:SWO_1000044, swol:SWO_1000103 .
+
+swol:SWO_1000121
+    a :License, owl:Class ;
+    rdfs:label "NIH Genomic Data Sharing Policy"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000122
+    a :License, owl:Class ;
+    rdfs:label "Facebase Data Access Policy"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000123
+    a :License, owl:Class ;
+    rdfs:label "ORCID Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000124
+    a :License, owl:Class ;
+    rdfs:label "PPDB Academic License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000125
+    a :License, owl:Class ;
+    rdfs:label "SciCrunch Terms and Conditions"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000126
+    a :License, owl:Class ;
+    rdfs:label "ProDom Commercial License"@en ;
+    rdfs:subClassOf swol:SWO_1000103, swol:SWO_1000137 .
+
+swol:SWO_1000127
+    a :License, owl:Class ;
+    rdfs:label "SBGN Open License with Attribution"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000128
+    a :License, owl:Class ;
+    rdfs:label "NLM Open License with Attribution"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000129
+    a :License, owl:Class ;
+    rdfs:label "RegenBase Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000130
+    a :License, owl:Class ;
+    rdfs:label "SABIO-RK Non-Commercial Purpose License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000131
+    a :License, owl:Class ;
+    rdfs:label "Terms of Use for EMBL-EBI Services"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000132
+    a :License, owl:Class ;
+    rdfs:label "UCUM Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000133
+    a :License, owl:Class ;
+    rdfs:label "UMLS Metathesaurus License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000134
+    a :License, owl:Class ;
+    rdfs:label "MHAS Data Policy"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000135
+    a :License, owl:Class ;
+    rdfs:label "ALFRED Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000009, swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000137
+    a :License, owl:Class ;
+    rdfs:label "Fee-Based Commercial License"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000138
+    a :License, owl:Class ;
+    rdfs:label "BRENDA License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000139
+    a :License, owl:Class ;
+    rdfs:label "TCGA Data Use Certification"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000140
+    a :License, owl:Class ;
+    rdfs:label "Non-Commercial No-Fee License"@en ;
+    rdfs:subClassOf swo:SWO_0000002 .
+
+swol:SWO_1000141
+    a :License, owl:Class ;
+    rdfs:label "DrugBank Academic License"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000142
+    a :License, owl:Class ;
+    rdfs:label "UCSC Genome Browser Commercial Software License"@en ;
+    rdfs:subClassOf swol:SWO_1000103, swol:SWO_1000137 .
+
+swol:SWO_1000145
+    a :License, owl:Class ;
+    rdfs:label "Xenbase Academic Conditions of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000146
+    a :License, owl:Class ;
+    rdfs:label "RIKEN Copyright"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000147
+    a :License, owl:Class ;
+    rdfs:label "Design Science License"@en ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000043 .
+
+swol:SWO_1000148
+    a :License, owl:Class ;
+    rdfs:label "University of Concordia Terms of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
+swol:SWO_1000149
+    a :License, owl:Class ;
+    rdfs:label "OME Software Conditons of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000043, swol:SWO_1000103 .
+
+swol:SWO_1000150
+    a :License, owl:Class ;
+    rdfs:label "ImmPort Conditions of Use"@en ;
+    rdfs:subClassOf swol:SWO_1000103 .
+
 swol:SWO_9000074
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000044 , swo:SWO_0000002 ;
-	rdfs:label	"MIT License" .
+    a :License, owl:Class ;
+    rdfs:label "MIT License" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000044 .
+
 swol:SWO_9000080
-	rdf:type	owl:Class ;
-	rdfs:subClassOf	swol:SWO_1000009 , swol:SWO_1000043 , swo:SWO_0000002 ;
-	rdfs:label	"GNU LGPL" .
+    a :License, owl:Class ;
+    rdfs:label "GNU LGPL" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000009, swol:SWO_1000043 .
+
+swol:SWO_9000082
+    a :License, owl:Class ;
+    rdfs:label "Artistic License 1.0" ;
+    rdfs:subClassOf swol:SWO_1000056 .
+
+swol:SWO_9000084
+    a :License, owl:Class ;
+    rdfs:label "EPL v1" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000043 .
+
+swol:SWO_9000085
+    a :License, owl:Class ;
+    rdfs:label "Modified BSD" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000044 .
+
+swol:SWO_9000086
+    a :License, owl:Class ;
+    rdfs:label "LPPL" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000043 .
+
+swol:SWO_9000087
+    a :License, owl:Class ;
+    rdfs:label "OPL v1.0" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000008 .
+
+swol:SWO_9000088
+    a :License, owl:Class ;
+    rdfs:label "MPL" ;
+    rdfs:subClassOf swo:SWO_0000002, swol:SWO_1000008 .
+
