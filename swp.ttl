@@ -21,7 +21,7 @@
     :homepage <https://www.3lgm2.de> ;
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
@@ -478,7 +478,6 @@
     :homepage <https://www.bikalims.org> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem dbr:Cross-platform ;
     :organizationalUnit :BikaLimsOrgLaboratory ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :programmingLibrary :Zope ;
@@ -1116,7 +1115,7 @@
     :interoperability :DICOM, <http://hitontology.eu/ontology/HL7_V2.x>, :IHE_XDS, :IHE_XDS_I, :WADO ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000003>, <http://www.ebi.ac.uk/swo/license/SWO_1000047>, <http://www.ebi.ac.uk/swo/license/SWO_9000080> ;
-    :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows, <http://dbpedia.org/resource/Solaris_(operating_system)> ;
+    :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, <http://dbpedia.org/resource/Oracle_Solaris> ;
     :organizationalUnit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Smarty ;
@@ -1277,7 +1276,7 @@
     :interoperability :HL7_FHIR, :IHE, :LOINC, :REST, :SNOMED_CT ;
     :language dbr:English_language, dbr:French_language, dbr:Norwegian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Vietnamese_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000085> ;
-    :operatingSystem <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
+    :operatingSystem <http://dbpedia.org/resource/Ubuntu> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/dhis2> ;
     a :SoftwareProduct ;
@@ -1663,7 +1662,7 @@
     :interoperability :ICPC2 ;
     :language dbr:English_language, dbr:French_language, dbr:German_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000084> ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :organizationalUnit :ElexisOrgArztpraxis ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/elexis> ;
@@ -1968,7 +1967,7 @@
     :interoperability :HL7, :HL7_FHIR, :ICD10, :ICD9, :ICPM ;
     :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
+    :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu> ;
     :organizationalUnit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :softwareProductComponent :Occhiolino ;
@@ -2545,7 +2544,7 @@
     :interoperability :HL7_FHIR ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000074> ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :programmingLanguage dbr:JavaScript ;
     :repository <https://github.com/HospitalRun/> ;
     :userGroup :HospitalRunUserHospitalAdministrator, :HospitalRunUserImagingTechnician, :HospitalRunUserInventoryManager, :HospitalRunUserLabTechnician, :HospitalRunUserNurse, :HospitalRunUserNurseManager, :HospitalRunUserPatientAdministrator, :HospitalRunUserPharmacist, :HospitalRunUserSocialWorker ;
@@ -3068,7 +3067,7 @@
     :interoperability :XML ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000068> ;
-    :operatingSystem <http://dbpedia.org/resource/Android_(operating_system)>, dbr:IOS, dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
+    :operatingSystem <http://dbpedia.org/resource/Android_(operating_system)>, dbr:IOS, dbr:Linux, dbr:Microsoft_Windows, dbr:MacOS, dbr:Unix-like ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/odoo/odoo> ;
     :softwareProductComponent :Bahmni ;
@@ -3290,7 +3289,7 @@
     :homepage <https://opendental.com> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
     :organizationalUnit :OpenDentalOrgDentalPractice ;
     :programmingLanguage <http://dbpedia.org/resource/C_Sharp_(programming_language)> ;
     :repository <https://www.opendental.com/site/sourcecode.html> ;
@@ -3660,7 +3659,7 @@
     :interoperability :HL7_FHIR, <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
+    :operatingSystem <http://dbpedia.org/resource/Ubuntu> ;
     :organizationalUnit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Java_(programming_language)>, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/openelisglobal> ;
@@ -3847,7 +3846,7 @@
     :interoperability :CDA, :DICOM, :HL7, :HL7_FHIR, :REST, :SMART ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows, dbr:Unix-like ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
     :programmingLanguage dbr:PHP ;
     :repository <https://github.com/openemr> ;
     a :SoftwareProduct ;
@@ -4066,7 +4065,6 @@
     :homepage <https://openeyes.org.uk/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
-    :operatingSystem dbr:Cross-platform ;
     :organizationalUnit :OpenEyesUnitOphthalmicUnit ;
     :programmingLanguage dbr:PHP ;
     :repository <https://github.com/appertafoundation/openeyes> ;
@@ -4473,7 +4471,7 @@
     :interoperability :CDA, :HL7, :HL7_CCD, :HL7_FHIR ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000055> ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/openmrs/> ;
     :userGroup :OpenMrsUseClinicians, :OpenMrsUserAdministrativeStaff, :OpenMrsUserDataEntryClerks, :OpenMrsUserHealthCareProviders, :OpenMrsUserNurses ;
@@ -4629,7 +4627,7 @@
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
-    :operatingSystem dbr:Cross-platform, dbr:Linux, dbr:Microsoft_Windows, dbr:OS_X, dbr:Unix-like ;
+    :operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:MacOS, dbr:Unix-like ;
     :organizationalUnit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://hg.orthanc-server.com/> ;
@@ -4802,7 +4800,6 @@
     :interoperability <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
-    :operatingSystem dbr:Cross-platform ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Maven ;
     :repository <https://bitbucket.org/oscaremr/oscar/src/oscar19.1/> ;
@@ -4931,7 +4928,7 @@
     :feature :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
-    :operatingSystem dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     a :SoftwareProduct ;
     rdfs:comment "Picture Archiving and Communication System Dummy 2"@en ;
     rdfs:label "Commercial PACS 2"@en .
@@ -5499,7 +5496,7 @@
     :interoperability :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
-    :operatingSystem dbr:Debian, dbr:Mac_OS, <http://dbpedia.org/resource/Ubuntu_(operating_system)> ;
+    :operatingSystem dbr:Debian, dbr:MacOS, <http://dbpedia.org/resource/Ubuntu> ;
     :organizationalUnit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/senaite> ;

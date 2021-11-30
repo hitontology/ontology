@@ -1,6 +1,6 @@
 FROM alpine
 RUN apk add raptor2
-WORKDIR /src
+WORKDIR /ontology
 COPY . .
 RUN ./build
-VOLUME /dist
+VOLUME /ontology/dist

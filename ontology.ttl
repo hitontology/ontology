@@ -734,7 +734,7 @@
 ### http://hitontology.eu/ontology/OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
                  rdfs:label "Operating System"@en ;
-				 vann:example dbr:Linux, dbr:Mac_OS, dbr:Microsoft_Windows ;
+				 vann:example dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
 				 rdfs:comment "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."@en . 
 
 ###  http://hitontology.eu/ontology/Interoperability
