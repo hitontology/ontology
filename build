@@ -1,20 +1,10 @@
 #/bin/sh
 # Combine all of HITO into one file.
-# Default value
-F="/tmp/hito.nt"
-# First argument has highest priority as filename.
-if test -n "$1"
-then
-	F=$1
-else
-	if test -n "$HITO_FILE"
-	then
-		F=$HITO_FILE
-	fi
-fi
-#FT="/tmp/hito.ttl"
+F="./dist/hito.nt"
+FT="./dist/hito.ttl"
 echo "" > $F
-ls *.ttl | xargs -I @ rapper -i turtle -o ntriples @ >> $F
+ls *.ttl | xargs -I @ rapper -q -i turtle -o ntriples @ >> $F
 #cat dbpedia/os.nt >> $F
-echo "Combined HITO into file $F with `wc -l < $F` lines."
-#cat prefix.ttl $F | rapper -i turtle -o turtle  - http://hitontology.eu/ontology/ > $FT
+echo "Combined HITO into file $F with `wc -l < $F` lines, converting to $FT."
+cat prefix.ttl $F | rapper -q -i turtle -o turtle  - http://hitontology.eu/ontology/ > $FT
+rm $F
