@@ -15,6 +15,6 @@ fi
 #FT="/tmp/hito.ttl"
 echo "" > $F
 ls *.ttl | xargs -I @ rapper -i turtle -o ntriples @ >> $F
-cat dbpedia/os.nt >> $F
+#cat dbpedia/os.nt >> $F
 echo "Combined HITO into file $F with `wc -l < $F` lines."
 #cat prefix.ttl $F | rapper -i turtle -o turtle  - http://hitontology.eu/ontology/ > $FT
