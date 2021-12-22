@@ -520,24 +520,24 @@
 
 ###  http://hitontology.eu/ontology/administrativeStaff
 :administrativeStaff rdf:type :UserGroupCitation ;
-                      :classifiedUserGroupSNOMEDCT :AdministrativeHealthcareStaffOccupation ;
+                      :userGroupClassified :AdministrativeHealthcareStaffOccupation ;
                       rdfs:label "administrative staff"@en .
 
 
 ###  http://hitontology.eu/ontology/clericalStaff
 :clericalStaff rdf:type :UserGroupCitation ;
-                :classifiedUserGroupSNOMEDCT :ClericalOccupationOccupation ;
+                :userGroupClassified :ClericalOccupationOccupation ;
                 rdfs:label "clerical staff"@en .
 
 
 ###  http://hitontology.eu/ontology/clerks
 :clerks rdf:type :UserGroupCitation ;
-        :classifiedUserGroupSNOMEDCT :ClerkOccupation ;
+        :userGroupClassified :ClerkOccupation ;
         rdfs:label "clerks"@en .
 
 
-###  http://hitontology.eu/ontology/classifiedUserGroupSNOMEDCT
-:classifiedUserGroupSNOMEDCT rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/userGroupClassified
+:userGroupClassified rdf:type owl:ObjectProperty ;
                              rdfs:domain :UserGroupCitation ;
                              rdfs:range :UserGroupClassified ;
                              rdfs:label "classified User Group SNOMEDCT"@en .
@@ -545,43 +545,43 @@
 
 ###  http://hitontology.eu/ontology/laboratoryStaff
 :laboratoryStaff rdf:type :UserGroupCitation ;
-                  :classifiedUserGroupSNOMEDCT :LaboratoryTechnicianOccupation ;
+                  :userGroupClassified :LaboratoryTechnicianOccupation ;
                   rdfs:label "laboratory staff"@en .
 
 
 ###  http://hitontology.eu/ontology/pharmacists
 :pharmacists rdf:type :UserGroupCitation ;
-             :classifiedUserGroupSNOMEDCT :PharmacistOccupation ;
+             :userGroupClassified :PharmacistOccupation ;
              rdfs:label "pharmacists"@en .
 
 
 ###  http://hitontology.eu/ontology/physicians
 :physicians rdf:type :UserGroupCitation ;
-            :classifiedUserGroupSNOMEDCT :PhysicianOccupation ;
+            :userGroupClassified :PhysicianOccupation ;
             rdfs:label "physicians"@en .
 
 
 ###  http://hitontology.eu/ontology/radiologists
 :radiologists rdf:type :UserGroupCitation ;
-              :classifiedUserGroupSNOMEDCT :RadiologistOccupation ;
+              :userGroupClassified :RadiologistOccupation ;
               rdfs:label "radiologists"@en .
 
 
 ###  http://hitontology.eu/ontology/surgeons
 :surgeons rdf:type :UserGroupCitation ;
-          :classifiedUserGroupSNOMEDCT :SurgeonOccupation ;
+          :userGroupClassified :SurgeonOccupation ;
           rdfs:label "surgeons"@en .
 
 
 ###  http://hitontology.eu/ontology/technicians
 :technicians rdf:type :UserGroupCitation ;
              owl:sameAs :technologists ;
-             :classifiedUserGroupSNOMEDCT :MedicalTechnicianOccupation ;
+             :userGroupClassified :MedicalTechnicianOccupation ;
              rdfs:label "technicians"@en .
 
 
 ###  http://hitontology.eu/ontology/womenOfReproductiveAge
 :womenOfReproductiveAge rdf:type :UserGroupCitation ;
-                           :classifiedUserGroupSNOMEDCT :WomanPerson ;
+                           :userGroupClassified :WomanPerson ;
                            rdfs:label "women of reproductive health"@en .
 

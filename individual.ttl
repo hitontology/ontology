@@ -1917,7 +1917,7 @@
 
 ###  http://hitontology.eu/ontology/laboratoryStaff
 :laboratoryStaff rdf:type :UserGroupCitation ;
-                  :classifiedUserGroup :SnomedLaboratoryTechnicianOccupation ;
+                  :userGroupClassified :SnomedLaboratoryTechnicianOccupation ;
                   rdfs:label "laboratory staff"@en .
 
 
@@ -2198,13 +2198,13 @@
 
 ###  http://hitontology.eu/ontology/pharmacists
 :pharmacists rdf:type :UserGroupCitation ;
-             :classifiedUserGroup :SnomedPharmacistOccupation ;
+             :userGroupClassified :SnomedPharmacistOccupation ;
              rdfs:label "pharmacists"@en .
 
 
 ###  http://hitontology.eu/ontology/physicians
 :physicians rdf:type :UserGroupCitation ;
-            :classifiedUserGroup :SnomedPhysicianOccupation ;
+            :userGroupClassified :SnomedPhysicianOccupation ;
             rdfs:label "physicians"@en .
 
 
@@ -2354,7 +2354,7 @@
 
 ###  http://hitontology.eu/ontology/radiologists
 :radiologists rdf:type :UserGroupCitation ;
-              :classifiedUserGroup :SnomedRadiologistOccupation ;
+              :userGroupClassified :SnomedRadiologistOccupation ;
               rdfs:label "radiologists"@en .
 
 
@@ -2631,7 +2631,7 @@
 
 ###  http://hitontology.eu/ontology/surgeons
 :surgeons rdf:type :UserGroupCitation ;
-          :classifiedUserGroup :SnomedSurgeonOccupation ;
+          :userGroupClassified :SnomedSurgeonOccupation ;
           rdfs:label "surgeons"@en .
 
 
@@ -2670,7 +2670,7 @@
 ###  http://hitontology.eu/ontology/technicians
 :technicians rdf:type :UserGroupCitation ;
              owl:sameAs :technologists ;
-             :classifiedUserGroup :SnomedMedicalTechnicianOccupation ;
+             :userGroupClassified :SnomedMedicalTechnicianOccupation ;
              rdfs:label "technicians"@en .
 
 
@@ -2862,7 +2862,7 @@
 
 ###  http://hitontology.eu/ontology/womenOfReproductiveAge
 :womenOfReproductiveAge rdf:type :UserGroupCitation ;
-                           :classifiedUserGroup :SnomedWomanPerson ;
+                           :userGroupClassified :SnomedWomanPerson ;
                            rdfs:label "women of reproductive age" .
 
 
