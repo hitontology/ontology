@@ -55,7 +55,7 @@
 	[sh:path :organizationalUnit],
 	[sh:path :userGroup],
 	[sh:path :directFeature],
-	[sh:path :directFunction],
+	[sh:path :directEnterpriseFunction],
 	[sh:path :directApplicationSystem],
 	[sh:path :directOrganizationalUnit],
 	[sh:path :directUserGroup],
@@ -63,7 +63,6 @@
 	[sh:path :softwareProductComponent];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
-
 
 #### Citation ###############################################################
 
@@ -167,10 +166,26 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-## Catalogue ################################################################
+#### Catalogue ##############################################################
 
 :CatalogueShape	rdf:type sh:NodeShape;
 	sh:targetClass :Catalogue;
 	sh:property :labelShape , :commentShape;
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+#### Other ##################################################################
+
+:SoftwareProductInstallation rdf:type sh:NodeShape;
+	sh:targetClass :SoftwareProduct;
+	sh:property :labelShape,
+	[sh:path :softwareProductInstallationComponent],
+	[sh:path :isOfType],
+	[sh:path :installationSupportsEnterpriseFunction];
+	[
+		sh:path [ sh:inversePath :softwareProductInstallation ];
+		sh:minCount 1;
+		sh:maxCount 1
+	];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
