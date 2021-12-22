@@ -20,7 +20,8 @@
 
 ###  http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue
 :SnomedEnvironmentOrganizationalUnitCatalogue rdf:type :OrganizationalUnitCatalogue ;
-                                              rdfs:label "SNOMED CT Environment Client Feature Catalogue"@en .
+                                              rdfs:label "SNOMED CT Environment Client Feature Catalogue"@en ;
+                                              rdfs:comment "SNOMED Clinical Terms Environment Client Feature Catalogue"@en .
 
 ###  http://hitontology.eu/ontology/SnomedAccidentAndEmergencyDepartmentEnvironment
 :SnomedAccidentAndEmergencyDepartmentEnvironment rdf:type :OrganizationalUnitClassified ;
@@ -403,7 +404,8 @@
 
 ###  http://hitontology.eu/ontology/SnomedUserGroupCatalogue
 :SnomedUserGroupCatalogue rdf:type :UserGroupCatalogue ;
-                          rdfs:label "SNOMED CT User Group Catalogue"@en .
+                          rdfs:label "SNOMED CT User Group Catalogue"@en ;
+						  rdfs:comment "SNOMED Clinical Terms User Group Catalogue"@en .
 
 ######################################################## User Group Classified
 
