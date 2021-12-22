@@ -18,6 +18,7 @@
 
 <http://hitontology.eu/ontology/3LGM2Baukasten>
     :client :Native ;
+    :enterpriseFunction <http://hitontology.eu/ontology/3LGM2Funcinformationmanagement> ;
     :homepage <https://www.3lgm2.de> ;
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
@@ -26,6 +27,11 @@
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
     rdfs:label "3LGM2 Baukasten"@en .
+
+<http://hitontology.eu/ontology/3LGM2Funcinformationmanagement>
+    :enterpriseFunctionClassified :BbInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Information Management"@en .
 
 :AbbotIStatFeatureCompleteTestResults
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
@@ -538,7 +544,7 @@
 :BikaLimsFeatCapturingQcResults
     :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
     a :FeatureCitation ;
-    rdfs:label "Capturing QC results "@en .
+    rdfs:label "Capturing QC results"@en .
 
 :BikaLimsFeatChainOfCustody
     a :FeatureCitation ;
@@ -1115,7 +1121,7 @@
     :interoperability :DICOM, <http://hitontology.eu/ontology/HL7_V2.x>, :IHE_XDS, :IHE_XDS_I, :WADO ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000003>, <http://www.ebi.ac.uk/swo/license/SWO_1000047>, <http://www.ebi.ac.uk/swo/license/SWO_9000080> ;
-    :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, <http://dbpedia.org/resource/Oracle_Solaris> ;
+    :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Oracle_Solaris ;
     :organizationalUnit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Smarty ;
@@ -1151,7 +1157,7 @@
 :Dcm4CheFeatConvertDicomFileToXml
     :featureClassified :BbManageStorageFormats ;
     a :FeatureCitation ;
-    rdfs:label "convert DICOM file to XML "@en .
+    rdfs:label "convert DICOM file to XML"@en .
 
 :Dcm4CheFeatDicomGeneralPurposeWorklist
     :featureClassified :JoshiPacsWorklistAndWorkflowOrganization ;
@@ -1190,7 +1196,7 @@
 :Dcm4CheFeatModalityWorklist
     :featureClassified :BbAssignOrdersToModalities, :BbAssignPatientsToModalities, :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
-    rdfs:label "Modality worklist "@en .
+    rdfs:label "Modality worklist"@en .
 
 :Dcm4CheFeatOutputContentToCdMedia
     :featureClassified :BbManageStorageMedia ;
@@ -1276,7 +1282,7 @@
     :interoperability :HL7_FHIR, :IHE, :LOINC, :REST, :SNOMED_CT ;
     :language dbr:English_language, dbr:French_language, dbr:Norwegian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Vietnamese_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000085> ;
-    :operatingSystem <http://dbpedia.org/resource/Ubuntu> ;
+    :operatingSystem dbr:Ubuntu ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/dhis2> ;
     a :SoftwareProduct ;
@@ -1301,7 +1307,7 @@
 :Dhis2FeatAggregateAndIndividualLevelData
     :featureClassified :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
-    rdfs:label "aggregate and individual-level data "@en .
+    rdfs:label "aggregate and individual-level data"@en .
 
 :Dhis2FeatBuiltInMapsApp
     :featureClassified :WhoDhiLocationMapping ;
@@ -1325,7 +1331,7 @@
 :Dhis2FeatContactTracing
     :featureClassified :WhoDhiMapLocationOfHealthEvents ;
     a :FeatureCitation ;
-    rdfs:label "contact tracing "@en .
+    rdfs:label "contact tracing"@en .
 
 :Dhis2FeatControlAccessWithSharingSettings
     :featureClassified :EhrSfmEntityAccessControl ;
@@ -1407,7 +1413,7 @@
 
 :Dhis2FeatEventReports
     a :FeatureCitation ;
-    rdfs:label "event Reports "@en .
+    rdfs:label "event reports"@en .
 
 :Dhis2FeatEventVisualizer
     :featureClassified :WhoDhiDataSynthesisAndVisualization, :WhoDhiMapLocationOfHealthEvents ;
@@ -1466,7 +1472,7 @@
 
 :Dhis2FeatSendAutomatedSmsMessagesToPatients
     a :FeatureCitation ;
-    rdfs:label "send automated SMS messages to patients "@en .
+    rdfs:label "send automated SMS messages to patients"@en .
 
 :Dhis2FeatShareInterpretationsOfData
     :featureClassified :EhrSfmSupportForCohortAndAggregateDataSharing ;
@@ -1838,7 +1844,7 @@
 
 :ElexisFeatRechnungsuebersicht
     a :FeatureCitation ;
-    rdfs:label "Rechnungsübersicht "@en .
+    rdfs:label "Rechnungsübersicht"@en .
 
 :ElexisFeatReminderPendenzen
     :featureClassified :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
@@ -1967,7 +1973,7 @@
     :interoperability :HL7, :HL7_FHIR, :ICD10, :ICD9, :ICPM ;
     :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, <http://dbpedia.org/resource/Ubuntu> ;
+    :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, dbr:Ubuntu ;
     :organizationalUnit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :softwareProductComponent :Occhiolino ;
@@ -2883,7 +2889,7 @@
 :MedkeyFeatAccessControl
     :featureClassified :EhrSfmEntityAccessControl ;
     a :FeatureCitation ;
-    rdfs:label "Access control "@en .
+    rdfs:label "Access control"@en .
 
 :MedkeyFeatCRMFunctions
     a :FeatureCitation ;
@@ -3067,7 +3073,7 @@
     :interoperability :XML ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000068> ;
-    :operatingSystem <http://dbpedia.org/resource/Android_(operating_system)>, dbr:IOS, dbr:Linux, dbr:Microsoft_Windows, dbr:MacOS, dbr:Unix-like ;
+    :operatingSystem <http://dbpedia.org/resource/Android_(operating_system)>, dbr:IOS, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/odoo/odoo> ;
     :softwareProductComponent :Bahmni ;
@@ -3254,7 +3260,7 @@
 :OpenClinicGaFuncHumanResourceManagementModule
     :enterpriseFunctionClassified :BbHumanResourceManagement, :WhoDhiHumanResourceManagement ;
     a :EnterpriseFunctionCitation ;
-    rdfs:label "Human resource management module "@en .
+    rdfs:label "Human resource management module"@en .
 
 :OpenClinicGaFuncLabManagement
     :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
@@ -3659,7 +3665,7 @@
     :interoperability :HL7_FHIR, <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :operatingSystem <http://dbpedia.org/resource/Ubuntu> ;
+    :operatingSystem dbr:Ubuntu ;
     :organizationalUnit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Java_(programming_language)>, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/openelisglobal> ;
@@ -4112,7 +4118,7 @@
 
 :OpenEyesFeatViewingOfDocuments
     a :FeatureCitation ;
-    rdfs:label "viewing of documents at video refresh rates "@en .
+    rdfs:label "viewing of documents at video refresh rates"@en .
 
 :OpenEyesFeatureAutoPopulateATemplatedLetter
     :featureClassified :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
@@ -4627,7 +4633,7 @@
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
-    :operatingSystem dbr:Linux, dbr:Microsoft_Windows, dbr:MacOS, dbr:Unix-like ;
+    :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
     :organizationalUnit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://hg.orthanc-server.com/> ;
@@ -5201,7 +5207,7 @@
 :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing
     :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
-    rdfs:label "Cancellation of transferred billing data and subsequent processing "@en .
+    rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory
     :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
@@ -5221,7 +5227,7 @@
 :Ris1FeatElectronicRecordingOfResultsAndExaminations
     :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
-    rdfs:label "Electronic recording of results and examinations "@en .
+    rdfs:label "Electronic recording of results and examinations"@en .
 
 :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting
     :featureClassified :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
@@ -5231,7 +5237,7 @@
 :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations
     :featureClassified :WhoDhiMapLocationOfHealthFacilitiesstructures ;
     a :FeatureCitation ;
-    rdfs:label "Full range of functions at decentralized workstations "@en .
+    rdfs:label "Full range of functions at decentralized workstations"@en .
 
 :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers
     :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
@@ -5306,7 +5312,7 @@
 :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing
     :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
-    rdfs:label "Cancellation of transferred billing data and subsequent processing "@en .
+    rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory
     :enterpriseFunctionClassified :BbArchivingOfPatientInformation ;
@@ -5321,7 +5327,7 @@
 :Ris1FuncElectronicRecordingOfResultsAndExaminations
     :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
-    rdfs:label "Electronic recording of results and examinations "@en .
+    rdfs:label "Electronic recording of results and examinations"@en .
 
 :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers
     :enterpriseFunctionClassified :BbOrderEntry ;
@@ -5496,7 +5502,7 @@
     :interoperability :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
-    :operatingSystem dbr:Debian, dbr:MacOS, <http://dbpedia.org/resource/Ubuntu> ;
+    :operatingSystem dbr:Debian, dbr:MacOS, dbr:Ubuntu ;
     :organizationalUnit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/senaite> ;
@@ -5634,7 +5640,7 @@
 
 :SenaiteFeatRolesAndGroupsWithDifferentPermissions
     a :FeatureCitation ;
-    rdfs:label "Roles and groups with different permissions "@en .
+    rdfs:label "Roles and groups with different permissions"@en .
 
 :SenaiteFeatSampleTemplates
     a :FeatureCitation ;
@@ -5684,7 +5690,7 @@
 :SenaiteOrgLab
     :organizationalUnitClassified :SnomedLaboratoryEnvironment ;
     a :OrganizationalUnitCitation ;
-    rdfs:label "Lab "@en .
+    rdfs:label "Lab"@en .
 
 :SenaiteUserLaboratoryAnalyst
     :userGroupClassified :SnomedLaboratoryTechnicianOccupation ;
