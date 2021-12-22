@@ -330,7 +330,7 @@
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range swo:SWO_0000002 ;
                     rdfs:label "license"@en ;
-					vann:example swol:SWO_9000085, swol:SWO_9000084, swol:SWO_1000046 ; 
+					vann:example swol:SWO_9000085, swol:SWO_9000084, swol:SWO_1000046 ;
 					rdfs:comment "the license under which a software product is distributed."@en .
 
 
@@ -406,7 +406,7 @@
                     rdfs:range :SoftwareProductInstallation;
                     rdfs:label "software product installation"@en ;
                     dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-					#vann:example 
+					#vann:example
 					rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
 
 
@@ -620,7 +620,7 @@
 :ApplicationSystemCitation rdf:type owl:Class ;
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Type Citation"@en ;
-						   vann:example :BahmniAppHospitalSystem, :EChasquiLaboratoryInformationSystem ; 
+						   vann:example :BahmniAppHospitalSystem, :EChasquiLaboratoryInformationSystem ;
                            rdfs:comment "The natural language term an author uses for the application system, which is evaluated in the study."@en .
 
 
@@ -735,7 +735,7 @@
 :OperatingSystem rdf:type owl:Class ;
                  rdfs:label "Operating System"@en ;
 				 vann:example dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
-				 rdfs:comment "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."@en . 
+				 rdfs:comment "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."@en .
 
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
@@ -792,7 +792,7 @@
                            rdfs:label "Outcome Criteria Classified"@en ;
 						   vann:example :Communication, :EconomicOutcome, :OutcomeCriteriaClassified ;
 						   # TODO: Add DOI of "An inventory of evaluation studies of information technology in health care: trends in evaluation research"
-						   # dcterms:source ... 
+						   # dcterms:source ...
  						   rdfs:comment "Classified catalogue entry of an outcome criteria."@en .
 
 
