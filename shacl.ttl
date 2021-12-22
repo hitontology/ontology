@@ -1,0 +1,176 @@
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ov: <http://open.vocab.org/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix yago: <http://dbpedia.org/class/yago/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix swo: <http://www.ebi.ac.uk/swo/>.
+@prefix swol: <http://www.ebi.ac.uk/swo/license/>.
+@prefix bibo: <http://purl.org/ontology/bibo/>.
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh:<http://www.w3.org/ns/shacl#> .
+@base <http://hitontology.eu/ontology/> .
+
+:ignoredProperties rdf:first vann:example;
+	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy) .
+
+:labelShape rdf:type sh:PropertyShape;
+	sh:path rdfs:label;
+	sh:minCount 1 .
+
+:commentShape rdf:type sh:PropertyShape;
+	sh:path rdfs:comment;
+	sh:minCount 1 .
+
+#### Software Product #######################################################
+
+:SoftwareProductShape rdf:type sh:NodeShape;
+	sh:targetClass :SoftwareProduct;
+	sh:property :labelShape,
+	[sh:path :interoperability],
+	[sh:path :certification],
+	[sh:path :operatingSystem],
+	[sh:path :client],
+	[sh:path :language],
+	[sh:path :programmingLanguage],
+	[sh:path :databaseSystem],
+	[sh:path :license],
+	[sh:path :programmingLibrary],
+	[sh:path :homepage],
+	[sh:path :codeRepository],
+	[sh:path :softwareProductInstallation],
+	[sh:path :feature],
+	[sh:path :enterpriseFunction],
+	[sh:path :applicationSystem],
+	[sh:path :organizationalUnit],
+	[sh:path :userGroup],
+	[sh:path :directFeature],
+	[sh:path :directFunction],
+	[sh:path :directApplicationSystem],
+	[sh:path :directOrganizationalUnit],
+	[sh:path :directUserGroup],
+	[sh:path :repository],
+	[sh:path :softwareProductComponent];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+
+#### Citation ###############################################################
+
+:EnterpriseFunctionCitationShape rdf:type sh:NodeShape;
+	sh:targetClass :EnterpriseFunctionCitation;
+	sh:property :labelShape, [
+		sh:path :enterpriseFunctionClassified;
+	];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:FeatureCitationShape rdf:type sh:NodeShape;
+	sh:targetClass :FeatureCitation;
+	sh:property :labelShape, [
+		sh:path :featureClassified;
+	] ,
+	[sh:path :supportsFunction];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:ApplicationSystemCitationShape rdf:type sh:NodeShape;
+	sh:targetClass :ApplicationSystemCitation;
+	sh:property :labelShape, [
+		sh:path :applicationSystemClassified;
+	];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:UserGroupCitationShape rdf:type sh:NodeShape;
+	sh:targetClass :UserGroupCitation;
+	sh:property :labelShape, [
+		sh:path :userGroupClassified;
+	];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:OrganizationalUnitCitationShape rdf:type sh:NodeShape;
+	sh:targetClass :OrganizationalUnitCitation;
+	sh:property :labelShape, [
+		sh:path :organizationalUnitClassified;
+	];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+#### Classified ################################################################
+
+:EnterpriseFunctionClassifiedShape rdf:type sh:NodeShape;
+	sh:targetClass :EnterpriseFunctionClassified;
+	sh:property :labelShape, [
+		sh:path :enterpriseFunctionCatalogue;
+		sh:minCount 1;
+		sh:maxCount 1
+	],
+	[sh:path :subFunctionOf ];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:FeatureClassifiedShape rdf:type sh:NodeShape;
+	sh:targetClass :FeatureClassified;
+	sh:property :labelShape, [
+		sh:path :featureCatalogue;
+		sh:minCount 1;
+		sh:maxCount 1
+	],
+	[sh:path :subFeatureOf] ,
+	[sh:path :supportsFunctionClassified ];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:ApplicationSystemClassifiedShape rdf:type sh:NodeShape;
+	sh:targetClass :ApplicationSystemClassified;
+	sh:property :labelShape, [
+		sh:path :applicationSystemCatalogue;
+		sh:minCount 1;
+		sh:maxCount 1
+	];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:UserGroupClassifiedShape rdf:type sh:NodeShape;
+	sh:targetClass :UserGroupClassified;
+	sh:property :labelShape, [
+		sh:path :userGroupCatalogue;
+		sh:minCount 1;
+		sh:maxCount 1
+	],
+	[sh:path :userGroupSctid],
+	[sh:path :vancouverReference];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+:OrganizationalUnitClassifiedShape rdf:type sh:NodeShape;
+	sh:targetClass :OrganizationalUnitClassified;
+	sh:property :labelShape, [
+		sh:path :organizationalUnitCatalogue;
+		sh:minCount 1;
+		sh:maxCount 1
+	],
+	[sh:path :organizationalUnitSctid],
+	[sh:path :vancouverReference];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
+
+## Catalogue ################################################################
+
+:CatalogueShape	rdf:type sh:NodeShape;
+	sh:targetClass :Catalogue;
+	sh:property :labelShape , :commentShape;
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties .
