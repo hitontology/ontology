@@ -2,7 +2,7 @@
 
 The source of truth for HITO, excluding software products and related attributes, whose source is the database initially filled by <https://github.com/hitontology/database>, and catalogues, which are created in spreadsheets and transformed using <https://github.com/hitontology/csv2rdf>.
 
-To create a combined file, execute the `build` script, which creates `/dist/hito.ttl` and `/tmp/hito-all.ttl`.
+To create a combined file, execute the `build` script, which creates `/dist/hito.ttl` and `/dist/hito.nt`.
 This file can then be uploaded to the HITO SPARQL endpoint:
 
 1. Login to <https://hitontology.eu/conductor/>
@@ -25,6 +25,7 @@ programminglibrary.ttl	| here 				| instances of hito:ProgrammingLibrary
 standard.ttl			| here				| instances of hito:Interoperability
 individual.ttl			| here				| journal descriptions
 medfloss.ttl			| here				| <https://www.medfloss.org> sources
+shacl.ttl				| here				| SHACL shapes for validation
 hl7ehrsfm.ttl			| csv2rdf			| HL7 EHR-S FM catalogues
 bb.ttl					| csv2rdf	 		| "Blue Book" catalogues
 joshipacs.ttl			| csv2rdf			| PACS feature catalogue
@@ -49,3 +50,14 @@ See <https://github.com/hitontology/database>.
 
 ## Import catalogues
 See <https://github.com/hitontology/csv2rdf>.
+
+## Validation
+While syntactic validation can be done using `rapper -c`, syntactically correct data may still violate the HITO ontology or the HITO diagram including cardinalities.
+
+### Quality Check
+The [HITO Quality Check Tool](https://hitontology.eu/qualitycheck/) contains custom error and warning categories based on SPARQL queries.
+
+### SHACL
+SHACL shapes including cardinalities for closed-world validation are included in `shacl.ttl`.
+Validate using `scripts/shacl`.
+Requires [pySHACL](https://github.com/RDFLib/pySHACL) to be installed and available as `pyshacl`.
