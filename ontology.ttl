@@ -531,7 +531,7 @@
           rdfs:domain :OrganizationalUnitClassified ;
           rdfs:range xsd:nonNegativeInteger ;
           rdfs:label "unit SCTID"@en ;
-          rdfs:comment "SCTID of an organizational unit"@en .
+          rdfs:comment "SNOMED CT identifier of an organizational unit"@en .
 
 
 ###  http://hitontology.eu/ontology/userGroupSctid
