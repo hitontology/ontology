@@ -181,7 +181,7 @@
 	sh:property :labelShape,
 	[sh:path :softwareProductInstallationComponent],
 	[sh:path :isOfType],
-	[sh:path :installationSupportsEnterpriseFunction];
+	[sh:path :installationSupportsEnterpriseFunction],
 	[
 		sh:path [ sh:inversePath :softwareProductInstallation ];
 		sh:minCount 1;
