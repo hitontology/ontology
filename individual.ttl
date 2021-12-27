@@ -90,13 +90,6 @@
                                                                                    rdfs:label "Genetics in medicine : official journal of the American College of Medical Genetics" .
 
 
-###  http://hitontology.eu/ontology/Geriatry
-:Geriatry rdf:type owl:NamedIndividual ,
-                   :OrganizationalUnitCitation ;
-          :organizationalUnitSctid 309933000 ;
-          rdfs:label "Geriatry"@en .
-
-
 ###  http://hitontology.eu/ontology/HardwareQuality
 :HardwareQuality rdf:type :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
@@ -107,13 +100,6 @@
 :Health-relatedOutcome rdf:type :OutcomeCriteriaClassified ;
                         :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                         rdfs:label "Health-related outcome"@en .
-
-
-###  http://hitontology.eu/ontology/HealthCenter
-:HealthCenter rdf:type owl:NamedIndividual ,
-                       :OrganizationalUnitCitation ;
-               :organizationalUnitSctid 264361005 ;
-               rdfs:label "Health center"@en .
 
 
 ###  http://hitontology.eu/ontology/ICNPAsClassificationSystem
