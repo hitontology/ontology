@@ -176,8 +176,8 @@
 
 #### Other ##################################################################
 
-:SoftwareProductInstallation rdf:type sh:NodeShape;
-	sh:targetClass :SoftwareProduct;
+:SoftwareProductInstallationShape rdf:type sh:NodeShape;
+	sh:targetClass :SoftwareProductInstallation;
 	sh:property :labelShape,
 	[sh:path :softwareProductInstallationComponent],
 	[sh:path :isOfType],
