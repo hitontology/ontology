@@ -2662,7 +2662,7 @@
 
 ###  http://hitontology.eu/ontology/technologists
 :technologists rdf:type :UserGroupCitation ;
-               :organizationalUnitClassified :MedicalTechnicianOccupation ;
+               :userGroupClassified :SnomedMedicalTechnicianOccupation ;
                rdfs:label "technologists"@en .
 
 
