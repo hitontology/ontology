@@ -24,17 +24,17 @@
 :ignoredProperties rdf:first vann:example;
 	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy) .
 
-:labelShape rdf:type sh:PropertyShape;
+:labelShape a sh:PropertyShape;
 	sh:path rdfs:label;
 	sh:minCount 1 .
 
-:commentShape rdf:type sh:PropertyShape;
+:commentShape a sh:PropertyShape;
 	sh:path rdfs:comment;
 	sh:minCount 1 .
 
 #### Software Product #######################################################
 
-:SoftwareProductShape rdf:type sh:NodeShape;
+:SoftwareProductShape a sh:NodeShape;
 	sh:targetClass :SoftwareProduct;
 	sh:property :labelShape,
 	[sh:path :interoperability],
@@ -66,7 +66,7 @@
 
 #### Software Product Attribute Classes #####################################
 
-:InteroperabilityShape rdf:type sh:NodeShape;
+:InteroperabilityShape a sh:NodeShape;
 	sh:targetClass :Interoperability;
 	sh:property :labelShape;
 	sh:property [sh:path :subStandardOf];
@@ -74,49 +74,49 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:CertificationShape rdf:type sh:NodeShape;
+:CertificationShape a sh:NodeShape;
 	sh:targetClass :Certification;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:OperatingSystemShape rdf:type sh:NodeShape;
+:OperatingSystemShape a sh:NodeShape;
 	sh:targetClass :OperatingSystem;
 	sh:property :labelShape;
 	sh:pattern "^http://dbpedia.org/resource/";
 	sh:closed false;
 	sh:ignoredProperties :ignoredProperties.
 
-:ClientShape rdf:type sh:NodeShape;
+:ClientShape a sh:NodeShape;
 	sh:targetClass :Client;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:LanguageShape rdf:type sh:NodeShape;
+:LanguageShape a sh:NodeShape;
 	sh:targetClass :Language;
 	sh:property :labelShape;
 	sh:pattern "^http://dbpedia.org/resource/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:ProgrammingLanguageShape rdf:type sh:NodeShape;
+:ProgrammingLanguageShape a sh:NodeShape;
 	sh:targetClass :ProgrammingLanguage;
 	sh:property :labelShape;
 	sh:pattern "^http://dbpedia.org/resource/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:DatabaseSystemShape rdf:type sh:NodeShape;
+:DatabaseSystemShape a sh:NodeShape;
 	sh:targetClass :DatabaseSystem;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:LicenseShape rdf:type sh:NodeShape;
+:LicenseShape a sh:NodeShape;
 	sh:targetClass :License;
 	sh:property :labelShape,
 		[sh:path rdfs:subClassOf];
@@ -124,21 +124,21 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:ProgrammingLibraryShape rdf:type sh:NodeShape;
+:ProgrammingLibraryShape a sh:NodeShape;
 	sh:targetClass :ProgrammingLibrary;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:HomepageShape rdf:type sh:NodeShape;
+:HomepageShape a sh:NodeShape;
 	sh:targetClass :Homepage;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:CodeRepositoryShape rdf:type sh:NodeShape;
+:CodeRepositoryShape a sh:NodeShape;
 	sh:targetClass :CodeRepository;
 	sh:property :labelShape;
 	sh:pattern "^http://dbpedia.org/resource/";
@@ -148,7 +148,7 @@
 
 #### Citation ###############################################################
 
-:EnterpriseFunctionCitationShape rdf:type sh:NodeShape;
+:EnterpriseFunctionCitationShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionCitation;
 	sh:property :labelShape, [
 		sh:path :enterpriseFunctionClassified;
@@ -156,7 +156,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:FeatureCitationShape rdf:type sh:NodeShape;
+:FeatureCitationShape a sh:NodeShape;
 	sh:targetClass :FeatureCitation;
 	sh:property :labelShape, [
 		sh:path :featureClassified;
@@ -165,7 +165,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:ApplicationSystemCitationShape rdf:type sh:NodeShape;
+:ApplicationSystemCitationShape a sh:NodeShape;
 	sh:targetClass :ApplicationSystemCitation;
 	sh:property :labelShape, [
 		sh:path :applicationSystemClassified;
@@ -173,7 +173,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:UserGroupCitationShape rdf:type sh:NodeShape;
+:UserGroupCitationShape a sh:NodeShape;
 	sh:targetClass :UserGroupCitation;
 	sh:property :labelShape, [
 		sh:path :userGroupClassified;
@@ -181,7 +181,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:OrganizationalUnitCitationShape rdf:type sh:NodeShape;
+:OrganizationalUnitCitationShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitCitation;
 	sh:property :labelShape, [
 		sh:path :organizationalUnitClassified;
@@ -191,7 +191,7 @@
 
 #### Classified ################################################################
 
-:EnterpriseFunctionClassifiedShape rdf:type sh:NodeShape;
+:EnterpriseFunctionClassifiedShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionClassified;
 	sh:property :labelShape, [
 		sh:path :enterpriseFunctionCatalogue;
@@ -202,7 +202,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:FeatureClassifiedShape rdf:type sh:NodeShape;
+:FeatureClassifiedShape a sh:NodeShape;
 	sh:targetClass :FeatureClassified;
 	sh:property :labelShape, [
 		sh:path :featureCatalogue;
@@ -214,7 +214,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:ApplicationSystemClassifiedShape rdf:type sh:NodeShape;
+:ApplicationSystemClassifiedShape a sh:NodeShape;
 	sh:targetClass :ApplicationSystemClassified;
 	sh:property :labelShape, [
 		sh:path :applicationSystemCatalogue;
@@ -224,7 +224,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:UserGroupClassifiedShape rdf:type sh:NodeShape;
+:UserGroupClassifiedShape a sh:NodeShape;
 	sh:targetClass :UserGroupClassified;
 	sh:property :labelShape, [
 		sh:path :userGroupCatalogue;
@@ -236,7 +236,7 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
-:OrganizationalUnitClassifiedShape rdf:type sh:NodeShape;
+:OrganizationalUnitClassifiedShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitClassified;
 	sh:property :labelShape, [
 		sh:path :organizationalUnitCatalogue;
@@ -250,7 +250,7 @@
 
 #### Catalogue ##############################################################
 
-:CatalogueShape	rdf:type sh:NodeShape;
+:CatalogueShape	a sh:NodeShape;
 	sh:targetClass :Catalogue;
 	sh:property :labelShape , :commentShape;
 	sh:closed true;
@@ -258,7 +258,7 @@
 
 #### Other ##################################################################
 
-:SoftwareProductInstallationShape rdf:type sh:NodeShape;
+:SoftwareProductInstallationShape a sh:NodeShape;
 	sh:targetClass :SoftwareProductInstallation;
 	sh:property :labelShape,
 	[sh:path :softwareProductInstallationComponent],
