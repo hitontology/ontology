@@ -553,13 +553,6 @@
 
 ###  http://hitontology.eu/ontology/vancouverReference
 :vancouverReference rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :ApplicationSystemClassified ,
-                                :FeatureClassified ,
-                                :OrganizationalUnitClassified ,
-                                :OutcomeCriteriaClassified ,
-                                :Study ,
-                                :StudyMethodClassified ,
-                                :UserGroupClassified ;
                     rdfs:range xsd:string ;
                     rdfs:comment "vancouver Reference"@en .
 
