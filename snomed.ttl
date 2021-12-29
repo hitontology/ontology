@@ -520,19 +520,19 @@
 
 ###  http://hitontology.eu/ontology/administrativeStaff
 :administrativeStaff rdf:type :UserGroupCitation ;
-                      :userGroupClassified :AdministrativeHealthcareStaffOccupation ;
+                      :userGroupClassified :SnomedAdministrativeHealthcareStaffOccupation ;
                       rdfs:label "administrative staff"@en .
 
 
 ###  http://hitontology.eu/ontology/clericalStaff
 :clericalStaff rdf:type :UserGroupCitation ;
-                :userGroupClassified :ClericalOccupationOccupation ;
+                :userGroupClassified :SnomedClericalOccupationOccupation ;
                 rdfs:label "clerical staff"@en .
 
 
 ###  http://hitontology.eu/ontology/clerks
 :clerks rdf:type :UserGroupCitation ;
-        :userGroupClassified :ClerkOccupation ;
+        :userGroupClassified :SnomedClerkOccupation ;
         rdfs:label "clerks"@en .
 
 
@@ -545,43 +545,42 @@
 
 ###  http://hitontology.eu/ontology/laboratoryStaff
 :laboratoryStaff rdf:type :UserGroupCitation ;
-                  :userGroupClassified :LaboratoryTechnicianOccupation ;
+                  :userGroupClassified :SnomedLaboratoryTechnicianOccupation ;
                   rdfs:label "laboratory staff"@en .
 
 
 ###  http://hitontology.eu/ontology/pharmacists
 :pharmacists rdf:type :UserGroupCitation ;
-             :userGroupClassified :PharmacistOccupation ;
+             :userGroupClassified :SnomedPharmacistOccupation ;
              rdfs:label "pharmacists"@en .
 
 
 ###  http://hitontology.eu/ontology/physicians
 :physicians rdf:type :UserGroupCitation ;
-            :userGroupClassified :PhysicianOccupation ;
+            :userGroupClassified :SnomedPhysicianOccupation ;
             rdfs:label "physicians"@en .
 
 
 ###  http://hitontology.eu/ontology/radiologists
 :radiologists rdf:type :UserGroupCitation ;
-              :userGroupClassified :RadiologistOccupation ;
+              :userGroupClassified :SnomedRadiologistOccupation ;
               rdfs:label "radiologists"@en .
 
 
 ###  http://hitontology.eu/ontology/surgeons
 :surgeons rdf:type :UserGroupCitation ;
-          :userGroupClassified :SurgeonOccupation ;
+          :userGroupClassified :SnomedSurgeonOccupation ;
           rdfs:label "surgeons"@en .
 
 
 ###  http://hitontology.eu/ontology/technicians
 :technicians rdf:type :UserGroupCitation ;
              owl:sameAs :technologists ;
-             :userGroupClassified :MedicalTechnicianOccupation ;
+             :userGroupClassified :SnomedMedicalTechnicianOccupation ;
              rdfs:label "technicians"@en .
 
 
 ###  http://hitontology.eu/ontology/womenOfReproductiveAge
 :womenOfReproductiveAge rdf:type :UserGroupCitation ;
-                           :userGroupClassified :WomanPerson ;
+                           :userGroupClassified :SnomedWomanPerson ;
                            rdfs:label "women of reproductive health"@en .
-
