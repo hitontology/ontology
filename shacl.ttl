@@ -391,6 +391,26 @@
 
 #### Classified Range ######################################################
 
+:FeatureClassifiedRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :featureClassified;
+	sh:class :FeatureClassified.
+
+:EnterpriseFunctionClassifiedRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :enterpriseFunctionClassified;
+	sh:class :EnterpriseFunctionClassified.
+
+:ApplicationSystemClassifiedRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :applicationSystemClassified;
+	sh:class :ApplicationSystemClassified.
+
+:OrganizationalUnitClassifiedRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :organizationalUnitClassified;
+	sh:class :OrganizationalUnitClassified.
+
+:UserGroupClassifiedRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :userGroupClassified;
+	sh:class :UserGroupClassified.
+
 #### Catalogue ##############################################################
 
 :CatalogueShape	a sh:NodeShape;
