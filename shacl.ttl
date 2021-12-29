@@ -419,6 +419,50 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
+#### Catalogue Domain ######################################################
+
+:FeatureCatalogueDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :featureCatalogue;
+	sh:class :FeatureClassified.
+
+:EnterpriseFunctionCatalogueDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :enterpriseFunctionCatalogue;
+	sh:class :EnterpriseFunctionClassified.
+
+:ApplicationSystemCatalogueDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :applicationSystemCatalogue;
+	sh:class :ApplicationSystemClassified.
+
+:OrganizationalUnitCatalogueDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :organizationalUnitCatalogue;
+	sh:class :OrganizationalUnitClassified.
+
+:UserGroupCatalogueDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :userGroupCatalogue;
+	sh:class :UserGroupClassified.
+
+#### Catalogue Range ######################################################
+
+:FeatureCatalogueRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :featureCatalogue;
+	sh:class :FeatureCatalogue.
+
+:EnterpriseFunctionCatalogueRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :enterpriseFunctionCatalogue;
+	sh:class :EnterpriseFunctionCatalogue.
+
+:ApplicationSystemCatalogueRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :applicationSystemCatalogue;
+	sh:class :ApplicationSystemCatalogue.
+
+:OrganizationalUnitCatalogueRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :organizationalUnitCatalogue;
+	sh:class :OrganizationalUnitCatalogue.
+
+:UserGroupCatalogueRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :userGroupCatalogue;
+	sh:class :UserGroupCatalogue.
+
 #### Other ##################################################################
 
 :SoftwareProductInstallationShape a sh:NodeShape;
