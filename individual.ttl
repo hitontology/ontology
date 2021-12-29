@@ -1649,7 +1649,7 @@
 
 ###  http://hitontology.eu/ontology/healthCenters
 :healthCenters rdf:type :OrganizationalUnitCitation ;
-                :organizationalUnitClassified :SnomedHealthCenter ;
+                :organizationalUnitClassified :SnomedHealthCenterEnvironment ;
                 rdfs:label "health centers"@en .
 
 
