@@ -47,7 +47,6 @@
 	[sh:path :license],
 	[sh:path :programmingLibrary],
 	[sh:path :homepage],
-	[sh:path :codeRepository],
 	[sh:path :softwareProductInstallation],
 	[sh:path :feature],
 	[sh:path :enterpriseFunction],
@@ -63,6 +62,134 @@
 	[sh:path :softwareProductComponent];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
+
+#### Software Product Domain ################################################
+
+:SoftwareProductDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf
+		:interoperability,
+		:certification,
+		:operatingSystem,
+		:client,
+		:language,
+		:programmingLanguage,
+		:databaseSystem,
+		:license,
+		:programmingLibrary,
+		:homepage,
+		:softwareProductInstallation,
+		:feature,
+		:enterpriseFunction,
+		:applicationSystem,
+		:organizationalUnit,
+		:userGroup,
+		:directFeature,
+		:directEnterpriseFunction,
+		:directApplicationSystem,
+		:directOrganizationalUnit,
+		:directUserGroup,
+		:repository,
+		:softwareProductComponent;
+	sh:class :SoftwareProduct.
+
+#### Software Product Range ################################################
+
+:InteroperabilityRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :interoperability;
+	sh:class :Interoperability.
+
+:CertificationRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :certification;
+	sh:class :Certification.
+
+:OperatingSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :operatingSystem;
+	sh:class :OperatingSystem.
+
+:ClientRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :client;
+	sh:class :Client.
+
+:LanguageRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :language;
+	sh:class dbo:Language.
+
+:ProgrammingLanguageRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :programmingLanguage;
+	sh:class dbo:ProgrammingLanguage.
+
+:DatabaseSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :databaseSystem;
+	sh:class :DatabaseSystem.
+
+:LicenseRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :license;
+	sh:class :License.
+
+:ProgrammingLibraryRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :programmingLibrary;
+	sh:class :ProgrammingLibrary.
+
+:HomepageRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :homepage;
+	sh:nodeKind sh:IRI.
+
+:SoftwareProductInstallationRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :softwareProductInstallation;
+	sh:class :SoftwareProductInstallation.
+
+:FeatureRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :feature;
+	sh:class :FeatureCitation.
+
+:EnterpriseFunctionRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :enterpriseFunction;
+	sh:class :EnterpriseFunctionCitation.
+
+:ApplicationSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :applicationSystem;
+	sh:class :ApplicationSystemCitation.
+
+:OrganizationalUnitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :organizationalUnit;
+	sh:class :OrganizationalUnitCitation.
+
+:UserGroupRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :userGroup;
+	sh:class :UserGroupCitation.
+
+:DirectFeatureRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :directFeature;
+	sh:class :FeatureClassified.
+
+:DirectEnterpriseFunctionRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :directEnterpriseFunction;
+	sh:class :EnterpriseFunctionClassified.
+
+:DirectApplicationSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :directApplicationSystem;
+	sh:class :ApplicationSystemClassified.
+
+:DirectOrganizationalUnitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :directOrganizationalUnit;
+	sh:class :OrganizationalUnitClassified.
+
+:DirectUserGroupRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :directUserGroup;
+	sh:class :UserGroupClassified.
+
+:RepositoryRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :repository;
+	#Causes a runtime error in PySHACL, see https://github.com/RDFLib/pySHACL/issues/114
+	#sh:path [
+	#		sh:path [ sh:inversePath :repository ];
+	#		sh:maxCount 1
+	#];
+	sh:nodeKind sh:IRI.
+
+:SoftwareProductComponentRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :softwareProductComponent;
+	sh:class :SoftwareProduct.
 
 #### Software Product Attribute Classes #####################################
 
@@ -137,14 +264,6 @@
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
-
-:CodeRepositoryShape a sh:NodeShape;
-	sh:targetClass :CodeRepository;
-	sh:property :labelShape;
-	sh:pattern "^http://dbpedia.org/resource/";
-	sh:closed true;
-	sh:ignoredProperties :ignoredProperties.
-
 
 #### Citation ###############################################################
 
@@ -247,6 +366,30 @@
 	[sh:path :vancouverReference];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
+
+#### Classified Domain ######################################################
+
+:FeatureClassifiedDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :featureClassified;
+	sh:class :FeatureCitation.
+
+:EnterpriseFunctionClassifiedDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :enterpriseFunctionClassified;
+	sh:class :EnterpriseFunctionCitation.
+
+:ApplicationSystemClassifiedDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :applicationSystemClassified;
+	sh:class :ApplicationSystemCitation.
+
+:OrganizationalUnitClassifiedDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :organizationalUnitClassified;
+	sh:class :OrganizationalUnitCitation.
+
+:UserGroupClassifiedDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :userGroupClassified;
+	sh:class :UserGroupCitation.
+
+#### Classified Range ######################################################
 
 #### Catalogue ##############################################################
 
