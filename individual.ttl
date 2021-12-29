@@ -10,7 +10,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
-@prefix bibo: <http://purl.org/ontology/bibo/>. 
+@prefix bibo: <http://purl.org/ontology/bibo/>.
 @base <http://hitontology.eu/ontology/> .
 
 #################################################################
@@ -1237,7 +1237,7 @@
 
 ###  http://hitontology.eu/ontology/cancelledPrescriptions
 :cancelledPrescriptions rdf:type :OutcomeCriteriaCitation ;
-                         :featureClassified :ProcessQuality ;
+                         :outcomeCriteriaClassified :ProcessQuality ;
                          rdfs:label "cancelled prescriptions"@en .
 
 
@@ -2848,4 +2848,3 @@
 :writingOfNursingLetters rdf:type :FeatureCitation ;
                             :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
                             rdfs:label "writing of nursing letters"@en .
-
