@@ -478,3 +478,26 @@
 	];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
+
+##### Evaluates Domain ######################################################
+
+:EvaluatesDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf
+		:evaluatesApplicationSystem,
+		:evaluatesApplicationSystemBasedOnProduct,
+		:evaluatesApplicationSystemHavingFeature;
+	sh:class :Study.
+
+##### Evaluates Range #######################################################
+
+:EvaluatesApplicationSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :evaluatesApplicationSystem;
+	sh:class :EvaluatesApplicationSystem.
+
+:EvaluatesApplicationSystemBasedOnProductRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :evaluatesApplicationSystemBasedOnProduct;
+	sh:class :EvaluatesApplicationSystemBasedOnProduct.
+
+:EvaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :evaluatesApplicationSystemHavingFeature;
+	sh:class :EvaluatesApplicationSystemHavingFeature.
