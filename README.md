@@ -59,5 +59,5 @@ The [HITO Quality Check Tool](https://hitontology.eu/qualitycheck/) contains cus
 
 ### SHACL
 SHACL shapes including cardinalities for closed-world validation are included in `shacl.ttl`.
-Validate after `build` using `scripts/shacl`.
+Validate using `scripts/shacl`.
 Requires [pySHACL](https://github.com/RDFLib/pySHACL) to be installed and available as `pyshacl`.
