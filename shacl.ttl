@@ -64,6 +64,88 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties .
 
+#### Software Product Attribute Classes #####################################
+
+:InteroperabilityShape rdf:type sh:NodeShape;
+	sh:targetClass :Interoperability;
+	sh:property :labelShape;
+	sh:property [sh:path :subStandardOf];
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:CertificationShape rdf:type sh:NodeShape;
+	sh:targetClass :Certification;
+	sh:property :labelShape;
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:OperatingSystemShape rdf:type sh:NodeShape;
+	sh:targetClass :OperatingSystem;
+	sh:property :labelShape;
+	sh:pattern "^http://dbpedia.org/resource/";
+	sh:closed false;
+	sh:ignoredProperties :ignoredProperties.
+
+:ClientShape rdf:type sh:NodeShape;
+	sh:targetClass :Client;
+	sh:property :labelShape;
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:LanguageShape rdf:type sh:NodeShape;
+	sh:targetClass :Language;
+	sh:property :labelShape;
+	sh:pattern "^http://dbpedia.org/resource/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:ProgrammingLanguageShape rdf:type sh:NodeShape;
+	sh:targetClass :ProgrammingLanguage;
+	sh:property :labelShape;
+	sh:pattern "^http://dbpedia.org/resource/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:DatabaseSystemShape rdf:type sh:NodeShape;
+	sh:targetClass :DatabaseSystem;
+	sh:property :labelShape;
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:LicenseShape rdf:type sh:NodeShape;
+	sh:targetClass :License;
+	sh:property :labelShape,
+		[sh:path rdfs:subClassOf];
+	sh:pattern "^http://www.ebi.ac.uk/swo/license/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:ProgrammingLibraryShape rdf:type sh:NodeShape;
+	sh:targetClass :ProgrammingLibrary;
+	sh:property :labelShape;
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:HomepageShape rdf:type sh:NodeShape;
+	sh:targetClass :Homepage;
+	sh:property :labelShape;
+	sh:pattern "^http://hitontology.eu/ontology/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+:CodeRepositoryShape rdf:type sh:NodeShape;
+	sh:targetClass :CodeRepository;
+	sh:property :labelShape;
+	sh:pattern "^http://dbpedia.org/resource/";
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
+
+
 #### Citation ###############################################################
 
 :EnterpriseFunctionCitationShape rdf:type sh:NodeShape;
