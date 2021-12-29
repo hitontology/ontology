@@ -989,13 +989,6 @@
                  rdfs:label "RIS-PACS system"@en .
 
 
-###  http://hitontology.eu/ontology/Radiologists
-:Radiologists rdf:type owl:NamedIndividual ,
-              :UserGroupCitation ;
-              :userGroupSctid 66862007 ;
-              rdfs:label "Radiologists"@en .
-
-
 ###  http://hitontology.eu/ontology/Rheumatology
 :Rheumatology rdf:type :OrganizationalUnitCitation ;
               rdfs:label "rheumatology"@en .
@@ -1005,13 +998,6 @@
 :SoftwareQuality rdf:type :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                   rdfs:label "Software quality"@en .
-
-
-###  http://hitontology.eu/ontology/Technicians
-:Technicians rdf:type owl:NamedIndividual ,
-                      :UserGroupCitation ;
-             :userGroupSctid 307988006 ;
-             rdfs:label "Technicians"@en .
 
 
 ###  http://hitontology.eu/ontology/TheNewEnglandJournalOfMedicine
@@ -1984,7 +1970,7 @@
 
 ###  http://hitontology.eu/ontology/nurses
 :nurses rdf:type :UserGroupCitation ;
-        :organizationalUnitClassified :ProfessionalNurseOccupation ;
+        :userGroupClassified :SnomedProfessionalNurseOccupation ;
         rdfs:label "nurses"@en .
 
 
