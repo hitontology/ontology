@@ -492,12 +492,12 @@
 
 :EvaluatesApplicationSystemRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :evaluatesApplicationSystem;
-	sh:class :EvaluatesApplicationSystem.
+	sh:class :ApplicationSystemCitation.
 
 :EvaluatesApplicationSystemBasedOnProductRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :evaluatesApplicationSystemBasedOnProduct;
-	sh:class :EvaluatesApplicationSystemBasedOnProduct.
+	sh:class :SoftwareProduct.
 
 :EvaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :evaluatesApplicationSystemHavingFeature;
-	sh:class :EvaluatesApplicationSystemHavingFeature.
+	sh:class :FeatureCitation.
