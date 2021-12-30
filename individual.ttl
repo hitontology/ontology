@@ -445,7 +445,7 @@
 :NamedStudy18 rdf:type :NonExperimentalStudy ;
                :evaluatesApplicationSystem :EmergencyDepartmentInformationSystemEDIS ;
                :evaluatesApplicationSystemBasedOnProduct :CernerFirstNet ;
-               :evaluatesApplicationSystemHavingFeature :EhrSfmMeasurementAnalysisResearchAndReports ,
+               :evaluatesApplicationSystemHavingFeature :measurementAnalysisResearchAndReports ,
                                                         :PACSInterface ,
                                                         :creationOfDataRelationToTriage ,
                                                         :dischargeSummaries ,
@@ -1913,6 +1913,11 @@
                                                 :EhrSfmSupportCareCoordinationReporting ;
                      rdfs:label "mandatory reporting"@en .
 
+###  http://hitontology.eu/ontology/measurementAnalysisResearchAndReports
+# added by KH including label because the classified feature was used directly
+:measurementAnalysisResearchAndReports rdf:type :FeatureCitation ;
+                     :featureClassified :EhrSfmMeasurementAnalysisResearchAndReports ;
+                     rdfs:label "measurement, analysis, research and reports"@en .
 
 ###  http://hitontology.eu/ontology/medication-specificOrderSet
 :medication-specificOrderSet rdf:type :FeatureCitation ;
