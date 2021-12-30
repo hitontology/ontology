@@ -635,7 +635,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy24
 :NamedStudy24 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :computerizedPrescribingSystem ;
-               :evaluatesApplicationSystemHavingFeature :EhrSfmSupportForMedicationOrderingEfficiencies ,
+               :evaluatesApplicationSystemHavingFeature #:EhrSfmSupportForMedicationOrderingEfficiencies ,
                                                         :alteringPrescribingHabitsByAlternativeDrugs ,
                                                         :displayOfWarningsWhenAppropiate ,
                                                         :drugDictionary ,
