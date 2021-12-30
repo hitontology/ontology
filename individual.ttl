@@ -328,8 +328,7 @@
 :NamedStudy14 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :electronicPatientRecordSystemEPR ,
                                            :patientAdministrationSystemPAS ;
-               :evaluatesApplicationSystemHavingFeature :EhrSfmManageCommunication ,
-                                                        :admissionOverview ,
+               :evaluatesApplicationSystemHavingFeature :admissionOverview ,
                                                         :agreementManagement ,
                                                         :appointmentLetters ,
                                                         :bedManagement ,
