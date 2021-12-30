@@ -824,7 +824,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy7
 :NamedStudy7 rdf:type :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :pictureArchivalAndCommunicationSystem ;
-              :evaluatesApplicationSystemBasedOnProduct :GEPatchspecdPACS ;
+              :evaluatesApplicationSystemBasedOnProduct :GePatchspecdPacs ;
               :evaluatesApplicationSystemHavingFeature :automaticForwardedProcessedImages ,
                                                        :forwardIntoArchive ,
                                                        :interfacedToTheRIS ;
