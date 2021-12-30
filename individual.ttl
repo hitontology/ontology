@@ -179,7 +179,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy1
 :NamedStudy1 rdf:type :ExperimentalStudyRCT ;
               :evaluatesApplicationSystem :laboratoryInformationSystem ;
-              :evaluatesApplicationSystemBasedOnProduct :eChasqui ;
+              :evaluatesApplicationSystemBasedOnProduct :EChasqui ;
               :evaluatesApplicationSystemHavingFeature :consolidatedListOfResultsForJurisdiction ,
                                                        :emailNotificationOfNewResults ,
                                                        :listToTrackTheStatusOfPendingSamples ,
@@ -211,7 +211,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy10
 :NamedStudy10 rdf:type :NonExperimentalStudy ;
                :evaluatesApplicationSystem :enterpriseWideResourcePlanningSystemERP ;
-               :evaluatesApplicationSystemBasedOnProduct :SAPR3BusinessProcessControlSystemSoftware ;
+               :evaluatesApplicationSystemBasedOnProduct :SapR3BusinessProcessControlSystemSoftware ;
                :evaluatesApplicationSystemHavingFeature :planningView ,
                                                         :requestFormAssignedATimeslotRoomAndStaff ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ,
@@ -363,7 +363,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy15
 :NamedStudy15 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :nursingDocumentationSystem ;
-               :evaluatesApplicationSystemBasedOnProduct :PIK ;
+               :evaluatesApplicationSystemBasedOnProduct :Pik ;
                :evaluatesApplicationSystemHavingFeature :adaptionOfNursingCarePlansDuringCarePlanning ,
                                                         :anamnesisSupportedByOfferingFlexibleFormsForDataEntry ,
                                                         :creationOfNursingCarePlans ,
@@ -393,7 +393,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy16
 :NamedStudy16 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :nursingInformationSystem ;
-               :evaluatesApplicationSystemBasedOnProduct :HNAMillenium ;
+               :evaluatesApplicationSystemBasedOnProduct :HnaMillenium ;
                :evaluatesApplicationSystemHavingFeature :allowingToReuseEarlierAnamnesticData ,
                                                         :automaticCreationOfANursingTransferReport ,
                                                         :comprisingASetOfNursingCareStandards ,
@@ -474,7 +474,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy19
 :NamedStudy19 rdf:type :NonExperimentalStudy ;
                :evaluatesApplicationSystem :EmergencyDepartmentProviderElectronicDocumentationSystem ;
-               :evaluatesApplicationSystemBasedOnProduct :eDoc ;
+               :evaluatesApplicationSystemBasedOnProduct :EDoc ;
                :evaluatesApplicationSystemHavingFeature :capturingDataForAllPatientVisits ;
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
@@ -496,7 +496,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy2
 :NamedStudy2 rdf:type :NonExperimentalStudy ;
               :evaluatesApplicationSystem :electronicPrescribingSystem ;
-              :evaluatesApplicationSystemBasedOnProduct :CSCMedChart ,
+              :evaluatesApplicationSystemBasedOnProduct :CscMedChart ,
                                                         :CernerMilleniumPowerOrders ;
               :evaluatesApplicationSystemHavingFeature :dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection ,
                                                        :predefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick ,
@@ -551,7 +551,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy21
 :NamedStudy21 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :clinicalDocumentationSystem ;
-               :evaluatesApplicationSystemBasedOnProduct :EclipsysContinuum_2000CDS ;
+               :evaluatesApplicationSystemBasedOnProduct :EclipsysContinuum2000Cds ;
                :evaluatesApplicationSystemHavingFeature :auditTrail ,
                                                         :automaticTransferOfLaboratoryData ,
                                                         :electronicSignature ,
@@ -612,8 +612,8 @@
 ###  http://hitontology.eu/ontology/NamedStudy23
 :NamedStudy23 rdf:type :QuasiExperimentalStudy ;
                :evaluatesApplicationSystem :pointOfCareTestingDevicePOCT ;
-               :evaluatesApplicationSystemBasedOnProduct :AbbottI-Stat ,
-                                                         :SysmexXS_1000iHaematologyAnalyser ;
+               :evaluatesApplicationSystemBasedOnProduct :AbbottIStat ,
+                                                         :SysmexXs1000iHaematologyAnalyser ;
                :evaluatesApplicationSystemHavingFeature :completeTestResults ,
                                                         :readBarCodeLabel ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
@@ -690,7 +690,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy3
 :NamedStudy3 rdf:type :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :computerizedProviderOrderEntrySystem ;
-              :evaluatesApplicationSystemBasedOnProduct :CernerSoarianCPOEPlatform ;
+              :evaluatesApplicationSystemBasedOnProduct :CernerSoarianCpoePlatform ;
               :evaluatesApplicationSystemHavingFeature :medication-specificOrderSet ,
                                                        :unit-specificOderSet ;
               :evaluatesApplicationSystemHavingUserGroup :nurses ,
@@ -755,7 +755,7 @@
 ###  http://hitontology.eu/ontology/NamedStudy5
 :NamedStudy5 rdf:type :ValidationStudy ;
               :evaluatesApplicationSystem :teleconsultationSystem ;
-              :evaluatesApplicationSystemBasedOnProduct :TeleDICOM ;
+              :evaluatesApplicationSystemBasedOnProduct :TeleDicom ;
               :evaluatesApplicationSystemHavingFeature :interactiveConsultationBetweenTwoOrMoreCenters ,
                                                        :offlineMode ,
                                                        :real-timeVoiceCommunication ,
@@ -794,8 +794,8 @@
 ###  http://hitontology.eu/ontology/NamedStudy6
 :NamedStudy6 rdf:type :QuasiExperimentalStudy ;
               :evaluatesApplicationSystem :RIS-PACSSystem ;
-              :evaluatesApplicationSystemBasedOnProduct :AGFAPACSIMPAX ,
-                                                        :AGFARISElefante ;
+              :evaluatesApplicationSystemBasedOnProduct :AgfaPacsImpax ,
+                                                        :AgfaRisElefante ;
               :evaluatesApplicationSystemHavingFeature :automaticAndPaperlessOperations ,
                                                        :bookingOfExaminations ,
                                                        :patientRegistration ,
