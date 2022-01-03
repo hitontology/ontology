@@ -180,11 +180,10 @@
 
 :RepositoryRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :repository;
-	#Causes a runtime error in PySHACL, see https://github.com/RDFLib/pySHACL/issues/114
-	#sh:path [
-	#		sh:path [ sh:inversePath :repository ];
-	#		sh:maxCount 1
-	#];
+	sh:property [
+			sh:path [ sh:inversePath :repository ];
+			sh:maxCount 1
+	];
 	sh:nodeKind sh:IRI.
 
 :SoftwareProductComponentRangeShape a sh:NodeShape;
