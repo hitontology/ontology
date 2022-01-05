@@ -1,9 +1,9 @@
-@prefix : <http://hitontology.eu/ontology/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://hitontology.eu/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix ov: <http://open.vocab.org/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dbr: <http://dbpedia.org/resource/>.
@@ -13,24 +13,24 @@
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
 @prefix swol: <http://www.ebi.ac.uk/swo/license/>.
 @prefix bibo: <http://purl.org/ontology/bibo/>.
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix schema: <http://schema.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix sh:<http://www.w3.org/ns/shacl#> .
-@base <http://hitontology.eu/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dce: <http://purl.org/dc/elements/1.1/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix schema: <http://schema.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix sh:<http://www.w3.org/ns/shacl#>.
+@base <http://hitontology.eu/ontology/>.
 
 :ignoredProperties rdf:first vann:example;
-	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy) .
+	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy).
 
 :labelShape a sh:PropertyShape;
 	sh:path rdfs:label;
-	sh:minCount 1 .
+	sh:minCount 1.
 
 :commentShape a sh:PropertyShape;
 	sh:path rdfs:comment;
-	sh:minCount 1 .
+	sh:minCount 1.
 
 #### Software Product #######################################################
 
@@ -61,7 +61,7 @@
 	[sh:path :repository],
 	[sh:path :softwareProductComponent];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 #### Software Product Domain ################################################
 
@@ -272,7 +272,7 @@
 		sh:path :enterpriseFunctionClassified;
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :FeatureCitationShape a sh:NodeShape;
 	sh:targetClass :FeatureCitation;
@@ -281,7 +281,7 @@
 	] ,
 	[sh:path :supportsFunction];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :ApplicationSystemCitationShape a sh:NodeShape;
 	sh:targetClass :ApplicationSystemCitation;
@@ -289,7 +289,7 @@
 		sh:path :applicationSystemClassified;
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :UserGroupCitationShape a sh:NodeShape;
 	sh:targetClass :UserGroupCitation;
@@ -297,7 +297,7 @@
 		sh:path :userGroupClassified;
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :OrganizationalUnitCitationShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitCitation;
@@ -305,7 +305,7 @@
 		sh:path :organizationalUnitClassified;
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 #### Classified ################################################################
 
@@ -318,7 +318,7 @@
 	],
 	[sh:path :subFunctionOf ];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :FeatureClassifiedShape a sh:NodeShape;
 	sh:targetClass :FeatureClassified;
@@ -330,7 +330,7 @@
 	[sh:path :subFeatureOf] ,
 	[sh:path :supportsFunctionClassified ];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :ApplicationSystemClassifiedShape a sh:NodeShape;
 	sh:targetClass :ApplicationSystemClassified;
@@ -340,7 +340,7 @@
 		sh:maxCount 1
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :UserGroupClassifiedShape a sh:NodeShape;
 	sh:targetClass :UserGroupClassified;
@@ -352,7 +352,7 @@
 	[sh:path :userGroupSctid],
 	[sh:path :vancouverReference];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 :OrganizationalUnitClassifiedShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitClassified;
@@ -364,7 +364,7 @@
 	[sh:path :organizationalUnitSctid],
 	[sh:path :vancouverReference];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 #### Classified Domain ######################################################
 
@@ -416,7 +416,7 @@
 	sh:targetClass :Catalogue;
 	sh:property :labelShape , :commentShape;
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 #### Catalogue Domain ######################################################
 
@@ -476,7 +476,7 @@
 		sh:maxCount 1
 	];
 	sh:closed true;
-	sh:ignoredProperties :ignoredProperties .
+	sh:ignoredProperties :ignoredProperties.
 
 ##### Evaluates Domain ######################################################
 
@@ -500,3 +500,28 @@
 :EvaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :evaluatesApplicationSystemHavingFeature;
 	sh:class :FeatureCitation.
+
+##### Study #################################################################
+
+:StudyShape a sh:NodeShape;
+	sh:targetClass :Study;
+	sh:property :labelShape,
+	[sh:path :firstAuthor],
+	[sh:path :publishedInYear],
+	[sh:path :publishedInJournal],
+	[sh:path :pmid],
+	[sh:path bibo:doi],
+	[sh:path :outcomeCriteria],
+	[sh:path :studyMethod],
+	[sh:path :evaluatesFeature],
+	[sh:path :evaluatesInstallation],
+	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemBasedOnProduct], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystem], # not in ontology diagram
+	[sh:path :dealsWithUserGroup],
+	[sh:path :vancouverReference],
+	[sh:path :tookPlaceInOrganizationalUnit];
+	sh:closed true;
+	sh:ignoredProperties :ignoredProperties.
