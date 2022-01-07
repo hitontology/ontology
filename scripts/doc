@@ -1,4 +1,4 @@
 SCRIPTPATH=`dirname "$0"`
 SCRIPTPATH=`( cd "$SCRIPTPATH" && pwd )`
-widoco -ontFile $SCRIPTPATH/../hito.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder /tmp/doc
+widoco -ontFile $SCRIPTPATH/..//ontology.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder /tmp/doc
 # -licensius
