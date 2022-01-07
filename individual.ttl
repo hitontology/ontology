@@ -11,6 +11,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix swo: <http://www.ebi.ac.uk/swo/>.
 @prefix bibo: <http://purl.org/ontology/bibo/>.
+@prefix pubmed: <https://pubmed.ncbi.nlm.nih.gov/>.
 @base <http://hitontology.eu/ontology/> .
 
 #################################################################
@@ -194,7 +195,7 @@
               bibo:doi "10.1371/journal.pone.0090110" ;
               :firstAuthor ":Blaya AJ" ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
-              :pmid :i24721980 ;
+              :pmid pubmed:24721980 ;
               :studyMethod :inferentialStatistics ,
                               :intentToTreatAnalysis ,
                               :secondaryUseOfClinicalData ,
@@ -223,7 +224,7 @@
                :firstAuthor ":Engelmann C" ;
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
-               :pmid :i28512663 ;
+               :pmid pubmed:28512663 ;
                :studyMethod :documentAnalysis ,
                                :interviews ,
                                :survey ;
@@ -257,7 +258,7 @@
                bibo:doi "10.1186/1472-6947-13-107" ;
                :firstAuthor ":Castellanos I" ;
                :outcomeCriteria :costBenefit ;
-               :pmid :i24041117 ;
+               :pmid pubmed:24041117 ;
                :studyMethod :costAnalysis ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
                :publishedInYear 2013 ;
@@ -286,7 +287,7 @@
                :firstAuthor ":Eslami S" ;
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
-               :pmid :i22172793 ;
+               :pmid pubmed:22172793 ;
                :studyMethod :dataAnalysisOutOfIntervention ,
                                :inferentialStatistics ,
                                :timeMeasurement ;
@@ -312,7 +313,7 @@
                bibo:doi "10.1080/17538157.2017.1290638" ;
                :firstAuthor ":Adaba BG" ;
                :outcomeCriteria :dataEntriesInRealTime ;
-               :pmid :i28350236 ;
+               :pmid pubmed:28350236 ;
                :studyMethod :documentAnalysis ,
                                :interviews ,
                                :observations ;
@@ -347,7 +348,7 @@
                bibo:doi "10.1016/j.ijmedinf.2014.02.003" ;
                :firstAuthor ":Janols R" ;
                :outcomeCriteria :userAdoption ;
-               :pmid :i24630924 ;
+               :pmid pubmed:24630924 ;
                :studyMethod :interviews ,
                                :observations ,
                                :questionnaires ;
@@ -377,7 +378,7 @@
                bibo:doi "10.1197/jamia.M1118" ;
                :firstAuthor ":Ammenwerth E" ;
                :outcomeCriteria :userAcceptance ;
-               :pmid :i12509358 ;
+               :pmid pubmed:12509358 ;
                :studyMethod :interviews ,
                                :questionnairesQuantitative ;
                :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
@@ -409,7 +410,7 @@
                bibo:doi "10.1016/j.ijmedinf.2010.10.010" ;
                :firstAuthor ":Ammenwerth E" ;
                :outcomeCriteria :qualityOfInformationProcessing ;
-               :pmid :i21115392 ;
+               :pmid pubmed:21115392 ;
                :studyMethod :surveyWithOpenQuestions ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear 2011 ;
@@ -428,7 +429,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :firstAuthor ":Liaskos J" ;
                :outcomeCriteria :userInteractionSatisfaction ;
-               :pmid :i16482381 ;
+               :pmid pubmed:16482381 ;
                :studyMethod :descriptiveStatistics ,
                                :questionnairesQuantitative ,
                                :scenarios ;
@@ -456,7 +457,7 @@
                bibo:doi "10.1016/j.ijmedinf.2014.08.010" ;
                :firstAuthor ":Callen J" ;
                :outcomeCriteria :workChanges ;
-               :pmid :i25241155 ;
+               :pmid pubmed:25241155 ;
                :studyMethod :descriptiveStatistics ,
                                :focusGroups ,
                                :inferentialStatistics ,
@@ -480,7 +481,7 @@
                bibo:doi "10.1016/j.annemergmed.2017.05.032" ;
                :firstAuthor ":Feblowitz J" ;
                :outcomeCriteria :operationalPerformance ;
-               :pmid :i28712608 ;
+               :pmid pubmed:28712608 ;
                :studyMethod :descriptiveStatistics ,
                                :secondaryUseOfOperationalData ;
                :publishedInJournal :AnnalsOfEmergencyMedicine ;
@@ -510,7 +511,7 @@
               bibo:doi "10.1136/amiajnl-2013-001745" ;
               :firstAuthor ":Westbrook IJ" ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
-              :pmid :i23721982 ;
+              :pmid pubmed:23721982 ;
               :studyMethod :clinicalEhrSfmAudit ,
                               :contentAnalysis ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
@@ -534,7 +535,7 @@
                :firstAuthor ":Allain TJ" ;
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
-               :pmid :i29963288 ;
+               :pmid pubmed:29963288 ;
                :studyMethod :contentAnalysis ,
                                :dataAnalysisOutOfIntervention ,
                                :descriptiveStatistics ;
@@ -567,7 +568,7 @@
                                    :qualityOfDocumentation ,
                                    :shiftToShiftContinuity ,
                                    :timeSpent ;
-               :pmid :i11604105 ;
+               :pmid pubmed:11604105 ;
                :studyMethod :documentAnalysis ,
                                :questionnaires ,
                                :timeMeasurement ;
@@ -595,7 +596,7 @@
                :firstAuthor ":Poon GE" ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
-               :pmid :i20445181 ;
+               :pmid pubmed:20445181 ;
                :studyMethod :descriptiveStatistics ,
                                :documentAnalysis ,
                                :inferentialStatistics ,
@@ -620,7 +621,7 @@
                :firstAuthor ":Gilkar A" ;
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
-               :pmid :i26734177 ;
+               :pmid pubmed:26734177 ;
                :studyMethod :descriptiveStatistics ,
                                :timeMeasurement ;
                :publishedInJournal :BMJQualityImprovementReports ;
@@ -650,7 +651,7 @@
                :outcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
                                    :userOpinion ;
-               :pmid :i10720357 ;
+               :pmid pubmed:10720357 ;
                :studyMethod :descriptiveStatistics ,
                                :performanceAnalysis ,
                                :questionnaires ;
@@ -701,7 +702,7 @@
               :outcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
-              :pmid :i28378024 ;
+              :pmid pubmed:28378024 ;
               :studyMethod :inferentialStatistics ,
                               :survey ;
               :publishedInJournal :AppliedClinicalInformaticsACI ;
@@ -738,7 +739,7 @@
               :firstAuthor "Van Doormaal EJ" ;
               :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
-              :pmid :i19717798 ;
+              :pmid pubmed:19717798 ;
               :studyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :documentAnalysis ;
@@ -776,7 +777,7 @@
                                   :imageQuality ,
                                   :qualityOfRealTimeSynchronizedViewing ,
                                   :softwareStability ;
-              :pmid :i20495992 ;
+              :pmid pubmed:20495992 ;
               :studyMethod :dataAnalysisOutOfIntervention ,
                               :descriptiveStatistics ,
                               :inferentialStatistics ,
@@ -807,7 +808,7 @@
               bibo:doi "10.1007/s10278-006-0858-3" ;
               :firstAuthor ":Mariani C" ;
               :outcomeCriteria :comparisionOfWorkflow ;
-              :pmid :i16955380 ;
+              :pmid pubmed:16955380 ;
               :studyMethod :descriptiveStatistics ,
                               :processAnalysis ,
                               :timeMeasurement ;
@@ -834,7 +835,7 @@
               bibo:doi "10.1007/s10278-002-0024-5" ;
               :firstAuthor ":Redfern OR" ;
               :outcomeCriteria :timeForProducingImages ;
-              :pmid :i12415466 ;
+              :pmid pubmed:12415466 ;
               :studyMethod :dataAnalysisOutOfIntervention ,
                               :inferentialStatistics ,
                               :timeMeasurement ;
@@ -856,7 +857,7 @@
               :evaluatesApplicationSystemUsedInUnit :laboratory ;
               :firstAuthor ":Chien TI" ;
               :outcomeCriteria :analyticalTurnaroundTime ;
-              :pmid :i17660145 ;
+              :pmid pubmed:17660145 ;
               :studyMethod :timeMeasurement ;
               :publishedInJournal :JournalOfTheFormosanMedicalAssociation ;
               :publishedInYear 2007 ;
@@ -889,7 +890,7 @@
                                   :usersViewOnUsability ,
                                   :usersViewOnUsefulness ,
                                   :usersViewOnUserSupport ;
-              :pmid :i16160324 ;
+              :pmid pubmed:16160324 ;
               :studyMethod :contentAnalysis ,
                               :descriptiveStatistics ,
                               :surveyWithOpenQuestions ;
@@ -914,7 +915,7 @@
                 bibo:doi "10.1038/s41436-018-0283-2" ;
                 :firstAuthor ":Carlson LM" ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
-                :pmid :i30214066 ;
+                :pmid pubmed:30214066 ;
                 :studyMethod :decisionalConflictScale ,
                                 :demographicsSurvey ,
                                 :knowledgeQuestionnaire ;

@@ -58,7 +58,6 @@
      ov:defines :OrganizationalUnitCitation;
      ov:defines :OutcomeCriteriaClassified;
      ov:defines :OutcomeCriteriaCitation;
-     ov:defines :PMID;
      ov:defines :QuasiExperimentalStudy;
      ov:defines :SoftwareProduct;
      ov:defines :SoftwareProductInstallation;
@@ -289,7 +288,7 @@
 ###  http://hitontology.eu/ontology/pmid
 :pmid rdf:type owl:ObjectProperty ;
          rdfs:domain :Study ;
-         rdfs:range :PMID ;
+         rdfs:range rdfs:Resource ;
          rdfs:label "has PMID"@en .
 
 
@@ -800,13 +799,6 @@
 ###  http://hitontology.eu/ontology/ProgrammingLibrary
 :ProgrammingLibrary rdf:type owl:Class ;
           rdfs:label "Programming Library"@en .
-
-
-###  http://hitontology.eu/ontology/PMID
-:PMID rdf:type owl:Class ;
-      rdfs:label "PMID"@en ;
-	  vann:example :i16955380, :i17660145, :i19717798;
-	  rdfs:comment "The PMID extracted from PubMed for each study."@en .
 
 
 ###  http://hitontology.eu/ontology/QuasiExperimentalStudy
