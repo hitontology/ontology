@@ -193,7 +193,7 @@
               :evaluatesApplicationSystemUsedInUnit :healthCenters ,
                                                     :laboratory ;
               bibo:doi "10.1371/journal.pone.0090110" ;
-              :firstAuthor ":Blaya AJ" ;
+              :firstAuthor "Blaya AJ" ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid pubmed:24721980 ;
               :studyMethod :inferentialStatistics ,
@@ -221,7 +221,7 @@
                                                           :theatrePlanningManager ;
                :evaluatesApplicationSystemUsedInUnit :surgery ;
                bibo:doi "10.4338/ACI-2016-06-RA-0100" ;
-               :firstAuthor ":Engelmann C" ;
+               :firstAuthor "Engelmann C" ;
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
                :pmid pubmed:28512663 ;
@@ -256,7 +256,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                bibo:doi "10.1186/1472-6947-13-107" ;
-               :firstAuthor ":Castellanos I" ;
+               :firstAuthor "Castellanos I" ;
                :outcomeCriteria :costBenefit ;
                :pmid pubmed:24041117 ;
                :studyMethod :costAnalysis ;
@@ -284,7 +284,7 @@
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :intensiveCareUnit ;
                bibo:doi "10.1016/j.jcrc.2011.07.082" ;
-               :firstAuthor ":Eslami S" ;
+               :firstAuthor "Eslami S" ;
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
                :pmid pubmed:22172793 ;
@@ -311,7 +311,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :orthopedy ;
                bibo:doi "10.1080/17538157.2017.1290638" ;
-               :firstAuthor ":Adaba BG" ;
+               :firstAuthor "Adaba BG" ;
                :outcomeCriteria :dataEntriesInRealTime ;
                :pmid pubmed:28350236 ;
                :studyMethod :documentAnalysis ,
@@ -346,7 +346,7 @@
                                                      :infectiology ,
                                                      :orthopedy ;
                bibo:doi "10.1016/j.ijmedinf.2014.02.003" ;
-               :firstAuthor ":Janols R" ;
+               :firstAuthor "Janols R" ;
                :outcomeCriteria :userAdoption ;
                :pmid pubmed:24630924 ;
                :studyMethod :interviews ,
@@ -376,7 +376,7 @@
                                                      :pediatrics ,
                                                      :psychiatryWard ;
                bibo:doi "10.1197/jamia.M1118" ;
-               :firstAuthor ":Ammenwerth E" ;
+               :firstAuthor "Ammenwerth E" ;
                :outcomeCriteria :userAcceptance ;
                :pmid pubmed:12509358 ;
                :studyMethod :interviews ,
@@ -408,7 +408,7 @@
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
                :evaluatesApplicationSystemUsedInUnit :universityHospital ;
                bibo:doi "10.1016/j.ijmedinf.2010.10.010" ;
-               :firstAuthor ":Ammenwerth E" ;
+               :firstAuthor "Ammenwerth E" ;
                :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid pubmed:21115392 ;
                :studyMethod :surveyWithOpenQuestions ;
@@ -427,7 +427,7 @@
                                                         :creationAndStorageOfNursingDiagnosesAndNursingOutcomes ,
                                                         :creationOfNursingCarePlans ;
                :evaluatesApplicationSystemHavingUserGroup :nurses ;
-               :firstAuthor ":Liaskos J" ;
+               :firstAuthor "Liaskos J" ;
                :outcomeCriteria :userInteractionSatisfaction ;
                :pmid pubmed:16482381 ;
                :studyMethod :descriptiveStatistics ,
@@ -455,7 +455,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1016/j.ijmedinf.2014.08.010" ;
-               :firstAuthor ":Callen J" ;
+               :firstAuthor "Callen J" ;
                :outcomeCriteria :workChanges ;
                :pmid pubmed:25241155 ;
                :studyMethod :descriptiveStatistics ,
@@ -479,7 +479,7 @@
                :evaluatesApplicationSystemHavingUserGroup :physicians ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1016/j.annemergmed.2017.05.032" ;
-               :firstAuthor ":Feblowitz J" ;
+               :firstAuthor "Feblowitz J" ;
                :outcomeCriteria :operationalPerformance ;
                :pmid pubmed:28712608 ;
                :studyMethod :descriptiveStatistics ,
@@ -509,7 +509,7 @@
                                                     :geriatryWard ,
                                                     :psychiatryWard ;
               bibo:doi "10.1136/amiajnl-2013-001745" ;
-              :firstAuthor ":Westbrook IJ" ;
+              :firstAuthor "Westbrook IJ" ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid pubmed:23721982 ;
               :studyMethod :clinicalEhrSfmAudit ,
@@ -532,7 +532,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :endocrinology ;
                bibo:doi "10.4314/mmj.v29i4.8" ;
-               :firstAuthor ":Allain TJ" ;
+               :firstAuthor "Allain TJ" ;
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
                :pmid pubmed:29963288 ;
@@ -562,7 +562,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :pediatricIntensiveCare ;
                bibo:doi "10.1186/1472-6947-1-3" ;
-               :firstAuthor ":Menke AJ" ;
+               :firstAuthor "Menke AJ" ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :decisionMaking ,
                                    :qualityOfDocumentation ,
@@ -593,7 +593,7 @@
                                                      :intensiveCareUnit ,
                                                      :surgery ;
                bibo:doi "10.1056/NEJMsa0907115" ;
-               :firstAuthor ":Poon GE" ;
+               :firstAuthor "Poon GE" ;
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
                :pmid pubmed:20445181 ;
@@ -618,7 +618,7 @@
                                                         :readBarCodeLabel ;
                :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ;
                bibo:doi "10.1136/bmjquality.u201027.w685" ;
-               :firstAuthor ":Gilkar A" ;
+               :firstAuthor "Gilkar A" ;
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
                :pmid pubmed:26734177 ;
@@ -647,7 +647,7 @@
                                                           :physicians ;
                :evaluatesApplicationSystemUsedInUnit :nephrology ;
                bibo:doi "10.1136/bmj.320.7237.750" ;
-               :firstAuthor ":Nightingale GP" ;
+               :firstAuthor "Nightingale GP" ;
                :outcomeCriteria :cancelledPrescriptions ,
                                    :overridenWarningMessages ,
                                    :userOpinion ;
@@ -675,7 +675,7 @@
                :evaluatesApplicationSystemHavingUserGroup :radiologists ;
                :evaluatesApplicationSystemUsedInUnit :medicalCenter ;
                bibo:doi "10.1007/s10554-018-1488-9" ;
-               :firstAuthor ":Gao X" ;
+               :firstAuthor "Gao X" ;
                :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
                :studyMethod :qualityAssessmentOfCTScans ;
                :publishedInJournal :TheInternationalJournalOfCardiovascularImaging ;
@@ -698,7 +698,7 @@
                                                          :physicians ;
               :evaluatesApplicationSystemUsedInUnit :neonatalIntensiveCare ;
               bibo:doi "10.4338/ACI-2016-09-RA-0153" ;
-              :firstAuthor ":Beam SK" ;
+              :firstAuthor "Beam SK" ;
               :outcomeCriteria :implementationOfTheApplicationSystem ,
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
@@ -767,7 +767,7 @@
                                                     :hospitals ,
                                                     :radiology ;
               bibo:doi "10.1007/s10278-010-9303-8" ;
-              :firstAuthor ":Gachowski A" ;
+              :firstAuthor "Gachowski A" ;
               :outcomeCriteria :availability ,
                                   :clinicalUtility ,
                                   :comparisionOfRemoteAndOnSiteConsultations ,
@@ -806,7 +806,7 @@
                                                          :technologists ;
               :evaluatesApplicationSystemUsedInUnit :radiology ;
               bibo:doi "10.1007/s10278-006-0858-3" ;
-              :firstAuthor ":Mariani C" ;
+              :firstAuthor "Mariani C" ;
               :outcomeCriteria :comparisionOfWorkflow ;
               :pmid pubmed:16955380 ;
               :studyMethod :descriptiveStatistics ,
@@ -833,7 +833,7 @@
               :evaluatesApplicationSystemUsedInUnit :emergencyDepartment ,
                                                     :radiology ;
               bibo:doi "10.1007/s10278-002-0024-5" ;
-              :firstAuthor ":Redfern OR" ;
+              :firstAuthor "Redfern OR" ;
               :outcomeCriteria :timeForProducingImages ;
               :pmid pubmed:12415466 ;
               :studyMethod :dataAnalysisOutOfIntervention ,
@@ -885,7 +885,7 @@
                                                          :physicians ,
                                                          :secretaries ;
               :evaluatesApplicationSystemUsedInUnit :surgery ;
-              :firstAuthor ":Lemmetty K" ;
+              :firstAuthor "Lemmetty K" ;
               :outcomeCriteria :usersViewOnTraining ,
                                   :usersViewOnUsability ,
                                   :usersViewOnUsefulness ,
@@ -913,7 +913,7 @@
                 :evaluatesApplicationSystemHavingUserGroup :womenOfReproductiveAge ;
                 :evaluatesApplicationSystemUsedInUnit :geneticCounseling ;
                 bibo:doi "10.1038/s41436-018-0283-2" ;
-                :firstAuthor ":Carlson LM" ;
+                :firstAuthor "Carlson LM" ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid pubmed:30214066 ;
                 :studyMethod :decisionalConflictScale ,
