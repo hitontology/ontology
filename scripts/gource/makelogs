@@ -1,0 +1,20 @@
+gource --output-custom-log log1.txt ../../../csv2rdf
+sed -i -r "s#(.+)\|#\1|/csv2rdf#" log1.txt
+gource --output-custom-log log2.txt ../..
+sed -i -r "s#(.+)\|#\1|/ontology#" log2.txt
+gource --output-custom-log log3.txt ../../../database
+sed -i -r "s#(.+)\|#\1|/database#" log3.txt
+gource --output-custom-log log4.txt ../../../database-frontend
+sed -i -r "s#(.+)\|#\1|/database-frontend#" log4.txt
+gource --output-custom-log log5.txt ../../../lodview
+sed -i -r "s#(.+)\|#\1|/lodview#" log5.txt
+gource --output-custom-log log6.txt ../../../docker
+sed -i -r "s#(.+)\|#\1|/docker#" log6.txt
+gource --output-custom-log log7.txt ../../../facetedbrowsing
+sed -i -r "s#(.+)\|#\1|/facetedbrowsing#" log7.txt
+gource --output-custom-log log8.txt ../../../hitolink
+sed -i -r "s#(.+)\|#\1|/hitolink#" log8.txt
+gource --output-custom-log log9.txt ../../../hitontology.eu
+sed -i -r "s#(.+)\|#\1|/hitontology.eu#" log9.txt
+gource --output-custom-log log10.txt ../../../instancegenerator
+sed -i -r "s#(.+)\|#\1|/instancegenerator#" log10.txt

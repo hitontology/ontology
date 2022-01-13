@@ -1,0 +1,2 @@
+cat log*.txt | sed "s|T-P-1|Thomas Pause|" | grep -e "Konrad" -e "Thomas" -e "Anna" -e "ghandalari" -e "Jahn" -e "Michelle" -e "bert" \
+ | sed "s|ThomasPause|Thomas Pause|" | sed "MichelleBindel|Michelle Bindel|" | "s|Hoeffner|Höffner|" | sort -n > combined.txt
