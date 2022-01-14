@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+	<PREFIX>
+		<NAMESPACE>http://hitontology.eu/ontology/</NAMESPACE>
+		<LABEL>hito</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+		<LABEL>rdf</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+		<LABEL>rdfs</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+		<LABEL>owl</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2004/02/skos/core#</NAMESPACE>
+		<LABEL>skos</LABEL>
+	</PREFIX>
+	
+	<SOURCE>
+		<ID>c1</ID>
+		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
+		<VAR>?c1</VAR>
+		<PAGESIZE>-1</PAGESIZE>
+		<RESTRICTION>?c1 a hito:FeatureClassified; hito:featureCatalogue ?x.</RESTRICTION>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<TYPE>TURTLE</TYPE>
+	</SOURCE>
+
+	<TARGET>
+		<ID></ID>
+		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
+		<VAR>?c2</VAR>
+		<PAGESIZE>-1</PAGESIZE>
+		<RESTRICTION>?c2 a hito:FeatureClassified; hito:featureCatalogue ?y.</RESTRICTION>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<PROPERTY>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</PROPERTY>
+		<TYPE>TURTLE</TYPE>
+	</TARGET>
+
+<METRIC>max(trigrams(c1.label,c2.label),trigrams(c1.label,c2.comment))</METRIC>
+
+	<ACCEPTANCE>
+		<THRESHOLD>1</THRESHOLD>
+		<FILE>catalogue-exact.ttl</FILE>
+		<RELATION>skos:closeMatch</RELATION>
+	</ACCEPTANCE>
+	
+	<REVIEW>
+		<THRESHOLD>0.8</THRESHOLD>
+		<FILE>catalogue-close.ttl</FILE>
+		<RELATION>skos:closeMatch</RELATION>
+	</REVIEW>
+
+	<EXECUTION>
+		<REWRITER>default</REWRITER>
+		<PLANNER>default</PLANNER>
+		<ENGINE>default</ENGINE>
+	</EXECUTION>
+
+	<OUTPUT>CSV</OUTPUT>
+</LIMES>
