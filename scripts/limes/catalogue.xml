@@ -27,8 +27,9 @@
 		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
 		<VAR>?c1</VAR>
 		<PAGESIZE>-1</PAGESIZE>
-		<RESTRICTION>?c1 a hito:FeatureClassified; hito:featureCatalogue ?x.</RESTRICTION>
+		<RESTRICTION>?c1 a hito:FeatureClassified</RESTRICTION>
 		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<PROPERTY>hito:featureCatalogue RENAME cat</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</SOURCE>
 
@@ -37,13 +38,15 @@
 		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
 		<VAR>?c2</VAR>
 		<PAGESIZE>-1</PAGESIZE>
-		<RESTRICTION>?c2 a hito:FeatureClassified; hito:featureCatalogue ?y.</RESTRICTION>
+		<RESTRICTION>?c2 a hito:FeatureClassified</RESTRICTION>
 		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<PROPERTY>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</PROPERTY>
+		<PROPERTY>hito:featureCatalogue RENAME cat</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</TARGET>
 
-<METRIC>max(trigrams(c1.label,c2.label),trigrams(c1.label,c2.comment))</METRIC>
+<METRIC>MINUS(TRIGRAMS(c1.label,c2.label)|0.9,EXACTMATCH(c1.cat,c2.cat)|1)</METRIC>
+<!--<METRIC>MINUS(max(trigrams(c1.label,c2.label),trigrams(c1.label,c2.comment)),EXACTMATCH(c1.cat,c2.cat))</METRIC>-->
 
 	<ACCEPTANCE>
 		<THRESHOLD>1</THRESHOLD>
