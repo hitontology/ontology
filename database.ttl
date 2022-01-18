@@ -7,6 +7,10 @@ hito:MySql
     a hito:DatabaseSystem;
     rdfs:label "MySQL"@en .
 
+hito:SQLite
+    a hito:DatabaseSystem;
+    rdfs:label "SQLite"@en .
+
 hito:OracleDatabase
     a hito:DatabaseSystem;
     rdfs:label "Oracle Database"@en .
