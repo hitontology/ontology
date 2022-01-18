@@ -223,6 +223,12 @@ hito:ICD10
     rdfs:label "ICD10"@en ;
     owl:sameAs dbr:ICD-10 .
 
+hito:ICD10PCS
+    dcterms:source <https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/ICD10PCS/index.html> ;
+    a hito:Interoperability ;
+    rdfs:comment "ICD-10 Procedure Coding System"@en ;
+    rdfs:label "ICD10PCS"@en .
+
 hito:ICD11
     hito:subStandardOf hito:ICD ;
     dcterms:source <https://icd.who.int/en> ;
@@ -662,12 +668,24 @@ hito:UMLS
     rdfs:label "UMLS"@en ;
     owl:sameAs dbr:Unified_Medical_Language_System .
 
+hito:UniprotKB
+    dcterms:source <https://www.uniprot.org/help/uniprotkb> ;
+    a hito:Interoperability ;
+    rdfs:comment "UniProt Knowledgebase"@en ;
+    rdfs:label "UniprotKB"@en .
+
 hito:WADO
     hito:subStandardOf hito:DICOM ;
     dcterms:source <https://www.dicomstandard.org/dicomweb/retrieve-wado-rs-and-wado-uri/> ;
     a hito:Interoperability ;
     rdfs:comment "Web Access to DICOM Objects (WADO)"@en ;
     rdfs:label "WADO"@en .
+
+hito:WHOICF
+    dcterms:source <https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health> ;
+    a hito:Interoperability ;
+    rdfs:comment "International Classification of Functioning, Disability and Health"@en ;
+    rdfs:label "WHO ICF"@en .
 
 hito:WSDL
     dcterms:source <https://www.w3.org/TR/wsdl.html> ;
