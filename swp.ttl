@@ -16,22 +16,137 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
+<http://hitontology.eu/ontology/3LGM2AppSysModelingTool>
+    a :ApplicationSystemCitation ;
+    rdfs:label "modeling tool"@en .
+
 <http://hitontology.eu/ontology/3LGM2Baukasten>
+    :applicationSystem <http://hitontology.eu/ontology/3LGM2AppSysModelingTool> ;
     :client :Native ;
-    :enterpriseFunction <http://hitontology.eu/ontology/3LGM2Funcinformationmanagement> ;
+    :enterpriseFunction <http://hitontology.eu/ontology/3LGM2FuncAssessingQuality>, <http://hitontology.eu/ontology/3LGM2FuncBeschreibungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncBewertungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncInformationManagement>, <http://hitontology.eu/ontology/3LGM2FuncPlanungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncstrategicInformationManagementPlanning> ;
+    :feature <http://hitontology.eu/ontology/3LGM2FeatAnalysisFunctions>, <http://hitontology.eu/ontology/3LGM2FeatAnalyzingModels>, <http://hitontology.eu/ontology/3LGM2FeatAuswertungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatBeispielmodelle>, <http://hitontology.eu/ontology/3LGM2FeatDefinitionSprachkonzepteBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatDescribingCommunicationPaths>, <http://hitontology.eu/ontology/3LGM2FeatDescribingInformationProcesses>, <http://hitontology.eu/ontology/3LGM2FeatErstellungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatExtractSubmodels>, <http://hitontology.eu/ontology/3LGM2FeatFachlicheEbeneBeschreibungAufgaben>, <http://hitontology.eu/ontology/3LGM2FeatInterEbenenBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatLogischeWerkzeugebeneAnwendungsbausteine>, <http://hitontology.eu/ontology/3LGM2FeatMultilayerView>, <http://hitontology.eu/ontology/3LGM2FeatPhysischeWerkzeugebeneHardwareKomponenten>, <http://hitontology.eu/ontology/3LGM2FeatReferenzmodelle>, <http://hitontology.eu/ontology/3LGM2FeatSwitchingLevelsGranularity> ;
     :homepage <https://www.3lgm2.de> ;
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
+    :organizationalUnit <http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>, <http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>, <http://hitontology.eu/ontology/3LGM2OrgLehre>, <http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
     rdfs:label "3LGM2 Baukasten"@en .
 
-<http://hitontology.eu/ontology/3LGM2Funcinformationmanagement>
+<http://hitontology.eu/ontology/3LGM2FeatAnalysisFunctions>
+    :featureClassified :BbAnalyzeData ;
+    a :FeatureCitation ;
+    rdfs:label "set of predefined analysis functions"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatAnalyzingModels>
+    :featureClassified :BbAnalyzeData ;
+    a :FeatureCitation ;
+    rdfs:label "analyzing models of information systems"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatAuswertungvonModellen>
+    a :FeatureCitation ;
+    rdfs:label "Auswertung von Modellen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatBeispielmodelle>
+    a :FeatureCitation ;
+    rdfs:label "Beispielmodelle"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatDefinitionSprachkonzepteBeziehungen>
+    :featureClassified :EhrSfmStandardTerminologyAndTerminologyModels ;
+    a :FeatureCitation ;
+    rdfs:label "Definition notwendiger Sprachkonzepte und deren Beziehungen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatDescribingCommunicationPaths>
+    a :FeatureCitation ;
+    rdfs:label "describing communication paths between application components"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatDescribingInformationProcesses>
+    a :FeatureCitation ;
+    rdfs:label "describing information processes"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatErstellungvonModellen>
+    a :FeatureCitation ;
+    rdfs:label "Erstellung von Modellen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatExtractSubmodels>
+    a :FeatureCitation ;
+    rdfs:label "extract subsets of models into submodels"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatFachlicheEbeneBeschreibungAufgaben>
+    a :FeatureCitation ;
+    rdfs:label "Fachliche Ebene für die Beschreibung der Aufgaben "@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatInterEbenenBeziehungen>
+    a :FeatureCitation ;
+    rdfs:label "Inter-Ebenen-Beziehungen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatLogischeWerkzeugebeneAnwendungsbausteine>
+    a :FeatureCitation ;
+    rdfs:label "Logische Werkzeugebene für die Beschreibung der Anwendungsbausteine"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatMultilayerView>
+    a :FeatureCitation ;
+    rdfs:label "multi-layer view"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatPhysischeWerkzeugebeneHardwareKomponenten>
+    a :FeatureCitation ;
+    rdfs:label "Physische Werkzeugebene für die Beschreibung der Hardware-Komponenten"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatReferenzmodelle>
+    a :FeatureCitation ;
+    rdfs:label "Referenzmodelle"@en .
+
+<http://hitontology.eu/ontology/3LGM2FeatSwitchingLevelsGranularity>
+    a :FeatureCitation ;
+    rdfs:label "switching between different levels of granularity"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncAssessingQuality>
+    :enterpriseFunctionClassified :BbQualityManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "assessing quality of information systems"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncBeschreibungInformationssysteme>
+    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Beschreibung von Informationssystemen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncBewertungInformationssysteme>
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Bewertung von Informationssystemen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncInformationManagement>
     :enterpriseFunctionClassified :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Information Management"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncPlanungInformationssysteme>
+    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "Planung von Informationssystemen"@en .
+
+<http://hitontology.eu/ontology/3LGM2FuncstrategicInformationManagementPlanning>
+    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    a :EnterpriseFunctionCitation ;
+    rdfs:label "strategic information management planning"@en .
+
+<http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Beratungsunternehmen"@en .
+
+<http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>
+    :organizationalUnitClassified :SnomedHospitalEnvironment ;
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Krankenhaus"@en .
+
+<http://hitontology.eu/ontology/3LGM2OrgLehre>
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Lehre"@en .
+
+<http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller>
+    a :OrganizationalUnitCitation ;
+    rdfs:label "Software-Hersteller"@en .
 
 :AbbotIStatFeatureCompleteTestResults
     :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
@@ -2806,11 +2921,17 @@
     rdfs:label "Technician"@en .
 
 :Medicator
+    :applicationSystem :MedicatorAppSysCpoe ;
     :feature :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions, :MedicatorFeatureSafetyAlertsInRealTime, :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert, :MedicatorSafetyAlertsInCaseOfAllergies, :MedicatorSafetyAlertsInCaseOfOverdosing, :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
     :userGroup :HospitalRunUserDoctor ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Medicator"@en .
+
+:MedicatorAppSysCpoe
+    :applicationSystemClassified :BbDecisionSupportSystem, :BbProviderOrPhysicianOrderEntrySystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "CPOE inkl. CDSS"@en .
 
 :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
     :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
@@ -5731,7 +5852,12 @@
     a :FeatureCitation ;
     rdfs:label "read bar code label"@en .
 
+:TeleDicomAppSysTeleconsultationSystem
+    a :ApplicationSystemCitation ;
+    rdfs:label "Teleconsultation system"@en .
+
 :TeleDicom
+    :applicationSystem :TeleDicomAppSysTeleconsultationSystem ;
     :feature :TeleDicomFeatRealTimeVoiceCommunication, :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters, :TeleDicomFeatureOfflineMode, :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools, :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
@@ -5763,10 +5889,16 @@
     rdfs:label "visualization of synchronized DICOM images"@en .
 
 :Theriak
+    :applicationSystem :TheriakAppSysCpoe;
     :feature :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Theriak"@en .
+
+:TheriakAppSysCpoe
+    :applicationSystemClassified :BbDecisionSupportSystem, :BbProviderOrPhysicianOrderEntrySystem ;
+    a :ApplicationSystemCitation ;
+    rdfs:label "CPOE inkl. CDSS"@en .
 
 :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert
     :featureClassified :EhrSfmMedicationAlertOverrides ;
