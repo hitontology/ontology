@@ -61,3 +61,13 @@ The [HITO Quality Check Tool](https://hitontology.eu/qualitycheck/) contains cus
 SHACL shapes including cardinalities for closed-world validation are included in `shacl.ttl`.
 Validate using `scripts/shacl`.
 Requires [pySHACL](https://github.com/RDFLib/pySHACL) to be installed and available as `pyshacl`, for example via `pip install pyshacl`.
+
+## Build
+
+The `build` Linux shell script combines the ontology and all instances into a single file `./dist/hito.ttl`.
+It requires the [Redland Raptor RDF syntax parsing and serializing utility (Rapper)](https://librdf.org/).
+
+## Docker
+
+Executes the `build` script and deploys it into the `/ontology/dist` volume.
+Used in the [docker compose setup](https://github.com/hitontology/docker).
