@@ -41,6 +41,7 @@ scripts/doc				| 					| ontology documentation build script
 scripts/sparql			| 					| SPARQL queries
 scripts/sparql/swo.sparql|					| Query on SWO to create dist/swo.ttl
 scripts/limes			| 					| generate interlinks
+LICENSE					| 					| CC0 license text
 
 The relevant DBpedia and SWO resources are put under version control in the dist folder to keep the referential integrity of the database.
 You do not need to regenerate them but if you do, using `/scripts/dbpedia` and /scripts/sparql
@@ -71,3 +72,9 @@ It requires the [Redland Raptor RDF syntax parsing and serializing utility (Rapp
 
 Executes the `build` script and deploys it into the `/ontology/dist` volume.
 Used in the [docker compose setup](https://github.com/hitontology/docker).
+
+## License
+
+HITO is dedicated to the public domain using Creative Commons Zero v1.0 Universal, see <LICENSE>.
+Exception: A small amount SNOMED CT terms are used with special permission from SNOMED in <http://hitontology.eu/ontology/Snomed>.
+We cannot make any claims regarding your rights for further processing and publication of those SNOMED CT terms and identifiers, so please contact [SNOMED](https://www.snomed.org/) if you have any questions regarding this.
