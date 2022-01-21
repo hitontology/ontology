@@ -214,7 +214,7 @@
 :userGroup rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :UserGroupClassified ;
+                    rdfs:range :UserGroupCitation ;
                     rdfs:label "user group"@en .
 
 
