@@ -75,7 +75,7 @@ Used in the [docker compose setup](https://github.com/hitontology/docker).
 
 ## License
 
-HITO is dedicated to the public domain using Creative Commons Zero v1.0 Universal, see <LICENSE>.
+HITO is dedicated to the public domain using Creative Commons Zero v1.0 Universal, see [LICENSE](LICENSE).
 However, a small amount SNOMED CT terms are used with special permission from SNOMED in <http://hitontology.eu/ontology/Snomed>.
 Licensee agrees and acknowledges that HITO may not own all right, title, and interest, in and to the Materials and that the Materials may contain and/or reference intellectual property owned by third parties (“Third Party IP”).
 Acceptance of these License Terms does not grant Licensee any rights with respect to Third Party IP.
