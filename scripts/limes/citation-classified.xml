@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+	<PREFIX>
+		<NAMESPACE>http://hitontology.eu/ontology/</NAMESPACE>
+		<LABEL>hito</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+		<LABEL>rdf</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+		<LABEL>rdfs</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+		<LABEL>owl</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2004/02/skos/core#</NAMESPACE>
+		<LABEL>skos</LABEL>
+	</PREFIX>
+	
+	<SOURCE>
+		<ID>cit</ID>
+		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
+		<VAR>?cit</VAR>
+		<PAGESIZE>-1</PAGESIZE>
+		<RESTRICTION>?cit a [rdfs:subClassOf hito:Citation]</RESTRICTION>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<PROPERTY>rdf:type/^rdfs:domain/rdfs:range RENAME classifiedType</PROPERTY> <!-- citation class to classified class -->
+		<!--<OPTIONAL>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</OPTIONAL_PROPERTY>-->
+		<TYPE>TURTLE</TYPE>
+	</SOURCE>
+
+	<TARGET>
+		<ID>cls</ID>
+		<ENDPOINT>../../dist/hito.ttl</ENDPOINT>
+		<VAR>?cls</VAR>
+		<PAGESIZE>-1</PAGESIZE>
+		<RESTRICTION>?cls a [rdfs:subClassOf hito:Classified]</RESTRICTION>
+		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
+		<PROPERTY>rdf:type RENAME type</PROPERTY>
+		<!--<OPTIONAL_PROPERTY>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</OPTIONAL_PROPERTY>-->
+		<TYPE>TURTLE</TYPE>
+	</TARGET>
+
+<!--<METRIC>TRIGRAMS(cit.label,cls.label)</METRIC>--><!-- types may differ -->
+<METRIC>MIN(TRIGRAMS(cit.label,cls.label)|0.7,EXACTMATCH(cit.classifiedType,cls.type)|1)</METRIC> <!-- ensure same type -->
+
+	<ACCEPTANCE>
+		<THRESHOLD>1</THRESHOLD>
+		<FILE>citation-classified-exact.csv</FILE>
+		<RELATION>hito:classified</RELATION>
+	</ACCEPTANCE>
+	
+	<REVIEW>
+		<THRESHOLD>0.7</THRESHOLD>
+		<FILE>citation-classified-close.csv</FILE>
+		<RELATION>hito:classified</RELATION>
+	</REVIEW>
+
+	<EXECUTION>
+		<REWRITER>default</REWRITER>
+		<PLANNER>default</PLANNER>
+		<ENGINE>default</ENGINE>
+	</EXECUTION>
+
+	<OUTPUT>CSV</OUTPUT>
+</LIMES>
