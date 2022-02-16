@@ -1518,7 +1518,7 @@
 
 ###  http://hitontology.eu/ontology/electronicMedicalRecordSystem
 :electronicMedicalRecordSystem rdf:type :ApplicationSystemCitation ;
-                                  :applicationSystemClassified :BbMedicalDocumentationSystem ;
+                                  :applicationSystemClassified :BbMedicalDocumentationSystem, :WhoDhiElectronicMedicalRecord ;
                                   rdfs:label "electronic medical record system"@en .
 
 

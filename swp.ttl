@@ -1101,7 +1101,7 @@
     rdfs:label "Support for the Ambulance"@en .
 
 :Cis2FeatSupportOfClinicalDocumentation
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmSupportExternallySourcedClinicalDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation ;
+    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmSupportClinicalDocumentation, :EhrSfmSupportExternallySourcedClinicalDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of clinical documentation"@en .
 
@@ -2097,7 +2097,7 @@
     rdfs:label "GNU Health"@en .
 
 :GnuHealthAppElectronicMedicalRecordEmr
-    :applicationSystemClassified :WhoDhiSharedHealthRecordAndHealthInformationRespositories ;
+    :applicationSystemClassified :WhoDhiSharedHealthRecordAndHealthInformationRespositories, :WhoDhiElectronicMedicalRecord ;
     a :ApplicationSystemCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
