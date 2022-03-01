@@ -60,7 +60,6 @@
      ov:defines :OutcomeCriteriaCitation;
      ov:defines :QuasiExperimentalStudy;
      ov:defines :SoftwareProduct;
-     ov:defines :SoftwareProductInstallation;
      ov:defines :Study;
      ov:defines :StudyMethodClassified;
      ov:defines :StudyMethodCitation;
@@ -399,16 +398,6 @@
                     rdfs:label "software product component"@en .
 
 
-###  http://hitontology.eu/ontology/softwareProductInstallation
-:softwareProductInstallation rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SoftwareProduct;
-                    rdfs:range :SoftwareProductInstallation;
-                    rdfs:label "software product installation"@en ;
-                    dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-					#vann:example
-					rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
-
-
 ###  http://hitontology.eu/ontology/subClassifiedOf
 :subClassifiedOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :Classified;
@@ -689,7 +678,8 @@
 ###  http://hitontology.eu/ontology/ExperimentalStudyRCT
 :ExperimentalStudyRCT rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
-                      rdfs:label "Experimental Study RCT"@en .
+                      rdfs:label "Experimental Study RCT"@en ;
+					  rdfs:comment "experimental study with randomized control trial"@en .
 
 
 ###  http://hitontology.eu/ontology/FeatureCatalogue
@@ -814,13 +804,6 @@
                  skos:closeMatch doap:Project ;
 				 vann:example :GnuHealth, :Bahmni, :Orthanc ;
                  rdfs:label "Software Product"@en .
-
-
-###  http://hitontology.eu/ontology/SoftwareProductInstallation
-:SoftwareProductInstallation rdf:type owl:Class ;
-                 rdfs:label "Software Product Installation"@en ;
-                  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-				 rdfs:comment "Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing."@en .
 
 
 ###  http://hitontology.eu/ontology/Study

@@ -47,7 +47,6 @@
 	[sh:path :license],
 	[sh:path :programmingLibrary],
 	[sh:path :homepage],
-	[sh:path :softwareProductInstallation],
 	[sh:path :feature],
 	[sh:path :enterpriseFunction],
 	[sh:path :applicationSystem],
@@ -77,7 +76,6 @@
 		:license,
 		:programmingLibrary,
 		:homepage,
-		:softwareProductInstallation,
 		:feature,
 		:enterpriseFunction,
 		:applicationSystem,
@@ -133,10 +131,6 @@
 :HomepageRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :homepage;
 	sh:nodeKind sh:IRI.
-
-:SoftwareProductInstallationRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :softwareProductInstallation;
-	sh:class :SoftwareProductInstallation.
 
 :FeatureRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :feature;
@@ -473,23 +467,6 @@
 	sh:targetObjectsOf :userGroupCatalogue;
 	sh:class :UserGroupCatalogue.
 
-#### Other ##################################################################
-
-:SoftwareProductInstallationShape a sh:NodeShape;
-	sh:targetClass :SoftwareProductInstallation;
-	sh:property :labelShape,
-	[sh:path :softwareProductInstallationComponent],
-	[sh:path :isOfType],
-	[sh:path :installationSupportsEnterpriseFunction],
-	[
-		sh:path [ sh:inversePath :softwareProductInstallation ];
-		sh:minCount 1;
-		sh:maxCount 1
-	];
-	sh:pattern "^http://hitontology.eu/ontology/";
-	sh:closed true;
-	sh:ignoredProperties :ignoredProperties.
-
 ##### Evaluates Domain ######################################################
 
 :EvaluatesDomainShape a sh:NodeShape;
@@ -526,7 +503,6 @@
 	[sh:path :outcomeCriteria],
 	[sh:path :studyMethod],
 	[sh:path :evaluatesFeature],
-	[sh:path :evaluatesInstallation],
 	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
@@ -551,7 +527,6 @@
 	[sh:path :outcomeCriteria],
 	[sh:path :studyMethod],
 	[sh:path :evaluatesFeature],
-	[sh:path :evaluatesInstallation],
 	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
@@ -596,10 +571,6 @@
 :evaluatesFeatureRangeShape a sh:NodeShape;
   sh:targetObjectsOf :evaluatesFeature;
 	sh:class :EvaluatesFeature.
-
-:evaluatesInstallationRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesInstallation;
-	sh:class :EvaluatesInstallation.
 
 :evaluatesApplicationSystemUsedInUnitRangeShape a sh:NodeShape;
   sh:targetObjectsOf :evaluatesApplicationSystemUsedInUnit;
