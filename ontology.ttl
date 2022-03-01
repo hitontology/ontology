@@ -232,8 +232,8 @@
                     rdfs:label "enterprise function catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/evaluatesApplicationSystemBasedOnProduct
-:evaluatesApplicationSystemBasedOnProduct rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/evaluatesProduct
+:evaluatesProduct rdf:type owl:ObjectProperty ;
                                           rdfs:domain :Study ;
                                           rdfs:range :SoftwareProduct ;
                                           rdfs:label "evaluates Application System Type Based On Product"@en .

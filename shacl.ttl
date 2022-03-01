@@ -472,7 +472,7 @@
 :EvaluatesDomainShape a sh:NodeShape;
 	sh:targetSubjectsOf
 		:evaluatesApplicationSystem,
-		:evaluatesApplicationSystemBasedOnProduct,
+		:evaluatesProduct,
 		:evaluatesApplicationSystemHavingFeature;
 	sh:class :Study.
 
@@ -483,7 +483,7 @@
 	sh:class :ApplicationSystemCitation.
 
 :EvaluatesApplicationSystemBasedOnProductRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :evaluatesApplicationSystemBasedOnProduct;
+	sh:targetObjectsOf :evaluatesProduct;
 	sh:class :SoftwareProduct.
 
 :EvaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
@@ -506,7 +506,7 @@
 	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemBasedOnProduct], # not in ontology diagram
+	[sh:path :evaluatesProduct], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystem], # not in ontology diagram
 	[sh:path :dealsWithUserGroup],
 	[sh:path :vancouverReference],
@@ -530,7 +530,7 @@
 	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemBasedOnProduct], # not in ontology diagram
+	[sh:path :evaluatesProduct], # not in ontology diagram
 	[sh:path :evaluatesApplicationSystem], # not in ontology diagram
 	[sh:path :dealsWithUserGroup],
 	[sh:path :vancouverReference],
@@ -584,8 +584,8 @@
   sh:targetObjectsOf :evaluatesApplicationSystemHavingUserGroup;
 	sh:class :UserGroupCitation.
 
-:evaluatesApplicationSystemBasedOnProductRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesApplicationSystemBasedOnProduct;
+:evaluatesProductRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :evaluatesProduct;
 	sh:class :SoftwareProduct.
 
 :evaluatesApplicationSystemRangeShape a sh:NodeShape;
