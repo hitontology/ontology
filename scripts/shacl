@@ -3,3 +3,4 @@
 cat dist/hito.ttl dist/dbpedia.ttl dist/swo.ttl > dist/all.ttl
 cd scripts
 pyshacl -s ../shacl.ttl -a -f human ../dist/all.ttl | tee /tmp/shacl.txt
+exit
