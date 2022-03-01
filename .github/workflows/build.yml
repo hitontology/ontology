@@ -1,0 +1,27 @@
+name: build
+ 
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Raptor RDF parser
+        run: sudo apt-get install -y raptor2-utils
+ 
+      - name: Build
+        run: ./build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: dist
+          folder: dist
+          single-commit: true
