@@ -1,6 +1,4 @@
 #!/bin/sh
-cd "$(dirname "${BASH_SOURCE[0]}")"
-cd ..
 ./build
 cat dist/hito.ttl dist/dbpedia.ttl dist/swo.ttl > dist/all.ttl
 cd scripts
