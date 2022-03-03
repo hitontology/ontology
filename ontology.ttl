@@ -720,6 +720,7 @@
 
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
+         owl:sameAs dbr:Academic_journal ;
          rdfs:label "Journal"@en .
 
 
