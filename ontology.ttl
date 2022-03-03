@@ -61,8 +61,7 @@
      ov:defines :QuasiExperimentalStudy;
      ov:defines :SoftwareProduct;
      ov:defines :Study;
-     ov:defines :StudyMethodClassified;
-     ov:defines :StudyMethodCitation;
+     ov:defines :StudyMethod;
      ov:defines :UserGroupCatalogue;
      ov:defines :UserGroupClassified;
      ov:defines :UserGroupCitation;
@@ -176,14 +175,6 @@
                            rdfs:label "classified Outcome Criteria"@en .
 
 
-###  http://hitontology.eu/ontology/classifiedStudyMethod
-:classifiedStudyMethod rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :classified ;
-                       rdfs:domain :StudyMethodCitation ;
-                       rdfs:range :StudyMethodClassified ;
-                       rdfs:label "classified Study Method"@en .
-
-
 ###  http://hitontology.eu/ontology/organizationalUnitClassified
 :organizationalUnitClassified rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :classified ;
@@ -294,8 +285,8 @@
 ###  http://hitontology.eu/ontology/studyMethod
 :studyMethod rdf:type owl:ObjectProperty ;
                 rdfs:domain :Study ;
-                rdfs:range :StudyMethodCitation ;
-                rdfs:label "has Study Method"@en .
+                rdfs:range :StudyMethod ;
+                rdfs:label "study method"@en .
 
 
 ###  http://hitontology.eu/ontology/homepage
@@ -813,21 +804,26 @@
        rdfs:comment "An evaluation study"@en .
 
 
-###  http://hitontology.eu/ontology/StudyMethodClassified
-:StudyMethodClassified rdf:type owl:Class ;
+###  http://hitontology.eu/ontology/StudyMethod
+:StudyMethod rdf:type owl:Class ;
 #                      rdfs:subClassOf :Classified ;
-                       rdfs:label "Study Method Classified"@en ;
+                       rdfs:label "Study Method"@en ;
 					   vann:example :Qualitative, :Quantitative ;
                        dcterms:source <http://dx.doi.org/10.1007/s10916-006-7397-9> ;
 					   rdfs:comment "The study method, qualitative or quantitative."@en .
 
 
-###  http://hitontology.eu/ontology/StudyMethodCitation
-:StudyMethodCitation rdf:type owl:Class ;
-#                     rdfs:subClassOf :Citation;
-                     rdfs:label "Study Method Citation"@en ;
-					 vann:example :intentToTreatAnalysis, :interviews, :knowledgeQuestionnaire ;
-					 rdfs:comment "The natural language term an author uses for a study method which is used in the evaluation study."@en .
+###  http://hitontology.eu/ontology/Qualitative
+:Qualitative rdf:type :StudyMethod ;
+             :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
+             rdfs:label "Qualitative"@en .
+
+
+###  http://hitontology.eu/ontology/Quantitative
+:Quantitative rdf:type :StudyMethod ;
+              :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
+              rdfs:label "Quantitative"@en .
+
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
 :UserGroupClassified rdf:type owl:Class ;

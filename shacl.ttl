@@ -566,7 +566,7 @@
 
 :studyMethodRangeShape a sh:NodeShape;
   sh:targetObjectsOf :studyMethod;
-	sh:class :StudyMethodCitation.
+	sh:class :StudyMethod.
 
 :evaluatesFeatureRangeShape a sh:NodeShape;
   sh:targetObjectsOf :evaluatesFeature;

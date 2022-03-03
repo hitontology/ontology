@@ -196,10 +196,7 @@
               :firstAuthor "Blaya AJ" ;
               :outcomeCriteria :laboratoyTurnaroundTime ;
               :pmid pubmed:24721980 ;
-              :studyMethod :inferentialStatistics ,
-                              :intentToTreatAnalysis ,
-                              :secondaryUseOfClinicalData ,
-                              :timeMeasurement ;
+              :studyMethod :Quantitative, :Qualitative ;
               :publishedInJournal :PLoSOne ;
               :publishedInYear "2014"^^xsd:gYear;
               :vancouverReference "Blaya JA, Shin SS, Yagui M, Contreras C, Cegielski P, Yale G, et al. Reducing communication delays and improving quality of care with a tuberculosis laboratory information system in resource poor environments: a cluster randomized controlled trial. PLoS One. 2014;9(4):e90110."@en ;
@@ -225,9 +222,8 @@
                :outcomeCriteria :functionality ,
                                    :socialRepercussions ;
                :pmid pubmed:28512663 ;
-               :studyMethod :documentAnalysis ,
-                               :interviews ,
-                               :survey ;
+               :studyMethod :Qualitative ,
+                               :Quantitative ;
                :publishedInJournal :AppliedClinicalInformaticsACI ;
                :publishedInYear "2017"^^xsd:gYear;
                :vancouverReference "Engelmann C, Ametowobla D. Advancing the integration of hospital IT. Pitfalls and perspectives when replacing specialized software for high-risk environments with enterprise system extensions. Appl Clin Inform. 2017;8(2):515–28" ;
@@ -259,7 +255,7 @@
                :firstAuthor "Castellanos I" ;
                :outcomeCriteria :costBenefit ;
                :pmid pubmed:24041117 ;
-               :studyMethod :costAnalysis ;
+               :studyMethod :Quantitative ;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
                :publishedInYear "2013"^^xsd:gYear;
                :vancouverReference "Castellanos I, Schüttler J, Prokosch H-U, Bürkle T. Does introduction of a Patient Data Management System (PDMS) improve the financial situation of an intensive care unit? BMC Med Inform Decis Mak. 2013 Sep 16;13:107"@en ;
@@ -288,9 +284,7 @@
                :outcomeCriteria :adherenceToRecommendations ,
                                    :timeOfVentilation ;
                :pmid pubmed:22172793 ;
-               :studyMethod :dataAnalysisOutOfIntervention ,
-                               :inferentialStatistics ,
-                               :timeMeasurement ;
+               :studyMethod :Quantitative ;
                :publishedInJournal :JournalOfCriticalCare ;
                :publishedInYear "2012"^^xsd:gYear;
                :vancouverReference "Eslami S, Abu-Hanna A, Schultz MJ, de Jonge E, de Keizer NF. Evaluation of consulting and critiquing decision support systems: Effect on adherence to a lower tidal volume mechanical ventilation strategy. J Crit Care. 2012 Aug;27(4):425.e1-425.e8" ;
@@ -314,9 +308,7 @@
                :firstAuthor "Adaba BG" ;
                :outcomeCriteria :dataEntriesInRealTime ;
                :pmid pubmed:28350236 ;
-               :studyMethod :documentAnalysis ,
-                               :interviews ,
-                               :observations ;
+               :studyMethod :Qualitative ;
                :publishedInJournal :InformaticsForHealthAndSocialCare ;
                :publishedInYear "2017"^^xsd:gYear;
                :vancouverReference "Adaba GB, Kebebew Y. Improving a health information system for real-time data entries: An action research project using socio-technical systems theory. Informatics Heal Soc Care. 2018 Apr 3;43(2):159–71"@en ;
@@ -349,9 +341,7 @@
                :firstAuthor "Janols R" ;
                :outcomeCriteria :userAdoption ;
                :pmid pubmed:24630924 ;
-               :studyMethod :interviews ,
-                               :observations ,
-                               :questionnaires ;
+               :studyMethod :Qualitative ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear "2014"^^xsd:gYear;
                :vancouverReference "Janols R, Lind T, Göransson B, Sandblad B. Evaluation of user adoption during three module deployments of region-wide electronic patient record systems. Int J Med Inform. 2014 Jun;83(6):438–49" ;
@@ -379,8 +369,8 @@
                :firstAuthor "Ammenwerth E" ;
                :outcomeCriteria :userAcceptance ;
                :pmid pubmed:12509358 ;
-               :studyMethod :interviews ,
-                               :questionnairesQuantitative ;
+               :studyMethod :Qualitative ,
+                               :Quantitative ;
                :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
                :publishedInYear "2003"^^xsd:gYear;
                :vancouverReference "Ammenwerth E, Mansmann U, Iller C, Eichstädter R. Factors affecting and affected by user acceptance of computer-based nursing documentation: results of a two-year study. J Am Med Inform Assoc. 2003;10(1):69–84" ;
@@ -411,7 +401,7 @@
                :firstAuthor "Ammenwerth E" ;
                :outcomeCriteria :qualityOfInformationProcessing ;
                :pmid pubmed:21115392 ;
-               :studyMethod :surveyWithOpenQuestions ;
+               :studyMethod :Quantitative, :Qualitative;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear "2011"^^xsd:gYear;
                :vancouverReference "Ammenwerth E, Rauchegger F, Ehlers F, Hirsch B, Schaubmayr C. Effect of a nursing information system on the quality of information processing in nursing: An evaluation study using the HIS-monitor instrument. Int J Med Inform. 2011 Jan;80(1):25–38" ;
@@ -430,9 +420,8 @@
                :firstAuthor "Liaskos J" ;
                :outcomeCriteria :userInteractionSatisfaction ;
                :pmid pubmed:16482381 ;
-               :studyMethod :descriptiveStatistics ,
-                               :questionnairesQuantitative ,
-                               :scenarios ;
+               :studyMethod :Quantitative ,
+                               :Qualitative ;
                :publishedInJournal :MethodsOfInformationInMedicine ;
                :publishedInYear "2006"^^xsd:gYear;
                :vancouverReference "Liaskos J, Mantas J. Measuring the user acceptance of a Web-based nursing documentation system. Methods Inf Med. 2006;45(1):116–20" ;
@@ -458,11 +447,7 @@
                :firstAuthor "Callen J" ;
                :outcomeCriteria :workChanges ;
                :pmid pubmed:25241155 ;
-               :studyMethod :descriptiveStatistics ,
-                               :focusGroups ,
-                               :inferentialStatistics ,
-                               :interviews ,
-                               :observations ;
+               :studyMethod :Quantitative, :Qualitative ;
                :publishedInJournal :InternationalJournalOfMedicalInformatics ;
                :publishedInYear "2014"^^xsd:gYear;
                :vancouverReference "Callen J, Li L, Georgiou A, Paoloni R, Gibson K, Li J, et al. Does an integrated Emergency Department Information System change the sequence of clinical work? A mixed-method cross-site study. Int J Med Inform. 2014 Dec;83(12):958–66"@en ;
@@ -482,8 +467,7 @@
                :firstAuthor "Feblowitz J" ;
                :outcomeCriteria :operationalPerformance ;
                :pmid pubmed:28712608 ;
-               :studyMethod :descriptiveStatistics ,
-                               :secondaryUseOfOperationalData ;
+               :studyMethod :Quantitative ;
                :publishedInJournal :AnnalsOfEmergencyMedicine ;
                :publishedInYear "2017"^^xsd:gYear;
                :vancouverReference "Feblowitz J, Takhar SS, Ward MJ, Ribeira R, Landman AB. A Custom-Developed Emergency Department Provider Electronic Documentation System Reduces Operational Efficiency. Ann Emerg Med. 2017 Nov;70(5):674–682.e1" ;
@@ -512,8 +496,7 @@
               :firstAuthor "Westbrook IJ" ;
               :outcomeCriteria :reductionOfPrescribingErrors ;
               :pmid pubmed:23721982 ;
-              :studyMethod :clinicalEhrSfmAudit ,
-                              :contentAnalysis ;
+              :studyMethod :Qualitative, :Qualitative ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
               :publishedInYear "2013"^^xsd:gYear;
               :vancouverReference "Westbrook JI, Baysari MT, Li L, Burke R, Richardson KL, Day RO. The safety of electronic prescribing: manifestations, mechanisms, and rates of system-related errors associated with two commercial systems in hospitals. J Am Med Informatics Assoc. 2013 Nov;20(6):1159–67"@en ;
@@ -536,9 +519,8 @@
                :outcomeCriteria :glycaemicControl ,
                                    :strengthsAndWeaknessesOfIntervention ;
                :pmid pubmed:29963288 ;
-               :studyMethod :contentAnalysis ,
-                               :dataAnalysisOutOfIntervention ,
-                               :descriptiveStatistics ;
+               :studyMethod :Qualitative ,
+                               :Quantitative ;
                :publishedInJournal :MalawiMedicalJournal ;
                :publishedInYear "2017"^^xsd:gYear;
                :vancouverReference "Allain TJ, Mang’anda G, Kasiya M, Khomani P, Banda NP, Gonani A, et al. Use of an electronic medical record to monitor efficacy of diabetes care in out-patients in a central hospital in Malawi: Patterns of glycaemic control and lessons learned. Malawi Med J. 2017;29(4):322–6"@en ;
@@ -569,9 +551,7 @@
                                    :shiftToShiftContinuity ,
                                    :timeSpent ;
                :pmid pubmed:11604105 ;
-               :studyMethod :documentAnalysis ,
-                               :questionnaires ,
-                               :timeMeasurement ;
+               :studyMethod :Qualitative, :Quantitative;
                :publishedInJournal :BMCMedicalInformaticsAndDecisionMaking ;
                :publishedInYear "2001"^^xsd:gYear;
                :vancouverReference "Menke JA, Broner CW, Campbell DY, McKissick MY, Edwards-Beckett JA. Computerized clinical documentation system in the pediatric intensive care unit. BMC Med Inform Decis Mak. 2001;1:3" ;
@@ -597,10 +577,7 @@
                :outcomeCriteria :amountMedicationErrors ,
                                    :amountOfErrorsInOrderTranscription ;
                :pmid pubmed:20445181 ;
-               :studyMethod :descriptiveStatistics ,
-                               :documentAnalysis ,
-                               :inferentialStatistics ,
-                               :observations ;
+               :studyMethod :Quantitative, :Qualitative ;
                :publishedInJournal :TheNewEnglandJournalOfMedicine ;
                :publishedInYear "2010"^^xsd:gYear;
                :vancouverReference "Poon EG, Keohane CA, Yoon CS, Ditmore M, Bane A, Levtzion-Korach O, et al. Effect of Bar-Code Technology on the Safety of Medication Administration. N Engl J Med. 2010 May 6;362(18):1698–707" ;
@@ -622,8 +599,7 @@
                :outcomeCriteria :patientWaitingTimes ,
                                    :timeToProduceTestResults ;
                :pmid pubmed:26734177 ;
-               :studyMethod :descriptiveStatistics ,
-                               :timeMeasurement ;
+               :studyMethod :Quantitative ;
                :publishedInJournal :BMJQualityImprovementReports ;
                :publishedInYear "2013"^^xsd:gYear;
                :vancouverReference "Gilkar A, Fink R, Eardley P, Barron C. The Effect of “On-Line” POCT on Patient waiting times in an Accident and Emergency Department. BMJ Qual Improv reports. 2013;2(1)" ;
@@ -652,9 +628,8 @@
                                    :overridenWarningMessages ,
                                    :userOpinion ;
                :pmid pubmed:10720357 ;
-               :studyMethod :descriptiveStatistics ,
-                               :performanceAnalysis ,
-                               :questionnaires ;
+               :studyMethod :Quantitative ,
+                               :Qualitative ;
                :publishedInJournal :BMJ ;
                :publishedInYear "2000"^^xsd:gYear;
                :vancouverReference "Nightingale PG, Adu D, Richards NT, Peters M. Implementation of rules based computerised bedside prescribing and administration: intervention study. BMJ. 2000 Mar 18;320(7237):750–3" ;
@@ -677,7 +652,7 @@
                bibo:doi "10.1007/s10554-018-1488-9" ;
                :firstAuthor "Gao X" ;
                :outcomeCriteria :analyzeAccuracyAndInter-observerVariabilityOfNewTool ;
-               :studyMethod :qualityAssessmentOfCTScans ;
+               :studyMethod :Qualitative ;
                :publishedInJournal :TheInternationalJournalOfCardiovascularImaging ;
                :publishedInYear "2019"^^xsd:gYear;
                :vancouverReference "Gao X, Boccalini S, Kitslaar PH, Budde RPJ, Tu S, Lelieveldt BPF, et al. A novel software tool for semi-automatic quantification of thoracic aorta dilatation on baseline and follow-up computed tomography angiography. Int J Cardiovasc Imaging. 2019 Apr;35(4):711–23" ;
@@ -703,8 +678,7 @@
                                   :jobSatisfaction ,
                                   :patientCareDelivery ;
               :pmid pubmed:28378024 ;
-              :studyMethod :inferentialStatistics ,
-                              :survey ;
+              :studyMethod :Quantitative ;
               :publishedInJournal :AppliedClinicalInformaticsACI ;
               :publishedInYear "2017"^^xsd:gYear;
               :vancouverReference "Beam KS, Cardoso M, Sweeney M, Binney G, Weingart SN. Examining Perceptions of Computerized Physician Order Entry in a Neonatal Intensive Care Unit. Appl Clin Inform. 2017;8(2):337–47" ;
@@ -740,9 +714,7 @@
               :outcomeCriteria :amountOfAdverseDrugEvents ,
                                   :amountOfMedicationOrders ;
               :pmid pubmed:19717798 ;
-              :studyMethod :dataAnalysisOutOfIntervention ,
-                              :descriptiveStatistics ,
-                              :documentAnalysis ;
+              :studyMethod :Quantitative, :Qualitative ;
               :publishedInJournal :JournalOfTheAmericanMedicalInformaticsAssociationJAMIA ;
               :publishedInYear "2009"^^xsd:gYear;
               :vancouverReference "van Doormaal JE, van den Bemt PMLA, Zaal RJ, Egberts ACG, Lenderink BW, Kosterink JGW, et al. The influence that electronic prescribing has on medication errors and preventable adverse drug events: an interrupted time-series study. J Am Med Inform Assoc. 2009;16(6):816–25" ;
@@ -778,10 +750,7 @@
                                   :qualityOfRealTimeSynchronizedViewing ,
                                   :softwareStability ;
               :pmid pubmed:20495992 ;
-              :studyMethod :dataAnalysisOutOfIntervention ,
-                              :descriptiveStatistics ,
-                              :inferentialStatistics ,
-                              :surveyWithOpenQuestions ;
+              :studyMethod :Quantitative, :Qualitative ;
               :publishedInJournal :JournalOfDigitalImaging ;
               :publishedInYear "2011"^^xsd:gYear;
               :vancouverReference "Gackowski A, Czekierda L, Chrustowicz A, Cała J, Nowak M, Sadowski J, et al. Development, implementation, and multicenter clinical validation of the TeleDICOM--advanced, interactive teleconsultation system. J Digit Imaging. 2011 Jun;24(3):541–51" ;
@@ -809,9 +778,7 @@
               :firstAuthor "Mariani C" ;
               :outcomeCriteria :comparisionOfWorkflow ;
               :pmid pubmed:16955380 ;
-              :studyMethod :descriptiveStatistics ,
-                              :processAnalysis ,
-                              :timeMeasurement ;
+              :studyMethod :Quantitative, :Qualitative ;
               :publishedInJournal :JournalOfDigitalImaging ;
               :publishedInYear "2006"^^xsd:gYear;
               :vancouverReference "Mariani C, Tronchi A, Oncini L, Pirani O, Murri R. Analysis of the X-ray work flow in two diagnostic imaging departments with and without a RIS/PACS system. J Digit Imaging. 2006;19 Suppl 1:18–28" ;
@@ -836,9 +803,7 @@
               :firstAuthor "Redfern OR" ;
               :outcomeCriteria :timeForProducingImages ;
               :pmid pubmed:12415466 ;
-              :studyMethod :dataAnalysisOutOfIntervention ,
-                              :inferentialStatistics ,
-                              :timeMeasurement ;
+              :studyMethod :Quantitative ;
               :publishedInJournal :JournalOfDigitalImaging ;
               :publishedInYear "2002"^^xsd:gYear;
               :vancouverReference "Redfern RO, Langlotz CP, Abbuhl SB, Polansky M, Horii SC, Kundel HI. The Effect of PACS on the Time Required for Technologists to Produce Radiographic Images in the Emergency Department Radiology Suite. J Digit Imaging. 2002 Sep 1;15(3):153–60" ;
@@ -858,7 +823,7 @@
               :firstAuthor "Chien TI" ;
               :outcomeCriteria :analyticalTurnaroundTime ;
               :pmid pubmed:17660145 ;
-              :studyMethod :timeMeasurement ;
+              :studyMethod :Quantitative ;
               :publishedInJournal :JournalOfTheFormosanMedicalAssociation ;
               :publishedInYear "2007"^^xsd:gYear;
               :vancouverReference "Chien T-I, Lu J-Y, Kao J-T, Cheng Y-C, Lee Y-F. Evaluation and Improvement Strategy of Analytical Turnaround Time in the Stat Laboratory. J Formos Med Assoc. 2007 Jul;106(7):558–64" ;
@@ -891,9 +856,7 @@
                                   :usersViewOnUsefulness ,
                                   :usersViewOnUserSupport ;
               :pmid pubmed:16160324 ;
-              :studyMethod :contentAnalysis ,
-                              :descriptiveStatistics ,
-                              :surveyWithOpenQuestions ;
+              :studyMethod :Qualitative, :Quantitative ;
               :publishedInJournal :ConnectingMedicalInformaticsAndBio-informaticsProceedingsOfMIE2005 ;
               :publishedInYear "2005"^^xsd:gYear;
               :vancouverReference "Lemmetty K, Häyrinen E. Operation management system evaluation in the central Finland health care district - end users’ view of system implementation. Stud Health Technol Inform. 2005;116:605–7" ;
@@ -916,9 +879,7 @@
                 :firstAuthor "Carlson LM" ;
                 :outcomeCriteria :notInferiorToAConsultingVisit ;
                 :pmid pubmed:30214066 ;
-                :studyMethod :decisionalConflictScale ,
-                                :demographicsSurvey ,
-                                :knowledgeQuestionnaire ;
+                :studyMethod :Qualitative, :Quantitative ;
                 :publishedInJournal :GeneticsInMedicine-officialJournalOfTheAmericanCollegeOfMedicalGenetics ;
                 :publishedInYear "2019"^^xsd:gYear;
                 :vancouverReference "Carlson LM, Harris S, Hardisty EE, Hocutt G, Vargo D, Campbell E, et al. Use of a novel computerized decision aid for aneuploidy screening: a randomized controlled trial. Genet Med. 2019;21(4):923–9" ;
@@ -968,20 +929,6 @@
 :ProcessQuality rdf:type :OutcomeCriteriaClassified ;
                  :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
                  rdfs:label "Process quality"@en .
-
-
-
-
-###  http://hitontology.eu/ontology/Qualitative
-:Qualitative rdf:type :StudyMethodClassified ;
-             :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
-             rdfs:label "Qualitative"@en .
-
-
-###  http://hitontology.eu/ontology/Quantitative
-:Quantitative rdf:type :StudyMethodClassified ;
-              :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
-              rdfs:label "Quantitative"@en .
 
 
 ###  http://hitontology.eu/ontology/RIS-PACSSystem
@@ -1251,12 +1198,6 @@
                                        rdfs:label "capturing data for all patient visits"@en .
 
 
-###  http://hitontology.eu/ontology/clinicalEhrSfmAudit
-:clinicalEhrSfmAudit rdf:type :StudyMethodCitation ;
-                :classifiedStudyMethod :Qualitative ;
-                rdfs:label "clinical audit"@en .
-
-
 ###  http://hitontology.eu/ontology/clinicalDocumentation
 :clinicalDocumentation rdf:type :FeatureCitation ;
                         :featureClassified :EhrSfmManageClinicalDocumentation ;
@@ -1367,19 +1308,6 @@
                         rdfs:label "consultation referrals"@en .
 
 
-###  http://hitontology.eu/ontology/contentAnalysis
-:contentAnalysis rdf:type :StudyMethodCitation ;
-                  owl:sameAs :documentAnalysis ;
-                  :classifiedStudyMethod :Qualitative ;
-                  rdfs:label "content analysis"@en .
-
-
-###  http://hitontology.eu/ontology/costAnalysis
-:costAnalysis rdf:type :StudyMethodCitation ;
-               :classifiedStudyMethod :Quantitative ;
-               rdfs:label "cost analysis"@en .
-
-
 ###  http://hitontology.eu/ontology/costBenefit
 :costBenefit rdf:type :OutcomeCriteriaCitation ;
               :classifiedOutcomeCriteria :InformationProcessingCosts ;
@@ -1407,11 +1335,6 @@
                                                            :EhrSfmManageOrders ,
                                                            :EhrSfmSupportOrders ;
                                 rdfs:label "creation of nursing care plans"@en .
-
-
-###  http://hitontology.eu/ontology/dataAnalysisOutOfIntervention
-:dataAnalysisOutOfIntervention rdf:type :StudyMethodCitation ;
-                                   rdfs:label "data analysis out of intervention"@en .
 
 
 ###  http://hitontology.eu/ontology/dataEntriesInRealTime
@@ -1446,12 +1369,6 @@
                  rdfs:label "decision making"@en .
 
 
-###  http://hitontology.eu/ontology/decisionalConflictScale
-:decisionalConflictScale rdf:type :StudyMethodCitation ;
-                           :classifiedStudyMethod :Qualitative ;
-                           rdfs:label "decisional conflict scale" .
-
-
 ###  http://hitontology.eu/ontology/decisionsSupportFunctions
 :decisionsSupportFunctions rdf:type :FeatureCitation ;
                              :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ,
@@ -1463,18 +1380,6 @@
 :decreaseDecisionalConflict rdf:type :OutcomeCriteriaCitation ;
                               :classifiedOutcomeCriteria :ProcessQuality ;
                               rdfs:label "decreaseDecisionalConflict" .
-
-
-###  http://hitontology.eu/ontology/demographicsSurvey
-:demographicsSurvey rdf:type :StudyMethodCitation ;
-                     :classifiedStudyMethod :Quantitative ;
-                     rdfs:label "demographics survey" .
-
-
-###  http://hitontology.eu/ontology/descriptiveStatistics
-:descriptiveStatistics rdf:type :StudyMethodCitation ;
-                        :classifiedStudyMethod :Quantitative ;
-                        rdfs:label "descriptive statistics"@en .
 
 
 ###  http://hitontology.eu/ontology/dischargeSummaries
@@ -1489,12 +1394,6 @@
                                                                 :EhrSfmMedicationOrderEfficiencies ,
                                                                 :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
                                      rdfs:label "display of warnings when appropiate"@en .
-
-
-###  http://hitontology.eu/ontology/documentAnalysis
-:documentAnalysis rdf:type :StudyMethodCitation ;
-                   :classifiedStudyMethod :Qualitative ;
-                   rdfs:label "document analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/dropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection
@@ -1596,12 +1495,6 @@
                                                                                        :EhrSfmSupportOfPatientSpecificDosingAndWarnings ,
                                                                                        :EhrSfmSupportOrders ;
                                                             rdfs:label "facilitating calculations of drug doses and fluid balances"@en .
-
-
-###  http://hitontology.eu/ontology/focusGroups
-:focusGroups rdf:type :StudyMethodCitation ;
-              :classifiedStudyMethod :Qualitative ;
-              rdfs:label "focus groups"@en .
 
 
 ###  http://hitontology.eu/ontology/followingOfThePerioerpativeProcess
@@ -1804,12 +1697,6 @@
                                       rdfs:label "'in-patient admissions and discharges'"@en .
 
 
-###  http://hitontology.eu/ontology/inferentialStatistics
-:inferentialStatistics rdf:type :StudyMethodCitation ;
-                        :classifiedStudyMethod :Quantitative ;
-                        rdfs:label "inferential statistics"@en .
-
-
 ###  http://hitontology.eu/ontology/informationAboutTheOperationActivity
 :informationAboutTheOperationActivity rdf:type :FeatureCitation ;
                                           :featureClassified :EhrSfmManageCareCoordinationReporting ,
@@ -1835,12 +1722,6 @@
                                       rdfs:label "integration of patient specific data"@en .
 
 
-###  http://hitontology.eu/ontology/intentToTreatAnalysis
-:intentToTreatAnalysis rdf:type :StudyMethodCitation ;
-                          :classifiedStudyMethod :Qualitative ;
-                          rdfs:label "intent to treat analysis"@en .
-
-
 ###  http://hitontology.eu/ontology/interactiveConsultationBetweenTwoOrMoreCenters
 :interactiveConsultationBetweenTwoOrMoreCenters rdf:type :FeatureCitation ;
                                                       :featureClassified :EhrSfmManageResults ,
@@ -1859,12 +1740,6 @@
                        rdfs:label "interfaced to the RIS"@en .
 
 
-###  http://hitontology.eu/ontology/interviews
-:interviews rdf:type :StudyMethodCitation ;
-            :classifiedStudyMethod :Qualitative ;
-            rdfs:label "interviews"@en .
-
-
 ###  http://hitontology.eu/ontology/invoicingAndRegistrationOverview
 :invoicingAndRegistrationOverview rdf:type :FeatureCitation ;
                                      :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
@@ -1875,12 +1750,6 @@
 :jobSatisfaction rdf:type :OutcomeCriteriaCitation ;
                   :classifiedOutcomeCriteria :UserSatisfaction ;
                   rdfs:label "job satisfaction"@en .
-
-
-###  http://hitontology.eu/ontology/knowledgeQuestionnaire
-:knowledgeQuestionnaire rdf:type :StudyMethodCitation ;
-                         :classifiedStudyMethod :Qualitative ;
-                         rdfs:label "knowledge questionnaire" .
 
 
 ###  http://hitontology.eu/ontology/laboratoryInformationSystem
@@ -2030,12 +1899,6 @@
                             rdfs:label "nursing information system"@en .
 
 
-###  http://hitontology.eu/ontology/observations
-:observations rdf:type :StudyMethodCitation ;
-              :classifiedStudyMethod :Qualitative ;
-              rdfs:label "observations"@en .
-
-
 ###  http://hitontology.eu/ontology/offlineMode
 :offlineMode rdf:type :FeatureCitation ;
               :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
@@ -2104,11 +1967,6 @@
                             rdfs:label "overriden warning messages"@en .
 
 
-###  http://hitontology.eu/ontology/participationsInLearningSessions
-:participationsInLearningSessions rdf:type :StudyMethodCitation ;
-                                     rdfs:label "participations in learning sessions"@en .
-
-
 ###  http://hitontology.eu/ontology/patientAdministration
 :patientAdministration rdf:type :FeatureCitation ;
                         :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
@@ -2167,12 +2025,6 @@
 :patientWaitingTimes rdf:type :OutcomeCriteriaCitation ;
                        :classifiedOutcomeCriteria :ProcessEfficiency ;
                        rdfs:label "patient waiting times"@en .
-
-
-###  http://hitontology.eu/ontology/performanceAnalysis
-:performanceAnalysis rdf:type :StudyMethodCitation ;
-                      :classifiedOutcomeCriteria :ProcessEfficiency ;
-                      rdfs:label "performance analysis"@en .
 
 
 ###  http://hitontology.eu/ontology/pharmacists
@@ -2288,18 +2140,6 @@
                     rdfs:label "prescribe longhand"@en .
 
 
-###  http://hitontology.eu/ontology/processAnalysis
-:processAnalysis rdf:type :StudyMethodCitation ;
-                  :classifiedStudyMethod :Qualitative ;
-                  rdfs:label "process analysis"@en .
-
-
-###  http://hitontology.eu/ontology/qualityAssessmentOfCTScans
-:qualityAssessmentOfCTScans rdf:type :StudyMethodCitation ;
-                                :classifiedStudyMethod :Qualitative ;
-                                rdfs:label "quality assessment of CT scans" .
-
-
 ###  http://hitontology.eu/ontology/qualityOfDocumentation
 :qualityOfDocumentation rdf:type :OutcomeCriteriaCitation ;
                           :classifiedOutcomeCriteria :InformationQuality ;
@@ -2316,19 +2156,6 @@
 :qualityOfRealTimeSynchronizedViewing rdf:type :OutcomeCriteriaCitation ;
                                            :classifiedOutcomeCriteria :ProcessQuality ;
                                            rdfs:label "quality of real time synchronized viewing"@en .
-
-
-###  http://hitontology.eu/ontology/questionnaires
-:questionnaires rdf:type :StudyMethodCitation ;
-                owl:sameAs :surveyWithOpenQuestions ;
-                :classifiedStudyMethod :Qualitative ;
-                rdfs:label "questionnaires"@en .
-
-
-###  http://hitontology.eu/ontology/questionnairesQuantitative
-:questionnairesQuantitative rdf:type :StudyMethodCitation ;
-                             :classifiedStudyMethod :Quantitative ;
-                             rdfs:label "questionnaires quantitative"@en .
 
 
 ###  http://hitontology.eu/ontology/radiologists
@@ -2476,12 +2303,6 @@
                                           rdfs:label "scan bar codes on the patients wristband"@en .
 
 
-###  http://hitontology.eu/ontology/scenarios
-:scenarios rdf:type :StudyMethodCitation ;
-           :classifiedStudyMethod :Qualitative ;
-           rdfs:label "scenarios"@en .
-
-
 ###  http://hitontology.eu/ontology/scheduling
 :scheduling rdf:type :FeatureCitation ;
             :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ,
@@ -2494,18 +2315,6 @@
                                     :featureClassified :EhrSfmManageClinicalWorkflowTasking ,
                                                                :EhrSfmManageResourceAvailability ;
                                     rdfs:label "scheduling and resource allocation"@en .
-
-
-###  http://hitontology.eu/ontology/secondaryUseOfClinicalData
-:secondaryUseOfClinicalData rdf:type :StudyMethodCitation ;
-                                :classifiedStudyMethod :Quantitative ;
-                                rdfs:label "secondary use of clinical data"@en .
-
-
-###  http://hitontology.eu/ontology/secondaryUseOfOperationalData
-:secondaryUseOfOperationalData rdf:type :StudyMethodCitation ;
-                                   :classifiedStudyMethod :Quantitative ;
-                                   rdfs:label "secondary use of operational data"@en .
 
 
 ###  http://hitontology.eu/ontology/secretaries
@@ -2627,19 +2436,6 @@
                  rdfs:label "surgery request"@en .
 
 
-###  http://hitontology.eu/ontology/survey
-:survey rdf:type :StudyMethodCitation ;
-        :classifiedStudyMethod :Quantitative ;
-        rdfs:label "survey"@en .
-
-
-###  http://hitontology.eu/ontology/surveyWithOpenQuestions
-:surveyWithOpenQuestions rdf:type :StudyMethodCitation ;
-                            :classifiedStudyMethod :Qualitative ,
-                                                   :Quantitative ;
-                            rdfs:label "survey with open questions"@en .
-
-
 ###  http://hitontology.eu/ontology/tabletBasedApplication
 :tabletBasedApplication rdf:type :FeatureCitation ;
                           :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
@@ -2674,12 +2470,6 @@
 :timeForProducingImages rdf:type :OutcomeCriteriaCitation ;
                            :classifiedOutcomeCriteria :ProcessEfficiency ;
                            rdfs:label "time for producing images"@en .
-
-
-###  http://hitontology.eu/ontology/timeMeasurement
-:timeMeasurement rdf:type :StudyMethodCitation ;
-                  :classifiedStudyMethod :Quantitative ;
-                  rdfs:label "time measurement"@en .
 
 
 ###  http://hitontology.eu/ontology/timeOfVentilation
