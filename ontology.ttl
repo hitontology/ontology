@@ -693,7 +693,8 @@
 :FeatureCitation rdf:type owl:Class ;
                  rdfs:subClassOf :Citation;
                  rdfs:label "Feature Citation"@en ;
-				 rdfs:comment "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en .
+				 rdfs:comment "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en ;
+				 dcterms:source <https://www.snik.eu/ontology/bb/Feature> .
 
 
 
@@ -797,7 +798,9 @@
 :SoftwareProduct rdf:type owl:Class ;
                  skos:closeMatch doap:Project ;
 				 vann:example :GnuHealth, :Bahmni, :Orthanc ;
-                 rdfs:label "Software Product"@en .
+                 rdfs:label "Software Product"@en ;
+				 rdfs:comment "A software product is an acquired or self-developed piece of software that can be installed on a computer system."@en ;
+				 dcterms:source <https://www.snik.eu/ontology/bb/SoftwareProduct> .
 
 
 ###  http://hitontology.eu/ontology/Study
