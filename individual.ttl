@@ -18,6 +18,9 @@
 #    Individuals
 #################################################################
 
+:AmmenwerthOutcomeCriteriaCatalogue a :OutcomeCriteriaCatalogue ;
+    :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+	rdfs:label "Ammenwerth Outcome Criteria Catalogue"@en.
 
 ###  http://hitontology.eu/ontology/AnnalsOfEmergencyMedicine
 :AnnalsOfEmergencyMedicine rdf:type :Journal ;
@@ -48,10 +51,10 @@
                                  rdfs:isDefinedBy "PubMed. NLM Catalog - NCBI [Internet]. [cited 2019 Apr 2]. Available from: https://www.ncbi.nlm.nih.gov/nlmcatalog" ;
                                  rdfs:label "BMJ quality improvement reports"@en .
 
-
 ###  http://hitontology.eu/ontology/Communication
 :Communication rdf:type :OutcomeCriteriaClassified ;
                :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+			   :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                rdfs:label "Communication"@en .
 
 
@@ -64,6 +67,7 @@
 ###  http://hitontology.eu/ontology/EconomicOutcome
 :EconomicOutcome rdf:type :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				  :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                   rdfs:label "Economic outcome"@en .
 
 
@@ -94,12 +98,14 @@
 ###  http://hitontology.eu/ontology/HardwareQuality
 :HardwareQuality rdf:type :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				  :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                   rdfs:label "Hardware quality"@en .
 
 
 ###  http://hitontology.eu/ontology/Health-relatedOutcome
 :Health-relatedOutcome rdf:type :OutcomeCriteriaClassified ;
                         :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+						:outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                         rdfs:label "Health-related outcome"@en .
 
 
@@ -112,6 +118,7 @@
 ###  http://hitontology.eu/ontology/ITCompetencies
 :ITCompetencies rdf:type :OutcomeCriteriaClassified ;
                  :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				 :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                  rdfs:label "IT Competencies"@en .
 
 
@@ -124,12 +131,14 @@
 ###  http://hitontology.eu/ontology/InformationProcessingCosts
 :InformationProcessingCosts rdf:type :OutcomeCriteriaClassified ;
                               :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+							  :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                               rdfs:label "Information processing costs"@en .
 
 
 ###  http://hitontology.eu/ontology/InformationQuality
 :InformationQuality rdf:type :OutcomeCriteriaClassified ;
                      :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+					 :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                      rdfs:label "Information quality"@en .
 
 
@@ -910,24 +919,28 @@
 ###  http://hitontology.eu/ontology/PatientEmpowerment
 :PatientEmpowerment rdf:type :OutcomeCriteriaClassified ;
                      :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+					 :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                      rdfs:label "Patient empowerment"@en .
 
 
 ###  http://hitontology.eu/ontology/PatientSatisfaction
 :PatientSatisfaction rdf:type :OutcomeCriteriaClassified ;
                       :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+					  :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                       rdfs:label "Patient satisfaction"@en .
 
 
 ###  http://hitontology.eu/ontology/ProcessEfficiency
 :ProcessEfficiency rdf:type :OutcomeCriteriaClassified ;
                     :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+					:outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                     rdfs:label "Process efficiency"@en .
 
 
 ###  http://hitontology.eu/ontology/ProcessQuality
 :ProcessQuality rdf:type :OutcomeCriteriaClassified ;
                  :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				 :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                  rdfs:label "Process quality"@en .
 
 
@@ -946,6 +959,7 @@
 ###  http://hitontology.eu/ontology/SoftwareQuality
 :SoftwareQuality rdf:type :OutcomeCriteriaClassified ;
                   :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				  :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                   rdfs:label "Software quality"@en .
 
 
@@ -964,12 +978,14 @@
 ###  http://hitontology.eu/ontology/UsagePattern
 :UsagePattern rdf:type :OutcomeCriteriaClassified ;
                :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+			   :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                rdfs:label "Usage pattern"@en .
 
 
 ###  http://hitontology.eu/ontology/UserSatisfaction
 :UserSatisfaction rdf:type :OutcomeCriteriaClassified ;
                    :vancouverReference "Ammenwerth E, de Keizer N. An inventory of evaluation studies of information technology in health care: trends in evaluation research 1982-2002. Stud Health Technol Inform. 2004;107(Pt 2):1289–94" ;
+				   :outcomeCriteriaCatalogue :AmmenwerthOutcomeCriteriaCatalogue ;
                    rdfs:label "User satisfaction"@en .
 
 
