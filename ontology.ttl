@@ -726,13 +726,15 @@
 ###  http://hitontology.eu/ontology/LabStudy
 :LabStudy rdf:type owl:Class ;
           rdfs:subClassOf :Study ;
-          rdfs:label "Lab Study"@en .
+          rdfs:label "Lab Study"@en ;
+		  rdfs:comment "Laboratory Study"@en .
 
 
 ###  http://hitontology.eu/ontology/NonExperimentalStudy
 :NonExperimentalStudy rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
-                      rdfs:label "Non Experimental Study"@en .
+                      rdfs:label "Non Experimental Study"@en ;
+					  rdfs:comment "study without an independent variable"@en .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCatalogue
@@ -786,8 +788,8 @@
 :QuasiExperimentalStudy rdf:type owl:Class ;
                         rdfs:subClassOf :Study ;
                         rdfs:label "Quasi Experimental Study"@en ;
+						rdfs:comment "empirical interventional study without randomization"@en ;
 						vann:example :NamedStudy3, :NamedStudy4, :NamedStudy22 .
-#						rdfs:comment ""@en .
 
 
 ###  http://hitontology.eu/ontology/SoftwareProduct
@@ -853,7 +855,8 @@
 ###  http://hitontology.eu/ontology/ValidationStudy
 :ValidationStudy rdf:type owl:Class ;
                  rdfs:subClassOf :Study ;
-                 rdfs:label "Validation Study"@en .
+                 rdfs:label "Validation Study"@en ;
+				 rdfs:comment "compares the accuracy of a measure with a gold standard measure"@en .
 
 ################### Labels for external resources
 yago:OperatingSystem106568134 rdfs:label "Operating System"@en .
