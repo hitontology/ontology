@@ -472,6 +472,15 @@
                       rdfs:label "Physician occupation"@en .
 
 
+###  http://hitontology.eu/ontology/SnomedPhysicistOccupation
+:SnomedPhysicistOccupation rdf:type :UserGroupClassified ;
+                      :userGroupCatalogue :SnomedUserGroupCatalogue ;
+                      :userGroupSctid 106257006 ;
+                      :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
+                      rdfs:comment "Physicist (occupation)"@en ;
+                      rdfs:label "Physicist"@en .
+
+
 ###  http://hitontology.eu/ontology/SnomedProfessionalNurseOccupation
 :SnomedProfessionalNurseOccupation rdf:type :UserGroupClassified ;
                                :userGroupCatalogue :SnomedUserGroupCatalogue ;

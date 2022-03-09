@@ -4746,10 +4746,10 @@
     :applicationSystem :OrthancAppDicomServer, :OrthancAppMiniPacs, :OrthancAppVNA, :OrthancAppViewerOfMedicalImages, :OrthancAppWebViewer ;
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
-    :directEnterpriseFunction :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ; # source unknown but approved by Michelle
+    :directEnterpriseFunction :BbExecutionOfRadiologicalExaminations ; # source unknown but approved by Michelle
     :directFeature :WhoDhiCaptureFromDigitalDevices ; # source unknown but approved by Michelle
     :enterpriseFunction :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
-    :feature :OrthancFeatBringDicomImagesToComputerVisionCommunity, :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
+    :feature :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
     :homepage <https://www.orthanc-server.com/> ;
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
@@ -4784,10 +4784,6 @@
 :OrthancAppWebViewer
     a :ApplicationSystemCitation ;
     rdfs:label "Web Viewer"@en .
-
-:OrthancFeatBringDicomImagesToComputerVisionCommunity
-    a :FeatureCitation ;
-    rdfs:label "Bring DICOM images to the Computer Vision Community"@en .
 
 :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch
     a :FeatureCitation ;
@@ -4827,6 +4823,7 @@
 
 :OrthancFeatRetrievingDicomResourcesFromWadoRsServer
     a :FeatureCitation ;
+	:featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
 
 :OrthancFeatSearchContent
@@ -4839,6 +4836,7 @@
 
 :OrthancFeatSendingDicomResourcesToStowRsServer
     a :FeatureCitation ;
+	:featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
 
 :OrthancFeatTestConnection
@@ -4911,7 +4909,7 @@
     rdfs:label "Network engineer"@en .
 
 :OrthancUserPhysicist
-    :userGroupClassified :SnomedPhysicianOccupation ;
+    :userGroupClassified :SnomedPhysicistOccupation ;
     a :UserGroupCitation ;
     rdfs:label "Physicist"@en .
 
