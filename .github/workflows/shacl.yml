@@ -17,11 +17,16 @@ jobs:
         uses: konradhoeffner/shacl@master
         with:
           data: |
-            meta.ttl
             bb.ttl
-            ciox.ttl
-            he.ttl
-            it4it.ttl
-            ob.ttl
-            he.ttl
+            hl7ehrsfm.ttl
+            joshipacs.ttl
+            ontology.ttl
+            programminglibrary.ttl
+            snomed.ttl
+            swp.ttl
+            database.ttl
+            individual.ttl
+            medfloss.ttl
+            standard.ttl
+            whodhi.ttl
           shacl: shacl.ttl
