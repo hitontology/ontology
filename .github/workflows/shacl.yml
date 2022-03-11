@@ -1,0 +1,27 @@
+name: SHACL
+ 
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+ 
+jobs:
+  shacl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and Validate
+        uses: konradhoeffner/shacl@master
+        with:
+          data: |
+            meta.ttl
+            bb.ttl
+            ciox.ttl
+            he.ttl
+            it4it.ttl
+            ob.ttl
+            he.ttl
+          shacl: shacl.ttl
