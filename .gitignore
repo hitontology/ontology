@@ -3,4 +3,5 @@ limes/.server-storage
 *.pdf
 dist/hito.ttl
 dist/shacl.ttl
+dist/all.ttl
 .env
