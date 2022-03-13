@@ -2,4 +2,5 @@ limes/cache
 limes/.server-storage
 *.pdf
 dist/hito.ttl
+dist/shacl.ttl
 .env
