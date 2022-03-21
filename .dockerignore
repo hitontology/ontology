@@ -1,6 +1,9 @@
 .git
+.gitignore
+.github
 scripts
 limes
-dist
+dist/all.ttl
+dist/hito.ttl
 tmp*
 .~*
