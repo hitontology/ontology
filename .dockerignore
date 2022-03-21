@@ -1,3 +1,6 @@
 .git
 scripts
 limes
+dist
+tmp*
+.~*

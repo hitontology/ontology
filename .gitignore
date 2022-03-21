@@ -1,7 +1,13 @@
-limes/cache
-limes/.server-storage
+limes
+scripts/limes/*.ttl
+scripts/limes/*.csv
+scripts/cluster/*.png
+scripts/cluster/*.svg
+scripts/cluster/tree
 *.pdf
 dist/hito.ttl
 dist/shacl.ttl
 dist/all.ttl
 .env
+.~*
+tmp*
