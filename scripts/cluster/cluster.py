@@ -44,7 +44,7 @@ g.bind("hito", HITO)
 FILENAME = "/tmp/hito-all.nt"
 g.parse(FILENAME, format="nt")
 
-#?citation hito:featureClassified|hito:enterpriseFunctionClassified ?target.
+#?citation hito:fCitClassifiedAs|hito:efCitClassifiedAs ?target.
 CLASSIFIED_ONLY_QUERY = """SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); separator=" ") AS ?targets)
 (GROUP_CONCAT(DISTINCT(STR(?ast)); separator="|") AS ?asts)
 {
@@ -53,7 +53,7 @@ SERVICE <https://hitontology.eu/sparql>
 ?source   a hito:SoftwareProduct;
             rdfs:label ?label;
             hito:feature|hito:enterpriseFunction ?citation.
-  ?citation (hito:featureClassified|hito:enterpriseFunctionClassified)/(hito:subFeatureOf|hito:subFunctionOf)? ?target.
+  ?citation (hito:fCitClassifiedAs|hito:efCitClassifiedAs)/(hito:subFeatureOf|hito:subFunctionOf)? ?target.
 
   OPTIONAL {?source hito:applicationSystem/hito:applicationSystemClassified/rdfs:label ?ast.}
 } 

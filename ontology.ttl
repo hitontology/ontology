@@ -159,7 +159,6 @@
                            rdfs:label "classified as"@en .
 
 
-###  http://hitontology.eu/ontology/enterpriseFunctionClassified
 :efCitClassifiedAs rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :classified ;
                     rdfs:domain :EnterpriseFunctionCitation ;
