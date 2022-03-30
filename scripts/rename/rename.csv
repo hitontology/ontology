@@ -1,0 +1,20 @@
+featureCatalogue,fClaFrom,from catalogue,feature,Feature,f,F
+enterpriseFunctionCatalogue,efClaFrom,from catalogue,enterpriseFunction,EnterpriseFunction,ef,Ef
+applicationSystemCatalogue,astClaFrom,from catalogue,applicationSystem,ApplicationSystem,ast,Ast
+userGroupCatalogue,userClaFrom,from catalogue,userGroup,UserGroup,user,User
+organizationalUnitCatalogue,ouClaFrom,from catalogue,organizationalUnit,OrganizationalUnit,ou,Ou
+featureClassified,fCitClassifiedAs,classified as,,,,
+enterpriseFunctionClassified,efCitClassifiedAs,classified as,,,,
+applicationSystemClassified,astCitClassifiedAs,classified as,,,,
+userGroupClassified,userCitClassifiedAs,classified as,,,,
+organizationalUnitClassified,ouCitClassifiedAs,classified as,,,,
+directFeature,fOffersFCla,offers,,,,
+directEnterpriseFunction,efOffersEfCla,supports,,,,
+directApplicationSystem,astOffersAstCla,is of,,,,
+directUserGroup,userOffersUserCla,used by,,,,
+directOrganizationalUnit,ouOffersOuCla,used in,,,,
+feature,fOffersFCit,offers,,,,
+enterpriseFunction,efSupportsEfCit,supports,,,,
+applicationSystem,astOffersAstCit,is of,,,,
+userGroup,userOffersUserCit,used by,,,,
+organizationalUnit,ouOffersOuCit,used in,,,,

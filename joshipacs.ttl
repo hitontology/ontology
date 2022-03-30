@@ -12,62 +12,62 @@
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
 hito:JoshiPacsAutoTranscriptionAndSelfEditingForVoiceRecognition
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.3.1" ;
     hito:subFeatureOf hito:JoshiPacsVoiceRecognitionTranscriptionAndReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Auto-transcription and Self-Editing for Voice Recognition"@en .
 
 hito:JoshiPacsBuiltInToolsForQualityAssurance
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.1.2" ;
     hito:subFeatureOf hito:JoshiPacsDisplayQuality ;
     a hito:FeatureClassified ;
     rdfs:label "Built-in Tools for Quality Assurance"@en .
 
 hito:JoshiPacsCaseScheduleAndBacklogMonitoring
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.2" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForWorkflowManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Case Schedule and Backlog Monitoring"@en .
 
 hito:JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.1" ;
     hito:subFeatureOf hito:JoshiPacsSystemPerformanceAndArchitecture ;
     a hito:FeatureClassified ;
     rdfs:label "Compatibility and Integration with Other Systems and Products"@en .
 
 hito:JoshiPacsComputerAidedDiagnosisAndVisualization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.4" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForImageManipulation ;
     a hito:FeatureClassified ;
     rdfs:label "Computer aided diagnosis and Visualization"@en .
 
 hito:JoshiPacsConvenienceAndResponsivenessInManipulationOfImages
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.3" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForImageManipulation ;
     a hito:FeatureClassified ;
     rdfs:label "Convenience and Responsiveness in Manipulation of Images"@en .
 
 hito:JoshiPacsCustomizableHangingProtocolAndIcons
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.2" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForImageManipulation ;
     a hito:FeatureClassified ;
     rdfs:label "Customizable Hanging Protocol and Icons"@en .
 
 hito:JoshiPacsDisplayQuality
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.1" ;
     a hito:FeatureClassified ;
     rdfs:label "Display Quality"@en .
 
 hito:JoshiPacsEasyToUseHangingProtocolAndIcons
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.1" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForImageManipulation ;
     a hito:FeatureClassified ;
@@ -80,199 +80,199 @@ hito:JoshiPacsFeatureCatalogue
     rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/24744278/> .
 
 hito:JoshiPacsIndividuallyCustomizableHangingProtocolAndIcons
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.2.2" ;
     hito:subFeatureOf hito:JoshiPacsCustomizableHangingProtocolAndIcons ;
     a hito:FeatureClassified ;
     rdfs:label "Individually Customizable Hanging Protocol and Icons"@en .
 
 hito:JoshiPacsInstitutionallyCustomizableHangingProtocolAndIcons
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.2.1" ;
     hito:subFeatureOf hito:JoshiPacsCustomizableHangingProtocolAndIcons ;
     a hito:FeatureClassified ;
     rdfs:label "Institutionally Customizable Hanging Protocol and Icons"@en .
 
 hito:JoshiPacsIntegratedWithPacsWorklistAndWorkflowOrganization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.1.2" ;
     hito:subFeatureOf hito:JoshiPacsWorklistAndWorkflowOrganization ;
     a hito:FeatureClassified ;
     rdfs:label "Integrated with PACS Worklist and Workflow Organization"@en .
 
 hito:JoshiPacsIntegratedWithRisWorklistAndWorkflowOrganization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.1.1" ;
     hito:subFeatureOf hito:JoshiPacsWorklistAndWorkflowOrganization ;
     a hito:FeatureClassified ;
     rdfs:label "Integrated with RIS Worklist and Workflow Organization"@en .
 
 hito:JoshiPacsIntegratedWithWorkstationForComputerAidedDiagnosisAndVisualization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.4.2" ;
     hito:subFeatureOf hito:JoshiPacsComputerAidedDiagnosisAndVisualization ;
     a hito:FeatureClassified ;
     rdfs:label "Integrated with Workstation for Computer aided diagnosis and Visualization"@en .
 
 hito:JoshiPacsOngoingConfigurationSupport
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.1.2" ;
     hito:subFeatureOf hito:JoshiPacsSupportForServiceAndConfigurationUpgrades ;
     a hito:FeatureClassified ;
     rdfs:label "Ongoing Configuration Support"@en .
 
 hito:JoshiPacsOpenStandardsCompatibilityAndIntegration
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.1.1" ;
     hito:subFeatureOf hito:JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     a hito:FeatureClassified ;
     rdfs:label "Open Standards Compatibility and Integration"@en .
 
 hito:JoshiPacsPeriodicTrendReportingOfPacsPerformance
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.3.2" ;
     hito:subFeatureOf hito:JoshiPacsToolsForContinuousPacsPerformanceMonitoring ;
     a hito:FeatureClassified ;
     rdfs:label "Periodic/Trend Reporting of PACS Performance"@en .
 
 hito:JoshiPacsProprietaryCompatibilityAndIntegration
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.1.2" ;
     hito:subFeatureOf hito:JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     a hito:FeatureClassified ;
     rdfs:label "Proprietary Compatibility and Integration"@en .
 
 hito:JoshiPacsRealTimeMonitoringOfPacsPerformance
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.3.1" ;
     hito:subFeatureOf hito:JoshiPacsToolsForContinuousPacsPerformanceMonitoring ;
     a hito:FeatureClassified ;
     rdfs:label "Real Time Monitoring of PACS Performance"@en .
 
 hito:JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.2" ;
     hito:subFeatureOf hito:JoshiPacsSystemPerformanceAndArchitecture ;
     a hito:FeatureClassified ;
     rdfs:label "Retrieval Speed for Short and Long Term Archived Images"@en .
 
 hito:JoshiPacsSecurityBackupAndDowntimePrevention
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.2" ;
     hito:subFeatureOf hito:JoshiPacsSystemContinuityAndFunctionality ;
     a hito:FeatureClassified ;
     rdfs:label "Security, Backup, and Downtime Prevention"@en .
 
 hito:JoshiPacsServiceEventsSupport
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.1.1" ;
     hito:subFeatureOf hito:JoshiPacsSupportForServiceAndConfigurationUpgrades ;
     a hito:FeatureClassified ;
     rdfs:label "Service Events Support"@en .
 
 hito:JoshiPacsStandAloneFacilityForComputerAidedDiagnosisAndVisualization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2.4.1" ;
     hito:subFeatureOf hito:JoshiPacsComputerAidedDiagnosisAndVisualization ;
     a hito:FeatureClassified ;
     rdfs:label "Stand Alone Facility for Computer aided diagnosis and Visualization"@en .
 
 hito:JoshiPacsStructuredReporting
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.3.2" ;
     hito:subFeatureOf hito:JoshiPacsVoiceRecognitionTranscriptionAndReporting ;
     a hito:FeatureClassified ;
     rdfs:label "Structured Reporting "@en .
 
 hito:JoshiPacsSupportForCardiologyImages
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.3.1" ;
     hito:subFeatureOf hito:JoshiPacsSupportForMultiSpecialtyImagesNonRadImages ;
     a hito:FeatureClassified ;
     rdfs:label "Support for Cardiology Images"@en .
 
 hito:JoshiPacsSupportForHighImageQuality
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.1.1" ;
     hito:subFeatureOf hito:JoshiPacsDisplayQuality ;
     a hito:FeatureClassified ;
     rdfs:label "Support for High Image Quality"@en .
 
 hito:JoshiPacsSupportForMultiModalityImagesOnTheSameWorkstation
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.1.3" ;
     hito:subFeatureOf hito:JoshiPacsDisplayQuality ;
     a hito:FeatureClassified ;
     rdfs:label "Support for Multi-modality Images on the Same Workstation"@en .
 
 hito:JoshiPacsSupportForMultiSpecialtyImagesNonRadImages
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.3" ;
     hito:subFeatureOf hito:JoshiPacsSystemContinuityAndFunctionality ;
     a hito:FeatureClassified ;
     rdfs:label "Support for Multi-Specialty Images (Non-Rad Images)"@en .
 
 hito:JoshiPacsSupportForPathologyImages
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.3.2" ;
     hito:subFeatureOf hito:JoshiPacsSupportForMultiSpecialtyImagesNonRadImages ;
     a hito:FeatureClassified ;
     rdfs:label "Support for Pathology Images"@en .
 
 hito:JoshiPacsSupportForServiceAndConfigurationUpgrades
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.1" ;
     hito:subFeatureOf hito:JoshiPacsSystemContinuityAndFunctionality ;
     a hito:FeatureClassified ;
     rdfs:label "Support for Service and Configuration/Upgrades"@en .
 
 hito:JoshiPacsSystemContinuityAndFunctionality
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5" ;
     a hito:FeatureClassified ;
     rdfs:label "System Continuity and Functionality"@en .
 
 hito:JoshiPacsSystemPerformanceAndArchitecture
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4" ;
     a hito:FeatureClassified ;
     rdfs:label "System Performance and Architecture"@en .
 
 hito:JoshiPacsSystemUpgradesSupport
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.5.1.3" ;
     hito:subFeatureOf hito:JoshiPacsSupportForServiceAndConfigurationUpgrades ;
     a hito:FeatureClassified ;
     rdfs:label "System Upgrades Support"@en .
 
 hito:JoshiPacsToolsForContinuousPacsPerformanceMonitoring
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.4.3" ;
     hito:subFeatureOf hito:JoshiPacsSystemPerformanceAndArchitecture ;
     a hito:FeatureClassified ;
     rdfs:label "Tools for Continuous PACS Performance Monitoring"@en .
 
 hito:JoshiPacsUserInterfaceForImageManipulation
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.2" ;
     a hito:FeatureClassified ;
     rdfs:label "User Interface for Image Manipulation"@en .
 
 hito:JoshiPacsUserInterfaceForWorkflowManagement
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3" ;
     a hito:FeatureClassified ;
     rdfs:label "User Interface for Workflow Management"@en .
 
 hito:JoshiPacsVoiceRecognitionTranscriptionAndReporting
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.3" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForWorkflowManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Voice Recognition, Transcription and Reporting"@en .
 
 hito:JoshiPacsWorklistAndWorkflowOrganization
-    hito:featureCatalogue hito:JoshiPacsFeatureCatalogue ;
+    hito:fClaFrom hito:JoshiPacsFeatureCatalogue ;
     hito:internalId "1.3.1" ;
     hito:subFeatureOf hito:JoshiPacsUserInterfaceForWorkflowManagement ;
     a hito:FeatureClassified ;

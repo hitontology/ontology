@@ -97,24 +97,24 @@
 #    Object Properties
 #################################################################
 
-###  http://hitontology.eu/ontology/applicationSystem
-:applicationSystem rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/astOffersAstCit
+:astOffersAstCit rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :citation ;
                            rdfs:domain :SoftwareProduct ;
                            rdfs:range :ApplicationSystemCitation ;
                            rdfs:label "application system type catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/applicationSystemCatalogue
-:applicationSystemCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/astClaFrom
+:astClaFrom rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :catalogue ;
                            rdfs:domain :ApplicationSystemClassified ;
                            rdfs:range :ApplicationSystemCatalogue ;
                            rdfs:label "application system type catalogue"@en .
 
 
-###  http://hitontology.eu/ontology/applicationSystemClassified
-:applicationSystemClassified rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/astCitClassifiedAs
+:astCitClassifiedAs rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf :classified ;
                              rdfs:domain :ApplicationSystemCitation ;
                              rdfs:range :ApplicationSystemClassified ;
@@ -151,16 +151,16 @@
                              rdfs:label "classified"@en .
 
 
-###  http://hitontology.eu/ontology/featureClassified
-:featureClassified rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/fCitClassifiedAs
+:fCitClassifiedAs rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :classified ;
                            rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "classified feature"@en .
 
 
-###  http://hitontology.eu/ontology/enterpriseFunctionClassified
-:enterpriseFunctionClassified rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/efCitClassifiedAs
+:efCitClassifiedAs rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :classified ;
                     rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :EnterpriseFunctionClassified ;
@@ -175,8 +175,8 @@
                            rdfs:label "classified Outcome Criteria"@en .
 
 
-###  http://hitontology.eu/ontology/organizationalUnitClassified
-:organizationalUnitClassified rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/ouCitClassifiedAs
+:ouCitClassifiedAs rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :classified ;
                         rdfs:domain :OrganizationalUnitCitation ;
                         rdfs:range :OrganizationalUnitClassified ;
@@ -200,8 +200,8 @@
 					rdfs:comment "Shows in which organizational unit the software product is used."@en .
 
 
-###  http://hitontology.eu/ontology/userGroup
-:userGroup rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/userOffersUserCit
+:userOffersUserCit rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :UserGroupCitation ;
@@ -215,8 +215,8 @@
                             rdfs:label "evaluates Application System Type"@en .
 
 
-###  http://hitontology.eu/ontology/enterpriseFunctionCatalogue
-:enterpriseFunctionCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/efClaFrom
+:efClaFrom rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :catalogue;
                     rdfs:domain :EnterpriseFunctionClassified ;
                     rdfs:range :EnterpriseFunctionCatalogue ;
@@ -251,8 +251,8 @@
                                       rdfs:label "evaluates Application System Type Used In Unit"@en .
 
 
-###  http://hitontology.eu/ontology/featureCatalogue
-:featureCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/fClaFrom
+:fClaFrom rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :catalogue;
                            rdfs:domain :FeatureClassified ;
                            rdfs:range :FeatureCatalogue ;
@@ -323,16 +323,16 @@
 					rdfs:comment "the license under which a software product is distributed."@en .
 
 
-###  http://hitontology.eu/ontology/feature
-:feature rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/fOffersFCit
+:fOffersFCit rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :citation ;
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureCitation ;
                rdfs:label "offers Feature"@en .
 
 
-###  http://hitontology.eu/ontology/organizationalUnitCatalogue
-:organizationalUnitCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/ouClaFrom
+:ouClaFrom rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :catalogue ;
                            rdfs:domain :OrganizationalUnitClassified ;
                            rdfs:range :OrganizationalUnitCatalogue ;
@@ -451,8 +451,8 @@
                     rdfs:label "supported by feature citation"@en .
 
 
-###  http://hitontology.eu/ontology/enterpriseFunction
-:enterpriseFunction rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/efSupportsEfCit
+:efSupportsEfCit rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :EnterpriseFunctionCitation ;
@@ -467,16 +467,16 @@
 					rdfs:comment "The language supported by a software product. A software product can offer multiple languages the user can choose from."@en .
 
 
-###  http://hitontology.eu/ontology/userGroupClassified
-:userGroupClassified rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/userCitClassifiedAs
+:userCitClassifiedAs rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :classified;
                            rdfs:domain :UserGroupCitation ;
                            rdfs:range :UserGroupClassified ;
                            rdfs:label "classified user group"@en .
 
 
-###  http://hitontology.eu/ontology/userGroupCatalogue
-:userGroupCatalogue rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/userClaFrom
+:userClaFrom rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :catalogue;
                            rdfs:domain :UserGroupClassified ;
                            rdfs:range :UserGroupCatalogue ;
@@ -513,8 +513,8 @@
           rdfs:comment "SNOMED CT identifier of an organizational unit"@en .
 
 
-###  http://hitontology.eu/ontology/userGroupSctid
-:userGroupSctid rdf:type owl:DatatypeProperty ,
+###  http://hitontology.eu/ontology/userOffersUserCitSctid
+:userOffersUserCitSctid rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :UserGroupClassified ;
           rdfs:range xsd:nonNegativeInteger ;
@@ -537,32 +537,27 @@
 
 ########## Direct connections between SoftwareProduct and classified catalogue entries
 
-###  http://hitontology.eu/ontology/directApplicationSystem
-:directApplicationSystem rdf:type owl:ObjectProperty ;
+:astOffersAstCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :ApplicationSystemClassified ;
                            rdfs:label "application system"@en .
 
-###  http://hitontology.eu/ontology/directEnterpriseFunction
-:directEnterpriseFunction rdf:type owl:ObjectProperty ;
+:efOffersEfCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :EnterpriseFunctionClassified ;
                            rdfs:label "function"@en .
 
-###  http://hitontology.eu/ontology/directFeature
-:directFeature rdf:type owl:ObjectProperty ;
+:fOffersFCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :FeatureClassified ;
                            rdfs:label "feature"@en .
 
-###  http://hitontology.eu/ontology/directUserGroup
-:directUserGroup rdf:type owl:ObjectProperty ;
+:userOffersUserCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :UserGroupClassified ;
                            rdfs:label "user group"@en .
 
-###  http://hitontology.eu/ontology/directOrganizationalUnit
-:directOrganizationalUnit rdf:type owl:ObjectProperty ;
+:ouOffersOuCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :OrganizationalUnitClassified ;
                            rdfs:label "organizational unit"@en .
