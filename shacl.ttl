@@ -47,7 +47,7 @@
 	[sh:path :license],
 	[sh:path :programmingLibrary],
 	[sh:path :homepage],
-	[sh:path :feature],
+	[sh:path :spOffersFCit],
 	[sh:path :enterpriseFunction],
 	[sh:path :applicationSystem],
 	[sh:path :organizationalUnit],

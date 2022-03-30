@@ -324,7 +324,7 @@
 
 
 ###  http://hitontology.eu/ontology/feature
-:feature rdf:type owl:ObjectProperty ;
+:spOffersFCit rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :citation ;
                rdfs:domain :SoftwareProduct ;
                rdfs:range :FeatureCitation ;
