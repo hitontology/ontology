@@ -52,7 +52,7 @@
 	[sh:path :applicationSystem],
 	[sh:path :organizationalUnit],
 	[sh:path :userGroup],
-	[sh:path :directFeature],
+	[sh:path :spOffersFCla],
 	[sh:path :directEnterpriseFunction],
 	[sh:path :directApplicationSystem],
 	[sh:path :directOrganizationalUnit],
@@ -81,7 +81,7 @@
 		:applicationSystem,
 		:organizationalUnit,
 		:userGroup,
-		:directFeature,
+		:spOffersFCla,
 		:directEnterpriseFunction,
 		:directApplicationSystem,
 		:directOrganizationalUnit,
@@ -153,7 +153,7 @@
 	sh:class :UserGroupCitation.
 
 :DirectFeatureRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directFeature;
+	sh:targetObjectsOf :spOffersFCla;
 	sh:class :FeatureClassified.
 
 :DirectEnterpriseFunctionRangeShape a sh:NodeShape;

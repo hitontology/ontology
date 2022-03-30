@@ -4747,7 +4747,7 @@
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
     :directEnterpriseFunction :BbExecutionOfRadiologicalExaminations ; # source unknown but approved by Michelle
-    :directFeature :WhoDhiCaptureFromDigitalDevices ; # source unknown but approved by Michelle
+    :spOffersFCla :WhoDhiCaptureFromDigitalDevices ; # source unknown but approved by Michelle
     :enterpriseFunction :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
     :spOffersFCit :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
     :homepage <https://www.orthanc-server.com/> ;

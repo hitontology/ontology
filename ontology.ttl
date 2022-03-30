@@ -550,10 +550,10 @@
                            rdfs:label "function"@en .
 
 ###  http://hitontology.eu/ontology/directFeature
-:directFeature rdf:type owl:ObjectProperty ;
+:spOffersFCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :FeatureClassified ;
-                           rdfs:label "feature"@en .
+                           rdfs:label "offers"@en .
 
 ###  http://hitontology.eu/ontology/directUserGroup
 :directUserGroup rdf:type owl:ObjectProperty ;
