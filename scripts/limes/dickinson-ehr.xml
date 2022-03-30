@@ -27,7 +27,7 @@
 		<ENDPOINT>../../dickinson.ttl</ENDPOINT>
 		<VAR>?di</VAR>
 		<PAGESIZE>-1</PAGESIZE>
-		<RESTRICTION>?di a hito:FeatureClassified; hito:featureCatalogue hito:Dickinson.</RESTRICTION>
+		<RESTRICTION>?di a hito:FeatureClassified; hito:fClaFrom hito:Dickinson.</RESTRICTION>
 		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</SOURCE>
@@ -37,7 +37,7 @@
 		<ENDPOINT>../../hl7ehrsfm.ttl</ENDPOINT>
 		<VAR>?ehr</VAR>
 		<PAGESIZE>-1</PAGESIZE>
-		<RESTRICTION>?ehr a hito:FeatureClassified; hito:featureCatalogue hito:EhrSfmFeatureCatalogue.</RESTRICTION>
+		<RESTRICTION>?ehr a hito:FeatureClassified; hito:fClaFrom hito:EhrSfmFeatureCatalogue.</RESTRICTION>
 		<PROPERTY>skos:altLabel AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</TARGET>

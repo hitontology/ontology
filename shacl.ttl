@@ -47,16 +47,16 @@
 	[sh:path :license],
 	[sh:path :programmingLibrary],
 	[sh:path :homepage],
-	[sh:path :feature],
-	[sh:path :enterpriseFunction],
-	[sh:path :applicationSystem],
-	[sh:path :organizationalUnit],
-	[sh:path :userGroup],
-	[sh:path :directFeature],
-	[sh:path :directEnterpriseFunction],
-	[sh:path :directApplicationSystem],
-	[sh:path :directOrganizationalUnit],
-	[sh:path :directUserGroup],
+	[sh:path :spOffersFCit],
+	[sh:path :spSupportsEfCit],
+	[sh:path :spIsOfAstCit],
+	[sh:path :spUsedInOuCit],
+	[sh:path :spUsedByUserCit],
+	[sh:path :spOffersFCla],
+	[sh:path :spSupportsEfCla],
+	[sh:path :spIsOfAstCla],
+	[sh:path :spUsedInOuCla],
+	[sh:path :spUsedByUserCla],
 	[sh:path :repository],
 	[sh:path :softwareProductComponent];
 	sh:closed true;
@@ -76,103 +76,103 @@
 		:license,
 		:programmingLibrary,
 		:homepage,
-		:feature,
-		:enterpriseFunction,
-		:applicationSystem,
-		:organizationalUnit,
-		:userGroup,
-		:directFeature,
-		:directEnterpriseFunction,
-		:directApplicationSystem,
-		:directOrganizationalUnit,
-		:directUserGroup,
+		:spOffersFCit,
+		:spSupportsEfCit,
+		:spIsOfAstCit,
+		:spUsedInOuCit,
+		:spUsedByUserCit,
+		:spOffersFCla,
+		:spSupportsEfCla,
+		:spIsOfAstCla,
+		:spUsedInOuCla,
+		:spUsedByUserCla,
 		:repository,
 		:softwareProductComponent;
 	sh:class :SoftwareProduct.
 
 #### Software Product Range ################################################
 
-:InteroperabilityRangeShape a sh:NodeShape;
+:interoperabilityRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :interoperability;
 	sh:class :Interoperability.
 
-:CertificationRangeShape a sh:NodeShape;
+:certificationRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :certification;
 	sh:class :Certification.
 
-:OperatingSystemRangeShape a sh:NodeShape;
+:operatingSystemRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :operatingSystem;
 	sh:class :OperatingSystem.
 
-:ClientRangeShape a sh:NodeShape;
+:clientRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :client;
 	sh:class :Client.
 
-:LanguageRangeShape a sh:NodeShape;
+:languageRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :language;
 	sh:class dbo:Language.
 
-:ProgrammingLanguageRangeShape a sh:NodeShape;
+:programmingLanguageRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :programmingLanguage;
 	sh:class dbo:ProgrammingLanguage.
 
-:DatabaseSystemRangeShape a sh:NodeShape;
+:databaseSystemRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :databaseSystem;
 	sh:class :DatabaseSystem.
 
-:LicenseRangeShape a sh:NodeShape;
+:licenseRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :license;
 	sh:class :License.
 
-:ProgrammingLibraryRangeShape a sh:NodeShape;
+:programmingLibraryRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :programmingLibrary;
 	sh:class :ProgrammingLibrary.
 
-:HomepageRangeShape a sh:NodeShape;
+:homepageRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :homepage;
 	sh:nodeKind sh:IRI.
 
-:FeatureRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :feature;
+:spOffersFCitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spOffersFCit;
 	sh:class :FeatureCitation.
 
-:EnterpriseFunctionRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :enterpriseFunction;
+:spSupportsEfCitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spSupportsEfCit;
 	sh:class :EnterpriseFunctionCitation.
 
-:ApplicationSystemRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :applicationSystem;
-	sh:class :ApplicationSystemCitation.
+:spIsOfAstCitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spIsOfAstCit;
+	sh:class :ApplicationSystemTypeCitation.
 
-:OrganizationalUnitRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :organizationalUnit;
+:spUsedInOuCitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spUsedInOuCit;
 	sh:class :OrganizationalUnitCitation.
 
-:UserGroupRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :userGroup;
+:spUsedByUserCitRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spUsedByUserCit;
 	sh:class :UserGroupCitation.
 
-:DirectFeatureRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directFeature;
+:spOffersFClaRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spOffersFCla;
 	sh:class :FeatureClassified.
 
-:DirectEnterpriseFunctionRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directEnterpriseFunction;
+:spSupportsEfClaRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spSupportsEfCla;
 	sh:class :EnterpriseFunctionClassified.
 
-:DirectApplicationSystemRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directApplicationSystem;
-	sh:class :ApplicationSystemClassified.
+:spIsOfAstClaRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spIsOfAstCla;
+	sh:class :ApplicationSystemTypeClassified.
 
-:DirectOrganizationalUnitRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directOrganizationalUnit;
+:spUsedInOuClaRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spUsedInOuCla;
 	sh:class :OrganizationalUnitClassified.
 
-:DirectUserGroupRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :directUserGroup;
+:spUsedByUserClaRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :spUsedByUserCla;
 	sh:class :UserGroupClassified.
 
-:RepositoryRangeShape a sh:NodeShape;
+:repositoryRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :repository;
 	sh:property [
 			sh:path [ sh:inversePath :repository ];
@@ -180,7 +180,7 @@
 	];
 	sh:nodeKind sh:IRI.
 
-:SoftwareProductComponentRangeShape a sh:NodeShape;
+:softwareProductComponentRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :softwareProductComponent;
 	sh:class :SoftwareProduct.
 
@@ -263,7 +263,7 @@
 :EnterpriseFunctionCitationShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionCitation;
 	sh:property :labelShape, [
-		sh:path :enterpriseFunctionClassified;
+		sh:path :efCitClassifiedAs;
 	];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -272,17 +272,17 @@
 :FeatureCitationShape a sh:NodeShape;
 	sh:targetClass :FeatureCitation;
 	sh:property :labelShape, [
-		sh:path :featureClassified;
+		sh:path :fCitClassifiedAs;
 	] ,
 	[sh:path :supportsFunction];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:ApplicationSystemCitationShape a sh:NodeShape;
-	sh:targetClass :ApplicationSystemCitation;
+:ApplicationSystemTypeCitationShape a sh:NodeShape;
+	sh:targetClass :ApplicationSystemTypeCitation;
 	sh:property :labelShape, [
-		sh:path :applicationSystemClassified;
+		sh:path :astCitClassifiedAs;
 	];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -291,7 +291,7 @@
 :UserGroupCitationShape a sh:NodeShape;
 	sh:targetClass :UserGroupCitation;
 	sh:property :labelShape, [
-		sh:path :userGroupClassified;
+		sh:path :userCitClassifiedAs;
 	];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -300,7 +300,7 @@
 :OrganizationalUnitCitationShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitCitation;
 	sh:property :labelShape, [
-		sh:path :organizationalUnitClassified;
+		sh:path :ouCitClassifiedAs;
 	];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -311,7 +311,7 @@
 :EnterpriseFunctionClassifiedShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionClassified;
 	sh:property :labelShape, [
-		sh:path :enterpriseFunctionCatalogue;
+		sh:path :efClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
@@ -323,7 +323,7 @@
 :FeatureClassifiedShape a sh:NodeShape;
 	sh:targetClass :FeatureClassified;
 	sh:property :labelShape, [
-		sh:path :featureCatalogue;
+		sh:path :fClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
@@ -333,10 +333,10 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:ApplicationSystemClassifiedShape a sh:NodeShape;
-	sh:targetClass :ApplicationSystemClassified;
+:ApplicationSystemTypeClassifiedShape a sh:NodeShape;
+	sh:targetClass :ApplicationSystemTypeClassified;
 	sh:property :labelShape, [
-		sh:path :applicationSystemCatalogue;
+		sh:path :astClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	];
@@ -347,11 +347,11 @@
 :UserGroupClassifiedShape a sh:NodeShape;
 	sh:targetClass :UserGroupClassified;
 	sh:property :labelShape, [
-		sh:path :userGroupCatalogue;
+		sh:path :userClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
-	[sh:path :userGroupSctid],
+	[sh:path :spUsedByUserCitSctid],
 	[sh:path :vancouverReference];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -360,11 +360,11 @@
 :OrganizationalUnitClassifiedShape a sh:NodeShape;
 	sh:targetClass :OrganizationalUnitClassified;
 	sh:property :labelShape, [
-		sh:path :organizationalUnitCatalogue;
+		sh:path :ouClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
-	[sh:path :organizationalUnitSctid],
+	[sh:path :spUsedInOuCitSctid],
 	[sh:path :vancouverReference];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -372,46 +372,46 @@
 
 #### Classified Domain ######################################################
 
-:FeatureClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :featureClassified;
+:fCitClassifiedAsDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :fCitClassifiedAs;
 	sh:class :FeatureCitation.
 
-:EnterpriseFunctionClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :enterpriseFunctionClassified;
+:efCitClassifiedAsDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :efCitClassifiedAs;
 	sh:class :EnterpriseFunctionCitation.
 
-:ApplicationSystemClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :applicationSystemClassified;
-	sh:class :ApplicationSystemCitation.
+:astCitClassifiedAsDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :astCitClassifiedAs;
+	sh:class :ApplicationSystemTypeCitation.
 
-:OrganizationalUnitClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :organizationalUnitClassified;
+:ouCitClassifiedAsDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :ouCitClassifiedAs;
 	sh:class :OrganizationalUnitCitation.
 
-:UserGroupClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :userGroupClassified;
+:userCitClassifiedAsDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :userCitClassifiedAs;
 	sh:class :UserGroupCitation.
 
 #### Classified Range ######################################################
 
-:FeatureClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :featureClassified;
+:fCitClassifiedAsRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :fCitClassifiedAs;
 	sh:class :FeatureClassified.
 
-:EnterpriseFunctionClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :enterpriseFunctionClassified;
+:efCitClassifiedAsRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :efCitClassifiedAs;
 	sh:class :EnterpriseFunctionClassified.
 
-:ApplicationSystemClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :applicationSystemClassified;
-	sh:class :ApplicationSystemClassified.
+:astCitClassifiedAsRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :astCitClassifiedAs;
+	sh:class :ApplicationSystemTypeClassified.
 
-:OrganizationalUnitClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :organizationalUnitClassified;
+:ouCitClassifiedAsRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :ouCitClassifiedAs;
 	sh:class :OrganizationalUnitClassified.
 
-:UserGroupClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :userGroupClassified;
+:userCitClassifiedAsRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :userCitClassifiedAs;
 	sh:class :UserGroupClassified.
 
 #### Catalogue ##############################################################
@@ -425,69 +425,69 @@
 
 #### Catalogue Domain ######################################################
 
-:FeatureCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :featureCatalogue;
+:fClaFromDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :fClaFrom;
 	sh:class :FeatureClassified.
 
-:EnterpriseFunctionCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :enterpriseFunctionCatalogue;
+:efClaFromDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :efClaFrom;
 	sh:class :EnterpriseFunctionClassified.
 
-:ApplicationSystemCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :applicationSystemCatalogue;
-	sh:class :ApplicationSystemClassified.
+:astClaFromDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :astClaFrom;
+	sh:class :ApplicationSystemTypeClassified.
 
-:OrganizationalUnitCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :organizationalUnitCatalogue;
+:ouClaFromDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :ouClaFrom;
 	sh:class :OrganizationalUnitClassified.
 
-:UserGroupCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :userGroupCatalogue;
+:userClaFromDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :userClaFrom;
 	sh:class :UserGroupClassified.
 
 #### Catalogue Range ######################################################
 
-:FeatureCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :featureCatalogue;
+:fClaFromRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :fClaFrom;
 	sh:class :FeatureCatalogue.
 
-:EnterpriseFunctionCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :enterpriseFunctionCatalogue;
+:efClaFromRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :efClaFrom;
 	sh:class :EnterpriseFunctionCatalogue.
 
-:ApplicationSystemCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :applicationSystemCatalogue;
-	sh:class :ApplicationSystemCatalogue.
+:astClaFromRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :astClaFrom;
+	sh:class :ApplicationSystemTypeCatalogue.
 
-:OrganizationalUnitCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :organizationalUnitCatalogue;
+:ouClaFromRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :ouClaFrom;
 	sh:class :OrganizationalUnitCatalogue.
 
-:UserGroupCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :userGroupCatalogue;
+:userClaFromRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :userClaFrom;
 	sh:class :UserGroupCatalogue.
 
 ##### Evaluates Domain ######################################################
 
-:EvaluatesDomainShape a sh:NodeShape;
+:evaluatesDomainShape a sh:NodeShape;
 	sh:targetSubjectsOf
-		:evaluatesApplicationSystem,
+		:evaluatesApplicationSystemType,
 		:evaluatesProduct,
-		:evaluatesApplicationSystemHavingFeature;
+		:evaluatesApplicationSystemTypeHavingFeature;
 	sh:class :Study.
 
 ##### Evaluates Range #######################################################
 
-:EvaluatesApplicationSystemRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :evaluatesApplicationSystem;
-	sh:class :ApplicationSystemCitation.
+:evaluatesApplicationSystemTypeRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :evaluatesApplicationSystemType;
+	sh:class :ApplicationSystemTypeCitation.
 
-:EvaluatesApplicationSystemBasedOnProductRangeShape a sh:NodeShape;
+:evaluatesApplicationSystemTypeBasedOnProductRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :evaluatesProduct;
 	sh:class :SoftwareProduct.
 
-:EvaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :evaluatesApplicationSystemHavingFeature;
+:evaluatesApplicationSystemTypeHavingFeatureRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :evaluatesApplicationSystemTypeHavingFeature;
 	sh:class :FeatureCitation.
 
 ##### Study #################################################################
@@ -500,14 +500,14 @@
 	[sh:path :publishedInJournal],
 	[sh:path :pmid],
 	[sh:path bibo:doi],
-	[sh:path :outcomeCriteria],
+	[sh:path :ocEvaluatesOcCit],
 	[sh:path :studyMethod],
 	[sh:path :evaluatesFeature],
-	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeUsedInUnit], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeHavingFeature], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeHavingUserGroup], # not in ontology diagram
 	[sh:path :evaluatesProduct], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystem], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemType], # not in ontology diagram
 	[sh:path :dealsWithUserGroup],
 	[sh:path :vancouverReference],
 	[sh:path :tookPlaceInOrganizationalUnit];
@@ -524,14 +524,14 @@
 	[sh:path :publishedInJournal],
 	[sh:path :pmid],
 	[sh:path bibo:doi],
-	[sh:path :outcomeCriteria],
+	[sh:path :ocEvaluatesOcCit],
 	[sh:path :studyMethod],
 	[sh:path :evaluatesFeature],
-	[sh:path :evaluatesApplicationSystemUsedInUnit], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemHavingFeature], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystemHavingUserGroup], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeUsedInUnit], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeHavingFeature], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemTypeHavingUserGroup], # not in ontology diagram
 	[sh:path :evaluatesProduct], # not in ontology diagram
-	[sh:path :evaluatesApplicationSystem], # not in ontology diagram
+	[sh:path :evaluatesApplicationSystemType], # not in ontology diagram
 	[sh:path :dealsWithUserGroup],
 	[sh:path :vancouverReference],
 	[sh:path :tookPlaceInOrganizationalUnit];
@@ -560,8 +560,8 @@
 #	sh:class xsd:anyURI. # does not validate correctly
   sh:pattern "^https://pubmed.ncbi.nlm.nih.gov/".
 
-:outcomeCriteriaRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :outcomeCriteria;
+:ocEvaluatesOcCitRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :ocEvaluatesOcCit;
 	sh:class :OutcomeCriteriaCitation.
 
 :studyMethodRangeShape a sh:NodeShape;
@@ -572,25 +572,25 @@
   sh:targetObjectsOf :evaluatesFeature;
 	sh:class :EvaluatesFeature.
 
-:evaluatesApplicationSystemUsedInUnitRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesApplicationSystemUsedInUnit;
+:evaluatesApplicationSystemTypeUsedInUnitRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :evaluatesApplicationSystemTypeUsedInUnit;
 	sh:class :OrganizationalUnitCitation.
 
-:evaluatesApplicationSystemHavingFeatureRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesApplicationSystemHavingFeature;
+:evaluatesApplicationSystemTypeHavingFeatureRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :evaluatesApplicationSystemTypeHavingFeature;
 	sh:class :FeatureCitation.
 
-:evaluatesApplicationSystemHavingUserGroupRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesApplicationSystemHavingUserGroup;
+:evaluatesApplicationSystemTypeHavingUserGroupRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :evaluatesApplicationSystemTypeHavingUserGroup;
 	sh:class :UserGroupCitation.
 
 :evaluatesProductRangeShape a sh:NodeShape;
   sh:targetObjectsOf :evaluatesProduct;
 	sh:class :SoftwareProduct.
 
-:evaluatesApplicationSystemRangeShape a sh:NodeShape;
-  sh:targetObjectsOf :evaluatesApplicationSystem;
-	sh:class :ApplicationSystemCitation.
+:evaluatesApplicationSystemTypeRangeShape a sh:NodeShape;
+  sh:targetObjectsOf :evaluatesApplicationSystemType;
+	sh:class :ApplicationSystemTypeCitation.
 
 :dealsWithUserGroupRangeShape a sh:NodeShape;
   sh:targetObjectsOf :dealsWithUserGroup;

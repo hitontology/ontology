@@ -1,0 +1,10 @@
+#!/bin/bash
+# this is potentially destructive and relies on everything being under version control so that wrong replacements e.g. in binary files can be easily fixed
+count=`find /home/konrad/projekte/hito -type f -not -path '*/\.*' -not -path '*/venv/*' -size -20M | wc -l`
+echo "Replacing in $count files"
+while IFS="," read -r old new label rest
+do
+	echo "Renaming $old to $new..."
+	find /home/konrad/projekte/hito -type f -not -path '*/\.*' -not -path '*/venv/*' -size -20M -exec sed -i "s|:$old|:$new|g" {} +
+	find /home/konrad/projekte/hito -type f -not -path '*/\.*' -not -path '*/venv/*' -size -20M -exec sed -i "s|/$old|/$new|g" {} +
+done < rename.csv

@@ -29,7 +29,7 @@
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?c1 a hito:FeatureClassified</RESTRICTION>
 		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
-		<PROPERTY>hito:featureCatalogue RENAME cat</PROPERTY>
+		<PROPERTY>hito:fClaFrom RENAME cat</PROPERTY>
 		<OPTIONAL_PROPERTY>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</OPTIONAL_PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</SOURCE>
@@ -41,7 +41,7 @@
 		<PAGESIZE>-1</PAGESIZE>
 		<RESTRICTION>?c2 a hito:FeatureClassified</RESTRICTION>
 		<PROPERTY>rdfs:label AS nolang->lowercase->regularalphabet RENAME label</PROPERTY>
-		<PROPERTY>hito:featureCatalogue RENAME cat</PROPERTY>
+		<PROPERTY>hito:fClaFrom RENAME cat</PROPERTY>
 		<OPTIONAL_PROPERTY>rdfs:comment AS nolang->lowercase->regularalphabet RENAME comment</OPTIONAL_PROPERTY>
 		<TYPE>TURTLE</TYPE>
 	</TARGET>
