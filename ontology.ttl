@@ -160,11 +160,11 @@
 
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionClassified
-:enterpriseFunctionClassified rdf:type owl:ObjectProperty ;
+:efCitClassifiedAs rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :classified ;
                     rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :EnterpriseFunctionClassified ;
-                    rdfs:label "classified function"@en .
+                    rdfs:label "classified as"@en .
 
 
 ###  http://hitontology.eu/ontology/classifiedOutcomeCriteria

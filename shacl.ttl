@@ -263,7 +263,7 @@
 :EnterpriseFunctionCitationShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionCitation;
 	sh:property :labelShape, [
-		sh:path :enterpriseFunctionClassified;
+		sh:path :efCitClassifiedAs;
 	];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -377,7 +377,7 @@
 	sh:class :FeatureCitation.
 
 :EnterpriseFunctionClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :enterpriseFunctionClassified;
+	sh:targetSubjectsOf :efCitClassifiedAs;
 	sh:class :EnterpriseFunctionCitation.
 
 :ApplicationSystemClassifiedDomainShape a sh:NodeShape;
@@ -399,7 +399,7 @@
 	sh:class :FeatureClassified.
 
 :EnterpriseFunctionClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :enterpriseFunctionClassified;
+	sh:targetObjectsOf :efCitClassifiedAs;
 	sh:class :EnterpriseFunctionClassified.
 
 :ApplicationSystemClassifiedRangeShape a sh:NodeShape;

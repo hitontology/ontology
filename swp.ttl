@@ -103,12 +103,12 @@
     rdfs:label "switching between different levels of granularity"@en .
 
 <http://hitontology.eu/ontology/3LGM2FuncAssessingQuality>
-    :enterpriseFunctionClassified :BbQualityManagement ;
+    :efCitClassifiedAs :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "assessing quality of information systems"@en .
 
 <http://hitontology.eu/ontology/3LGM2FuncBeschreibungInformationssysteme>
-    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    :efCitClassifiedAs :BbStrategicInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Beschreibung von Informationssystemen"@en .
 
@@ -117,17 +117,17 @@
     rdfs:label "Bewertung von Informationssystemen"@en .
 
 <http://hitontology.eu/ontology/3LGM2FuncInformationManagement>
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Information Management"@en .
 
 <http://hitontology.eu/ontology/3LGM2FuncPlanungInformationssysteme>
-    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    :efCitClassifiedAs :BbStrategicInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Planung von Informationssystemen"@en .
 
 <http://hitontology.eu/ontology/3LGM2FuncstrategicInformationManagementPlanning>
-    :enterpriseFunctionClassified :BbStrategicInformationManagement ;
+    :efCitClassifiedAs :BbStrategicInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "strategic information management planning"@en .
 
@@ -422,27 +422,27 @@
     rdfs:label "Use Drug Prescription Templates"@en .
 
 :BahmniFuncBilling
-    :enterpriseFunctionClassified :WhoDhiHealthFinancing ;
+    :efCitClassifiedAs :WhoDhiHealthFinancing ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
 :BahmniFuncClinicalServices
-    :enterpriseFunctionClassified :WhoDhiClientHealthRecords, :WhoDhiHealthWorkerActivityPlanningAndScheduling, :WhoDhiHealthcareProviderCommunication, :WhoDhiHealthcareProviderTraining, :WhoDhiPrescriptionAndMedicationManagement ;
+    :efCitClassifiedAs :WhoDhiClientHealthRecords, :WhoDhiHealthWorkerActivityPlanningAndScheduling, :WhoDhiHealthcareProviderCommunication, :WhoDhiHealthcareProviderTraining, :WhoDhiPrescriptionAndMedicationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Clinical Services"@en .
 
 :BahmniFuncInpatientManagement
-    :enterpriseFunctionClassified :WhoDhiClientHealthRecords, :WhoDhiClientIdentificationAndRegistration ;
+    :efCitClassifiedAs :WhoDhiClientHealthRecords, :WhoDhiClientIdentificationAndRegistration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Inpatient Management"@en .
 
 :BahmniFuncLaboratory
-    :enterpriseFunctionClassified :WhoDhiClientIdentificationAndRegistration ;
+    :efCitClassifiedAs :WhoDhiClientIdentificationAndRegistration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Laboratory"@en .
 
 :BahmniFuncPatientRegistration
-    :enterpriseFunctionClassified :WhoDhiClientIdentificationAndRegistration ;
+    :efCitClassifiedAs :WhoDhiClientIdentificationAndRegistration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Registration"@en .
 
@@ -451,7 +451,7 @@
     rdfs:label "Reporting"@en .
 
 :BahmniFuncStockManagement
-    :enterpriseFunctionClassified :WhoDhiSupplyChainManagement ;
+    :efCitClassifiedAs :WhoDhiSupplyChainManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
 
@@ -531,7 +531,7 @@
     rdfs:label "Medication administration record"@en .
 
 :BetterMedsFeatMedicationManagement
-    :enterpriseFunctionClassified :BbMaterialAndMedicationManagement, :WhoDhiPrescriptionAndMedicationManagement ;
+    :efCitClassifiedAs :BbMaterialAndMedicationManagement, :WhoDhiPrescriptionAndMedicationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "medication management"@en .
 
@@ -859,17 +859,17 @@
     rdfs:label "Analysis"@en .
 
 :BikaLimsFuncBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
 :BikaLimsFuncManagingClients
-    :enterpriseFunctionClassified :WhoDhiClientIdentificationAndRegistration ;
+    :efCitClassifiedAs :WhoDhiClientIdentificationAndRegistration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Managing Clients"@en .
 
 :BikaLimsFuncQualityControl
-    :enterpriseFunctionClassified :BbQualityManagement ;
+    :efCitClassifiedAs :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality Control"@en .
 
@@ -1007,72 +1007,72 @@
     rdfs:label "Support to manage various clinical and diagnostic results"@en .
 
 :Cis1FuncAccounting
-    :enterpriseFunctionClassified :BbCostAndResultsAccounting, :BbFinancialAccounting ;
+    :efCitClassifiedAs :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Accounting"@en .
 
 :Cis1FuncControlling
-    :enterpriseFunctionClassified :BbControlling ;
+    :efCitClassifiedAs :BbControlling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Controlling"@en .
 
 :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbInformationManagement, :BbPatientAdministration, :BbPatientCare, :BbSupplyManagementSchedulingAndResourceAllocation ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation, :BbInformationManagement, :BbPatientAdministration, :BbPatientCare, :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Integrated patient centred documentation for different disciplines"@en .
 
 :Cis1FuncKnowledgeManagement
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Knowledge management"@en .
 
 :Cis1FuncLogistics
-    :enterpriseFunctionClassified :BbSupplyManagementSchedulingAndResourceAllocation ;
+    :efCitClassifiedAs :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Logistics"@en .
 
 :Cis1FuncManageVariousClinicalAndDiagnosticResults
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbPatientCare ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manage various clinical and diagnostic results"@en .
 
 :Cis1FuncMedicationOrderingAndMedicationDocumentation
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medication ordering and medication documentation"@en .
 
 :Cis1FuncNursingDocumentation
-    :enterpriseFunctionClassified :BbPatientCare ;
+    :efCitClassifiedAs :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Nursing Documentation"@en .
 
 :Cis1FuncQualityAssurance
-    :enterpriseFunctionClassified :BbQualityManagement ;
+    :efCitClassifiedAs :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality assurance"@en .
 
 :Cis1FuncScheduling
-    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService ;
+    :efCitClassifiedAs :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Scheduling"@en .
 
 :Cis1FuncServiceRecording
-    :enterpriseFunctionClassified :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
+    :efCitClassifiedAs :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Service recording"@en .
 
 :Cis1FuncSurveillanceOfInfectiousDiseases
-    :enterpriseFunctionClassified :BbQualityManagement ;
+    :efCitClassifiedAs :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Surveillance of infectious diseases"@en .
 
 :Cis1FuncVariousTypesOfBilling
-    :enterpriseFunctionClassified :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Various types of billing"@en .
 
 :Cis1FuncWardOrganization
-    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSupplyAndDisposalManagement, :BbSupplyManagementSchedulingAndResourceAllocation, :WhoDhiHumanResourceManagement ;
+    :efCitClassifiedAs :BbSchedulingAndResourceAllocation, :BbSupplyAndDisposalManagement, :BbSupplyManagementSchedulingAndResourceAllocation, :WhoDhiHumanResourceManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Ward organization"@en .
 
@@ -1126,37 +1126,37 @@
     rdfs:label "Support of scheduling"@en .
 
 :Cis2Func
-    :enterpriseFunctionClassified :BbPatientCare ;
+    :efCitClassifiedAs :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Clinical documentation"@en .
 
 :Cis2FuncAmbulance
-    :enterpriseFunctionClassified :BbPatientCare ;
+    :efCitClassifiedAs :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Ambulance"@en .
 
 :Cis2FuncBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbCostAndResultsAccounting, :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
 :Cis2FuncDecisionSupport
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Decision support"@en .
 
 :Cis2FuncMedication
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment, :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medication"@en .
 
 :Cis2FuncPatientAdministration
-    :enterpriseFunctionClassified :BbPatientAdministration ;
+    :efCitClassifiedAs :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient administration"@en .
 
 :Cis2FuncScheduling
-    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService, :BbSupplyManagementSchedulingAndResourceAllocation ;
+    :efCitClassifiedAs :BbSchedulingAndResourceAllocation, :BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit, :BbSchedulingAndResourcePlanningWithThePatientTransportService, :BbSupplyManagementSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Scheduling"@en .
 
@@ -1166,7 +1166,7 @@
     rdfs:label "Support of service recording"@en .
 
 :CisFuncTriage
-    :enterpriseFunctionClassified :BbPatientAdministration, :BbPatientCare, :BbPatientDischargeAndTransferToOtherInstitutions ;
+    :efCitClassifiedAs :BbPatientAdministration, :BbPatientCare, :BbPatientDischargeAndTransferToOtherInstitutions ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Triage"@en .
 
@@ -1356,7 +1356,7 @@
     rdfs:label "writing DICOM files"@en .
 
 :Dcm4CheFuncClinicalImageManagement
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Clinical Image Management"@en .
 
@@ -1365,12 +1365,12 @@
     rdfs:label "Clinical Object Management"@en .
 
 :Dcm4CheFuncRetrieval
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Retrieval"@en .
 
 :Dcm4CheFuncStorage
-    :enterpriseFunctionClassified :BbLongTermArchiving ;
+    :efCitClassifiedAs :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Storage"@en .
 
@@ -1634,7 +1634,7 @@
     rdfs:label "web-based Geographic Information System (GIS)"@en .
 
 :Dhis2FuncAppointmentScheduling
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "appointment scheduling"@en .
 
@@ -2033,7 +2033,7 @@
     rdfs:label "Übersicht Konsultationen"@en .
 
 :ElexisFuncAbrechnungssystem
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Abrechnungssystem"@en .
 
@@ -2474,82 +2474,82 @@
     rdfs:label "Access Management"@en .
 
 :GnuHealthFuncAdmissionManagement
-    :enterpriseFunctionClassified :BbAdministrativeAdmission, :WhoDhiClientIdentificationAndRegistration ;
+    :efCitClassifiedAs :BbAdministrativeAdmission, :WhoDhiClientIdentificationAndRegistration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Admission Management"@en .
 
 :GnuHealthFuncAnalyticAccounting
-    :enterpriseFunctionClassified :BbCostAndResultsAccounting ;
+    :efCitClassifiedAs :BbCostAndResultsAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Analytic Accounting"@en .
 
 :GnuHealthFuncFinancialAccounting
-    :enterpriseFunctionClassified :BbFinancialAccounting, :WhoDhiHealthFinancing ;
+    :efCitClassifiedAs :BbFinancialAccounting, :WhoDhiHealthFinancing ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Financial Accounting"@en .
 
 :GnuHealthFuncGenetics
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Genetics"@en .
 
 :GnuHealthFuncGynecologicCare
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Gynecologic Care"@en .
 
 :GnuHealthFuncHospitalManagement
-    :enterpriseFunctionClassified :BbHospitalManagement ;
+    :efCitClassifiedAs :BbHospitalManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Hospital Management"@en .
 
 :GnuHealthFuncIntensiveCare
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Intensive Care"@en .
 
 :GnuHealthFuncLaboratoryManagement
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Laboratory Management"@en .
 
 :GnuHealthFuncNeglectedTropicalDiseasesCare
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Neglected Tropical Diseases Care"@en .
 
 :GnuHealthFuncNursing
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Nursing"@en .
 
 :GnuHealthFuncObstetrics
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Obstetrics"@en .
 
 :GnuHealthFuncPatientAppointment
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Appointment"@en .
 
 :GnuHealthFuncPatientEvaluations
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbMedicalAdmission ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, :BbMedicalAdmission ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Evaluations"@en .
 
 :GnuHealthFuncPatientManagement
-    :enterpriseFunctionClassified :BbPatientAdministration ;
+    :efCitClassifiedAs :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Management"@en .
 
 :GnuHealthFuncPediatricCare
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Pediatric Care"@en .
 
 :GnuHealthFuncProductsManagement
-    :enterpriseFunctionClassified :BbMaterialAndMedicationManagement, :WhoDhiEquipmentAndAssetManagement ;
+    :efCitClassifiedAs :BbMaterialAndMedicationManagement, :WhoDhiEquipmentAndAssetManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Products Management"@en .
 
@@ -2558,7 +2558,7 @@
     rdfs:label "Purchase Administration"@en .
 
 :GnuHealthFuncServicesManagementinvoicingPatients
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndFinalBilling, :WhoDhiHealthFinancing ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndFinalBilling, :WhoDhiHealthFinancing ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Services Management/Invoicing Patients"@en .
 
@@ -2567,12 +2567,12 @@
     rdfs:label "Socioeconomics"@en .
 
 :GnuHealthFuncStockManagement
-    :enterpriseFunctionClassified :BbSupplyAndDisposalManagement, :WhoDhiSupplyChainManagement ;
+    :efCitClassifiedAs :BbSupplyAndDisposalManagement, :WhoDhiSupplyChainManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Stock Management"@en .
 
 :GnuHealthFuncSurgery
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Surgery"@en .
 
@@ -2778,17 +2778,17 @@
     rdfs:label "View Medication"@en .
 
 :HospitalRunFuncAppointments
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Appointments"@en .
 
 :HospitalRunFuncBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
 :HospitalRunFuncImaging
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Imaging"@en .
 
@@ -2797,12 +2797,12 @@
     rdfs:label "Inventory"@en .
 
 :HospitalRunFuncLabs
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Labs"@en .
 
 :HospitalRunFuncMedication
-    :enterpriseFunctionClassified :BbMaterialAndMedicationManagement, :WhoDhiPrescriptionAndMedicationManagement ;
+    :efCitClassifiedAs :BbMaterialAndMedicationManagement, :WhoDhiPrescriptionAndMedicationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medication"@en .
 
@@ -2811,7 +2811,7 @@
     rdfs:label "Outpatient Management"@en .
 
 :HospitalRunFuncPatientManagement
-    :enterpriseFunctionClassified :BbPatientAdministration ;
+    :efCitClassifiedAs :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient management"@en .
 
@@ -2907,7 +2907,7 @@
     rdfs:label "Transmit of images with necessary clinical information"@en .
 
 :IPathFuncTransmitAndDiscussMedicalResults
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Transmit and discuss medical results"@en .
 
@@ -3084,22 +3084,22 @@
     rdfs:label "Visits"@en .
 
 :MedkeyFuncMedicalAccounting
-    :enterpriseFunctionClassified :BbFinancialAccounting ;
+    :efCitClassifiedAs :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "medical accounting"@en .
 
 :MedkeyFuncMedicalBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "medical billing"@en .
 
 :MedkeyFuncOrders
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "orders"@en .
 
 :MedkeyFuncPatientAppointments
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient appointments"@en .
 
@@ -3360,7 +3360,7 @@
     rdfs:label "X-ray and pathology results management"@en .
 
 :OpenClinicGaFuncAdministrativeManagement
-    :enterpriseFunctionClassified :BbPatientAdministration ;
+    :efCitClassifiedAs :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "administrative management"@en .
 
@@ -3369,27 +3369,27 @@
     rdfs:label "clinical management"@en .
 
 :OpenClinicGaFuncCoding
-    :enterpriseFunctionClassified :BbCodingOfProcedures ;
+    :efCitClassifiedAs :BbCodingOfProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Coding"@en .
 
 :OpenClinicGaFuncFinancialManagement
-    :enterpriseFunctionClassified :BbFinancialAccounting ;
+    :efCitClassifiedAs :BbFinancialAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "financial management"@en .
 
 :OpenClinicGaFuncHumanResourceManagementModule
-    :enterpriseFunctionClassified :BbHumanResourceManagement, :WhoDhiHumanResourceManagement ;
+    :efCitClassifiedAs :BbHumanResourceManagement, :WhoDhiHumanResourceManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Human resource management module"@en .
 
 :OpenClinicGaFuncLabManagement
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "lab management"@en .
 
 :OpenClinicGaFuncModuleForTeleConsultation
-    :enterpriseFunctionClassified :WhoDhiTelemedicine ;
+    :efCitClassifiedAs :WhoDhiTelemedicine ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "module for tele-consultation"@en .
 
@@ -3398,12 +3398,12 @@
     rdfs:label "pharmacy management"@en .
 
 :OpenClinicGaFuncScheduling
-    :enterpriseFunctionClassified :BbAppointmentScheduling, :BbSchedulingAndResourceAllocation, :WhoDhiHealthWorkerActivityPlanningAndScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling, :BbSchedulingAndResourceAllocation, :WhoDhiHealthWorkerActivityPlanningAndScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Scheduling"@en .
 
 :OpenClinicGaFuncXRayManagement
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "x-ray management"@en .
 
@@ -3635,37 +3635,37 @@
     rdfs:label "Web Forms"@en .
 
 :OpenDentalFuncAccounting
-    :enterpriseFunctionClassified :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPayrollAccounting ;
+    :efCitClassifiedAs :BbCostAndResultsAccounting, :BbFinancialAccounting, :BbPayrollAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Accounting"@en .
 
 :OpenDentalFuncBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Billing"@en .
 
 :OpenDentalFuncImaging
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Imaging"@en .
 
 :OpenDentalFuncManagePatientAppointments
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manage Patient Appointments"@en .
 
 :OpenDentalFuncManagePatientInformation
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manage Patient Information"@en .
 
 :OpenDentalFuncTimeManagement
-    :enterpriseFunctionClassified :BbWorkOrganizationAndTimeManagement, :BbWorkOrganizationAndTimePlanning ;
+    :efCitClassifiedAs :BbWorkOrganizationAndTimeManagement, :BbWorkOrganizationAndTimePlanning ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Time Management"@en .
 
 :OpenDentalFuncTreatmentAdministration
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Treatment Administration"@en .
 
@@ -3768,7 +3768,7 @@
     rdfs:label "Staff Allocation to Patients"@en .
 
 :OpenEObsFunctionPatientObservation
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient observation"@en .
 
@@ -3842,7 +3842,7 @@
     rdfs:label "Entering non-conforming samples"@en .
 
 :OpenElisFeatIndividualOrderEntry
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Order entry"@en .
 
@@ -4146,42 +4146,42 @@
     rdfs:label "Voice recognition"@en .
 
 :OpenEmrFuncClinicalDecisionMaking
-    :enterpriseFunctionClassified :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
+    :efCitClassifiedAs :BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Clinical Decision Making"@en .
 
 :OpenEmrFuncElectronicMedicalRecords
-    :enterpriseFunctionClassified :BbOpeningAPatientRecord ;
+    :efCitClassifiedAs :BbOpeningAPatientRecord ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Electronic Medical Records"@en .
 
 :OpenEmrFuncMedicalBilling
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Medical Billing"@en .
 
 :OpenEmrFuncPatientDemographics
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Demographics"@en .
 
 :OpenEmrFuncPatientPortal
-    :enterpriseFunctionClassified :BbDecisionMakingAndPatientInformation ;
+    :efCitClassifiedAs :BbDecisionMakingAndPatientInformation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Portal"@en .
 
 :OpenEmrFuncPatientScheduling
-    :enterpriseFunctionClassified :BbAppointmentScheduling ;
+    :efCitClassifiedAs :BbAppointmentScheduling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Scheduling"@en .
 
 :OpenEmrFuncPrescriptions
-    :enterpriseFunctionClassified :WhoDhiPrescriptionAndMedicationManagement ;
+    :efCitClassifiedAs :WhoDhiPrescriptionAndMedicationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Prescriptions"@en .
 
 :OpenEmrFuncReports
-    :enterpriseFunctionClassified :BbNursingDischargeAndNursingReportWriting ;
+    :efCitClassifiedAs :BbNursingDischargeAndNursingReportWriting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Reports"@en .
 
@@ -4411,22 +4411,22 @@
     rdfs:label "XMPP Communication"@en .
 
 :OpenHospitalFuncAccounting
-    :enterpriseFunctionClassified :BbFinancialAccounting, :BbPayrollAccounting ;
+    :efCitClassifiedAs :BbFinancialAccounting, :BbPayrollAccounting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Accounting"@en .
 
 :OpenHospitalFuncBillsManagement
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbAdministrativeDischargeAndFinalBilling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Bills Management"@en .
 
 :OpenHospitalFuncDischargeManagement
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbNursingDischargeAndNursingReportWriting, :BbNursingDischargeAndWritingTheNursingDischargeReport, :BbPatientDischargeAndTransferToOtherInstitutions ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbNursingDischargeAndNursingReportWriting, :BbNursingDischargeAndWritingTheNursingDischargeReport, :BbPatientDischargeAndTransferToOtherInstitutions ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Discharge management"@en .
 
 :OpenHospitalFuncInPatientDepartmentsManagement
-    :enterpriseFunctionClassified :BbPatientAdministration ;
+    :efCitClassifiedAs :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "In Patient Departments Management"@en .
 
@@ -4439,7 +4439,7 @@
     rdfs:label "Outpatient Department Management"@en .
 
 :OpenHospitalFuncPatientAdmissionManagement
-    :enterpriseFunctionClassified :BbPatientAdmission ;
+    :efCitClassifiedAs :BbPatientAdmission ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient admission management"@en .
 
@@ -4456,7 +4456,7 @@
     rdfs:label "Statistics"@en .
 
 :OpenHospitalFuncTherapyManagement
-    :enterpriseFunctionClassified :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
+    :efCitClassifiedAs :BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Therapy management"@en .
 
@@ -4676,7 +4676,7 @@
     rdfs:label "Viewing patient records"@en .
 
 :OpenMrsFuncDataEntry
-    :enterpriseFunctionClassified :WhoDhiClientHealthRecords ;
+    :efCitClassifiedAs :WhoDhiClientHealthRecords ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Data entry"@en .
 
@@ -4685,32 +4685,32 @@
     rdfs:label "Form Entry"@en .
 
 :OpenMrsFuncHealthCareDelivery
-    :enterpriseFunctionClassified :BbPatientCare ;
+    :efCitClassifiedAs :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Health care delivery"@en .
 
 :OpenMrsFuncInformationManagement
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Information Management"@en .
 
 :OpenMrsFuncManagePatientRecords
-    :enterpriseFunctionClassified :BbInformationManagement, :BbOpeningAPatientRecord ;
+    :efCitClassifiedAs :BbInformationManagement, :BbOpeningAPatientRecord ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manage patient records"@en .
 
 :OpenMrsFuncPatientCare
-    :enterpriseFunctionClassified :BbPatientCare ;
+    :efCitClassifiedAs :BbPatientCare ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient Care"@en .
 
 :OpenMrsFuncReporting
-    :enterpriseFunctionClassified :BbNursingDischargeAndNursingReportWriting ;
+    :efCitClassifiedAs :BbNursingDischargeAndNursingReportWriting ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Reporting"@en .
 
 :OpenMrsFuncResearch
-    :enterpriseFunctionClassified :BbResearchAndEducation ;
+    :efCitClassifiedAs :BbResearchAndEducation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Research"@en .
 
@@ -4848,27 +4848,27 @@
     rdfs:label "Top Diseases report"@en .
 
 :OrthancFuncImageArchiving
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Image Archiving"@en .
 
 :OrthancFuncImageCommunication
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Image Communication"@en .
 
 :OrthancFuncImageDistribution
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Image Distribution"@en .
 
 :OrthancFuncImageManagement
-    :enterpriseFunctionClassified :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
+    :efCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsImagingManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Image Management"@en .
 
 :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages
-    :enterpriseFunctionClassified :BbResearchAndEducation ;
+    :efCitClassifiedAs :BbResearchAndEducation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "research about the automated analysis of medical images"@en .
 
@@ -5251,47 +5251,47 @@
     rdfs:label "Voice recognition"@en .
 
 :RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Contextual information such as the examination and findings history"@en .
 
 :RIS2FuncCreationOfCustomizedReports
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Creation of customized reports"@en .
 
 :RIS2FuncElectronicRecordingOfResultsAndExaminations
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Electronic recording of results and examinations"@en .
 
 :RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Influencing the order status by authorized users"@en .
 
 :RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile
-    :enterpriseFunctionClassified :BbLongTermArchiving ;
+    :efCitClassifiedAs :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Save image or sound or text data in the patient file"@en .
 
 :RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Search for specific category or restrictions while ordering"@en .
 
 :RIS2FuncTrackAllOrder
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Track all order"@en .
 
 :RIS2FuncTrackMaterialAndFilmConsumption
-    :enterpriseFunctionClassified :BbSupplyAndDisposalManagement ;
+    :efCitClassifiedAs :BbSupplyAndDisposalManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Track material and film consumption"@en .
 
 :RIS2FuncTransferOfOrderData
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Transfer of order data"@en .
 
@@ -5419,82 +5419,82 @@
     rdfs:label "WYSIWYG editor or simple view"@en .
 
 :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Add or change or delete billing codes and material"@en .
 
 :Ris1FuncAssignFreeAndAvailableModalities
-    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation ;
+    :efCitClassifiedAs :BbSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Assign free and available modalities"@en .
 
 :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Contextual information such as the examination and findings history"@en .
 
 :Ris1FuncCreationOfCustomizedReports
-    :enterpriseFunctionClassified :BbInformationManagement ;
+    :efCitClassifiedAs :BbInformationManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Creation of customized reports"@en .
 
 :Ris1FuncElectronicRecordingOfResultsAndExaminations
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation, :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Electronic recording of results and examinations"@en .
 
 :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Influencing the order status by authorized users"@en .
 
 :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
 :Ris1FuncPatientRegistration
-    :enterpriseFunctionClassified :BbPatientAdministration, :BbPatientAdmission ;
+    :efCitClassifiedAs :BbPatientAdministration, :BbPatientAdmission ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient registration"@en .
 
 :Ris1FuncQualityAssuranceThroughCompletePatientHistory
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbPatientAdministration, :BbQualityManagement ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation, :BbPatientAdministration, :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality assurance through complete patient history"@en .
 
 :Ris1FuncSaveImageOrSoundOrTextDataInThePatientFile
-    :enterpriseFunctionClassified :BbLongTermArchiving ;
+    :efCitClassifiedAs :BbLongTermArchiving ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Save image or sound or text data in the patient file"@en .
 
 :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Search for specific category or restrictions while ordering"@en .
 
 :Ris1FuncSupplementBillingRelevantDataToOrder
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Supplement billing relevant data to order"@en .
 
 :Ris1FuncTrackAllOrder
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Track all order"@en .
 
 :Ris1FuncTrackMaterialAndFilmConsumption
-    :enterpriseFunctionClassified :BbSupplyAndDisposalManagement ;
+    :efCitClassifiedAs :BbSupplyAndDisposalManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Track material and film consumption"@en .
 
 :Ris1FuncTransferOfTheOrderData
-    :enterpriseFunctionClassified :BbOrderEntry ;
+    :efCitClassifiedAs :BbOrderEntry ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Transfer of the order data"@en .
 
@@ -5542,37 +5542,37 @@
     rdfs:label "Quality assurance through complete patient history"@en .
 
 :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Add or change or delete billing codes and material"@en .
 
 :Ris2FuncAssignFreeAndAvailableModalities
-    :enterpriseFunctionClassified :BbSchedulingAndResourceAllocation ;
+    :efCitClassifiedAs :BbSchedulingAndResourceAllocation ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Assign free and available modalities"@en .
 
 :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement
-    :enterpriseFunctionClassified :BbControlling ;
+    :efCitClassifiedAs :BbControlling ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Fast and secure dispatch of the quarterly statement"@en .
 
 :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
-    :enterpriseFunctionClassified :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
+    :efCitClassifiedAs :BbAdministrativeDischargeAndBilling, :BbControlling, :BbPatientAdministration ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
 :Ris2FuncPatientRegistration
-    :enterpriseFunctionClassified :BbPatientAdministration, :BbPatientAdmission ;
+    :efCitClassifiedAs :BbPatientAdministration, :BbPatientAdmission ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Patient registration"@en .
 
 :Ris2FuncQualityAssuranceThroughCompletePatientHistory
-    :enterpriseFunctionClassified :BbArchivingOfPatientInformation, :BbPatientAdministration, :BbQualityManagement ;
+    :efCitClassifiedAs :BbArchivingOfPatientInformation, :BbPatientAdministration, :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality assurance through complete patient history"@en .
 
@@ -5789,12 +5789,12 @@
     rdfs:label "Analysis"@en .
 
 :SenaiteFuncInstrumentsManagement
-    :enterpriseFunctionClassified :BbManagementOfMedicalDevices ;
+    :efCitClassifiedAs :BbManagementOfMedicalDevices ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Instruments management"@en .
 
 :SenaiteFuncQualityControl
-    :enterpriseFunctionClassified :BbQualityManagement ;
+    :efCitClassifiedAs :BbQualityManagement ;
     a :EnterpriseFunctionCitation ;
     rdfs:label "Quality Control"@en .
 
