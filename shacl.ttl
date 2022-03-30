@@ -323,7 +323,7 @@
 :FeatureClassifiedShape a sh:NodeShape;
 	sh:targetClass :FeatureClassified;
 	sh:property :labelShape, [
-		sh:path :featureCatalogue;
+		sh:path :fClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
@@ -426,7 +426,7 @@
 #### Catalogue Domain ######################################################
 
 :FeatureCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :featureCatalogue;
+	sh:targetSubjectsOf :fClaFrom;
 	sh:class :FeatureClassified.
 
 :EnterpriseFunctionCatalogueDomainShape a sh:NodeShape;
@@ -448,7 +448,7 @@
 #### Catalogue Range ######################################################
 
 :FeatureCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :featureCatalogue;
+	sh:targetObjectsOf :fClaFrom;
 	sh:class :FeatureCatalogue.
 
 :EnterpriseFunctionCatalogueRangeShape a sh:NodeShape;

@@ -252,11 +252,11 @@
 
 
 ###  http://hitontology.eu/ontology/featureCatalogue
-:featureCatalogue rdf:type owl:ObjectProperty ;
+:fClaFrom rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :catalogue;
                            rdfs:domain :FeatureClassified ;
                            rdfs:range :FeatureCatalogue ;
-                           rdfs:label "feature catalogue"@en .
+                           rdfs:label "from catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/firstAuthor

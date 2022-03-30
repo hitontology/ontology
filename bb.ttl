@@ -18,7 +18,7 @@ hito:Bb
     rdfs:member hito:BbApplicationSystemCatalogue, hito:BbFeatureCatalogue, hito:BbFunctionCatalogue .
 
 hito:BbAdministrateTheMasterPatientIndexMpi
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientIdentificationAndCheckingForRecurrent ;
     dcterms:source bb:AdministrateTheMasterPatientIndex ;
     a hito:FeatureClassified ;
@@ -61,14 +61,14 @@ hito:BbAdministrativeDischargeAndFinalBilling
     rdfs:label "administrative discharge and final billing"@en .
 
 hito:BbAdmitPatientsToTheWard
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:AdmitPatientsToTheWard ;
     a hito:FeatureClassified ;
     rdfs:label "Admit patients to the ward"@en .
 
 hito:BbAnalyzeData
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHospitalManagement ;
     dcterms:source bb:AnalyzeData ;
     a hito:FeatureClassified ;
@@ -89,7 +89,7 @@ hito:BbAppointmentScheduling
     rdfs:label "Appointment scheduling"@en .
 
 hito:BbArchivePictures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:ArchivePictures ;
     a hito:FeatureClassified ;
@@ -105,56 +105,56 @@ hito:BbArchivingOfPatientInformation
     rdfs:label "Archiving of patient information"@en .
 
 hito:BbAssignDoctorsToPatientsOrRooms
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:AssignDoctorsToPatientsOrRooms ;
     a hito:FeatureClassified ;
     rdfs:label "Assign doctors to patients or rooms"@en .
 
 hito:BbAssignOrderAndBloodSamplesToDevices
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:AssignOrderAndBloodSamplesToDevices ;
     a hito:FeatureClassified ;
     rdfs:label "Assign order and blood samples to devices"@en .
 
 hito:BbAssignOrdersToModalities
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:AssignOrdersToModalities ;
     a hito:FeatureClassified ;
     rdfs:label "Assign orders to modalities"@en .
 
 hito:BbAssignPatientsToModalities
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAppointmentScheduling ;
     dcterms:source bb:AssignPatientsToModalities ;
     a hito:FeatureClassified ;
     rdfs:label "Assign patients to modalities"@en .
 
 hito:BbAssignPatientsToRoomsAndBeds
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:AssignPatientsToRoomsAndBeds ;
     a hito:FeatureClassified ;
     rdfs:label "Assign patients to rooms and beds"@en .
 
 hito:BbAssignStaffToPatientsOrOutpatientUnits
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:AssignStaffToPatientsOrOutpatientUnits ;
     a hito:FeatureClassified ;
     rdfs:label "Assign staff to patients or outpatient units"@en .
 
 hito:BbAssignStaffToPatientsOrRooms
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:AssignStaffToPatientsOrRooms ;
     a hito:FeatureClassified ;
     rdfs:label "Assign staff to patients or rooms"@en .
 
 hito:BbAttachDigitalSignatures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:AttachDigitalSignatures ;
     a hito:FeatureClassified ;
@@ -168,7 +168,7 @@ hito:BbBloodBankManagementSystem
     rdfs:label "Blood bank management system"@en .
 
 hito:BbCalculateDosageOfDrugs
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:CalculateDosageOfDrugs ;
     a hito:FeatureClassified ;
@@ -211,35 +211,35 @@ hito:BbCodingOfProcedures
     rdfs:label "coding of procedures"@en .
 
 hito:BbCollectResultsFromDevices
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:CollectResultsFromDevices ;
     a hito:FeatureClassified ;
     rdfs:label "Collect results from devices"@en .
 
 hito:BbCommunicateDischargeInformation
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbNursingDischargeAndNursingReportWriting, hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:CommunicateDischargeInformation ;
     a hito:FeatureClassified ;
     rdfs:label "Communicate discharge information"@en .
 
 hito:BbCommunicateDocumentsToOtherApplications
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:CommunicateDocumentsToOtherApplications ;
     a hito:FeatureClassified ;
     rdfs:label "Communicate documents to other applications"@en .
 
 hito:BbCommunicatePictures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:CommunicatePictures ;
     a hito:FeatureClassified ;
     rdfs:label "Communicate pictures"@en .
 
 hito:BbCommunicateReportToOrderingUnit
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:CommunicateReportToOrderingUnit ;
     a hito:FeatureClassified ;
@@ -261,14 +261,14 @@ hito:BbCostAndResultsAccounting
     rdfs:label "cost and results accounting"@en .
 
 hito:BbCreateWorkListForAGroupOfPatients
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:FeatureCreateWorklistForAGroupOfPatients ;
     a hito:FeatureClassified ;
     rdfs:label "Create work list for a group of patients"@en .
 
 hito:BbCreatingARoster
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:CreatingARoster ;
     a hito:FeatureClassified ;
@@ -320,28 +320,28 @@ hito:BbDigitalDictationSystem
     rdfs:label "Digital dictation system"@en .
 
 hito:BbDisplayEarlierLabResultsOfAPatient
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:DisplayEarlierLabResultsOfAPatient ;
     a hito:FeatureClassified ;
     rdfs:label "Display earlier lab results of a patient"@en .
 
 hito:BbDisplayPictures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:DisplayPictures ;
     a hito:FeatureClassified ;
     rdfs:label "Display pictures"@en .
 
 hito:BbDisplayVitalParametersFromMonitoringDevices
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfAnOperation, hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:DisplayVitalParametersFromMonitoringDevices ;
     a hito:FeatureClassified ;
     rdfs:label "Display vital parameters from monitoring devices"@en .
 
 hito:BbDisplayWarningMessages
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:DisplayWarningMessages ;
     a hito:FeatureClassified ;
@@ -454,7 +454,7 @@ hito:BbFunctionCatalogue
     rdfs:label "Blue Book Architecture Function Catalogue"@en .
 
 hito:BbGenerateAUniquePinAndACin
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientIdentificationAndCheckingForRecurrent ;
     a hito:FeatureClassified ;
     rdfs:label "Generate a unique PIN and a CIN"@en .
@@ -494,14 +494,14 @@ hito:BbHumanResourcesManagement
     rdfs:label "human resources management"@en .
 
 hito:BbImportDocuments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:ImportDocuments ;
     a hito:FeatureClassified ;
     rdfs:label "Import documents"@en .
 
 hito:BbIndexDocumentContent
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:IndexDocumentContent ;
     a hito:FeatureClassified ;
@@ -514,7 +514,7 @@ hito:BbInformationManagement
     rdfs:label "information management"@en .
 
 hito:BbIntegrateDataFromDifferentApplicationComponents
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHospitalManagement ;
     dcterms:source bb:IntegrateDataFromDifferentApplicationComponents ;
     a hito:FeatureClassified ;
@@ -552,21 +552,21 @@ hito:BbLongTermArchiving
     rdfs:label "long term archiving"@en .
 
 hito:BbManageModalities
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbManagementOfMedicalDevices ;
     dcterms:source bb:ManageModalities ;
     a hito:FeatureClassified ;
     rdfs:label "Manage modalities"@en .
 
 hito:BbManageStorageFormats
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:ManageStorageFormats ;
     a hito:FeatureClassified ;
     rdfs:label "Manage storage formats"@en .
 
 hito:BbManageStorageMedia
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:ManageStorageMedia ;
     a hito:FeatureClassified ;
@@ -618,14 +618,14 @@ hito:BbMedicalDocumentationSystem
     rdfs:label "Medical Documentation System"@en .
 
 hito:BbMergePatientInformationFromTwoRecords
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:MergePatientInformationFromTwoRecords ;
     a hito:FeatureClassified ;
     rdfs:label "Merge patient information from two records"@en .
 
 hito:BbModifyPresentationOfPictures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:ModifyPresentationOfPictures ;
     a hito:FeatureClassified ;
@@ -662,7 +662,7 @@ hito:BbNursingManagementAndDocumentationSystem
     rdfs:label "Nursing Management and Documentation System"@en .
 
 hito:BbOfferDecisionsupportForCarePlanning
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:OfferDecisionSupportForCarePlanning ;
     a hito:FeatureClassified ;
@@ -703,7 +703,7 @@ hito:BbOrderEntry
     rdfs:label "Order entry"@en .
 
 hito:BbOrganizePatientTransport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:OrganizePatientTransport ;
     a hito:FeatureClassified ;
@@ -810,679 +810,679 @@ hito:BbPreparationOfAnOrder
     rdfs:label "preparation of an order"@en .
 
 hito:BbPrepareReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:PrepareReport ;
     a hito:FeatureClassified ;
     rdfs:label "Prepare report"@en .
 
 hito:BbPrintForms
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures, hito:BbSchedulingAndResourceAllocation ;
     dcterms:source bb:PrintForms ;
     a hito:FeatureClassified ;
     rdfs:label "Print forms"@en .
 
 hito:BbPrintReports
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:PrintReports ;
     a hito:FeatureClassified ;
     rdfs:label "Print reports"@en .
 
 hito:BbProvideACollectionOfInternalProcessesAndRegulations
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbQualityManagement ;
     dcterms:source bb:ProvideACollectionOfInternalProcessesAndRegulations ;
     a hito:FeatureClassified ;
     rdfs:label "Provide a collection of internal processes and regulations"@en .
 
 hito:BbProvideAccessToArchivedInformation
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:ProvideAccessToArchivedInformation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide access to archived information"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:FeatureProvideCatalogsAndOtherMeansForCodingPatientsDiagnoses ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of diagnoses"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of nursing diagnosis"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingOfNursingProcedures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingOfNursingProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of nursing procedures"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingOfProcedures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:FeatureProvideCatalogsAndOtherMeansForCodingPatientRelatedProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding of procedures"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingPatientRelatedProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding patient-related procedures"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingPatientsDiagnoses
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingPatientsDiagnoses ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding patients' diagnoses"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingRadiologicalDiagnoses
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingRadiologicalDiagnoses ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding radiological diagnoses"@en .
 
 hito:BbProvideCatalogsAndOtherMeansForCodingRadiologicalProcedures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideCatalogsAndOtherMeansForCodingRadiologicalProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide catalogs and other means for coding radiological procedures"@en .
 
 hito:BbProvideContextRelatedMedicalKnowledge
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideContextRelatedMedicalKnowledge ;
     a hito:FeatureClassified ;
     rdfs:label "Provide context related medical knowledge"@en .
 
 hito:BbProvideDrugCatalogs
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:ProvideDrugCatalogs ;
     a hito:FeatureClassified ;
     rdfs:label "Provide drug catalogs"@en .
 
 hito:BbProvideFormsForClinicalReports
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideFormsForClinicalReports ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for clinical reports"@en .
 
 hito:BbProvideFormsForDocumentingClinicalProcedures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideFormsForDocumentingClinicalProcedures ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting clinical procedures"@en .
 
 hito:BbProvideFormsForDocumentingDiagnosis
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAdmission ;
     dcterms:source bb:ProvideFormsForDocumentingDiagnosis ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting diagnosis"@en .
 
 hito:BbProvideFormsForDocumentingDiagnosisAndProblems
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:ProvideFormsForDocumentingDiagnosisAndProblems ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting diagnosis and problems"@en .
 
 hito:BbProvideFormsForDocumentingMedicalAnamnesis
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAdmission ;
     dcterms:source bb:ProvideFormsForDocumentingMedicalAnamnesis ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting medical anamnesis"@en .
 
 hito:BbProvideFormsForDocumentingMedications
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideFormsForDocumentingMedications ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting medications"@en .
 
 hito:BbProvideFormsForDocumentingNursingAims
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:ProvideFormsForDocumentingNursingAims ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting nursing aims"@en .
 
 hito:BbProvideFormsForDocumentingNursingTasks
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:ProvideFormsForDocumentingNursingTasks ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting nursing tasks"@en .
 
 hito:BbProvideFormsForDocumentingPatientsInformedConsent
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingAndPatientInformation, hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideFormsForDocumentingPatientsInformedConsent ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting patients' informed consent"@en .
 
 hito:BbProvideFormsForDocumentingPerformedTasks
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfNursingProcedures ;
     dcterms:source bb:ProvideFormsForDocumentingPerformedTasks ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting performed tasks"@en .
 
 hito:BbProvideFormsForDocumentingPlannedTasks
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideFormsForDocumentingPlannedTasks ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting planned tasks"@en .
 
 hito:BbProvideFormsForDocumentingProceduresAndOutcomes
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfAnOperation ;
     dcterms:source bb:ProvideFormsForDocumentingProceduresAndOutcomes ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting procedures and outcomes"@en .
 
 hito:BbProvideFormsForDocumentingTheNursingHistory
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbNursingAdmission ;
     dcterms:source bb:ProvideFormsForDocumentingTheNursingHistory ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting the nursing history"@en .
 
 hito:BbProvideFormsForDocumentingTheOutcomeOfNursingTasks
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfNursingProcedures ;
     dcterms:source bb:ProvideFormsForDocumentingTheOutcomeOfNursingTasks ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for documenting the outcome of nursing tasks"@en .
 
 hito:BbProvideFormsForEnteringClinicalDataFreetextOrStructured
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideFormsForEnteringClinicalData ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for entering clinical data (free-text or structured)"@en .
 
 hito:BbProvideFormsForEnteringOrUpdatingPatientAdministrativeInformationNameaddressBirthDateRelativesAdmissionDiagnosisEtc
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:FeatureProvideFormsForEnteringOrUpdatingPatientAdministrativeInformation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for entering or updating patient administrative information (name,address, birth date, relatives, admission diagnosis etc.)"@en .
 
 hito:BbProvideFormsForPatientsInformedConsent
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideFormsForPatientsInformedConsent ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for patients‟ informed consent"@en .
 
 hito:BbProvideFormsForPreparingABillForThePatientInsurance
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ProvideFormsForPreparingABillForThePatientInsurance ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for preparing a bill for the patient insurance"@en .
 
 hito:BbProvideFormsForPreparingClinicalReports
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideFormsForPreparingClinicalReports ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for preparing clinical reports"@en .
 
 hito:BbProvideFormsForPreparingOperationReports
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideFormsForPreparingOperationReports ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for preparing operation reports"@en .
 
 hito:BbProvideFormsForWritingAReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:ProvideFormsForWritingAReport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for writing a report"@en .
 
 hito:BbProvideFormsForWritingATransferLetterOrDischargeReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideFormsForWritingATransferLetterOrDischargeReport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for writing a transfer letter or discharge report"@en .
 
 hito:BbProvideFormsForWritingTheDischargeLetterOrDischargeReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for writing the discharge letter or discharge report"@en .
 
 hito:BbProvideFormsForWritingTheDischargeReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideFormsForWritingTheDischargeReport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for writing the discharge report"@en .
 
 hito:BbProvideFormsForWritingTheNursingDischargeReport
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbNursingDischargeAndNursingReportWriting ;
     dcterms:source bb:ProvideFormsForWritingTheNursingDischargeReport ;
     a hito:FeatureClassified ;
     rdfs:label "Provide forms for writing the nursing discharge report"@en .
 
 hito:BbProvideGuidelinesForCarePlanning
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideGuidelinesForCarePlanning ;
     a hito:FeatureClassified ;
     rdfs:label "Provide guidelines for care planning"@en .
 
 hito:BbProvideGuidelinesForTreatmentPlanning
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dcterms:source bb:ProvideGuidelinesForTreatmentPlanning ;
     a hito:FeatureClassified ;
     rdfs:label "Provide guidelines for treatment planning"@en .
 
 hito:BbProvideMeansForAccountsPayable
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFinancialAccounting ;
     dcterms:source bb:ProvideMeansForAccountsPayable ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for accounts payable"@en .
 
 hito:BbProvideMeansForAccountsReceivable
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFinancialAccounting ;
     dcterms:source bb:ProvideMeansForAccountsReceivable ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for accounts receivable"@en .
 
 hito:BbProvideMeansForAssetAccounting
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFinancialAccounting ;
     dcterms:source bb:ProvideMeansForAssetAccounting ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for asset accounting"@en .
 
 hito:BbProvideMeansForCheckinOfPatient
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAdmission ;
     dcterms:source bb:FeatureProvideMeansForCheckInOfPatient ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for check-in of patient"@en .
 
 hito:BbProvideMeansForControlOfSecurityIssues
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFacilityManagement ;
     dcterms:source bb:ProvideMeansForControlOfSecurityIssues ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for control of security issues"@en .
 
 hito:BbProvideMeansForCostCenterAccounting
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbControlling ;
     dcterms:source bb:ProvideMeansForCostCenterAccounting ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for cost center accounting"@en .
 
 hito:BbProvideMeansForCostElementAccounting
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbControlling ;
     dcterms:source bb:ProvideMeansForCostElementAccounting ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for cost element accounting"@en .
 
 hito:BbProvideMeansForCreatingARoster
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForCreatingARoster ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for creating a roster"@en .
 
 hito:BbProvideMeansForCreatingOperationPlansDailyWeekly
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:FeatureProvideMeansForCreatingOperationPlans ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for creating operation plans (daily, weekly)"@en .
 
 hito:BbProvideMeansForCreatingStatistics
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures, hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dcterms:source bb:ProvideMeansForCreatingStatistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for creating statistics"@en .
 
 hito:BbProvideMeansForDataMining
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHospitalManagement ;
     dcterms:source bb:ProvideMeansForDataMining ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for data mining"@en .
 
 hito:BbProvideMeansForEditingAndGraphicallyIllustratingCollectionsOfInternalProcessesAndRegulations
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbQualityManagement ;
     dcterms:source bb:ProvideMeansForEditingAndGraphicallyIllustratingCollectionsOfInternalProcessesAndRegulations ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for editing and graphically illustrating collections of internal processes and regulations"@en .
 
 hito:BbProvideMeansForFinalizingDocumentation
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideMeansForFinalizingDocumentation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for finalizing documentation"@en .
 
 hito:BbProvideMeansForFinalizingNursingDocumentation
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbNursingDischargeAndNursingReportWriting ;
     dcterms:source bb:ProvideMeansForFinalizingNursingDocumentation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for finalizing nursing documentation"@en .
 
 hito:BbProvideMeansForGeneralLedgerAccounting
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFinancialAccounting ;
     dcterms:source bb:ProvideMeansForGeneralLedgerAccounting ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for general ledger accounting"@en .
 
 hito:BbProvideMeansForIncidentTracking
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFacilityManagement ;
     dcterms:source bb:ProvideMeansForIncidentTracking ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for incident tracking"@en .
 
 hito:BbProvideMeansForInitiatingFinalBillingForOutpatientTreatment
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeDischargeAndBilling ;
     dcterms:source bb:ProvideMeansForInitiatingFinalBillingForOutpatientTreatment ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for initiating final billing for outpatient treatment"@en .
 
 hito:BbProvideMeansForInitiationOfFinalBilling
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeDischargeAndBilling ;
     dcterms:source bb:ProvideMeansForInitiationOfFinalBilling ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for initiation of final billing"@en .
 
 hito:BbProvideMeansForManagingAndMonitoringDisposal
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForManagingAndMonitoringDisposal ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing and monitoring disposal"@en .
 
 hito:BbProvideMeansForManagingAppointments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForManagingAppointments ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing appointments"@en .
 
 hito:BbProvideMeansForManagingLogistics
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForManagingLogistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing logistics"@en .
 
 hito:BbProvideMeansForManagingMedicalDevices
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForManagingMedicalDevices ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing medical devices"@en .
 
 hito:BbProvideMeansForManagingOutpatientUnitsStaff
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForManagingOutpatientUnitsStaff ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing outpatient unit's staff"@en .
 
 hito:BbProvideMeansForManagingRooms
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForManagingRooms ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing rooms"@en .
 
 hito:BbProvideMeansForManagingWardStaff
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForManagingWardStaff ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for managing ward staff"@en .
 
 hito:BbProvideMeansForMinimizingAdverseDrugEvents
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:ProvideMeansForMinimizingAdverseDrugEvents ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for minimizing adverse drug events"@en .
 
 hito:BbProvideMeansForOrderManagement
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForOrderManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for order management"@en .
 
 hito:BbProvideMeansForOrderingConsumables
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForOrderingConsumables ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering consumables"@en .
 
 hito:BbProvideMeansForOrderingDrugs
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForOrderingDrugs ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering drugs"@en .
 
 hito:BbProvideMeansForOrderingDrugsMaterialsAndLaundry
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForOrderingDrugsMaterialsAndLaundry ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering drugs, materials and laundry"@en .
 
 hito:BbProvideMeansForOrderingLaundry
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation, hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForOrderingLaundry ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering laundry"@en .
 
 hito:BbProvideMeansForOrderingPatientTransferToOtherUnits
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideMeansForOrderingPatientTransferToOtherUnits ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering patient transfer to other units"@en .
 
 hito:BbProvideMeansForOrderingPatientTransferToWard
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dcterms:source bb:ProvideMeansForOrderingPatientTransferToWard ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering patient transfer to ward"@en .
 
 hito:BbProvideMeansForOrderingPatientTransferWithinTheInstitution
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:ProvideMeansForOrderingPatientTransferWithinTheInstitution ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering patient transfer within the institution"@en .
 
 hito:BbProvideMeansForOrderingTransportServices
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation ;
     dcterms:source bb:ProvideMeansForOrderingTransportServices ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for ordering transport services"@en .
 
 hito:BbProvideMeansForOrganizingCareerDevelopment
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForOrganizingCareerDevelopment ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for organizing career development"@en .
 
 hito:BbProvideMeansForOrganizingRecruitment
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForOrganizingRecruitment ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for organizing recruitment"@en .
 
 hito:BbProvideMeansForOrganizingTraining
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForOrganizingTraining ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for organizing training"@en .
 
 hito:BbProvideMeansForOverheadCostManagement
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbControlling ;
     dcterms:source bb:ProvideMeansForOverheadCostManagement ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for overhead cost management"@en .
 
 hito:BbProvideMeansForPerformanceEvaluation
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:ProvideMeansForPerformanceEvaluation ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for performance evaluation"@en .
 
 hito:BbProvideMeansForPreparingACarePlan
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:ProvideMeansForPreparingACarePlan ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing a care plan"@en .
 
 hito:BbProvideMeansForPreparingHospitalWideStatistics
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeAdmission ;
     dcterms:source bb:ProvideMeansForPreparingHospitalWideStatistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing hospital wide statistics"@en .
 
 hito:BbProvideMeansForPreparingStatistics
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:ProvideMeansForPreparingStatistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing statistics"@en .
 
 hito:BbProvideMeansForPreparingWardrelatedStatistics
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSchedulingAndResourceAllocation ;
     dcterms:source bb:ProvideMeansForPreparingWardRelatedStatistics ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing ward-related statistics"@en .
 
 hito:BbProvideMeansForPreparingWorkSchedules
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbWorkOrganizationAndTimeManagement ;
     dcterms:source bb:ProvideMeansForPreparingWorkSchedules ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preparing work schedules"@en .
 
 hito:BbProvideMeansForPreventiveMaintenance
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbFacilityManagement ;
     dcterms:source bb:ProvideMeansForPreventiveMaintenance ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for preventive maintenance"@en .
 
 hito:BbProvideMeansForProductCosting
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbControlling ;
     dcterms:source bb:ProvideMeansForProductCosting ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for product costing"@en .
 
 hito:BbProvideMeansForRecruitingOfPatients
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfClinicalTrialsAndExperiments ;
     dcterms:source bb:ProvideMeansForRecruitingOfPatients ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for recruiting of patients"@en .
 
 hito:BbProvideMeansForSchedulingPatientsAppointments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry, hito:BbSchedulingAndResourceAllocation ;
     dcterms:source bb:ProvideMeansForSchedulingPatientsAppointments ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for scheduling patients' appointments"@en .
 
 hito:BbProvideMeansForStockKeeping
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbSupplyAndDisposalManagement ;
     dcterms:source bb:ProvideMeansForStockKeeping ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for stock keeping"@en .
 
 hito:BbProvideMeansForVerifyingCodingsDoneInDepartments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:FeatureProvideMeansForVerifyingCodingDoneInDepartments ;
     a hito:FeatureClassified ;
     rdfs:label "Provide means for verifying codings done in departments"@en .
 
 hito:BbProvideOrdersForPatientrelatedDrugs
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:FeatureProvideOrdersForPatientRelatedDrugs ;
     a hito:FeatureClassified ;
     rdfs:label "Provide orders for patient-related drugs"@en .
 
 hito:BbProvideOrdersForPatientrelatedExaminations
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:FeatureProvideOrdersForPatientRelatedExaminations ;
     a hito:FeatureClassified ;
     rdfs:label "Provide orders for patient-related examinations"@en .
 
 hito:BbProvideRelativesWithInformationOnTheLocationOfAPatient
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbVisitorAndInformationService ;
     dcterms:source bb:ProvideRelativesWithInformationOnTheLocationOfAPatient ;
     a hito:FeatureClassified ;
     rdfs:label "Provide relatives with information on the location of a patient"@en .
 
 hito:BbProvideReminderForFulfillingOfLegalReportingRequirements
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbAdministrativeDischargeAndBilling ;
     dcterms:source bb:ProvideReminderForFulfillingOfLegalReportingRequirements ;
     a hito:FeatureClassified ;
@@ -1518,14 +1518,14 @@ hito:BbRadiologyInformationSystem
     skos:altLabel "RIS"@en .
 
 hito:BbReceiveBloodSamples
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:ReceiveBloodSamples ;
     a hito:FeatureClassified ;
     rdfs:label "Receive blood samples"@en .
 
 hito:BbReceiveOrders
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations, hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:ReceiveOrders ;
     a hito:FeatureClassified ;
@@ -1543,21 +1543,21 @@ hito:BbResearchManagement
     rdfs:label "research management"@en .
 
 hito:BbRetrievePatient
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbPatientIdentificationAndCheckingForRecurrent ;
     dcterms:source bb:RetrievePatient ;
     a hito:FeatureClassified ;
     rdfs:label "Retrieve patient"@en .
 
 hito:BbScanDocuments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbArchivingOfPatientInformation ;
     dcterms:source bb:ScanDocuments ;
     a hito:FeatureClassified ;
     rdfs:label "Scan documents"@en .
 
 hito:BbScanningDocumentsFromReferringPhysicianAndOtherSources
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAdmission ;
     dcterms:source bb:ScanningDocumentsFromReferringPhysicianAndOtherSources ;
     a hito:FeatureClassified ;
@@ -1585,21 +1585,21 @@ hito:BbSchedulingAndResourcePlanningWithThePatientTransportService
     rdfs:label "scheduling and resource planning with the patient transport service"@en .
 
 hito:BbScoringOfThePatientEgTissSapsii
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbCodingOfDiagnosesAndProcedures ;
     dcterms:source bb:ScoringOfThePatient ;
     a hito:FeatureClassified ;
     rdfs:label "Scoring of the patient (e.g., TISS, SAPSII)"@en .
 
 hito:BbSearchForOldPictures
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfRadiologicalExaminations ;
     dcterms:source bb:SearchForOldPictures ;
     a hito:FeatureClassified ;
     rdfs:label "Search for old pictures"@en .
 
 hito:BbSelectOrdersFromOrderSets
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:SelectOrdersFromOrderSets ;
     a hito:FeatureClassified ;
@@ -1612,7 +1612,7 @@ hito:BbStrategicInformationManagement
     rdfs:label "strategic information management"@en .
 
 hito:BbStructureData
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHospitalManagement ;
     dcterms:source bb:FeatureStructureData ;
     a hito:FeatureClassified ;
@@ -1633,7 +1633,7 @@ hito:BbSupplyManagementSchedulingAndResourceAllocation
     rdfs:label "supply management, scheduling and resource allocation"@en .
 
 hito:BbSupportCreationOfANursingCarePlan
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbMedicalAndNursingCarePlanning ;
     dcterms:source bb:SupportCreationOfANursingCarePlan ;
     a hito:FeatureClassified ;
@@ -1653,14 +1653,14 @@ hito:BbTeleradiologySystem
     rdfs:label "Teleradiology system"@en .
 
 hito:BbValidateResults
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbExecutionOfLabExaminations ;
     dcterms:source bb:ValidateResults ;
     a hito:FeatureClassified ;
     rdfs:label "Validate results"@en .
 
 hito:BbViewPatientrelatedAppointments
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbOrderEntry ;
     dcterms:source bb:FeatureViewPatientRelatedAppointments ;
     a hito:FeatureClassified ;
@@ -1697,7 +1697,7 @@ hito:BbWorkOrganizationAndTimePlanning
     rdfs:label "work organization and time planning"@en .
 
 hito:BbWorkScheduling
-    hito:featureCatalogue hito:BbFeatureCatalogue ;
+    hito:fClaFrom hito:BbFeatureCatalogue ;
     hito:subFeatureOf hito:BbHumanResourceManagement ;
     dcterms:source bb:WorkScheduling ;
     a hito:FeatureClassified ;
