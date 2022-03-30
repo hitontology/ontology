@@ -94,7 +94,7 @@ hito:WhoDhiCitizenBasedReporting
     rdfs:label "Citizen based reporting"@en .
 
 hito:WhoDhiCivilRegistrationAndVitalStatistic
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.4" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to support the registration of births and deaths, issue birth and death certificates, and compile and disseminate vital statistics, including cause of death information. "@en ;
@@ -140,14 +140,14 @@ hito:WhoDhiClientFinancialTransactions
     rdfs:label "Client financial transactions"@en .
 
 hito:WhoDhiClientHealthRecords
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.2" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digitized job aids that combine an individual’s health information with the health-care provider’s knowledge and clinical protocols in order to assist health-care providers in making diagnosis and treatment decisions. "@en ;
     rdfs:label "Client health records"@en .
 
 hito:WhoDhiClientIdentificationAndRegistration
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.1" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Client identity verification and enrollment into health services."@en ;
@@ -304,14 +304,14 @@ hito:WhoDhiEnvironmentalMonitoringSystem
     rdfs:label "Environmental monitoring system"@en .
 
 hito:WhoDhiEquipmentAndAssetManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.6" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to track and manage the maintenance of health equipment. This can include the use of databases, as well as sensors and feedback mechanisms for monitoring health equipment. "@en ;
     rdfs:label "Equipment and asset management"@en .
 
 hito:WhoDhiFacilityManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.7" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches that enable administrative functions related to the management of facilities."@en ;
@@ -336,7 +336,7 @@ hito:WhoDhiHealthFinanceAndInsuranceInformationSystem
     rdfs:label "Health finance and insurance information system"@en .
 
 hito:WhoDhiHealthFinancing
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.5" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage financial transactions for health system related expenses. These digital financial transactions can be used for payments to health workforce, insurance/payers, as well as administrative management of budget and expenditures.   "@en ;
@@ -361,21 +361,21 @@ hito:WhoDhiHealthSystemManagerFunctionCatalogue
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiHealthWorkerActivityPlanningAndScheduling
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.7" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Automated scheduling and planning tools to assist in prioritizing provider followup. Digital work planning and scheduling tools can take the form of reminders to healthcare providers on upcoming/overdue services and other mechanisms to flag clients that need to be prioritized for service delivery. "@en ;
     rdfs:label "Health worker activity planning and scheduling"@en .
 
 hito:WhoDhiHealthcareProviderCommunication
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.5" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Communication and transmission of information among healthcare providers, supervisors, and health system managers.  Healthcare provider communication.  "@en ;
     rdfs:label "Healthcare provider communication"@en .
 
 hito:WhoDhiHealthcareProviderDecisionSupport
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.3" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digitized record used to capture, store, access and share health information on a client or grouping of clients.   "@en ;
@@ -394,7 +394,7 @@ hito:WhoDhiHealthcareProviderFunctionCatalogue
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
 
 hito:WhoDhiHealthcareProviderTraining
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.8" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "The management and provision of education and training content in electronic form for health professionals. In contrast to decision support, healthcare provider training does not need to be used at the point of care. "@en ;
@@ -407,7 +407,7 @@ hito:WhoDhiHumanResourceInformationSystem
     rdfs:label "Human resource information system"@en .
 
 hito:WhoDhiHumanResourceManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.1" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage the health workforce, including the use of databases to record training levels, certifications, and identification of health workers. "@en ;
@@ -434,7 +434,7 @@ hito:WhoDhiKnowledgeManagementSystem
     rdfs:label "Knowledge management system"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.10" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to manage and exchange laboratory and diagnostic orders and results."@en ;
@@ -702,7 +702,7 @@ hito:WhoDhiPharmacyInformationSystem
     rdfs:label "Pharmacy information system"@en .
 
 hito:WhoDhiPrescriptionAndMedicationManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.9" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to facilitate the management of prescriptions, including tracking prescription orders and monitoring physical consumption of medication."@en ;
@@ -739,7 +739,7 @@ hito:WhoDhiPublicHealthAndDiseaseSurveillanceSystem
     rdfs:label "Public health and disease surveillance system"@en .
 
 hito:WhoDhiPublicHealthEventNotification
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.3" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches for alerting and compiling information on nonroutine public health events."@en ;
@@ -754,7 +754,7 @@ hito:WhoDhiRecordTrainingCredentialsOfHealthcareProviders
     skos:altLabel "track or manage preservice and/or in-service training received by a health worker"@en .
 
 hito:WhoDhiReferralCoordination
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.6" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches to support communication and coordination mechanisms to facilitate referrals, both within the health sector and to other health-related sectors."@en ;
@@ -877,7 +877,7 @@ hito:WhoDhiSharedHealthRecordAndHealthInformationRespositories
     rdfs:label "Shared Health Record and health information repositories"@en .
 
 hito:WhoDhiSupplyChainManagement
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthSystemManagerFunctionCatalogue ;
     hito:internalId "3.2" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Digital approaches for monitoring and reporting stock levels, consumption and distribution of medical commodities. This can include the use of communication systems (e.g. SMS) and data dashboards to manage and report on supply levels of medical commodities.    "@en ;
@@ -897,7 +897,7 @@ hito:WhoDhiTargetedClientCommunication
     rdfs:label "Targeted client communication"@en .
 
 hito:WhoDhiTelemedicine
-    hito:enterpriseFunctionCatalogue hito:WhoDhiHealthcareProviderFunctionCatalogue ;
+    hito:efClaFrom hito:WhoDhiHealthcareProviderFunctionCatalogue ;
     hito:internalId "2.4" ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:comment "Provision of health-care services at a distance. The delivery of health care services, where patients and providers are separated by distance.    "@en ;

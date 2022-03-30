@@ -311,7 +311,7 @@
 :EnterpriseFunctionClassifiedShape a sh:NodeShape;
 	sh:targetClass :EnterpriseFunctionClassified;
 	sh:property :labelShape, [
-		sh:path :enterpriseFunctionCatalogue;
+		sh:path :efClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
 	],
@@ -430,7 +430,7 @@
 	sh:class :FeatureClassified.
 
 :EnterpriseFunctionCatalogueDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :enterpriseFunctionCatalogue;
+	sh:targetSubjectsOf :efClaFrom;
 	sh:class :EnterpriseFunctionClassified.
 
 :ApplicationSystemCatalogueDomainShape a sh:NodeShape;
@@ -452,7 +452,7 @@
 	sh:class :FeatureCatalogue.
 
 :EnterpriseFunctionCatalogueRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :enterpriseFunctionCatalogue;
+	sh:targetObjectsOf :efClaFrom;
 	sh:class :EnterpriseFunctionCatalogue.
 
 :ApplicationSystemCatalogueRangeShape a sh:NodeShape;

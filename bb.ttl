@@ -25,19 +25,19 @@ hito:BbAdministrateTheMasterPatientIndexMpi
     rdfs:label "Administrate the master patient index (MPI)"@en .
 
 hito:BbAdministrationOfBusinessTripsAndFurtherTraining
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administration of business trips and further training"@en .
 
 hito:BbAdministrationOfHumanResourceMasterData
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administration of human resource master data"@en .
 
 hito:BbAdministrativeAdmission
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.1" ;
@@ -46,7 +46,7 @@ hito:BbAdministrativeAdmission
     rdfs:label "Administrative admission"@en .
 
 hito:BbAdministrativeDischargeAndBilling
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dc:source "Table6.1", "Table6.4" ;
@@ -55,7 +55,7 @@ hito:BbAdministrativeDischargeAndBilling
     rdfs:label "Administrative discharge and billing"@en .
 
 hito:BbAdministrativeDischargeAndFinalBilling
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "administrative discharge and final billing"@en .
@@ -80,7 +80,7 @@ hito:BbApplicationSystemCatalogue
     rdfs:label "Blue Book Architecture Application System Catalogue"@en .
 
 hito:BbAppointmentScheduling
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.8" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.8" ;
@@ -96,7 +96,7 @@ hito:BbArchivePictures
     rdfs:label "Archive pictures"@en .
 
 hito:BbArchivingOfPatientInformation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.13" ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     dc:source "Table6.13" ;
@@ -183,7 +183,7 @@ hito:BbCardiovascularInformationSystem
     skos:altLabel "CVIS"@en .
 
 hito:BbCatering
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbSupplyAndDisposalManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "catering"@en .
@@ -196,7 +196,7 @@ hito:BbClinicalInformationSystem
     skos:altLabel "CIS"@en, "EPR System"@en .
 
 hito:BbCodingOfDiagnosesAndProcedures
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbPatientCare ;
     dc:source "Table6.1", "Table6.3", "Table6.6", "Table6.7", "Table6.8" ;
@@ -205,7 +205,7 @@ hito:BbCodingOfDiagnosesAndProcedures
     rdfs:label "Coding of diagnoses and procedures"@en .
 
 hito:BbCodingOfProcedures
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbCodingOfDiagnosesAndProcedures ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "coding of procedures"@en .
@@ -246,7 +246,7 @@ hito:BbCommunicateReportToOrderingUnit
     rdfs:label "Communicate report to ordering unit"@en .
 
 hito:BbControlling
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.11" ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     dc:source "Table6.11" ;
@@ -255,7 +255,7 @@ hito:BbControlling
     rdfs:label "Controlling"@en .
 
 hito:BbCostAndResultsAccounting
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "cost and results accounting"@en .
@@ -281,7 +281,7 @@ hito:BbDataWarehouseSystem
     rdfs:label "Data Warehouse System"@en .
 
 hito:BbDecisionMakingAndPatientInformation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.7" ;
     hito:subFunctionOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dc:source "Table6.7" ;
@@ -290,7 +290,7 @@ hito:BbDecisionMakingAndPatientInformation
     rdfs:label "Decision making and patient information"@en .
 
 hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.2" ;
     hito:subFunctionOf hito:BbPatientCare ;
     dc:source "Table6.2", "Table6.4" ;
@@ -354,7 +354,7 @@ hito:BbDocumentArchivingSystem
     rdfs:label "Document Archiving System"@en .
 
 hito:BbEducation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbResearchAndEducation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "education"@en .
@@ -373,7 +373,7 @@ hito:BbEnterpriseResourcePlanningSystem
     rdfs:label "Enterprise Resource Planning System"@en .
 
 hito:BbExecutionOfAnOperation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.7" ;
     hito:subFunctionOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dc:source "Table6.7" ;
@@ -382,7 +382,7 @@ hito:BbExecutionOfAnOperation
     rdfs:label "Execution of an operation"@en .
 
 hito:BbExecutionOfClinicalTrialsAndExperiments
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.12" ;
     hito:subFunctionOf hito:BbResearchAndEducation ;
     dc:source "Table6.12" ;
@@ -391,7 +391,7 @@ hito:BbExecutionOfClinicalTrialsAndExperiments
     rdfs:label "Execution of clinical trials and experiments"@en .
 
 hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.2" ;
     hito:subFunctionOf hito:BbPatientCare ;
     dc:source "Table6.2", "Table6.4", "Table6.6" ;
@@ -400,7 +400,7 @@ hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures
     rdfs:label "Execution of diagnostic, therapeutic and nursing Procedures"@en .
 
 hito:BbExecutionOfLabExaminations
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.10" ;
     hito:subFunctionOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dc:source "Table6.10" ;
@@ -409,7 +409,7 @@ hito:BbExecutionOfLabExaminations
     rdfs:label "Execution of lab examinations"@en .
 
 hito:BbExecutionOfNursingProcedures
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.3" ;
     hito:subFunctionOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dc:source "Table6.3" ;
@@ -418,7 +418,7 @@ hito:BbExecutionOfNursingProcedures
     rdfs:label "Execution of nursing procedures"@en .
 
 hito:BbExecutionOfRadiologicalExaminations
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.8" ;
     hito:subFunctionOf hito:BbExecutionOfDiagnosticTherapeuticAndNursingProcedures ;
     dc:source "Table6.8", "Table6.9" ;
@@ -426,7 +426,7 @@ hito:BbExecutionOfRadiologicalExaminations
     rdfs:label "Execution of radiological examinations"@en .
 
 hito:BbFacilityManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.11" ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     dc:source "Table6.11" ;
@@ -440,7 +440,7 @@ hito:BbFeatureCatalogue
     rdfs:label "Blue Book Architecture Feature Catalogue"@en .
 
 hito:BbFinancialAccounting
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.11" ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     dc:source "Table6.11" ;
@@ -460,12 +460,12 @@ hito:BbGenerateAUniquePinAndACin
     rdfs:label "Generate a unique PIN and a CIN"@en .
 
 hito:BbHospitalAdministration
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "hospital administration"@en .
 
 hito:BbHospitalManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.12" ;
     dc:source "Table6.12" ;
     dcterms:source bb:HospitalManagement ;
@@ -473,7 +473,7 @@ hito:BbHospitalManagement
     rdfs:label "Hospital management"@en .
 
 hito:BbHumanResourceManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.2" ;
     hito:subFunctionOf hito:BbSupplyManagementSchedulingAndResourceAllocation ;
     dc:source "Table6.11", "Table6.2", "Table6.3", "Table6.4", "Table6.6" ;
@@ -482,13 +482,13 @@ hito:BbHumanResourceManagement
     rdfs:label "Human resource management"@en .
 
 hito:BbHumanResourcePlanning
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "human resource planning"@en .
 
 hito:BbHumanResourcesManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbSupplyManagementSchedulingAndResourceAllocation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "human resources management"@en .
@@ -508,7 +508,7 @@ hito:BbIndexDocumentContent
     rdfs:label "Index document content"@en .
 
 hito:BbInformationManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "information management"@en .
@@ -521,13 +521,13 @@ hito:BbIntegrateDataFromDifferentApplicationComponents
     rdfs:label "Integrate data from different application components"@en .
 
 hito:BbInternalQualityManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbQualityManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "internal quality management"@en .
 
 hito:BbKnowledgeInquiryAndLiteratureManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbResearchAndEducation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "knowledge inquiry and literature management"@en .
@@ -540,13 +540,13 @@ hito:BbLaboratoryInformationSystem
     skos:altLabel "LIS"@en .
 
 hito:BbLaundryManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbSupplyAndDisposalManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "laundry management"@en .
 
 hito:BbLongTermArchiving
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbArchivingOfPatientInformation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "long term archiving"@en .
@@ -573,7 +573,7 @@ hito:BbManageStorageMedia
     rdfs:label "Manage storage media"@en .
 
 hito:BbManagementOfMedicalDevices
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.8" ;
     hito:subFunctionOf hito:BbSupplyAndDisposalManagement ;
     dc:source "Table6.8" ;
@@ -582,13 +582,13 @@ hito:BbManagementOfMedicalDevices
     rdfs:label "Management of Medical Devices"@en .
 
 hito:BbMaterialAndMedicationManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbSupplyAndDisposalManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "material and medication management"@en .
 
 hito:BbMedicalAdmission
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.2" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7", "Table6.8" ;
@@ -597,7 +597,7 @@ hito:BbMedicalAdmission
     rdfs:label "Medical admission"@en .
 
 hito:BbMedicalAndNursingCarePlanning
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.3" ;
     hito:subFunctionOf hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment ;
     dc:source "Table6.3", "Table6.6" ;
@@ -606,7 +606,7 @@ hito:BbMedicalAndNursingCarePlanning
     rdfs:label "Medical and nursing care planning"@en .
 
 hito:BbMedicalDischargeAndWritingTheDischargeLetter
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "medical discharge and writing the discharge letter"@en .
@@ -632,7 +632,7 @@ hito:BbModifyPresentationOfPictures
     rdfs:label "Modify presentation of pictures"@en .
 
 hito:BbNursingAdmission
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.3" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.3" ;
@@ -641,7 +641,7 @@ hito:BbNursingAdmission
     rdfs:label "Nursing admission"@en .
 
 hito:BbNursingDischargeAndNursingReportWriting
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.3" ;
     hito:subFunctionOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     dc:source "Table6.3" ;
@@ -650,7 +650,7 @@ hito:BbNursingDischargeAndNursingReportWriting
     rdfs:label "Nursing discharge and nursing report writing"@en .
 
 hito:BbNursingDischargeAndWritingTheNursingDischargeReport
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientDischargeAndTransferToOtherInstitutions ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "nursing discharge and writing the nursing discharge report"@en .
@@ -676,7 +676,7 @@ hito:BbOncologyInformationSystem
     rdfs:label "Oncology information system"@en .
 
 hito:BbOpeningAPatientRecord
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbArchivingOfPatientInformation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "opening a patient record"@en .
@@ -688,13 +688,13 @@ hito:BbOperationManagementSystem
     rdfs:label "Operation Management System"@en .
 
 hito:BbOperationalInformationManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbInformationManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "operational information management"@en .
 
 hito:BbOrderEntry
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.5" ;
     hito:subFunctionOf hito:BbPatientCare ;
     dc:source "Table6.5" ;
@@ -730,7 +730,7 @@ hito:BbPathologyInformationSystem
     rdfs:label "Pathology information system"@en .
 
 hito:BbPatientAdministration
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient administration"@en .
@@ -742,13 +742,13 @@ hito:BbPatientAdministrationSystem
     rdfs:label "Patient Administration System"@en .
 
 hito:BbPatientAdmission
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientCare ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient admission"@en .
 
 hito:BbPatientCare
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "patient care"@en .
 
@@ -760,7 +760,7 @@ hito:BbPatientDataManagementSystem
     skos:altLabel "PDMS"@en .
 
 hito:BbPatientDischargeAndTransferToOtherInstitutions
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.2" ;
     hito:subFunctionOf hito:BbPatientCare ;
     dc:source "Table6.2", "Table6.4", "Table6.6", "Table6.7" ;
@@ -769,7 +769,7 @@ hito:BbPatientDischargeAndTransferToOtherInstitutions
     rdfs:label "Patient discharge and transfer to other institutions"@en .
 
 hito:BbPatientIdentificationAndCheckingForRecurrent
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.1" ;
@@ -778,13 +778,13 @@ hito:BbPatientIdentificationAndCheckingForRecurrent
     rdfs:label "Patient identification and checking for recurrent"@en .
 
 hito:BbPayrollAccounting
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "payroll accounting"@en .
 
 hito:BbPerformanceOfLegalNotificationRequirements
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbQualityManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "performance of legal notification requirements"@en .
@@ -804,7 +804,7 @@ hito:BbPictureArchivingAndCommunicationSystem
     skos:altLabel "PACS"@en .
 
 hito:BbPreparationOfAnOrder
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbOrderEntry ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "preparation of an order"@en .
@@ -1496,13 +1496,13 @@ hito:BbProviderOrPhysicianOrderEntrySystem
     skos:altLabel "POE"@en .
 
 hito:BbPublishingAndPresenting
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbResearchAndEducation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "publishing and presenting"@en .
 
 hito:BbQualityManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.11" ;
     hito:subFunctionOf hito:BbHospitalAdministration ;
     dc:source "Table6.11" ;
@@ -1532,12 +1532,12 @@ hito:BbReceiveOrders
     rdfs:label "Receive orders"@en .
 
 hito:BbResearchAndEducation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "research and education"@en .
 
 hito:BbResearchManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbResearchAndEducation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "research management"@en .
@@ -1564,7 +1564,7 @@ hito:BbScanningDocumentsFromReferringPhysicianAndOtherSources
     rdfs:label "Scanning documents from referring physician and other sources"@en .
 
 hito:BbSchedulingAndResourceAllocation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbSupplyManagementSchedulingAndResourceAllocation ;
     dc:source "Table6.1", "Table6.4", "Table6.6", "Table6.7" ;
@@ -1573,13 +1573,13 @@ hito:BbSchedulingAndResourceAllocation
     rdfs:label "Scheduling and resource allocation"@en .
 
 hito:BbSchedulingAndResourcePlanningWithTheMedicalServiceUnit
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientAdministration ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "scheduling and resource planning with the medical service unit"@en .
 
 hito:BbSchedulingAndResourcePlanningWithThePatientTransportService
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbSupplyManagementSchedulingAndResourceAllocation ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "scheduling and resource planning with the patient transport service"@en .
@@ -1606,7 +1606,7 @@ hito:BbSelectOrdersFromOrderSets
     rdfs:label "Select orders from order sets"@en .
 
 hito:BbStrategicInformationManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbInformationManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "strategic information management"@en .
@@ -1619,7 +1619,7 @@ hito:BbStructureData
     rdfs:label "Structure data"@en .
 
 hito:BbSupplyAndDisposalManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.6" ;
     hito:subFunctionOf hito:BbSupplyManagementSchedulingAndResourceAllocation ;
     dc:source "Table6.11", "Table6.6", "Table6.7" ;
@@ -1628,7 +1628,7 @@ hito:BbSupplyAndDisposalManagement
     rdfs:label "Supply and disposal management"@en .
 
 hito:BbSupplyManagementSchedulingAndResourceAllocation
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "supply management, scheduling and resource allocation"@en .
 
@@ -1640,7 +1640,7 @@ hito:BbSupportCreationOfANursingCarePlan
     rdfs:label "Support creation of a nursing care plan"@en .
 
 hito:BbTacticalInformationManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbInformationManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "tactical information management"@en .
@@ -1667,7 +1667,7 @@ hito:BbViewPatientrelatedAppointments
     rdfs:label "View patient-related appointments"@en .
 
 hito:BbVisitorAndInformationService
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.1" ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     dc:source "Table6.1" ;
@@ -1676,13 +1676,13 @@ hito:BbVisitorAndInformationService
     rdfs:label "Visitor and information service"@en .
 
 hito:BbVisitorAndInformationServices
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbPatientAdmission ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "visitor and information services"@en .
 
 hito:BbWorkOrganizationAndTimeManagement
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:internalId "6.7" ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     dc:source "Table6.7", "Table6.8" ;
@@ -1691,7 +1691,7 @@ hito:BbWorkOrganizationAndTimeManagement
     rdfs:label "Work organization and time management"@en .
 
 hito:BbWorkOrganizationAndTimePlanning
-    hito:enterpriseFunctionCatalogue hito:BbFunctionCatalogue ;
+    hito:efClaFrom hito:BbFunctionCatalogue ;
     hito:subFunctionOf hito:BbHumanResourceManagement ;
     a hito:EnterpriseFunctionClassified ;
     rdfs:label "work organization and time planning"@en .

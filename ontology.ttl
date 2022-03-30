@@ -216,11 +216,11 @@
 
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionCatalogue
-:enterpriseFunctionCatalogue rdf:type owl:ObjectProperty ;
+:efClaFrom rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :catalogue;
                     rdfs:domain :EnterpriseFunctionClassified ;
                     rdfs:range :EnterpriseFunctionCatalogue ;
-                    rdfs:label "enterprise function catalogue"@en .
+                    rdfs:label "from catalogue"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesProduct
