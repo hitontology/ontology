@@ -272,7 +272,7 @@
 :FeatureCitationShape a sh:NodeShape;
 	sh:targetClass :FeatureCitation;
 	sh:property :labelShape, [
-		sh:path :featureClassified;
+		sh:path :fCitClassifiedAs;
 	] ,
 	[sh:path :supportsFunction];
 	sh:pattern "^http://hitontology.eu/ontology/";
@@ -373,7 +373,7 @@
 #### Classified Domain ######################################################
 
 :FeatureClassifiedDomainShape a sh:NodeShape;
-	sh:targetSubjectsOf :featureClassified;
+	sh:targetSubjectsOf :fCitClassifiedAs;
 	sh:class :FeatureCitation.
 
 :EnterpriseFunctionClassifiedDomainShape a sh:NodeShape;
@@ -395,7 +395,7 @@
 #### Classified Range ######################################################
 
 :FeatureClassifiedRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :featureClassified;
+	sh:targetObjectsOf :fCitClassifiedAs;
 	sh:class :FeatureClassified.
 
 :EnterpriseFunctionClassifiedRangeShape a sh:NodeShape;

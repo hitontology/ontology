@@ -36,12 +36,12 @@
     rdfs:label "3LGM2 Baukasten"@en .
 
 <http://hitontology.eu/ontology/3LGM2FeatAnalysisFunctions>
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "set of predefined analysis functions"@en .
 
 <http://hitontology.eu/ontology/3LGM2FeatAnalyzingModels>
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "analyzing models of information systems"@en .
 
@@ -54,7 +54,7 @@
     rdfs:label "Beispielmodelle"@en .
 
 <http://hitontology.eu/ontology/3LGM2FeatDefinitionSprachkonzepteBeziehungen>
-    :featureClassified :EhrSfmStandardTerminologyAndTerminologyModels ;
+    :fCitClassifiedAs :EhrSfmStandardTerminologyAndTerminologyModels ;
     a :FeatureCitation ;
     rdfs:label "Definition notwendiger Sprachkonzepte und deren Beziehungen"@en .
 
@@ -149,12 +149,12 @@
     rdfs:label "Software-Hersteller"@en .
 
 :AbbotIStatFeatureCompleteTestResults
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "complete test results"@en .
 
 :AbbotIStatFeatureReadBarCodeLabel
-    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests ;
+    :fCitClassifiedAs :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests ;
     a :FeatureCitation ;
     rdfs:label "read bar code label"@en .
 
@@ -192,7 +192,7 @@
     rdfs:label "booking of examinations"@en .
 
 :AgfaPacsImpaxFeaturePatientRegistration
-    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    :fCitClassifiedAs :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
     a :FeatureCitation ;
     rdfs:label "patient registration"@en .
 
@@ -225,7 +225,7 @@
     rdfs:label "patient registration"@en .
 
 :AgfaRisElefanteFeatureSpeechRecognition
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportOrders, :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
     a :FeatureCitation ;
     rdfs:label "speech recognition"@en .
 
@@ -262,55 +262,55 @@
     rdfs:label "Capture Clinical Records"@en .
 
 :BahmniFeatCaptureDrugPrescriptions
-    :featureClassified :WhoDhiReportEffectsAdverseDrug, :WhoDhiTrackClientsMedicationConsumption, :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :fCitClassifiedAs :WhoDhiReportEffectsAdverseDrug, :WhoDhiTrackClientsMedicationConsumption, :WhoDhiTransmitOrTrackPrescriptionOrders ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Capture Drug Prescriptions"@en .
 
 :BahmniFeatClinicalReporting
-    :featureClassified :WhoDhiIdentifyClientsInNeedOfServices, :WhoDhiScheduleHealthcareProvidersActivities ;
+    :fCitClassifiedAs :WhoDhiIdentifyClientsInNeedOfServices, :WhoDhiScheduleHealthcareProvidersActivities ;
     :supportsFunction :BahmniFuncReporting ;
     a :FeatureCitation ;
     rdfs:label "Clinical Reporting"@en .
 
 :BahmniFeatCreateDiseaseSpecificForms
-    :featureClassified :WhoDhiScheduleHealthcareProvidersActivities ;
+    :fCitClassifiedAs :WhoDhiScheduleHealthcareProvidersActivities ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Create Disease Specific Forms"@en .
 
 :BahmniFeatCreateGeneralForms
-    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan, :WhoDhiVerifyClientUniqueIdentity ;
+    :fCitClassifiedAs :WhoDhiEnrolClientForHealthServicesclinicalCarePlan, :WhoDhiVerifyClientUniqueIdentity ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Create General Forms"@en .
 
 :BahmniFeatDisplayLaboratoryWorkload
-    :featureClassified :WhoDhiCaptureFromDigitalDevices, :WhoDhiTrackBiologicalSpecimens, :WhoDhiTransmitDiagnosticOrdersDiagnosticResults, :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    :fCitClassifiedAs :WhoDhiCaptureFromDigitalDevices, :WhoDhiTrackBiologicalSpecimens, :WhoDhiTransmitDiagnosticOrdersDiagnosticResults, :WhoDhiTransmitToHealthcareProviderAndTrack ;
     :supportsFunction :BahmniFuncLaboratory ;
     a :FeatureCitation ;
     rdfs:label "Display Laboratory Workload"@en .
 
 :BahmniFeatMaintainAccurateRecords
-    :featureClassified :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :fCitClassifiedAs :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     :supportsFunction :BahmniFuncBilling ;
     a :FeatureCitation ;
     rdfs:label "Maintain Accurate Records"@en .
 
 :BahmniFeatMaintainClinicalRecords
-    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :fCitClassifiedAs :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Maintain Clinical Records"@en .
 
 :BahmniFeatManageAccurateRecords
-    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords ;
+    :fCitClassifiedAs :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords ;
     :supportsFunction :BahmniFuncBilling ;
     a :FeatureCitation ;
     rdfs:label "Manage Accurate Records"@en .
 
 :BahmniFeatManagePatientOrders
-    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
+    :fCitClassifiedAs :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices, :WhoDhiManageClientsStructuredClinicalRecords, :WhoDhiManageClientsUnstructuredClinicalRecords, :WhoDhiRoutineHealthIndicatorDataCollectionAndManagement ;
     :supportsFunction :BahmniFuncLaboratory ;
     a :FeatureCitation ;
     rdfs:label "Manage Patient Orders"@en .
@@ -321,25 +321,25 @@
     rdfs:label "Manage Patients Admissions"@en .
 
 :BahmniFeatManageSamples
-    :featureClassified :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    :fCitClassifiedAs :WhoDhiTransmitToHealthcareProviderAndTrack ;
     :supportsFunction :BahmniFuncLaboratory ;
     a :FeatureCitation ;
     rdfs:label "Manage Samples"@en .
 
 :BahmniFeatManageStock
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, :WhoDhiManageOfCommodities, :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiReportCounterfeitOrSubstandardDrugsByClients ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf, :WhoDhiManageOfCommodities, :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiReportCounterfeitOrSubstandardDrugsByClients ;
     :supportsFunction :BahmniFuncStockManagement ;
     a :FeatureCitation ;
     rdfs:label "Manage Stock"@en .
 
 :BahmniFeatManageTests
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     :supportsFunction :BahmniFuncLaboratory ;
     a :FeatureCitation ;
     rdfs:label "Manage Tests"@en .
 
 :BahmniFeatMonitorStockLevels
-    :featureClassified :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiRegisterAndHealthCommoditiesProcurement ;
+    :fCitClassifiedAs :WhoDhiMonitorColdchainSensitiveCommoditiesLicensedDrugs, :WhoDhiMonitorStatusOfHealthEquipment, :WhoDhiNotifyHealthCommodities, :WhoDhiRegisterAndHealthCommoditiesProcurement ;
     :supportsFunction :BahmniFuncStockManagement ;
     a :FeatureCitation ;
     rdfs:label "Monitor Stock Levels"@en .
@@ -355,13 +355,13 @@
     rdfs:label "Order Investigation"@en .
 
 :BahmniFeatOrderLab
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Order Lab"@en .
 
 :BahmniFeatOrderRadiology
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Order Radiology"@en .
@@ -377,19 +377,19 @@
     rdfs:label "Perform Operational Reporting"@en .
 
 :BahmniFeatPrintPatientId
-    :featureClassified :WhoDhiVerifyClientUniqueIdentity ;
+    :fCitClassifiedAs :WhoDhiVerifyClientUniqueIdentity ;
     :supportsFunction :BahmniFuncPatientRegistration ;
     a :FeatureCitation ;
     rdfs:label "Print Patient Id"@en .
 
 :BahmniFeatPublicHealthReporting
-    :featureClassified :WhoDhiReportingOfHealthSystemFeedbackByClients, :WhoDhiReportingOfPublicHealthEventsByClient ;
+    :fCitClassifiedAs :WhoDhiReportingOfHealthSystemFeedbackByClients, :WhoDhiReportingOfPublicHealthEventsByClient ;
     :supportsFunction :BahmniFuncReporting ;
     a :FeatureCitation ;
     rdfs:label "Public Health Reporting"@en .
 
 :BahmniFeatReorderStock
-    :featureClassified :WhoDhiCoordinateEmergencyResponseAndTransport, :WhoDhiManageReferralsBetweenHealthAndOtherSectors, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    :fCitClassifiedAs :WhoDhiCoordinateEmergencyResponseAndTransport, :WhoDhiManageReferralsBetweenHealthAndOtherSectors, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
     :supportsFunction :BahmniFuncStockManagement ;
     a :FeatureCitation ;
     rdfs:label "Reorder Stock"@en .
@@ -400,7 +400,7 @@
     rdfs:label "Search Patients"@en .
 
 :BahmniFeatSendSamplesForReferrals
-    :featureClassified :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
+    :fCitClassifiedAs :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
     :supportsFunction :BahmniFuncInpatientManagement ;
     a :FeatureCitation ;
     rdfs:label "Send Samples For Referrals"@en .
@@ -416,7 +416,7 @@
     rdfs:label "Track Ward Occupancy"@en .
 
 :BahmniFeatUseDrugPrescriptionTemplates
-    :featureClassified :WhoDhiReportEffectsAdverseDrug ;
+    :fCitClassifiedAs :WhoDhiReportEffectsAdverseDrug ;
     :supportsFunction :BahmniFuncClinicalServices ;
     a :FeatureCitation ;
     rdfs:label "Use Drug Prescription Templates"@en .
@@ -613,7 +613,7 @@
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
 :BikaLimsFeatAlerts
-    :featureClassified :WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
+    :fCitClassifiedAs :WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
     a :FeatureCitation ;
     rdfs:label "Alerts"@en .
 
@@ -622,17 +622,17 @@
     rdfs:label "Aliquot management"@en .
 
 :BikaLimsFeatAnalysisCategories
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Analysis Categories"@en .
 
 :BikaLimsFeatAnalysisSpecifications
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Analysis Specifications"@en .
 
 :BikaLimsFeatAuthorisationMatrix
-    :featureClassified :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
+    :fCitClassifiedAs :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
     a :FeatureCitation ;
     rdfs:label "Authorisation matrix"@en .
 
@@ -657,7 +657,7 @@
     rdfs:label "Bulk Imports"@en .
 
 :BikaLimsFeatCapturingQcResults
-    :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
+    :fCitClassifiedAs :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
     a :FeatureCitation ;
     rdfs:label "Capturing QC results"@en .
 
@@ -670,12 +670,12 @@
     rdfs:label "Configurable Calculations"@en .
 
 :BikaLimsFeatControlCharts
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Control charts"@en .
 
 :BikaLimsFeatCorrectiveActionWorkflow
-    :featureClassified :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "corrective action workflow"@en .
 
@@ -684,7 +684,7 @@
     rdfs:label "Create or Edit a Calculation"@en .
 
 :BikaLimsFeatCreatingAnalysisServices
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Creating Analysis Services"@en .
 
@@ -737,7 +737,7 @@
     rdfs:label "efficiency reports"@en .
 
 :BikaLimsFeatEncryption
-    :featureClassified :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
+    :fCitClassifiedAs :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
     a :FeatureCitation ;
     rdfs:label "Encryption"@en .
 
@@ -746,7 +746,7 @@
     rdfs:label "ERP Interface"@en .
 
 :BikaLimsFeatFullAuditTrail
-    :featureClassified :EhrSfmAudit, :EhrSfmAuditLogManagement ;
+    :fCitClassifiedAs :EhrSfmAudit, :EhrSfmAuditLogManagement ;
     a :FeatureCitation ;
     rdfs:label "Full Audit trail"@en .
 
@@ -759,7 +759,7 @@
     rdfs:label "Instrument Configuration"@en .
 
 :BikaLimsFeatInstrumentMaintenance
-    :featureClassified :BbProvideMeansForPreventiveMaintenance ;
+    :fCitClassifiedAs :BbProvideMeansForPreventiveMaintenance ;
     a :FeatureCitation ;
     rdfs:label "Instrument Maintenance"@en .
 
@@ -784,7 +784,7 @@
     rdfs:label "Labeling Samples"@en .
 
 :BikaLimsFeatManagementReports
-    :featureClassified :BbPrepareReport, :EhrSfmManageCareCoordinationReporting ;
+    :fCitClassifiedAs :BbPrepareReport, :EhrSfmManageCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "Management reports"@en .
 
@@ -797,7 +797,7 @@
     rdfs:label "Prioritisation"@en .
 
 :BikaLimsFeatReferenceAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Reference Analyses"@en .
 
@@ -806,27 +806,27 @@
     rdfs:label "Reference Definitions"@en .
 
 :BikaLimsFeatRejectionWorkflow
-    :featureClassified :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "Rejection workflow"@en .
 
 :BikaLimsFeatRequestingAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Requesting Analyses"@en .
 
 :BikaLimsFeatResultsCapturing
-    :featureClassified :BbCollectResultsFromDevices, :EhrSfmManageResults ;
+    :fCitClassifiedAs :BbCollectResultsFromDevices, :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "Results capturing"@en .
 
 :BikaLimsFeatResultsPublication
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "Results Publication"@en .
 
 :BikaLimsFeatRoleBasedSecurity
-    :featureClassified :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
+    :fCitClassifiedAs :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
     a :FeatureCitation ;
     rdfs:label "Role based security"@en .
 
@@ -894,22 +894,22 @@
     rdfs:label "Cerner First Net"@en .
 
 :CernerFirstNetFeatureCreationOfDataRelationToTriage
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmSupportCareCoordinationReporting, :EhrSfmSupportTriageCategorization ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmSupportCareCoordinationReporting, :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "creation of data relation to triage"@en .
 
 :CernerFirstNetFeatureDischargeSummaries
-    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    :fCitClassifiedAs :EhrSfmProduceASummaryRecordOfCare ;
     a :FeatureCitation ;
     rdfs:label "discharge summaries"@en .
 
 :CernerFirstNetFeatureMandatoryReporting
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "mandatory reporting"@en .
 
 :CernerFirstNetPatientManagementPlans
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "patient management plans"@en .
 
@@ -926,12 +926,12 @@
     rdfs:label "Computerized Physician Order Entry (CPOE) System"@en .
 
 :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection
-    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "dropdown menu of predefined order sentences triggered on drug selection"@en .
 
 :CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm
-    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
 
@@ -943,12 +943,12 @@
     rdfs:label "Cerner Soarian CPOE platform"@en .
 
 :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet
-    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "medication-specific order set"@en .
 
 :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet
-    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "unit-specific oder set"@en .
 
@@ -962,47 +962,47 @@
     rdfs:label "Commercial CIS1"@en .
 
 :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "Support of integrated patient centred documentation for different disciplines"@en .
 
 :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation
-    :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders ;
+    :fCitClassifiedAs :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders ;
     a :FeatureCitation ;
     rdfs:label "Support of medication ordering and medication documentation"@en .
 
 :Cis1FeatSupportOfNursingDocumentation
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of nursing documentation"@en .
 
 :Cis1FeatSupportOfQualityAssurance
-    :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures, :EhrSfmSupportForProcessImprovement ;
+    :fCitClassifiedAs :EhrSfmQualityPreformanceAndAccountabilityMeasures, :EhrSfmSupportForProcessImprovement ;
     a :FeatureCitation ;
     rdfs:label "Support of quality assurance"@en .
 
 :Cis1FeatSupportOfTriage
-    :featureClassified :EhrSfmSupportTriageCategorization ;
+    :fCitClassifiedAs :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "Support of triage"@en .
 
 :Cis1FeatSupportOfVariousTypesOfBilling
-    :featureClassified :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
+    :fCitClassifiedAs :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support of various types of billing"@en .
 
 :Cis1FeatSupportOfWardOrganization
-    :featureClassified :EhrSfmManageFacilityDemographics, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
+    :fCitClassifiedAs :EhrSfmManageFacilityDemographics, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
     a :FeatureCitation ;
     rdfs:label "Support of ward organization"@en .
 
 :Cis1FeatSupportSurveillanceOfInfectiousDiseases
-    :featureClassified :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
+    :fCitClassifiedAs :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
     a :FeatureCitation ;
     rdfs:label "Support surveillance of infectious diseases"@en .
 
 :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "Support to manage various clinical and diagnostic results"@en .
 
@@ -1086,42 +1086,42 @@
     rdfs:label "Commercial CIS2"@en .
 
 :Cis2FeatSupportForBilling
-    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmSupportFinancialReporting, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
+    :fCitClassifiedAs :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmSupportFinancialReporting, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support for Billing"@en .
 
 :Cis2FeatSupportForPatientAdministration
-    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManagePatientsResidenceForTheProvisionAndAdministrationOfServices, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
+    :fCitClassifiedAs :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManagePatientsResidenceForTheProvisionAndAdministrationOfServices, :EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
     a :FeatureCitation ;
     rdfs:label "Support for patient administration"@en .
 
 :Cis2FeatSupportForTheAmbulance
-    :featureClassified :EhrSfmSupportTriageCategorization ;
+    :fCitClassifiedAs :EhrSfmSupportTriageCategorization ;
     a :FeatureCitation ;
     rdfs:label "Support for the Ambulance"@en .
 
 :Cis2FeatSupportOfClinicalDocumentation
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmSupportClinicalDocumentation, :EhrSfmSupportExternallySourcedClinicalDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmSupportClinicalDocumentation, :EhrSfmSupportExternallySourcedClinicalDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation, :EhrSfmSupportPatientHealthDataDerivedFromAdministrativeAndFinancialDataAndDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of clinical documentation"@en .
 
 :Cis2FeatSupportOfDecisionSupport
-    :featureClassified :EhrSfmClinicalDecisionSupportSystemGuidelinesUpdates ;
+    :fCitClassifiedAs :EhrSfmClinicalDecisionSupportSystemGuidelinesUpdates ;
     a :FeatureCitation ;
     rdfs:label "Support of decision support"@en .
 
 :Cis2FeatSupportOfMedicationAndOrdering
-    :featureClassified :EhrSfmManageMedicationList, :EhrSfmManageOrders, :EhrSfmSupportMedicationAndImmunizationOrdering, :EhrSfmSupportTreatmentAdministration ;
+    :fCitClassifiedAs :EhrSfmManageMedicationList, :EhrSfmManageOrders, :EhrSfmSupportMedicationAndImmunizationOrdering, :EhrSfmSupportTreatmentAdministration ;
     a :FeatureCitation ;
     rdfs:label "Support of medication and ordering"@en .
 
 :Cis2FeatSupportOfNursingDocumentation
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Support of nursing documentation"@en .
 
 :Cis2FeatSupportOfScheduling
-    :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmManageResourceAvailability ;
+    :fCitClassifiedAs :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageHealthcareResourceScheduling, :EhrSfmManageResourceAvailability ;
     a :FeatureCitation ;
     rdfs:label "Support of scheduling"@en .
 
@@ -1161,7 +1161,7 @@
     rdfs:label "Scheduling"@en .
 
 :CisFeatSupportOfServiceRecording
-    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing ;
+    :fCitClassifiedAs :EhrSfmManageAdministrativeTransactionProcessing ;
     a :FeatureCitation ;
     rdfs:label "Support of service recording"@en .
 
@@ -1212,17 +1212,17 @@
     rdfs:label "Medication Management System"@en .
 
 :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick
-    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "predefined order sentences allow for group of related orders to be selected with single click"@en .
 
 :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists
-    :featureClassified :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "predefined order sentences searchable by category quick lists"@en .
 
 :CscMedChartFeaturePrescribeLonghand
-    :featureClassified :EhrSfmManageOrders ;
+    :fCitClassifiedAs :EhrSfmManageOrders ;
     a :FeatureCitation ;
     rdfs:label "prescribe longhand"@en .
 
@@ -1261,7 +1261,7 @@
     rdfs:label "Image Manager"@en .
 
 :Dcm4CheFeatAdtOrmAndOruMessageTypes
-    :featureClassified :EhrSfmStructuredmessageInterchangeStandards ;
+    :fCitClassifiedAs :EhrSfmStructuredmessageInterchangeStandards ;
     a :FeatureCitation ;
     rdfs:label "ADT, ORM and ORU message types"@en .
 
@@ -1270,27 +1270,27 @@
     rdfs:label "compression of DICOM object"@en .
 
 :Dcm4CheFeatConvertDicomFileToXml
-    :featureClassified :BbManageStorageFormats ;
+    :fCitClassifiedAs :BbManageStorageFormats ;
     a :FeatureCitation ;
     rdfs:label "convert DICOM file to XML"@en .
 
 :Dcm4CheFeatDicomGeneralPurposeWorklist
-    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "DICOM General Purpose Worklist"@en .
 
 :Dcm4CheFeatDicomHangingProtocols
-    :featureClassified :JoshiPacsCustomizableHangingProtocolAndIcons ;
+    :fCitClassifiedAs :JoshiPacsCustomizableHangingProtocolAndIcons ;
     a :FeatureCitation ;
     rdfs:label "DICOM Hanging Protocols"@en .
 
 :Dcm4CheFeatDicomStorageCommitment
-    :featureClassified :BbManageStorageFormats ;
+    :fCitClassifiedAs :BbManageStorageFormats ;
     a :FeatureCitation ;
     rdfs:label "DICOM Storage Commitment"@en .
 
 :Dcm4CheFeatInstanceAvailabilityNotification
-    :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmSupportForNotificationAndResponse ;
+    :fCitClassifiedAs :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmSupportForNotificationAndResponse ;
     a :FeatureCitation ;
     rdfs:label "Instance Availability Notification"@en .
 
@@ -1299,27 +1299,27 @@
     rdfs:label "integrated HL7 server"@en .
 
 :Dcm4CheFeatManipulatingHeaderData
-    :featureClassified :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages ;
+    :fCitClassifiedAs :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages ;
     a :FeatureCitation ;
     rdfs:label "manipulating header data"@en .
 
 :Dcm4CheFeatModalityPerformedProcedureStep
-    :featureClassified :BbManageModalities ;
+    :fCitClassifiedAs :BbManageModalities ;
     a :FeatureCitation ;
     rdfs:label "Modality Performed Procedure Step"@en .
 
 :Dcm4CheFeatModalityWorklist
-    :featureClassified :BbAssignOrdersToModalities, :BbAssignPatientsToModalities, :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :BbAssignOrdersToModalities, :BbAssignPatientsToModalities, :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "Modality worklist"@en .
 
 :Dcm4CheFeatOutputContentToCdMedia
-    :featureClassified :BbManageStorageMedia ;
+    :fCitClassifiedAs :BbManageStorageMedia ;
     a :FeatureCitation ;
     rdfs:label "Output Content to CD Media"@en .
 
 :Dcm4CheFeatQueryArchiveForDicomObjects
-    :featureClassified :BbProvideAccessToArchivedInformation ;
+    :fCitClassifiedAs :BbProvideAccessToArchivedInformation ;
     a :FeatureCitation ;
     rdfs:label "query archive for DICOM objects"@en .
 
@@ -1328,12 +1328,12 @@
     rdfs:label "reading DICOM files"@en .
 
 :Dcm4CheFeatRetrieveDicomObjects
-    :featureClassified :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages ;
+    :fCitClassifiedAs :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages ;
     a :FeatureCitation ;
     rdfs:label "retrieve DICOM objects"@en .
 
 :Dcm4CheFeatStoreAnyTypeOfDicomObject
-    :featureClassified :BbManageStorageFormats, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :BbManageStorageFormats, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "store any type of DICOM object"@en .
 
@@ -1342,12 +1342,12 @@
     rdfs:label "Study Content Notification"@en .
 
 :Dcm4CheFeatTransformingDicomFiles
-    :featureClassified :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages ;
+    :fCitClassifiedAs :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages ;
     a :FeatureCitation ;
     rdfs:label "transforming DICOM files"@en .
 
 :Dcm4CheFeatWebAccessToArchivedContent
-    :featureClassified :BbProvideAccessToArchivedInformation ;
+    :fCitClassifiedAs :BbProvideAccessToArchivedInformation ;
     a :FeatureCitation ;
     rdfs:label "web access to archived content"@en .
 
@@ -1420,17 +1420,17 @@
     rdfs:label "public health information system"@en .
 
 :Dhis2FeatAggregateAndIndividualLevelData
-    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "aggregate and individual-level data"@en .
 
 :Dhis2FeatBuiltInMapsApp
-    :featureClassified :WhoDhiLocationMapping ;
+    :fCitClassifiedAs :WhoDhiLocationMapping ;
     a :FeatureCitation ;
     rdfs:label "built-in Maps app"@en .
 
 :Dhis2FeatCaseFollowUp
-    :featureClassified :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "case follow-up"@en .
 
@@ -1439,27 +1439,27 @@
     rdfs:label "case monitoring"@en .
 
 :Dhis2FeatCombineDataFromAVarietyOfSources
-    :featureClassified :EhrSfmSupportExternallySourcedClinicalData ;
+    :fCitClassifiedAs :EhrSfmSupportExternallySourcedClinicalData ;
     a :FeatureCitation ;
     rdfs:label "combine data from a variety of sources"@en .
 
 :Dhis2FeatContactTracing
-    :featureClassified :WhoDhiMapLocationOfHealthEvents ;
+    :fCitClassifiedAs :WhoDhiMapLocationOfHealthEvents ;
     a :FeatureCitation ;
     rdfs:label "contact tracing"@en .
 
 :Dhis2FeatControlAccessWithSharingSettings
-    :featureClassified :EhrSfmEntityAccessControl ;
+    :fCitClassifiedAs :EhrSfmEntityAccessControl ;
     a :FeatureCitation ;
     rdfs:label "Control access with sharing settings"@en .
 
 :Dhis2FeatCustomizablePrograms
-    :featureClassified :EhrSfmManagePatientsInHealthcarePrograms ;
+    :fCitClassifiedAs :EhrSfmManagePatientsInHealthcarePrograms ;
     a :FeatureCitation ;
     rdfs:label "Customizable programs"@en .
 
 :Dhis2FeatCustomizedDataEntryForms
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "customized data entry forms"@en .
 
@@ -1468,52 +1468,52 @@
     rdfs:label "data approval"@en .
 
 :Dhis2FeatDataEntryViaDirectImport
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "data entry via direct import"@en .
 
 :Dhis2FeatDataEntryViaMobileAndroidApp
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "data entry via mobile Android app"@en .
 
 :Dhis2FeatDataEntryViaSms
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "data entry via SMS"@en .
 
 :Dhis2FeatDataEntryViaWebPortal
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "data entry via web portal"@en .
 
 :Dhis2FeatDataValidation
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "data validation"@en .
 
 :Dhis2FeatDataValidationRules
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "data validation rules"@en .
 
 :Dhis2FeatDataVisualizationByCharting
-    :featureClassified :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "data visualization by charting"@en .
 
 :Dhis2FeatDataVisualizationByPivotTables
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "data visualization by pivot tables"@en .
 
 :Dhis2FeatDataVisualizationForDashboards
-    :featureClassified :EhrSfmSupportForCareSystemPerformanceIndicatorsDashboards ;
+    :fCitClassifiedAs :EhrSfmSupportForCareSystemPerformanceIndicatorsDashboards ;
     a :FeatureCitation ;
     rdfs:label "data visualization for dashboards"@en .
 
 :Dhis2FeatDataVisualizationForGis
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "data visualization for GIS"@en .
 
@@ -1522,7 +1522,7 @@
     rdfs:label "edit an event"@en .
 
 :Dhis2FeatEliminateDuplicateDataEntry
-    :featureClassified :WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies ;
+    :fCitClassifiedAs :WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies ;
     a :FeatureCitation ;
     rdfs:label "Eliminate duplicate data entry"@en .
 
@@ -1531,7 +1531,7 @@
     rdfs:label "event reports"@en .
 
 :Dhis2FeatEventVisualizer
-    :featureClassified :WhoDhiDataSynthesisAndVisualization, :WhoDhiMapLocationOfHealthEvents ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization, :WhoDhiMapLocationOfHealthEvents ;
     a :FeatureCitation ;
     rdfs:label "event Visualizer"@en .
 
@@ -1540,12 +1540,12 @@
     rdfs:label "export of data and metadata"@en .
 
 :Dhis2FeatGenerateWorkLists
-    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "generate work lists"@en .
 
 :Dhis2FeatGeolocateIndividualCasesForContactTracing
-    :featureClassified :WhoDhiMapLocationOfHealthEvents ;
+    :fCitClassifiedAs :WhoDhiMapLocationOfHealthEvents ;
     a :FeatureCitation ;
     rdfs:label "geolocate individual cases for contact tracing"@en .
 
@@ -1558,7 +1558,7 @@
     rdfs:label "manage users, user roles and user groups"@en .
 
 :Dhis2FeatMessagingFeature
-    :featureClassified :EhrSfmSupportForCommunicationsBetweenProviderAndPatientAndorThePatientRepresentative, :EhrSfmSupportForCommunicationsWithinAnOrganization ;
+    :fCitClassifiedAs :EhrSfmSupportForCommunicationsBetweenProviderAndPatientAndorThePatientRepresentative, :EhrSfmSupportForCommunicationsWithinAnOrganization ;
     a :FeatureCitation ;
     rdfs:label "communicate through integrated messaging feature"@en .
 
@@ -1571,17 +1571,17 @@
     rdfs:label "metadata management"@en .
 
 :Dhis2FeatMonitoringIndividualPeopleOverTime
-    :featureClassified :WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider ;
+    :fCitClassifiedAs :WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider ;
     a :FeatureCitation ;
     rdfs:label "monitoring individual people over time"@en .
 
 :Dhis2FeatOnlineAndOfflineDataEntry
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "online and offline data entry"@en .
 
 :Dhis2FeatRegisterEvents
-    :featureClassified :WhoDhiRegisterBirthEvent, :WhoDhiRegisterDeathEvent ;
+    :fCitClassifiedAs :WhoDhiRegisterBirthEvent, :WhoDhiRegisterDeathEvent ;
     a :FeatureCitation ;
     rdfs:label "register events"@en .
 
@@ -1590,7 +1590,7 @@
     rdfs:label "send automated SMS messages to patients"@en .
 
 :Dhis2FeatShareInterpretationsOfData
-    :featureClassified :EhrSfmSupportForCohortAndAggregateDataSharing ;
+    :fCitClassifiedAs :EhrSfmSupportForCohortAndAggregateDataSharing ;
     a :FeatureCitation ;
     rdfs:label "share interpretations of data"@en .
 
@@ -1599,37 +1599,37 @@
     rdfs:label "Standard deviation outlier analysis"@en .
 
 :Dhis2FeatStandardWhoConfigurations
-    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "standard WHO configurations"@en .
 
 :Dhis2FeatSupportsAllTheStandardChartTypes
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "supports all the standard chart types"@en .
 
 :Dhis2FeatThematicMappingOfAreasAndPoints
-    :featureClassified :WhoDhiLocationMapping ;
+    :fCitClassifiedAs :WhoDhiLocationMapping ;
     a :FeatureCitation ;
     rdfs:label "thematic mapping of areas and points"@en .
 
 :Dhis2FeatTrackerFunctions
-    :featureClassified :EhrSfmClinicalTaskStatusTracking ;
+    :fCitClassifiedAs :EhrSfmClinicalTaskStatusTracking ;
     a :FeatureCitation ;
     rdfs:label "Tracker functions"@en .
 
 :Dhis2FeatViewTrackedEntitiesAndEventsOnMap
-    :featureClassified :WhoDhiLocationMapping ;
+    :fCitClassifiedAs :WhoDhiLocationMapping ;
     a :FeatureCitation ;
     rdfs:label "View Tracked entities and events on map"@en .
 
 :Dhis2FeatVisualizeCatchmentAreasForEachFacility
-    :featureClassified :WhoDhiMapLocationOfHealthFacilitiesstructures ;
+    :fCitClassifiedAs :WhoDhiMapLocationOfHealthFacilitiesstructures ;
     a :FeatureCitation ;
     rdfs:label "visualize catchment areas for each facility"@en .
 
 :Dhis2FeatWebBasedGeographicInformationSystem
-    :featureClassified :WhoDhiLocationMapping ;
+    :fCitClassifiedAs :WhoDhiLocationMapping ;
     a :FeatureCitation ;
     rdfs:label "web-based Geographic Information System (GIS)"@en .
 
@@ -1670,42 +1670,42 @@
     rdfs:label "e Chasqui"@en .
 
 :EChasquiEmailNotificationOfNewResults
-    :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    :fCitClassifiedAs :EhrSfmSupportForCommunicationsBetweenOrganizations ;
     a :FeatureCitation ;
     rdfs:label "email notification of new results"@en .
 
 :EChasquiFeatReportsOnTestsPerformed
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "reports on tests performed"@en .
 
 :EChasquiFeatureConsolidatedListOfResultsForJurisdiction
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "consolidated list of results for jurisdiction"@en .
 
 :EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "patient page containing details of any single sample"@en .
 
 :EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "patient page containing the history of all tests performed"@en .
 
 :EChasquiFeatureToolsForQualityControl
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "tools for quality control"@en .
 
 :EChasquiFeatureUserDirectoryToControlAnyAccess
-    :featureClassified :EhrSfmRegistryAndDirectoryServices ;
+    :fCitClassifiedAs :EhrSfmRegistryAndDirectoryServices ;
     a :FeatureCitation ;
     rdfs:label "user directory to control any access"@en .
 
 :EChasquiFeatureWarningsForDelayedReportingOfResults
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "warnings for delayed reporting of results"@en .
 
@@ -1732,7 +1732,7 @@
     rdfs:label "Document Management Software"@en .
 
 :EDocFeatureCapturingDataForAllPatientVisits
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManagePatientHistory ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManagePatientHistory ;
     a :FeatureCitation ;
     rdfs:label "capturing data for all patient visits"@en .
 
@@ -1749,27 +1749,27 @@
     rdfs:label "Clinical Documentation System (CDS)"@en .
 
 :EclipsysContinuum2000CdsFeatAuditTrail
-    :featureClassified :EhrSfmAudit ;
+    :fCitClassifiedAs :EhrSfmAudit ;
     a :FeatureCitation ;
     rdfs:label "audit trail"@en .
 
 :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "automatic transfer of laboratory data"@en .
 
 :EclipsysContinuum2000CdsFeatureElectronicSignature
-    :featureClassified :EhrSfmManageRecordEntryAmendedCorrectedAndAugementedState ;
+    :fCitClassifiedAs :EhrSfmManageRecordEntryAmendedCorrectedAndAugementedState ;
     a :FeatureCitation ;
     rdfs:label "electronic signature"@en .
 
 :EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManagePatientHistory ;
     a :FeatureCitation ;
     rdfs:label "graphical user interface to document care"@en .
 
 :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "point and click data entry"@en .
 
@@ -1803,7 +1803,7 @@
     rdfs:label "Software für die Arztpraxis"@en .
 
 :ElexisFeatAbrechnungen
-    :featureClassified :BbProvideFormsForPreparingABillForThePatientInsurance, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :BbProvideFormsForPreparingABillForThePatientInsurance, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Abrechnungen"@en .
 
@@ -1812,7 +1812,7 @@
     rdfs:label "Arbeitsunfähigkeitszeugnisse"@en .
 
 :ElexisFeatAusUndEinlesenVonInAndereAerzteSoftware
-    :featureClassified :BbImportDocuments ;
+    :fCitClassifiedAs :BbImportDocuments ;
     a :FeatureCitation ;
     rdfs:label "Aus- und Einlesen von/in andere Ärzte-Software"@en .
 
@@ -1821,7 +1821,7 @@
     rdfs:label "Ausdruck einer Patienten-Übersicht"@en .
 
 :ElexisFeatAutomatischerRechnungsvorschlag
-    :featureClassified :BbProvideMeansForInitiationOfFinalBilling ;
+    :fCitClassifiedAs :BbProvideMeansForInitiationOfFinalBilling ;
     a :FeatureCitation ;
     rdfs:label "Automatischer Rechnungsvorschlag"@en .
 
@@ -1830,42 +1830,42 @@
     rdfs:label "Benutzervorlagen erstellen"@en .
 
 :ElexisFeatBerichteVerwalten
-    :featureClassified :EhrSfmManageCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "Berichte verwalten"@en .
 
 :ElexisFeatBestellwesen
-    :featureClassified :BbProvideMeansForOrderManagement ;
+    :fCitClassifiedAs :BbProvideMeansForOrderManagement ;
     a :FeatureCitation ;
     rdfs:label "Bestellwesen"@en .
 
 :ElexisFeatBriefErstellen
-    :featureClassified :BbProvideFormsForWritingATransferLetterOrDischargeReport, :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
+    :fCitClassifiedAs :BbProvideFormsForWritingATransferLetterOrDischargeReport, :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
     a :FeatureCitation ;
     rdfs:label "Brief erstellen"@en .
 
 :ElexisFeatEinbindungTextorientierterDatierterBefundserien
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "Einbindung textorientierter datierter Befundserien"@en .
 
 :ElexisFeatEinlesenVonEsrDateien
-    :featureClassified :BbImportDocuments ;
+    :fCitClassifiedAs :BbImportDocuments ;
     a :FeatureCitation ;
     rdfs:label "Einlesen von ESR-Dateien"@en .
 
 :ElexisFeatElektronischeAgenda
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbViewPatientrelatedAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbViewPatientrelatedAppointments ;
     a :FeatureCitation ;
     rdfs:label "elektronische Agenda"@en .
 
 :ElexisFeatErstellungBefunde
-    :featureClassified :EhrSfmSupportForResults ;
+    :fCitClassifiedAs :EhrSfmSupportForResults ;
     a :FeatureCitation ;
     rdfs:label "Erstellung Befunde"@en .
 
 :ElexisFeatExterneDateienVerwalten
-    :featureClassified :EhrSfmRenderExternallySourcedClinicalDocuments, :EhrSfmSupportExternallySourcedClinicalImages ;
+    :fCitClassifiedAs :EhrSfmRenderExternallySourcedClinicalDocuments, :EhrSfmSupportExternallySourcedClinicalImages ;
     a :FeatureCitation ;
     rdfs:label "externe Dateien verwalten"@en .
 
@@ -1890,7 +1890,7 @@
     rdfs:label "individuell einstellbare Bildschirmanzeige"@en .
 
 :ElexisFeatIntegriertPersoenlicheAnamnese
-    :featureClassified :BbProvideFormsForDocumentingMedicalAnamnesis ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingMedicalAnamnesis ;
     a :FeatureCitation ;
     rdfs:label "integriert persönliche Anamnese"@en .
 
@@ -1899,7 +1899,7 @@
     rdfs:label "Kontobewegungen Patienten"@en .
 
 :ElexisFeatKrankenkassenEingaben
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Krankenkassen Eingaben"@en .
 
@@ -1908,7 +1908,7 @@
     rdfs:label "Labor"@en .
 
 :ElexisFeatLaborbefundeEinlesen
-    :featureClassified :EhrSfmManageResultsOfDiagnosticTests, :WhoDhiCaptureFromDigitalDevices ;
+    :fCitClassifiedAs :EhrSfmManageResultsOfDiagnosticTests, :WhoDhiCaptureFromDigitalDevices ;
     a :FeatureCitation ;
     rdfs:label "Laborbefunde einlesen"@en .
 
@@ -1917,17 +1917,17 @@
     rdfs:label "Lagersortiment angezeigt"@en .
 
 :ElexisFeatMedikamentenliste
-    :featureClassified :BbProvideDrugCatalogs ;
+    :fCitClassifiedAs :BbProvideDrugCatalogs ;
     a :FeatureCitation ;
     rdfs:label "Medikamentenliste"@en .
 
 :ElexisFeatMedikationsliste
-    :featureClassified :EhrSfmManageMedicationList ;
+    :fCitClassifiedAs :EhrSfmManageMedicationList ;
     a :FeatureCitation ;
     rdfs:label "Medikationsliste"@en .
 
 :ElexisFeatNotizen
-    :featureClassified :EhrSfmManageClinicalDocumentsAndNotes ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentsAndNotes ;
     a :FeatureCitation ;
     rdfs:label "Notizen"@en .
 
@@ -1944,12 +1944,12 @@
     rdfs:label "Perzentilenkurven"@en .
 
 :ElexisFeatPlausibilitaetskontrolle
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "Plausibilitätskontrolle"@en .
 
 :ElexisFeatRechnungenKontrollieren
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Rechnungen kontrollieren"@en .
 
@@ -1962,7 +1962,7 @@
     rdfs:label "Rechnungsübersicht"@en .
 
 :ElexisFeatReminderPendenzen
-    :featureClassified :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
+    :fCitClassifiedAs :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
     a :FeatureCitation ;
     rdfs:label "Reminder/Pendenzen"@en .
 
@@ -1971,7 +1971,7 @@
     rdfs:label "Rezept erstellen"@en .
 
 :ElexisFeatRezeptuebermittlung
-    :featureClassified :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :fCitClassifiedAs :WhoDhiTransmitOrTrackPrescriptionOrders ;
     a :FeatureCitation ;
     rdfs:label "Rezeptübermittlung"@en .
 
@@ -1980,7 +1980,7 @@
     rdfs:label "(Röntgen-)Bilder verwalten"@en .
 
 :ElexisFeatStatistiken
-    :featureClassified :BbProvideMeansForCreatingStatistics, :BbProvideMeansForPreparingStatistics ;
+    :fCitClassifiedAs :BbProvideMeansForCreatingStatistics, :BbProvideMeansForPreparingStatistics ;
     a :FeatureCitation ;
     rdfs:label "Statistiken"@en .
 
@@ -1989,12 +1989,12 @@
     rdfs:label "Tagesliste drucken"@en .
 
 :ElexisFeatTerminVergeben
-    :featureClassified :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "Termin vergeben"@en .
 
 :ElexisFeatTerminÄndernLoeschen
-    :featureClassified :BbProvideMeansForManagingAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments ;
     a :FeatureCitation ;
     rdfs:label "Termin ändern/löschen"@en .
 
@@ -2003,32 +2003,32 @@
     rdfs:label "Veraltung Kontakte Personen und Organisationen"@en .
 
 :ElexisFeatVerknuepfungenKonsultationstextAufDurchgefuehrteUntersuchungen
-    :featureClassified :EhrSfmLinkRecordEntries ;
+    :fCitClassifiedAs :EhrSfmLinkRecordEntries ;
     a :FeatureCitation ;
     rdfs:label "Verknüpfungen Konsultationstext auf durchgeführte Untersuchungen"@en .
 
 :ElexisFeatVerlaufKonsultationen
-    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Verlauf Konsultationen"@en .
 
 :ElexisFeatVerwaltungVonFaellen
-    :featureClassified :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Verwaltung von Fällen"@en .
 
 :ElexisFeatWartezimmerueberwachung
-    :featureClassified :EhrSfmSupportWaitingRoomManagement ;
+    :fCitClassifiedAs :EhrSfmSupportWaitingRoomManagement ;
     a :FeatureCitation ;
     rdfs:label "Wartezimmerüberwachung"@en .
 
 :ElexisFeatZeitmanagement
-    :featureClassified :BbProvideMeansForManagingAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments ;
     a :FeatureCitation ;
     rdfs:label "Zeitmanagement"@en .
 
 :ElexisFeatÜbersichtKonsultationen
-    :featureClassified :EhrSfmManageConsultationRequestsAndResponses ;
+    :fCitClassifiedAs :EhrSfmManageConsultationRequestsAndResponses ;
     a :FeatureCitation ;
     rdfs:label "Übersicht Konsultationen"@en .
 
@@ -2038,7 +2038,7 @@
     rdfs:label "Abrechnungssystem"@en .
 
 :ElexisFuncPatientenaktenVerwalten
-    :featureClassified :EhrSfmManageAPatientRecord ;
+    :fCitClassifiedAs :EhrSfmManageAPatientRecord ;
     a :FeatureCitation ;
     rdfs:label "Patientenakten verwalten"@en .
 
@@ -2069,12 +2069,12 @@
     rdfs:label "GE Patchspecd PACS"@en .
 
 :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages
-    :featureClassified :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageOrders, :EhrSfmManageOrdersForDiagnosticscreeningTests, :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "automatic forwarded processed images"@en .
 
 :GePatchspecdPacsForwardIntoArchive
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "forward into archive"@en .
 
@@ -2112,7 +2112,7 @@
     rdfs:label "Hospital management Information System"@en .
 
 :GnuHealthFeatAccessManagementOverview
-    :featureClassified :EhrSfmPatientAccessManagement ;
+    :fCitClassifiedAs :EhrSfmPatientAccessManagement ;
     a :FeatureCitation ;
     rdfs:label "Access Management Overview"@en .
 
@@ -2125,7 +2125,7 @@
     rdfs:label "Administration Orthanc module"@en .
 
 :GnuHealthFeatAdministrativeData
-    :featureClassified :EhrSfmAdministrationSupport ;
+    :fCitClassifiedAs :EhrSfmAdministrationSupport ;
     a :FeatureCitation ;
     rdfs:label "Administrative Data"@en .
 
@@ -2150,7 +2150,7 @@
     rdfs:label "Bioinformatics"@en .
 
 :GnuHealthFeatBloodAndSkin
-    :featureClassified :EhrSfmSupportOrdersForBloodProductsAndOtherBiologics ;
+    :fCitClassifiedAs :EhrSfmSupportOrdersForBloodProductsAndOtherBiologics ;
     a :FeatureCitation ;
     rdfs:label "Blood and Skin"@en .
 
@@ -2159,7 +2159,7 @@
     rdfs:label "Cardiovascular"@en .
 
 :GnuHealthFeatCarePlan
-    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "Care Plan"@en .
 
@@ -2212,7 +2212,7 @@
     rdfs:label "Default imaging module"@en .
 
 :GnuHealthFeatDemographics
-    :featureClassified :EhrSfmManagePatientDemographics ;
+    :fCitClassifiedAs :EhrSfmManagePatientDemographics ;
     a :FeatureCitation ;
     rdfs:label "Demographics"@en .
 
@@ -2237,7 +2237,7 @@
     rdfs:label "Drainages"@en .
 
 :GnuHealthFeatEpidemiology
-    :featureClassified :EhrSfmSupportForEpidemiologicDataAnalysis, :EhrSfmSupportForEpidemiologicalInvestigationDataCollection, :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
+    :fCitClassifiedAs :EhrSfmSupportForEpidemiologicDataAnalysis, :EhrSfmSupportForEpidemiologicalInvestigationDataCollection, :EhrSfmSupportPopulationbasedEpidemiologicalInvestigation ;
     a :FeatureCitation ;
     rdfs:label "Epidemiology"@en .
 
@@ -2298,7 +2298,7 @@
     rdfs:label "Injury Surveillance System Registration report"@en .
 
 :GnuHealthFeatInpatientManagementInformation
-    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords ;
+    :fCitClassifiedAs :WhoDhiManageClientsStructuredClinicalRecords ;
     a :FeatureCitation ;
     rdfs:label "Inpatient Management information"@en .
 
@@ -2307,7 +2307,7 @@
     rdfs:label "Interfaces with Laboratories and LIMS"@en .
 
 :GnuHealthFeatInventories
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Inventories"@en .
 
@@ -2344,12 +2344,12 @@
     rdfs:label "Listing the current patients"@en .
 
 :GnuHealthFeatManagingLaboratoryTests
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Managing Laboratory Tests"@en .
 
 :GnuHealthFeatMedicationPlan
-    :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList ;
+    :fCitClassifiedAs :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationList ;
     a :FeatureCitation ;
     rdfs:label "Medication Plan"@en .
 
@@ -2390,7 +2390,7 @@
     rdfs:label "Prenatal Evaluations"@en .
 
 :GnuHealthFeatPrintingAPatientIdCard
-    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
+    :fCitClassifiedAs :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
     a :FeatureCitation ;
     rdfs:label "Printing a patient ID card"@en .
 
@@ -2407,12 +2407,12 @@
     rdfs:label "Puerperium Monitor"@en .
 
 :GnuHealthFeatReporting
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "Reporting"@en .
 
 :GnuHealthFeatRequestingALaboratoryTest
-    :featureClassified :WhoDhiTransmitToHealthcareProviderAndTrack ;
+    :fCitClassifiedAs :WhoDhiTransmitToHealthcareProviderAndTrack ;
     a :FeatureCitation ;
     rdfs:label "Requesting a Laboratory Test"@en .
 
@@ -2465,7 +2465,7 @@
     rdfs:label "Users Access Management"@en .
 
 :GnuHealthFeatViewResults
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "View results"@en .
 
@@ -2602,7 +2602,7 @@
     rdfs:label "HNA Millenium"@en .
 
 :HnaMilleniumAllowingToReuseEarlierAnamnesticData
-    :featureClassified :EhrSfmManagePatientHistory ;
+    :fCitClassifiedAs :EhrSfmManagePatientHistory ;
     a :FeatureCitation ;
     rdfs:label "allowing to reuse earlier anamnestic data"@en .
 
@@ -2612,47 +2612,47 @@
     rdfs:label "Pharmacy Management System"@en .
 
 :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks
-    :featureClassified :EhrSfmManageClinicalHistory, :EhrSfmManageClinicalWorkflowTasking ;
+    :fCitClassifiedAs :EhrSfmManageClinicalHistory, :EhrSfmManageClinicalWorkflowTasking ;
     a :FeatureCitation ;
     rdfs:label "reminding and documentation of nursing tasks"@en .
 
 :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport
-    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    :fCitClassifiedAs :EhrSfmProduceASummaryRecordOfCare ;
     a :FeatureCitation ;
     rdfs:label "automatic creation of a nursing transfer report"@en .
 
 :HnaMilleniumFeatureComprisingASetOfNursingCareStandards
-    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "comprising a set of nursing care standards"@en .
 
 :HnaMilleniumFeatureNursingAnamnesis
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
     a :FeatureCitation ;
     rdfs:label "nursing anamnesis"@en .
 
 :HnaMilleniumFeatureNursingCarePlanningSupportedByPredefinedNursingCareStandards
-    :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "nursing care planning supported by pre-defined nursing care standards"@en .
 
 :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy
-    :featureClassified :EhrSfmStandardTerminologyAndTerminologyServices ;
+    :fCitClassifiedAs :EhrSfmStandardTerminologyAndTerminologyServices ;
     a :FeatureCitation ;
     rdfs:label "nursing diagnosis based on the NANDA taxonomy"@en .
 
 :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases
-    :featureClassified :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForContextSensitiveCarePlansGuidelinesProtocols, :EhrSfmSupportForPatientContextdrivenAssessments, :EhrSfmSupportForStandardAssessments, :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "support nursing care planning for certain patient cases"@en .
 
 :HnaMilleniumFeatureUseOfClinicalPathways
-    :featureClassified :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
+    :fCitClassifiedAs :EhrSfmSupportForStandardCarePlansGuidelinesProtocols ;
     a :FeatureCitation ;
     rdfs:label "use of clinical pathways"@en .
 
 :HnaMilleniumScheduling
-    :featureClassified :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManageClinicalWorkflowTasking ;
+    :fCitClassifiedAs :EhrSfmManageAdministrativeTransactionProcessing, :EhrSfmManageClinicalWorkflowTasking ;
     a :FeatureCitation ;
     rdfs:label "scheduling"@en .
 
@@ -2684,32 +2684,32 @@
     rdfs:label "hospital information system (HIS)"@en .
 
 :HospitalRunFeatAddImaging
-    :featureClassified :EhrSfmSupportExternallySourcedClinicalImages ;
+    :fCitClassifiedAs :EhrSfmSupportExternallySourcedClinicalImages ;
     a :FeatureCitation ;
     rdfs:label "Add Imaging"@en .
 
 :HospitalRunFeatAppointmentsCalendar
-    :featureClassified :BbViewPatientrelatedAppointments ;
+    :fCitClassifiedAs :BbViewPatientrelatedAppointments ;
     a :FeatureCitation ;
     rdfs:label "Appointments Calendar"@en .
 
 :HospitalRunFeatCustomForms
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "Custom Forms"@en .
 
 :HospitalRunFeatGenerateReports
-    :featureClassified :BbPrepareReport, :EhrSfmStandardReportGeneration ;
+    :fCitClassifiedAs :BbPrepareReport, :EhrSfmStandardReportGeneration ;
     a :FeatureCitation ;
     rdfs:label "Generate Reports"@en .
 
 :HospitalRunFeatInventoryReport
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Inventory Report"@en .
 
 :HospitalRunFeatListIncidents
-    :featureClassified :BbProvideMeansForIncidentTracking ;
+    :fCitClassifiedAs :BbProvideMeansForIncidentTracking ;
     a :FeatureCitation ;
     rdfs:label "List Incidents"@en .
 
@@ -2726,12 +2726,12 @@
     rdfs:label "Overview Images"@en .
 
 :HospitalRunFeatOverviewInventory
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Overview Inventory"@en .
 
 :HospitalRunFeatPatientScheduling
-    :featureClassified :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "Patient Scheduling"@en .
 
@@ -2740,22 +2740,22 @@
     rdfs:label "Patients List"@en .
 
 :HospitalRunFeatRequestImaging
-    :featureClassified :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
+    :fCitClassifiedAs :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
     a :FeatureCitation ;
     rdfs:label "Request Imaging"@en .
 
 :HospitalRunFeatRequestLab
-    :featureClassified :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
+    :fCitClassifiedAs :EhrSfmSupportOrdersForDiagnosticscreeningTests ;
     a :FeatureCitation ;
     rdfs:label "Request Lab"@en .
 
 :HospitalRunFeatRequestMedication
-    :featureClassified :BbProvideMeansForOrderingDrugs, :EhrSfmManageMedicationOrders ;
+    :fCitClassifiedAs :BbProvideMeansForOrderingDrugs, :EhrSfmManageMedicationOrders ;
     a :FeatureCitation ;
     rdfs:label "Request Medication"@en .
 
 :HospitalRunFeatTemplateReport
-    :featureClassified :BbProvideFormsForPreparingClinicalReports, :EhrSfmStandardReportGeneration ;
+    :fCitClassifiedAs :BbProvideFormsForPreparingClinicalReports, :EhrSfmStandardReportGeneration ;
     a :FeatureCitation ;
     rdfs:label "Template Report"@en .
 
@@ -2768,12 +2768,12 @@
     rdfs:label "View Billed Invoices"@en .
 
 :HospitalRunFeatViewLabReports
-    :featureClassified :BbDisplayEarlierLabResultsOfAPatient ;
+    :fCitClassifiedAs :BbDisplayEarlierLabResultsOfAPatient ;
     a :FeatureCitation ;
     rdfs:label "View Lab Reports"@en .
 
 :HospitalRunFeatViewMedication
-    :featureClassified :EhrSfmManageMedicationList ;
+    :fCitClassifiedAs :EhrSfmManageMedicationList ;
     a :FeatureCitation ;
     rdfs:label "View Medication"@en .
 
@@ -2887,22 +2887,22 @@
     rdfs:label "Telemedicine Platform"@en .
 
 :IPathFeatCooperationBetweenProfessionals
-    :featureClassified :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Cooperation between professionals"@en .
 
 :IPathFeatOnlineCaseDiscussion
-    :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Online case discussion"@en .
 
 :IPathFeatTeachingAndConferencingSessions
-    :featureClassified :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders, :WhoDhiProvideTrainingContentToHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiCommunicationFromHealthcareProvidersToSupervisor, :WhoDhiPeerGroupForHealthcareProviders, :WhoDhiProvideTrainingContentToHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Teaching and conferencing sessions"@en .
 
 :IPathFeatTransmitOfImgaesWithNecessaryClinicalInformation
-    :featureClassified :WhoDhiDataExchangeAcrossSystems, :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems, :WhoDhiTransmissionOfMedicalDataToHealthcareProvider ;
     a :FeatureCitation ;
     rdfs:label "Transmit of images with necessary clinical information"@en .
 
@@ -2934,27 +2934,27 @@
     rdfs:label "CPOE inkl. CDSS"@en .
 
 :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
-    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    :fCitClassifiedAs :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
     a :FeatureCitation ;
     rdfs:label "medication control based on national drug database"@en .
 
 :MedicatorFeatureMedicationSelectionFromMenu
-    :featureClassified :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders, :EhrSfmManageResourceAvailability, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
+    :fCitClassifiedAs :EhrSfmManageHealthcareResourceAvailabilityInformation, :EhrSfmManageMedicationOrders, :EhrSfmManageOrders, :EhrSfmManageResourceAvailability, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
     a :FeatureCitation ;
     rdfs:label "medication selection from menu in which medication from the ward stock or the pharmacy is shown"@en .
 
 :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses
-    :featureClassified :EhrSfmMedicationAlertOverrides, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
+    :fCitClassifiedAs :EhrSfmMedicationAlertOverrides, :EhrSfmSupportForCommunicationsBetweenOrganizations ;
     a :FeatureCitation ;
     rdfs:label "safety alerts for accepted medication are seen by pharmacists who can contact physicians or nurses"@en .
 
 :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions
-    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
+    :fCitClassifiedAs :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
     a :FeatureCitation ;
     rdfs:label "safety alerts in case of drug-drug interactions"@en .
 
 :MedicatorFeatureSafetyAlertsInRealTime
-    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    :fCitClassifiedAs :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking, :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
     a :FeatureCitation ;
     rdfs:label "safety alerts in real time"@en .
 
@@ -3008,7 +3008,7 @@
     rdfs:label "Medical Information System"@en .
 
 :MedkeyFeatAccessControl
-    :featureClassified :EhrSfmEntityAccessControl ;
+    :fCitClassifiedAs :EhrSfmEntityAccessControl ;
     a :FeatureCitation ;
     rdfs:label "Access control"@en .
 
@@ -3021,22 +3021,22 @@
     rdfs:label "Cashdesk"@en .
 
 :MedkeyFeatDashboardVisualAnalytics
-    :featureClassified :EhrSfmSupportForCareSystemPerformanceIndicatorsDashboards, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :EhrSfmSupportForCareSystemPerformanceIndicatorsDashboards, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Dashboard visual analytics"@en .
 
 :MedkeyFeatExpendableMaterialsAccounting
-    :featureClassified :BbProvideMeansForOrderingDrugsMaterialsAndLaundry ;
+    :fCitClassifiedAs :BbProvideMeansForOrderingDrugsMaterialsAndLaundry ;
     a :FeatureCitation ;
     rdfs:label "expendable materials accounting"@en .
 
 :MedkeyFeatHandlingMedicalReferrals
-    :featureClassified :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenHealthAndOtherSectors, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    :fCitClassifiedAs :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenHealthAndOtherSectors, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
     a :FeatureCitation ;
     rdfs:label "Handling medical referrals"@en .
 
 :MedkeyFeatInsurancePoliciesAccounting
-    :featureClassified :EhrSfmRelatedByInsurance, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :EhrSfmRelatedByInsurance, :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Insurance policies accounting"@en .
 
@@ -3045,12 +3045,12 @@
     rdfs:label "Internal user storage"@en .
 
 :MedkeyFeatInventory
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Inventory"@en .
 
 :MedkeyFeatOnlineAppointmentViaWebsite
-    :featureClassified :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "online appointment via website"@en .
 
@@ -3063,7 +3063,7 @@
     rdfs:label "Patient registration"@en .
 
 :MedkeyFeatPatientRegistry
-    :featureClassified :EhrSfmRegistryAndDirectoryServices ;
+    :fCitClassifiedAs :EhrSfmRegistryAndDirectoryServices ;
     a :FeatureCitation ;
     rdfs:label "Patient registry"@en .
 
@@ -3147,32 +3147,32 @@
     rdfs:label "Clinical Information System"@en .
 
 :MetavisionFeatureAutomaticDataCollection
-    :featureClassified :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    :fCitClassifiedAs :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
     a :FeatureCitation ;
     rdfs:label "automatic data collection"@en .
 
 :MetavisionFeatureClinicalDocumentation
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "clinical documentation"@en .
 
 :MetavisionFeatureComputerizedOrderEntry
-    :featureClassified :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
+    :fCitClassifiedAs :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders ;
     a :FeatureCitation ;
     rdfs:label "computerized order entry"@en .
 
 :MetavisionFeatureDataStorageRepository
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManageHealthcareResourceAvailabilityInformation ;
     a :FeatureCitation ;
     rdfs:label "data storage repository"@en .
 
 :MetavisionFeatureElectronicMedicationAdministrationTool
-    :featureClassified :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationImmunizationAndTreatmentAdministration, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    :fCitClassifiedAs :EhrSfmManageMedicationAdministration, :EhrSfmManageMedicationImmunizationAndTreatmentAdministration, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies ;
     a :FeatureCitation ;
     rdfs:label "electronic medication administration tool"@en .
 
 :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume
-    :featureClassified :EhrSfmSupportForMedicationOrderingEfficiencies ;
+    :fCitClassifiedAs :EhrSfmSupportForMedicationOrderingEfficiencies ;
     a :FeatureCitation ;
     rdfs:label "triggering the CDSS to query the tidal volume"@en .
 
@@ -3239,7 +3239,7 @@
     rdfs:label "bar-code recognition on Android devices"@en .
 
 :OpenClinicGaFeatClinicalThesaurusWithValidatedCodingAid
-    :featureClassified :BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures ;
+    :fCitClassifiedAs :BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures ;
     a :FeatureCitation ;
     rdfs:label "clinical thesaurus with validated coding aid"@en .
 
@@ -3248,7 +3248,7 @@
     rdfs:label "Complete ADT management"@en .
 
 :OpenClinicGaFeatDrugDrugInteractionDetection
-    :featureClassified :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
+    :fCitClassifiedAs :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
     a :FeatureCitation ;
     rdfs:label "drug-drug interaction detection"@en .
 
@@ -3257,12 +3257,12 @@
     rdfs:label "Efficient database connection"@en .
 
 :OpenClinicGaFeatExtensiveReportingCapabilities
-    :featureClassified :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport, :BbProvideFormsForWritingTheNursingDischargeReport, :EhrSfmSupportCareCoordinationReporting, :EhrSfmSupportFinancialReporting ;
+    :fCitClassifiedAs :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport, :BbProvideFormsForWritingTheNursingDischargeReport, :EhrSfmSupportCareCoordinationReporting, :EhrSfmSupportFinancialReporting ;
     a :FeatureCitation ;
     rdfs:label "Extensive reporting capabilities"@en .
 
 :OpenClinicGaFeatExtensiveStatisticalCapabilities
-    :featureClassified :BbProvideMeansForCreatingStatistics, :BbProvideMeansForPreparingStatistics ;
+    :fCitClassifiedAs :BbProvideMeansForCreatingStatistics, :BbProvideMeansForPreparingStatistics ;
     a :FeatureCitation ;
     rdfs:label "Extensive statistical capabilities"@en .
 
@@ -3271,12 +3271,12 @@
     rdfs:label "Fingerprint identification"@en .
 
 :OpenClinicGaFeatFullBillingSystem
-    :featureClassified :BbProvideFormsForPreparingABillForThePatientInsurance, :BbProvideMeansForInitiatingFinalBillingForOutpatientTreatment, :BbProvideMeansForInitiationOfFinalBilling ;
+    :fCitClassifiedAs :BbProvideFormsForPreparingABillForThePatientInsurance, :BbProvideMeansForInitiatingFinalBillingForOutpatientTreatment, :BbProvideMeansForInitiationOfFinalBilling ;
     a :FeatureCitation ;
     rdfs:label "Full billing system"@en .
 
 :OpenClinicGaFeatFullSchedulingSystem
-    :featureClassified :BbProvideMeansForSchedulingPatientsAppointments, :EhrSfmManageHealthcareResourceScheduling ;
+    :fCitClassifiedAs :BbProvideMeansForSchedulingPatientsAppointments, :EhrSfmManageHealthcareResourceScheduling ;
     a :FeatureCitation ;
     rdfs:label "Full scheduling system"@en .
 
@@ -3289,7 +3289,7 @@
     rdfs:label "integration of Iristick SmartGlasses for tele-expertise"@en .
 
 :OpenClinicGaFeatIntegrationOfPacsSolution
-    :featureClassified :BbArchivePictures, :BbCommunicatePictures ;
+    :fCitClassifiedAs :BbArchivePictures, :BbCommunicatePictures ;
     a :FeatureCitation ;
     rdfs:label "Integration of PACS solution"@en .
 
@@ -3298,17 +3298,17 @@
     rdfs:label "lab analyzer middleware solutions"@en .
 
 :OpenClinicGaFeatLabOrderEntry
-    :featureClassified :BbProvideMeansForOrderManagement ;
+    :fCitClassifiedAs :BbProvideMeansForOrderManagement ;
     a :FeatureCitation ;
     rdfs:label "lab order entry"@en .
 
 :OpenClinicGaFeatLabResultsManagement
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "lab results management"@en .
 
 :OpenClinicGaFeatLoincCodingSupported
-    :featureClassified :BbProvideCatalogsAndOtherMeansForCodingOfProcedures ;
+    :fCitClassifiedAs :BbProvideCatalogsAndOtherMeansForCodingOfProcedures ;
     a :FeatureCitation ;
     rdfs:label "LOINC coding supported"@en .
 
@@ -3325,37 +3325,37 @@
     rdfs:label "Multimedia support"@en .
 
 :OpenClinicGaFeatPharmacyStockManagement
-    :featureClassified :BbProvideMeansForStockKeeping ;
+    :fCitClassifiedAs :BbProvideMeansForStockKeeping ;
     a :FeatureCitation ;
     rdfs:label "pharmacy stock management"@en .
 
 :OpenClinicGaFeatSnomedCtCoding
-    :featureClassified :BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses, :BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis ;
+    :fCitClassifiedAs :BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses, :BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis ;
     a :FeatureCitation ;
     rdfs:label "Snomed CT coding"@en .
 
 :OpenClinicGaFeatStatisticsOnCoMorbidity
-    :featureClassified :BbProvideMeansForPreparingStatistics ;
+    :fCitClassifiedAs :BbProvideMeansForPreparingStatistics ;
     a :FeatureCitation ;
     rdfs:label "statistics on co-morbidity"@en .
 
 :OpenClinicGaFeatStatisticsOnCostsOfCare
-    :featureClassified :BbProvideMeansForPreparingStatistics ;
+    :fCitClassifiedAs :BbProvideMeansForPreparingStatistics ;
     a :FeatureCitation ;
     rdfs:label "statistics on costs of care"@en .
 
 :OpenClinicGaFeatStatisticsOnMortality
-    :featureClassified :BbProvideMeansForPreparingStatistics ;
+    :fCitClassifiedAs :BbProvideMeansForPreparingStatistics ;
     a :FeatureCitation ;
     rdfs:label "statistics on mortality"@en .
 
 :OpenClinicGaFeatStructuredDataExchange
-    :featureClassified :EhrSfmApplicationStructuredMessageAndStructuredDocumentInterchangeStandards ;
+    :fCitClassifiedAs :EhrSfmApplicationStructuredMessageAndStructuredDocumentInterchangeStandards ;
     a :FeatureCitation ;
     rdfs:label "structured data exchange with external applications"@en .
 
 :OpenClinicGaFeatXRayAndPathologyResultsManagement
-    :featureClassified :EhrSfmManageResults, :EhrSfmSupportForResults ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmSupportForResults ;
     a :FeatureCitation ;
     rdfs:label "X-ray and pathology results management"@en .
 
@@ -3430,52 +3430,52 @@
     rdfs:label "Add Form Template"@en .
 
 :OpenDentalFeatAddPatientAppointment
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "Add Patient Appointment"@en .
 
 :OpenDentalFeatBackup
-    :featureClassified :EhrSfmDatabaseBackupAndRecovery ;
+    :fCitClassifiedAs :EhrSfmDatabaseBackupAndRecovery ;
     a :FeatureCitation ;
     rdfs:label "Backup"@en .
 
 :OpenDentalFeatCalendar
-    :featureClassified :BbProvideMeansForManagingAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments ;
     a :FeatureCitation ;
     rdfs:label "Calendar"@en .
 
 :OpenDentalFeatCreateReferralLetters
-    :featureClassified :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
+    :fCitClassifiedAs :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
     a :FeatureCitation ;
     rdfs:label "Create Referral Letters"@en .
 
 :OpenDentalFeatCreateTasks
-    :featureClassified :BbProvideFormsForDocumentingPlannedTasks ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingPlannedTasks ;
     a :FeatureCitation ;
     rdfs:label "Create Tasks"@en .
 
 :OpenDentalFeatCustomReports
-    :featureClassified :BbPrepareReport, :BbProvideFormsForWritingAReport, :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
+    :fCitClassifiedAs :BbPrepareReport, :BbProvideFormsForWritingAReport, :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
     a :FeatureCitation ;
     rdfs:label "Custom Reports"@en .
 
 :OpenDentalFeatEditPatientAppointment
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "Edit Patient Appointment"@en .
 
 :OpenDentalFeatEditTreatmentPlan
-    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "Edit Treatment Plan"@en .
 
 :OpenDentalFeatElectronicPatientForms
-    :featureClassified :BbProvideFormsForDocumentingPatientsInformedConsent ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingPatientsInformedConsent ;
     a :FeatureCitation ;
     rdfs:label "Electronic Patient Forms"@en .
 
 :OpenDentalFeatElectronicPrescriptions
-    :featureClassified :EhrSfmSupportPatientDataDerivedFromEligibilityFormularyAndBenefitDocumentationForElectronicPrescribing ;
+    :fCitClassifiedAs :EhrSfmSupportPatientDataDerivedFromEligibilityFormularyAndBenefitDocumentationForElectronicPrescribing ;
     a :FeatureCitation ;
     rdfs:label "Electronic Prescriptions"@en .
 
@@ -3488,7 +3488,7 @@
     rdfs:label "Enhance Radiograph Images"@en .
 
 :OpenDentalFeatEnterClinicalPatientInformation
-    :featureClassified :EhrSfmInformationView ;
+    :fCitClassifiedAs :EhrSfmInformationView ;
     a :FeatureCitation ;
     rdfs:label "Enter Clinical Patient Information"@en .
 
@@ -3497,12 +3497,12 @@
     rdfs:label "Graphical Tooth Chart"@en .
 
 :OpenDentalFeatManageInsuranceInformation
-    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Manage Insurance Information"@en .
 
 :OpenDentalFeatManageTreatmentPlans
-    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans, :EhrSfmSupportTreatmentAdministration ;
+    :fCitClassifiedAs :EhrSfmManagePatientspecificCareAndTreatmentPlans, :EhrSfmSupportTreatmentAdministration ;
     a :FeatureCitation ;
     rdfs:label "Manage Treatment Plans"@en .
 
@@ -3511,7 +3511,7 @@
     rdfs:label "Messaging"@en .
 
 :OpenDentalFeatOrganizeClinicalPatientInformation
-    :featureClassified :WhoDhiManageClientsStructuredClinicalRecords ;
+    :fCitClassifiedAs :WhoDhiManageClientsStructuredClinicalRecords ;
     a :FeatureCitation ;
     rdfs:label "Organize Clinical Patient Information"@en .
 
@@ -3524,27 +3524,27 @@
     rdfs:label "Print Patient Schedule"@en .
 
 :OpenDentalFeatPrintTreatmentPlan
-    :featureClassified :BbPrintForms, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :BbPrintForms, :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "Print Treatment Plan"@en .
 
 :OpenDentalFeatProgressNotes
-    :featureClassified :EhrSfmManageClinicalDocumentsAndNotes ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentsAndNotes ;
     a :FeatureCitation ;
     rdfs:label "Progress Notes"@en .
 
 :OpenDentalFeatScanFormsAndLetters
-    :featureClassified :BbScanDocuments, :BbScanningDocumentsFromReferringPhysicianAndOtherSources ;
+    :fCitClassifiedAs :BbScanDocuments, :BbScanningDocumentsFromReferringPhysicianAndOtherSources ;
     a :FeatureCitation ;
     rdfs:label "Scan Forms And Letters"@en .
 
 :OpenDentalFeatSchedulePatientAppointment
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments ;
     a :FeatureCitation ;
     rdfs:label "Schedule Patient Appointment"@en .
 
 :OpenDentalFeatSendClaims
-    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    :fCitClassifiedAs :EhrSfmSupportServiceRequestsAndClaims ;
     a :FeatureCitation ;
     rdfs:label "Send Claims"@en .
 
@@ -3553,62 +3553,62 @@
     rdfs:label "Send Tasks"@en .
 
 :OpenDentalFeatSignTreatmentPlan
-    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "Sign Treatment Plan"@en .
 
 :OpenDentalFeatStoreFormsAndLetters
-    :featureClassified :BbManageStorageMedia, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :BbManageStorageMedia, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Store Forms And Letters"@en .
 
 :OpenDentalFeatStoreImageFiles
-    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Store Image Files"@en .
 
 :OpenDentalFeatSupplyInventory
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Supply Inventory"@en .
 
 :OpenDentalFeatTrackLabCases
-    :featureClassified :BbDisplayEarlierLabResultsOfAPatient ;
+    :fCitClassifiedAs :BbDisplayEarlierLabResultsOfAPatient ;
     a :FeatureCitation ;
     rdfs:label "Track Lab Cases"@en .
 
 :OpenDentalFeatTrackReferredTreatments
-    :featureClassified :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    :fCitClassifiedAs :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
     a :FeatureCitation ;
     rdfs:label "Track Referred Treatments"@en .
 
 :OpenDentalFeatTrackUserAccess
-    :featureClassified :EhrSfmUserAccessSuccessfulSecurityAuditTrigger ;
+    :fCitClassifiedAs :EhrSfmUserAccessSuccessfulSecurityAuditTrigger ;
     a :FeatureCitation ;
     rdfs:label "Track User Access"@en .
 
 :OpenDentalFeatViewAppointmentList
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbViewPatientrelatedAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbViewPatientrelatedAppointments ;
     a :FeatureCitation ;
     rdfs:label "View Appointment List"@en .
 
 :OpenDentalFeatViewInsurancePlans
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "View Insurance Plans"@en .
 
 :OpenDentalFeatViewPatientClaimHistory
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "View Patient Claim History"@en .
 
 :OpenDentalFeatViewPatientFinancialHistory
-    :featureClassified :EhrSfmSupportIntegrationOfCostfinancialInformationIntoPatientCare ;
+    :fCitClassifiedAs :EhrSfmSupportIntegrationOfCostfinancialInformationIntoPatientCare ;
     a :FeatureCitation ;
     rdfs:label "View Patient Financial History"@en .
 
 :OpenDentalFeatViewPatientInformation
-    :featureClassified :BbViewPatientrelatedAppointments, :EhrSfmInformationView ;
+    :fCitClassifiedAs :BbViewPatientrelatedAppointments, :EhrSfmInformationView ;
     a :FeatureCitation ;
     rdfs:label "View Patient Information"@en .
 
@@ -3621,12 +3621,12 @@
     rdfs:label "View Planned Procedures"@en .
 
 :OpenDentalFeatViewTreatmentPlan
-    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "View Treatment Plan"@en .
 
 :OpenDentalFeatWaitingRoomTracker
-    :featureClassified :EhrSfmSupportWaitingRoomManagement ;
+    :fCitClassifiedAs :EhrSfmSupportWaitingRoomManagement ;
     a :FeatureCitation ;
     rdfs:label "Waiting Room Tracker"@en .
 
@@ -3705,7 +3705,7 @@
     rdfs:label "electronic patient observation system"@en .
 
 :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling
-    :featureClassified :WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
+    :fCitClassifiedAs :WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
     a :FeatureCitation ;
     rdfs:label "Automated alerts, monitoring and scheduling"@en .
 
@@ -3714,42 +3714,42 @@
     rdfs:label "Bedside or community use with mobile devices"@en .
 
 :OpenEObsFeatureCalculatesAScore
-    :featureClassified :BbScoringOfThePatientEgTissSapsii ;
+    :fCitClassifiedAs :BbScoringOfThePatientEgTissSapsii ;
     a :FeatureCitation ;
     rdfs:label "calculates a score, based on National Early Warning Score (NEWS)"@en .
 
 :OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators
-    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    :fCitClassifiedAs :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
     a :FeatureCitation ;
     rdfs:label "Capturing of vital signs and clinical risk indicators"@en .
 
 :OpenEObsFeatureHighLevelWardDashboard
-    :featureClassified :BbProvideMeansForManagingWardStaff ;
+    :fCitClassifiedAs :BbProvideMeansForManagingWardStaff ;
     a :FeatureCitation ;
     rdfs:label "High level Ward Dashboard"@en .
 
 :OpenEObsFeatureIdentifyAndRespondToHighRiskPatients
-    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    :fCitClassifiedAs :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
     a :FeatureCitation ;
     rdfs:label "identify and respond to high risk patients"@en .
 
 :OpenEObsFeatureInteractiveChartsOfObservationData
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Interactive charts of observation data"@en .
 
 :OpenEObsFeaturePatientAcuityBoard
-    :featureClassified :EhrSfmSupportPatientAcuityAndSeverityDetermination ;
+    :fCitClassifiedAs :EhrSfmSupportPatientAcuityAndSeverityDetermination ;
     a :FeatureCitation ;
     rdfs:label "Patient Acuity Board"@en .
 
 :OpenEObsFeaturePatientRecord
-    :featureClassified :EhrSfmManageAPatientRecord ;
+    :fCitClassifiedAs :EhrSfmManageAPatientRecord ;
     a :FeatureCitation ;
     rdfs:label "Patient Record"@en .
 
 :OpenEObsFeaturePatientReport
-    :featureClassified :BbPrepareReport ;
+    :fCitClassifiedAs :BbPrepareReport ;
     a :FeatureCitation ;
     rdfs:label "Patient Report"@en .
 
@@ -3758,12 +3758,12 @@
     rdfs:label "Patient Visit Management"@en .
 
 :OpenEObsFeatureRecordObservationsOfPatients
-    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "record observations of patients"@en .
 
 :OpenEObsFeatureStaffAllocationToPatients
-    :featureClassified :BbAssignStaffToPatientsOrRooms, :BbProvideMeansForManagingWardStaff ;
+    :fCitClassifiedAs :BbAssignStaffToPatientsOrRooms, :BbProvideMeansForManagingWardStaff ;
     a :FeatureCitation ;
     rdfs:label "Staff Allocation to Patients"@en .
 
@@ -3814,7 +3814,7 @@
     rdfs:label "ASTM Analyzer interfaces"@en .
 
 :OpenElisFeatBillingFlag
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "billing flag"@en .
 
@@ -3823,17 +3823,17 @@
     rdfs:label "Confirmation sample testing"@en .
 
 :OpenElisFeatDataValidation
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "data validation"@en .
 
 :OpenElisFeatElectronicReferrals
-    :featureClassified :EhrSfmSupportForElectronicReferralOrdering, :EhrSfmSupportForReferralProcess ;
+    :fCitClassifiedAs :EhrSfmSupportForElectronicReferralOrdering, :EhrSfmSupportForReferralProcess ;
     a :FeatureCitation ;
     rdfs:label "electronic Referrals"@en .
 
 :OpenElisFeatEmailAndSmsResultReportingTools
-    :featureClassified :BbCommunicateReportToOrderingUnit, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :BbCommunicateReportToOrderingUnit, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "email and SMS result reporting tools"@en .
 
@@ -3847,17 +3847,17 @@
     rdfs:label "Order entry"@en .
 
 :OpenElisFeatInstrumentIntegration
-    :featureClassified :BbManageModalities, :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
+    :fCitClassifiedAs :BbManageModalities, :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     a :FeatureCitation ;
     rdfs:label "instrument integration"@en .
 
 :OpenElisFeatInternalReports
-    :featureClassified :BbProvideACollectionOfInternalProcessesAndRegulations, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :BbProvideACollectionOfInternalProcessesAndRegulations, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "Internal reports"@en .
 
 :OpenElisFeatInventoryManagement
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Inventory management"@en .
 
@@ -3866,7 +3866,7 @@
     rdfs:label "managing users"@en .
 
 :OpenElisFeatManualEntryOfResults
-    :featureClassified :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "Manual entry of results"@en .
 
@@ -3879,7 +3879,7 @@
     rdfs:label "Patient HIV report"@en .
 
 :OpenElisFeatPatientReport
-    :featureClassified :BbPrepareReport ;
+    :fCitClassifiedAs :BbPrepareReport ;
     a :FeatureCitation ;
     rdfs:label "patient report"@en .
 
@@ -3892,17 +3892,17 @@
     rdfs:label "raw data export"@en .
 
 :OpenElisFeatReferralReport
-    :featureClassified :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
+    :fCitClassifiedAs :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals, :WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector ;
     a :FeatureCitation ;
     rdfs:label "Referral report"@en .
 
 :OpenElisFeatResultsEntry
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "results entry"@en .
 
 :OpenElisFeatRoleBasedSecurity
-    :featureClassified :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
+    :fCitClassifiedAs :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity, :JoshiPacsSecurityBackupAndDowntimePrevention ;
     a :FeatureCitation ;
     rdfs:label "role-based security"@en .
 
@@ -3911,7 +3911,7 @@
     rdfs:label "sample entry"@en .
 
 :OpenElisFeatSampleTestReferralToOtherLabs
-    :featureClassified :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenHealthAndOtherSectors ;
+    :fCitClassifiedAs :EhrSfmSupportForReferralProcess, :WhoDhiManageReferralsBetweenHealthAndOtherSectors ;
     a :FeatureCitation ;
     rdfs:label "Sample/Test referral to other labs"@en .
 
@@ -3920,7 +3920,7 @@
     rdfs:label "Support for dynamic reflex testing"@en .
 
 :OpenElisFeatTechnicalAndBiologicalValidation
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "Technical and biological validation"@en .
 
@@ -3929,7 +3929,7 @@
     rdfs:label "test catalog"@en .
 
 :OpenElisFeatValidationOfResults
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "validation of results"@en .
 
@@ -3990,7 +3990,7 @@
     rdfs:label "Medical practice management application"@en .
 
 :OpenEmrFeatAppointmentCalendar
-    :featureClassified :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments, :BbViewPatientrelatedAppointments ;
+    :fCitClassifiedAs :BbProvideMeansForManagingAppointments, :BbProvideMeansForSchedulingPatientsAppointments, :BbViewPatientrelatedAppointments ;
     a :FeatureCitation ;
     rdfs:label "Appointment calendar"@en .
 
@@ -3999,7 +3999,7 @@
     rdfs:label "Clinic Messaging"@en .
 
 :OpenEmrFeatClinicalQualityMeasureCalculations
-    :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
+    :fCitClassifiedAs :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
     a :FeatureCitation ;
     rdfs:label "Clinical Quality Measure Calculations"@en .
 
@@ -4008,22 +4008,22 @@
     rdfs:label "Create and customize forms"@en .
 
 :OpenEmrFeatCreatePrescriptions
-    :featureClassified :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :fCitClassifiedAs :WhoDhiTransmitOrTrackPrescriptionOrders ;
     a :FeatureCitation ;
     rdfs:label "Create and send prescriptions"@en .
 
 :OpenEmrFeatDatedReminders
-    :featureClassified :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
+    :fCitClassifiedAs :EhrSfmPatientReminderInformationUpdates, :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
     a :FeatureCitation ;
     rdfs:label "Dated Reminders"@en .
 
 :OpenEmrFeatElectronicDigitalDocumentManagement
-    :featureClassified :EhrSfmManageClinicalDocumentsAndNotes ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentsAndNotes ;
     a :FeatureCitation ;
     rdfs:label "Electronic digital document management"@en .
 
 :OpenEmrFeatEncounters
-    :featureClassified :EhrSfmManagePatientEncounter, :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportEncounterEpisodeOfCareManagement, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
+    :fCitClassifiedAs :EhrSfmManagePatientEncounter, :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportEncounterEpisodeOfCareManagement, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Encounters"@en .
 
@@ -4032,7 +4032,7 @@
     rdfs:label "Eye Module"@en .
 
 :OpenEmrFeatFlexibleSystemOfCoding
-    :featureClassified :BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses, :BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis, :BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures, :BbProvideCatalogsAndOtherMeansForCodingRadiologicalProcedures ;
+    :fCitClassifiedAs :BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses, :BbProvideCatalogsAndOtherMeansForCodingOfNursingDiagnosis, :BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures, :BbProvideCatalogsAndOtherMeansForCodingRadiologicalProcedures ;
     a :FeatureCitation ;
     rdfs:label "Flexible system of coding"@en .
 
@@ -4041,7 +4041,7 @@
     rdfs:label "Graphical Charting"@en .
 
 :OpenEmrFeatImmunizationsRecords
-    :featureClassified :EhrSfmManageImmunizationList, :EhrSfmSupportForImmunizationAdministration ;
+    :fCitClassifiedAs :EhrSfmManageImmunizationList, :EhrSfmSupportForImmunizationAdministration ;
     a :FeatureCitation ;
     rdfs:label "Immunization Records"@en .
 
@@ -4050,37 +4050,37 @@
     rdfs:label "In-house pharmacy dispensary support"@en .
 
 :OpenEmrFeatInsuranceEligibilityQueries
-    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
+    :fCitClassifiedAs :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
     a :FeatureCitation ;
     rdfs:label "Insurance Eligibility Queries"@en .
 
 :OpenEmrFeatInsuranceTrackingInterface
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Insurance Tracking Interface"@en .
 
 :OpenEmrFeatLabRecords
-    :featureClassified :BbDisplayEarlierLabResultsOfAPatient ;
+    :fCitClassifiedAs :BbDisplayEarlierLabResultsOfAPatient ;
     a :FeatureCitation ;
     rdfs:label "Lab Records"@en .
 
 :OpenEmrFeatMedicalClaimManagementInterface
-    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    :fCitClassifiedAs :EhrSfmSupportServiceRequestsAndClaims ;
     a :FeatureCitation ;
     rdfs:label "Medical claim management interface"@en .
 
 :OpenEmrFeatMedicalImageViewer
-    :featureClassified :EhrSfmSupportExternallySourcedClinicalImages ;
+    :fCitClassifiedAs :EhrSfmSupportExternallySourcedClinicalImages ;
     a :FeatureCitation ;
     rdfs:label "Medical Image Viewer (DICOM)"@en .
 
 :OpenEmrFeatMedicationRecords
-    :featureClassified :BbProvideFormsForDocumentingMedications, :WhoDhiTrackClientsMedicationConsumption ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingMedications, :WhoDhiTrackClientsMedicationConsumption ;
     a :FeatureCitation ;
     rdfs:label "Medication Records"@en .
 
 :OpenEmrFeatOnlineDrugSearch
-    :featureClassified :BbProvideDrugCatalogs ;
+    :fCitClassifiedAs :BbProvideDrugCatalogs ;
     a :FeatureCitation ;
     rdfs:label "Online drug search"@en .
 
@@ -4089,12 +4089,12 @@
     rdfs:label "Paper Chart Tracking"@en .
 
 :OpenEmrFeatPatientAppointmentNotification
-    :featureClassified :EhrSfmSupportForNotificationAndResponse ;
+    :fCitClassifiedAs :EhrSfmSupportForNotificationAndResponse ;
     a :FeatureCitation ;
     rdfs:label "Patient appointment notification"@en .
 
 :OpenEmrFeatPatientDrugScreening
-    :featureClassified :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
+    :fCitClassifiedAs :WhoDhiScreenClientsByRiskOrOtherHealthStatus ;
     a :FeatureCitation ;
     rdfs:label "Patient Drug Screening"@en .
 
@@ -4107,37 +4107,37 @@
     rdfs:label "Physician Reminders"@en .
 
 :OpenEmrFeatProcedureRecords
-    :featureClassified :BbProvideFormsForDocumentingClinicalProcedures, :BbProvideFormsForDocumentingProceduresAndOutcomes ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingClinicalProcedures, :BbProvideFormsForDocumentingProceduresAndOutcomes ;
     a :FeatureCitation ;
     rdfs:label "Procedure Records"@en .
 
 :OpenEmrFeatRecallBoard
-    :featureClassified :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness ;
+    :fCitClassifiedAs :EhrSfmPresentNotificationsAndRemindersForPreventativeServicesAndWellness ;
     a :FeatureCitation ;
     rdfs:label "Recall (reminders) Board"@en .
 
 :OpenEmrFeatReferrals
-    :featureClassified :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
+    :fCitClassifiedAs :EhrSfmManageOrdersForReferral, :EhrSfmSupportForReferralProcess, :EhrSfmSupportForReferrals ;
     a :FeatureCitation ;
     rdfs:label "Referrals"@en .
 
 :OpenEmrFeatSoap
-    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "SOAP note"@en .
 
 :OpenEmrFeatTrackPatientDemographics
-    :featureClassified :EhrSfmManagePatientDemographics ;
+    :fCitClassifiedAs :EhrSfmManagePatientDemographics ;
     a :FeatureCitation ;
     rdfs:label "Track patient demographics"@en .
 
 :OpenEmrFeatTrackPrescriptions
-    :featureClassified :EhrSfmManageMedicationList, :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :fCitClassifiedAs :EhrSfmManageMedicationList, :WhoDhiTransmitOrTrackPrescriptionOrders ;
     a :FeatureCitation ;
     rdfs:label "Track patient prescriptions and medications"@en .
 
 :OpenEmrFeatVitals
-    :featureClassified :BbDisplayVitalParametersFromMonitoringDevices ;
+    :fCitClassifiedAs :BbDisplayVitalParametersFromMonitoringDevices ;
     a :FeatureCitation ;
     rdfs:label "Vitals (growth charts included)"@en .
 
@@ -4200,17 +4200,17 @@
     rdfs:label "OpenEyes"@en .
 
 :OpenEyesFeatDocumentPatientExamination
-    :featureClassified :BbProvideFormsForDocumentingProceduresAndOutcomes, :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingProceduresAndOutcomes, :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "document a patient examination, investigation or procedure"@en .
 
 :OpenEyesFeatDocumentTheAppearanceOfTheEye
-    :featureClassified :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "document the appearance of the eye"@en .
 
 :OpenEyesFeatEntryOfInformationOperations
-    :featureClassified :BbProvideFormsForPreparingOperationReports, :EhrSfmSupportClinicalDocumentation ;
+    :fCitClassifiedAs :BbProvideFormsForPreparingOperationReports, :EhrSfmSupportClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "entry of information for a range of operations"@en .
 
@@ -4219,7 +4219,7 @@
     rdfs:label "import clinic work lists"@en .
 
 :OpenEyesFeatMDataCollectionAndDisplay
-    :featureClassified :WhoDhiDataCollectionManagementAndUse, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataCollectionManagementAndUse, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "data collection and display"@en .
 
@@ -4228,12 +4228,12 @@
     rdfs:label "Messaging"@en .
 
 :OpenEyesFeatPatientOverview
-    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    :fCitClassifiedAs :EhrSfmProduceASummaryRecordOfCare ;
     a :FeatureCitation ;
     rdfs:label "patient overview"@en .
 
 :OpenEyesFeatPrescribing
-    :featureClassified :WhoDhiTransmitOrTrackPrescriptionOrders ;
+    :fCitClassifiedAs :WhoDhiTransmitOrTrackPrescriptionOrders ;
     a :FeatureCitation ;
     rdfs:label "prescribing and the maintenance of an agreed formulary."@en .
 
@@ -4242,7 +4242,7 @@
     rdfs:label "viewing of documents at video refresh rates"@en .
 
 :OpenEyesFeatureAutoPopulateATemplatedLetter
-    :featureClassified :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
+    :fCitClassifiedAs :BbProvideFormsForWritingTheDischargeLetterOrDischargeReport ;
     a :FeatureCitation ;
     rdfs:label "auto-populate a templated letter"@en .
 
@@ -4282,7 +4282,7 @@
     rdfs:label "Hospital Information System"@en .
 
 :OpenHospitalFeatAdmissionDischargeNotifications
-    :featureClassified :EhrSfmSupportForNotificationAndResponse, :WhoDhiTransmitRoutineNewsAndWorkflowNotificationsToHealthcareProviders ;
+    :fCitClassifiedAs :EhrSfmSupportForNotificationAndResponse, :WhoDhiTransmitRoutineNewsAndWorkflowNotificationsToHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Admission/Discharge Notifications"@en .
 
@@ -4295,7 +4295,7 @@
     rdfs:label "Extendend Patient Registration"@en .
 
 :OpenHospitalFeatInternalCommunication
-    :featureClassified :EhrSfmSupportForCommunicationsWithinAnOrganization ;
+    :fCitClassifiedAs :EhrSfmSupportForCommunicationsWithinAnOrganization ;
     a :FeatureCitation ;
     rdfs:label "Internal communication"@en .
 
@@ -4308,12 +4308,12 @@
     rdfs:label "Malnutrition control management"@en .
 
 :OpenHospitalFeatManageAccurateBirthRecords
-    :featureClassified :WhoDhiCertifyBirthEvent, :WhoDhiRegisterBirthEvent ;
+    :fCitClassifiedAs :WhoDhiCertifyBirthEvent, :WhoDhiRegisterBirthEvent ;
     a :FeatureCitation ;
     rdfs:label "manage accurate birth records"@en .
 
 :OpenHospitalFeatMonitorCostOfMaterial
-    :featureClassified :BbProvideMeansForOverheadCostManagement ;
+    :fCitClassifiedAs :BbProvideMeansForOverheadCostManagement ;
     a :FeatureCitation ;
     rdfs:label "monitor cost of material"@en .
 
@@ -4322,7 +4322,7 @@
     rdfs:label "monitor the flow of material"@en .
 
 :OpenHospitalFeatMonitorTheFlowOfPharmaceuticals
-    :featureClassified :EhrSfmManageMedicationAdministration ;
+    :fCitClassifiedAs :EhrSfmManageMedicationAdministration ;
     a :FeatureCitation ;
     rdfs:label "monitor the flow of pharmaceuticals"@en .
 
@@ -4343,17 +4343,17 @@
     rdfs:label "Out Patient Department Visits"@en .
 
 :OpenHospitalFeatPatientBillingSupport
-    :featureClassified :BbProvideMeansForInitiatingFinalBillingForOutpatientTreatment, :BbProvideMeansForInitiationOfFinalBilling ;
+    :fCitClassifiedAs :BbProvideMeansForInitiatingFinalBillingForOutpatientTreatment, :BbProvideMeansForInitiationOfFinalBilling ;
     a :FeatureCitation ;
     rdfs:label "Patient billing support"@en .
 
 :OpenHospitalFeatPharmaceuticalsCriticalLevelNotifications
-    :featureClassified :EhrSfmSupportForMonitoringResponseNotificationsRegardingASpecificPatientsHealth ;
+    :fCitClassifiedAs :EhrSfmSupportForMonitoringResponseNotificationsRegardingASpecificPatientsHealth ;
     a :FeatureCitation ;
     rdfs:label "Pharmaceuticals Critical Level Notifications"@en .
 
 :OpenHospitalFeatPharmacyCostTracking
-    :featureClassified :BbProvideMeansForOverheadCostManagement ;
+    :fCitClassifiedAs :BbProvideMeansForOverheadCostManagement ;
     a :FeatureCitation ;
     rdfs:label "Pharmacy cost tracking"@en .
 
@@ -4362,7 +4362,7 @@
     rdfs:label "Pregnancy management"@en .
 
 :OpenHospitalFeatPrinting
-    :featureClassified :BbPrintForms, :BbPrintReports ;
+    :fCitClassifiedAs :BbPrintForms, :BbPrintReports ;
     a :FeatureCitation ;
     rdfs:label "Printing"@en .
 
@@ -4379,7 +4379,7 @@
     rdfs:label "Report sharing"@en .
 
 :OpenHospitalFeatReports
-    :featureClassified :BbPrepareReport ;
+    :fCitClassifiedAs :BbPrepareReport ;
     a :FeatureCitation ;
     rdfs:label "Reports"@en .
 
@@ -4388,12 +4388,12 @@
     rdfs:label "Reports and Statistics in PDF and Excel formats"@en .
 
 :OpenHospitalFeatSmsPatientsReminder
-    :featureClassified :EhrSfmPatientReminderInformationUpdates, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
+    :fCitClassifiedAs :EhrSfmPatientReminderInformationUpdates, :WhoDhiTransmitTargetedAlertsAndRemindersToClients ;
     a :FeatureCitation ;
     rdfs:label "SMS patient's reminder"@en .
 
 :OpenHospitalFeatStockReport
-    :featureClassified :BbProvideFormsForWritingAReport, :BbProvideMeansForStockKeeping ;
+    :fCitClassifiedAs :BbProvideFormsForWritingAReport, :BbProvideMeansForStockKeeping ;
     a :FeatureCitation ;
     rdfs:label "Stock report"@en .
 
@@ -4406,7 +4406,7 @@
     rdfs:label "Vaccines database"@en .
 
 :OpenHospitalFeatXmppCommunication
-    :featureClassified :EhrSfmSupportForCommunicationsWithinAnOrganization ;
+    :fCitClassifiedAs :EhrSfmSupportForCommunicationsWithinAnOrganization ;
     a :FeatureCitation ;
     rdfs:label "XMPP Communication"@en .
 
@@ -4493,37 +4493,37 @@
     rdfs:label "Insurance Management Information System"@en .
 
 :OpenImisFeatAccessToAllBeneficiaryData
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "access to all beneficiary and claims-related data and analysis"@en .
 
 :OpenImisFeatClaimEntry
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Claim Entry"@en .
 
 :OpenImisFeatClaimReview
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Claim review"@en .
 
 :OpenImisFeatClaimSubmission
-    :featureClassified :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Claim submission"@en .
 
 :OpenImisFeatDigitalBeneficiaryManagementAndVerification
-    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "Digital beneficiary management and verification"@en .
 
 :OpenImisFeatDigitalClaimsSubmissionAndautomatedReview
-    :featureClassified :EhrSfmSupportServiceRequestsAndClaims ;
+    :fCitClassifiedAs :EhrSfmSupportServiceRequestsAndClaims ;
     a :FeatureCitation ;
     rdfs:label "Digital claims submission and (automated) review"@en .
 
 :OpenImisFeatManageBeneficiaries
-    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :WhoDhiRegisterAndVerifyClientInsuranceMembership, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "manage beneficiaries"@en .
 
@@ -4532,32 +4532,32 @@
     rdfs:label "manage benefit packages (services and prices)"@en .
 
 :OpenImisFeatManageClientFeedback
-    :featureClassified :WhoDhiReportingOfHealthSystemFeedbackByClients ;
+    :fCitClassifiedAs :WhoDhiReportingOfHealthSystemFeedbackByClients ;
     a :FeatureCitation ;
     rdfs:label "manage client feedback"@en .
 
 :OpenImisFeatManageProviders
-    :featureClassified :EhrSfmManageProviderInformation ;
+    :fCitClassifiedAs :EhrSfmManageProviderInformation ;
     a :FeatureCitation ;
     rdfs:label "manage providers"@en .
 
 :OpenImisFeatMonitoringAndDataAnalysis
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "monitoring and data analysis"@en .
 
 :OpenImisFeatPatientVerification
-    :featureClassified :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
+    :fCitClassifiedAs :WhoDhiRegisterAndVerifyClientInsuranceMembership ;
     a :FeatureCitation ;
     rdfs:label "Patient verification"@en .
 
 :OpenImisFeatPaymentApproval
-    :featureClassified :WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders ;
+    :fCitClassifiedAs :WhoDhiTransmitRoutinePayrollPaymentToHealthcareProviders ;
     a :FeatureCitation ;
     rdfs:label "Payment approval"@en .
 
 :OpenImisFeatServiceClaimsGeneration
-    :featureClassified :EhrSfmSupportServiceRequestsAndClaims, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
+    :fCitClassifiedAs :EhrSfmSupportServiceRequestsAndClaims, :WhoDhiTrackInsuranceBillingAndClaimsSubmission ;
     a :FeatureCitation ;
     rdfs:label "manage service claims generation, review and processing"@en .
 
@@ -4612,37 +4612,37 @@
     rdfs:label "Electronic medical record system (EMR)"@en .
 
 :OpenMrsFeatAlertsAndFlags
-    :featureClassified :WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders, :WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup ;
+    :fCitClassifiedAs :WhoDhiTransmitNonroutineHealthEventAlertsToHealthcareProviders, :WhoDhiTransmitUntargetedHealthEventAlertsToUndefinedGroup ;
     a :FeatureCitation ;
     rdfs:label "Patient Alerts and Flags"@en .
 
 :OpenMrsFeatBuildReports
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "Build reports"@en .
 
 :OpenMrsFeatCohortQuery
-    :featureClassified :EhrSfmAdHocQueryAndRendering, :EhrSfmMeasurementAnalysisResearchAndReports ;
+    :fCitClassifiedAs :EhrSfmAdHocQueryAndRendering, :EhrSfmMeasurementAnalysisResearchAndReports ;
     a :FeatureCitation ;
     rdfs:label "Cohort query"@en .
 
 :OpenMrsFeatCreatingPatients
-    :featureClassified :EhrSfmManageAPatientRecord ;
+    :fCitClassifiedAs :EhrSfmManageAPatientRecord ;
     a :FeatureCitation ;
     rdfs:label "Create new patient record"@en .
 
 :OpenMrsFeatCreatingRoles
-    :featureClassified :EhrSfmUserAccessSuccessfulSecurityAuditTrigger, :EhrSfmUserAttemptsToAccessDataUnsuccessfulAccessDeniedSecurityAuditTrigger ;
+    :fCitClassifiedAs :EhrSfmUserAccessSuccessfulSecurityAuditTrigger, :EhrSfmUserAttemptsToAccessDataUnsuccessfulAccessDeniedSecurityAuditTrigger ;
     a :FeatureCitation ;
     rdfs:label "Creating roles"@en .
 
 :OpenMrsFeatCreatingUsers
-    :featureClassified :EhrSfmUserAuthenticationToTheSystemStartUserSessionSecurityAuditTrigger ;
+    :fCitClassifiedAs :EhrSfmUserAuthenticationToTheSystemStartUserSessionSecurityAuditTrigger ;
     a :FeatureCitation ;
     rdfs:label "Creating Users"@en .
 
 :OpenMrsFeatDataEntryForms
-    :featureClassified :BbProvideFormsForDocumentingPlannedTasks, :BbProvideFormsForEnteringClinicalDataFreetextOrStructured, :WhoDhiDataCollectionManagementAndUse ;
+    :fCitClassifiedAs :BbProvideFormsForDocumentingPlannedTasks, :BbProvideFormsForEnteringClinicalDataFreetextOrStructured, :WhoDhiDataCollectionManagementAndUse ;
     a :FeatureCitation ;
     rdfs:label "Data entry using electronic forms"@en .
 
@@ -4651,27 +4651,27 @@
     rdfs:label "Display graphs of patient information"@en .
 
 :OpenMrsFeatPatientDashboard
-    :featureClassified :EhrSfmInformationView, :EhrSfmViewaccessRecordEntryContent ;
+    :fCitClassifiedAs :EhrSfmInformationView, :EhrSfmViewaccessRecordEntryContent ;
     a :FeatureCitation ;
     rdfs:label "Patient dashboard"@en .
 
 :OpenMrsFeatRecordPatientEncounters
-    :featureClassified :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
+    :fCitClassifiedAs :EhrSfmSupportEncounterDocumentation, :EhrSfmSupportOtherEncounterAndEpisodeOfCareDocumentation ;
     a :FeatureCitation ;
     rdfs:label "Record patient encounters"@en .
 
 :OpenMrsFeatTreatmentRegimens
-    :featureClassified :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
+    :fCitClassifiedAs :EhrSfmManagePatientspecificCareAndTreatmentPlans ;
     a :FeatureCitation ;
     rdfs:label "shows a patient's current and completed treatment regimens"@en .
 
 :OpenMrsFeatViewPatientDemographics
-    :featureClassified :EhrSfmManagePatientDemographics ;
+    :fCitClassifiedAs :EhrSfmManagePatientDemographics ;
     a :FeatureCitation ;
     rdfs:label "View patient demographics"@en .
 
 :OpenMrsFeatViewingPatients
-    :featureClassified :EhrSfmManageAPatientRecord, :EhrSfmViewaccessRecordEntryContent ;
+    :fCitClassifiedAs :EhrSfmManageAPatientRecord, :EhrSfmViewaccessRecordEntryContent ;
     a :FeatureCitation ;
     rdfs:label "Viewing patient records"@en .
 
@@ -4823,7 +4823,7 @@
 
 :OrthancFeatRetrievingDicomResourcesFromWadoRsServer
     a :FeatureCitation ;
-	:featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
+	:fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
 
 :OrthancFeatSearchContent
@@ -4836,7 +4836,7 @@
 
 :OrthancFeatSendingDicomResourcesToStowRsServer
     a :FeatureCitation ;
-	:featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
+	:fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
 
 :OrthancFeatTestConnection
@@ -4948,102 +4948,102 @@
     rdfs:label "CommercialPACS1"@en .
 
 :Pacs1Feat3DAnd4DFunctionality
-    :featureClassified :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "3D and 4D functionality"@en .
 
 :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines
-    :featureClassified :JoshiPacsSupportForServiceAndConfigurationUpgrades, :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :JoshiPacsSupportForServiceAndConfigurationUpgrades, :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Additional features for several medical disciplines"@en .
 
 :Pacs1FeatApprovalConcept
-    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Approval concept"@en .
 
 :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities
-    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems, :WhoDhiMapLocationOfHealthEvents ;
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems, :WhoDhiMapLocationOfHealthEvents ;
     a :FeatureCitation ;
     rdfs:label "Cross-study registration of examinations of various modalities"@en .
 
 :Pacs1FeatDataArchivingAndManagemnt
-    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Data archiving and management"@en .
 
 :Pacs1FeatDirectIntegrationInClinicalInformationSystem
-    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Direct integration in clinical information system"@en .
 
 :Pacs1FeatDistributionOfImages
-    :featureClassified :WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticsResultOrAvailabilityOfResultToClients ;
     a :FeatureCitation ;
     rdfs:label "Distribution of images"@en .
 
 :Pacs1FeatHangingProtocols
-    :featureClassified :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Hanging protocols"@en .
 
 :Pacs1FeatMovingCTImages
-    :featureClassified :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsComputerAidedDiagnosisAndVisualization, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Moving CT images"@en .
 
 :Pacs1FeatMulticenterInstallationWithCentralDataArchiving
-    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Multicenter installation with central data archiving"@en .
 
 :Pacs1FeatOnlineAndOfflineArchiveManagement
-    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Online and offline archive management"@en .
 
 :Pacs1FeatProtocolOfAllTasksTakenByUsers
-    :featureClassified :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSecurityBackupAndDowntimePrevention, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Protocol of all tasks taken by users"@en .
 
 :Pacs1FeatQueryingOverVariousArchives
-    :featureClassified :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Querying over various archives"@en .
 
 :Pacs1FeatRetrievalOfVariousArchives
-    :featureClassified :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsRetrievalSpeedForShortAndLongTermArchivedImages, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Retrieval of various archives"@en .
 
 :Pacs1FeatSnapshots
-    :featureClassified :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsCustomizableHangingProtocolAndIcons, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Snapshots"@en .
 
 :Pacs1FeatStandardConformityForInterfacesToModalities
-    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Standard conformity for interfaces to modalities"@en .
 
 :Pacs1FeatStatisticalAnalyses
-    :featureClassified :JoshiPacsToolsForContinuousPacsPerformanceMonitoring, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsToolsForContinuousPacsPerformanceMonitoring, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Statistical analyses"@en .
 
 :Pacs1FeatVariousMeasurementAndAnalysesTools
-    :featureClassified :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsConvenienceAndResponsivenessInManipulationOfImages, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Various measurment and analyses tools"@en .
 
 :Pacs1FeatWorkLists
-    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
+    :fCitClassifiedAs :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
     a :FeatureCitation ;
     rdfs:label "Work lists"@en .
 
 :Pacs1LosslessImageDataCompression
-    :featureClassified :JoshiPacsSupportForHighImageQuality, :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :JoshiPacsSupportForHighImageQuality, :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Lossless image data compression"@en .
 
@@ -5059,52 +5059,52 @@
     rdfs:label "Commercial PACS 2"@en .
 
 :Pacs2FeatAdaptableWorkflow
-    :featureClassified :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthFacilitiesAndRelatedInformation, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
+    :fCitClassifiedAs :JoshiPacsWorklistAndWorkflowOrganization, :WhoDhiListHealthFacilitiesAndRelatedInformation, :WhoDhiListHealthWorkforceCadresAndRelatedIdentificationInformation ;
     a :FeatureCitation ;
     rdfs:label "Adaptable Workflow"@en .
 
 :Pacs2FeatAutofax
-    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Autofax"@en .
 
 :Pacs2FeatDICOMStructuredReporting
-    :featureClassified :JoshiPacsStructuredReporting, :WhoDhiParseUnstructuredDataIntoStructuredData ;
+    :fCitClassifiedAs :JoshiPacsStructuredReporting, :WhoDhiParseUnstructuredDataIntoStructuredData ;
     a :FeatureCitation ;
     rdfs:label "DICOM structured reporting"@en .
 
 :Pacs2FeatDictationFunction
-    :featureClassified :JoshiPacsVoiceRecognitionTranscriptionAndReporting, :WhoDhiDataExchangeAcrossSystems, :WhoDhiNonRoutineDataCollectionAndManagement ;
+    :fCitClassifiedAs :JoshiPacsVoiceRecognitionTranscriptionAndReporting, :WhoDhiDataExchangeAcrossSystems, :WhoDhiNonRoutineDataCollectionAndManagement ;
     a :FeatureCitation ;
     rdfs:label "Dictation function"@en .
 
 :Pacs2FeatDisplayOfAllModalities
-    :featureClassified :JoshiPacsSupportForMultiSpecialtyImagesNonRadImages, :WhoDhiListHealthFacilitiesAndRelatedInformation ;
+    :fCitClassifiedAs :JoshiPacsSupportForMultiSpecialtyImagesNonRadImages, :WhoDhiListHealthFacilitiesAndRelatedInformation ;
     a :FeatureCitation ;
     rdfs:label "Display of all modalities"@en .
 
 :Pacs2FeatIntegrationOfOtherInformationSystems
-    :featureClassified :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Integration of other information systems"@en .
 
 :Pacs2FeatNeededDiagnosticToolsAndViews
-    :featureClassified :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Needed diagnostic tools and views"@en .
 
 :Pacs2FeatRemoteAcess
-    :featureClassified :WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider ;
+    :fCitClassifiedAs :WhoDhiRemoteMonitoringOfClientHealthOrDiagnosticDataByProvider ;
     a :FeatureCitation ;
     rdfs:label "Remote access"@en .
 
 :Pacs2FeatTabletView
-    :featureClassified :WhoDhiDataExchangeAcrossSystems, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Tablet view"@en .
 
 :Pacs2FeatZeroFootprintViewer
-    :featureClassified :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :JoshiPacsUserInterfaceForImageManipulation, :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Zero-footprint viewer"@en .
 
@@ -5121,132 +5121,132 @@
     rdfs:label "Pflegeinformations- und Kommunikationssystem"@en .
 
 :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning
-    :featureClassified :EhrSfmManageOrders, :EhrSfmSupportOrders ;
+    :fCitClassifiedAs :EhrSfmManageOrders, :EhrSfmSupportOrders ;
     a :FeatureCitation ;
     rdfs:label "adaption of nursing care plans during care planning"@en .
 
 :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry
-    :featureClassified :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation, :EhrSfmManageClinicalHistory, :EhrSfmManageProblemList ;
     a :FeatureCitation ;
     rdfs:label "anamnesis supported by offering flexible forms for data entry"@en .
 
 :PikFeatureCreationOfNursingCarePlans
-    :featureClassified :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageOrders, :EhrSfmSupportOrders ;
+    :fCitClassifiedAs :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageOrders, :EhrSfmSupportOrders ;
     a :FeatureCitation ;
     rdfs:label "creation of nursing care plans"@en .
 
 :PikFeatureSupportingAllPhasesOfTheNursingProcess
-    :featureClassified :EhrSfmManageClinicalWorkflowTasking ;
+    :fCitClassifiedAs :EhrSfmManageClinicalWorkflowTasking ;
     a :FeatureCitation ;
     rdfs:label "supporting all phases of the nursing process"@en .
 
 :PikFeatureWardManagement
-    :featureClassified :EhrSfmManageResourceAvailability ;
+    :fCitClassifiedAs :EhrSfmManageResourceAvailability ;
     a :FeatureCitation ;
     rdfs:label "ward management"@en .
 
 :PikFeatureWritingOfNursingLetters
-    :featureClassified :EhrSfmProduceASummaryRecordOfCare ;
+    :fCitClassifiedAs :EhrSfmProduceASummaryRecordOfCare ;
     a :FeatureCitation ;
     rdfs:label "writing of nursing letters"@en .
 
 :PikNursingDocumentationForms
-    :featureClassified :EhrSfmManageClinicalDocumentation ;
+    :fCitClassifiedAs :EhrSfmManageClinicalDocumentation ;
     a :FeatureCitation ;
     rdfs:label "nursing documentation forms"@en .
 
 :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory
-    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Contextual information such as the examination and findings history"@en .
 
 :RIS2FeatCoordinationOfRISAndPACS
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Coordination of RIS and PACS"@en .
 
 :RIS2FeatCreationOfCustomizedReports
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Creation of customized reports"@en .
 
 :RIS2FeatElectronicRecordingOfResultsAndExaminations
-    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Electronic recording of results and examinations"@en .
 
 :RIS2FeatElectronicSignature
-    :featureClassified :WhoDhiVerifyClientUniqueIdentity ;
+    :fCitClassifiedAs :WhoDhiVerifyClientUniqueIdentity ;
     a :FeatureCitation ;
     rdfs:label "Electronic signature"@en .
 
 :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting
-    :featureClassified :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
+    :fCitClassifiedAs :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
     a :FeatureCitation ;
     rdfs:label "Extensive statistics through integrated reporting and charting"@en .
 
 :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Influencing the order status by authorized users"@en .
 
 :RIS2FeatInterfaceToPrinterAndPrinterView
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Interface to printer and printer view"@en .
 
 :RIS2FeatPhoneIntegration
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Phone integration"@en .
 
 :RIS2FeatRemoteCreationOfResultsLetters
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Remote creation of results letters"@en .
 
 :RIS2FeatRetrieveResults
-    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Retrieve results"@en .
 
 :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile
-    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Save image or sound or text data in the patient file"@en .
 
 :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Search for specific category or restrictions while ordering"@en .
 
 :RIS2FeatSpecialSettingsForImageView
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Special settings for image view"@en .
 
 :RIS2FeatTextProcessing
-    :featureClassified :WhoDhiDataCollectionManagementAndUse ;
+    :fCitClassifiedAs :WhoDhiDataCollectionManagementAndUse ;
     a :FeatureCitation ;
     rdfs:label "Text processing"@en .
 
 :RIS2FeatTrackAllOrder
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Track all order"@en .
 
 :RIS2FeatTrackMaterialAndFilmConsumption
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Track material and film consumption"@en .
 
 :RIS2FeatTransferOfOrderData
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Transfer of order data"@en .
 
 :RIS2FeatVoiceRecognition
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Voice recognition"@en .
 
@@ -5309,112 +5309,112 @@
     rdfs:label "Commercial RIS 1"@en .
 
 :Ris1FeatAccessToExaminationComments
-    :featureClassified :WhoDhiNonRoutineDataCollectionAndManagement ;
+    :fCitClassifiedAs :WhoDhiNonRoutineDataCollectionAndManagement ;
     a :FeatureCitation ;
     rdfs:label "Access to examination comments"@en .
 
 :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial
-    :featureClassified :WhoDhiManageBudgetAndExpenditures, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiManageBudgetAndExpenditures, :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Add or change or delete billing codes and material"@en .
 
 :Ris1FeatAssignFreeAndAvailableModalities
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Assign free and available modalities"@en .
 
 :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory
-    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Contextual information such as the examination and findings history"@en .
 
 :Ris1FeatCoordinationOfRisAndPACS
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Coordination of RIS and PACS"@en .
 
 :Ris1FeatCreationOfCustomizedReports
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "Creation of customized reports"@en .
 
 :Ris1FeatElectronicRecordingOfResultsAndExaminations
-    :featureClassified :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation, :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Electronic recording of results and examinations"@en .
 
 :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting
-    :featureClassified :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
+    :fCitClassifiedAs :WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents ;
     a :FeatureCitation ;
     rdfs:label "Extensive statistics through integrated reporting and charting"@en .
 
 :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations
-    :featureClassified :WhoDhiMapLocationOfHealthFacilitiesstructures ;
+    :fCitClassifiedAs :WhoDhiMapLocationOfHealthFacilitiesstructures ;
     a :FeatureCitation ;
     rdfs:label "Full range of functions at decentralized workstations"@en .
 
 :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Influencing the order status by authorized users"@en .
 
 :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
 :Ris1FeatPatientRegistration
-    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
+    :fCitClassifiedAs :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
     a :FeatureCitation ;
     rdfs:label "Patient registration"@en .
 
 :Ris1FeatQualityAssuranceThroughCompletePatientHistory
-    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Quality assurance through complete patient history"@en .
 
 :Ris1FeatSaveImageOrSoundOrTextDataInThePatientFile
-    :featureClassified :WhoDhiDataStorageAndAggregation ;
+    :fCitClassifiedAs :WhoDhiDataStorageAndAggregation ;
     a :FeatureCitation ;
     rdfs:label "Save image or sound or text data in the patient file"@en .
 
 :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Search for specific category or restrictions while ordering"@en .
 
 :Ris1FeatSupplementBillingRelevantDataToOrder
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Supplement billing relevant data to order"@en .
 
 :Ris1FeatTrackAllOrder
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Track all order"@en .
 
 :Ris1FeatTrackMaterialAndFilmConsumption
-    :featureClassified :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
+    :fCitClassifiedAs :WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf ;
     a :FeatureCitation ;
     rdfs:label "Track material and film consumption"@en .
 
 :Ris1FeatTransferOfOrderData
-    :featureClassified :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
+    :fCitClassifiedAs :WhoDhiTransmitDiagnosticOrdersDiagnosticResults ;
     a :FeatureCitation ;
     rdfs:label "Transfer of the order data"@en .
 
 :Ris1FeatVoiceRecognition
-    :featureClassified :WhoDhiDataExchangeAndInteroperability ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAndInteroperability ;
     a :FeatureCitation ;
     rdfs:label "Voice recognition"@en .
 
 :Ris1FeatWYSIWYGEditorOrSimpleVies
-    :featureClassified :WhoDhiDataSynthesisAndVisualization ;
+    :fCitClassifiedAs :WhoDhiDataSynthesisAndVisualization ;
     a :FeatureCitation ;
     rdfs:label "WYSIWYG editor or simple view"@en .
 
@@ -5499,7 +5499,7 @@
     rdfs:label "Transfer of the order data"@en .
 
 :Ris1InterfaceToPrinterAndPrinterView
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Interface to printer and printer view"@en .
 
@@ -5517,27 +5517,27 @@
     rdfs:label "Commercial RIS 2"@en .
 
 :Ris2FeatAssignFreeAndAvailableModalities
-    :featureClassified :WhoDhiDataExchangeAcrossSystems ;
+    :fCitClassifiedAs :WhoDhiDataExchangeAcrossSystems ;
     a :FeatureCitation ;
     rdfs:label "Assign free and available modalities"@en .
 
 :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Cancellation of transferred billing data and subsequent processing"@en .
 
 :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement
-    :featureClassified :WhoDhiManageBudgetAndExpenditures ;
+    :fCitClassifiedAs :WhoDhiManageBudgetAndExpenditures ;
     a :FeatureCitation ;
     rdfs:label "Fast and secure dispatch of the quarterly statement"@en .
 
 :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem
-    :featureClassified :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Manual or automated transfer of service codes to the billing system"@en .
 
 :Ris2FeatQualityAssuranceThroughCompletePatientHistory
-    :featureClassified :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
+    :fCitClassifiedAs :WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices ;
     a :FeatureCitation ;
     rdfs:label "Quality assurance through complete patient history"@en .
 
@@ -5577,12 +5577,12 @@
     rdfs:label "Quality assurance through complete patient history"@en .
 
 :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial
-    :featureClassified :WhoDhiManageBudgetAndExpenditures, :WhoDhiTrackAndManageInsuranceReimbursement ;
+    :fCitClassifiedAs :WhoDhiManageBudgetAndExpenditures, :WhoDhiTrackAndManageInsuranceReimbursement ;
     a :FeatureCitation ;
     rdfs:label "Add or change or delete billing codes and material"@en .
 
 :Ris2eatPatientRegistration
-    :featureClassified :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
+    :fCitClassifiedAs :WhoDhiEnrolClientForHealthServicesclinicalCarePlan ;
     a :FeatureCitation ;
     rdfs:label "Patient registration"@en .
 
@@ -5603,12 +5603,12 @@
     rdfs:label "SAP R3 Business Process Control System software"@en .
 
 :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "planning view"@en .
 
 :SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff
-    :featureClassified :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
+    :fCitClassifiedAs :EhrSfmManageCareCoordinationReporting, :EhrSfmManageClinicalWorkflowTasking, :EhrSfmManageNonmedicationPatientCareOrders, :EhrSfmManageOrders, :EhrSfmSupportCareCoordinationReporting ;
     a :FeatureCitation ;
     rdfs:label "request form assigned a timeslot room and staff"@en .
 
@@ -5642,7 +5642,7 @@
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
 :SenaiteFeatAddAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Add Analyses"@en .
 
@@ -5651,7 +5651,7 @@
     rdfs:label "Add Clients"@en .
 
 :SenaiteFeatAddGlobalAnalysisSpecifications
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Add global Analysis Specifications"@en .
 
@@ -5668,7 +5668,7 @@
     rdfs:label "Analysis Templates"@en .
 
 :SenaiteFeatAuditLog
-    :featureClassified :EhrSfmAuditLogManagement ;
+    :fCitClassifiedAs :EhrSfmAuditLogManagement ;
     a :FeatureCitation ;
     rdfs:label "Audit Log"@en .
 
@@ -5681,12 +5681,12 @@
     rdfs:label "catalog of tests/analyses"@en .
 
 :SenaiteFeatChangeAnalysesProperties
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Change Analyses Properties"@en .
 
 :SenaiteFeatCreateAnalysisProfiles
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Create analysis profiles"@en .
 
@@ -5695,7 +5695,7 @@
     rdfs:label "create samples"@en .
 
 :SenaiteFeatEnterResults
-    :featureClassified :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
+    :fCitClassifiedAs :BbProvideFormsForEnteringClinicalDataFreetextOrStructured ;
     a :FeatureCitation ;
     rdfs:label "Enter Results"@en .
 
@@ -5712,7 +5712,7 @@
     rdfs:label "Generate partitions from samples"@en .
 
 :SenaiteFeatGroupAnalysesByType
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Group analyses by type"@en .
 
@@ -5725,12 +5725,12 @@
     rdfs:label "Locating a Sample"@en .
 
 :SenaiteFeatManageAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Manage Analyses"@en .
 
 :SenaiteFeatOutOfRangeAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Out of Range Analyses"@en .
 
@@ -5739,7 +5739,7 @@
     rdfs:label "Publish the Results"@en .
 
 :SenaiteFeatQualityControlTests
-    :featureClassified :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
+    :fCitClassifiedAs :EhrSfmQualityPreformanceAndAccountabilityMeasures ;
     a :FeatureCitation ;
     rdfs:label "Quality Control tests"@en .
 
@@ -5748,12 +5748,12 @@
     rdfs:label "Receive the Sample"@en .
 
 :SenaiteFeatRemoveAnalyses
-    :featureClassified :BbAnalyzeData ;
+    :fCitClassifiedAs :BbAnalyzeData ;
     a :FeatureCitation ;
     rdfs:label "Remove Analyses"@en .
 
 :SenaiteFeatResultReport
-    :featureClassified :EhrSfmManageResults ;
+    :fCitClassifiedAs :EhrSfmManageResults ;
     a :FeatureCitation ;
     rdfs:label "result report"@en .
 
@@ -5766,17 +5766,17 @@
     rdfs:label "sample templates"@en .
 
 :SenaiteFeatSampleWorkflow
-    :featureClassified :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
+    :fCitClassifiedAs :EhrSfmWorkflowManagement, :JoshiPacsWorklistAndWorkflowOrganization ;
     a :FeatureCitation ;
     rdfs:label "sample workflow"@en .
 
 :SenaiteFeatSecurityPolicies
-    :featureClassified :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity ;
+    :fCitClassifiedAs :BbProvideMeansForControlOfSecurityIssues, :EhrSfmSecurity ;
     a :FeatureCitation ;
     rdfs:label "Security policies"@en .
 
 :SenaiteFeatVerifyTheSubmittedResults
-    :featureClassified :BbValidateResults ;
+    :fCitClassifiedAs :BbValidateResults ;
     a :FeatureCitation ;
     rdfs:label "Verify the submitted Results"@en .
 
@@ -5862,27 +5862,27 @@
     rdfs:label "Tele DICOM"@en .
 
 :TeleDicomFeatRealTimeVoiceCommunication
-    :featureClassified :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
+    :fCitClassifiedAs :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
     a :FeatureCitation ;
     rdfs:label "real-time voice communication"@en .
 
 :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests, :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
     a :FeatureCitation ;
     rdfs:label "interactive consultation between two or more centers"@en .
 
 :TeleDicomFeatureOfflineMode
-    :featureClassified :EhrSfmSupportRemoteHealthcareServices ;
+    :fCitClassifiedAs :EhrSfmSupportRemoteHealthcareServices ;
     a :FeatureCitation ;
     rdfs:label "offline mode"@en .
 
 :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "use of interactive pointers and specific calculation tools"@en .
 
 :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages
-    :featureClassified :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
+    :fCitClassifiedAs :EhrSfmManageResults, :EhrSfmManageResultsOfDiagnosticTests ;
     a :FeatureCitation ;
     rdfs:label "visualization of synchronized DICOM images"@en .
 
@@ -5899,22 +5899,22 @@
     rdfs:label "CPOE inkl. CDSS"@en .
 
 :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert
-    :featureClassified :EhrSfmMedicationAlertOverrides ;
+    :fCitClassifiedAs :EhrSfmMedicationAlertOverrides ;
     a :FeatureCitation ;
     rdfs:label "possibility to continue prescribing while safety alert"@en .
 
 :TheriakFeatureSafetyAlertsInCaseOfAllergies
-    :featureClassified :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
+    :fCitClassifiedAs :EhrSfmMedicationInteractionAndAllergyChecking, :EhrSfmSupportForMedicationInteractionAndAllergyChecking ;
     a :FeatureCitation ;
     rdfs:label "safety alerts in case of allergies"@en .
 
 :TheriakFeatureSafetyAlertsInCaseOfOverdosing
-    :featureClassified :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
+    :fCitClassifiedAs :EhrSfmSupportOfPatientSpecificDosingAndWarnings ;
     a :FeatureCitation ;
     rdfs:label "safety alerts in case of overdosing"@en .
 
 :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols
-    :featureClassified :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
+    :fCitClassifiedAs :EhrSfmManageMedicationOrders, :EhrSfmManageOrderSetTemplates, :EhrSfmManageOrders, :EhrSfmMedicationOrderEfficiencies, :EhrSfmSupportForMedicationOrderingEfficiencies, :EhrSfmSupportOrders, :EhrSfmUseOrderSets ;
     a :FeatureCitation ;
     rdfs:label "standardized prescriptions and medication protocols"@en .
 

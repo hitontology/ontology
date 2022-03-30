@@ -152,11 +152,11 @@
 
 
 ###  http://hitontology.eu/ontology/featureClassified
-:featureClassified rdf:type owl:ObjectProperty ;
+:fCitClassifiedAs rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :classified ;
                            rdfs:domain :FeatureCitation ;
                            rdfs:range :FeatureClassified ;
-                           rdfs:label "classified feature"@en .
+                           rdfs:label "classified as"@en .
 
 
 ###  http://hitontology.eu/ontology/enterpriseFunctionClassified
