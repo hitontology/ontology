@@ -17,7 +17,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 <http://hitontology.eu/ontology/3LGM2AppSysModelingTool>
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "modeling tool"@en .
 
 <http://hitontology.eu/ontology/3LGM2Baukasten>
@@ -29,7 +29,7 @@
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
-    :organizationalUnit <http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>, <http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>, <http://hitontology.eu/ontology/3LGM2OrgLehre>, <http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller> ;
+    :ouOffersOuCit <http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>, <http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>, <http://hitontology.eu/ontology/3LGM2OrgLehre>, <http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
@@ -160,7 +160,7 @@
 
 :AbbottAppBloodAnalysisSystem
     :astCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Blood Analysis System"@en .
 
 :AbbottIStat
@@ -179,12 +179,12 @@
 
 :AgfaPacsImpaxAppPacs
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Picture Archiving and Communication System (PACS)"@en .
 
 :AgfaPacsImpaxAppRisPacsReporting
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem, :BbRadiologyInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "RIS/PACS/Reporting (Radiology Information System/Picture Archiving and Communications System) Solution"@en .
 
 :AgfaPacsImpaxFeatureBookingOfExaminations
@@ -209,7 +209,7 @@
 
 :AgfaRisElefanteAppRis
     :astCitClassifiedAs :BbRadiologyInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Radiology Information System (RIS)"@en .
 
 :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations
@@ -239,7 +239,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:CentOS ;
-    :organizationalUnit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
+    :ouOffersOuCit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     dcterms:source <https://www.medfloss.org/node/1103> ;
     a :SoftwareProduct ;
@@ -248,7 +248,7 @@
 
 :BahmniAppHospitalSystem
     :astCitClassifiedAs :BbClinicalInformationSystem, :WhoDhiHealthManagementInformationSystemHmis ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Hospital System"@en .
 
 :BahmniEmergency
@@ -483,7 +483,7 @@
 
 :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution
     :astCitClassifiedAs :BbDecisionSupportSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Prescribing and Medication Administration Solution"@en .
 
 :BetterMedsFeatClinicalPharmacistReview
@@ -599,7 +599,7 @@
     :homepage <https://www.bikalims.org> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :organizationalUnit :BikaLimsOrgLaboratory ;
+    :ouOffersOuCit :BikaLimsOrgLaboratory ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :programmingLibrary :Zope ;
     :repository <https://github.com/bikalims> ;
@@ -609,7 +609,7 @@
 
 :BikaLimsAppLaboratoryInformationManagementSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
 :BikaLimsFeatAlerts
@@ -922,7 +922,7 @@
 
 :CernerMilleniumPowerOrdersAppCPOE
     :astCitClassifiedAs :BbProviderOrPhysicianOrderEntrySystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Computerized Physician Order Entry (CPOE) System"@en .
 
 :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection
@@ -1172,32 +1172,32 @@
 
 :CommercialCis1AppSys
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "CIS"@en .
 
 :CommercialCis2AppSys
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "CIS"@en .
 
 :CommercialPacs1AppSys
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "PACS"@en .
 
 :CommercialPacs2AppSys
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "PACS"@en .
 
 :CommercialRis1AppSys
     :astCitClassifiedAs :BbRadiologyInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "RIS"@en .
 
 :CommercialRis2AppSys
     :astCitClassifiedAs :BbRadiologyInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "RIS"@en .
 
 :CscMedChart
@@ -1208,7 +1208,7 @@
     rdfs:label "CSC Med Chart"@en .
 
 :CscMedChartAppMedicationManagementSystem
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Medication Management System"@en .
 
 :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick
@@ -1237,7 +1237,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000003>, <http://www.ebi.ac.uk/swo/license/SWO_1000047>, <http://www.ebi.ac.uk/swo/license/SWO_9000080> ;
     :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Oracle_Solaris ;
-    :organizationalUnit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
+    :ouOffersOuCit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Smarty ;
     :repository <https://github.com/dcm4che> ;
@@ -1247,17 +1247,17 @@
 
 :Dcm4CheAppDicomToolkitLibrary
     :astCitClassifiedAs :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "DICOM toolkit & library"@en .
 
 :Dcm4CheAppImageArchive
     :astCitClassifiedAs :BbDocumentArchivingSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Image Archive"@en .
 
 :Dcm4CheAppImageManager
     :astCitClassifiedAs :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Image Manager"@en .
 
 :Dcm4CheFeatAdtOrmAndOruMessageTypes
@@ -1406,17 +1406,17 @@
 
 :Dhis2AppGeographicInformationSystemGis
     :astCitClassifiedAs :WhoDhiGeographicInformationSystemGis ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Geographic Information System (GIS)"@en .
 
 :Dhis2AppHmis
     :astCitClassifiedAs :WhoDhiHealthManagementInformationSystemHmis ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "health management information system (HMIS)"@en .
 
 :Dhis2AppPublicHealthInformationSystem
     :astCitClassifiedAs :WhoDhiPublicHealthAndDiseaseSurveillanceSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "public health information system"@en .
 
 :Dhis2FeatAggregateAndIndividualLevelData
@@ -1711,7 +1711,7 @@
 
 :EChasquiLaboratoryInformationSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information System"@en .
 
 :EDoc
@@ -1723,12 +1723,12 @@
 
 :EDocAppDigitalFilingSystem
     :astCitClassifiedAs :WhoDhiDataInterchangeInteroperabilityAndAccessibility ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Digital Filing System"@en .
 
 :EDocAppDocumentManagementSoftware
     :astCitClassifiedAs :BbDocumentArchivingSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Document Management Software"@en .
 
 :EDocFeatureCapturingDataForAllPatientVisits
@@ -1745,7 +1745,7 @@
 
 :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem
     :astCitClassifiedAs :BbMedicalDocumentationSystem, :BbNursingManagementAndDocumentationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Clinical Documentation System (CDS)"@en .
 
 :EclipsysContinuum2000CdsFeatAuditTrail
@@ -1784,7 +1784,7 @@
     :language dbr:English_language, dbr:French_language, dbr:German_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000084> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
-    :organizationalUnit :ElexisOrgArztpraxis ;
+    :ouOffersOuCit :ElexisOrgArztpraxis ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/elexis> ;
     :userOffersUserCit :ElexisUserÄrzte ;
@@ -1794,12 +1794,12 @@
 
 :ElexisAppElektronischeKrankengeschichte
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Elektronische Krankengeschichte"@en .
 
 :ElexisAppSoftwareArztpraxis
     :astCitClassifiedAs :BbOutpatientManagementSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Software für die Arztpraxis"@en .
 
 :ElexisFeatAbrechnungen
@@ -2053,12 +2053,12 @@
     rdfs:label "Ärzte"@en .
 
 :FirstNetAppEmergencyMedicineInformationSystem
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Emergency Medicine Information System"@en .
 
 :GePatchspecdAppSysPacs
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "PACS"@en .
 
 :GePatchspecdPacs
@@ -2089,7 +2089,7 @@
     :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, dbr:Ubuntu ;
-    :organizationalUnit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
+    :ouOffersOuCit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :softwareProductComponent :Occhiolino ;
     a :SoftwareProduct ;
@@ -2098,17 +2098,17 @@
 
 :GnuHealthAppElectronicMedicalRecordEmr
     :astCitClassifiedAs :WhoDhiSharedHealthRecordAndHealthInformationRespositories, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
 :GnuHealthAppHealthInformationSystemHis
     :astCitClassifiedAs :BbClinicalInformationSystem, :BbElectronicPatientRecordSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Health Information System (HIS)"@en .
 
 :GnuHealthAppHospitalManagementInformationSystem
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Hospital management Information System"@en .
 
 :GnuHealthFeatAccessManagementOverview
@@ -2608,7 +2608,7 @@
 
 :HnaMilleniumAppPharmacyManagementSystem
     :astCitClassifiedAs :BbPharmacyInformationSystem, :WhoDhiPharmacyInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Pharmacy Management System"@en .
 
 :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks
@@ -2675,12 +2675,12 @@
 
 :HospitalRunAppEHR
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "electronic health record (EHR)"@en .
 
 :HospitalRunAppHIS
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "hospital information system (HIS)"@en .
 
 :HospitalRunFeatAddImaging
@@ -2883,7 +2883,7 @@
 
 :IPathAppTelemedicinePlatform
     :astCitClassifiedAs :WhoDhiTelemedicineCategory ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Telemedicine Platform"@en .
 
 :IPathFeatCooperationBetweenProfessionals
@@ -2930,7 +2930,7 @@
 
 :MedicatorAppSysCpoe
     :astCitClassifiedAs :BbDecisionSupportSystem, :BbProviderOrPhysicianOrderEntrySystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "CPOE inkl. CDSS"@en .
 
 :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase
@@ -2985,7 +2985,7 @@
     :language dbr:English_language, dbr:Russian_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Web_application ;
-    :organizationalUnit :MedkeyOrgDentalClinic, :MedkeyOrgHospital, :MedkeyOrgLaboratory, :MedkeyOrgPrivateDoctorsOffice, :MedkeyOrgRehabilitationCenter ;
+    :ouOffersOuCit :MedkeyOrgDentalClinic, :MedkeyOrgHospital, :MedkeyOrgLaboratory, :MedkeyOrgPrivateDoctorsOffice, :MedkeyOrgRehabilitationCenter ;
     :programmingLanguage dbr:JavaScript, dbr:PHP ;
     :repository <https://github.com/medkey-org> ;
     a :SoftwareProduct ;
@@ -2994,17 +2994,17 @@
 
 :MedkeyAppElectronicHealthRecord
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Health Record (EHR)"@en .
 
 :MedkeyAppHIS
     :astCitClassifiedAs :BbClinicalInformationSystem, :WhoDhiHealthManagementInformationSystemHmis ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Hospital Information System (HIS)"@en .
 
 :MedkeyAppMedicalInformationSystem
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Medical Information System"@en .
 
 :MedkeyFeatAccessControl
@@ -3143,7 +3143,7 @@
 
 :MetavisionAppClinicalInformationSystem
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Clinical Information System"@en .
 
 :MetavisionFeatureAutomaticDataCollection
@@ -3183,7 +3183,7 @@
 
 :OcchiolinoAppLaboratoryInformationManagementSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information Management System"@en .
 
 :Odoo
@@ -3204,7 +3204,7 @@
 
 :OdooAppsysErp
     :astCitClassifiedAs :BbEnterpriseResourcePlanningSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "ERP Interface"@en .
 
 :OpenClinicGa
@@ -3222,12 +3222,12 @@
 
 :OpenClinicGaAppHims
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "hospital information management system"@en .
 
 :OpenClinicGaAppPacs
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "PACS"@en .
 
 :OpenClinicGaFeatArchivingOfScannedDocuments
@@ -3417,7 +3417,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
-    :organizationalUnit :OpenDentalOrgDentalPractice ;
+    :ouOffersOuCit :OpenDentalOrgDentalPractice ;
     :programmingLanguage <http://dbpedia.org/resource/C_Sharp_(programming_language)> ;
     :repository <https://www.opendental.com/site/sourcecode.html> ;
     :userOffersUserCit :OpenDentalUserDentist ;
@@ -3678,7 +3678,7 @@
     rdfs:label "Dental Practice"@en .
 
 :OpenDentalPracticeManagementSoftware
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Dental Practice Management Software"@en .
 
 :OpenDentalUserDentist
@@ -3701,7 +3701,7 @@
     rdfs:label "Open-eObs"@en .
 
 :OpenEObsAppElectronicPatientObservationSystem
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "electronic patient observation system"@en .
 
 :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling
@@ -3787,7 +3787,7 @@
     :language dbr:English_language, dbr:French_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Ubuntu ;
-    :organizationalUnit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
+    :ouOffersOuCit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Java_(programming_language)>, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/openelisglobal> ;
     a :SoftwareProduct ;
@@ -3796,17 +3796,17 @@
 
 :OpenElisAppEnterpriseLaboratoryInformationSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Enterprise Laboratory Information System"@en .
 
 :OpenElisAppLaboratoryInformationSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information System (LIS)"@en .
 
 :OpenElisAppLaboratoryInformationSystemForGlobalHealth
     :astCitClassifiedAs :BbLaboratoryInformationSystem, :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information System for Global Health"@en .
 
 :OpenElisFeatAstmAnalyzerInterfaces
@@ -3982,11 +3982,11 @@
 
 :OpenEmrAppElectronicHealthRecord
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic health record application"@en .
 
 :OpenEmrAppMedicalPracticeManagementApplication
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Medical practice management application"@en .
 
 :OpenEmrFeatAppointmentCalendar
@@ -4192,7 +4192,7 @@
     :homepage <https://openeyes.org.uk/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
-    :organizationalUnit :OpenEyesUnitOphthalmicUnit ;
+    :ouOffersOuCit :OpenEyesUnitOphthalmicUnit ;
     :programmingLanguage dbr:PHP ;
     :repository <https://github.com/appertafoundation/openeyes> ;
     a :SoftwareProduct ;
@@ -4248,7 +4248,7 @@
 
 :OpenEyesSystemElectronicPatientRecordForOphthalmology
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "electronic patient record for ophthalmology"@en .
 
 :OpenEyesUnitOphthalmicUnit
@@ -4273,12 +4273,12 @@
 
 :OpenHospitalAppElectronicHealthRecord
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Health Record (EHR)"@en .
 
 :OpenHospitalAppHospitalInformationSystem
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Hospital Information System"@en .
 
 :OpenHospitalFeatAdmissionDischargeNotifications
@@ -4489,7 +4489,7 @@
 
 :OpenImisAppInsuranceManagementInformationSystem
     :astCitClassifiedAs :WhoDhiHealthFinanceAndInsuranceInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Insurance Management Information System"@en .
 
 :OpenImisFeatAccessToAllBeneficiaryData
@@ -4580,12 +4580,12 @@
 
 :OpenMaximsAppEpr
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Patient Record (EPR)"@en .
 
 :OpenMaximsAppPas
     :astCitClassifiedAs :BbPatientAdministrationSystem, :WhoDhiIdentificationRegistriesAndDirectories ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Patient Administration System (PAS)"@en .
 
 :OpenMrs
@@ -4608,7 +4608,7 @@
 
 :OpenMrsAppEmr
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic medical record system (EMR)"@en .
 
 :OpenMrsFeatAlertsAndFlags
@@ -4755,7 +4755,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
-    :organizationalUnit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
+    :ouOffersOuCit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://hg.orthanc-server.com/> ;
     :userOffersUserCit :OrthancUgRadiologistSctid66862007, :OrthancUgResearcherSctid769038007, :OrthancUserIntegrators, :OrthancUserNetworkEngineer, :OrthancUserPhysicist, :OrthancUserSystemEngineer ;
@@ -4765,24 +4765,24 @@
 
 :OrthancAppDicomServer
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Dicom server"@en .
 
 :OrthancAppMiniPacs
     :astCitClassifiedAs :BbPictureArchivingAndCommunicationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "mini-PACS"@en .
 
 :OrthancAppVNA
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "VNA (Vendor Neutral Archive)"@en .
 
 :OrthancAppViewerOfMedicalImages
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Viewer of medical images"@en .
 
 :OrthancAppWebViewer
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Web Viewer"@en .
 
 :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch
@@ -4934,7 +4934,7 @@
 
 :OscarEmrAppEmr
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
 :Pacs1
@@ -5117,7 +5117,7 @@
 
 :PikAppPflegeinformationsKommunikationssystem
     :astCitClassifiedAs :BbNursingManagementAndDocumentationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Pflegeinformations- und Kommunikationssystem"@en .
 
 :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning
@@ -5587,12 +5587,12 @@
     rdfs:label "Patient registration"@en .
 
 :SapR3AppBusinessProcessControlSystemSoftware
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Business Process Control System Software"@en .
 
 :SapR3AppEnterpriseResourcePlanningSoftware
     :astCitClassifiedAs :BbEnterpriseResourcePlanningSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Enterprise Resource Planning Software"@en .
 
 :SapR3BusinessProcessControlSystemSoftware
@@ -5622,7 +5622,7 @@
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     :operatingSystem dbr:Debian, dbr:MacOS, dbr:Ubuntu ;
-    :organizationalUnit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
+    :ouOffersOuCit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/senaite> ;
     :softwareProductComponent :BikaLims ;
@@ -5633,12 +5633,12 @@
 
 :SenaiteAppEnterpriseLaboratorySystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Enterprise Laboratory System"@en .
 
 :SenaiteAppLaboratoryInformationManagementSystem
     :astCitClassifiedAs :BbLaboratoryInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Laboratory Information Management System (LIMS)"@en .
 
 :SenaiteFeatAddAnalyses
@@ -5823,11 +5823,11 @@
 
 :SoarianAppEnterpriseRevenueCycleManagementSoftware
     :astCitClassifiedAs :BbEnterpriseResourcePlanningSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Enterprise Revenue Cycle Management software"@en .
 
 :SoarianAppFinancialsSystem
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Financials System"@en .
 
 :SysmexXs1000iHaematologyAnalyser
@@ -5839,7 +5839,7 @@
 
 :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser
     :astCitClassifiedAs :WhoDhiLaboratoryAndDiagnosticsInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Haematology Analyser"@en .
 
 :SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults
@@ -5851,7 +5851,7 @@
     rdfs:label "read bar code label"@en .
 
 :TeleDicomAppSysTeleconsultationSystem
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Teleconsultation system"@en .
 
 :TeleDicom
@@ -5895,7 +5895,7 @@
 
 :TheriakAppSysCpoe
     :astCitClassifiedAs :BbDecisionSupportSystem, :BbProviderOrPhysicianOrderEntrySystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "CPOE inkl. CDSS"@en .
 
 :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert
@@ -5951,11 +5951,11 @@
 
 :WorldVistAdVistaAppHis
     :astCitClassifiedAs :BbClinicalInformationSystem ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Health Information System (HIS)"@en .
 
 :WorldVistaAppEhr
     :astCitClassifiedAs :BbElectronicPatientRecordSystem, :WhoDhiElectronicMedicalRecord ;
-    a :ApplicationSystemCitation ;
+    a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic health record (EHR)"@en .
 

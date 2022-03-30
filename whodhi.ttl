@@ -14,7 +14,7 @@
 hito:WhoDhi1-0
     a hito:Classification ;
     rdfs:label "WHO Classification of Digital Health Interventions v1.0"@en ;
-    rdfs:member hito:WhoDhiClientFeatureCatalogue, hito:WhoDhiDataServiceFeatureCatalogue, hito:WhoDhiHealthSystemManagerFeatureCatalogue, hito:WhoDhiHealthSystemManagerFunctionCatalogue, hito:WhoDhiHealthcareProviderFeatureCatalogue, hito:WhoDhiHealthcareProviderFunctionCatalogue, hito:WhoDhiSystemCategoryApplicationSystemCatalogue .
+    rdfs:member hito:WhoDhiClientFeatureCatalogue, hito:WhoDhiDataServiceFeatureCatalogue, hito:WhoDhiHealthSystemManagerFeatureCatalogue, hito:WhoDhiHealthSystemManagerFunctionCatalogue, hito:WhoDhiHealthcareProviderFeatureCatalogue, hito:WhoDhiHealthcareProviderFunctionCatalogue, hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue .
 
 hito:WhoDhiAccessByClientToOwnMedicalRecords
     hito:fClaFrom hito:WhoDhiClientFeatureCatalogue ;
@@ -65,9 +65,9 @@ hito:WhoDhiCaptureFromDigitalDevices
     skos:altLabel "diagnostic accessories added to digital devices"@en, "point of care diagnostics"@en .
 
 hito:WhoDhiCensusPopulationInformationDataWarehouse
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "1" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Census, population information & data warehouse"@en .
 
 hito:WhoDhiCertifyBirthEvent
@@ -101,9 +101,9 @@ hito:WhoDhiCivilRegistrationAndVitalStatistic
     rdfs:label "Civil Registration and Vital Statistic"@en .
 
 hito:WhoDhiCivilRegistrationAndVitalStatistics
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "2" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Civil registration and vital statistics"@en .
 
 hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality
@@ -115,15 +115,15 @@ hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality
     skos:altLabel "ICD coding"@en, "clinical coding for reporting and insurance"@en, "mapping local terminology, codes, and formats"@en, "recording cause of death"@en .
 
 hito:WhoDhiClientApplications
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "3" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Client applications"@en .
 
 hito:WhoDhiClientCommunicationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "4" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Client communication system"@en .
 
 hito:WhoDhiClientFeatureCatalogue
@@ -169,9 +169,9 @@ hito:WhoDhiClientToClientCommunication
     rdfs:label "Client to client communication"@en .
 
 hito:WhoDhiClinicalTerminologyAndClassifications
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "5" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Clinical terminology and classifications"@en .
 
 hito:WhoDhiCommunicationAndPerformanceFeedbackToHealthcareProviders
@@ -190,9 +190,9 @@ hito:WhoDhiCommunicationFromHealthcareProvidersToSupervisor
     rdfs:label "Communication from healthcare provider to supervisor"@en .
 
 hito:WhoDhiCommunitybasedInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "6" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Community-based information system"@en .
 
 hito:WhoDhiConsultationsBetweenRemoteClientAndHealthcareProvider
@@ -250,9 +250,9 @@ hito:WhoDhiDataExchangeAndInteroperability
     rdfs:label "Data exchange and interoperability    "@en .
 
 hito:WhoDhiDataInterchangeInteroperabilityAndAccessibility
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "7" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Data interchange interoperability and accessibility"@en .
 
 hito:WhoDhiDataServiceFeatureCatalogue
@@ -278,15 +278,15 @@ hito:WhoDhiDataSynthesisAndVisualization
     skos:altLabel "business intelligence"@en, "presentations of data"@en, "report generation"@en, "reporting dashboards"@en .
 
 hito:WhoDhiElectronicMedicalRecord
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "8" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Electronic medical record"@en .
 
 hito:WhoDhiEmergencyResponseSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "9" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Emergency response system"@en .
 
 hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan
@@ -298,9 +298,9 @@ hito:WhoDhiEnrolClientForHealthServicesclinicalCarePlan
     skos:altLabel "register client/patient for health services"@en .
 
 hito:WhoDhiEnvironmentalMonitoringSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "10" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Environmental monitoring system"@en .
 
 hito:WhoDhiEquipmentAndAssetManagement
@@ -318,21 +318,21 @@ hito:WhoDhiFacilityManagement
     rdfs:label "Facility management"@en .
 
 hito:WhoDhiFacilityManagementInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "11" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Facility management information system"@en .
 
 hito:WhoDhiGeographicInformationSystemGis
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "12" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Geographic information system (GIS)"@en .
 
 hito:WhoDhiHealthFinanceAndInsuranceInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "13" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Health finance and insurance information system"@en .
 
 hito:WhoDhiHealthFinancing
@@ -343,9 +343,9 @@ hito:WhoDhiHealthFinancing
     rdfs:label "Health financing"@en .
 
 hito:WhoDhiHealthManagementInformationSystemHmis
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "14" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Health management information system (HMIS)"@en .
 
 hito:WhoDhiHealthSystemManagerFeatureCatalogue
@@ -401,9 +401,9 @@ hito:WhoDhiHealthcareProviderTraining
     rdfs:label "Healthcare provider training"@en .
 
 hito:WhoDhiHumanResourceInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "15" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Human resource information system"@en .
 
 hito:WhoDhiHumanResourceManagement
@@ -414,9 +414,9 @@ hito:WhoDhiHumanResourceManagement
     rdfs:label "Human resource management"@en .
 
 hito:WhoDhiIdentificationRegistriesAndDirectories
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "16" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Identification registries and directories"@en .
 
 hito:WhoDhiIdentifyClientsInNeedOfServices
@@ -428,9 +428,9 @@ hito:WhoDhiIdentifyClientsInNeedOfServices
     skos:altLabel "automated scheduling of client’s health appointments"@en .
 
 hito:WhoDhiKnowledgeManagementSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "17" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Knowledge management system"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement
@@ -441,15 +441,15 @@ hito:WhoDhiLaboratoryAndDiagnosticsImagingManagement
     rdfs:label "Laboratory and Diagnostics Imaging Management"@en .
 
 hito:WhoDhiLaboratoryAndDiagnosticsInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "18" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Laboratory and diagnostics information system"@en .
 
 hito:WhoDhiLearningAndTrainingSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "19" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Learning and training system"@en .
 
 hito:WhoDhiListHealthFacilitiesAndRelatedInformation
@@ -476,9 +476,9 @@ hito:WhoDhiLocationMapping
     rdfs:label "Location mapping"@en .
 
 hito:WhoDhiLogisticsManagementInformationSystemLmis
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "20" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Logistics management information system (LMIS)"@en .
 
 hito:WhoDhiLongitudinalTrackingOfClientsHealthStatusAndServices
@@ -696,9 +696,9 @@ hito:WhoDhiPersonalHealthTracking
     rdfs:label "Personal health tracking"@en .
 
 hito:WhoDhiPharmacyInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "21" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Pharmacy information system"@en .
 
 hito:WhoDhiPrescriptionAndMedicationManagement
@@ -733,9 +733,9 @@ hito:WhoDhiProvideTrainingContentToHealthcareProviders
     skos:altLabel "eLearning"@en, "educational videos, multimedia learning and access to clinical guidance"@en, "mLearning"@en, "training reinforcement and refreshers"@en, "virtual learning"@en .
 
 hito:WhoDhiPublicHealthAndDiseaseSurveillanceSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "22" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Public health and disease surveillance system"@en .
 
 hito:WhoDhiPublicHealthEventNotification
@@ -833,9 +833,9 @@ hito:WhoDhiReportingOfPublicHealthEventsByClient
     skos:altLabel "client reporting"@en, "disease notification"@en, "surveillance notification"@en .
 
 hito:WhoDhiResearchInformationSystem
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "23" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Research information system"@en .
 
 hito:WhoDhiRoutineHealthIndicatorDataCollectionAndManagement
@@ -871,9 +871,9 @@ hito:WhoDhiSelfMonitoringOfHealthOrDiagnosticDataByClient
     skos:altLabel "client’s health data is collected based on a machine a client uses on their own"@en, "personal health monitoring"@en, "self-care"@en, "self-monitoring"@en, "self-tracking"@en, "sensors and wearables for personal health monitoring"@en .
 
 hito:WhoDhiSharedHealthRecordAndHealthInformationRespositories
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "24" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Shared Health Record and health information repositories"@en .
 
 hito:WhoDhiSupplyChainManagement
@@ -883,8 +883,8 @@ hito:WhoDhiSupplyChainManagement
     rdfs:comment "Digital approaches for monitoring and reporting stock levels, consumption and distribution of medical commodities. This can include the use of communication systems (e.g. SMS) and data dashboards to manage and report on supply levels of medical commodities.    "@en ;
     rdfs:label "Supply chain management"@en .
 
-hito:WhoDhiSystemCategoryApplicationSystemCatalogue
-    a hito:ApplicationSystemCatalogue ;
+hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue
+    a hito:ApplicationSystemTypeCatalogue ;
     rdfs:comment "Section 'System Categories' describing Application Systems in the WHO Classification of Digital Health Interventions v1.0"@en ;
     rdfs:label "System Categories"@en ;
     rdfs:seeAlso <https://apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf>, <https://www.who.int/reproductivehealth/publications/mhealth/WHO_Classifications_Poster.pdf> .
@@ -904,9 +904,9 @@ hito:WhoDhiTelemedicine
     rdfs:label "Telemedicine"@en .
 
 hito:WhoDhiTelemedicineCategory
-    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemCatalogue ;
+    hito:astClaFrom hito:WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
     hito:internalId "25" ;
-    a hito:ApplicationSystemClassified ;
+    a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Telemedicine Category"@en .
 
 hito:WhoDhiTrackAndManageInsuranceReimbursement
