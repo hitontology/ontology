@@ -166,6 +166,7 @@
 :AbbottIStat
     :spIsOfAstCit :AbbottAppBloodAnalysisSystem ;
     :spOffersFCit :AbbotIStatFeatureCompleteTestResults, :AbbotIStatFeatureReadBarCodeLabel ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Abbott i-Stat"@en .
@@ -173,6 +174,7 @@
 :AgfaPacsImpax
     :spIsOfAstCit :AgfaPacsImpaxAppPacs, :AgfaPacsImpaxAppRisPacsReporting ;
     :spOffersFCit :AgfaPacsImpaxFeatureBookingOfExaminations, :AgfaPacsImpaxFeaturePatientRegistration, :AgfaPacsImpaxFeatureSpeechRecognition ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa PACS IMPAX"@en .
@@ -203,6 +205,7 @@
 :AgfaRisElefante
     :spIsOfAstCit :AgfaRisElefanteAppRis ;
     :spOffersFCit :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations, :AgfaRisElefanteFeatureBookingOfExaminations, :AgfaRisElefanteFeaturePatientRegistration, :AgfaRisElefanteFeatureSpeechRecognition ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa RIS Elefante"@en .
@@ -477,6 +480,7 @@
     :homepage <https://meds.better.care> ;
     :interoperability :HL7_FHIR, :OpenEHR, :SNOMED_CT ;
     :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000008> ;
     a :SoftwareProduct ;
     rdfs:comment "Better Meds (formerly OPENeP) is an electronic prescribing and medication administration solution."@en ;
     rdfs:label "BetterMeds"@en .
@@ -889,6 +893,7 @@
 :CernerFirstNet
     :spIsOfAstCit :FirstNetAppEmergencyMedicineInformationSystem ;
     :spOffersFCit :CernerFirstNetFeatureCreationOfDataRelationToTriage, :CernerFirstNetFeatureDischargeSummaries, :CernerFirstNetFeatureMandatoryReporting, :CernerFirstNetPatientManagementPlans ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner First Net"@en .
@@ -916,6 +921,7 @@
 :CernerMilleniumPowerOrders
     :spIsOfAstCit :CernerMilleniumPowerOrdersAppCPOE ;
     :spOffersFCit :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Millenium Power Orders"@en .
@@ -938,6 +944,7 @@
 :CernerSoarianCpoePlatform
     :spIsOfAstCit :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
     :spOffersFCit :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet, :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Soarian CPOE platform"@en .
@@ -957,6 +964,7 @@
     :client :Mobile, :Native ;
     :spSupportsEfCit :Cis1FuncAccounting, :Cis1FuncControlling, :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FuncKnowledgeManagement, :Cis1FuncLogistics, :Cis1FuncManageVariousClinicalAndDiagnosticResults, :Cis1FuncMedicationOrderingAndMedicationDocumentation, :Cis1FuncNursingDocumentation, :Cis1FuncQualityAssurance, :Cis1FuncScheduling, :Cis1FuncServiceRecording, :Cis1FuncSurveillanceOfInfectiousDiseases, :Cis1FuncVariousTypesOfBilling, :Cis1FuncWardOrganization, :CisFuncTriage ;
     :spOffersFCit :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :Cis1FeatSupportOfNursingDocumentation, :Cis1FeatSupportOfQualityAssurance, :Cis1FeatSupportOfTriage, :Cis1FeatSupportOfVariousTypesOfBilling, :Cis1FeatSupportOfWardOrganization, :Cis1FeatSupportSurveillanceOfInfectiousDiseases, :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CisFeatSupportOfServiceRecording ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical information system (integrated EHR system) Dummy 1"@en ;
     rdfs:label "Commercial CIS1"@en .
@@ -1081,6 +1089,7 @@
     :client :Mobile, :Native ;
     :spSupportsEfCit :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
     :spOffersFCit :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, :Cis2FeatSupportForTheAmbulance, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical Information System Integrated EHR system) Dummy 2"@en ;
     rdfs:label "Commercial CIS2"@en .
@@ -1203,6 +1212,7 @@
 :CscMedChart
     :spIsOfAstCit :CscMedChartAppMedicationManagementSystem ;
     :spOffersFCit :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists, :CscMedChartFeaturePrescribeLonghand ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "CSC Med Chart"@en .
@@ -1665,6 +1675,7 @@
 :EChasqui
     :spIsOfAstCit :EChasquiLaboratoryInformationSystem ;
     :spOffersFCit :EChasquiEmailNotificationOfNewResults, :EChasquiFeatReportsOnTestsPerformed, :EChasquiFeatureConsolidatedListOfResultsForJurisdiction, :EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample, :EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed, :EChasquiFeatureToolsForQualityControl, :EChasquiFeatureUserDirectoryToControlAnyAccess, :EChasquiFeatureWarningsForDelayedReportingOfResults ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Chasqui"@en .
@@ -1717,6 +1728,7 @@
 :EDoc
     :spIsOfAstCit :EDocAppDigitalFilingSystem, :EDocAppDocumentManagementSoftware ;
     :spOffersFCit :EDocFeatureCapturingDataForAllPatientVisits ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Doc"@en .
@@ -1739,6 +1751,7 @@
 :EclipsysContinuum2000Cds
     :spIsOfAstCit :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem ;
     :spOffersFCit :EclipsysContinuum2000CdsFeatAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Eclipsys Continuum 2000 CDS"@en .
@@ -2064,6 +2077,7 @@
 :GePatchspecdPacs
     :spIsOfAstCit :GePatchspecdAppSysPacs ;
     :spOffersFCit :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "GE Patchspecd PACS"@en .
@@ -2597,6 +2611,7 @@
 :HnaMillenium
     :spIsOfAstCit :HnaMilleniumAppPharmacyManagementSystem ;
     :spOffersFCit :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPredefinedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "HNA Millenium"@en .
@@ -2921,6 +2936,7 @@
     rdfs:label "Technician"@en .
 
 :Medicator
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :MedicatorAppSysCpoe ;
     :spOffersFCit :MedicatorFeatureMedicationControlBasedOnNationalDrugDatabase, :MedicatorFeatureMedicationSelectionFromMenu, :MedicatorFeatureSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :MedicatorFeatureSafetyAlertsInCaseOfDrugDrugInteractions, :MedicatorFeatureSafetyAlertsInRealTime, :MedicatorPossibilityToContinuePrescribingWhileSafetyAlert, :MedicatorSafetyAlertsInCaseOfAllergies, :MedicatorSafetyAlertsInCaseOfOverdosing, :MedicatorStandardizedPrescriptionsAndMedicationProtocols ;
     :spUsedByUserCit :HospitalRunUserDoctor ;
@@ -3137,6 +3153,7 @@
 :Metavision
     :spIsOfAstCit :MetavisionAppClinicalInformationSystem ;
     :spOffersFCit :MetavisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Metavision"@en .
@@ -3178,6 +3195,7 @@
 
 :Occhiolino
     :spIsOfAstCit :OcchiolinoAppLaboratoryInformationManagementSystem ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     a :SoftwareProduct ;
     rdfs:label "Occhiolino"@en .
 
@@ -3214,6 +3232,7 @@
     :homepage <https://sourceforge.net/projects/open-clinic/> ;
     :interoperability :DICOM, :HL7, :HL7_FHIR, :ICD10, :ICPC2, :LOINC, :SNOMED_CT ;
     :language dbr:Dutch_language, dbr:English_language, dbr:French_language, dbr:Portuguese_language, dbr:Spanish_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000071> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://sourceforge.net/projects/open-clinic/> ;
     a :SoftwareProduct ;
@@ -4943,6 +4962,7 @@
     :spOffersFCit :Pacs1Feat3DAnd4DFunctionality, :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines, :Pacs1FeatApprovalConcept, :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities, :Pacs1FeatDataArchivingAndManagemnt, :Pacs1FeatDirectIntegrationInClinicalInformationSystem, :Pacs1FeatDistributionOfImages, :Pacs1FeatHangingProtocols, :Pacs1FeatMovingCTImages, :Pacs1FeatMulticenterInstallationWithCentralDataArchiving, :Pacs1FeatOnlineAndOfflineArchiveManagement, :Pacs1FeatProtocolOfAllTasksTakenByUsers, :Pacs1FeatQueryingOverVariousArchives, :Pacs1FeatRetrievalOfVariousArchives, :Pacs1FeatSnapshots, :Pacs1FeatStandardConformityForInterfacesToModalities, :Pacs1FeatStatisticalAnalyses, :Pacs1FeatVariousMeasurementAndAnalysesTools, :Pacs1FeatWorkLists, :Pacs1LosslessImageDataCompression ;
     :interoperability :DICOM, :HL7, :IHE ;
     :language dbr:French_language, dbr:German_language, dbr:Spanish_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Picture Archiving and Communication System Dummy 1"@en ;
     rdfs:label "CommercialPACS1"@en .
@@ -5053,6 +5073,7 @@
     :spOffersFCit :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     a :SoftwareProduct ;
     rdfs:comment "Picture Archiving and Communication System Dummy 2"@en ;
@@ -5111,6 +5132,7 @@
 :Pik
     :spIsOfAstCit :PikAppPflegeinformationsKommunikationssystem ;
     :spOffersFCit :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning, :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry, :PikFeatureCreationOfNursingCarePlans, :PikFeatureSupportingAllPhasesOfTheNursingProcess, :PikFeatureWardManagement, :PikFeatureWritingOfNursingLetters, :PikNursingDocumentationForms ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "PIK"@en .
@@ -5302,6 +5324,7 @@
     :spOffersFCit :Ris1FeatAccessToExaminationComments, :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatCreationOfCustomizedReports, :Ris1FeatElectronicRecordingOfResultsAndExaminations, :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting, :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTrackAllOrder, :Ris1FeatTrackMaterialAndFilmConsumption, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatWYSIWYGEditorOrSimpleVies, :Ris1InterfaceToPrinterAndPrinterView ;
     :interoperability :DICOM, :GDT, :HL7 ;
     :language dbr:English_language, dbr:German_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Linux, dbr:Macintosh, dbr:Microsoft_Windows, dbr:Unix ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, <http://dbpedia.org/resource/C_Sharp_(programming_language)> ;
     a :SoftwareProduct ;
@@ -5510,6 +5533,7 @@
     :spOffersFCit :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FeatCoordinationOfRISAndPACS, :RIS2FeatCreationOfCustomizedReports, :RIS2FeatElectronicRecordingOfResultsAndExaminations, :RIS2FeatElectronicSignature, :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting, :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FeatInterfaceToPrinterAndPrinterView, :RIS2FeatPhoneIntegration, :RIS2FeatRemoteCreationOfResultsLetters, :RIS2FeatRetrieveResults, :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering, :RIS2FeatSpecialSettingsForImageView, :RIS2FeatTextProcessing, :RIS2FeatTrackAllOrder, :RIS2FeatTrackMaterialAndFilmConsumption, :RIS2FeatTransferOfOrderData, :RIS2FeatVoiceRecognition, :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
     :interoperability :DICOM, :HL7 ;
     :language dbr:German_language ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Windows_7, dbr:Windows_Vista ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     a :SoftwareProduct ;
@@ -5598,6 +5622,7 @@
 :SapR3BusinessProcessControlSystemSoftware
     :spIsOfAstCit :SapR3AppBusinessProcessControlSystemSoftware, :SapR3AppEnterpriseResourcePlanningSoftware ;
     :spOffersFCit :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView, :SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "SAP R3 Business Process Control System software"@en .
@@ -5833,6 +5858,7 @@
 :SysmexXs1000iHaematologyAnalyser
     :spIsOfAstCit :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser ;
     :spOffersFCit :SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults, :SysmexXs1000iHaematologyAnalyserFeatReadBarCodeLabel ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Sysmex XS 1000i haematology analyser"@en .
@@ -5857,6 +5883,7 @@
 :TeleDicom
     :spIsOfAstCit :TeleDicomAppSysTeleconsultationSystem ;
     :spOffersFCit :TeleDicomFeatRealTimeVoiceCommunication, :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters, :TeleDicomFeatureOfflineMode, :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools, :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Tele DICOM"@en .
@@ -5889,6 +5916,7 @@
 :Theriak
     :spIsOfAstCit :TheriakAppSysCpoe;
     :spOffersFCit :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Theriak"@en .
@@ -5945,6 +5973,7 @@
 :WorldVistA
     :spIsOfAstCit :WorldVistAdVistaAppHis, :WorldVistaAppEhr ;
     :homepage <https://worldvista.org> ;
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     a :SoftwareProduct ;
     rdfs:comment "public domain electronic health record"@en ;
     rdfs:label "WorldVistA"@en .
