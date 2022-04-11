@@ -1,4 +1,3 @@
-@base <http://hitontology.eu/ontology/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix : <http://hitontology.eu/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -21,16 +20,16 @@
     rdfs:label "modeling tool"@en .
 
 <http://hitontology.eu/ontology/3LGM2Baukasten>
-    :spIsOfAstCit <http://hitontology.eu/ontology/3LGM2AppSysModelingTool> ;
     :client :Native ;
-    :spSupportsEfCit <http://hitontology.eu/ontology/3LGM2FuncAssessingQuality>, <http://hitontology.eu/ontology/3LGM2FuncBeschreibungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncBewertungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncInformationManagement>, <http://hitontology.eu/ontology/3LGM2FuncPlanungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncstrategicInformationManagementPlanning> ;
-    :spOffersFCit <http://hitontology.eu/ontology/3LGM2FeatAnalysisFunctions>, <http://hitontology.eu/ontology/3LGM2FeatAnalyzingModels>, <http://hitontology.eu/ontology/3LGM2FeatAuswertungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatBeispielmodelle>, <http://hitontology.eu/ontology/3LGM2FeatDefinitionSprachkonzepteBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatDescribingCommunicationPaths>, <http://hitontology.eu/ontology/3LGM2FeatDescribingInformationProcesses>, <http://hitontology.eu/ontology/3LGM2FeatErstellungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatExtractSubmodels>, <http://hitontology.eu/ontology/3LGM2FeatFachlicheEbeneBeschreibungAufgaben>, <http://hitontology.eu/ontology/3LGM2FeatInterEbenenBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatLogischeWerkzeugebeneAnwendungsbausteine>, <http://hitontology.eu/ontology/3LGM2FeatMultilayerView>, <http://hitontology.eu/ontology/3LGM2FeatPhysischeWerkzeugebeneHardwareKomponenten>, <http://hitontology.eu/ontology/3LGM2FeatReferenzmodelle>, <http://hitontology.eu/ontology/3LGM2FeatSwitchingLevelsGranularity> ;
     :homepage <https://www.3lgm2.de> ;
     :interoperability :XML ;
     :language dbr:English_language, dbr:German_language ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
-    :spUsedInOuCit <http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>, <http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>, <http://hitontology.eu/ontology/3LGM2OrgLehre>, <http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    :spIsOfAstCit <http://hitontology.eu/ontology/3LGM2AppSysModelingTool> ;
+    :spOffersFCit <http://hitontology.eu/ontology/3LGM2FeatAnalysisFunctions>, <http://hitontology.eu/ontology/3LGM2FeatAnalyzingModels>, <http://hitontology.eu/ontology/3LGM2FeatAuswertungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatBeispielmodelle>, <http://hitontology.eu/ontology/3LGM2FeatDefinitionSprachkonzepteBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatDescribingCommunicationPaths>, <http://hitontology.eu/ontology/3LGM2FeatDescribingInformationProcesses>, <http://hitontology.eu/ontology/3LGM2FeatErstellungvonModellen>, <http://hitontology.eu/ontology/3LGM2FeatExtractSubmodels>, <http://hitontology.eu/ontology/3LGM2FeatFachlicheEbeneBeschreibungAufgaben>, <http://hitontology.eu/ontology/3LGM2FeatInterEbenenBeziehungen>, <http://hitontology.eu/ontology/3LGM2FeatLogischeWerkzeugebeneAnwendungsbausteine>, <http://hitontology.eu/ontology/3LGM2FeatMultilayerView>, <http://hitontology.eu/ontology/3LGM2FeatPhysischeWerkzeugebeneHardwareKomponenten>, <http://hitontology.eu/ontology/3LGM2FeatReferenzmodelle>, <http://hitontology.eu/ontology/3LGM2FeatSwitchingLevelsGranularity> ;
+    :spSupportsEfCit <http://hitontology.eu/ontology/3LGM2FuncAssessingQuality>, <http://hitontology.eu/ontology/3LGM2FuncBeschreibungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncBewertungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncInformationManagement>, <http://hitontology.eu/ontology/3LGM2FuncPlanungInformationssysteme>, <http://hitontology.eu/ontology/3LGM2FuncstrategicInformationManagementPlanning> ;
+    :spUsedInOuCit <http://hitontology.eu/ontology/3LGM2OrgBeratungsunternehmen>, <http://hitontology.eu/ontology/3LGM2OrgKrankenhaus>, <http://hitontology.eu/ontology/3LGM2OrgLehre>, <http://hitontology.eu/ontology/3LGM2OrgSoftwareHersteller> ;
     a :SoftwareProduct ;
     rdfs:comment "Software zur Unterstützung des strategischen Informationsmanagements bei der Modellierung von Informationssystemen im Gesundheitswesen"@en ;
     rdfs:label "3LGM2 Baukasten"@en .
@@ -76,7 +75,7 @@
 
 <http://hitontology.eu/ontology/3LGM2FeatFachlicheEbeneBeschreibungAufgaben>
     a :FeatureCitation ;
-    rdfs:label "Fachliche Ebene für die Beschreibung der Aufgaben "@en .
+    rdfs:label "Fachliche Ebene für die Beschreibung der Aufgaben"@en .
 
 <http://hitontology.eu/ontology/3LGM2FeatInterEbenenBeziehungen>
     a :FeatureCitation ;
@@ -164,17 +163,17 @@
     rdfs:label "Blood Analysis System"@en .
 
 :AbbottIStat
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :AbbottAppBloodAnalysisSystem ;
     :spOffersFCit :AbbotIStatFeatureCompleteTestResults, :AbbotIStatFeatureReadBarCodeLabel ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Abbott i-Stat"@en .
 
 :AgfaPacsImpax
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :AgfaPacsImpaxAppPacs, :AgfaPacsImpaxAppRisPacsReporting ;
     :spOffersFCit :AgfaPacsImpaxFeatureBookingOfExaminations, :AgfaPacsImpaxFeaturePatientRegistration, :AgfaPacsImpaxFeatureSpeechRecognition ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa PACS IMPAX"@en .
@@ -203,9 +202,9 @@
     rdfs:label "speech recognition"@en .
 
 :AgfaRisElefante
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :AgfaRisElefanteAppRis ;
     :spOffersFCit :AgfaRisElefanteFeatureAutomaticAndPaperlessOperations, :AgfaRisElefanteFeatureBookingOfExaminations, :AgfaRisElefanteFeaturePatientRegistration, :AgfaRisElefanteFeatureSpeechRecognition ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Agfa RIS Elefante"@en .
@@ -233,17 +232,17 @@
     rdfs:label "speech recognition"@en .
 
 :Bahmni
-    :spIsOfAstCit :BahmniAppHospitalSystem ;
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
-    :spSupportsEfCit :BahmniFuncBilling, :BahmniFuncClinicalServices, :BahmniFuncInpatientManagement, :BahmniFuncLaboratory, :BahmniFuncPatientRegistration, :BahmniFuncReporting, :BahmniFuncStockManagement ;
-    :spOffersFCit :BahmniFeatCaptureClinicalRecords, :BahmniFeatCaptureDrugPrescriptions, :BahmniFeatClinicalReporting, :BahmniFeatCreateDiseaseSpecificForms, :BahmniFeatCreateGeneralForms, :BahmniFeatDisplayLaboratoryWorkload, :BahmniFeatMaintainAccurateRecords, :BahmniFeatMaintainClinicalRecords, :BahmniFeatManageAccurateRecords, :BahmniFeatManagePatientOrders, :BahmniFeatManagePatientsAdmissions, :BahmniFeatManageSamples, :BahmniFeatManageStock, :BahmniFeatManageTests, :BahmniFeatMonitorStockLevels, :BahmniFeatMoveStock, :BahmniFeatOrderInvestigation, :BahmniFeatOrderLab, :BahmniFeatOrderRadiology, :BahmniFeatPerformBedAssignments, :BahmniFeatPerformOperationalReporting, :BahmniFeatPrintPatientId, :BahmniFeatPublicHealthReporting, :BahmniFeatReorderStock, :BahmniFeatSearchPatients, :BahmniFeatSendSamplesForReferrals, :BahmniFeatTrackStock, :BahmniFeatTrackWardOccupancy, :BahmniFeatUseDrugPrescriptionTemplates ;
     :homepage <https://www.bahmni.org/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:CentOS ;
-    :spUsedInOuCit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    :spIsOfAstCit :BahmniAppHospitalSystem ;
+    :spOffersFCit :BahmniFeatCaptureClinicalRecords, :BahmniFeatCaptureDrugPrescriptions, :BahmniFeatClinicalReporting, :BahmniFeatCreateDiseaseSpecificForms, :BahmniFeatCreateGeneralForms, :BahmniFeatDisplayLaboratoryWorkload, :BahmniFeatMaintainAccurateRecords, :BahmniFeatMaintainClinicalRecords, :BahmniFeatManageAccurateRecords, :BahmniFeatManagePatientOrders, :BahmniFeatManagePatientsAdmissions, :BahmniFeatManageSamples, :BahmniFeatManageStock, :BahmniFeatManageTests, :BahmniFeatMonitorStockLevels, :BahmniFeatMoveStock, :BahmniFeatOrderInvestigation, :BahmniFeatOrderLab, :BahmniFeatOrderRadiology, :BahmniFeatPerformBedAssignments, :BahmniFeatPerformOperationalReporting, :BahmniFeatPrintPatientId, :BahmniFeatPublicHealthReporting, :BahmniFeatReorderStock, :BahmniFeatSearchPatients, :BahmniFeatSendSamplesForReferrals, :BahmniFeatTrackStock, :BahmniFeatTrackWardOccupancy, :BahmniFeatUseDrugPrescriptionTemplates ;
+    :spSupportsEfCit :BahmniFuncBilling, :BahmniFuncClinicalServices, :BahmniFuncInpatientManagement, :BahmniFuncLaboratory, :BahmniFuncPatientRegistration, :BahmniFuncReporting, :BahmniFuncStockManagement ;
+    :spUsedInOuCit :BahmniEmergency, :BahmniGynaecology, :BahmniIntakeOutput, :BahmniSurgery ;
     dcterms:source <https://www.medfloss.org/node/1103> ;
     a :SoftwareProduct ;
     rdfs:comment "easy-to-use EMR & hospital system"@en ;
@@ -473,14 +472,14 @@
     rdfs:label "surgery"@en .
 
 :BetterMeds
-    :spIsOfAstCit :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution ;
     :client :Native ;
-    :spSupportsEfCit :BetterMedsFeatMedicationManagement ;
-    :spOffersFCit :BetterMedsFeatClinicalPharmacistReview, :BetterMedsFeatCreatesAMedicationListOnAdmission, :BetterMedsFeatCreatesDailyMedicationAdministrationPlans, :BetterMedsFeatDischargeSummary, :BetterMedsFeatEnablesBarcodeScanning, :BetterMedsFeatEquippedWithMedicationDischargePrescription, :BetterMedsFeatGeneratesAutomatedTasks, :BetterMedsFeatGivesRealtimeWarningsWithADecisionsupportSystem, :BetterMedsFeatIncreasedSafetyWithAllergyrelatedWarnings, :BetterMedsFeatInpatientPrescribing, :BetterMedsFeatMedicationAdministrationRecord, :BetterMedsFeatMedicationReconciliation, :BetterMedsFeatOrderSetsAvailableOnAHospitalwideLevel, :BetterMedsFeatOrderSetsCustomisable, :BetterMedsFeatOutpatientPrescribing, :BetterMedsFeatPediatricPrescriptions, :BetterMedsFeatPharmacyIntegration, :BetterMedsFeatProvidesATimelineForUpcomingMedicationAdministrations, :BetterMedsFeatProvidesAnAuditLogOfPrescriptionsAndChanges, :BetterMedsFeatReconcilesThePrescriptionListUponDischarge, :BetterMedsFeatShowsAClearOverviewOfMedicationsAtEveryStep, :BetterMedsFeatSimpleAndComplexIVPrescriptions, :BetterMedsFeatSupportsMedicationTitration, :BetterMedsFeatWitnessingOption, :BetterMedsFeatcapturesPrescriptionsFromDifferentSources ;
     :homepage <https://meds.better.care> ;
     :interoperability :HL7_FHIR, :OpenEHR, :SNOMED_CT ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000008> ;
+    :spIsOfAstCit :BetterMedsAppAElectronicPrescribingAndMedicationAdministrationSolution ;
+    :spOffersFCit :BetterMedsFeatClinicalPharmacistReview, :BetterMedsFeatCreatesAMedicationListOnAdmission, :BetterMedsFeatCreatesDailyMedicationAdministrationPlans, :BetterMedsFeatDischargeSummary, :BetterMedsFeatEnablesBarcodeScanning, :BetterMedsFeatEquippedWithMedicationDischargePrescription, :BetterMedsFeatGeneratesAutomatedTasks, :BetterMedsFeatGivesRealtimeWarningsWithADecisionsupportSystem, :BetterMedsFeatIncreasedSafetyWithAllergyrelatedWarnings, :BetterMedsFeatInpatientPrescribing, :BetterMedsFeatMedicationAdministrationRecord, :BetterMedsFeatMedicationReconciliation, :BetterMedsFeatOrderSetsAvailableOnAHospitalwideLevel, :BetterMedsFeatOrderSetsCustomisable, :BetterMedsFeatOutpatientPrescribing, :BetterMedsFeatPediatricPrescriptions, :BetterMedsFeatPharmacyIntegration, :BetterMedsFeatProvidesATimelineForUpcomingMedicationAdministrations, :BetterMedsFeatProvidesAnAuditLogOfPrescriptionsAndChanges, :BetterMedsFeatReconcilesThePrescriptionListUponDischarge, :BetterMedsFeatShowsAClearOverviewOfMedicationsAtEveryStep, :BetterMedsFeatSimpleAndComplexIVPrescriptions, :BetterMedsFeatSupportsMedicationTitration, :BetterMedsFeatWitnessingOption, :BetterMedsFeatcapturesPrescriptionsFromDifferentSources ;
+    :spSupportsEfCit :BetterMedsFeatMedicationManagement ;
     a :SoftwareProduct ;
     rdfs:comment "Better Meds (formerly OPENeP) is an electronic prescribing and medication administration solution."@en ;
     rdfs:label "BetterMeds"@en .
@@ -596,17 +595,17 @@
     rdfs:label "captures prescriptions from different sources"@en .
 
 :BikaLims
-    :spIsOfAstCit :BikaLimsAppLaboratoryInformationManagementSystem ;
     :client :WebBased ;
-    :spSupportsEfCit :BikaLimsFuncAnalysis, :BikaLimsFuncBilling, :BikaLimsFuncManagingClients, :BikaLimsFuncQualityControl ;
-    :spOffersFCit :BikaLimsFeatAlerts, :BikaLimsFeatAliquotManagement, :BikaLimsFeatAnalysisCategories, :BikaLimsFeatAnalysisSpecifications, :BikaLimsFeatAuthorisationMatrix, :BikaLimsFeatBarcodeScanning, :BikaLimsFeatBarcodedStickerTemplates, :BikaLimsFeatBatchSampleImport, :BikaLimsFeatBatching, :BikaLimsFeatBulkImports, :BikaLimsFeatCapturingQcResults, :BikaLimsFeatChainOfCustody, :BikaLimsFeatConfigurableCalculations, :BikaLimsFeatControlCharts, :BikaLimsFeatCorrectiveActionWorkflow, :BikaLimsFeatCreateOrEditACalculation, :BikaLimsFeatCreatingAnalysisServices, :BikaLimsFeatCreatingAndEditingContacts, :BikaLimsFeatCreatingBatchedSamples, :BikaLimsFeatCreatingReferenceSamples, :BikaLimsFeatCreatingUsers, :BikaLimsFeatCreatingWorksheets, :BikaLimsFeatDashboard, :BikaLimsFeatDiscounting, :BikaLimsFeatDisplayPreferences, :BikaLimsFeatEditableTemplatesForAnalysisProfiles, :BikaLimsFeatEditableTemplatesForReferenceSpecifications, :BikaLimsFeatEditableTemplatesForWorksheets, :BikaLimsFeatEfficiencyReports, :BikaLimsFeatEncryption, :BikaLimsFeatErpInterface, :BikaLimsFeatFullAuditTrail, :BikaLimsFeatInstrumentCalibration, :BikaLimsFeatInstrumentConfiguration, :BikaLimsFeatInstrumentMaintenance, :BikaLimsFeatInstrumentResultsImport, :BikaLimsFeatIntelligentIds, :BikaLimsFeatInvoicesExports, :BikaLimsFeatInvoicesPrints, :BikaLimsFeatLabelingSamples, :BikaLimsFeatManagementReports, :BikaLimsFeatPriceListsPerAnalysisOrPanel, :BikaLimsFeatPrioritisation, :BikaLimsFeatReferenceAnalyses, :BikaLimsFeatReferenceDefinitions, :BikaLimsFeatRejectionWorkflow, :BikaLimsFeatRequestingAnalyses, :BikaLimsFeatResultsCapturing, :BikaLimsFeatResultsPublication, :BikaLimsFeatRoleBasedSecurity, :BikaLimsFeatSampleReception, :BikaLimsFeatSampleRegistration, :BikaLimsFeatSampleRejection, :BikaLimsFeatUnitConversion, :BikaLimsFeatUserGroups, :BikaLimsFeatWorksheetsExports, :BikaLimsFuncSampleManagement, :BikaLimsFuncStorage ;
     :homepage <https://www.bikalims.org> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
-    :spUsedInOuCit :BikaLimsOrgLaboratory ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :programmingLibrary :Zope ;
     :repository <https://github.com/bikalims> ;
+    :spIsOfAstCit :BikaLimsAppLaboratoryInformationManagementSystem ;
+    :spOffersFCit :BikaLimsFeatAlerts, :BikaLimsFeatAliquotManagement, :BikaLimsFeatAnalysisCategories, :BikaLimsFeatAnalysisSpecifications, :BikaLimsFeatAuthorisationMatrix, :BikaLimsFeatBarcodeScanning, :BikaLimsFeatBarcodedStickerTemplates, :BikaLimsFeatBatchSampleImport, :BikaLimsFeatBatching, :BikaLimsFeatBulkImports, :BikaLimsFeatCapturingQcResults, :BikaLimsFeatChainOfCustody, :BikaLimsFeatConfigurableCalculations, :BikaLimsFeatControlCharts, :BikaLimsFeatCorrectiveActionWorkflow, :BikaLimsFeatCreateOrEditACalculation, :BikaLimsFeatCreatingAnalysisServices, :BikaLimsFeatCreatingAndEditingContacts, :BikaLimsFeatCreatingBatchedSamples, :BikaLimsFeatCreatingReferenceSamples, :BikaLimsFeatCreatingUsers, :BikaLimsFeatCreatingWorksheets, :BikaLimsFeatDashboard, :BikaLimsFeatDiscounting, :BikaLimsFeatDisplayPreferences, :BikaLimsFeatEditableTemplatesForAnalysisProfiles, :BikaLimsFeatEditableTemplatesForReferenceSpecifications, :BikaLimsFeatEditableTemplatesForWorksheets, :BikaLimsFeatEfficiencyReports, :BikaLimsFeatEncryption, :BikaLimsFeatErpInterface, :BikaLimsFeatFullAuditTrail, :BikaLimsFeatInstrumentCalibration, :BikaLimsFeatInstrumentConfiguration, :BikaLimsFeatInstrumentMaintenance, :BikaLimsFeatInstrumentResultsImport, :BikaLimsFeatIntelligentIds, :BikaLimsFeatInvoicesExports, :BikaLimsFeatInvoicesPrints, :BikaLimsFeatLabelingSamples, :BikaLimsFeatManagementReports, :BikaLimsFeatPriceListsPerAnalysisOrPanel, :BikaLimsFeatPrioritisation, :BikaLimsFeatReferenceAnalyses, :BikaLimsFeatReferenceDefinitions, :BikaLimsFeatRejectionWorkflow, :BikaLimsFeatRequestingAnalyses, :BikaLimsFeatResultsCapturing, :BikaLimsFeatResultsPublication, :BikaLimsFeatRoleBasedSecurity, :BikaLimsFeatSampleReception, :BikaLimsFeatSampleRegistration, :BikaLimsFeatSampleRejection, :BikaLimsFeatUnitConversion, :BikaLimsFeatUserGroups, :BikaLimsFeatWorksheetsExports, :BikaLimsFuncSampleManagement, :BikaLimsFuncStorage ;
+    :spSupportsEfCit :BikaLimsFuncAnalysis, :BikaLimsFuncBilling, :BikaLimsFuncManagingClients, :BikaLimsFuncQualityControl ;
+    :spUsedInOuCit :BikaLimsOrgLaboratory ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source LIMS"@en ;
     rdfs:label "BikaLIMS"@en .
@@ -891,9 +890,9 @@
     rdfs:label "Laboratory"@en .
 
 :CernerFirstNet
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :FirstNetAppEmergencyMedicineInformationSystem ;
     :spOffersFCit :CernerFirstNetFeatureCreationOfDataRelationToTriage, :CernerFirstNetFeatureDischargeSummaries, :CernerFirstNetFeatureMandatoryReporting, :CernerFirstNetPatientManagementPlans ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner First Net"@en .
@@ -919,9 +918,9 @@
     rdfs:label "patient management plans"@en .
 
 :CernerMilleniumPowerOrders
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :CernerMilleniumPowerOrdersAppCPOE ;
     :spOffersFCit :CernerMilleniumPowerOrdersFeatureDropdownMenuOfPredefinedOrderSentencesTriggeredOnDrugSelection, :CernerMilleniumPowerOrdersFeaturePredefinedOrderSentencesWithDetailsOfDrugStrengthDoseAndForm ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Millenium Power Orders"@en .
@@ -942,9 +941,9 @@
     rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
 
 :CernerSoarianCpoePlatform
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :SoarianAppEnterpriseRevenueCycleManagementSoftware, :SoarianAppFinancialsSystem ;
     :spOffersFCit :CernerSoarianCpoePlatformFeatureMedicationSpecificOrderSet, :CernerSoarianCpoePlatformFeatureUnitSpecificOderSet ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Cerner Soarian CPOE platform"@en .
@@ -960,11 +959,11 @@
     rdfs:label "unit-specific oder set"@en .
 
 :Cis1
-    :spIsOfAstCit :CommercialCis1AppSys ;
     :client :Mobile, :Native ;
-    :spSupportsEfCit :Cis1FuncAccounting, :Cis1FuncControlling, :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FuncKnowledgeManagement, :Cis1FuncLogistics, :Cis1FuncManageVariousClinicalAndDiagnosticResults, :Cis1FuncMedicationOrderingAndMedicationDocumentation, :Cis1FuncNursingDocumentation, :Cis1FuncQualityAssurance, :Cis1FuncScheduling, :Cis1FuncServiceRecording, :Cis1FuncSurveillanceOfInfectiousDiseases, :Cis1FuncVariousTypesOfBilling, :Cis1FuncWardOrganization, :CisFuncTriage ;
-    :spOffersFCit :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :Cis1FeatSupportOfNursingDocumentation, :Cis1FeatSupportOfQualityAssurance, :Cis1FeatSupportOfTriage, :Cis1FeatSupportOfVariousTypesOfBilling, :Cis1FeatSupportOfWardOrganization, :Cis1FeatSupportSurveillanceOfInfectiousDiseases, :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CisFeatSupportOfServiceRecording ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
+    :spIsOfAstCit :CommercialCis1AppSys ;
+    :spOffersFCit :Cis1FeatSupportOfIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FeatSupportOfMedicationOrderingAndMedicationDocumentation, :Cis1FeatSupportOfNursingDocumentation, :Cis1FeatSupportOfQualityAssurance, :Cis1FeatSupportOfTriage, :Cis1FeatSupportOfVariousTypesOfBilling, :Cis1FeatSupportOfWardOrganization, :Cis1FeatSupportSurveillanceOfInfectiousDiseases, :Cis1FeatSupportToManagevariousClinicalAndDiagnosticResults, :CisFeatSupportOfServiceRecording ;
+    :spSupportsEfCit :Cis1FuncAccounting, :Cis1FuncControlling, :Cis1FuncIntegratedPatientCentredDocumentationForDifferentDisciplines, :Cis1FuncKnowledgeManagement, :Cis1FuncLogistics, :Cis1FuncManageVariousClinicalAndDiagnosticResults, :Cis1FuncMedicationOrderingAndMedicationDocumentation, :Cis1FuncNursingDocumentation, :Cis1FuncQualityAssurance, :Cis1FuncScheduling, :Cis1FuncServiceRecording, :Cis1FuncSurveillanceOfInfectiousDiseases, :Cis1FuncVariousTypesOfBilling, :Cis1FuncWardOrganization, :CisFuncTriage ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical information system (integrated EHR system) Dummy 1"@en ;
     rdfs:label "Commercial CIS1"@en .
@@ -1085,11 +1084,11 @@
     rdfs:label "Ward organization"@en .
 
 :Cis2
-    :spIsOfAstCit :CommercialCis2AppSys ;
     :client :Mobile, :Native ;
-    :spSupportsEfCit :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
-    :spOffersFCit :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, :Cis2FeatSupportForTheAmbulance, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
+    :spIsOfAstCit :CommercialCis2AppSys ;
+    :spOffersFCit :Cis2FeatSupportForBilling, :Cis2FeatSupportForPatientAdministration, :Cis2FeatSupportForTheAmbulance, :Cis2FeatSupportOfClinicalDocumentation, :Cis2FeatSupportOfDecisionSupport, :Cis2FeatSupportOfMedicationAndOrdering, :Cis2FeatSupportOfNursingDocumentation, :Cis2FeatSupportOfScheduling ;
+    :spSupportsEfCit :Cis2Func, :Cis2FuncAmbulance, :Cis2FuncBilling, :Cis2FuncDecisionSupport, :Cis2FuncMedication, :Cis2FuncPatientAdministration, :Cis2FuncScheduling ;
     a :SoftwareProduct ;
     rdfs:comment "Clinical Information System Integrated EHR system) Dummy 2"@en ;
     rdfs:label "Commercial CIS2"@en .
@@ -1210,9 +1209,9 @@
     rdfs:label "RIS"@en .
 
 :CscMedChart
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :CscMedChartAppMedicationManagementSystem ;
     :spOffersFCit :CscMedChartFeaturePredefinedOrderSentencesAllowForGroupOfRelatedOrdersToBeSelectedWithSingleClick, :CscMedChartFeaturePredefinedOrderSentencesSearchableByCategoryQuickLists, :CscMedChartFeaturePrescribeLonghand ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "CSC Med Chart"@en .
@@ -1237,20 +1236,20 @@
     rdfs:label "prescribe longhand"@en .
 
 :Dcm4Che
-    :spIsOfAstCit :Dcm4CheAppDicomToolkitLibrary, :Dcm4CheAppImageArchive, :Dcm4CheAppImageManager ;
     :client :Native, :WebBased ;
     :databaseSystem :IbmDb2, :MicrosoftSqlServer, :MySql, :OracleDatabase, :PostgreSql ;
-    :spSupportsEfCit :Dcm4CheFuncClinicalImageManagement, :Dcm4CheFuncClinicalObjectManagement, :Dcm4CheFuncRetrieval, :Dcm4CheFuncStorage, :Dcm4CheFuncWorkflow ;
-    :spOffersFCit :Dcm4CheFeatAdtOrmAndOruMessageTypes, :Dcm4CheFeatCompressionOfDicomObject, :Dcm4CheFeatConvertDicomFileToXml, :Dcm4CheFeatDicomGeneralPurposeWorklist, :Dcm4CheFeatDicomHangingProtocols, :Dcm4CheFeatDicomStorageCommitment, :Dcm4CheFeatInstanceAvailabilityNotification, :Dcm4CheFeatIntegratedHl7Server, :Dcm4CheFeatManipulatingHeaderData, :Dcm4CheFeatModalityPerformedProcedureStep, :Dcm4CheFeatModalityWorklist, :Dcm4CheFeatOutputContentToCdMedia, :Dcm4CheFeatQueryArchiveForDicomObjects, :Dcm4CheFeatReadingDicomFiles, :Dcm4CheFeatRetrieveDicomObjects, :Dcm4CheFeatStoreAnyTypeOfDicomObject, :Dcm4CheFeatStudyContentNotification, :Dcm4CheFeatTransformingDicomFiles, :Dcm4CheFeatWebAccessToArchivedContent, :Dcm4CheFeatWritingDicomFiles ;
     :homepage <https://www.dcm4che.org> ;
     :interoperability :DICOM, <http://hitontology.eu/ontology/HL7_V2.x>, :IHE_XDS, :IHE_XDS_I, :WADO ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000003>, <http://www.ebi.ac.uk/swo/license/SWO_1000047>, <http://www.ebi.ac.uk/swo/license/SWO_9000080> ;
     :operatingSystem dbr:IBM_AIX, dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Oracle_Solaris ;
-    :spUsedInOuCit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Smarty ;
     :repository <https://github.com/dcm4che> ;
+    :spIsOfAstCit :Dcm4CheAppDicomToolkitLibrary, :Dcm4CheAppImageArchive, :Dcm4CheAppImageManager ;
+    :spOffersFCit :Dcm4CheFeatAdtOrmAndOruMessageTypes, :Dcm4CheFeatCompressionOfDicomObject, :Dcm4CheFeatConvertDicomFileToXml, :Dcm4CheFeatDicomGeneralPurposeWorklist, :Dcm4CheFeatDicomHangingProtocols, :Dcm4CheFeatDicomStorageCommitment, :Dcm4CheFeatInstanceAvailabilityNotification, :Dcm4CheFeatIntegratedHl7Server, :Dcm4CheFeatManipulatingHeaderData, :Dcm4CheFeatModalityPerformedProcedureStep, :Dcm4CheFeatModalityWorklist, :Dcm4CheFeatOutputContentToCdMedia, :Dcm4CheFeatQueryArchiveForDicomObjects, :Dcm4CheFeatReadingDicomFiles, :Dcm4CheFeatRetrieveDicomObjects, :Dcm4CheFeatStoreAnyTypeOfDicomObject, :Dcm4CheFeatStudyContentNotification, :Dcm4CheFeatTransformingDicomFiles, :Dcm4CheFeatWebAccessToArchivedContent, :Dcm4CheFeatWritingDicomFiles ;
+    :spSupportsEfCit :Dcm4CheFuncClinicalImageManagement, :Dcm4CheFuncClinicalObjectManagement, :Dcm4CheFuncRetrieval, :Dcm4CheFuncStorage, :Dcm4CheFuncWorkflow ;
+    :spUsedInOuCit :Dcm4CheOrgHealthcareEnvironment, :Dcm4CheOrgHealthcareIt ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source Clinical Image and Object Management"@en ;
     rdfs:label "dcm4che"@en .
@@ -1398,11 +1397,8 @@
     rdfs:label "Healthcare IT"@en .
 
 :Dhis2
-    :spIsOfAstCit :Dhis2AppGeographicInformationSystemGis, :Dhis2AppHmis, :Dhis2AppPublicHealthInformationSystem ;
     :client :WebBased ;
     :databaseSystem :PostgreSql ;
-    :spSupportsEfCit :Dhis2FuncAppointmentScheduling, :Dhis2FuncDataAnalytics, :Dhis2FuncDataCapture, :Dhis2FuncDataManagement, :Dhis2FuncDataSharing, :Dhis2FuncDataVisualization, :Dhis2FuncReporting ;
-    :spOffersFCit :Dhis2FeatAggregateAndIndividualLevelData, :Dhis2FeatBuiltInMapsApp, :Dhis2FeatCaseFollowUp, :Dhis2FeatCaseMonitoring, :Dhis2FeatCombineDataFromAVarietyOfSources, :Dhis2FeatContactTracing, :Dhis2FeatControlAccessWithSharingSettings, :Dhis2FeatCustomizablePrograms, :Dhis2FeatCustomizedDataEntryForms, :Dhis2FeatDataApproval, :Dhis2FeatDataEntryViaDirectImport, :Dhis2FeatDataEntryViaMobileAndroidApp, :Dhis2FeatDataEntryViaSms, :Dhis2FeatDataEntryViaWebPortal, :Dhis2FeatDataValidation, :Dhis2FeatDataValidationRules, :Dhis2FeatDataVisualizationByCharting, :Dhis2FeatDataVisualizationByPivotTables, :Dhis2FeatDataVisualizationForDashboards, :Dhis2FeatDataVisualizationForGis, :Dhis2FeatEditAnEvent, :Dhis2FeatEliminateDuplicateDataEntry, :Dhis2FeatEventReports, :Dhis2FeatEventVisualizer, :Dhis2FeatExportOfDataAndMetadata, :Dhis2FeatGenerateWorkLists, :Dhis2FeatGeolocateIndividualCasesForContactTracing, :Dhis2FeatImportOfDataAndMetadata, :Dhis2FeatManageUsersUserRolesAndUserGroups, :Dhis2FeatMessagingFeature, :Dhis2FeatMetadataConfiguration, :Dhis2FeatMetadataManagement, :Dhis2FeatMonitoringIndividualPeopleOverTime, :Dhis2FeatOnlineAndOfflineDataEntry, :Dhis2FeatRegisterEvents, :Dhis2FeatSendAutomatedSmsMessagesToPatients, :Dhis2FeatShareInterpretationsOfData, :Dhis2FeatStandardDeviationOutlierAnalysis, :Dhis2FeatStandardWhoConfigurations, :Dhis2FeatSupportsAllTheStandardChartTypes, :Dhis2FeatThematicMappingOfAreasAndPoints, :Dhis2FeatTrackerFunctions, :Dhis2FeatViewTrackedEntitiesAndEventsOnMap, :Dhis2FeatVisualizeCatchmentAreasForEachFacility, :Dhis2FeatWebBasedGeographicInformationSystem ;
     :homepage <https://www.dhis2.org/> ;
     :interoperability :HL7_FHIR, :IHE, :LOINC, :REST, :SNOMED_CT ;
     :language dbr:English_language, dbr:French_language, dbr:Norwegian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Vietnamese_language ;
@@ -1410,6 +1406,9 @@
     :operatingSystem dbr:Ubuntu ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/dhis2> ;
+    :spIsOfAstCit :Dhis2AppGeographicInformationSystemGis, :Dhis2AppHmis, :Dhis2AppPublicHealthInformationSystem ;
+    :spOffersFCit :Dhis2FeatAggregateAndIndividualLevelData, :Dhis2FeatBuiltInMapsApp, :Dhis2FeatCaseFollowUp, :Dhis2FeatCaseMonitoring, :Dhis2FeatCombineDataFromAVarietyOfSources, :Dhis2FeatContactTracing, :Dhis2FeatControlAccessWithSharingSettings, :Dhis2FeatCustomizablePrograms, :Dhis2FeatCustomizedDataEntryForms, :Dhis2FeatDataApproval, :Dhis2FeatDataEntryViaDirectImport, :Dhis2FeatDataEntryViaMobileAndroidApp, :Dhis2FeatDataEntryViaSms, :Dhis2FeatDataEntryViaWebPortal, :Dhis2FeatDataValidation, :Dhis2FeatDataValidationRules, :Dhis2FeatDataVisualizationByCharting, :Dhis2FeatDataVisualizationByPivotTables, :Dhis2FeatDataVisualizationForDashboards, :Dhis2FeatDataVisualizationForGis, :Dhis2FeatEditAnEvent, :Dhis2FeatEliminateDuplicateDataEntry, :Dhis2FeatEventReports, :Dhis2FeatEventVisualizer, :Dhis2FeatExportOfDataAndMetadata, :Dhis2FeatGenerateWorkLists, :Dhis2FeatGeolocateIndividualCasesForContactTracing, :Dhis2FeatImportOfDataAndMetadata, :Dhis2FeatManageUsersUserRolesAndUserGroups, :Dhis2FeatMessagingFeature, :Dhis2FeatMetadataConfiguration, :Dhis2FeatMetadataManagement, :Dhis2FeatMonitoringIndividualPeopleOverTime, :Dhis2FeatOnlineAndOfflineDataEntry, :Dhis2FeatRegisterEvents, :Dhis2FeatSendAutomatedSmsMessagesToPatients, :Dhis2FeatShareInterpretationsOfData, :Dhis2FeatStandardDeviationOutlierAnalysis, :Dhis2FeatStandardWhoConfigurations, :Dhis2FeatSupportsAllTheStandardChartTypes, :Dhis2FeatThematicMappingOfAreasAndPoints, :Dhis2FeatTrackerFunctions, :Dhis2FeatViewTrackedEntitiesAndEventsOnMap, :Dhis2FeatVisualizeCatchmentAreasForEachFacility, :Dhis2FeatWebBasedGeographicInformationSystem ;
+    :spSupportsEfCit :Dhis2FuncAppointmentScheduling, :Dhis2FuncDataAnalytics, :Dhis2FuncDataCapture, :Dhis2FuncDataManagement, :Dhis2FuncDataSharing, :Dhis2FuncDataVisualization, :Dhis2FuncReporting ;
     a :SoftwareProduct ;
     rdfs:comment "Open source health management information system"@en ;
     rdfs:label "DHIS2"@en .
@@ -1673,9 +1672,9 @@
     rdfs:label "reporting"@en .
 
 :EChasqui
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :EChasquiLaboratoryInformationSystem ;
     :spOffersFCit :EChasquiEmailNotificationOfNewResults, :EChasquiFeatReportsOnTestsPerformed, :EChasquiFeatureConsolidatedListOfResultsForJurisdiction, :EChasquiFeaturePatientPageContainingDetailsOfAnySingleSample, :EChasquiFeaturePatientPageContainingTheHistoryOfAllTestsPerformed, :EChasquiFeatureToolsForQualityControl, :EChasquiFeatureUserDirectoryToControlAnyAccess, :EChasquiFeatureWarningsForDelayedReportingOfResults ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Chasqui"@en .
@@ -1726,9 +1725,9 @@
     rdfs:label "Laboratory Information System"@en .
 
 :EDoc
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :EDocAppDigitalFilingSystem, :EDocAppDocumentManagementSoftware ;
     :spOffersFCit :EDocFeatureCapturingDataForAllPatientVisits ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "e Doc"@en .
@@ -1749,9 +1748,9 @@
     rdfs:label "capturing data for all patient visits"@en .
 
 :EclipsysContinuum2000Cds
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :EclipsysContinuum2000CdsAppClinicalDocumentatioSystem ;
     :spOffersFCit :EclipsysContinuum2000CdsFeatAuditTrail, :EclipsysContinuum2000CdsFeatureAutomaticTransferOfLaboratoryData, :EclipsysContinuum2000CdsFeatureElectronicSignature, :EclipsysContinuum2000CdsFeatureGraphicalUserInterfaceToDocumentCare, :EclipsysContinuum2000CdsFeaturePointAndClickDataEntry ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Eclipsys Continuum 2000 CDS"@en .
@@ -1787,20 +1786,20 @@
     rdfs:label "point and click data entry"@en .
 
 :Elexis
-    :spIsOfAstCit :ElexisAppElektronischeKrankengeschichte, :ElexisAppSoftwareArztpraxis ;
     :client :Native ;
     :databaseSystem :MariaDb, :MySql, :PostgreSql ;
-    :spSupportsEfCit :ElexisFuncAbrechnungssystem ;
-    :spOffersFCit :ElexisFeatAbrechnungen, :ElexisFeatArbeitsunfaehigkeitszeugnisse, :ElexisFeatAusUndEinlesenVonInAndereAerzteSoftware, :ElexisFeatAusdruckEinerPatientenUebersicht, :ElexisFeatAutomatischerRechnungsvorschlag, :ElexisFeatBenutzervorlagenErstellen, :ElexisFeatBerichteVerwalten, :ElexisFeatBestellwesen, :ElexisFeatBriefErstellen, :ElexisFeatEinbindungTextorientierterDatierterBefundserien, :ElexisFeatEinlesenVonEsrDateien, :ElexisFeatElektronischeAgenda, :ElexisFeatErstellungBefunde, :ElexisFeatExterneDateienVerwalten, :ElexisFeatFakturierung, :ElexisFeatFaxeVerwalten, :ElexisFeatImpfliste, :ElexisFeatImpfplan, :ElexisFeatIndividuellEinstellbareBildschirmanzeige, :ElexisFeatIntegriertPersoenlicheAnamnese, :ElexisFeatKontobewegungenPatienten, :ElexisFeatKrankenkassenEingaben, :ElexisFeatLabor, :ElexisFeatLaborbefundeEinlesen, :ElexisFeatLagersortimentAngezeigt, :ElexisFeatMedikamentenliste, :ElexisFeatMedikationsliste, :ElexisFeatNotizen, :ElexisFeatPatientenFiltern, :ElexisFeatPatientenuebersicht, :ElexisFeatPerzentilenkurven, :ElexisFeatPlausibilitaetskontrolle, :ElexisFeatRechnungenKontrollieren, :ElexisFeatRechnungenSuchenStornierenOderAusdrucken, :ElexisFeatRechnungsuebersicht, :ElexisFeatReminderPendenzen, :ElexisFeatRezeptErstellen, :ElexisFeatRezeptuebermittlung, :ElexisFeatRoentgenBilderVerwalten, :ElexisFeatStatistiken, :ElexisFeatTageslisteDrucken, :ElexisFeatTerminVergeben, :ElexisFeatTerminÄndernLoeschen, :ElexisFeatVeraltungKontaktePersonenUndOrganisationen, :ElexisFeatVerknuepfungenKonsultationstextAufDurchgefuehrteUntersuchungen, :ElexisFeatVerlaufKonsultationen, :ElexisFeatVerwaltungVonFaellen, :ElexisFeatWartezimmerueberwachung, :ElexisFeatZeitmanagement, :ElexisFeatÜbersichtKonsultationen, :ElexisFuncPatientenaktenVerwalten ;
     :homepage <https://elexis.info> ;
     :interoperability :ICPC2 ;
     :language dbr:English_language, dbr:French_language, dbr:German_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_9000084> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
-    :spUsedInOuCit :ElexisOrgArztpraxis ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/elexis> ;
+    :spIsOfAstCit :ElexisAppElektronischeKrankengeschichte, :ElexisAppSoftwareArztpraxis ;
+    :spOffersFCit :ElexisFeatAbrechnungen, :ElexisFeatArbeitsunfaehigkeitszeugnisse, :ElexisFeatAusUndEinlesenVonInAndereAerzteSoftware, :ElexisFeatAusdruckEinerPatientenUebersicht, :ElexisFeatAutomatischerRechnungsvorschlag, :ElexisFeatBenutzervorlagenErstellen, :ElexisFeatBerichteVerwalten, :ElexisFeatBestellwesen, :ElexisFeatBriefErstellen, :ElexisFeatEinbindungTextorientierterDatierterBefundserien, :ElexisFeatEinlesenVonEsrDateien, :ElexisFeatElektronischeAgenda, :ElexisFeatErstellungBefunde, :ElexisFeatExterneDateienVerwalten, :ElexisFeatFakturierung, :ElexisFeatFaxeVerwalten, :ElexisFeatImpfliste, :ElexisFeatImpfplan, :ElexisFeatIndividuellEinstellbareBildschirmanzeige, :ElexisFeatIntegriertPersoenlicheAnamnese, :ElexisFeatKontobewegungenPatienten, :ElexisFeatKrankenkassenEingaben, :ElexisFeatLabor, :ElexisFeatLaborbefundeEinlesen, :ElexisFeatLagersortimentAngezeigt, :ElexisFeatMedikamentenliste, :ElexisFeatMedikationsliste, :ElexisFeatNotizen, :ElexisFeatPatientenFiltern, :ElexisFeatPatientenuebersicht, :ElexisFeatPerzentilenkurven, :ElexisFeatPlausibilitaetskontrolle, :ElexisFeatRechnungenKontrollieren, :ElexisFeatRechnungenSuchenStornierenOderAusdrucken, :ElexisFeatRechnungsuebersicht, :ElexisFeatReminderPendenzen, :ElexisFeatRezeptErstellen, :ElexisFeatRezeptuebermittlung, :ElexisFeatRoentgenBilderVerwalten, :ElexisFeatStatistiken, :ElexisFeatTageslisteDrucken, :ElexisFeatTerminVergeben, :ElexisFeatTerminÄndernLoeschen, :ElexisFeatVeraltungKontaktePersonenUndOrganisationen, :ElexisFeatVerknuepfungenKonsultationstextAufDurchgefuehrteUntersuchungen, :ElexisFeatVerlaufKonsultationen, :ElexisFeatVerwaltungVonFaellen, :ElexisFeatWartezimmerueberwachung, :ElexisFeatZeitmanagement, :ElexisFeatÜbersichtKonsultationen, :ElexisFuncPatientenaktenVerwalten ;
+    :spSupportsEfCit :ElexisFuncAbrechnungssystem ;
     :spUsedByUserCit :ElexisUserÄrzte ;
+    :spUsedInOuCit :ElexisOrgArztpraxis ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source Software für die Arztpraxis"@en ;
     rdfs:label "Elexis"@en .
@@ -2075,9 +2074,9 @@
     rdfs:label "PACS"@en .
 
 :GePatchspecdPacs
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :GePatchspecdAppSysPacs ;
     :spOffersFCit :GePatchspecdPacsFeatureAutomaticForwardedProcessedImages, :GePatchspecdPacsForwardIntoArchive ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "GE Patchspecd PACS"@en .
@@ -2093,25 +2092,25 @@
     rdfs:label "forward into archive"@en .
 
 :GnuHealth
-    :spIsOfAstCit :GnuHealthAppElectronicMedicalRecordEmr, :GnuHealthAppHealthInformationSystemHis, :GnuHealthAppHospitalManagementInformationSystem ;
     :client :Mobile, :Native, :WebBased ;
     :databaseSystem :PostgreSql, :TinyDb ;
-    :spSupportsEfCit :GnuHealthFuncAccessManagement, :GnuHealthFuncAdmissionManagement, :GnuHealthFuncAnalyticAccounting, :GnuHealthFuncFinancialAccounting, :GnuHealthFuncGenetics, :GnuHealthFuncGynecologicCare, :GnuHealthFuncHospitalManagement, :GnuHealthFuncIntensiveCare, :GnuHealthFuncLaboratoryManagement, :GnuHealthFuncNeglectedTropicalDiseasesCare, :GnuHealthFuncNursing, :GnuHealthFuncObstetrics, :GnuHealthFuncPatientAppointment, :GnuHealthFuncPatientEvaluations, :GnuHealthFuncPatientManagement, :GnuHealthFuncPediatricCare, :GnuHealthFuncProductsManagement, :GnuHealthFuncPurchaseAdministration, :GnuHealthFuncServicesManagementinvoicingPatients, :GnuHealthFuncSocioeconomics, :GnuHealthFuncStockManagement, :GnuHealthFuncSurgery ;
-    :spOffersFCit :GnuHealthFeatAccessManagementOverview, :GnuHealthFeatAccountTypes, :GnuHealthFeatAdministrationOrthancModule, :GnuHealthFeatAdministrativeData, :GnuHealthFeatAllSurgeriesInformation, :GnuHealthFeatAppointments, :GnuHealthFeatAppointmentsCalendar, :GnuHealthFeatAppointmentsReport, :GnuHealthFeatBioinformatics, :GnuHealthFeatBloodAndSkin, :GnuHealthFeatCardiovascular, :GnuHealthFeatCarePlan, :GnuHealthFeatChagasDiseaseInformation, :GnuHealthFeatChartOfAccounts, :GnuHealthFeatConfiguringAccounts, :GnuHealthFeatConfiguringAvailableTests, :GnuHealthFeatConfiguringJournals, :GnuHealthFeatContactTracing, :GnuHealthFeatCreatingAPartyWithThePatientProperty, :GnuHealthFeatCreatingAPatientRecord, :GnuHealthFeatCreatingARequestForImage, :GnuHealthFeatCreatingNewMedicationProducts, :GnuHealthFeatCreatingTheInvoice, :GnuHealthFeatDefaultImagingModule, :GnuHealthFeatDemographics, :GnuHealthFeatDengueFever, :GnuHealthFeatDigestiveAndAbdomen, :GnuHealthFeatDocumentRoundingsForInpatients, :GnuHealthFeatDomesticViolence, :GnuHealthFeatDrainages, :GnuHealthFeatEpidemiology, :GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, :GnuHealthFeatEvaluationsHistory, :GnuHealthFeatEvaluationsReport, :GnuHealthFeatFunctioningAndDisability, :GnuHealthFeatGeneralPregnancyInformation, :GnuHealthFeatGeneratingResults, :GnuHealthFeatGeneticFamilyHistory, :GnuHealthFeatGeneticInformation, :GnuHealthFeatGroupsAccessManagement, :GnuHealthFeatIcuFunctionalityInformation, :GnuHealthFeatInfectiousDisease, :GnuHealthFeatInformationStoredPerAppointment, :GnuHealthFeatInfrastructureOfSocioeconomics, :GnuHealthFeatInjurySurveillanceSystemRegistrationReport, :GnuHealthFeatInpatientManagementInformation, :GnuHealthFeatInterfacesWithLaboratoriesAndLims, :GnuHealthFeatInventories, :GnuHealthFeatInvoicingPatients, :GnuHealthFeatLabOrdersAndHealthServices, :GnuHealthFeatLaboratoryReports, :GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, :GnuHealthFeatListOfAllAppointments, :GnuHealthFeatListOfAppointmentsForASpecificPatient, :GnuHealthFeatListingHealthServicesToBeInvoiced, :GnuHealthFeatListingTheCurrentPatients, :GnuHealthFeatManagingLaboratoryTests, :GnuHealthFeatMedicationPlan, :GnuHealthFeatNeglectedTropicalDiseasesInformation, :GnuHealthFeatNutritionInformation, :GnuHealthFeatOrganizationStructure, :GnuHealthFeatOrthancIntegrationModule, :GnuHealthFeatPatientEvaluationsReport, :GnuHealthFeatPatientIcuInformation, :GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, :GnuHealthFeatPerinatalAndIntrapartumInformation, :GnuHealthFeatPrenatalEvaluations, :GnuHealthFeatPrintingAPatientIdCard, :GnuHealthFeatProteinRelatedDiseases, :GnuHealthFeatPscPediatricsSymptomChecklist, :GnuHealthFeatPuerperiumMonitor, :GnuHealthFeatReporting, :GnuHealthFeatRequestingALaboratoryTest, :GnuHealthFeatShipments, :GnuHealthFeatSocialMedicine, :GnuHealthFeatStockLocations, :GnuHealthFeatStockMovements, :GnuHealthFeatStoringLaboratoryTestResults, :GnuHealthFeatSurgeriesForm, :GnuHealthFeatSurgeriesPerPatient, :GnuHealthFeatSynchronizationOrthancModule, :GnuHealthFeatTopDiseasesReport, :GnuHealthFeatTroubleshootingOrthancModule, :GnuHealthFeatUsageOrthancModule, :GnuHealthFeatUsersAccessManagement, :GnuHealthFeatViewResults ;
     :homepage <https://www.gnuhealth.org/#/> ;
     :interoperability :HL7, :HL7_FHIR, :ICD10, :ICD9, :ICPM ;
     :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004>, <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Debian, dbr:FreeBSD, dbr:Linux, dbr:Ubuntu ;
-    :spUsedInOuCit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :softwareProductComponent :Occhiolino ;
+    :spIsOfAstCit :GnuHealthAppElectronicMedicalRecordEmr, :GnuHealthAppHealthInformationSystemHis, :GnuHealthAppHospitalManagementInformationSystem ;
+    :spOffersFCit :GnuHealthFeatAccessManagementOverview, :GnuHealthFeatAccountTypes, :GnuHealthFeatAdministrationOrthancModule, :GnuHealthFeatAdministrativeData, :GnuHealthFeatAllSurgeriesInformation, :GnuHealthFeatAppointments, :GnuHealthFeatAppointmentsCalendar, :GnuHealthFeatAppointmentsReport, :GnuHealthFeatBioinformatics, :GnuHealthFeatBloodAndSkin, :GnuHealthFeatCardiovascular, :GnuHealthFeatCarePlan, :GnuHealthFeatChagasDiseaseInformation, :GnuHealthFeatChartOfAccounts, :GnuHealthFeatConfiguringAccounts, :GnuHealthFeatConfiguringAvailableTests, :GnuHealthFeatConfiguringJournals, :GnuHealthFeatContactTracing, :GnuHealthFeatCreatingAPartyWithThePatientProperty, :GnuHealthFeatCreatingAPatientRecord, :GnuHealthFeatCreatingARequestForImage, :GnuHealthFeatCreatingNewMedicationProducts, :GnuHealthFeatCreatingTheInvoice, :GnuHealthFeatDefaultImagingModule, :GnuHealthFeatDemographics, :GnuHealthFeatDengueFever, :GnuHealthFeatDigestiveAndAbdomen, :GnuHealthFeatDocumentRoundingsForInpatients, :GnuHealthFeatDomesticViolence, :GnuHealthFeatDrainages, :GnuHealthFeatEpidemiology, :GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, :GnuHealthFeatEvaluationsHistory, :GnuHealthFeatEvaluationsReport, :GnuHealthFeatFunctioningAndDisability, :GnuHealthFeatGeneralPregnancyInformation, :GnuHealthFeatGeneratingResults, :GnuHealthFeatGeneticFamilyHistory, :GnuHealthFeatGeneticInformation, :GnuHealthFeatGroupsAccessManagement, :GnuHealthFeatIcuFunctionalityInformation, :GnuHealthFeatInfectiousDisease, :GnuHealthFeatInformationStoredPerAppointment, :GnuHealthFeatInfrastructureOfSocioeconomics, :GnuHealthFeatInjurySurveillanceSystemRegistrationReport, :GnuHealthFeatInpatientManagementInformation, :GnuHealthFeatInterfacesWithLaboratoriesAndLims, :GnuHealthFeatInventories, :GnuHealthFeatInvoicingPatients, :GnuHealthFeatLabOrdersAndHealthServices, :GnuHealthFeatLaboratoryReports, :GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, :GnuHealthFeatListOfAllAppointments, :GnuHealthFeatListOfAppointmentsForASpecificPatient, :GnuHealthFeatListingHealthServicesToBeInvoiced, :GnuHealthFeatListingTheCurrentPatients, :GnuHealthFeatManagingLaboratoryTests, :GnuHealthFeatMedicationPlan, :GnuHealthFeatNeglectedTropicalDiseasesInformation, :GnuHealthFeatNutritionInformation, :GnuHealthFeatOrganizationStructure, :GnuHealthFeatOrthancIntegrationModule, :GnuHealthFeatPatientEvaluationsReport, :GnuHealthFeatPatientIcuInformation, :GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, :GnuHealthFeatPerinatalAndIntrapartumInformation, :GnuHealthFeatPrenatalEvaluations, :GnuHealthFeatPrintingAPatientIdCard, :GnuHealthFeatProteinRelatedDiseases, :GnuHealthFeatPscPediatricsSymptomChecklist, :GnuHealthFeatPuerperiumMonitor, :GnuHealthFeatReporting, :GnuHealthFeatRequestingALaboratoryTest, :GnuHealthFeatShipments, :GnuHealthFeatSocialMedicine, :GnuHealthFeatStockLocations, :GnuHealthFeatStockMovements, :GnuHealthFeatStoringLaboratoryTestResults, :GnuHealthFeatSurgeriesForm, :GnuHealthFeatSurgeriesPerPatient, :GnuHealthFeatSynchronizationOrthancModule, :GnuHealthFeatTopDiseasesReport, :GnuHealthFeatTroubleshootingOrthancModule, :GnuHealthFeatUsageOrthancModule, :GnuHealthFeatUsersAccessManagement, :GnuHealthFeatViewResults ;
+    :spSupportsEfCit :GnuHealthFuncAccessManagement, :GnuHealthFuncAdmissionManagement, :GnuHealthFuncAnalyticAccounting, :GnuHealthFuncFinancialAccounting, :GnuHealthFuncGenetics, :GnuHealthFuncGynecologicCare, :GnuHealthFuncHospitalManagement, :GnuHealthFuncIntensiveCare, :GnuHealthFuncLaboratoryManagement, :GnuHealthFuncNeglectedTropicalDiseasesCare, :GnuHealthFuncNursing, :GnuHealthFuncObstetrics, :GnuHealthFuncPatientAppointment, :GnuHealthFuncPatientEvaluations, :GnuHealthFuncPatientManagement, :GnuHealthFuncPediatricCare, :GnuHealthFuncProductsManagement, :GnuHealthFuncPurchaseAdministration, :GnuHealthFuncServicesManagementinvoicingPatients, :GnuHealthFuncSocioeconomics, :GnuHealthFuncStockManagement, :GnuHealthFuncSurgery ;
+    :spUsedInOuCit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
     a :SoftwareProduct ;
     rdfs:comment "free/libre health and hospital information system with strong focus on public health and social medicine"@en ;
     rdfs:label "GNU Health"@en .
 
 :GnuHealthAppElectronicMedicalRecordEmr
-    :astCitClassifiedAs :WhoDhiSharedHealthRecordAndHealthInformationRepositories, :WhoDhiElectronicMedicalRecord ;
+    :astCitClassifiedAs :WhoDhiElectronicMedicalRecord, :WhoDhiSharedHealthRecordAndHealthInformationRepositories ;
     a :ApplicationSystemTypeCitation ;
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
@@ -2609,9 +2608,9 @@
     rdfs:label "Hospital Environment"@en .
 
 :HnaMillenium
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :HnaMilleniumAppPharmacyManagementSystem ;
     :spOffersFCit :HnaMilleniumAllowingToReuseEarlierAnamnesticData, :HnaMilleniumFeatRemindingAndDocumentationOfNursingTasks, :HnaMilleniumFeatureAutomaticCreationOfANursingTransferReport, :HnaMilleniumFeatureComprisingASetOfNursingCareStandards, :HnaMilleniumFeatureNursingAnamnesis, :HnaMilleniumFeatureNursingCarePlanningSupportedByPredefinedNursingCareStandards, :HnaMilleniumFeatureNursingDiagnosisBasedOnTheNANDATaxonomy, :HnaMilleniumFeatureSupportNursingCarePlanningForCertainPatientCases, :HnaMilleniumFeatureUseOfClinicalPathways, :HnaMilleniumScheduling ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "HNA Millenium"@en .
@@ -2672,10 +2671,7 @@
     rdfs:label "scheduling"@en .
 
 :HospitalRun
-    :spIsOfAstCit :HospitalRunAppEHR, :HospitalRunAppHIS ;
     :client :Native ;
-    :spSupportsEfCit :HospitalRunFuncAppointments, :HospitalRunFuncBilling, :HospitalRunFuncImaging, :HospitalRunFuncInventory, :HospitalRunFuncLabs, :HospitalRunFuncMedication, :HospitalRunFuncOutpatientManagement, :HospitalRunFuncPatientManagement ;
-    :spOffersFCit :HospitalRunFeatAddImaging, :HospitalRunFeatAppointmentsCalendar, :HospitalRunFeatCustomForms, :HospitalRunFeatGenerateReports, :HospitalRunFeatInventoryReport, :HospitalRunFeatListIncidents, :HospitalRunFeatListPricing, :HospitalRunFeatOfflineEnabled, :HospitalRunFeatOverviewImages, :HospitalRunFeatOverviewInventory, :HospitalRunFeatPatientScheduling, :HospitalRunFeatPatientsList, :HospitalRunFeatRequestImaging, :HospitalRunFeatRequestLab, :HospitalRunFeatRequestMedication, :HospitalRunFeatTemplateReport, :HospitalRunFeatUserRoles, :HospitalRunFeatViewBilledInvoices, :HospitalRunFeatViewLabReports, :HospitalRunFeatViewMedication ;
     :homepage <https://hospitalrun.io> ;
     :interoperability :HL7_FHIR ;
     :language dbr:English_language ;
@@ -2683,6 +2679,9 @@
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :programmingLanguage dbr:JavaScript ;
     :repository <https://github.com/HospitalRun/> ;
+    :spIsOfAstCit :HospitalRunAppEHR, :HospitalRunAppHIS ;
+    :spOffersFCit :HospitalRunFeatAddImaging, :HospitalRunFeatAppointmentsCalendar, :HospitalRunFeatCustomForms, :HospitalRunFeatGenerateReports, :HospitalRunFeatInventoryReport, :HospitalRunFeatListIncidents, :HospitalRunFeatListPricing, :HospitalRunFeatOfflineEnabled, :HospitalRunFeatOverviewImages, :HospitalRunFeatOverviewInventory, :HospitalRunFeatPatientScheduling, :HospitalRunFeatPatientsList, :HospitalRunFeatRequestImaging, :HospitalRunFeatRequestLab, :HospitalRunFeatRequestMedication, :HospitalRunFeatTemplateReport, :HospitalRunFeatUserRoles, :HospitalRunFeatViewBilledInvoices, :HospitalRunFeatViewLabReports, :HospitalRunFeatViewMedication ;
+    :spSupportsEfCit :HospitalRunFuncAppointments, :HospitalRunFuncBilling, :HospitalRunFuncImaging, :HospitalRunFuncInventory, :HospitalRunFuncLabs, :HospitalRunFuncMedication, :HospitalRunFuncOutpatientManagement, :HospitalRunFuncPatientManagement ;
     :spUsedByUserCit :HospitalRunUserHospitalAdministrator, :HospitalRunUserImagingTechnician, :HospitalRunUserInventoryManager, :HospitalRunUserLabTechnician, :HospitalRunUserNurse, :HospitalRunUserNurseManager, :HospitalRunUserPatientAdministrator, :HospitalRunUserPharmacist, :HospitalRunUserSocialWorker ;
     a :SoftwareProduct ;
     rdfs:comment "Open source EHR/HIS application"@en ;
@@ -2880,17 +2879,17 @@
     rdfs:label "Social Worker"@en .
 
 :IPath
-    :spIsOfAstCit :IPathAppTelemedicinePlatform ;
     :client :WebBased ;
     :databaseSystem :MySql ;
-    :spSupportsEfCit :IPathFuncTransmitAndDiscussMedicalResults ;
-    :spOffersFCit :IPathFeatCooperationBetweenProfessionals, :IPathFeatOnlineCaseDiscussion, :IPathFeatTeachingAndConferencingSessions, :IPathFeatTransmitOfImgaesWithNecessaryClinicalInformation ;
     :homepage <https://www.ipathnetwork.org/> ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     :operatingSystem dbr:Web_application ;
     :programmingLanguage dbr:PHP ;
+    :spIsOfAstCit :IPathAppTelemedicinePlatform ;
+    :spOffersFCit :IPathFeatCooperationBetweenProfessionals, :IPathFeatOnlineCaseDiscussion, :IPathFeatTeachingAndConferencingSessions, :IPathFeatTransmitOfImgaesWithNecessaryClinicalInformation ;
+    :spSupportsEfCit :IPathFuncTransmitAndDiscussMedicalResults ;
     :spUsedByUserCit :IPathUserMedicalProfessional, :IPathUserTechnician ;
     a :SoftwareProduct ;
     rdfs:comment "Telemedicine Network"@en ;
@@ -2991,19 +2990,19 @@
     rdfs:label "standardized precriptions and medication protocols"@en .
 
 :Medkey
-    :spIsOfAstCit :MedkeyAppElectronicHealthRecord, :MedkeyAppHIS, :MedkeyAppMedicalInformationSystem ;
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
-    :spSupportsEfCit :MedkeyFuncMedicalAccounting, :MedkeyFuncMedicalBilling, :MedkeyFuncOrders, :MedkeyFuncPatientAppointments, :MedkeyFuncPracticeManagementAutomation ;
-    :spOffersFCit :MedkeyFeatAccessControl, :MedkeyFeatCRMFunctions, :MedkeyFeatCashdesk, :MedkeyFeatDashboardVisualAnalytics, :MedkeyFeatExpendableMaterialsAccounting, :MedkeyFeatHandlingMedicalReferrals, :MedkeyFeatInsurancePoliciesAccounting, :MedkeyFeatInternalUserStorage, :MedkeyFeatInventory, :MedkeyFeatOnlineAppointmentViaWebsite, :MedkeyFeatOrganizationStructureHandling, :MedkeyFeatPatientRegistration, :MedkeyFeatPatientRegistry, :MedkeyFeatPersonnelAccounting, :MedkeyFeatSpecialistsLoadForecasting, :MedkeyFeatSpecialistsLoadPlanning, :MedkeyFeatVisits, :MedkeyFuncPatientEngagement ;
     :homepage <https://medkey.org/en/> ;
     :interoperability :HL7, :OpenEHR ;
     :language dbr:English_language, dbr:Russian_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Web_application ;
-    :spUsedInOuCit :MedkeyOrgDentalClinic, :MedkeyOrgHospital, :MedkeyOrgLaboratory, :MedkeyOrgPrivateDoctorsOffice, :MedkeyOrgRehabilitationCenter ;
     :programmingLanguage dbr:JavaScript, dbr:PHP ;
     :repository <https://github.com/medkey-org> ;
+    :spIsOfAstCit :MedkeyAppElectronicHealthRecord, :MedkeyAppHIS, :MedkeyAppMedicalInformationSystem ;
+    :spOffersFCit :MedkeyFeatAccessControl, :MedkeyFeatCRMFunctions, :MedkeyFeatCashdesk, :MedkeyFeatDashboardVisualAnalytics, :MedkeyFeatExpendableMaterialsAccounting, :MedkeyFeatHandlingMedicalReferrals, :MedkeyFeatInsurancePoliciesAccounting, :MedkeyFeatInternalUserStorage, :MedkeyFeatInventory, :MedkeyFeatOnlineAppointmentViaWebsite, :MedkeyFeatOrganizationStructureHandling, :MedkeyFeatPatientRegistration, :MedkeyFeatPatientRegistry, :MedkeyFeatPersonnelAccounting, :MedkeyFeatSpecialistsLoadForecasting, :MedkeyFeatSpecialistsLoadPlanning, :MedkeyFeatVisits, :MedkeyFuncPatientEngagement ;
+    :spSupportsEfCit :MedkeyFuncMedicalAccounting, :MedkeyFuncMedicalBilling, :MedkeyFuncOrders, :MedkeyFuncPatientAppointments, :MedkeyFuncPracticeManagementAutomation ;
+    :spUsedInOuCit :MedkeyOrgDentalClinic, :MedkeyOrgHospital, :MedkeyOrgLaboratory, :MedkeyOrgPrivateDoctorsOffice, :MedkeyOrgRehabilitationCenter ;
     a :SoftwareProduct ;
     rdfs:comment "Open source Hospital Information System for your clinic automation"@en ;
     rdfs:label "Medkey"@en .
@@ -3151,9 +3150,9 @@
     rdfs:label "Rehabilitation center"@en .
 
 :Metavision
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :MetavisionAppClinicalInformationSystem ;
     :spOffersFCit :MetavisionFeatureAutomaticDataCollection, :MetavisionFeatureClinicalDocumentation, :MetavisionFeatureComputerizedOrderEntry, :MetavisionFeatureDataStorageRepository, :MetavisionFeatureElectronicMedicationAdministrationTool, :MetavisionFeatureTriggeringTheCDSSToQueryTheTidalVolume ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Metavision"@en .
@@ -3194,8 +3193,8 @@
     rdfs:label "triggering the CDSS to query the tidal volume"@en .
 
 :Occhiolino
-    :spIsOfAstCit :OcchiolinoAppLaboratoryInformationManagementSystem ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
+    :spIsOfAstCit :OcchiolinoAppLaboratoryInformationManagementSystem ;
     a :SoftwareProduct ;
     rdfs:label "Occhiolino"@en .
 
@@ -3205,7 +3204,6 @@
     rdfs:label "Laboratory Information Management System"@en .
 
 :Odoo
-    :spIsOfAstCit :OdooAppsysErp ;
     :client :Mobile, :Native, :WebBased ;
     :databaseSystem :PostgreSql ;
     :homepage <https://www.odoo.com> ;
@@ -3216,6 +3214,7 @@
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/odoo/odoo> ;
     :softwareProductComponent :Bahmni ;
+    :spIsOfAstCit :OdooAppsysErp ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source ERP"@en ;
     rdfs:label "Odoo"@en .
@@ -3226,15 +3225,15 @@
     rdfs:label "ERP Interface"@en .
 
 :OpenClinicGa
-    :spIsOfAstCit :OpenClinicGaAppHims, :OpenClinicGaAppPacs ;
-    :spSupportsEfCit :OpenClinicGaFuncAdministrativeManagement, :OpenClinicGaFuncClinicalManagement, :OpenClinicGaFuncCoding, :OpenClinicGaFuncFinancialManagement, :OpenClinicGaFuncHumanResourceManagementModule, :OpenClinicGaFuncLabManagement, :OpenClinicGaFuncModuleForTeleConsultation, :OpenClinicGaFuncPharmacyManagement, :OpenClinicGaFuncScheduling, :OpenClinicGaFuncXRayManagement ;
-    :spOffersFCit :OpenClinicGaFeatArchivingOfScannedDocuments, :OpenClinicGaFeatBarCodeRecognitionOnAndroidDevices, :OpenClinicGaFeatClinicalThesaurusWithValidatedCodingAid, :OpenClinicGaFeatCompleteAdtManagement, :OpenClinicGaFeatDrugDrugInteractionDetection, :OpenClinicGaFeatEfficientDatabaseConnection, :OpenClinicGaFeatExtensiveReportingCapabilities, :OpenClinicGaFeatExtensiveStatisticalCapabilities, :OpenClinicGaFeatFingerprintIdentification, :OpenClinicGaFeatFullBillingSystem, :OpenClinicGaFeatFullSchedulingSystem, :OpenClinicGaFeatIntegrationOfDicomViewerSolution, :OpenClinicGaFeatIntegrationOfIristickSmartglassesForTeleExpertise, :OpenClinicGaFeatIntegrationOfPacsSolution, :OpenClinicGaFeatLabAnalyzerMiddlewareSolutions, :OpenClinicGaFeatLabOrderEntry, :OpenClinicGaFeatLabResultsManagement, :OpenClinicGaFeatLoincCodingSupported, :OpenClinicGaFeatMealsDistributionManagement, :OpenClinicGaFeatMobileWebInterface, :OpenClinicGaFeatMultimediaSupport, :OpenClinicGaFeatPharmacyStockManagement, :OpenClinicGaFeatSnomedCtCoding, :OpenClinicGaFeatStatisticsOnCoMorbidity, :OpenClinicGaFeatStatisticsOnCostsOfCare, :OpenClinicGaFeatStatisticsOnMortality, :OpenClinicGaFeatStructuredDataExchange, :OpenClinicGaFeatXRayAndPathologyResultsManagement ;
     :homepage <https://sourceforge.net/projects/open-clinic/> ;
     :interoperability :DICOM, :HL7, :HL7_FHIR, :ICD10, :ICPC2, :LOINC, :SNOMED_CT ;
     :language dbr:Dutch_language, dbr:English_language, dbr:French_language, dbr:Portuguese_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000071> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://sourceforge.net/projects/open-clinic/> ;
+    :spIsOfAstCit :OpenClinicGaAppHims, :OpenClinicGaAppPacs ;
+    :spOffersFCit :OpenClinicGaFeatArchivingOfScannedDocuments, :OpenClinicGaFeatBarCodeRecognitionOnAndroidDevices, :OpenClinicGaFeatClinicalThesaurusWithValidatedCodingAid, :OpenClinicGaFeatCompleteAdtManagement, :OpenClinicGaFeatDrugDrugInteractionDetection, :OpenClinicGaFeatEfficientDatabaseConnection, :OpenClinicGaFeatExtensiveReportingCapabilities, :OpenClinicGaFeatExtensiveStatisticalCapabilities, :OpenClinicGaFeatFingerprintIdentification, :OpenClinicGaFeatFullBillingSystem, :OpenClinicGaFeatFullSchedulingSystem, :OpenClinicGaFeatIntegrationOfDicomViewerSolution, :OpenClinicGaFeatIntegrationOfIristickSmartglassesForTeleExpertise, :OpenClinicGaFeatIntegrationOfPacsSolution, :OpenClinicGaFeatLabAnalyzerMiddlewareSolutions, :OpenClinicGaFeatLabOrderEntry, :OpenClinicGaFeatLabResultsManagement, :OpenClinicGaFeatLoincCodingSupported, :OpenClinicGaFeatMealsDistributionManagement, :OpenClinicGaFeatMobileWebInterface, :OpenClinicGaFeatMultimediaSupport, :OpenClinicGaFeatPharmacyStockManagement, :OpenClinicGaFeatSnomedCtCoding, :OpenClinicGaFeatStatisticsOnCoMorbidity, :OpenClinicGaFeatStatisticsOnCostsOfCare, :OpenClinicGaFeatStatisticsOnMortality, :OpenClinicGaFeatStructuredDataExchange, :OpenClinicGaFeatXRayAndPathologyResultsManagement ;
+    :spSupportsEfCit :OpenClinicGaFuncAdministrativeManagement, :OpenClinicGaFuncClinicalManagement, :OpenClinicGaFuncCoding, :OpenClinicGaFuncFinancialManagement, :OpenClinicGaFuncHumanResourceManagementModule, :OpenClinicGaFuncLabManagement, :OpenClinicGaFuncModuleForTeleConsultation, :OpenClinicGaFuncPharmacyManagement, :OpenClinicGaFuncScheduling, :OpenClinicGaFuncXRayManagement ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source Integrated Hospital Information Management System"@en ;
     rdfs:label "OpenClinic GA"@en .
@@ -3427,19 +3426,19 @@
     rdfs:label "x-ray management"@en .
 
 :OpenDental
-    :spIsOfAstCit :OpenDentalPracticeManagementSoftware ;
     :client :Native ;
     :databaseSystem :MySql ;
-    :spSupportsEfCit :OpenDentalFuncAccounting, :OpenDentalFuncBilling, :OpenDentalFuncImaging, :OpenDentalFuncManagePatientAppointments, :OpenDentalFuncManagePatientInformation, :OpenDentalFuncTimeManagement, :OpenDentalFuncTreatmentAdministration, :OpenDentalFuncUserManagement ;
-    :spOffersFCit :OpenDentalFeatAddFormTemplate, :OpenDentalFeatAddPatientAppointment, :OpenDentalFeatBackup, :OpenDentalFeatCalendar, :OpenDentalFeatCreateReferralLetters, :OpenDentalFeatCreateTasks, :OpenDentalFeatCustomReports, :OpenDentalFeatEditPatientAppointment, :OpenDentalFeatEditTreatmentPlan, :OpenDentalFeatElectronicPatientForms, :OpenDentalFeatElectronicPrescriptions, :OpenDentalFeatEmailInbox, :OpenDentalFeatEnhanceRadiographImages, :OpenDentalFeatEnterClinicalPatientInformation, :OpenDentalFeatGraphicalToothChart, :OpenDentalFeatManageInsuranceInformation, :OpenDentalFeatManageTreatmentPlans, :OpenDentalFeatMessaging, :OpenDentalFeatOrganizeClinicalPatientInformation, :OpenDentalFeatPatientPortal, :OpenDentalFeatPrintPatientSchedule, :OpenDentalFeatPrintTreatmentPlan, :OpenDentalFeatProgressNotes, :OpenDentalFeatScanFormsAndLetters, :OpenDentalFeatSchedulePatientAppointment, :OpenDentalFeatSendClaims, :OpenDentalFeatSendTasks, :OpenDentalFeatSignTreatmentPlan, :OpenDentalFeatStoreFormsAndLetters, :OpenDentalFeatStoreImageFiles, :OpenDentalFeatSupplyInventory, :OpenDentalFeatTrackLabCases, :OpenDentalFeatTrackReferredTreatments, :OpenDentalFeatTrackUserAccess, :OpenDentalFeatViewAppointmentList, :OpenDentalFeatViewInsurancePlans, :OpenDentalFeatViewPatientClaimHistory, :OpenDentalFeatViewPatientFinancialHistory, :OpenDentalFeatViewPatientInformation, :OpenDentalFeatViewPatientPaymentPlan, :OpenDentalFeatViewPlannedProcedures, :OpenDentalFeatViewTreatmentPlan, :OpenDentalFeatWaitingRoomTracker, :OpenDentalFeatWebForms ;
     :homepage <https://opendental.com> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Windows_10, dbr:Windows_7, dbr:Windows_8, <http://dbpedia.org/resource/Windows_8.1> ;
-    :spUsedInOuCit :OpenDentalOrgDentalPractice ;
     :programmingLanguage <http://dbpedia.org/resource/C_Sharp_(programming_language)> ;
     :repository <https://www.opendental.com/site/sourcecode.html> ;
+    :spIsOfAstCit :OpenDentalPracticeManagementSoftware ;
+    :spOffersFCit :OpenDentalFeatAddFormTemplate, :OpenDentalFeatAddPatientAppointment, :OpenDentalFeatBackup, :OpenDentalFeatCalendar, :OpenDentalFeatCreateReferralLetters, :OpenDentalFeatCreateTasks, :OpenDentalFeatCustomReports, :OpenDentalFeatEditPatientAppointment, :OpenDentalFeatEditTreatmentPlan, :OpenDentalFeatElectronicPatientForms, :OpenDentalFeatElectronicPrescriptions, :OpenDentalFeatEmailInbox, :OpenDentalFeatEnhanceRadiographImages, :OpenDentalFeatEnterClinicalPatientInformation, :OpenDentalFeatGraphicalToothChart, :OpenDentalFeatManageInsuranceInformation, :OpenDentalFeatManageTreatmentPlans, :OpenDentalFeatMessaging, :OpenDentalFeatOrganizeClinicalPatientInformation, :OpenDentalFeatPatientPortal, :OpenDentalFeatPrintPatientSchedule, :OpenDentalFeatPrintTreatmentPlan, :OpenDentalFeatProgressNotes, :OpenDentalFeatScanFormsAndLetters, :OpenDentalFeatSchedulePatientAppointment, :OpenDentalFeatSendClaims, :OpenDentalFeatSendTasks, :OpenDentalFeatSignTreatmentPlan, :OpenDentalFeatStoreFormsAndLetters, :OpenDentalFeatStoreImageFiles, :OpenDentalFeatSupplyInventory, :OpenDentalFeatTrackLabCases, :OpenDentalFeatTrackReferredTreatments, :OpenDentalFeatTrackUserAccess, :OpenDentalFeatViewAppointmentList, :OpenDentalFeatViewInsurancePlans, :OpenDentalFeatViewPatientClaimHistory, :OpenDentalFeatViewPatientFinancialHistory, :OpenDentalFeatViewPatientInformation, :OpenDentalFeatViewPatientPaymentPlan, :OpenDentalFeatViewPlannedProcedures, :OpenDentalFeatViewTreatmentPlan, :OpenDentalFeatWaitingRoomTracker, :OpenDentalFeatWebForms ;
+    :spSupportsEfCit :OpenDentalFuncAccounting, :OpenDentalFuncBilling, :OpenDentalFuncImaging, :OpenDentalFuncManagePatientAppointments, :OpenDentalFuncManagePatientInformation, :OpenDentalFuncTimeManagement, :OpenDentalFuncTreatmentAdministration, :OpenDentalFuncUserManagement ;
     :spUsedByUserCit :OpenDentalUserDentist ;
+    :spUsedInOuCit :OpenDentalOrgDentalPractice ;
     a :SoftwareProduct ;
     rdfs:comment "Dental Practice Management Software"@en ;
     rdfs:label "OpenDental"@en .
@@ -3705,16 +3704,16 @@
     rdfs:label "Dentist"@en .
 
 :OpenEObs
-    :spIsOfAstCit :OpenEObsAppElectronicPatientObservationSystem ;
     :client :Mobile ;
     :databaseSystem :PostgreSql ;
-    :spSupportsEfCit :OpenEObsFunctionPatientObservation, :OpenEObsFunctionWardManagement ;
-    :spOffersFCit :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling, :OpenEObsFeatureBedsideOrCommunityUseWithMobileDevices, :OpenEObsFeatureCalculatesAScore, :OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators, :OpenEObsFeatureHighLevelWardDashboard, :OpenEObsFeatureIdentifyAndRespondToHighRiskPatients, :OpenEObsFeatureInteractiveChartsOfObservationData, :OpenEObsFeaturePatientAcuityBoard, :OpenEObsFeaturePatientRecord, :OpenEObsFeaturePatientReport, :OpenEObsFeaturePatientVisitManagement, :OpenEObsFeatureRecordObservationsOfPatients, :OpenEObsFeatureStaffAllocationToPatients ;
     :homepage <https://opusvl.com/solutions/open-eobs> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/AppertaFoundation/openeobs/> ;
+    :spIsOfAstCit :OpenEObsAppElectronicPatientObservationSystem ;
+    :spOffersFCit :OpenEObsFeatureAutomatedAlertsMonitoringAndScheduling, :OpenEObsFeatureBedsideOrCommunityUseWithMobileDevices, :OpenEObsFeatureCalculatesAScore, :OpenEObsFeatureCapturingOfVitalSignsAndClinicalRiskIndicators, :OpenEObsFeatureHighLevelWardDashboard, :OpenEObsFeatureIdentifyAndRespondToHighRiskPatients, :OpenEObsFeatureInteractiveChartsOfObservationData, :OpenEObsFeaturePatientAcuityBoard, :OpenEObsFeaturePatientRecord, :OpenEObsFeaturePatientReport, :OpenEObsFeaturePatientVisitManagement, :OpenEObsFeatureRecordObservationsOfPatients, :OpenEObsFeatureStaffAllocationToPatients ;
+    :spSupportsEfCit :OpenEObsFunctionPatientObservation, :OpenEObsFunctionWardManagement ;
     a :SoftwareProduct ;
     rdfs:comment "electronic patient observation system"@en ;
     rdfs:label "Open-eObs"@en .
@@ -3796,19 +3795,19 @@
     rdfs:label "Ward Management"@en .
 
 :OpenElis
-    :spIsOfAstCit :OpenElisAppEnterpriseLaboratoryInformationSystem, :OpenElisAppLaboratoryInformationSystem, :OpenElisAppLaboratoryInformationSystemForGlobalHealth ;
     :client :Native ;
     :databaseSystem :PostgreSql ;
-    :spSupportsEfCit :OpenElisFeatIndividualOrderEntry, :OpenElisFuncInventory, :OpenElisFuncReporting, :OpenElisFuncUserManagementAndAdministration, :OpenElisFuncValidation ;
-    :spOffersFCit :OpenElisFeatAstmAnalyzerInterfaces, :OpenElisFeatBillingFlag, :OpenElisFeatConfirmationSampleTesting, :OpenElisFeatDataValidation, :OpenElisFeatElectronicReferrals, :OpenElisFeatEmailAndSmsResultReportingTools, :OpenElisFeatEnteringNonConformingSamples, :OpenElisFeatInstrumentIntegration, :OpenElisFeatInternalReports, :OpenElisFeatInventoryManagement, :OpenElisFeatManagingUsers, :OpenElisFeatManualEntryOfResults, :OpenElisFeatNonConformityTrackingAndReporting, :OpenElisFeatPatientHivReport, :OpenElisFeatPatientReport, :OpenElisFeatPediatricReferenceRanges, :OpenElisFeatRawDataExport, :OpenElisFeatReferralReport, :OpenElisFeatResultsEntry, :OpenElisFeatRoleBasedSecurity, :OpenElisFeatSampleEntry, :OpenElisFeatSampleTestReferralToOtherLabs, :OpenElisFeatSupportForDynamicReflexTesting, :OpenElisFeatTechnicalAndBiologicalValidation, :OpenElisFeatTestCatalog, :OpenElisFeatValidationOfResults, :OpenElisFeatWorkplanModule ;
     :homepage <https://sites.google.com/site/openelisglobal/> ;
     :interoperability :HL7_FHIR, <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000046> ;
     :operatingSystem dbr:Ubuntu ;
-    :spUsedInOuCit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Java_(programming_language)>, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/openelisglobal> ;
+    :spIsOfAstCit :OpenElisAppEnterpriseLaboratoryInformationSystem, :OpenElisAppLaboratoryInformationSystem, :OpenElisAppLaboratoryInformationSystemForGlobalHealth ;
+    :spOffersFCit :OpenElisFeatAstmAnalyzerInterfaces, :OpenElisFeatBillingFlag, :OpenElisFeatConfirmationSampleTesting, :OpenElisFeatDataValidation, :OpenElisFeatElectronicReferrals, :OpenElisFeatEmailAndSmsResultReportingTools, :OpenElisFeatEnteringNonConformingSamples, :OpenElisFeatInstrumentIntegration, :OpenElisFeatInternalReports, :OpenElisFeatInventoryManagement, :OpenElisFeatManagingUsers, :OpenElisFeatManualEntryOfResults, :OpenElisFeatNonConformityTrackingAndReporting, :OpenElisFeatPatientHivReport, :OpenElisFeatPatientReport, :OpenElisFeatPediatricReferenceRanges, :OpenElisFeatRawDataExport, :OpenElisFeatReferralReport, :OpenElisFeatResultsEntry, :OpenElisFeatRoleBasedSecurity, :OpenElisFeatSampleEntry, :OpenElisFeatSampleTestReferralToOtherLabs, :OpenElisFeatSupportForDynamicReflexTesting, :OpenElisFeatTechnicalAndBiologicalValidation, :OpenElisFeatTestCatalog, :OpenElisFeatValidationOfResults, :OpenElisFeatWorkplanModule ;
+    :spSupportsEfCit :OpenElisFeatIndividualOrderEntry, :OpenElisFuncInventory, :OpenElisFuncReporting, :OpenElisFuncUserManagementAndAdministration, :OpenElisFuncValidation ;
+    :spUsedInOuCit :OpenElisOrgLaboratories, :OpenElisOrgPublicHealthLaboratories ;
     a :SoftwareProduct ;
     rdfs:comment "Laboratory Information System for Global Health"@en ;
     rdfs:label "OpenELIS"@en .
@@ -3983,11 +3982,8 @@
     rdfs:label "public health laboratories"@en .
 
 :OpenEmr
-    :spIsOfAstCit :OpenEmrAppElectronicHealthRecord, :OpenEmrAppMedicalPracticeManagementApplication ;
     :client :WebBased ;
     :databaseSystem :MySql ;
-    :spSupportsEfCit :OpenEmrFuncClinicalDecisionMaking, :OpenEmrFuncElectronicMedicalRecords, :OpenEmrFuncMedicalBilling, :OpenEmrFuncPatientDemographics, :OpenEmrFuncPatientPortal, :OpenEmrFuncPatientScheduling, :OpenEmrFuncPrescriptions, :OpenEmrFuncReports ;
-    :spOffersFCit :OpenEmrFeatAppointmentCalendar, :OpenEmrFeatClinicMessaging, :OpenEmrFeatClinicalQualityMeasureCalculations, :OpenEmrFeatCreateCustomizeForms, :OpenEmrFeatCreatePrescriptions, :OpenEmrFeatDatedReminders, :OpenEmrFeatElectronicDigitalDocumentManagement, :OpenEmrFeatEncounters, :OpenEmrFeatEyeModule, :OpenEmrFeatFlexibleSystemOfCoding, :OpenEmrFeatGraphicalCharting, :OpenEmrFeatImmunizationsRecords, :OpenEmrFeatInHousePharmacyDispensarySupport, :OpenEmrFeatInsuranceEligibilityQueries, :OpenEmrFeatInsuranceTrackingInterface, :OpenEmrFeatLabRecords, :OpenEmrFeatMedicalClaimManagementInterface, :OpenEmrFeatMedicalImageViewer, :OpenEmrFeatMedicationRecords, :OpenEmrFeatOnlineDrugSearch, :OpenEmrFeatPaperChartTracking, :OpenEmrFeatPatientAppointmentNotification, :OpenEmrFeatPatientDrugScreening, :OpenEmrFeatPatientPortal, :OpenEmrFeatPhysicianReminders, :OpenEmrFeatProcedureRecords, :OpenEmrFeatRecallBoard, :OpenEmrFeatReferrals, :OpenEmrFeatSoap, :OpenEmrFeatTrackPatientDemographics, :OpenEmrFeatTrackPrescriptions, :OpenEmrFeatVitals, :OpenEmrFeatVoiceRecognition ;
     :homepage <https://www.open-emr.org> ;
     :interoperability :CDA, :DICOM, :HL7, :HL7_FHIR, :REST, :SMART ;
     :language dbr:English_language ;
@@ -3995,6 +3991,9 @@
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
     :programmingLanguage dbr:PHP ;
     :repository <https://github.com/openemr> ;
+    :spIsOfAstCit :OpenEmrAppElectronicHealthRecord, :OpenEmrAppMedicalPracticeManagementApplication ;
+    :spOffersFCit :OpenEmrFeatAppointmentCalendar, :OpenEmrFeatClinicMessaging, :OpenEmrFeatClinicalQualityMeasureCalculations, :OpenEmrFeatCreateCustomizeForms, :OpenEmrFeatCreatePrescriptions, :OpenEmrFeatDatedReminders, :OpenEmrFeatElectronicDigitalDocumentManagement, :OpenEmrFeatEncounters, :OpenEmrFeatEyeModule, :OpenEmrFeatFlexibleSystemOfCoding, :OpenEmrFeatGraphicalCharting, :OpenEmrFeatImmunizationsRecords, :OpenEmrFeatInHousePharmacyDispensarySupport, :OpenEmrFeatInsuranceEligibilityQueries, :OpenEmrFeatInsuranceTrackingInterface, :OpenEmrFeatLabRecords, :OpenEmrFeatMedicalClaimManagementInterface, :OpenEmrFeatMedicalImageViewer, :OpenEmrFeatMedicationRecords, :OpenEmrFeatOnlineDrugSearch, :OpenEmrFeatPaperChartTracking, :OpenEmrFeatPatientAppointmentNotification, :OpenEmrFeatPatientDrugScreening, :OpenEmrFeatPatientPortal, :OpenEmrFeatPhysicianReminders, :OpenEmrFeatProcedureRecords, :OpenEmrFeatRecallBoard, :OpenEmrFeatReferrals, :OpenEmrFeatSoap, :OpenEmrFeatTrackPatientDemographics, :OpenEmrFeatTrackPrescriptions, :OpenEmrFeatVitals, :OpenEmrFeatVoiceRecognition ;
+    :spSupportsEfCit :OpenEmrFuncClinicalDecisionMaking, :OpenEmrFuncElectronicMedicalRecords, :OpenEmrFuncMedicalBilling, :OpenEmrFuncPatientDemographics, :OpenEmrFuncPatientPortal, :OpenEmrFuncPatientScheduling, :OpenEmrFuncPrescriptions, :OpenEmrFuncReports ;
     a :SoftwareProduct ;
     rdfs:comment "open source electronic health record and medical practice management solution"@en ;
     rdfs:label "OpenEMR"@en .
@@ -4205,15 +4204,15 @@
     rdfs:label "Reports"@en .
 
 :OpenEyes
-    :spIsOfAstCit :OpenEyesSystemElectronicPatientRecordForOphthalmology ;
     :client :WebBased ;
-    :spOffersFCit :OpenEyesFeatDocumentPatientExamination, :OpenEyesFeatDocumentTheAppearanceOfTheEye, :OpenEyesFeatEntryOfInformationOperations, :OpenEyesFeatImportClinicWorkLists, :OpenEyesFeatMDataCollectionAndDisplay, :OpenEyesFeatMessaging, :OpenEyesFeatPatientOverview, :OpenEyesFeatPrescribing, :OpenEyesFeatViewingOfDocuments, :OpenEyesFeatureAutoPopulateATemplatedLetter ;
     :homepage <https://openeyes.org.uk/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
-    :spUsedInOuCit :OpenEyesUnitOphthalmicUnit ;
     :programmingLanguage dbr:PHP ;
     :repository <https://github.com/appertafoundation/openeyes> ;
+    :spIsOfAstCit :OpenEyesSystemElectronicPatientRecordForOphthalmology ;
+    :spOffersFCit :OpenEyesFeatDocumentPatientExamination, :OpenEyesFeatDocumentTheAppearanceOfTheEye, :OpenEyesFeatEntryOfInformationOperations, :OpenEyesFeatImportClinicWorkLists, :OpenEyesFeatMDataCollectionAndDisplay, :OpenEyesFeatMessaging, :OpenEyesFeatPatientOverview, :OpenEyesFeatPrescribing, :OpenEyesFeatViewingOfDocuments, :OpenEyesFeatureAutoPopulateATemplatedLetter ;
+    :spUsedInOuCit :OpenEyesUnitOphthalmicUnit ;
     a :SoftwareProduct ;
     rdfs:comment "OpenEyes™ is an open source electronic patient record application for ophthalmology."@en ;
     rdfs:label "OpenEyes"@en .
@@ -4275,17 +4274,17 @@
     rdfs:label "Ophthalmic unit"@en .
 
 :OpenHospital
-    :spIsOfAstCit :OpenHospitalAppElectronicHealthRecord, :OpenHospitalAppHospitalInformationSystem ;
     :client :Native ;
     :databaseSystem :MySql ;
-    :spSupportsEfCit :OpenHospitalFuncAccounting, :OpenHospitalFuncBillsManagement, :OpenHospitalFuncDischargeManagement, :OpenHospitalFuncInPatientDepartmentsManagement, :OpenHospitalFuncLaboratoryManagement, :OpenHospitalFuncOutpatientDepartmentManagement, :OpenHospitalFuncPatientAdmissionManagement, :OpenHospitalFuncPharmacyManagement, :OpenHospitalFuncPregnancyManagement, :OpenHospitalFuncStatistics, :OpenHospitalFuncTherapyManagement, :OpenHospitalFuncVaccinesManagement, :OpenHospitalFuncWarehouseManagement ;
-    :spOffersFCit :OpenHospitalFeatAdmissionDischargeNotifications, :OpenHospitalFeatDicomViewer, :OpenHospitalFeatExtendendPatientRegistration, :OpenHospitalFeatInternalCommunication, :OpenHospitalFeatLaboratoryModule, :OpenHospitalFeatMalnutritionControlManagement, :OpenHospitalFeatManageAccurateBirthRecords, :OpenHospitalFeatMonitorCostOfMaterial, :OpenHospitalFeatMonitorTheFlowOfMaterial, :OpenHospitalFeatMonitorTheFlowOfPharmaceuticals, :OpenHospitalFeatMonitorVaccinationDates, :OpenHospitalFeatMultiuserMultigroup, :OpenHospitalFeatOpdRegistration, :OpenHospitalFeatOutPatientDepartmentVisits, :OpenHospitalFeatPatientBillingSupport, :OpenHospitalFeatPharmaceuticalsCriticalLevelNotifications, :OpenHospitalFeatPharmacyCostTracking, :OpenHospitalFeatPregnancyManagement, :OpenHospitalFeatPrinting, :OpenHospitalFeatReceipts, :OpenHospitalFeatRegistrationOfPatientsAndVisits, :OpenHospitalFeatReportSharing, :OpenHospitalFeatReports, :OpenHospitalFeatReportsAndStatisticsInPdfAndExcelFormats, :OpenHospitalFeatSmsPatientsReminder, :OpenHospitalFeatStockReport, :OpenHospitalFeatUserManagement, :OpenHospitalFeatVaccinesDatabase, :OpenHospitalFeatXmppCommunication, :OpenHospitalfeatAdmissionChart ;
     :homepage <https://sourceforge.net/projects/openhospital/> ;
     :language dbr:Arabic, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Swahili_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     :operatingSystem dbr:Linux, dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/informatici/openhospital> ;
+    :spIsOfAstCit :OpenHospitalAppElectronicHealthRecord, :OpenHospitalAppHospitalInformationSystem ;
+    :spOffersFCit :OpenHospitalFeatAdmissionDischargeNotifications, :OpenHospitalFeatDicomViewer, :OpenHospitalFeatExtendendPatientRegistration, :OpenHospitalFeatInternalCommunication, :OpenHospitalFeatLaboratoryModule, :OpenHospitalFeatMalnutritionControlManagement, :OpenHospitalFeatManageAccurateBirthRecords, :OpenHospitalFeatMonitorCostOfMaterial, :OpenHospitalFeatMonitorTheFlowOfMaterial, :OpenHospitalFeatMonitorTheFlowOfPharmaceuticals, :OpenHospitalFeatMonitorVaccinationDates, :OpenHospitalFeatMultiuserMultigroup, :OpenHospitalFeatOpdRegistration, :OpenHospitalFeatOutPatientDepartmentVisits, :OpenHospitalFeatPatientBillingSupport, :OpenHospitalFeatPharmaceuticalsCriticalLevelNotifications, :OpenHospitalFeatPharmacyCostTracking, :OpenHospitalFeatPregnancyManagement, :OpenHospitalFeatPrinting, :OpenHospitalFeatReceipts, :OpenHospitalFeatRegistrationOfPatientsAndVisits, :OpenHospitalFeatReportSharing, :OpenHospitalFeatReports, :OpenHospitalFeatReportsAndStatisticsInPdfAndExcelFormats, :OpenHospitalFeatSmsPatientsReminder, :OpenHospitalFeatStockReport, :OpenHospitalFeatUserManagement, :OpenHospitalFeatVaccinesDatabase, :OpenHospitalFeatXmppCommunication, :OpenHospitalfeatAdmissionChart ;
+    :spSupportsEfCit :OpenHospitalFuncAccounting, :OpenHospitalFuncBillsManagement, :OpenHospitalFuncDischargeManagement, :OpenHospitalFuncInPatientDepartmentsManagement, :OpenHospitalFuncLaboratoryManagement, :OpenHospitalFuncOutpatientDepartmentManagement, :OpenHospitalFuncPatientAdmissionManagement, :OpenHospitalFuncPharmacyManagement, :OpenHospitalFuncPregnancyManagement, :OpenHospitalFuncStatistics, :OpenHospitalFuncTherapyManagement, :OpenHospitalFuncVaccinesManagement, :OpenHospitalFuncWarehouseManagement ;
     a :SoftwareProduct ;
     rdfs:comment "Open source electronic health record (EHR)"@en ;
     rdfs:label "Open Hospital"@en .
@@ -4492,16 +4491,16 @@
     rdfs:label "Admission Chart"@en .
 
 :OpenImis
-    :spIsOfAstCit :OpenImisAppInsuranceManagementInformationSystem ;
     :client :WebBased ;
-    :spSupportsEfCit :OpenImisFuncHealthFinancingProcessManagement ;
-    :spOffersFCit :OpenImisFeatAccessToAllBeneficiaryData, :OpenImisFeatClaimEntry, :OpenImisFeatClaimReview, :OpenImisFeatClaimSubmission, :OpenImisFeatDigitalBeneficiaryManagementAndVerification, :OpenImisFeatDigitalClaimsSubmissionAndautomatedReview, :OpenImisFeatManageBeneficiaries, :OpenImisFeatManageBenefitPackages, :OpenImisFeatManageClientFeedback, :OpenImisFeatManageProviders, :OpenImisFeatMonitoringAndDataAnalysis, :OpenImisFeatPatientVerification, :OpenImisFeatPaymentApproval, :OpenImisFeatServiceClaimsGeneration ;
     :homepage <http://openimis.org/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :operatingSystem dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://openimis.atlassian.net/wiki/spaces/OP/pages/368508929/openIMIS+Software+Components+-+Download> ;
+    :spIsOfAstCit :OpenImisAppInsuranceManagementInformationSystem ;
+    :spOffersFCit :OpenImisFeatAccessToAllBeneficiaryData, :OpenImisFeatClaimEntry, :OpenImisFeatClaimReview, :OpenImisFeatClaimSubmission, :OpenImisFeatDigitalBeneficiaryManagementAndVerification, :OpenImisFeatDigitalClaimsSubmissionAndautomatedReview, :OpenImisFeatManageBeneficiaries, :OpenImisFeatManageBenefitPackages, :OpenImisFeatManageClientFeedback, :OpenImisFeatManageProviders, :OpenImisFeatMonitoringAndDataAnalysis, :OpenImisFeatPatientVerification, :OpenImisFeatPaymentApproval, :OpenImisFeatServiceClaimsGeneration ;
+    :spSupportsEfCit :OpenImisFuncHealthFinancingProcessManagement ;
     a :SoftwareProduct ;
     rdfs:comment "open source software for health financing"@en ;
     rdfs:label "OpenIMIS"@en .
@@ -4585,7 +4584,6 @@
     rdfs:label "Health Financing Process Management"@en .
 
 :OpenMaxims
-    :spIsOfAstCit :OpenMaximsAppEpr, :OpenMaximsAppPas ;
     :databaseSystem :MicrosoftSqlServer ;
     :homepage <http://www.imsmaxims.com/solutions/opensource/> ;
     :interoperability :HL7 ;
@@ -4593,6 +4591,7 @@
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/IMS-MAXIMS> ;
+    :spIsOfAstCit :OpenMaximsAppEpr, :OpenMaximsAppPas ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source EPR"@en ;
     rdfs:label "OpenMAXIMS"@en .
@@ -4608,11 +4607,8 @@
     rdfs:label "Patient Administration System (PAS)"@en .
 
 :OpenMrs
-    :spIsOfAstCit :OpenMrsAppEmr ;
     :client :Native, :WebBased ;
     :databaseSystem :MySql ;
-    :spSupportsEfCit :OpenMrsFuncDataEntry, :OpenMrsFuncFormEntry, :OpenMrsFuncHealthCareDelivery, :OpenMrsFuncInformationManagement, :OpenMrsFuncManagePatientRecords, :OpenMrsFuncPatientCare, :OpenMrsFuncReporting, :OpenMrsFuncResearch, :OpenMrsFuncUserManagement ;
-    :spOffersFCit :OpenMrsFeatAlertsAndFlags, :OpenMrsFeatBuildReports, :OpenMrsFeatCohortQuery, :OpenMrsFeatCreatingPatients, :OpenMrsFeatCreatingRoles, :OpenMrsFeatCreatingUsers, :OpenMrsFeatDataEntryForms, :OpenMrsFeatDisplayGraphs, :OpenMrsFeatPatientDashboard, :OpenMrsFeatRecordPatientEncounters, :OpenMrsFeatTreatmentRegimens, :OpenMrsFeatViewPatientDemographics, :OpenMrsFeatViewingPatients ;
     :homepage <https://openmrs.org> ;
     :interoperability :CDA, :HL7, :HL7_CCD, :HL7_FHIR ;
     :language dbr:English_language ;
@@ -4620,6 +4616,9 @@
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :repository <https://github.com/openmrs/> ;
+    :spIsOfAstCit :OpenMrsAppEmr ;
+    :spOffersFCit :OpenMrsFeatAlertsAndFlags, :OpenMrsFeatBuildReports, :OpenMrsFeatCohortQuery, :OpenMrsFeatCreatingPatients, :OpenMrsFeatCreatingRoles, :OpenMrsFeatCreatingUsers, :OpenMrsFeatDataEntryForms, :OpenMrsFeatDisplayGraphs, :OpenMrsFeatPatientDashboard, :OpenMrsFeatRecordPatientEncounters, :OpenMrsFeatTreatmentRegimens, :OpenMrsFeatViewPatientDemographics, :OpenMrsFeatViewingPatients ;
+    :spSupportsEfCit :OpenMrsFuncDataEntry, :OpenMrsFuncFormEntry, :OpenMrsFuncHealthCareDelivery, :OpenMrsFuncInformationManagement, :OpenMrsFuncManagePatientRecords, :OpenMrsFuncPatientCare, :OpenMrsFuncReporting, :OpenMrsFuncResearch, :OpenMrsFuncUserManagement ;
     :spUsedByUserCit :OpenMrsUseClinicians, :OpenMrsUserAdministrativeStaff, :OpenMrsUserDataEntryClerks, :OpenMrsUserHealthCareProviders, :OpenMrsUserNurses ;
     a :SoftwareProduct ;
     rdfs:comment "open source enterprise electronic medical record system platform"@en ;
@@ -4762,22 +4761,22 @@
     rdfs:label "Nurses"@en .
 
 :Orthanc
-    :spIsOfAstCit :OrthancAppDicomServer, :OrthancAppMiniPacs, :OrthancAppVNA, :OrthancAppViewerOfMedicalImages, :OrthancAppWebViewer ;
     :client :WebBased ;
     :databaseSystem :MySql, :PostgreSql ;
-    :spSupportsEfCla :BbExecutionOfRadiologicalExaminations ; # source unknown but approved by Michelle
-    :spOffersFCla :WhoDhiCaptureFromDigitalDevices ; # source unknown but approved by Michelle
-    :spSupportsEfCit :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
-    :spOffersFCit :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
     :homepage <https://www.orthanc-server.com/> ;
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows, dbr:Unix-like ;
-    :spUsedInOuCit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://hg.orthanc-server.com/> ;
+    :spIsOfAstCit :OrthancAppDicomServer, :OrthancAppMiniPacs, :OrthancAppVNA, :OrthancAppViewerOfMedicalImages, :OrthancAppWebViewer ;
+    :spOffersFCit :OrthancFeatDataManagementForClinicalRoutineAndMedicalResearch, :OrthancFeatDicomIdentifiers, :OrthancFeatDicomNetworkProtocol, :OrthancFeatDicomScriptingForClinicalRoutine, :OrthancFeatEvaluationsReport, :OrthancFeatInjurySurveillanceSystemRegistrationReport, :OrthancFeatListingAvailableServers, :OrthancFeatPluginMechanismToAddNewModules, :OrthancFeatRetrieveImages, :OrthancFeatRetrievingDicomResourcesFromWadoRsServer, :OrthancFeatSearchContent, :OrthancFeatSendImages, :OrthancFeatSendingDicomResourcesToStowRsServer, :OrthancFeatTestConnection, :OrthancFeatTopDiseasesReport ;
+    :spOffersFCla :WhoDhiCaptureFromDigitalDevices ;
+    :spSupportsEfCit :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
+    :spSupportsEfCla :BbExecutionOfRadiologicalExaminations ;
     :spUsedByUserCit :OrthancUgRadiologistSctid66862007, :OrthancUgResearcherSctid769038007, :OrthancUserIntegrators, :OrthancUserNetworkEngineer, :OrthancUserPhysicist, :OrthancUserSystemEngineer ;
+    :spUsedInOuCit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
     a :SoftwareProduct ;
     rdfs:comment "Open-source, lightweight DICOM server."@en ;
     rdfs:label "Orthanc"@en .
@@ -4841,8 +4840,8 @@
     rdfs:label "Retrieve images"@en .
 
 :OrthancFeatRetrievingDicomResourcesFromWadoRsServer
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     a :FeatureCitation ;
-	:fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Retrieving DICOM resources from WADO-RS server"@en .
 
 :OrthancFeatSearchContent
@@ -4854,8 +4853,8 @@
     rdfs:label "Send images"@en .
 
 :OrthancFeatSendingDicomResourcesToStowRsServer
+    :fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     a :FeatureCitation ;
-	:fCitClassifiedAs :JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts ;
     rdfs:label "Sending DICOM resources to a STOW-RS server"@en .
 
 :OrthancFeatTestConnection
@@ -4937,7 +4936,6 @@
     rdfs:label "System engineer"@en .
 
 :OscarEmr
-    :spIsOfAstCit :OscarEmrAppEmr ;
     :client :WebBased ;
     :databaseSystem :MySql ;
     :homepage <https://oscar-emr.com/oscar/> ;
@@ -4947,6 +4945,7 @@
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
     :programmingLibrary :Maven ;
     :repository <https://bitbucket.org/oscaremr/oscar/src/oscar19.1/> ;
+    :spIsOfAstCit :OscarEmrAppEmr ;
     a :SoftwareProduct ;
     rdfs:comment "Open Source EMR"@en ;
     rdfs:label "OSCAREMR"@en .
@@ -4957,12 +4956,12 @@
     rdfs:label "Electronic Medical Record (EMR)"@en .
 
 :Pacs1
-    :spIsOfAstCit :CommercialPacs1AppSys ;
     :client :Native, :WebBased ;
-    :spOffersFCit :Pacs1Feat3DAnd4DFunctionality, :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines, :Pacs1FeatApprovalConcept, :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities, :Pacs1FeatDataArchivingAndManagemnt, :Pacs1FeatDirectIntegrationInClinicalInformationSystem, :Pacs1FeatDistributionOfImages, :Pacs1FeatHangingProtocols, :Pacs1FeatMovingCTImages, :Pacs1FeatMulticenterInstallationWithCentralDataArchiving, :Pacs1FeatOnlineAndOfflineArchiveManagement, :Pacs1FeatProtocolOfAllTasksTakenByUsers, :Pacs1FeatQueryingOverVariousArchives, :Pacs1FeatRetrievalOfVariousArchives, :Pacs1FeatSnapshots, :Pacs1FeatStandardConformityForInterfacesToModalities, :Pacs1FeatStatisticalAnalyses, :Pacs1FeatVariousMeasurementAndAnalysesTools, :Pacs1FeatWorkLists, :Pacs1LosslessImageDataCompression ;
     :interoperability :DICOM, :HL7, :IHE ;
     :language dbr:French_language, dbr:German_language, dbr:Spanish_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
+    :spIsOfAstCit :CommercialPacs1AppSys ;
+    :spOffersFCit :Pacs1Feat3DAnd4DFunctionality, :Pacs1FeatAdditionalFeaturesForSeveralMedicalDisciplines, :Pacs1FeatApprovalConcept, :Pacs1FeatCrossStudyRegistrationOfExaminationsOfVariousModalities, :Pacs1FeatDataArchivingAndManagemnt, :Pacs1FeatDirectIntegrationInClinicalInformationSystem, :Pacs1FeatDistributionOfImages, :Pacs1FeatHangingProtocols, :Pacs1FeatMovingCTImages, :Pacs1FeatMulticenterInstallationWithCentralDataArchiving, :Pacs1FeatOnlineAndOfflineArchiveManagement, :Pacs1FeatProtocolOfAllTasksTakenByUsers, :Pacs1FeatQueryingOverVariousArchives, :Pacs1FeatRetrievalOfVariousArchives, :Pacs1FeatSnapshots, :Pacs1FeatStandardConformityForInterfacesToModalities, :Pacs1FeatStatisticalAnalyses, :Pacs1FeatVariousMeasurementAndAnalysesTools, :Pacs1FeatWorkLists, :Pacs1LosslessImageDataCompression ;
     a :SoftwareProduct ;
     rdfs:comment "Picture Archiving and Communication System Dummy 1"@en ;
     rdfs:label "CommercialPACS1"@en .
@@ -5068,13 +5067,13 @@
     rdfs:label "Lossless image data compression"@en .
 
 :Pacs2
-    :spIsOfAstCit :CommercialPacs2AppSys ;
     :client :Mobile, :WebBased ;
-    :spOffersFCit :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Linux, dbr:MacOS, dbr:Microsoft_Windows ;
+    :spIsOfAstCit :CommercialPacs2AppSys ;
+    :spOffersFCit :Pacs2FeatAdaptableWorkflow, :Pacs2FeatAutofax, :Pacs2FeatDICOMStructuredReporting, :Pacs2FeatDictationFunction, :Pacs2FeatDisplayOfAllModalities, :Pacs2FeatIntegrationOfOtherInformationSystems, :Pacs2FeatNeededDiagnosticToolsAndViews, :Pacs2FeatRemoteAcess, :Pacs2FeatTabletView, :Pacs2FeatZeroFootprintViewer ;
     a :SoftwareProduct ;
     rdfs:comment "Picture Archiving and Communication System Dummy 2"@en ;
     rdfs:label "Commercial PACS 2"@en .
@@ -5130,9 +5129,9 @@
     rdfs:label "Zero-footprint viewer"@en .
 
 :Pik
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :PikAppPflegeinformationsKommunikationssystem ;
     :spOffersFCit :PikFeatureAdaptionOfNursingCarePlansDuringCarePlanning, :PikFeatureAnamnesisSupportedByOfferingFlexibleFormsForDataEntry, :PikFeatureCreationOfNursingCarePlans, :PikFeatureSupportingAllPhasesOfTheNursingProcess, :PikFeatureWardManagement, :PikFeatureWritingOfNursingLetters, :PikNursingDocumentationForms ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "PIK"@en .
@@ -5318,15 +5317,15 @@
     rdfs:label "Transfer of order data"@en .
 
 :Ris1
-    :spIsOfAstCit :CommercialRis1AppSys ;
     :client :WebBased ;
-    :spSupportsEfCit :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FuncCreationOfCustomizedReports, :Ris1FuncElectronicRecordingOfResultsAndExaminations, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTrackMaterialAndFilmConsumption, :Ris1FuncTransferOfTheOrderData ;
-    :spOffersFCit :Ris1FeatAccessToExaminationComments, :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatCreationOfCustomizedReports, :Ris1FeatElectronicRecordingOfResultsAndExaminations, :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting, :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTrackAllOrder, :Ris1FeatTrackMaterialAndFilmConsumption, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatWYSIWYGEditorOrSimpleVies, :Ris1InterfaceToPrinterAndPrinterView ;
     :interoperability :DICOM, :GDT, :HL7 ;
     :language dbr:English_language, dbr:German_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Linux, dbr:Macintosh, dbr:Microsoft_Windows, dbr:Unix ;
     :programmingLanguage <http://dbpedia.org/resource/C++>, <http://dbpedia.org/resource/C_Sharp_(programming_language)> ;
+    :spIsOfAstCit :CommercialRis1AppSys ;
+    :spOffersFCit :Ris1FeatAccessToExaminationComments, :Ris1FeatAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FeatAssignFreeAndAvailableModalities, :Ris1FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris1FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FeatCoordinationOfRisAndPACS, :Ris1FeatCreationOfCustomizedReports, :Ris1FeatElectronicRecordingOfResultsAndExaminations, :Ris1FeatExtensiveStatisticsThroughIntegrateReportingAndCharting, :Ris1FeatFullRangeOfFunctionsAtDecentralizedWorkstations, :Ris1FeatInfluencingTheOrderStatusByAuthorizedUsers, :Ris1FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FeatPatientRegistration, :Ris1FeatQualityAssuranceThroughCompletePatientHistory, :Ris1FeatSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FeatSearchForSpecificCategoryOrRestrictionWhileOrdering, :Ris1FeatSupplementBillingRelevantDataToOrder, :Ris1FeatTrackAllOrder, :Ris1FeatTrackMaterialAndFilmConsumption, :Ris1FeatTransferOfOrderData, :Ris1FeatVoiceRecognition, :Ris1FeatWYSIWYGEditorOrSimpleVies, :Ris1InterfaceToPrinterAndPrinterView ;
+    :spSupportsEfCit :Ris1FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris1FuncAssignFreeAndAvailableModalities, :Ris1FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris1FuncContextuelInformationSuchAsTheExaminationAndFindingsHistory, :Ris1FuncCreationOfCustomizedReports, :Ris1FuncElectronicRecordingOfResultsAndExaminations, :Ris1FuncInfluecingTheOrderStatusByAuthorizedUsers, :Ris1FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris1FuncPatientRegistration, :Ris1FuncQualityAssuranceThroughCompletePatientHistory, :Ris1FuncSaveImageOrSoundOrTextDataInThePatientFile, :Ris1FuncSearchForSpecificCategoryOrRestrictionsWhileOrdering, :Ris1FuncSupplementBillingRelevantDataToOrder, :Ris1FuncTrackAllOrder, :Ris1FuncTrackMaterialAndFilmConsumption, :Ris1FuncTransferOfTheOrderData ;
     a :SoftwareProduct ;
     rdfs:comment "Commercial Radiology Information System (RIS) Dummy 1"@en ;
     rdfs:label "Commercial RIS 1"@en .
@@ -5527,15 +5526,15 @@
     rdfs:label "Interface to printer and printer view"@en .
 
 :Ris2
-    :spIsOfAstCit :CommercialRis2AppSys ;
     :client :WebBased ;
-    :spSupportsEfCit :RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FuncCreationOfCustomizedReports, :RIS2FuncElectronicRecordingOfResultsAndExaminations, :RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin, :RIS2FuncTrackAllOrder, :RIS2FuncTrackMaterialAndFilmConsumption, :RIS2FuncTransferOfOrderData, :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2FuncAssignFreeAndAvailableModalities, :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FuncPatientRegistration, :Ris2FuncQualityAssuranceThroughCompletePatientHistory ;
-    :spOffersFCit :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FeatCoordinationOfRISAndPACS, :RIS2FeatCreationOfCustomizedReports, :RIS2FeatElectronicRecordingOfResultsAndExaminations, :RIS2FeatElectronicSignature, :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting, :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FeatInterfaceToPrinterAndPrinterView, :RIS2FeatPhoneIntegration, :RIS2FeatRemoteCreationOfResultsLetters, :RIS2FeatRetrieveResults, :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering, :RIS2FeatSpecialSettingsForImageView, :RIS2FeatTextProcessing, :RIS2FeatTrackAllOrder, :RIS2FeatTrackMaterialAndFilmConsumption, :RIS2FeatTransferOfOrderData, :RIS2FeatVoiceRecognition, :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
     :interoperability :DICOM, :HL7 ;
     :language dbr:German_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :operatingSystem dbr:Windows_7, dbr:Windows_Vista ;
     :programmingLanguage <http://dbpedia.org/resource/Java_(programming_language)> ;
+    :spIsOfAstCit :CommercialRis2AppSys ;
+    :spOffersFCit :RIS2FeatContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FeatCoordinationOfRISAndPACS, :RIS2FeatCreationOfCustomizedReports, :RIS2FeatElectronicRecordingOfResultsAndExaminations, :RIS2FeatElectronicSignature, :RIS2FeatExtensiveStatisticsThroughIntegratedReportingAndCharting, :RIS2FeatInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FeatInterfaceToPrinterAndPrinterView, :RIS2FeatPhoneIntegration, :RIS2FeatRemoteCreationOfResultsLetters, :RIS2FeatRetrieveResults, :RIS2FeatSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FeatSearchForSpecificCategoryOrRestrictionsWhileOrdering, :RIS2FeatSpecialSettingsForImageView, :RIS2FeatTextProcessing, :RIS2FeatTrackAllOrder, :RIS2FeatTrackMaterialAndFilmConsumption, :RIS2FeatTransferOfOrderData, :RIS2FeatVoiceRecognition, :Ris2FeatAssignFreeAndAvailableModalities, :Ris2FeatCancellationOfTransferredBillingDataAndSubsequentProcessing, :Ris2FeatFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FeatManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FeatQualityAssuranceThroughCompletePatientHistory, :Ris2atAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2eatPatientRegistration ;
+    :spSupportsEfCit :RIS2FuncContextualInformationSuchAsTheExaminationAndFindingsHistory, :RIS2FuncCreationOfCustomizedReports, :RIS2FuncElectronicRecordingOfResultsAndExaminations, :RIS2FuncInfluencingTheOrderStatusByAuthorizedUsers, :RIS2FuncSaveImageOrSoundOrTextDataInThePatientFile, :RIS2FuncSearchForSpecificCategoryOrRestrictionsWhileOrderin, :RIS2FuncTrackAllOrder, :RIS2FuncTrackMaterialAndFilmConsumption, :RIS2FuncTransferOfOrderData, :Ris2FuncAddOrChangeOrDeleteBillingCodesAndMaterial, :Ris2FuncAssignFreeAndAvailableModalities, :Ris2FuncCancellationOfTransferredBillingDataAndSubsequenzProcessing, :Ris2FuncFastAndSecureDispatchOfTheQuarterlyStatement, :Ris2FuncManualOrAutomatedTransferOfServiceCodesToTheBillingSystem, :Ris2FuncPatientRegistration, :Ris2FuncQualityAssuranceThroughCompletePatientHistory ;
     a :SoftwareProduct ;
     rdfs:comment "Commercial Radiology Information System (RIS) Dummy 2"@en ;
     rdfs:label "Commercial RIS 2"@en .
@@ -5620,9 +5619,9 @@
     rdfs:label "Enterprise Resource Planning Software"@en .
 
 :SapR3BusinessProcessControlSystemSoftware
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :SapR3AppBusinessProcessControlSystemSoftware, :SapR3AppEnterpriseResourcePlanningSoftware ;
     :spOffersFCit :SapR3BusinessProcessControlSystemSoftwareFeaturePlanningView, :SapR3BusinessProcessControlSystemSoftwareFeatureRequestFormAssignedATimeslotRoomAndStaff ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "SAP R3 Business Process Control System software"@en .
@@ -5638,20 +5637,20 @@
     rdfs:label "request form assigned a timeslot room and staff"@en .
 
 :Senaite
-    :spIsOfAstCit :SenaiteAppEnterpriseLaboratorySystem, :SenaiteAppLaboratoryInformationManagementSystem ;
     :client :Native ;
-    :spSupportsEfCit :SenaiteFuncAnalysis, :SenaiteFuncInstrumentsManagement, :SenaiteFuncQualityControl ;
-    :spOffersFCit :SenaiteFeatAddAnalyses, :SenaiteFeatAddClients, :SenaiteFeatAddGlobalAnalysisSpecifications, :SenaiteFeatAnalysisCategorization, :SenaiteFeatAnalysisProfiles, :SenaiteFeatAnalysisTemplates, :SenaiteFeatAuditLog, :SenaiteFeatAutogenerateBarcodesOnSampleReception, :SenaiteFeatCatalogOfTestsAnalyses, :SenaiteFeatChangeAnalysesProperties, :SenaiteFeatCreateAnalysisProfiles, :SenaiteFeatCreateSamples, :SenaiteFeatEnterResults, :SenaiteFeatGenerateABarcodeForSample, :SenaiteFeatGenerateAliquotsFromSamples, :SenaiteFeatGeneratePartitionsFromSamples, :SenaiteFeatGroupAnalysesByType, :SenaiteFeatGroupSamplesByProjectsAndOrClients, :SenaiteFeatLocatingASample, :SenaiteFeatManageAnalyses, :SenaiteFeatOutOfRangeAnalyses, :SenaiteFeatPublishTheResults, :SenaiteFeatQualityControlTests, :SenaiteFeatReceiveTheSample, :SenaiteFeatRemoveAnalyses, :SenaiteFeatResultReport, :SenaiteFeatRolesAndGroupsWithDifferentPermissions, :SenaiteFeatSampleTemplates, :SenaiteFeatSampleWorkflow, :SenaiteFeatSecurityPolicies, :SenaiteFeatVerifyTheSubmittedResults, :SenaiteFeatWorksheets, :SenaiteFuncSamplesManagement ;
     :homepage <https://www.senaite.com> ;
     :interoperability :REST ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
     :operatingSystem dbr:Debian, dbr:MacOS, dbr:Ubuntu ;
-    :spUsedInOuCit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
     :programmingLanguage dbr:JavaScript, <http://dbpedia.org/resource/Python_(programming_language)> ;
     :repository <https://github.com/senaite> ;
     :softwareProductComponent :BikaLims ;
+    :spIsOfAstCit :SenaiteAppEnterpriseLaboratorySystem, :SenaiteAppLaboratoryInformationManagementSystem ;
+    :spOffersFCit :SenaiteFeatAddAnalyses, :SenaiteFeatAddClients, :SenaiteFeatAddGlobalAnalysisSpecifications, :SenaiteFeatAnalysisCategorization, :SenaiteFeatAnalysisProfiles, :SenaiteFeatAnalysisTemplates, :SenaiteFeatAuditLog, :SenaiteFeatAutogenerateBarcodesOnSampleReception, :SenaiteFeatCatalogOfTestsAnalyses, :SenaiteFeatChangeAnalysesProperties, :SenaiteFeatCreateAnalysisProfiles, :SenaiteFeatCreateSamples, :SenaiteFeatEnterResults, :SenaiteFeatGenerateABarcodeForSample, :SenaiteFeatGenerateAliquotsFromSamples, :SenaiteFeatGeneratePartitionsFromSamples, :SenaiteFeatGroupAnalysesByType, :SenaiteFeatGroupSamplesByProjectsAndOrClients, :SenaiteFeatLocatingASample, :SenaiteFeatManageAnalyses, :SenaiteFeatOutOfRangeAnalyses, :SenaiteFeatPublishTheResults, :SenaiteFeatQualityControlTests, :SenaiteFeatReceiveTheSample, :SenaiteFeatRemoveAnalyses, :SenaiteFeatResultReport, :SenaiteFeatRolesAndGroupsWithDifferentPermissions, :SenaiteFeatSampleTemplates, :SenaiteFeatSampleWorkflow, :SenaiteFeatSecurityPolicies, :SenaiteFeatVerifyTheSubmittedResults, :SenaiteFeatWorksheets, :SenaiteFuncSamplesManagement ;
+    :spSupportsEfCit :SenaiteFuncAnalysis, :SenaiteFuncInstrumentsManagement, :SenaiteFuncQualityControl ;
     :spUsedByUserCit :SenaiteUserLaboratoryAnalyst, :SenaiteUserLaboratoryManager ;
+    :spUsedInOuCit :SenaiteOrgEnterpriseEnvironments, :SenaiteOrgLab ;
     a :SoftwareProduct ;
     rdfs:comment "Enterprise Open Source Laboratory System"@en ;
     rdfs:label "SENAITE"@en .
@@ -5856,9 +5855,9 @@
     rdfs:label "Financials System"@en .
 
 :SysmexXs1000iHaematologyAnalyser
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :SysmexXs1000iHaematologyAnalyserAppHaematologyAnalyser ;
     :spOffersFCit :SysmexXs1000iHaematologyAnalyserFeatCompleteTestResults, :SysmexXs1000iHaematologyAnalyserFeatReadBarCodeLabel ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Sysmex XS 1000i haematology analyser"@en .
@@ -5876,17 +5875,17 @@
     a :FeatureCitation ;
     rdfs:label "read bar code label"@en .
 
-:TeleDicomAppSysTeleconsultationSystem
-    a :ApplicationSystemTypeCitation ;
-    rdfs:label "Teleconsultation system"@en .
-
 :TeleDicom
+    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     :spIsOfAstCit :TeleDicomAppSysTeleconsultationSystem ;
     :spOffersFCit :TeleDicomFeatRealTimeVoiceCommunication, :TeleDicomFeatureInteractiveConsultationBetweenTwoOrMoreCenters, :TeleDicomFeatureOfflineMode, :TeleDicomFeatureUseOfInteractivePointersAndSpecificCalculationTools, :TeleDicomFeatureVisualizationOfSynchronizedDICOMImages ;
-    :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Tele DICOM"@en .
+
+:TeleDicomAppSysTeleconsultationSystem
+    a :ApplicationSystemTypeCitation ;
+    rdfs:label "Teleconsultation system"@en .
 
 :TeleDicomFeatRealTimeVoiceCommunication
     :fCitClassifiedAs :EhrSfmSupportForCommunicationsBetweenOrganizations, :EhrSfmSupportRemoteHealthcareServices ;
@@ -5914,9 +5913,9 @@
     rdfs:label "visualization of synchronized DICOM images"@en .
 
 :Theriak
-    :spIsOfAstCit :TheriakAppSysCpoe;
-    :spOffersFCit :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000002> ;
+    :spIsOfAstCit :TheriakAppSysCpoe ;
+    :spOffersFCit :TheriakFeaturePossibilityToContinuePrescribingWhileSafetyAlert, :TheriakFeatureSafetyAlertsInCaseOfAllergies, :TheriakFeatureSafetyAlertsInCaseOfOverdosing, :TheriakFeatureStandardizedPrescriptionsAndMedicationProtocols, :TheriakMedicationControlBasedOnNationalDrugDatabase, :TheriakMedicationSelection, :TheriakPossibilityToContinuePrescribingWhileSafetyAlert, :TheriakSafetyAlertsForAcceptedMedicationAreSeenByPharmacistsWhoCanContactPhysiciansOrNurses, :TheriakSafetyAlertsInCaseOfDrugDrugInteractions, :TheriakSafetyAlertsInRealTime ;
     a :SoftwareProduct ;
     rdfs:comment "Softwareprodukt aus Studie, keine weiteren Informationen vorhanden"@en ;
     rdfs:label "Theriak"@en .
@@ -5971,9 +5970,9 @@
     rdfs:label "safety alerts in real time"@en .
 
 :WorldVistA
-    :spIsOfAstCit :WorldVistAdVistaAppHis, :WorldVistaAppEhr ;
     :homepage <https://worldvista.org> ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
+    :spIsOfAstCit :WorldVistAdVistaAppHis, :WorldVistaAppEhr ;
     a :SoftwareProduct ;
     rdfs:comment "public domain electronic health record"@en ;
     rdfs:label "WorldVistA"@en .
