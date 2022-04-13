@@ -11,50 +11,50 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
-hito:MbAmbulanzmanagementsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Ambulanzmanagementsystem"@de, "Outpatient management System"@en ;
-    skos:altLabel "Ambulanzinformationssystem"@de, "Krankenhausambulanzsystem"@de ;
-    skos:definition "Das Ambulanzmanagementsystem dient der Organisation der ambulanten Behandlung, die während einem oder mehreren Besuchen in den Ambulanzen eines Krankenhauses, oft in Verbindung mit vergangenen oder zukünftigen stationären Aufenthalten, erfolgt. Die benötigten Funktionen ähneln denen, die in einer Allgemeinarztpraxis benötigt werden. Die Aufgaben sind mit denen eines Medical Documentation System vergleichbar, aber der Fokus liegt mehr auf der Terminplanung und der Organisation des Arbeitsablaufes in der ambulanten Station."@en .
-
-hito:MbAnbieterneutralesArchiv
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Anbieterneutrales Archiv"@de, "Vendor neutral archive"@en ;
-    skos:altLabel "Medizinisches Multi-Media-Archiv"@de, "Multimediales Dokumentenmanagement- und Archivsystem"@de, "Multimediales Universalarchiv"@de, "VNA"@en, "eArchiv"@de ;
-    skos:definition "Im VNA wird sämtliches medizinisches Material wie Bilder, Befunde, Laborberichte oder teilelektronische Patientenakten vereint und zentral gespeichert. Die Daten sind jederzeit ortsunabhängig verfügbar und über einen integrierten Viewer einsehbar. Es sorgt für sichere und schnelle Archivierung, Funktionalisierung und Visualisierung aller Arten von Patienten- und Untersuchungsdaten. Herstellerunabhängig, adaptiert es zuverlässig die unterschiedlichsten Datenformate und schafft damit einen hochgradig konstanten und sicheren Datenspeicherplatz."@en .
-
-hito:MbApothekeninformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Apothekeninformationssystem"@de, "Pharmacy information system"@en ;
-    skos:definition "Das Apothekeninformationssystem versorgt Patient:innen und Stationen mit den richtigen Medikamenten in der richtigen Dosis und hilft auch dabei den täglichen Verkauf fehlerfrei und effektiv abzuwickeln und damit die Gefahr einzuschränken, die durch fehlerhafte Lagerung oder Abgabe entstehen kann. Zudem erleichtert es die Einhaltung der gesetzlichen Bestimmungen, welche Bezug, Lagerung, Abgabe und Weiterverarbeitung der in den Apotheken gehandelten Arzneimittel definieren."@en .
-
-hito:MbApplicationSystemTypeCatalogue
+hito:MbApplicationTypeSystemCatalogue
     a hito:ApplicationSystemTypeCatalogue ;
-    rdfs:comment "Application System Catalogue from the German master thesis 'Ein Katalog für Anwendungssystemtypen im Gesundheitswesen'."@en ;
-    rdfs:label "Michelle Bindel's Application System Catalogue"@en .
+    rdfs:comment "Application System Type Catalogue from the German master thesis 'Ein Katalog für Anwendungssystemtypen im Gesundheitswesen'."@en ;
+    rdfs:label "HITO Application System Type Catalogue"@en .
 
-hito:MbBildarchivierungsUndKommunikationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Bildarchivierungs- und Kommunikationssystem"@de, "Picture archiving and communication system"@en ;
-    skos:altLabel "Bilddatenmanagementsystem"@de, "PACS"@en ;
-    skos:definition "Das Bildarchivierungs- und Kommunikationssystem organisiert und archiviert medizinische Bilddaten nach geltenden Standards. Es ist das zentrale Bildmanagementsystem in einem Krankenhaus und bietet einfachen Zugriff auf die Bilddaten nach der Befundung, um diese weiter zu verarbeiten, zu präsentieren oder zwischen Abteilungen und Institutionen zu teilen. Es hat ein hohes Interoperabilitätslevel und ist besonders eng mit dem RIS verbunden."@en .
-
-hito:MbBlutbankmanagementsystem
+hito:MbBloodBankManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Blood bank management system"@en, "Blutbankmanagementsystem"@de ;
     skos:definition "Das Blutbankmanagementsystem ist auf die Verwaltung von Blutkonserven und die Organisation des Blutspendedienstes spezialisiert."@en .
 
-hito:MbCodiersystem
+hito:MbCardiovascularInformationSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Codiersystem"@de ;
+    rdfs:label "Cardiovascular information system"@en, "Kardiologieinformationssystem"@de ;
+    skos:altLabel "CVIS"@en ;
+    skos:definition "Das Kardiologieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer kardiologischen Abteilung."@en .
+
+hito:MbClinicalDataRepository
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Clinical data repository"@en, "Klinisches Datenspeichersystem"@de ;
+    skos:altLabel "IOP-Plattform"@de, "Interoperabilitäts-Plattform"@de ;
+    skos:definition "Das Clinical Data Repository bewältigt den digitalen Austausch großer Mengen von Behandlungsinformationen als strukturierte Daten und sorgt für eine sichere Kommunikation mit anderen Krankenhäusern, Patient:innen, Forscher:innen und Krankenkassen. Diese können für die Forschung oder Abrechnung weiterverarbeitet werden oder sofort zur Weiterbehandlung der Patient:innen genutzt werden."@en .
+
+hito:MbClinicalInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Clinical information system"@en, "Klinisches Informationssystem"@de ;
+    skos:altLabel "CIS"@en, "EPR"@en, "Electronic Patient Record System"@en, "KAS"@de, "Klinisches Arbeitsplatzsystem"@de ;
+    skos:definition "Das Klinische Informationssystem integriert das Medizinische Dokumentationssystem, das Pflegerische Dokumentationssystem, das Ambulanzmanagementsystem und das Leistungsanforderungssystem, um für alle an der Behandlung Beteiligten eine einzelne abgestimmte Sicht auf die Daten der Patient:innen bereitzustellen."@en .
+
+hito:MbCodingSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Codiersystem"@de, "Coding System"@en ;
     skos:altLabel "DRG-Managementsystem"@de, "Kodierwerkzeug"@de, "Leistungskodierung"@de ;
     skos:definition "Das Codier-System ist oft in andere Anwendungssysteme integriert und sorgt für die schnelle und sichere Dokumentation klinischer Leistungen durch Diagnose- und Behandlungscodes unter Einhaltung der gesetzlichen Vorgaben."@en .
+
+hito:MbCytologyInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Cytology Information System"@en, "Zytologieinformationssystem"@de ;
+    skos:definition "Das Zytologieinformationssystem hilft dabei die Vielzahl der unterschiedlichen Untersuchungen und deren Durchführung und Auswertung in zytologischen Laboren zu organisieren und unterstützt effiziente und effektive Arbeitsabläufe. Das System ähnelt in seinen Funktionalitäten einem Laborinformationssystem und erlaubt die Integration von Spezialgeräten."@en .
 
 hito:MbDataWarehouseSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
@@ -62,25 +62,45 @@ hito:MbDataWarehouseSystem
     rdfs:label "Data Warehouse System"@de, "Data warehouse system"@en ;
     skos:definition "Daten werden aus anderen Anwendungssystemen in das Data Warehouse importiert und dort in strukturierter Form abgelegt und ausgewertet. Die Analyse der Daten hilft dabei Entscheidungen bei der Verwaltung des Krankenhauses zu treffen oder kann für Organisation und Durchführung von klinischen Studien genutzt werden."@en .
 
-hito:MbDialyseinformationssystem
+hito:MbDecisionSupportSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Decision support system"@en, "Entscheidungsunterstützungssystem"@de ;
+    skos:altLabel "Clinical decision support system"@en, "KI-Assistenzsystem"@de, "KI-System"@de, "KI-basierte Entscheidungssysteme"@de, "KI-basierte Systeme"@de, "Medizinische Wissensdatenbank"@de ;
+    skos:definition "Entscheidungsunterstützungssysteme sind wissensbasierte System, die auf verschiedene Arten dabei helfen die richtige Diagnose oder Behandlung für die Patient:innen zu finden. Nutzer:innen können das kontextsensitive Fachwissen gezielt abrufen oder es wird im Diagnose- und Befundungsprozess aktiv zugespielt. Oft liegt es nicht als separates System vor, sondern ist in andere Anwendungssystemtypen integriert und wird häufig durch eine KI-Komponente unterstützt. Grundsätzlich kann zwischen einer medizinischen und einer administrativen Nutzung unterschieden werden."@en .
+
+hito:MbDialysisInformationSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Dialyseinformationssystem"@de, "Dialysis information system"@en ;
     skos:definition "Das Dialyseinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer Dialyseabteilung. Zusätzlich unterstützt es die Verbindung zu Hämodialyse-Geräten."@en .
 
-hito:MbDigitalePatientenakte
+hito:MbDigitalDictationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Digital dictation system"@en, "Digitales Diktiersystem"@de ;
+    skos:altLabel "Digitales Diktat"@de, "Spracherkennungssystem"@de ;
+    skos:definition "Das Digitales Diktiersystem stellt digitale Spracherkennung und -aufzeichnung zur Verfügung und lässt medizinisches Personal die Untersuchungs- und Diagnostikinformationen per Spracheingabe direkt dokumentieren. Es verringert den Verwaltungs- und Personalaufwand, ist oft in andere Anwendungssysteme integriert und kann KI-basiert sein."@en .
+
+hito:MbDocumentArchivingSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Document archiving system"@en, "Klinisches Archivsystem"@de ;
+    skos:altLabel "Archivmanagement und Dokumentenmanagementsystem"@de, "Archivsystem"@de, "Clinical Archive"@en, "Digitales Archiv"@de, "Digitales Archivsystem"@de, "Digitales Dokumentenarchiv"@de, "Digitales Langzeitarchiv"@de, "Langzeitarchivlösung"@de ;
+    skos:definition "Das Klinisches Archivsystem dient als zentraler Speicher für die Langzeitarchivierung von klinischen, kaufmännischen und administrativen Dokumenten und Daten aus Scanprozessen, dem Primärsystem oder Sub-/Spezialsystemen. Diese werden mit einer elektronischen Signatur versehen, in standardisierter Form abgelegt und sind leicht wieder abrufbar."@en .
+
+hito:MbElectronicMedicalRecord
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Digitale Patientenakte"@de, "Electronic medical record"@en ;
     skos:altLabel "Digitale Behandlungsdokumentation"@de, "Digitale Krankenakte"@de, "Digitale Patientendokumentation"@de, "EMR"@en, "Elektronische Dokumentation von Behandlungsleistungen"@de, "Elektronische Fallakte"@de, "Elektronische Patientenakte"@de ;
     skos:definition "Die Digitale Patientenakte setzt sich zusammen aus dem Medizinischen und Pflegerischen Dokumentationssystem und manchmal auch einem Leistungsanforderungssystem. Sie bietet umfassende Dokumentationsmöglichkeiten und fasst Dokumente, Bilddaten und strukturierte medizinische Daten zusammen. Das alles steht denen, die an der Patientenversorgung beteiligt sind jederzeit und aktuell zur Verfügung."@en .
 
-hito:MbDigitalesDiktiersystem
+hito:MbEmergencyResponseSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Digital dictation system"@en, "Digitales Diktiersystem"@de ;
-    skos:altLabel "Digitales Diktat"@de, "Spracherkennungssystem"@de ;
-    skos:definition "Das Digitales Diktiersystem stellt digitale Spracherkennung und -aufzeichnung zur Verfügung und lässt medizinisches Personal die Untersuchungs- und Diagnostikinformationen per Spracheingabe direkt dokumentieren. Es verringert den Verwaltungs- und Personalaufwand, ist oft in andere Anwendungssysteme integriert und kann KI-basiert sein."@en .
+    rdfs:label "Emergency response system"@en, "Leitstelleninformationssystem"@de ;
+    skos:definition "Das Leitstelleninformationssystem erlaubt die Kontrolle der Einsatzfahrzeuge von der Leitstelle aus und die Dokumentation der Einsätze. Eine medizinische Dokumentation wird über eine Verbindung mit dem Notarztrettungsprotokoll sichergestellt."@en .
 
 hito:MbEnterpriseResourcePlanningSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
@@ -88,13 +108,6 @@ hito:MbEnterpriseResourcePlanningSystem
     rdfs:label "Enterprise Resource Planning System"@de, "Enterprise resource planning system"@en ;
     skos:altLabel "Beschaffungssystem"@de, "Bestellsystem"@de, "ERP system"@en, "Logistiksystem"@de, "Warenwirtschafts- und Lagerverwaltungssysteme"@de ;
     skos:definition "Das Enterprise Resource Planning System unterstützt das Managen von Finanzen, Personal und materiellen Ressourcen, sowie die Dokumentation und Abrechnung aller durchgeführten Dienstleistungen. Alle Vorgänge der Verwaltung, Logistik und Versorgung werden systematisch dokumentiert und durch das Überwachen von Kennzahlen kontrolliert. Es macht Echtzeit Analysen auf transaktionalen Daten und ein flexibles, operatives Reporting möglich. Das ERP-System kann sich zusammensetzen aus: Finanzbuchhaltungssystem, Materialwirtschaftssystem, Apothekensystem, Blutbanksystem, Kücheninformationssystem, Technikinformationssystem, etc. Die hier eingesetzte Software ist oft nicht speziell für das Gesundheitswesen entwickelt worden, sondern wird auch in anderen Branchen für administrative Aufgaben eingesetzt."@en .
-
-hito:MbEntscheidungsunterstuetzungssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Decision support system"@en, "Entscheidungsunterstützungssystem"@de ;
-    skos:altLabel "Clinical decision support system"@en, "KI-Assistenzsystem"@de, "KI-System"@de, "KI-basierte Entscheidungssysteme"@de, "KI-basierte Systeme"@de, "Medizinische Wissensdatenbank"@de ;
-    skos:definition "Entscheidungsunterstützungssysteme sind wissensbasierte System, die auf verschiedene Arten dabei helfen die richtige Diagnose oder Behandlung für die Patient:innen zu finden. Nutzer:innen können das kontextsensitive Fachwissen gezielt abrufen oder es wird im Diagnose- und Befundungsprozess aktiv zugespielt. Oft liegt es nicht als separates System vor, sondern ist in andere Anwendungssystemtypen integriert und wird häufig durch eine KI-Komponente unterstützt. Grundsätzlich kann zwischen einer medizinischen und einer administrativen Nutzung unterschieden werden."@en .
 
 hito:MbHealthContentManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
@@ -110,209 +123,196 @@ hito:MbHealthManagementInformationSystem
     skos:altLabel "HIS"@en, "HMIS"@en, "Hospital Information System"@en, "KIS"@de, "Krankenhausinformationssystem"@de ;
     skos:definition "Das HMIS unterstützt als Primärsystem sowohl alle Aufgaben bei der Patientenbehandlung als auch sämtliche administrativen und Verwaltungsaufgaben im Krankenhaus. Es setzt sich aus einem zentralen administrativen System und darum gelagerten Subsystemen zusammen. Beispiele für diese Subsysteme sind: ERP-System, Patientendatenverwaltungssystem, Medizinisches Informationssystem, etc. Es stellt einen klinischen Arbeitsplatz zur Verfügung mit dem schnell und vollständig auf Patientendaten zugegriffen werden kann und bietet oft auch Mobile Lösungen für z.B. die Visite."@en .
 
-hito:MbHeimUndPflegeheiminformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Heim- und Pflegeheiminformationssystem"@de ;
-    skos:altLabel "Informationssysteme für Alten- und Pflegeheime"@en ;
-    skos:definition "Bei Heim- und Pflegeheiminformationssystem liegt der Fokus auf einer professionellen Pflegedokumentation, statt auf der diagnostischen/therapeutischen Leistungserbringung und -abrechnung. Durch die längere Verweildauer der Patient:innen ist es wichtig, dass im System beispielsweise Bargeld und externe Untersuchungstermine für sie verwaltet werden."@en .
-
-hito:MbInformationssicherheitsmanagementsystem
+hito:MbInformationSecurityManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Information security management system"@en, "Informationssicherheitsmanagementsystem"@de ;
     skos:altLabel "DSMS"@de, "Datenschutz-Managementsystem"@de, "ISMS"@de, "Managementsystem für Informationssicherheit"@de, "data protection management system"@en, "information security management system"@en ;
     skos:definition "Das ISMS gibt angemessene technische und organisatorische Maßnahmen vor, um die Informationssicherheit zu gewährleisten. Das beinhaltet die Erstellung von Notfallplänen, entsprechende Leit- bzw. Richtlinien mit Vorgaben zu Rollen und Verantwortlichkeiten, aber auch spezifische Regeln zum Verhalten von Mitarbeitern. Vorwiegend dient es dem Schutz der technischen Infrastruktur, erhöht aber ebenso Patientensicherheit und Behandlungseffektivität."@en .
 
-hito:MbInformationssystemeDerKrankenkassenUndSonstigenSelbstverwaltungsorganen
+hito:MbInformationSystemForHealthInsuranceAndOtherSelfgoverningBodies
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Informationssysteme der Krankenkassen und sonstigen Selbstverwaltungsorganen"@de ;
+    rdfs:label "Information system for health insurance and other self-governing bodies"@en, "Informationssysteme der Krankenkassen und sonstigen Selbstverwaltungsorganen"@de ;
     skos:definition "Bei den Informationssystemen der Krankenkassen liegt der Fokus auf der Administration von Mitgliedern und der mitgliederbezogenen Abrechnung, sowie der Verwaltung des vielfältige Leistungsangebots und der darauf basierenden Verträge."@en .
 
-hito:MbKardiologieinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Cardiovascular information system"@en, "Kardiologieinformationssystem"@de ;
-    skos:altLabel "CVIS"@en ;
-    skos:definition "Das Kardiologieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer kardiologischen Abteilung."@en .
-
-hito:MbKlinischesArchivsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Document archiving system"@en, "Klinisches Archivsystem"@de ;
-    skos:altLabel "Archivmanagement und Dokumentenmanagementsystem"@de, "Archivsystem"@de, "Clinical Archive"@en, "Digitales Archiv"@de, "Digitales Archivsystem"@de, "Digitales Dokumentenarchiv"@de, "Digitales Langzeitarchiv"@de, "Langzeitarchivlösung"@de ;
-    skos:definition "Das Klinisches Archivsystem dient als zentraler Speicher für die Langzeitarchivierung von klinischen, kaufmännischen und administrativen Dokumenten und Daten aus Scanprozessen, dem Primärsystem oder Sub-/Spezialsystemen. Diese werden mit einer elektronischen Signatur versehen, in standardisierter Form abgelegt und sind leicht wieder abrufbar."@en .
-
-hito:MbKlinischesDatenspeichersystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Clinical data repository"@en, "Klinisches Datenspeichersystem"@de ;
-    skos:altLabel "IOP-Plattform"@de, "Interoperabilitäts-Plattform"@de ;
-    skos:definition "Das Clinical Data Repository bewältigt den digitalen Austausch großer Mengen von Behandlungsinformationen als strukturierte Daten und sorgt für eine sichere Kommunikation mit anderen Krankenhäusern, Patient:innen, Forscher:innen und Krankenkassen. Diese können für die Forschung oder Abrechnung weiterverarbeitet werden oder sofort zur Weiterbehandlung der Patient:innen genutzt werden."@en .
-
-hito:MbKlinischesInformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Clinical information system"@en, "Klinisches Informationssystem"@de ;
-    skos:altLabel "CIS"@en, "EPR"@en, "Electronic Patient Record System"@en, "KAS"@de, "Klinisches Arbeitsplatzsystem"@de ;
-    skos:definition "Das Klinische Informationssystem integriert das Medizinische Dokumentationssystem, das Pflegerische Dokumentationssystem, das Ambulanzmanagementsystem und das Leistungsanforderungssystem, um für alle an der Behandlung Beteiligten eine einzelne abgestimmte Sicht auf die Daten der Patient:innen bereitzustellen."@en .
-
-hito:MbLaborinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Laboratory information system"@en, "Laborinformationssystem"@de ;
-    skos:altLabel "LIS"@de, "LIS"@en, "Laboratory and diagnostics information system"@en, "Labormanagement-System"@de, "Laborsystem"@de ;
-    skos:definition "Das LIS unterstützt alle Schritte der Laboruntersuchung: die Verwaltung von Aufträgen und Proben, die Verteilung der Proben auf die vorhandenen Analysegeräte, das Abrufen und Validieren der Ergebnisse und die abschließende Übermittlung der Ergebnisse an den Auftraggeber. Dadurch wird der nahezu vollautomatische Laborbetrieb ermöglicht, welcher die hohen Durchsatzraten in modernen medizinischen Laborinstituten erlaubt. Analysegeräte können direkt an das Informationssystem angeschlossen werden, um die Werte direkt in das System zu übernehmen."@en .
-
-hito:MbLeistungsanforderungssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Leistungsanforderungssystem"@de, "Physician order entry system"@en ;
-    skos:altLabel "Auftrags- und Leistungskommunikation"@de, "CPOE"@en, "Computer-supported POE system"@en, "Digitale Leistungsanforderung"@de, "Leistungskommunikationssystem"@de, "Order Communication System"@en, "Order-Entry-Reporting"@en, "Order-Entry-Result"@en, "POE"@en, "Provider Order Entry System"@en, "Verordnungsunterstützung"@de ;
-    skos:definition "Das Leistungsanforderungssystem organisiert die Abwicklung von Leistungsanforderungen und Befundrückmeldungen zwischen den stationären oder ambulanten Organisationseinheiten und den Leistungsstellen und hilft bei der Formulierung von Aufträgen, der Terminplanung und dem Druck von Etiketten. Alle verfügbaren Services sind intern in Katalogen mit zusätzlichen Informationen zu den Services aufgelistet. Der Fokus liegt häufig auf der Medikamentenverordnung, daher enthält es oft eine Entscheidungsunterstützungs-Komponente, um Medikationsfehler zu vermeiden."@en .
-
-hito:MbLeitstelleninformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Emergency response system"@en, "Leitstelleninformationssystem"@de ;
-    skos:definition "Das Leitstelleninformationssystem erlaubt die Kontrolle der Einsatzfahrzeuge von der Leitstelle aus und die Dokumentation der Einsätze. Eine medizinische Dokumentation wird über eine Verbindung mit dem Notarztrettungsprotokoll sichergestellt."@en .
-
-hito:MbMedizinischesDokumentationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Medical documentation system"@en, "Medizinisches Dokumentationssystem"@de ;
-    skos:definition "Das Medizinisches Dokumentationssystem unterstützt die ärztliche medizinische Dokumentation, indem es unterschiedlich stark strukturierte Formulare zur Erstellung von Berichten und Funktionen zur Analyse von Texten bereitstellt. Oft ist auch eine integrierte Spracherkennung enthalten. Es bildet die Basis für gesteigerte Produktivität, Behandlungsqualität und Patientensicherheit. Als Baustein der digitalen Patientenakte, dient es als Ersatz für die Papierakte."@en .
-
-hito:MbMultifunktionsviewer
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Multifunktionsviewer"@de, "Viewer"@en ;
-    skos:definition "Durch einen Viewer werden medizinische Dokumente oder Bilddaten zur Betrachtung zur Verfügung gestellt. Die Daten werden aus dem PACS oder anderen Archivsystemen aufgerufen. Es kommt bei der Befundung, mobil bei der Visite oder der Bilddokumentation zum Einsatz und ist oft integriert in Systeme zur Speicherung oder Archivierung von Dokumenten und Bilddaten."@en .
-
-hito:MbOnkologieinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Oncology information system"@en, "Onkologieinformationssystem"@de ;
-    skos:definition "Das Onkologieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer onkologischen Abteilung."@en .
-
-hito:MbOpassistenzsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "OP-Assistenzsystem"@de ;
-    skos:altLabel "Navigationssystem"@de, "Planungssystem"@de ;
-    skos:definition "OP-Assistenzsysteme kommen zum Einsatz um den Chirurgen bei seiner komplexen Tätigkeit in einem zunehmend technischen Umfeld zu unterstützen. Die Führung des Chirurgen durch den Eingriff, das Warnen vor Komplikationen, die Berechnung der genauen Lage des Tumors und die Leitung an diese Position, sind alles mögliche Funktionen. Oftmals werden diese Systeme mittels KI unterstützt."@en .
-
-hito:MbOpmanagementsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "OP-Managementsystem"@de, "Operation management system"@en ;
-    skos:altLabel "OP-Planungssystem"@de ;
-    skos:definition "Das OP-Managementsystem begleitet die Planung der Operation und koordiniert die Daten über den Termin, das eingesetzte medizinische Personal und Geräte, sowie den zu operierenden Patient:innen. Während der Operation unterstützt es die Dokumentation von Ablauf und Dauer der durchgeführten Prozedur, sowie der dabei verwendeten Materialien und falls nötig der Anästhesie."@en .
-
-hito:MbOrthopaedieinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Orthopedics information system"@en, "Orthopädieinformationssystem"@de ;
-    skos:definition "Das Orthopädieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer orthopädischen Abteilung und kann ein computergestütztes Tool für die Planung von Transplantaten beinhalten."@en .
-
-hito:MbPathologieinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Pathologieinformationssystem"@de, "Pathology information system"@en ;
-    skos:definition "Das Pathologieinformationssystem hilft dabei die Vielzahl der unterschiedlichen Untersuchungen und deren Durchführung und Auswertung in pathologischen Laboren zu organisieren und unterstützt effiziente und effektive Arbeitsabläufe. Das System ähnelt in seinen Funktionalitäten einem Laborinformationssystem und erlaubt die Integration von Spezialgeräten."@en .
-
-hito:MbPatientendatenmanagementsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient data management system"@en, "Patientendatenmanagementsystem"@de ;
-    skos:altLabel "ICU-Manager"@de, "PDMS"@en ;
-    skos:definition "Die Aufgabe des PDMS ist die ständige Überwachung der Vitalfunktionen der Patient:innen auf einer Intensivstation. Außerdem übernimmt es vollautomatisch sämtliche Daten von medizinischen Geräten, speichert diese und analysiert diese. Bei lebensbedrohlichen Veränderungen alarmiert es das medizinische Personal."@en .
-
-hito:MbPatientenentertainmentsystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient entertainment system"@en, "Patientenentertainmentsystem"@de ;
-    skos:definition "Das Patientenentertainmentsystem stellt während eines Krankenhausaufenthaltes Multi-Media-Unterhaltung (TV, Video on Demand, Magazine, Hörbücher etc.) für Patient:innen bereit."@en .
-
-hito:MbPatientengefuehrteElektronischePatientenakte
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient-managed health record"@en, "Patientengeführte elektronische Patientenakte"@de ;
-    skos:altLabel "Digital health record on mobile devices"@en, "EGA"@de, "EHR System"@en, "EPA"@de, "Electronic Health Record System"@en, "Electronic Patient Record"@en, "Elektronische Gesundheitsakte"@de, "Elektronische Patientenakte"@de, "Elektronisches Patientendossier"@de, "Online-Gesundheitsakte"@de, "Webbasierte Gesundheitsakte"@de ;
-    skos:definition "Die patientengeführte EPA bietet ein sicheres Management von Patientendaten auf mobilen Geräten, die unter anderem Notfalldaten, die patienteneigene Behandlungshistorie, Röntgenbilder, Befunde und Medikationspläne beinhalten können. Die Informationen sind für die Patient:innen jederzeit zugänglich, so sind lebenswichtige Informationen schnell verfügbar. Die Patient:in selbst ist Inhaber der eigenen Akte und kann Inhalte hochladen und entfernen, sowie Ärzt:innen den Zugriff erlauben oder entziehen."@en .
-
-hito:MbPatienteninformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patienteninformationssystem"@de ;
-    skos:altLabel "Digitale Patienten-Services"@de, "Informationsplattform für Patienten"@de ;
-    skos:definition "Patienteninformationssysteme begleiten und unterstützen Patient:innen vor, während und nach dem Klinikaufenthalt und sind damit Teil der gesamten Patient Journey. Vor der Aufnahme können den Patient:innen darüber digital wichtige Informationen zu Einweisung, Behandlung oder Anreise gegeben werden. Am Point of Care kann es zu verbesserter Kommunikation und Prozessen beitragen und nach der Entlassung können darüber Folgetermine vereinbart und Nachsorge-Angebote bereitgestellt werden."@en .
-
-hito:MbPatientenportal
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patientenportal"@de ;
-    skos:altLabel "Gesundheitsportal"@de, "Zuweiserportal"@de ;
-    skos:definition "Das Patientenportal bildet das Bindeglied zwischen dem Patient:innen und den an der Behandlung beteiligten Leistungserbringern. Seine Hauptaufgabe ist das digitales Aufnahme- und Entlassmanagement, sowie das Überleitungsmanagement, um Patient:innen an nachgelagerte Leistungserbringer zu übergeben."@en .
-
-hito:MbPatientenverwaltungssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient administration system"@en, "Patientenverwaltungssystem"@de ;
-    skos:altLabel "Patientendatenverwaltungssystem"@de ;
-    skos:definition "Das Patientenverwaltungssystem unterstützt die Verwaltung von Patienten- und Falldaten, die für Abrechnung und gesetzliche Nachweispflichten notwendig sind. Andere Anwendungssysteme senden relevante administrative Daten an das Patientenverwaltungssystem und dieses stellt für andere Anwendungssysteme die korrekten und aktuellen Patienteninformationen zur Verfügung. Es ist der zentrale Speicher aller administrativen Daten im Krankenhaus und beinhaltet meist einen Master Patient Index zur Verwaltung von PIN und CIN."@en .
-
-hito:MbPflegedienstinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Pflegedienstinformationssystem"@de ;
-    skos:definition "Das Pflegedienstinformationssystem unterstützt das Tagesgeschäft von ambulanten Pflegediensten. Das betrifft die Organisation, hauptsächlich die Koordinierung der mobil tätigen Pflegekräfte, um eine optimale Ressourcenauslastung zu erreichen. Zum anderen wird die Dokumentation und deren weitere Verwendung in Abrechnung, Statistik und Controlling unterstützt."@en .
-
-hito:MbPflegedokumentationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Nursing management and documentation system"@en, "Pflegedokumentationssystem"@de ;
-    skos:altLabel "Digitalen Pflegedokumentation"@de, "Digitales Pflegeprozessmanagement"@de, "Electronic documentation of care and treatment services"@en, "Elektronische Dokumentation von Pflegeleistungen"@de, "Pflegeinformationssystem"@de ;
-    skos:definition "Das Pflegedokumentationssystem begleitet den gesamten Prozess der Pflegedokumentation: von der Anamnese, über die Planung der Pflege bis zur Leistungserfassung und Evaluation. Integriert sind standardisierte Pflegeterminologien und -klassifikationen und vordefinierte Pflegepläne können erstellt und wiederverwendet werden."@en .
-
-hito:MbPraxisverwaltungssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Praxisverwaltungssystem"@de ;
-    skos:altLabel "AIS"@de, "APIS"@de, "Arztinformationssystem"@de, "Arztpraxisinformationssystem"@de, "Praxisinformationssystem"@de ;
-    skos:definition "Die Funktionen des Praxisverwaltungssystem decken alle Aspekte der täglichen Arbeit in einer Arztpraxis ab. Das betrifft Dokumentation und Organisation der Behandlung, Funktionen für die Kommunikation von Überweisungen, Befunden und Bildern und die Anbindung von Ger��ten und Medizintechnik."@en .
-
-hito:MbRadiologieinformationssystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Radiologieinformationssystem"@de, "Radiology information system"@en ;
-    skos:altLabel "RIS"@en ;
-    skos:definition "Auf Stationen auf denen radiologische Untersuchungen durchgeführt werden, unterstützt das RIS die gesamte Organisation und medizinische Dokumentation der Behandlung von ambulanten und stationären Patient:innen. Es stellt eine Verbindung bereit zu den bildgebenden radiologischen Geräten (Modalitäten), übermittelt an diese patientenbezogenen Daten und erhält von ihnen direkt die Untersuchungsdaten."@en .
-
-hito:MbRehainformationssystem
+hito:MbInformationSystemForMixedAndRehabFacilities
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Information system for mixed and rehab facilities"@en, "Reha-Informationssystem"@de ;
     skos:altLabel "Informationssystem für die ambulante oder stationäre Rehabilitation"@de ;
     skos:definition "In stationären Rehabilitationseinrichtungen wird das Reha-Informationssystem eingesetzt für die Dokumentation vom Erstkontakt bis zur Entlassung. Außerdem unterstützt es die optimale Planung der Durchführung der rehabilitativen Maßnahmen. Das betrifft Räume, Therapeuten und Geräte, welche für Einzel- und Gruppentermine zur Verfügung gestellt werden müssen."@en .
 
-hito:MbTelemedizinsystem
+hito:MbLaboratoryInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Laboratory information system"@en, "Laborinformationssystem"@de ;
+    skos:altLabel "LIS"@de, "LIS"@en, "Laboratory and diagnostics information system"@en, "Labormanagement-System"@de, "Laborsystem"@de ;
+    skos:definition "Das LIS unterstützt alle Schritte der Laboruntersuchung: die Verwaltung von Aufträgen und Proben, die Verteilung der Proben auf die vorhandenen Analysegeräte, das Abrufen und Validieren der Ergebnisse und die abschließende Übermittlung der Ergebnisse an den Auftraggeber. Dadurch wird der nahezu vollautomatische Laborbetrieb ermöglicht, welcher die hohen Durchsatzraten in modernen medizinischen Laborinstituten erlaubt. Analysegeräte können direkt an das Informationssystem angeschlossen werden, um die Werte direkt in das System zu übernehmen."@en .
+
+hito:MbMedicalDocumentationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Medical documentation system"@en, "Medizinisches Dokumentationssystem"@de ;
+    skos:definition "Das Medizinisches Dokumentationssystem unterstützt die ärztliche medizinische Dokumentation, indem es unterschiedlich stark strukturierte Formulare zur Erstellung von Berichten und Funktionen zur Analyse von Texten bereitstellt. Oft ist auch eine integrierte Spracherkennung enthalten. Es bildet die Basis für gesteigerte Produktivität, Behandlungsqualität und Patientensicherheit. Als Baustein der digitalen Patientenakte, dient es als Ersatz für die Papierakte."@en .
+
+hito:MbMedicalPracticeManagementSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Medical practice management system"@en, "Praxisverwaltungssystem"@de ;
+    skos:altLabel "AIS"@de, "APIS"@de, "Arztinformationssystem"@de, "Arztpraxisinformationssystem"@de, "Praxisinformationssystem"@de ;
+    skos:definition "Die Funktionen des Praxisverwaltungssystem decken alle Aspekte der täglichen Arbeit in einer Arztpraxis ab. Das betrifft Dokumentation und Organisation der Behandlung, Funktionen für die Kommunikation von Überweisungen, Befunden und Bildern und die Anbindung von Geräten und Medizintechnik."@en .
+
+hito:MbNursingHomeInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Heim- und Pflegeheiminformationssystem"@de, "Nursing home information system"@en ;
+    skos:altLabel "Informationssysteme für Alten- und Pflegeheime"@en ;
+    skos:definition "Bei Heim- und Pflegeheiminformationssystem liegt der Fokus auf einer professionellen Pflegedokumentation, statt auf der diagnostischen/therapeutischen Leistungserbringung und -abrechnung. Durch die längere Verweildauer der Patient:innen ist es wichtig, dass im System beispielsweise Bargeld und externe Untersuchungstermine für sie verwaltet werden."@en .
+
+hito:MbNursingManagementAndDocumentationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Nursing management and documentation system"@en, "Pflegedokumentationssystem"@de ;
+    skos:altLabel "Digitalen Pflegedokumentation"@de, "Digitales Pflegeprozessmanagement"@de, "Electronic documentation of care and treatment services"@en, "Elektronische Dokumentation von Pflegeleistungen"@de, "Pflegeinformationssystem"@de ;
+    skos:definition "Das Pflegedokumentationssystem begleitet den gesamten Prozess der Pflegedokumentation: von der Anamnese, über die Planung der Pflege bis zur Leistungserfassung und Evaluation. Integriert sind standardisierte Pflegeterminologien und -klassifikationen und vordefinierte Pflegepläne können erstellt und wiederverwendet werden."@en .
+
+hito:MbNursingServicesInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Nursing services information system"@en, "Pflegedienstinformationssystem"@de ;
+    skos:definition "Das Pflegedienstinformationssystem unterstützt das Tagesgeschäft von ambulanten Pflegediensten. Das betrifft die Organisation, hauptsächlich die Koordinierung der mobil tätigen Pflegekräfte, um eine optimale Ressourcenauslastung zu erreichen. Zum anderen wird die Dokumentation und deren weitere Verwendung in Abrechnung, Statistik und Controlling unterstützt."@en .
+
+hito:MbOncologyInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Oncology information system"@en, "Onkologieinformationssystem"@de ;
+    skos:definition "Das Onkologieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer onkologischen Abteilung."@en .
+
+hito:MbOperationManagementSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "OP-Managementsystem"@de, "Operation management system"@en ;
+    skos:altLabel "OP-Planungssystem"@de ;
+    skos:definition "Das OP-Managementsystem begleitet die Planung der Operation und koordiniert die Daten über den Termin, das eingesetzte medizinische Personal und Geräte, sowie den zu operierenden Patient:innen. Während der Operation unterstützt es die Dokumentation von Ablauf und Dauer der durchgeführten Prozedur, sowie der dabei verwendeten Materialien und falls nötig der Anästhesie."@en .
+
+hito:MbOrthopedicsInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Orthopedics information system"@en, "Orthopädieinformationssystem"@de ;
+    skos:definition "Das Orthopädieinformationssystem bietet ähnliche Funktionalität wie ein Klinisches Informationssystem, mit Fokus auf die Bedürfnisse einer orthopädischen Abteilung und kann ein computergestütztes Tool für die Planung von Transplantaten beinhalten."@en .
+
+hito:MbOutpatientManagementSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Ambulanzmanagementsystem"@de, "Outpatient management System"@en ;
+    skos:altLabel "Ambulanzinformationssystem"@de, "Krankenhausambulanzsystem"@de ;
+    skos:definition "Das Ambulanzmanagementsystem dient der Organisation der ambulanten Behandlung, die während einem oder mehreren Besuchen in den Ambulanzen eines Krankenhauses, oft in Verbindung mit vergangenen oder zukünftigen stationären Aufenthalten, erfolgt. Die benötigten Funktionen ähneln denen, die in einer Allgemeinarztpraxis benötigt werden. Die Aufgaben sind mit denen eines Medical Documentation System vergleichbar, aber der Fokus liegt mehr auf der Terminplanung und der Organisation des Arbeitsablaufes in der ambulanten Station."@en .
+
+hito:MbPathologyInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Pathologieinformationssystem"@de, "Pathology information system"@en ;
+    skos:definition "Das Pathologieinformationssystem hilft dabei die Vielzahl der unterschiedlichen Untersuchungen und deren Durchführung und Auswertung in pathologischen Laboren zu organisieren und unterstützt effiziente und effektive Arbeitsabläufe. Das System ähnelt in seinen Funktionalitäten einem Laborinformationssystem und erlaubt die Integration von Spezialgeräten."@en .
+
+hito:MbPatientAdministrationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient administration system"@en, "Patientenverwaltungssystem"@de ;
+    skos:altLabel "Patientendatenverwaltungssystem"@de ;
+    skos:definition "Das Patientenverwaltungssystem unterstützt die Verwaltung von Patienten- und Falldaten, die für Abrechnung und gesetzliche Nachweispflichten notwendig sind. Andere Anwendungssysteme senden relevante administrative Daten an das Patientenverwaltungssystem und dieses stellt für andere Anwendungssysteme die korrekten und aktuellen Patienteninformationen zur Verfügung. Es ist der zentrale Speicher aller administrativen Daten im Krankenhaus und beinhaltet meist einen Master Patient Index zur Verwaltung von PIN und CIN."@en .
+
+hito:MbPatientDataManagementSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient data management system"@en, "Patientendatenmanagementsystem"@de ;
+    skos:altLabel "ICU-Manager"@de, "PDMS"@en ;
+    skos:definition "Die Aufgabe des PDMS ist die ständige Überwachung der Vitalfunktionen der Patient:innen auf einer Intensivstation. Außerdem übernimmt es vollautomatisch sämtliche Daten von medizinischen Geräten, speichert diese und analysiert diese. Bei lebensbedrohlichen Veränderungen alarmiert es das medizinische Personal."@en .
+
+hito:MbPatientEntertainmentSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient entertainment system"@en, "Patientenentertainmentsystem"@de ;
+    skos:definition "Das Patientenentertainmentsystem stellt während eines Krankenhausaufenthaltes Multi-Media-Unterhaltung (TV, Video on Demand, Magazine, Hörbücher etc.) für Patient:innen bereit."@en .
+
+hito:MbPatientInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient information system"@en, "Patienteninformationssystem"@de ;
+    skos:altLabel "Digitale Patienten-Services"@de, "Informationsplattform für Patienten"@de ;
+    skos:definition "Patienteninformationssysteme begleiten und unterstützen Patient:innen vor, während und nach dem Klinikaufenthalt und sind damit Teil der gesamten Patient Journey. Vor der Aufnahme können den Patient:innen darüber digital wichtige Informationen zu Einweisung, Behandlung oder Anreise gegeben werden. Am Point of Care kann es zu verbesserter Kommunikation und Prozessen beitragen und nach der Entlassung können darüber Folgetermine vereinbart und Nachsorge-Angebote bereitgestellt werden."@en .
+
+hito:MbPatientPortal
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient portal"@en, "Patientenportal"@de ;
+    skos:altLabel "Gesundheitsportal"@de, "Zuweiserportal"@de ;
+    skos:definition "Das Patientenportal bildet das Bindeglied zwischen dem Patient:innen und den an der Behandlung beteiligten Leistungserbringern. Seine Hauptaufgabe ist das digitales Aufnahme- und Entlassmanagement, sowie das Überleitungsmanagement, um Patient:innen an nachgelagerte Leistungserbringer zu übergeben."@en .
+
+hito:MbPatientmanagedHealthRecord
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Patient-managed health record"@en, "Patientengeführte elektronische Patientenakte"@de ;
+    skos:altLabel "Digital health record on mobile devices"@en, "EGA"@de, "EHR System"@en, "EPA"@de, "Electronic Health Record System"@en, "Electronic Patient Record"@en, "Elektronische Gesundheitsakte"@de, "Elektronische Patientenakte"@de, "Elektronisches Patientendossier"@de, "Online-Gesundheitsakte"@de, "Webbasierte Gesundheitsakte"@de ;
+    skos:definition "Die patientengeführte EPA bietet ein sicheres Management von Patientendaten auf mobilen Geräten, die unter anderem Notfalldaten, die patienteneigene Behandlungshistorie, Röntgenbilder, Befunde und Medikationspläne beinhalten können. Die Informationen sind für die Patient:innen jederzeit zugänglich, so sind lebenswichtige Informationen schnell verfügbar. Die Patient:in selbst ist Inhaber der eigenen Akte und kann Inhalte hochladen und entfernen, sowie Ärzt:innen den Zugriff erlauben oder entziehen."@en .
+
+hito:MbPharmacyInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Apothekeninformationssystem"@de, "Pharmacy information system"@en ;
+    skos:definition "Das Apothekeninformationssystem versorgt Patient:innen und Stationen mit den richtigen Medikamenten in der richtigen Dosis und hilft auch dabei den täglichen Verkauf fehlerfrei und effektiv abzuwickeln und damit die Gefahr einzuschränken, die durch fehlerhafte Lagerung oder Abgabe entstehen kann. Zudem erleichtert es die Einhaltung der gesetzlichen Bestimmungen, welche Bezug, Lagerung, Abgabe und Weiterverarbeitung der in den Apotheken gehandelten Arzneimittel definieren."@en .
+
+hito:MbPhysicianOrderEntrySystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Leistungsanforderungssystem"@de, "Physician order entry system"@en ;
+    skos:altLabel "Auftrags- und Leistungskommunikation"@de, "CPOE"@en, "Computer-supported POE system"@en, "Digitale Leistungsanforderung"@de, "Leistungskommunikationssystem"@de, "Order Communication System"@en, "Order-Entry-Reporting"@en, "Order-Entry-Result"@en, "POE"@en, "Provider Order Entry System"@en, "Verordnungsunterstützung"@de ;
+    skos:definition "Das Leistungsanforderungssystem organisiert die Abwicklung von Leistungsanforderungen und Befundrückmeldungen zwischen den stationären oder ambulanten Organisationseinheiten und den Leistungsstellen und hilft bei der Formulierung von Aufträgen, der Terminplanung und dem Druck von Etiketten. Alle verfügbaren Services sind intern in Katalogen mit zusätzlichen Informationen zu den Services aufgelistet. Der Fokus liegt häufig auf der Medikamentenverordnung, daher enthält es oft eine Entscheidungsunterstützungs-Komponente, um Medikationsfehler zu vermeiden."@en .
+
+hito:MbPictureArchivingAndCommunicationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Bildarchivierungs- und Kommunikationssystem"@de, "Picture archiving and communication system"@en ;
+    skos:altLabel "Bilddatenmanagementsystem"@de, "PACS"@en ;
+    skos:definition "Das Bildarchivierungs- und Kommunikationssystem organisiert und archiviert medizinische Bilddaten nach geltenden Standards. Es ist das zentrale Bildmanagementsystem in einem Krankenhaus und bietet einfachen Zugriff auf die Bilddaten nach der Befundung, um diese weiter zu verarbeiten, zu präsentieren oder zwischen Abteilungen und Institutionen zu teilen. Es hat ein hohes Interoperabilitätslevel und ist besonders eng mit dem RIS verbunden."@en .
+
+hito:MbRadiologyInformationSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Radiologieinformationssystem"@de, "Radiology information system"@en ;
+    skos:altLabel "RIS"@en ;
+    skos:definition "Auf Stationen auf denen radiologische Untersuchungen durchgeführt werden, unterstützt das RIS die gesamte Organisation und medizinische Dokumentation der Behandlung von ambulanten und stationären Patient:innen. Es stellt eine Verbindung bereit zu den bildgebenden radiologischen Geräten (Modalitäten), übermittelt an diese patientenbezogenen Daten und erhält von ihnen direkt die Untersuchungsdaten."@en .
+
+hito:MbSurgicalAssistSystem
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "OP-Assistenzsystem"@de, "Surgical assist system"@en ;
+    skos:altLabel "Navigationssystem"@de, "Planungssystem"@de ;
+    skos:definition "OP-Assistenzsysteme kommen zum Einsatz um den Chirurgen bei seiner komplexen Tätigkeit in einem zunehmend technischen Umfeld zu unterstützen. Die Führung des Chirurgen durch den Eingriff, das Warnen vor Komplikationen, die Berechnung der genauen Lage des Tumors und die Leitung an diese Position, sind alles mögliche Funktionen. Oftmals werden diese Systeme mittels KI unterstützt."@en .
+
+hito:MbTelehealthPlattform
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Telehealth plattform"@en, "Telemedizinsystem"@de ;
     skos:altLabel "Telemedicine system"@en, "Telemedizin-Portal"@de, "Telemedizinische Anwendungen"@de ;
     skos:definition "Die Gruppe der Telemedizinsysteme bilden Technologien zur Betreuung von Patient:innen via Telefon und Videochat und ermöglicht eine effizientere Arbeitsweise für Mediziner:innen. Sämtliche Arbeitsschritte werden vollständig elektronisch abgebildet und dokumentiert. Es bestehen oft Schnittstellen zu der Medizinischen Dokumentation und Patientenadministration um abrechnungsrelevante Daten an Systeme für die Abrechnung bereitstellen."@en .
 
-hito:MbTeleradiologiesystem
+hito:MbTeleradiologySystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Teleradiologiesystem"@de, "Teleradiology system"@en ;
     skos:definition "Teleradiologiesysteme ermöglichen das Bewerten von radiologischen Bildern über externe Radiologiearbeitsplätze. Es ist Teil der Telemedizinsysteme und oft eng verbunden mit RIS und PACS."@en .
 
-hito:MbZytologieinformationssystem
+hito:MbVendorNeutralArchive
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Zytologieinformationssystem"@de ;
-    skos:definition "Das Zytologieinformationssystem hilft dabei die Vielzahl der unterschiedlichen Untersuchungen und deren Durchführung und Auswertung in zytologischen Laboren zu organisieren und unterstützt effiziente und effektive Arbeitsabläufe. Das System ähnelt in seinen Funktionalitäten einem Laborinformationssystem und erlaubt die Integration von Spezialgeräten."@en .
+    rdfs:label "Anbieterneutrales Archiv"@de, "Vendor neutral archive"@en ;
+    skos:altLabel "Medizinisches Multi-Media-Archiv"@de, "Multimediales Dokumentenmanagement- und Archivsystem"@de, "Multimediales Universalarchiv"@de, "VNA"@en, "eArchiv"@de ;
+    skos:definition "Im VNA wird sämtliches medizinisches Material wie Bilder, Befunde, Laborberichte oder teilelektronische Patientenakten vereint und zentral gespeichert. Die Daten sind jederzeit ortsunabhängig verfügbar und über einen integrierten Viewer einsehbar. Es sorgt für sichere und schnelle Archivierung, Funktionalisierung und Visualisierung aller Arten von Patienten- und Untersuchungsdaten. Herstellerunabhängig, adaptiert es zuverlässig die unterschiedlichsten Datenformate und schafft damit einen hochgradig konstanten und sicheren Datenspeicherplatz."@en .
+
+hito:MbViewer
+    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
+    a hito:ApplicationSystemTypeClassified ;
+    rdfs:label "Multifunktionsviewer"@de, "Viewer"@en ;
+    skos:definition "Durch einen Viewer werden medizinische Dokumente oder Bilddaten zur Betrachtung zur Verfügung gestellt. Die Daten werden aus dem PACS oder anderen Archivsystemen aufgerufen. Es kommt bei der Befundung, mobil bei der Visite oder der Bilddokumentation zum Einsatz und ist oft integriert in Systeme zur Speicherung oder Archivierung von Dokumenten und Bilddaten."@en .
 
