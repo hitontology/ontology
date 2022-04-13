@@ -751,7 +751,7 @@
 :OrganizationalUnitCitation rdf:type owl:Class ;
                             rdfs:subClassOf :Citation;
                             rdfs:label "Organizational Unit Citation"@en ;
-							vann:example :spUsedInOuCit, :GnuHealthOrgHospitalEnvironmentSctid22232009, :ElexisOrgArztpraxis, :MedkeyOrgDentalClinic ;
+							vann:example :spUsedInOuCit, :GnuHealthOrgHospitalEnvironment, :ElexisOrgArztpraxis, :MedkeyOrgDentalClinic ;
 							rdfs:comment "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en .
 
 

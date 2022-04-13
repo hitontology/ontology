@@ -2104,7 +2104,7 @@
     :spIsOfAstCit :GnuHealthAppElectronicMedicalRecordEmr, :GnuHealthAppHealthInformationSystemHis, :GnuHealthAppHospitalManagementInformationSystem ;
     :spOffersFCit :GnuHealthFeatAccessManagementOverview, :GnuHealthFeatAccountTypes, :GnuHealthFeatAdministrationOrthancModule, :GnuHealthFeatAdministrativeData, :GnuHealthFeatAllSurgeriesInformation, :GnuHealthFeatAppointments, :GnuHealthFeatAppointmentsCalendar, :GnuHealthFeatAppointmentsReport, :GnuHealthFeatBioinformatics, :GnuHealthFeatBloodAndSkin, :GnuHealthFeatCardiovascular, :GnuHealthFeatCarePlan, :GnuHealthFeatChagasDiseaseInformation, :GnuHealthFeatChartOfAccounts, :GnuHealthFeatConfiguringAccounts, :GnuHealthFeatConfiguringAvailableTests, :GnuHealthFeatConfiguringJournals, :GnuHealthFeatContactTracing, :GnuHealthFeatCreatingAPartyWithThePatientProperty, :GnuHealthFeatCreatingAPatientRecord, :GnuHealthFeatCreatingARequestForImage, :GnuHealthFeatCreatingNewMedicationProducts, :GnuHealthFeatCreatingTheInvoice, :GnuHealthFeatDefaultImagingModule, :GnuHealthFeatDemographics, :GnuHealthFeatDengueFever, :GnuHealthFeatDigestiveAndAbdomen, :GnuHealthFeatDocumentRoundingsForInpatients, :GnuHealthFeatDomesticViolence, :GnuHealthFeatDrainages, :GnuHealthFeatEpidemiology, :GnuHealthFeatEvaluationsFormMainInfoClinicalMentalStatusDiagnosis, :GnuHealthFeatEvaluationsHistory, :GnuHealthFeatEvaluationsReport, :GnuHealthFeatFunctioningAndDisability, :GnuHealthFeatGeneralPregnancyInformation, :GnuHealthFeatGeneratingResults, :GnuHealthFeatGeneticFamilyHistory, :GnuHealthFeatGeneticInformation, :GnuHealthFeatGroupsAccessManagement, :GnuHealthFeatIcuFunctionalityInformation, :GnuHealthFeatInfectiousDisease, :GnuHealthFeatInformationStoredPerAppointment, :GnuHealthFeatInfrastructureOfSocioeconomics, :GnuHealthFeatInjurySurveillanceSystemRegistrationReport, :GnuHealthFeatInpatientManagementInformation, :GnuHealthFeatInterfacesWithLaboratoriesAndLims, :GnuHealthFeatInventories, :GnuHealthFeatInvoicingPatients, :GnuHealthFeatLabOrdersAndHealthServices, :GnuHealthFeatLaboratoryReports, :GnuHealthFeatLifestyleDietAndExerciseAddictionsSexualitySafety, :GnuHealthFeatListOfAllAppointments, :GnuHealthFeatListOfAppointmentsForASpecificPatient, :GnuHealthFeatListingHealthServicesToBeInvoiced, :GnuHealthFeatListingTheCurrentPatients, :GnuHealthFeatManagingLaboratoryTests, :GnuHealthFeatMedicationPlan, :GnuHealthFeatNeglectedTropicalDiseasesInformation, :GnuHealthFeatNutritionInformation, :GnuHealthFeatOrganizationStructure, :GnuHealthFeatOrthancIntegrationModule, :GnuHealthFeatPatientEvaluationsReport, :GnuHealthFeatPatientIcuInformation, :GnuHealthFeatPatientRoundingInformationNeurologicRespiratoryInclXray, :GnuHealthFeatPerinatalAndIntrapartumInformation, :GnuHealthFeatPrenatalEvaluations, :GnuHealthFeatPrintingAPatientIdCard, :GnuHealthFeatProteinRelatedDiseases, :GnuHealthFeatPscPediatricsSymptomChecklist, :GnuHealthFeatPuerperiumMonitor, :GnuHealthFeatReporting, :GnuHealthFeatRequestingALaboratoryTest, :GnuHealthFeatShipments, :GnuHealthFeatSocialMedicine, :GnuHealthFeatStockLocations, :GnuHealthFeatStockMovements, :GnuHealthFeatStoringLaboratoryTestResults, :GnuHealthFeatSurgeriesForm, :GnuHealthFeatSurgeriesPerPatient, :GnuHealthFeatSynchronizationOrthancModule, :GnuHealthFeatTopDiseasesReport, :GnuHealthFeatTroubleshootingOrthancModule, :GnuHealthFeatUsageOrthancModule, :GnuHealthFeatUsersAccessManagement, :GnuHealthFeatViewResults ;
     :spSupportsEfCit :GnuHealthFuncAccessManagement, :GnuHealthFuncAdmissionManagement, :GnuHealthFuncAnalyticAccounting, :GnuHealthFuncFinancialAccounting, :GnuHealthFuncGenetics, :GnuHealthFuncGynecologicCare, :GnuHealthFuncHospitalManagement, :GnuHealthFuncIntensiveCare, :GnuHealthFuncLaboratoryManagement, :GnuHealthFuncNeglectedTropicalDiseasesCare, :GnuHealthFuncNursing, :GnuHealthFuncObstetrics, :GnuHealthFuncPatientAppointment, :GnuHealthFuncPatientEvaluations, :GnuHealthFuncPatientManagement, :GnuHealthFuncPediatricCare, :GnuHealthFuncProductsManagement, :GnuHealthFuncPurchaseAdministration, :GnuHealthFuncServicesManagementinvoicingPatients, :GnuHealthFuncSocioeconomics, :GnuHealthFuncStockManagement, :GnuHealthFuncSurgery ;
-    :spUsedInOuCit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003, :GnuHealthOrgHealthCenterEnvironmentSctid264361005, :GnuHealthOrgHospitalEnvironmentSctid22232009 ;
+    :spUsedInOuCit :GnuHealthOrgGeneralPractitionerPracticeSiteEnvironment, :GnuHealthOrgHealthCenterEnvironment, :GnuHealthOrgHospitalEnvironment ;
     a :SoftwareProduct ;
     rdfs:comment "free/libre health and hospital information system with strong focus on public health and social medicine"@en ;
     rdfs:label "GNU Health"@en .
@@ -2589,19 +2589,19 @@
     a :EnterpriseFunctionCitation ;
     rdfs:label "Surgery"@en .
 
-:GnuHealthOrgGeneralPractitionerPracticeSiteEnvironmentSctid394761003
+:GnuHealthOrgGeneralPractitionerPracticeSiteEnvironment
     :ouCitClassifiedAs :SnomedGeneralPractitionerPracticeSiteEnvironment ;
     a :OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 394761003"@en ;
     rdfs:label "General Practitioner Practice Site Environment"@en .
 
-:GnuHealthOrgHealthCenterEnvironmentSctid264361005
+:GnuHealthOrgHealthCenterEnvironment
     :ouCitClassifiedAs :SnomedHealthCenterEnvironment ;
     a :OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 264361005"@en ;
     rdfs:label "Health Center Environment"@en .
 
-:GnuHealthOrgHospitalEnvironmentSctid22232009
+:GnuHealthOrgHospitalEnvironment
     :ouCitClassifiedAs :SnomedHospitalEnvironment ;
     a :OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 22232009"@en ;
@@ -4775,8 +4775,8 @@
     :spOffersFCla :WhoDhiCaptureFromDigitalDevices ;
     :spSupportsEfCit :OrthancFuncImageArchiving, :OrthancFuncImageCommunication, :OrthancFuncImageDistribution, :OrthancFuncImageManagement, :OrthancFuncResearchAboutAutomatedAnalysisOfMedicalImages ;
     :spSupportsEfCla :BbExecutionOfRadiologicalExaminations ;
-    :spUsedByUserCit :OrthancUgRadiologistSctid66862007, :OrthancUgResearcherSctid769038007, :OrthancUserIntegrators, :OrthancUserNetworkEngineer, :OrthancUserPhysicist, :OrthancUserSystemEngineer ;
-    :spUsedInOuCit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartmentSctid309964003 ;
+    :spUsedByUserCit :OrthancUgRadiologist, :OrthancUgResearcher, :OrthancUserIntegrators, :OrthancUserNetworkEngineer, :OrthancUserPhysicist, :OrthancUserSystemEngineer ;
+    :spUsedInOuCit :OrthancOrgHealthCenters, :OrthancOrgHospitalEnvironment, :OrthancOrgRadiologyDepartment ;
     a :SoftwareProduct ;
     rdfs:comment "Open-source, lightweight DICOM server."@en ;
     rdfs:label "Orthanc"@en .
@@ -4900,19 +4900,19 @@
     a :OrganizationalUnitCitation ;
     rdfs:label "Hospital Environment"@en .
 
-:OrthancOrgRadiologyDepartmentSctid309964003
+:OrthancOrgRadiologyDepartment
     :ouCitClassifiedAs :SnomedRadiologyDepartmentEnvironment ;
     a :OrganizationalUnitCitation ;
     rdfs:comment "SCTID: 309964003"@en ;
     rdfs:label "Radiology department"@en .
 
-:OrthancUgRadiologistSctid66862007
+:OrthancUgRadiologist
     :userCitClassifiedAs :SnomedRadiologistOccupation ;
     a :UserGroupCitation ;
     rdfs:comment "SCTID: 66862007"@en ;
     rdfs:label "Radiologist"@en .
 
-:OrthancUgResearcherSctid769038007
+:OrthancUgResearcher
     :userCitClassifiedAs :SnomedResearcherOccupation ;
     a :UserGroupCitation ;
     rdfs:comment "SCTID: 769038007"@en ;
