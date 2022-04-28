@@ -11,7 +11,7 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix wikipedia: <https://en.wikipedia.org/wiki/> .
 
-hito:MbApplicationTypeSystemCatalogue
+hito:MbApplicationSystemTypeCatalogue
     a hito:ApplicationSystemTypeCatalogue ;
     rdfs:comment "Application System Type Catalogue from the German master thesis 'Ein Katalog für Anwendungssystemtypen im Gesundheitswesen'."@en ;
     rdfs:label "HITO Application System Type Catalogue"@en .
