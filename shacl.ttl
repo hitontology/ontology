@@ -46,7 +46,7 @@
 	[sh:path :databaseSystem],
 	[sh:path :license],
 	[sh:path :programmingLibrary],
-	[sh:path :homepage],
+	[sh:path :homepage; sh:maxCount 1],
 	[sh:path :spOffersFCit],
 	[sh:path :spSupportsEfCit],
 	[sh:path :spIsOfAstCit],
@@ -57,7 +57,7 @@
 	[sh:path :spIsOfAstCla],
 	[sh:path :spUsedInOuCla],
 	[sh:path :spUsedByUserCla],
-	[sh:path :repository],
+	[sh:path :repository; sh:maxCount 1],
 	[sh:path :softwareProductComponent];
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
@@ -182,6 +182,10 @@
 
 :softwareProductComponentRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :softwareProductComponent;
+	sh:property [
+			sh:path [ sh:inversePath :softwareProductComponent];
+			sh:maxCount 1
+	];
 	sh:class :SoftwareProduct.
 
 #### Software Product Attribute Classes #####################################
@@ -246,13 +250,6 @@
 
 :ProgrammingLibraryShape a sh:NodeShape;
 	sh:targetClass :ProgrammingLibrary;
-	sh:property :labelShape;
-	sh:pattern "^http://hitontology.eu/ontology/";
-	sh:closed true;
-	sh:ignoredProperties :ignoredProperties.
-
-:HomepageShape a sh:NodeShape;
-	sh:targetClass :Homepage;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
@@ -495,10 +492,10 @@
 :StudyShape a sh:NodeShape;
 	sh:targetClass :Study;
 	sh:property :labelShape,
-	[sh:path :firstAuthor],
-	[sh:path :publishedInYear],
+	[sh:path :firstAuthor; sh:minCount 1], # no max count because of shared first authorship
+	[sh:path :publishedInYear; sh:minCount 1; sh:maxCount 1],
 	[sh:path :publishedInJournal],
-	[sh:path :pmid],
+	[sh:path :pmid; sh:maxCount 1],
 	[sh:path bibo:doi],
 	[sh:path :ocEvaluatesOcCit],
 	[sh:path :studyMethod],
@@ -606,3 +603,29 @@
 :tookPlaceInOrganizationalUnitRangeShape a sh:NodeShape;
   sh:targetObjectsOf :tookPlaceInOrganizationalUnit;
 	sh:class :OrganizationalUnitCitation.
+
+#### Other ##################################################################
+
+:subFeatureOfDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :subFeatureOf;
+	sh:class :FeatureClassified.
+
+:subFeatureOfRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :subFeatureOf;
+	sh:property [
+			sh:path :subFeature;
+			sh:maxCount 1
+	];
+	sh:class :FeatureClassified.
+
+:subFunctionOfDomainShape a sh:NodeShape;
+	sh:targetSubjectsOf :subFunctionOf;
+	sh:class :EnterpriseFunctionClassified.
+
+:subFunctionOfRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :subFunctionOf;
+	sh:property [
+			sh:path :subFunctionOf;
+			sh:maxCount 1
+	];
+	sh:class :EnterpriseFunctionClassified.
