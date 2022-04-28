@@ -237,14 +237,14 @@
 :evaluatesApplicationSystemTypeHavingUserGroup rdf:type owl:ObjectProperty ;
                                            rdfs:domain :Study ;
                                            rdfs:range :UserGroupCitation ;
-                                           rdfs:label "evaluates"@en .
+                                           rdfs:label "evaluates application system or software product used by"@en .
 
 
 ###  http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit
 :evaluatesApplicationSystemTypeUsedInUnit rdf:type owl:ObjectProperty ;
                                       rdfs:domain :Study ;
                                       rdfs:range :OrganizationalUnitCitation ;
-                                      rdfs:label "evaluates"@en .
+                                      rdfs:label "evaluates application system or software product used in"@en .
 
 
 ###  http://hitontology.eu/ontology/fClaFrom
