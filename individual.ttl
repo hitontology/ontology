@@ -874,8 +874,8 @@
               rdfs:label "Operation Management System Evaluation in the Central Finland Health Care District - End Users' View of System Implementation"@en .
 
 
-###  http://hitontology.eu/ontology/NamedStudy24
-:NamedStudy24 rdf:type :ExperimentalStudyRCT ;
+###  http://hitontology.eu/ontology/NamedStudy25
+:NamedStudy25 rdf:type :ExperimentalStudyRCT ;
                 :evaluatesApplicationSystemTypeHavingFeature :app ,
                                                          :informationSourroundingPatientAgeAndGestationalAgeToGuideTowardAvailableOptions ,
                                                          :reviewScreeningAndTestingOptions ,
