@@ -1,12 +1,7 @@
 #/bin/sh
 # Combine all of HITO into one file.
-F="./dist/hito.nt"
 FT="./dist/hito.ttl"
-echo "" > $F
-ls *.ttl | xargs -I @ rapper -q -i turtle -o ntriples @ >> $F
 #cat dbpedia/os.nt >> $F
-echo "Combined HITO into file $F with `wc -l < $F` lines, converting to $FT."
-cat prefix.ttl $F | rapper -q -i turtle -o turtle  - http://hitontology.eu/ontology/ > $FT
-cat dist/hito.ttl dist/dbpedia.ttl dist/swo.ttl > dist/all.ttl
+cat *.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > $FT
+cat $FT dist/dbpedia.ttl dist/swo.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > ./dist/all.ttl
 cp shacl.ttl dist/shacl.ttl
-rm $F
