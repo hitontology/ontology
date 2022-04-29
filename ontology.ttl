@@ -853,6 +853,85 @@
                  rdfs:label "Validation Study"@en ;
 				 rdfs:comment "compares the accuracy of a measure with a gold standard measure"@en .
 
+################### Competency
+
+:ImPosition a owl:Class;
+	rdfs:label "information management position"@en;
+	rdfs:comment "description of required competencies for a position in a job offer"@en.
+
+:Competence a owl:Class;
+	rdfs:label "competence about"@en.
+
+:ConcreteCompetence a owl:Class;
+	rdfs:subClassOf :Competency;
+	rdfs:label "concrete competence in"@en;
+	owl:equivalentClass
+	[
+		a owl:Class;
+		owl:unionOf (:Interoperability dbo:Language dbo:ProgrammingLanguage	:programmingLibrary :SoftwareProduct :EnterpriseFunctionClassified :ApplicationSystemType :DatabaseSystem)
+	].
+
+:AbstractCompetence a owl:Class;
+	rdfs:label "abstract competence in"@en.
+
+:competenceLevel a owl:ObjectProperty;
+	rdfs:domain :ImPosition; # inherited to subproperties
+	rdfs:label "competence level"@en;
+	rdfs:comment "competence level superproperty"@en.
+
+# class of properties to inherit :competenceLevelNumber
+:CompetenceLevel a owl:Class;
+	rdfs:label "competence level"@en;
+	rdfs:comment "competence level class"@en.
+
+:competenceLevelNumber a owl:DatattypeProperty;
+	rdfs:label "competence level number"@en;
+	rdfs:domain :CompetenceLevel;
+	rdfs:range xsd:positiveInteger.
+
+:competenceLevel1 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "1"^^xsd:positiveInteger;
+	skos:altLabel "is interested in"@en, "has basic knowledge of"@en;
+	rdfs:label "knows"@en.
+
+:competenceLevel2 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "2"^^xsd:positiveInteger;
+	skos:altLabel "has advanced knowledge about"@en;
+	rdfs:label "understands"@en.
+
+:competenceLevel3 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "3"^^xsd:positiveInteger;
+	skos:altLabel "basic/advanced/expert skills in"@en, "experienced with... at basic/advanced/master level"@en, "practical/hands-on experience with"@en;
+	rdfs:label "applies"@en.
+
+:competenceLevel4 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "4"^^xsd:positiveInteger;
+	skos:altLabel "selects"@en, "tests"@en;
+	rdfs:label "analyzes"@en.
+
+:competenceLevel5 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "5"^^xsd:positiveInteger;
+	skos:altLabel "assesses the use of"@en;
+	rdfs:label "evaluates"@en.
+
+:competenceLevel6 a owl:ObjectProperty, :CompetenceLevel;
+	rdfs:subPropertyOf :competenceLevel;
+	rdfs:range :ConcreteCompetence;
+	:competenceLevelNumber "6"^^xsd:positiveInteger;
+	skos:altLabel "plans use of"@en, "develops"@en, "provides trainings for"@en;
+	rdfs:label "creates"@en.
+
+
 ################### Labels for external resources
 yago:OperatingSystem106568134 rdfs:label "Operating System"@en .
 yago:License106549661 rdfs:label "License"@en .
