@@ -1136,11 +1136,6 @@
                            rdfs:label "automatic data collection"@en .
 
 
-###  http://hitontology.eu/ontology/automaticDocumentationOfMedication
-:automaticDocumentationOfMedication rdf:type :FeatureCitation ;
-                                       rdfs:label "automatic documentation of medication"@en .
-
-
 ###  http://hitontology.eu/ontology/automaticForwardedProcessedImages
 :automaticForwardedProcessedImages rdf:type :FeatureCitation ;
                                       :fCitClassifiedAs :EhrSfmManageOrders ,
@@ -1944,11 +1939,6 @@
                            rdfs:label "operating room management"@en .
 
 
-###  http://hitontology.eu/ontology/operatingRoomModule
-:operatingRoomModule rdf:type :FeatureCitation ;
-                       rdfs:label "operating room module"@en .
-
-
 ###  http://hitontology.eu/ontology/operationManagementSystem
 :operationManagementSystem rdf:type :ApplicationSystemTypeCitation ;
                              :astCitClassifiedAs :BbOperationManagementSystem ;
@@ -2144,11 +2134,6 @@
                                                                         rdfs:label "predefined order sentences with details of drug strength dose and form"@en .
 
 
-###  http://hitontology.eu/ontology/predifiningNursingProblemsGoalsAndTasks
-:predifiningNursingProblemsGoalsAndTasks rdf:type :FeatureCitation ;
-                                              rdfs:label "predifining nursing problems goals and tasks"@en .
-
-
 ###  http://hitontology.eu/ontology/prescribeLonghand
 :prescribeLonghand rdf:type :FeatureCitation ;
                     :fCitClassifiedAs :EhrSfmManageOrders ;
@@ -2217,18 +2202,6 @@
                             rdfs:label "registration of inpatients"@en .
 
 
-###  http://hitontology.eu/ontology/remindingAndDocumentationOfNursingTasks
-:remindingAndDocumentationOfNursingTasks rdf:type :FeatureCitation ;
-                                              :fCitClassifiedAs :EhrSfmManageClinicalHistory ,
-                                                                         :EhrSfmManageClinicalWorkflowTasking ;
-                                              rdfs:label "reminding and documentation of nursing tasks"@en .
-
-
-###  http://hitontology.eu/ontology/reportFunctionalities
-:reportFunctionalities rdf:type :FeatureCitation ;
-                        rdfs:label "report functionalities"@en .
-
-
 ###  http://hitontology.eu/ontology/reportsOnTestsPerformed
 :reportsOnTestsPerformed rdf:type :FeatureCitation ;
                             :fCitClassifiedAs :EhrSfmManageResults ,
@@ -2244,11 +2217,6 @@
                                                                             :EhrSfmManageOrders ,
                                                                             :EhrSfmSupportCareCoordinationReporting ;
                                                  rdfs:label "request form assigned a timeslot room and staff"@en .
-
-
-###  http://hitontology.eu/ontology/respiratoryTabs
-:respiratoryTabs rdf:type :FeatureCitation ;
-                  rdfs:label "respiratory tabs"@en .
 
 
 ###  http://hitontology.eu/ontology/retrievalOfAdministrativeData
