@@ -418,13 +418,13 @@
                                             rdfs:label "Administrative healthcare staff occupation"@en .
 
 
-###  http://hitontology.eu/ontology/SnomedClericalOccupationOccupation
-:SnomedClericalOccupationOccupation rdf:type :UserGroupClassified ;
+###  http://hitontology.eu/ontology/SnomedClericalOccupation
+:SnomedClericalOccupation rdf:type :UserGroupClassified ;
                                 :userClaFrom :SnomedUserGroupCatalogue ;
                                 :spUsedByUserCitSctid 159483005 ;
                                 :vancouverReference "SNOMED International. SNOMED CT - International SNOMED CT Browser. Release: International Edition 20190131. 2019"@en ;
-                                rdfs:comment "Clerical occupation (occupation)"@en ;
-                                rdfs:label "Clerical occupation occupation"@en .
+                                rdfs:comment "Clerical occupation"@en ;
+                                rdfs:label "Clerical occupation"@en .
 
 
 ###  http://hitontology.eu/ontology/SnomedClerkOccupation
@@ -535,7 +535,7 @@
 
 ###  http://hitontology.eu/ontology/clericalStaff
 :clericalStaff rdf:type :UserGroupCitation ;
-                :userCitClassifiedAs :SnomedClericalOccupationOccupation ;
+                :userCitClassifiedAs :SnomedClericalOccupation ;
                 rdfs:label "clerical staff"@en .
 
 
