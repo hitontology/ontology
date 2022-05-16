@@ -1,0 +1,249 @@
+@base <http://hitontology.eu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hito: <> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bb: <http://www.snik.eu/ontology/bb/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+
+hito:BbAdministrateTheMasterPatientIndexMpi
+    skos:narrowMatch hito:WhoDhiVerifyClientUniqueIdentity .
+
+hito:BbAdministrationOfBusinessTripsAndFurtherTraining
+    skos:narrowMatch hito:WhoDhiHealthcareProviderTraining .
+
+hito:BbAnalyzeData
+    skos:narrowMatch hito:WhoDhiAutomatedAnalysisOfDataToGenerateNewInformationOrPredictionsOnFutureEvents .
+
+hito:BbAssignOrderAndBloodSamplesToDevices
+    skos:broadMatch hito:EhrSfmManageOrdersForBloodProductsAndOtherBiologics .
+
+hito:BbAssignPatientsToModalities
+    skos:broadMatch hito:JoshiPacsWorklistAndWorkflowOrganization .
+
+hito:BbAssignPatientsToRoomsAndBeds
+    skos:narrowMatch hito:EhrSfmManagePatientBedAssignment .
+
+hito:BbClinicalInformationSystem
+    skos:relatedMatch hito:WhoDhiElectronicMedicalRecord .
+
+hito:BbCollectResultsFromDevices
+    skos:closeMatch hito:EhrSfmSupportMedicalDeviceOriginatedData, hito:WhoDhiCaptureFromDigitalDevices .
+
+hito:BbCommunicateDischargeInformation
+    skos:broadMatch hito:EhrSfmManageTransitionsOfCareAndDischargedPatients .
+
+hito:BbCreatingARoster
+    skos:broadMatch hito:EhrSfmManageHealthcareResourceScheduling, hito:WhoDhiScheduleHealthcareProvidersActivities .
+
+hito:BbDataWarehouseSystem
+    skos:narrowMatch hito:WhoDhiCensusPopulationInformationDataWarehouse .
+
+hito:BbDecisionMakingPlanningAndOrganizationOfPatientTreatment
+    skos:narrowMatch hito:WhoDhiHealthcareProviderDecisionSupport .
+
+hito:BbDisplayWarningMessages
+    skos:closeMatch hito:WhoDhiProvidePromptsAndAlertsBasedAccordingToProtocol ;
+    skos:relatedMatch hito:EhrSfmClinicalAlertsClinicalAuditTrigger .
+
+hito:BbElectronicPatientRecordSystem
+    skos:relatedMatch hito:WhoDhiElectronicMedicalRecord .
+
+hito:BbFinancialAccounting
+    skos:closeMatch hito:WhoDhiHealthFinancing .
+
+hito:BbHumanResourceManagement
+    skos:closeMatch hito:WhoDhiHumanResourceManagement .
+
+hito:BbIntegrateDataFromDifferentApplicationComponents
+    skos:closeMatch hito:EhrSfmSystemIntegration, hito:JoshiPacsCompatibilityAndIntegrationWithOtherSystemsAndProducts, hito:WhoDhiDataExchangeAndInteroperability .
+
+hito:BbLaboratoryInformationSystem
+    skos:broadMatch hito:WhoDhiLaboratoryAndDiagnosticsInformationSystem .
+
+hito:BbManagementOfMedicalDevices
+    skos:broadMatch hito:WhoDhiEquipmentAndAssetManagement .
+
+hito:BbMaterialAndMedicationManagement
+    skos:narrowMatch hito:WhoDhiPrescriptionAndMedicationManagement .
+
+hito:BbMergePatientInformationFromTwoRecords
+    skos:closeMatch hito:EhrSfmMergeRecordEntries .
+
+hito:BbModifyPresentationOfPictures
+    skos:closeMatch hito:JoshiPacsUserInterfaceForImageManipulation .
+
+hito:BbOpeningAPatientRecord
+    skos:relatedMatch hito:WhoDhiClientHealthRecords .
+
+hito:BbPatientAdministrationSystem
+    skos:closeMatch hito:WhoDhiIdentificationRegistriesAndDirectories .
+
+hito:BbPatientDischargeAndTransferToOtherInstitutions
+    skos:closeMatch hito:WhoDhiReferralCoordination .
+
+hito:BbPatientIdentificationAndCheckingForRecurrent
+    skos:closeMatch hito:WhoDhiClientIdentificationAndRegistration .
+
+hito:BbPharmacyInformationSystem
+    skos:closeMatch hito:WhoDhiPharmacyInformationSystem .
+
+hito:BbProvideCatalogsAndOtherMeansForCodingOfDiagnoses
+    skos:narrowMatch hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality .
+
+hito:BbProvideCatalogsAndOtherMeansForCodingPatientrelatedProcedures
+    skos:broadMatch hito:EhrSfmSupportRulesdrivenFinancialAdministrativeCoding .
+
+hito:BbProvideCatalogsAndOtherMeansForCodingPatientsDiagnoses
+    skos:broadMatch hito:EhrSfmSupportRulesdrivenFinancialAdministrativeCoding ;
+    skos:relatedMatch hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality .
+
+hito:BbProvideCatalogsAndOtherMeansForCodingRadiologicalDiagnoses
+    skos:closeMatch hito:WhoDhiClassifyDiseaseCodesOrCauseOfMortality .
+
+hito:BbProvideDrugCatalogs
+    skos:broadMatch hito:EhrSfmSupportForMedicationRecommendations .
+
+hito:BbProvideFormsForDocumentingMedicalAnamnesis
+    skos:broadMatch hito:EhrSfmManagePatientHistory .
+
+hito:BbProvideFormsForDocumentingMedications
+    skos:broadMatch hito:EhrSfmManageMedicationList .
+
+hito:BbProvideFormsForDocumentingPlannedTasks
+    skos:broadMatch hito:EhrSfmManagePatientspecificCareAndTreatmentPlans .
+
+hito:BbProvideFormsForEnteringClinicalDataFreetextOrStructured
+    skos:broadMatch hito:EhrSfmSupportClinicalDocumentation .
+
+hito:BbProvideFormsForEnteringOrUpdatingPatientAdministrativeInformationNameaddressBirthDateRelativesAdmissionDiagnosisEtc
+    skos:broadMatch hito:EhrSfmManagePatientDemographics .
+
+hito:BbProvideFormsForPreparingClinicalReports
+    skos:narrowMatch hito:JoshiPacsStructuredReporting .
+
+hito:BbProvideGuidelinesForCarePlanning
+    skos:broadMatch hito:EhrSfmPresentGuidelinesAndProtocolsForPlanningCare .
+
+hito:BbProvideGuidelinesForTreatmentPlanning
+    skos:closeMatch hito:EhrSfmPresentGuidelinesAndProtocolsForPlanningCare .
+
+hito:BbProvideMeansForControlOfSecurityIssues
+    skos:closeMatch hito:EhrSfmSecurity, hito:JoshiPacsSecurityBackupAndDowntimePrevention .
+
+hito:BbProvideMeansForCreatingARoster
+    skos:broadMatch hito:EhrSfmManageHealthcareResourceScheduling, hito:WhoDhiScheduleHealthcareProvidersActivities .
+
+hito:BbProvideMeansForDataMining
+    skos:relatedMatch hito:EhrSfmSupportForIdentificationOfPotentialProblemsAndTrends .
+
+hito:BbProvideMeansForManagingMedicalDevices
+    skos:closeMatch hito:EhrSfmManageMedicalEquipmentProstheticOrthoticDeviceList .
+
+hito:BbProvideMeansForMinimizingAdverseDrugEvents
+    skos:broadMatch hito:EhrSfmManageAdverseEvents ;
+    skos:relatedMatch hito:WhoDhiReportEffectsAdverseDrug .
+
+hito:BbProvideMeansForOrderingConsumables
+    skos:broadMatch hito:EhrSfmManageMedicationOrders .
+
+hito:BbProvideMeansForOrderingDrugs
+    skos:broadMatch hito:WhoDhiTransmitOrTrackPrescriptionOrders .
+
+hito:BbProvideMeansForOrganizingTraining
+    skos:closeMatch hito:EhrSfmSupportForProviderTraining ;
+    skos:narrowMatch hito:WhoDhiProvideTrainingContentToHealthcareProviders .
+
+hito:BbProvideMeansForPreparingACarePlan
+    skos:closeMatch hito:EhrSfmPresentGuidelinesAndProtocolsForPlanningCare .
+
+hito:BbProvideMeansForPreparingWorkSchedules
+    skos:broadMatch hito:EhrSfmManageHealthcareResourceScheduling, hito:WhoDhiScheduleHealthcareProvidersActivities .
+
+hito:BbProvideMeansForPreventiveMaintenance
+    skos:closeMatch hito:WhoDhiMonitorStatusOfHealthEquipment .
+
+hito:BbProvideMeansForStockKeeping
+    skos:closeMatch hito:WhoDhiManageInventoryAndDistributionOfHealthCommoditiesStockLevelsOf .
+
+hito:BbProvideOrdersForPatientrelatedDrugs
+    skos:broadMatch hito:EhrSfmManageMedicationOrders .
+
+hito:BbProvideOrdersForPatientrelatedExaminations
+    skos:relatedMatch hito:EhrSfmManageNonmedicationPatientCareOrders .
+
+hito:BbProvideRelativesWithInformationOnTheLocationOfAPatient
+    skos:broadMatch hito:EhrSfmManagePatientsLocationWithinFacility .
+
+hito:BbScanningDocumentsFromReferringPhysicianAndOtherSources
+    skos:broadMatch hito:EhrSfmRenderExternallySourcedClinicalDocuments .
+
+hito:BbSelectOrdersFromOrderSets
+    skos:closeMatch hito:EhrSfmUseOrderSets .
+
+hito:BbStructureData
+    skos:narrowMatch hito:WhoDhiParseUnstructuredDataIntoStructuredData .
+
+hito:BbSupplyManagementSchedulingAndResourceAllocation
+    skos:closeMatch hito:WhoDhiSupplyChainManagement .
+
+hito:BbTeleradiologySystem
+    skos:broadMatch hito:WhoDhiTelemedicineCategory .
+
+hito:BbWorkOrganizationAndTimePlanning
+    skos:closeMatch hito:WhoDhiHealthWorkerActivityPlanningAndScheduling .
+
+hito:BbWorkScheduling
+    skos:broadMatch hito:EhrSfmManageHealthcareResourceScheduling ;
+    skos:closeMatch hito:WhoDhiScheduleHealthcareProvidersActivities .
+
+hito:JoshiPacsUserInterfaceForWorkflowManagement
+    skos:broadMatch hito:EhrSfmWorkflowManagement .
+
+hito:WhoDhiAccessByClientToOwnMedicalRecords
+    skos:closeMatch hito:EhrSfmCommunicationWithPersonalHealthRecordSystem .
+
+hito:WhoDhiConsultationsBetweenRemoteClientAndHealthcareProvider
+    skos:closeMatch hito:EhrSfmSupportRemoteHealthcareServices .
+
+hito:WhoDhiConsultationsForCaseManagementBetweenHealthcareProviders
+    skos:closeMatch hito:EhrSfmSupportForCommunicationsBetweenOrganizations .
+
+hito:WhoDhiDataExchangeAcrossSystems
+    skos:relatedMatch hito:EhrSfmApplicationStructuredMessageAndStructuredDocumentInterchangeStandards .
+
+hito:WhoDhiManageClientsStructuredClinicalRecords
+    skos:relatedMatch hito:EhrSfmRecordStates .
+
+hito:WhoDhiManageReferralsBetweenHealthAndOtherSectors
+    skos:broadMatch hito:EhrSfmSupportForReferralProcess .
+
+hito:WhoDhiManageReferralsBetweenPointsOfServiceWithinHealthSector
+    skos:broadMatch hito:EhrSfmSupportForReferralProcess .
+
+hito:WhoDhiMergeDeduplicateAndCurateCodedDatasetsOrTerminologies
+    skos:narrowMatch hito:EhrSfmTerminologyMapping .
+
+hito:WhoDhiMonitorPerformanceOfHealthcareProviders
+    skos:closeMatch hito:EhrSfmManageHealthcareFacilityPerformanceInformation .
+
+hito:WhoDhiOndemandInformationServicesToClients
+    skos:closeMatch hito:EhrSfmPatientKnowledgeAccess .
+
+hito:WhoDhiTargetedClientCommunication
+    skos:closeMatch hito:EhrSfmSupportForCommunicationsBetweenProviderAndPatientAndorThePatientRepresentative .
+
+hito:WhoDhiTrackInsuranceBillingAndClaimsSubmission
+    skos:closeMatch hito:EhrSfmSupportFinancialClaimsEncounterReports .
+
+hito:WhoDhiTransmitDiagnosticOrdersDiagnosticResults
+    skos:narrowMatch hito:EhrSfmManageOrdersForDiagnosticscreeningTests .
+
+hito:WhoDhiTransmitTargetedAlertsAndRemindersToClients
+    skos:narrowMatch hito:EhrSfmPatientReminderInformationUpdates .
+
