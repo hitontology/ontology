@@ -223,8 +223,7 @@ hito:WhoDhiDataCoding
     hito:fClaFrom hito:WhoDhiDataServiceFeatureCatalogue ;
     hito:internalId "4.2" ;
     a hito:FeatureClassified ;
-    rdfs:comment """Digital approaches to code data and manage the use of standardized datasets.
-"""@en ;
+    rdfs:comment "Digital approaches to code data and manage the use of standardized datasets."@en ;
     rdfs:label "Data coding"@en .
 
 hito:WhoDhiDataCollectionManagementAndUse
@@ -623,7 +622,7 @@ hito:WhoDhiNonRoutineDataCollectionAndManagement
     hito:subFeatureOf hito:WhoDhiDataCollectionManagementAndUse ;
     a hito:FeatureClassified ;
     rdfs:label "Non routine data collection and management"@en ;
-    skos:altLabel "digital data collection"@en, "electronic data collection"@en, "mobile based surveys, using applications such as OpenDataKit (ODK), Enketo, FormHub, etc"@en .
+    skos:altLabel "digital data collection"@en, "electronic data collection"@en, "mobile based surveys, using applications such as OpenDataKit (ODK), Enketo, FormHub, etc."@en .
 
 hito:WhoDhiNotificationOfPublicHealthEventsFromPointOfDiagnosis
     hito:fClaFrom hito:WhoDhiHealthSystemManagerFeatureCatalogue ;
