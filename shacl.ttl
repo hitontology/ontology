@@ -22,7 +22,7 @@
 @base <http://hitontology.eu/ontology/>.
 
 :ignoredProperties rdf:first vann:example;
-	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy).
+	rdf:rest ( rdf:type rdfs:comment rdfs:seeAlso skos:altLabel dcterms:source :internalId skos:definition dce:source owl:sameAs rdfs:isDefinedBy skos:closeMatch skos:narrowMatch skos:broadMatch skos:relatedMatch).
 
 :labelShape a sh:PropertyShape;
 	sh:path rdfs:label;
