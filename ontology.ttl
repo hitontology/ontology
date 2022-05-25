@@ -112,6 +112,11 @@
                            rdfs:range :ApplicationSystemTypeCatalogue ;
                            rdfs:label "from catalogue"@en .
 
+###  http://hitontology.eu/ontology/astClaSupportsEfCla
+:astClaSupportsEfCla rdf:type owl:ObjectProperty ;
+                           rdfs:domain :ApplicationSystemTypeClassified ;
+                           rdfs:range :EnterpriseFunctionClassified ;
+                           rdfs:label "supports"@en .
 
 ###  http://hitontology.eu/ontology/astCitClassifiedAs
 :astCitClassifiedAs rdf:type owl:ObjectProperty ;

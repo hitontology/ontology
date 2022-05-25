@@ -271,7 +271,7 @@
 	sh:property :labelShape, [
 		sh:path :fCitClassifiedAs;
 	] ,
-	[sh:path :supportsFunction];
+	[sh:path :supportsFunction; sh:class :EnterpriseFunctionCitation];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
@@ -325,7 +325,7 @@
 		sh:maxCount 1
 	],
 	[sh:path :subFeatureOf] ,
-	[sh:path :supportsFunctionClassified ];
+	[sh:path :supportsFunctionClassified; sh:class :EnterpriseFunctionClassified ];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
@@ -336,7 +336,8 @@
 		sh:path :astClaFrom;
 		sh:minCount 1;
 		sh:maxCount 1
-	];
+	],
+	[sh:path :astClaSupportsEfCla; sh:class :EnterpriseFunctionClassified];
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
