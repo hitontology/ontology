@@ -139,12 +139,13 @@ hito:MbNursingManagementAndDocumentationSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Nursing management and documentation system"@en, "Pflegedokumentationssystem"@de ;
-    skos:altLabel "Digitalen Pflegedokumentation"@de, "Digitales Pflegeprozessmanagement"@de, "Electronic documentation of care and treatment services"@en, "Elektronische Dokumentation von Pflegeleistungen"@de, "Pflegeinformationssystem"@de .
+    skos:altLabel "Digitale Pflegedokumentation"@de, "Digitales Pflegeprozessmanagement"@de, "Electronic documentation of care and treatment services, Nursing information system"@en, "Elektronische Dokumentation von Pflegeleistungen"@de, "Pflegeinformationssystem"@de .
 
-hito:MbNursingServicesInformationSystem
+hito:MbNursingServicesManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Nursing services information system"@en, "Pflegedienstinformationssystem"@de .
+    rdfs:label "Nursing services management system"@en, "Pflegedienstmanagementsystem"@de ;
+    skos:altLabel "Nursing services information system"@en, "Pflegedienstinformationssystem"@de .
 
 hito:MbOncologyInformationSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
@@ -160,7 +161,7 @@ hito:MbOperationManagementSystem
 hito:MbOrthopedicsInformationSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Orthopedics information system"@en, "Orthopädieinformationssystem"@de .
+    rdfs:label "Orthopedics information system"@en, "Orthop��dieinformationssystem"@de .
 
 hito:MbOutpatientManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
@@ -183,29 +184,23 @@ hito:MbPatientDataManagementSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Patient data management system"@en, "Patientendatenmanagementsystem"@de ;
-    skos:altLabel "ICU-Manager"@de, "PDMS"@en .
+    skos:altLabel "ICU management system"@en, "PDMS"@de .
 
 hito:MbPatientEntertainmentSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
     rdfs:label "Patient entertainment system"@en, "Patientenentertainmentsystem"@de .
 
-hito:MbPatientInformationSystem
-    hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
-    a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient information system"@en, "Patienteninformationssystem"@de ;
-    skos:altLabel "Digitale Patienten-Services"@de, "Informationsplattform für Patienten"@de .
-
 hito:MbPatientPortal
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient portal"@en, "Patientenportal"@de ;
-    skos:altLabel "Gesundheitsportal"@de, "Zuweiserportal"@de .
+    rdfs:label "Patient portal"@en, "Patienteninformationssystem"@de ;
+    skos:altLabel "Digitale Patienten-Services"@de, "Gesundheitsportal"@de, "Informationsplattform für Patienten"@de .
 
-hito:MbPatientmanagedHealthRecord
+hito:MbPatientmanagedHealthRecordSystem
     hito:astClaFrom hito:MbApplicationSystemTypeCatalogue ;
     a hito:ApplicationSystemTypeClassified ;
-    rdfs:label "Patient-managed health record"@en, "Patientengef��hrte elektronische Patientenakte"@de ;
+    rdfs:label "Patient-managed health record system"@en, "Patientengeführtes elektronische Patientenaktensystem, Patientengeführte elektronische Patientenakte"@de ;
     skos:altLabel "Digital health record on mobile devices"@en, "EGA"@de, "EHR System"@en, "EPA"@de, "Electronic Health Record System"@en, "Electronic Patient Record"@en, "Elektronische Gesundheitsakte"@de, "Elektronische Patientenakte"@de, "Elektronisches Patientendossier"@de, "Online-Gesundheitsakte"@de, "Webbasierte Gesundheitsakte"@de .
 
 hito:MbPharmacyInformationSystem
