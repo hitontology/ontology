@@ -18,6 +18,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
 @base <http://hitontology.eu/ontology/> .
 
 <http://hitontology.eu/ontology> rdf:type owl:Ontology ;
@@ -348,6 +349,7 @@
 
 ###  http://hitontology.eu/ontology/programmingLibrary
 :programmingLibrary rdf:type owl:ObjectProperty ;
+                    rdfs:subClassOf gist:Content ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :ProgrammingLibrary ;
                     rdfs:label "programming library or toolkit"@en ;
@@ -595,6 +597,7 @@
 
 ###  http://hitontology.eu/ontology/Catalogue
 :Catalogue rdf:type owl:Class ;
+           rdfs:subClassOf gist:Collection ;
            rdfs:label "Catalogue"@en ;
 		   vann:example :BbFeatureCatalogue, :BbFunctionCatalogue, :BbApplicationSystemTypeCatalogue, :SnomedUserGroupCatalogue ;
            rdfs:comment "A collection of classifieds of the same type from the same source."@en .
@@ -602,6 +605,7 @@
 
 ###  http://hitontology.eu/ontology/Certification
 :Certification rdf:type owl:Class ;
+                     rdfs:subClassOf gist:Category ;
                      rdfs:label "Certification"@en ;
 				     dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
 					 rdfs:comment "Certificate of a software product to assess the compliance with quality management standards."@en .
@@ -609,23 +613,27 @@
 
 ###  http://hitontology.eu/ontology/Citation
 :Citation rdf:type owl:Class ;
+            rdfs:subClassOf gist:Tag ;
          	rdfs:label "Citation"@en ;
 			rdfs:comment "Natural language description of a software product from that products documentation, such as a web page."@en .
 
 ###  http://hitontology.eu/ontology/Classification
 :Classification rdf:type owl:Class ;
+            rdfs:subClassOf gist:Collection ;
          	rdfs:label "Classification"@en ;
 			vann:example :WhoDhi1-0, :Snomed, :EhrSfm, :Bb ;
-			rdfs:comment "Group of catalogues of different catalogue types from the same source."@en .
+			rdfs:comment "Collection of catalogues of different catalogue types from the same source."@en .
 
 
 ###  http://hitontology.eu/ontology/Classified
 :Classified rdf:type owl:Class ;
+            rdfs:subClassOf gist:Category ;
          	rdfs:label "Classified"@en ;
 			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."@en .
 
 ###  http://hitontology.eu/ontology/Client
 :Client rdf:type owl:Class ;
+                     rdfs:subClassOf gist:System ;
                      rdfs:label "Client"@en ;
 					 rdfs:comment "The type of hardware and software environment on which a software product is able to be run."@en .
 
@@ -709,6 +717,7 @@
 
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
+          rdfs:subClassOf gist:Category ;
           rdfs:label "Interoperability Standard"@en ;
 		  vann:example :HL7, <http://hitontology.eu/ontology/HL7_V2.x>, <http://hitontology.eu/ontology/HL7_V3.0>, :ICD10, :HL7_FHIR, :HL7_FHIR, :OpenEHR ;
 		  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>, <https://www.himss.org/resources/interoperability-healthcare> ;
@@ -717,6 +726,7 @@
 
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
+         rdfs:subClassOf gist:Artifact ;
          owl:sameAs dbr:Academic_journal ;
          rdfs:label "Journal"@en ;
          rdfs:comment "Academic Journal"@en .
@@ -801,6 +811,7 @@
 
 ###  http://hitontology.eu/ontology/Study
 :Study rdf:type owl:Class ;
+       rdfs:subClassOf gist:IntellectualProperty ;
        rdfs:label "Study"@en ;
        vann:example :NamedStudy1, :NamedStudy2, :NamedStudy3 ;
        rdfs:comment "An evaluation study"@en .
