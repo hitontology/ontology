@@ -403,7 +403,7 @@
                     rdfs:comment "The subject is subordinate of another classified enterprise function"@en .
 
 
-###  http://hitontology.eu/ontology/subInteroperabilityOf
+###  http://hitontology.eu/ontology/subStandardOf
 :subInteroperabilityOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :Interoperability;
                     rdfs:range :Interoperability ;
@@ -709,10 +709,10 @@
 
 ###  http://hitontology.eu/ontology/Interoperability
 :Interoperability rdf:type owl:Class ;
-          rdfs:label "Interoperability"@en ;
+          rdfs:label "Interoperability Standard"@en ;
 		  vann:example :HL7, <http://hitontology.eu/ontology/HL7_V2.x>, <http://hitontology.eu/ontology/HL7_V3.0>, :ICD10, :HL7_FHIR, :HL7_FHIR, :OpenEHR ;
 		  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>, <https://www.himss.org/resources/interoperability-healthcare> ;
-		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier."@en .
+		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE."@en .
 
 
 ###  http://hitontology.eu/ontology/Journal
