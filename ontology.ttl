@@ -81,18 +81,6 @@
      ov:defines :Interoperability;
      ov:defines :Terminology.
 
-#:uc1 rdf:type owl:Ontology ;
-#     rdfs:label "Evaluation Studies"@en ;
-#     rdfs:comment "finding evidence in health IT evaluation studies"@en ;
-
-#:uc2 rdf:type owl:Ontology ;
-#     rdfs:label "MEDFLOSS"@en ;
-#     rdfs:comment "selecting medical free/libre open source software"@en ;
-
-#:uc3 rdf:type owl:Ontology ;
-#     rdfs:label "commercial software"@en ;
-#     rdfs:comment "selecting commercial software"@en .
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -199,7 +187,7 @@
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :OrganizationalUnitCitation ;
                     rdfs:label "used in"@en ;
-					rdfs:comment "Shows in which organizational unit the software product is used."@en .
+                    rdfs:comment "The organizational unit where the software product is used."@en .
 
 
 ###  http://hitontology.eu/ontology/spUsedByUserCit
@@ -321,7 +309,7 @@
                     rdfs:range swo:SWO_0000002 ;
                     rdfs:label "license"@en ;
 					vann:example swol:SWO_9000085, swol:SWO_9000084, swol:SWO_1000046 ;
-					rdfs:comment "the license under which a software product is distributed."@en .
+					rdfs:comment "The license under which a software product is distributed."@en .
 
 
 ###  http://hitontology.eu/ontology/spOffersFCit
@@ -346,7 +334,7 @@
                     skos:closeMatch doap:repository;
                     rdfs:range rdfs:Resource;
                     rdfs:label "repository"@en ;
-					rdfs:comment "Is a storage location for software-code, along with relevant metadata. Is represented through an URL that links to the repository."@en .
+					rdfs:comment "A storage location for software-code, along with relevant metadata."@en .
 
 
 ###  http://hitontology.eu/ontology/programmingLanguage
@@ -395,15 +383,15 @@
                     rdfs:domain :Classified;
                     rdfs:range :Classified;
                     rdfs:label "subclassified of"@en ;
-                    rdfs:comment "The classified in subject position is a child of classified in object position."@en .
-
+                    rdfs:comment "The subject is a subordinate to the object classified in a hierachy. Whether this is a part-of, specialization or other type of hierarchy depends on the catalogue authors. Generic property only used as a superproperty."@en .
 
 ###  http://hitontology.eu/ontology/subFeatureOf
 :subFeatureOf rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :subClassifiedOf ;
                     rdfs:domain :FeatureClassified;
                     rdfs:range :FeatureClassified;
-                    rdfs:label "subfeature of"@en .
+                    rdfs:label "subfeature of"@en ;
+                    rdfs:comment "The subject is a subordinate of another classified software feature."@en .
 
 
 ###  http://hitontology.eu/ontology/subFunctionOf
@@ -411,7 +399,8 @@
                     rdfs:subPropertyOf :subClassifiedOf ;
                     rdfs:domain :EnterpriseFunctionClassified;
                     rdfs:range :EnterpriseFunctionClassified;
-                    rdfs:label "subfunction of"@en .
+                    rdfs:label "subfunction of"@en ;
+                    rdfs:comment "The subject is subordinate of another classified enterprise function"@en .
 
 
 ###  http://hitontology.eu/ontology/subInteroperabilityOf
@@ -419,14 +408,15 @@
                     rdfs:domain :Interoperability;
                     rdfs:range :Interoperability ;
                     rdfs:label "subinteroperability of"@en ;
-                    rdfs:comment "subinteroperability standard of."@en .
+                    rdfs:comment "The subject is a child of another interoperability standard."@en .
 
 
 ###  http://hitontology.eu/ontology/supportsFunction
 :supportsFunction rdf:type owl:ObjectProperty ;
                     rdfs:domain :FeatureCitation ;
                     rdfs:range :EnterpriseFunctionCitation ;
-                    rdfs:label "supports function citation"@en .
+                    rdfs:label "supports function citation"@en ;
+                    rdfs:comment "the software feature supports function citation"@en .
 
 ###  http://hitontology.eu/ontology/supportsFunctionClassified
 :supportsFunctionClassified rdf:type owl:ObjectProperty ;
@@ -434,7 +424,7 @@
                     rdfs:domain :FeatureClassified;
                     rdfs:range :EnterpriseFunctionClassified ;
                     rdfs:label "supports classified function"@en ;
-                    rdfs:comment "The classified feature in subject position supports the classified enterprise function in object position."@en .
+                    rdfs:comment "The classified enterprise function supported by the software feature."@en .
 
 
 ###  http://hitontology.eu/ontology/client
@@ -442,22 +432,23 @@
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :Client ;
                     rdfs:label "client"@en ;
-					rdfs:comment "The client type on which a software product is able to be run."@en .
+                    rdfs:comment "The type of hardware and software environment on which a software product is able to be run."@en .
 
 
 ###  http://hitontology.eu/ontology/supportedByFeatureCitation
 :supportedByFeatureCitation rdf:type owl:ObjectProperty ;
                     rdfs:domain :EnterpriseFunctionCitation ;
                     rdfs:range :FeatureCitation ;
-                    rdfs:label "supported by feature citation"@en .
-
+                    rdfs:label "supported by feature citation"@en ;
+                    rdfs:comment "Feature citation supporting the enterprise function."@en .
 
 ###  http://hitontology.eu/ontology/spSupportsEfCit
 :spSupportsEfCit rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :citation ;
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :EnterpriseFunctionCitation ;
-                    rdfs:label "supports"@en .
+                    rdfs:label "supports"@en ;
+                    rdfs:comment "Enterprise function citation supported by the software product."@en .
 
 
 ###  http://hitontology.eu/ontology/language
@@ -465,7 +456,7 @@
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range dbo:Language;
                     rdfs:label "language"@en ;
-					rdfs:comment "The language supported by a software product. A software product can offer multiple languages the user can choose from."@en .
+                    rdfs:comment "The language supported by a software product. A software product can offer multiple languages the user can choose from."@en .
 
 
 ###  http://hitontology.eu/ontology/userCitClassifiedAs
@@ -473,7 +464,8 @@
                            rdfs:subPropertyOf :classified;
                            rdfs:domain :UserGroupCitation ;
                            rdfs:range :UserGroupClassified ;
-                           rdfs:label "classified as"@en .
+                           rdfs:label "classified as"@en ;
+                           rdfs:comment "A classified user group the user group citation is classified as."@en .
 
 
 ###  http://hitontology.eu/ontology/userClaFrom
@@ -481,7 +473,8 @@
                            rdfs:subPropertyOf :catalogue;
                            rdfs:domain :UserGroupClassified ;
                            rdfs:range :UserGroupCatalogue ;
-                           rdfs:label "from catalogue"@en .
+                           rdfs:label "from catalogue"@en ;
+                           rdfs:comment "The user group catalogue the classified user group belongs to."@en .
 
 
 ###  http://hitontology.eu/ontology/databaseSystem
@@ -489,7 +482,8 @@
                     rdfs:domain :SoftwareProduct ;
                     rdfs:range :DatabaseSystem ;
                     rdfs:label "database system"@en ;
-					rdfs:comment "The database system a software product uses."@en .
+                    skos:altLabel "DBMS"@en ;
+                    rdfs:comment "A database system a software product uses."@en .
 
 
 #################################################################
@@ -520,7 +514,8 @@
           rdfs:domain :UserGroupClassified ;
           rdfs:range xsd:nonNegativeInteger ;
           rdfs:label "group SCTID"@en ;
-          rdfs:label "SCTID of a user group"@en .
+          rdfs:label "SCTID of a user group"@en ;
+          rdfs:comment "SNOMED CT identifier of a user group"@en .
 
 
 ###  http://hitontology.eu/ontology/publishedInYear
@@ -528,40 +523,46 @@
                           owl:FunctionalProperty ;
                  rdfs:domain :Study ;
                  rdfs:range xsd:gYear ;
-                 rdfs:label "published In Year"@en .
+                 rdfs:label "published in year"@en .
 
 
 ###  http://hitontology.eu/ontology/vancouverReference
 :vancouverReference rdf:type owl:DatatypeProperty ;
                     rdfs:range xsd:string ;
-                    rdfs:comment "vancouver Reference"@en .
+                    rdfs:label "Vancouver reference"@en ;
+                    rdfs:comment "Reference to a publication in Vancouver style."@en .
 
 ########## Direct connections between SoftwareProduct and classified catalogue entries
 
 :spIsOfAstCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :ApplicationSystemTypeClassified ;
-                           rdfs:label "is of"@en .
+                           rdfs:label "is of"@en ;
+                           rdfs:comment "A classified application system type of the software product."@en .
 
 :spSupportsEfCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :EnterpriseFunctionClassified ;
-                           rdfs:label "supports"@en .
+                           rdfs:label "supports"@en ;
+                           rdfs:comment "A classified enterprise function supported by the software product."@en .
 
 :spOffersFCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :FeatureClassified ;
-                           rdfs:label "offers"@en .
+                           rdfs:label "offers"@en ;
+                           rdfs:comment "A classified feature offered by the software product."@en .
 
 :spUsedByUserCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :UserGroupClassified ;
-                           rdfs:label "used by"@en .
+                           rdfs:label "used by"@en ;
+                           rdfs:comment "A user group of the software product."@en .
 
 :spUsedInOuCla rdf:type owl:ObjectProperty ;
                            rdfs:domain :SoftwareProduct;
                            rdfs:range :OrganizationalUnitClassified ;
-                           rdfs:label "used in"@en .
+                           rdfs:label "used in"@en ;
+                           rdfs:comment "An organizational unit using the software product."@en .
 
 #################################################################
 #    Classes
@@ -571,15 +572,15 @@
 :ApplicationSystemTypeCatalogue rdf:type owl:Class ;
                             rdfs:subClassOf :Catalogue ;
                             rdfs:label "Application System Type Catalogue"@en ;
-							vann:example :BbApplicationSystemTypeCatalogue, :WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
-							rdfs:comment "A collection of classified application systems."@en .
+                            vann:example :BbApplicationSystemTypeCatalogue, :WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
+                            rdfs:comment "A collection of classified application systems."@en .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemTypeClassified
 :ApplicationSystemTypeClassified rdf:type owl:Class ;
                              rdfs:subClassOf :Classified ;
                              rdfs:label "Application System Type Classified"@en ;
-							 vann:example :BbDialysisInformationSystem, :BbDigitalDictationSystem, :WhoDhiElectronicMedicalRecord ;
+                             vann:example :BbDialysisInformationSystem, :BbDigitalDictationSystem, :WhoDhiElectronicMedicalRecord ;
                              rdfs:comment "The term for an application system type, which is used in the classification of application systems."@en;
                              dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>.
 
@@ -603,7 +604,6 @@
 :Certification rdf:type owl:Class ;
                      rdfs:label "Certification"@en ;
 				     dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-					 # vann:example ... ;
 					 rdfs:comment "Certificate of a software product to assess the compliance with quality management standards."@en .
 
 
@@ -622,26 +622,26 @@
 ###  http://hitontology.eu/ontology/Classified
 :Classified rdf:type owl:Class ;
          	rdfs:label "Classified"@en ;
-			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function."@en .
-
+			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."@en .
 
 ###  http://hitontology.eu/ontology/Client
 :Client rdf:type owl:Class ;
                      rdfs:label "Client"@en ;
-					 rdfs:comment "The client type on which a software product is able to be run."@en .
+					 rdfs:comment "The type of hardware and software environment on which a software product is able to be run."@en .
 
 ###  http://hitontology.eu/ontology/Mobile
-:Mobile a :Client; rdfs:label "mobile"@en .
+:Mobile a :Client; rdfs:label "mobile"@en ; rdfs:comment "mobile client"@en .
 
 ###  http://hitontology.eu/ontology/Native
-:Native a :Client; rdfs:label "native"@en .
+:Native a :Client; rdfs:label "native"@en ; rdfs:comment "native client"@en .
 
 ###  http://hitontology.eu/ontology/WebBased
-:WebBased a :Client; rdfs:label "web-based"@en .
+:WebBased a :Client; rdfs:label "web-based"@en ; rdfs:comment "web-based client"@en .
 
 ###  http://hitontology.eu/ontology/DatabaseSystem
 :DatabaseSystem rdf:type owl:Class ;
           rdfs:label "Database System"@en ;
+          rdfs:comment "Database Management System"@en ;
 		  vann:example :MySql, :PostgreSql, :OracleDatabase .
 
 
@@ -718,7 +718,8 @@
 ###  http://hitontology.eu/ontology/Journal
 :Journal rdf:type owl:Class ;
          owl:sameAs dbr:Academic_journal ;
-         rdfs:label "Journal"@en .
+         rdfs:label "Journal"@en ;
+         rdfs:comment "Academic Journal"@en .
 
 
 ###  http://hitontology.eu/ontology/LabStudy
@@ -764,8 +765,6 @@
 :OutcomeCriteriaClassified rdf:type owl:Class ;
                            rdfs:label "Outcome Criteria Classified"@en ;
 						   vann:example :Communication, :EconomicOutcome, :OutcomeCriteriaClassified ;
-						   # TODO: Add DOI of "An inventory of evaluation studies of information technology in health care: trends in evaluation research"
-						   # dcterms:source ...
  						   rdfs:comment "Classified catalogue entry of an outcome criteria."@en .
 
 
@@ -779,7 +778,8 @@
 
 ###  http://hitontology.eu/ontology/ProgrammingLibrary
 :ProgrammingLibrary rdf:type owl:Class ;
-          rdfs:label "Programming Library"@en .
+          rdfs:label "Programming Library"@en ;
+          rdfs:comment "A programming library is a collection of reusable code."@en .
 
 
 ###  http://hitontology.eu/ontology/QuasiExperimentalStudy
@@ -818,13 +818,15 @@
 ###  http://hitontology.eu/ontology/Qualitative
 :Qualitative rdf:type :StudyMethod ;
              :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
-             rdfs:label "Qualitative"@en .
+             rdfs:label "Qualitative"@en ;
+             rdfs:comment "Qualitative Study Method"@en .
 
 
 ###  http://hitontology.eu/ontology/Quantitative
 :Quantitative rdf:type :StudyMethod ;
               :vancouverReference "Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." ;
-              rdfs:label "Quantitative"@en .
+              rdfs:label "Quantitative"@en ;
+             rdfs:comment "Quantitative Study Method"@en .
 
 
 ###  http://hitontology.eu/ontology/UserGroupClassified
@@ -856,19 +858,20 @@
 :ValidationStudy rdf:type owl:Class ;
                  rdfs:subClassOf :Study ;
                  rdfs:label "Validation Study"@en ;
-				 rdfs:comment "compares the accuracy of a measure with a gold standard measure"@en .
+				 rdfs:comment "Compares the accuracy of a measure with a gold standard measure."@en .
 
-################### Competency
+################### Competence
 
 :ImPosition a owl:Class;
 	rdfs:label "information management position"@en;
 	rdfs:comment "description of required competencies for a position in a job offer"@en.
 
 :Competence a owl:Class;
-	rdfs:label "competence about"@en.
+	rdfs:label "competence"@en;
+	rdfs:comment "competence of a person"@en.
 
 :ConcreteCompetence a owl:Class;
-	rdfs:subClassOf :Competency;
+	rdfs:subClassOf :Competence;
 	rdfs:label "concrete competence in"@en;
 	owl:equivalentClass
 	[
