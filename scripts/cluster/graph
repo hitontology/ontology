@@ -1,0 +1,28 @@
+strict graph  {
+"Commercial CIS1" [fillcolor=lavender, style=filled];
+"Commercial CIS2" [fillcolor=lavender, style=filled];
+BikaLIMS [fillcolor=gold, style=filled];
+SENAITE [fillcolor=gold, style=filled];
+"Commercial RIS 1" [fillcolor=blue, style=filled];
+"Commercial RIS 2" [fillcolor=blue, style=filled];
+"Cerner Soarian CPOE platform" [fillcolor=khaki, style=filled];
+Metavision [fillcolor=lavender, style=filled];
+Medicator [fillcolor=white, style=filled];
+Theriak [fillcolor=white, style=filled];
+"HNA Millenium" [fillcolor=lightgreen, style=filled];
+PIK [fillcolor=lemonchiffon, style=filled];
+CommercialPACS1 [fillcolor=whitesmoke, style=filled];
+"Commercial PACS 2" [fillcolor=whitesmoke, style=filled];
+"Commercial CIS1" -- "Commercial CIS2"  [weight="0.3953488372093023"];
+BikaLIMS -- SENAITE  [weight="0.3333333333333333"];
+"Commercial RIS 1" -- "Commercial RIS 2"  [weight="0.06896551724137931"];
+"Cerner Soarian CPOE platform" -- Metavision  [weight="0.42857142857142855"];
+"Cerner Soarian CPOE platform" -- Medicator  [weight="0.46153846153846156"];
+"Cerner Soarian CPOE platform" -- Theriak  [weight="0.21739130434782608"];
+Metavision -- PIK  [weight="0.4782608695652174"];
+Metavision -- Medicator  [weight="0.4074074074074074"];
+Metavision -- Theriak  [weight="0.5"];
+Medicator -- Theriak  [weight="0.2413793103448276"];
+"HNA Millenium" -- PIK  [weight="0.4482758620689655"];
+CommercialPACS1 -- "Commercial PACS 2"  [weight="0.48936170212765956"];
+}
