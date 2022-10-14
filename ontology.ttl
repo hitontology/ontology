@@ -43,7 +43,7 @@
      vann:preferredNamespaceURI <http://hitontology.eu/ontology/>;
      vann:preferredNamespacePrefix "hito";
      bibo:status <http://purl.org/ontology/bibo/status/draft>;
-     owl:versionInfo "0.2";
+     owl:versionInfo "22.10";
      #owl:versionIRI <https://github.com/hitontology/ontology/blob/master/hito.ttl>;
      foaf:logo <https://hitontology.eu/public/hito.svg>;
      rdfs:seeAlso <https://hitontology.eu>, <https://hitontology.eu/ontology/>;
