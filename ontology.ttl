@@ -38,7 +38,7 @@
      dcterms:contributor  "<a href=''http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider>Birgit Schneider</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>",
                          "<a href='https://www.imise.uni-leipzig.de/en/Mitarbeiter/Maryam_Ghalandari'>Maryam Ghalandari</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>",
                          "<a href='https://github.com/ThomasPause'>Thomas Pause</a>, formerly <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>";
-     dcterms:created "2021-07-29"^^xsd:gYear;
+     dcterms:created "2022-10-20"^^xsd:gYear;
      dcterms:publisher <https://www.imise.uni-leipzig.de/>;
      vann:preferredNamespaceURI <http://hitontology.eu/ontology/>;
      vann:preferredNamespacePrefix "hito";

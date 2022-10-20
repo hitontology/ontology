@@ -16,7 +16,8 @@ This file can then be uploaded to the HITO SPARQL endpoint:
 Warning: This will not include updated software products from the database.
 
 ## Documentation
-[Download WIDOCO](https://github.com/dgarijo/Widoco/releases) and make it available as `widoco`, then run `./doc` under Linux to generate the ontology documentation.
+[Download WIDOCO](https://github.com/dgarijo/Widoco/releases) and make it available as `widoco`, then run `./scripts/doc` under Linux to generate the ontology documentation and open `/tmp/doc/index-en.html`.
+Automatically built and published to <https://hitontology.github.io/ontology/>.
 Adapt the `doc` script accordingly on other operating systems.
 
 ## List of files
