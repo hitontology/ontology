@@ -21,7 +21,7 @@
 @prefix gist: <https://ontologies.semanticarts.com/gist/> .
 @base <http://hitontology.eu/ontology/> .
 
-<http://hitontology.eu/ontology> rdf:type owl:Ontology ;
+<> rdf:type owl:Ontology ;
      rdfs:label "Health IT Ontology"@en;
      skos:altLabel "HITO"@en;
      rdfs:comment "The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT.";
