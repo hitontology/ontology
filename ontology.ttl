@@ -74,7 +74,7 @@
      ov:defines :Citation;
      ov:defines :Classification;
      ov:defines :Client;
-     ov:defines :CommunicationStandard;
+#    ov:defines :CommunicationStandard;
      ov:defines :DatabaseSystem;
      ov:defines :EnterpriseFunctionCitation;
      ov:defines :EnterpriseFunctionClassified;
