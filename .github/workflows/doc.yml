@@ -10,7 +10,7 @@ jobs:
   doc:
     runs-on: ubuntu-latest
     env:
-      WIDOCO_DOWNLOAD_URL: https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-17-widoco-1.4.17-jar-with-dependencies.jar
+      WIDOCO_DOWNLOAD_URL: https://github.com/dgarijo/Widoco/releases/download/v1.4.19/widoco-1.4.19-jar-with-dependencies_JDK-17.jar
     steps:
       - uses: actions/checkout@v3
 
@@ -34,7 +34,7 @@ jobs:
           wget $WIDOCO_DOWNLOAD_URL --progress=dot:giga --output-document=jar/widoco.jar
 
       - name: Run Widoco
-        run: java -jar jar/widoco.jar -ontFile ontology.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder doc
+        run: java -jar jar/widoco.jar -ontFile ontology.ttl -rewriteAll -uniteSections -getOntologyMetadata -outFolder .
 
       - name: Rename index-en.html to index.html
         run: mv doc/index-en.html doc/index.html
