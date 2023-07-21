@@ -354,7 +354,7 @@
                     rdfs:range :ProgrammingLibrary ;
                     rdfs:label "programming library or toolkit"@en ;
 					#vann:example # no instances yet
-					rdfs:comment "Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner."@en .
+					rdfs:comment "Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner."@en, "Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code."@de .
 
 
 ###  http://hitontology.eu/ontology/publishedInJournal
@@ -575,7 +575,7 @@
                             rdfs:subClassOf :Catalogue ;
                             rdfs:label "Application System Type Catalogue"@en ;
                             vann:example :BbApplicationSystemTypeCatalogue, :WhoDhiSystemCategoryApplicationSystemTypeCatalogue ;
-                            rdfs:comment "A collection of classified application systems."@en .
+                            rdfs:comment "A collection of classified application systems."@en, "Eine Sammlung von klassifizierten Anwendungssystemen"@de .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemTypeClassified
@@ -583,8 +583,8 @@
                              rdfs:subClassOf :Classified ;
                              rdfs:label "Application System Type Classified"@en ;
                              vann:example :BbDialysisInformationSystem, :BbDigitalDictationSystem, :WhoDhiElectronicMedicalRecord ;
-                             rdfs:comment "The term for an application system type, which is used in the classification of application systems."@en;
-                             dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>.
+                             rdfs:comment "The term for an application system type, which is used in the classification of application systems."@en, "Der Begriff für einen Anwendungssystemtyp, der in der Klassifizierung von Anwendungssystemen verwendet wird."@de ;
+                             dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> .
 
 
 ###  http://hitontology.eu/ontology/ApplicationSystemTypeCitation
@@ -592,7 +592,7 @@
                            rdfs:subClassOf :Citation;
                            rdfs:label "Application System Type Citation"@en ;
 						   vann:example :BahmniAppHospitalSystem, :EChasquiLaboratoryInformationSystem ;
-                           rdfs:comment "The natural language term an author uses for the application system type, which is evaluated in the study."@en .
+                           rdfs:comment "The natural language term an author uses for an application system type."@en, "Der Begriff, den ein Autor für einen Anwendungssystemtyp verwendet."@de .
 
 
 ###  http://hitontology.eu/ontology/Catalogue
@@ -600,7 +600,7 @@
            rdfs:subClassOf gist:Collection ;
            rdfs:label "Catalogue"@en ;
 		   vann:example :BbFeatureCatalogue, :BbFunctionCatalogue, :BbApplicationSystemTypeCatalogue, :SnomedUserGroupCatalogue ;
-           rdfs:comment "A collection of classifieds of the same type from the same source."@en .
+           rdfs:comment "A collection of classifieds of the same type from the same source."@en, "Eine Sammlung von klassifizierten Begriffen der gleichen Art aus der gleichen Quelle"@de .
 
 
 ###  http://hitontology.eu/ontology/Certification
@@ -608,14 +608,14 @@
                      rdfs:subClassOf gist:Category ;
                      rdfs:label "Certification"@en ;
 				     dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-					 rdfs:comment "Certificate of a software product to assess the compliance with quality management standards."@en .
+					 rdfs:comment "Certificate of a software product to assess the compliance with quality management standards."@en, "Zertifikat eines Softwareproduktes zur Bewertung der Einhaltung der Normen des Qualitätsmanagements"@de .
 
 
 ###  http://hitontology.eu/ontology/Citation
 :Citation rdf:type owl:Class ;
             rdfs:subClassOf gist:Tag ;
          	rdfs:label "Citation"@en ;
-			rdfs:comment "Natural language description of a software product from that products documentation, such as a web page."@en .
+			rdfs:comment "Natural language description of a software product from that products documentation, such as a web page."@en, "Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite."@de .
 
 ###  http://hitontology.eu/ontology/Classification
 :Classification rdf:type owl:Class ;
@@ -629,13 +629,13 @@
 :Classified rdf:type owl:Class ;
             rdfs:subClassOf gist:Category ;
          	rdfs:label "Classified"@en ;
-			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."@en .
+			rdfs:comment "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."@en, "Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion."@de .
 
 ###  http://hitontology.eu/ontology/Client
 :Client rdf:type owl:Class ;
                      rdfs:subClassOf gist:System ;
                      rdfs:label "Client"@en ;
-					 rdfs:comment "The type of hardware and software environment on which a software product is able to be run."@en .
+					 rdfs:comment "The type of hardware and software environment on which a software product is able to be run."@en, "Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann."@de .
 
 ###  http://hitontology.eu/ontology/Mobile
 :Mobile a :Client; rdfs:label "mobile"@en ; rdfs:comment "mobile client"@en .
@@ -649,7 +649,7 @@
 ###  http://hitontology.eu/ontology/DatabaseSystem
 :DatabaseSystem rdf:type owl:Class ;
           rdfs:label "Database System"@en ;
-          rdfs:comment "Database Management System"@en ;
+          rdfs:comment "Database Management System"@en, "Database Management System, wie z.B. MySQL oder PostgreSQL."@de ;
 		  vann:example :MySql, :PostgreSql, :OracleDatabase .
 
 
@@ -658,7 +658,7 @@
                       rdfs:subClassOf :Classified ;
                       rdfs:label "Enterprise Function Classified"@en ;
 				   	  vann:example :BbAdministrativeAdmission, :WhoDhiCertifyBirthEvent ;
-					  rdfs:comment "The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification"@en .
+					  rdfs:comment "The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification"@en, "Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört."@de .
 
 # todo: add dcterms:source paper Winter A, Haux R, Ammenwerth E, Brigl B, Hellrung N, Jahn F. Health Information Systems: Architecture and Strategies. 2nd Edition. London: Springer London; 2011.
 ###  http://hitontology.eu/ontology/EnterpriseFunctionCitation
@@ -667,14 +667,14 @@
                       rdfs:label "Enterprise Function Citation"@en ;
                       vann:example :BahmniFuncBilling, :BikaLimsFuncQualityControl, :ElexisFuncAbrechnungssystem ;
                       dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8> ;
-					  rdfs:comment "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."@en .
+					  rdfs:comment "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."@en, "Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird."@de .
 
 
 ###  http://hitontology.eu/ontology/ExperimentalStudyRCT
 :ExperimentalStudyRCT rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Experimental Study RCT"@en ;
-					  rdfs:comment "experimental study with randomized control trial"@en .
+					  rdfs:comment "experimental study with randomized control trial"@en, "Experimentelle Studie mit randomisiertem Kontrollversuch."@de .
 
 
 ###  http://hitontology.eu/ontology/FeatureCatalogue
@@ -682,7 +682,7 @@
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Feature Catalogue"@en ;
 				   vann:example :WhoDhiHealthSystemManagerFeatureCatalogue, :EhrSfmFeatureCatalogue, :BbFeatureCatalogue ;
-				   rdfs:comment "A collection of classified software features."@en .
+				   rdfs:comment "A collection of classified software features."@en, "Eine Sammlung von klassifizierten Softwarefeatures."@de .
 
 
 ###  http://hitontology.eu/ontology/FeatureClassified
@@ -690,14 +690,14 @@
                    rdfs:subClassOf :Classified ;
                    rdfs:label "Feature Classified"@en ;
 				   vann:example :BbAdmitPatientsToTheWard, :WhoDhiRegisterBirthEvent, :EhrSfmManageClinicalDocumentation ;
-				   rdfs:comment "The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification"@en .
+				   rdfs:comment "The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification"@en, "Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört."@de .
 
 
 ###  http://hitontology.eu/ontology/FeatureCitation
 :FeatureCitation rdf:type owl:Class ;
-                 rdfs:subClassOf :Citation;
+                 rdfs:subClassOf :Citation ;
                  rdfs:label "Feature Citation"@en ;
-				 rdfs:comment "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en ;
+				 rdfs:comment "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en, "Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt."@de ;
 				 dcterms:source <https://www.snik.eu/ontology/bb/Feature> .
 
 
@@ -707,7 +707,7 @@
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Function Catalogue"@en ;
 				   vann:example :WhoDhiHealthSystemManagerFunctionCatalogue, :BbFunctionCatalogue ;
-				   rdfs:comment "A collection of classified enterprise functions."@en .
+				   rdfs:comment "A collection of classified enterprise functions."@en, "Eine Sammlung von klassifizierten Unternehmensfunktionen."@de .
 
 ### http://hitontology.eu/ontology/OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
@@ -721,7 +721,7 @@
           rdfs:label "Interoperability Standard"@en ;
 		  vann:example :HL7, <http://hitontology.eu/ontology/HL7_V2.x>, <http://hitontology.eu/ontology/HL7_V3.0>, :ICD10, :HL7_FHIR, :HL7_FHIR, :OpenEHR ;
 		  dcterms:source <https://www.doi.org/10.1007/978-1-84996-441-8>, <https://www.himss.org/resources/interoperability-healthcare> ;
-		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE."@en .
+		  rdfs:comment "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE."@en, "Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter."@de .
 
 
 ###  http://hitontology.eu/ontology/Journal
@@ -729,21 +729,21 @@
          rdfs:subClassOf gist:Artifact ;
          owl:sameAs dbr:Academic_journal ;
          rdfs:label "Journal"@en ;
-         rdfs:comment "Academic Journal"@en .
+         rdfs:comment "Academic Journal"@en, "Wissenschaftliche Zeitschrift."@de .
 
 
 ###  http://hitontology.eu/ontology/LabStudy
 :LabStudy rdf:type owl:Class ;
           rdfs:subClassOf :Study ;
           rdfs:label "Lab Study"@en ;
-		  rdfs:comment "Laboratory Study"@en .
+		  rdfs:comment "Laboratory Study"@en, "Laborstudie."@de .
 
 
 ###  http://hitontology.eu/ontology/NonExperimentalStudy
 :NonExperimentalStudy rdf:type owl:Class ;
                       rdfs:subClassOf :Study ;
                       rdfs:label "Non Experimental Study"@en ;
-					  rdfs:comment "study without an independent variable"@en .
+					  rdfs:comment "study without an independent variable"@en, "Nicht-experimentelle Studie."@de .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCatalogue
@@ -751,7 +751,7 @@
                    rdfs:subClassOf :Catalogue ;
                    rdfs:label "Organizational Unit Catalogue"@en ;
 				   vann:example :SnomedEnvironmentOrganizationalUnitCatalogue ;
-				   rdfs:comment "A collection of classified organizational units."@en .
+				   rdfs:comment "A collection of classified organizational units."@en, "Eine Sammlung von klassifizierten Organisationseinheiten."@de .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitClassified
@@ -760,7 +760,7 @@
                               rdfs:label "Organizational Unit Classified"@en ;
 							  vann:example :SnomedRadiologyDepartmentEnvironment, :SnomedCardiologyDepartmentEnvironment, :SnomedMedicalCenterEnvironment ;
 							  rdfs:seeAlso <https://browser.ihtsdotools.org/> ;
-							  rdfs:comment "Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International."@en .
+							  rdfs:comment "Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International."@en, "Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International."@de .
 
 
 ###  http://hitontology.eu/ontology/OrganizationalUnitCitation
@@ -768,14 +768,14 @@
                             rdfs:subClassOf :Citation;
                             rdfs:label "Organizational Unit Citation"@en ;
 							vann:example :spUsedInOuCit, :GnuHealthOrgHospitalEnvironment, :ElexisOrgArztpraxis, :MedkeyOrgDentalClinic ;
-							rdfs:comment "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en .
+							rdfs:comment "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en, "Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet."@de .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaClassified
 :OutcomeCriteriaClassified rdf:type owl:Class ;
                            rdfs:label "Outcome Criteria Classified"@en ;
 						   vann:example :Communication, :EconomicOutcome, :OutcomeCriteriaClassified ;
- 						   rdfs:comment "Classified catalogue entry of an outcome criteria."@en .
+ 						   rdfs:comment "Classified catalogue entry of an outcome criteria."@en, "Klassifizierter Katalogeintrag eines Ergebniskriteriums."@de .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaCitation
@@ -783,7 +783,7 @@
 #                        rdfs:subClassOf :Citation;
                          rdfs:label "Outcome Criteria Citation"@en ;
 						 vann:example :softwareStability, :strengthsAndWeaknessesOfIntervention, :timeForProducingImages ;
-						 rdfs:comment "The term an author uses for the outcome criteria of the evaluation study."@en .
+						 rdfs:comment "The term an author uses for the outcome criteria of the evaluation study."@en, "Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet."@de .
 
 
 ###  http://hitontology.eu/ontology/ProgrammingLibrary
@@ -796,7 +796,7 @@
 :QuasiExperimentalStudy rdf:type owl:Class ;
                         rdfs:subClassOf :Study ;
                         rdfs:label "Quasi Experimental Study"@en ;
-						rdfs:comment "empirical interventional study without randomization"@en ;
+						rdfs:comment "empirical interventional study without randomization"@en, "Empirische Interventionsstudie ohne Randomisierung."@de ;
 						vann:example :NamedStudy3, :NamedStudy4, :NamedStudy22 .
 
 
@@ -805,7 +805,7 @@
                  skos:closeMatch doap:Project ;
 				 vann:example :GnuHealth, :Bahmni, :Orthanc ;
                  rdfs:label "Software Product"@en ;
-				 rdfs:comment "A software product is an acquired or self-developed piece of software that can be installed on a computer system."@en ;
+				 rdfs:comment "A software product is an acquired or self-developed piece of software that can be installed on a computer system."@en, "Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann."@de ;
 				 dcterms:source <https://www.snik.eu/ontology/bb/SoftwareProduct> .
 
 
@@ -814,7 +814,7 @@
        rdfs:subClassOf gist:IntellectualProperty ;
        rdfs:label "Study"@en ;
        vann:example :NamedStudy1, :NamedStudy2, :NamedStudy3 ;
-       rdfs:comment "An evaluation study"@en .
+       rdfs:comment "An evaluation study"@en, "Eine Evaluationsstudie."@de .
 
 
 ###  http://hitontology.eu/ontology/StudyMethod
@@ -846,7 +846,7 @@
                      rdfs:label "User Group Classified"@en ;
                      vann:example :SnomedProfessionalNurseOccupation, :SnomedResearcherOccupation, :SnomedRadiologistOccupation ;
 					 rdfs:seeAlso <https://browser.ihtsdotools.org/> ;
-					 rdfs:comment "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en .
+					 rdfs:comment "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en, "Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [zitiert 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/?"@de .
 
 
 ###  http://hitontology.eu/ontology/UserGroupCatalogue
@@ -862,14 +862,14 @@
                    rdfs:subClassOf :Citation;
                    rdfs:label "User Group Citation"@en ;
 				   vann:example :OpenDentalUserDentist, :OpenMrsUserAdministrativeStaff, :OrthancUserNetworkEngineer ;
-				   rdfs:comment "The natural language term an author uses for the user group of an application system."@en .
+				   rdfs:comment "The natural language term an author uses for the user group of an application system."@en, "Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet."@de .
 
 
 ###  http://hitontology.eu/ontology/ValidationStudy
 :ValidationStudy rdf:type owl:Class ;
                  rdfs:subClassOf :Study ;
                  rdfs:label "Validation Study"@en ;
-				 rdfs:comment "Compares the accuracy of a measure with a gold standard measure."@en .
+				 rdfs:comment "Compares the accuracy of a measure with a gold standard measure."@en, "Vergleicht die Genauigkeit einer Messung mit einer Standardmessung."@de .
 
 ################### Competence
 
@@ -953,6 +953,6 @@
 
 ################### Labels for external resources
 yago:OperatingSystem106568134 rdfs:label "Operating System"@en .
-yago:License106549661 rdfs:label "License"@en .
-dbo:ProgrammingLanguage rdfs:label "Programming Language"@en .
-dbo:Language rdfs:label "Language"@en .
+yago:License106549661 rdfs:label "License"@en, "Lizenz"@de .
+dbo:ProgrammingLanguage rdfs:label "Programming Language"@en, "Programmiersprache."@de .
+dbo:Language rdfs:label "Language"@en, "Sprache."@de .
