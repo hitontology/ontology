@@ -1,0 +1,55 @@
+{
+  "title": "HITO",
+  "upload_type": "dataset",
+  "description": "The Health IT Ontology",
+  "creators": [
+    {
+      "name": "Alfred Winter",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": "0000-0003-0179-954X"
+    },
+    {
+      "name": "Birgit Schneider",
+      "affiliation": "Heidelberg University, Department of Computer Science, Chair of Software Engineering"
+    },
+    {
+      "name": "Elske Ammenwerth",
+      "affiliation": "Institute of Medical Informatics, University for Health Sciences, Medical Informatics and Technology, Hall in Tirol, Austria",
+      "orcid": "0000-0002-3244-6918"
+    },
+    {
+      "name": "Franziska Jahn",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": "0000-0002-7687-8544"
+    },
+    {
+      "name": "Konrad Höffner",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": "0000-0001-7358-3217"
+    },
+    {
+      "name": "Maryam Ghalandari",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": ""
+    },
+    {
+      "name": "Michelle Bindel",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": "0000-0002-9383-9678"
+    },
+    {
+      "name": "Thomas Pause",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany"
+    },
+    {
+      "name": "Verena Dornauer",
+      "affiliation": "Institute of Medical Informatics, University for Health Sciences, Medical Informatics and Technology, Hall in Tirol, Austria",
+      "orcid": ""
+    }
+  ],
+  "contributors": [
+    {"name": "Thomas Karopka", "type": "Other", "orcid": "0000-0002-4448-6853", "affiliation": "BioCon Valley® GmbH: Greifswald, Germany"}
+  ],
+  "keywords": ["ontology", "semantic web", "health information systems", "linked open data"],
+  "license": "CC-BY-NC-SA-4.0"
+}
