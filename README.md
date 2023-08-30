@@ -3,6 +3,7 @@
 [![build](https://github.com/hitontology/ontology/actions/workflows/build.yml/badge.svg)](https://github.com/hitontology/ontology/actions/workflows/build.yml)
 [![SHACL status](https://github.com/hitontology/ontology/actions/workflows/shacl.yml/badge.svg)](https://github.com/hitontology/ontology/actions/workflows/shacl.yml)
 [![License: CC0](https://img.shields.io/badge/license-CC0-blue)](LICENSE)
+[![DOI](https://zenodo.org/badge/207314773.svg)](https://zenodo.org/badge/latestdoi/207314773)
 
 The source of truth for HITO, excluding software products and related attributes, whose source is the database initially filled by <https://github.com/hitontology/database>, and catalogues, which are created in spreadsheets and transformed using <https://github.com/hitontology/csv2rdf>.
 
