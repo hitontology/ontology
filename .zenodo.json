@@ -50,5 +50,5 @@
     {"name": "Thomas Karopka", "type": "Other", "orcid": "0000-0002-4448-6853", "affiliation": "BioCon Valley® GmbH: Greifswald, Germany"}
   ],
   "keywords": ["ontology", "semantic web", "health information systems", "linked open data"],
-  "license": "CC-BY-NC-SA-4.0"
+  "license": "cc-zero"
 }
