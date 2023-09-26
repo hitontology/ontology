@@ -16,7 +16,7 @@ jobs:
           ref: 'dist'
 
       - name: Build and Validate
-        uses: konradhoeffner/shacl@master
+        uses: konradhoeffner/shacl@v1
         with:
           data: all.ttl
           shacl: shacl.ttl
