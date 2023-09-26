@@ -12,7 +12,7 @@ jobs:
     env:
       WIDOCO_DOWNLOAD_URL: https://github.com/dgarijo/Widoco/releases/download/v1.4.19/widoco-1.4.19-jar-with-dependencies_JDK-17.jar
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # use preinstalled Java
       #- uses: actions/setup-java@v3
