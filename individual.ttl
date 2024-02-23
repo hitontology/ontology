@@ -187,7 +187,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy1
-:NamedStudy1 rdf:type :ExperimentalStudyRCT ;
+:NamedStudy1 rdf:type :ExperimentalStudyRCT, :Study ;
               :evaluatesApplicationSystemType :laboratoryInformationSystem ;
               :evaluatesProduct :EChasqui ;
               :evaluatesApplicationSystemTypeHavingFeature :consolidatedListOfResultsForJurisdiction ,
@@ -216,7 +216,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy10
-:NamedStudy10 rdf:type :NonExperimentalStudy ;
+:NamedStudy10 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :enterpriseWideResourcePlanningSystemERP ;
                :evaluatesProduct :SapR3BusinessProcessControlSystemSoftware ;
                :evaluatesApplicationSystemTypeHavingFeature :planningView ,
@@ -243,7 +243,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy11
-:NamedStudy11 rdf:type :NonExperimentalStudy ;
+:NamedStudy11 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :PDMS ;
                :evaluatesApplicationSystemTypeHavingFeature :automatedCalculationOfVentilationTimes ,
                                                         :automatedCodingSemi-automatedCodingOfDiagnosesAndProceduresFromPreviouslyDocumentedClinicalDataAccorddingToGermanDRG ,
@@ -275,7 +275,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy12
-:NamedStudy12 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy12 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :computerizedDecisionSupportSystemCDSS ,
                                            :patientDataManagementSystemPDMS ;
                :evaluatesProduct :Metavision ;
@@ -303,7 +303,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy13
-:NamedStudy13 rdf:type :NonExperimentalStudy ;
+:NamedStudy13 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :patientAdministrationSystemPAS ;
                :evaluatesApplicationSystemTypeHavingFeature :in-patientAdmissionsAndDischarges ,
                                                         :operationTheaterActivities ,
@@ -327,7 +327,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy14
-:NamedStudy14 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy14 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :electronicPatientRecordSystemEPR ,
                                            :patientAdministrationSystemPAS ;
                :evaluatesApplicationSystemTypeHavingFeature :admissionOverview ,
@@ -360,7 +360,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy15
-:NamedStudy15 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy15 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :nursingDocumentationSystem ;
                :evaluatesProduct :Pik ;
                :evaluatesApplicationSystemTypeHavingFeature :adaptionOfNursingCarePlansDuringCarePlanning ,
@@ -390,7 +390,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy16
-:NamedStudy16 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy16 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :nursingInformationSystem ;
                :evaluatesProduct :HnaMillenium ;
                :evaluatesApplicationSystemTypeHavingFeature :allowingToReuseEarlierAnamnesticData ,
@@ -420,7 +420,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy17
-:NamedStudy17 rdf:type :LabStudy ;
+:NamedStudy17 rdf:type :LabStudy, :Study ;
                :evaluatesApplicationSystemType :nursingDocumentationSystem ;
                :evaluatesApplicationSystemTypeHavingFeature :ICNPAsClassificationSystem ,
                                                         :creationAndStorageOfNursingDiagnosesAndNursingOutcomes ,
@@ -440,7 +440,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy18
-:NamedStudy18 rdf:type :NonExperimentalStudy ;
+:NamedStudy18 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :EmergencyDepartmentInformationSystemEDIS ;
                :evaluatesProduct :CernerFirstNet ;
                :evaluatesApplicationSystemTypeHavingFeature :measurementAnalysisResearchAndReports ,
@@ -466,7 +466,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy19
-:NamedStudy19 rdf:type :NonExperimentalStudy ;
+:NamedStudy19 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :EmergencyDepartmentProviderElectronicDocumentationSystem ;
                :evaluatesProduct :EDoc ;
                :evaluatesApplicationSystemTypeHavingFeature :capturingDataForAllPatientVisits ;
@@ -487,7 +487,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy2
-:NamedStudy2 rdf:type :NonExperimentalStudy ;
+:NamedStudy2 rdf:type :NonExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :electronicPrescribingSystem ;
               :evaluatesProduct :CscMedChart ,
                                                         :CernerMilleniumPowerOrders ;
@@ -516,7 +516,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy20
-:NamedStudy20 rdf:type :NonExperimentalStudy ;
+:NamedStudy20 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :electronicMedicalRecordSystem ;
                :evaluatesApplicationSystemTypeHavingFeature :real-timeDataEntering ;
                :evaluatesApplicationSystemTypeHavingUserGroup :clericalStaff ,
@@ -540,7 +540,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy21
-:NamedStudy21 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy21 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :clinicalDocumentationSystem ;
                :evaluatesProduct :EclipsysContinuum2000Cds ;
                :evaluatesApplicationSystemTypeHavingFeature :auditTrail ,
@@ -571,7 +571,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy22
-:NamedStudy22 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy22 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :electronicMedication-administrationSystem ;
                :evaluatesApplicationSystemTypeHavingFeature :electronicPatientWorklist ,
                                                         :medicationOrdersAppearOnThePatientsElectronicRecordOnceThePharmacistHasApprovedThem ,
@@ -596,7 +596,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy23
-:NamedStudy23 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy23 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :pointOfCareTestingDevicePOCT ;
                :evaluatesProduct :AbbottIStat ,
                                                          :SysmexXs1000iHaematologyAnalyser ;
@@ -619,7 +619,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy24
-:NamedStudy24 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy24 rdf:type :QuasiExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :computerizedPrescribingSystem ;
                :evaluatesApplicationSystemTypeHavingFeature #:EhrSfmSupportForMedicationOrderingEfficiencies ,
                                                         :alteringPrescribingHabitsByAlternativeDrugs ,
@@ -649,7 +649,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy26
-:NamedStudy26 rdf:type :NonExperimentalStudy ;
+:NamedStudy26 rdf:type :NonExperimentalStudy, :Study ;
                :evaluatesApplicationSystemType :semi-automaticAortaDilatationQuantificationSoftware ;
                :evaluatesApplicationSystemTypeHavingFeature :automaticAlignmentOfBaselineAndFollow-upCTA ,
                                                         :automaticSegmentationOfBaselineCTA ,
@@ -672,7 +672,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy3
-:NamedStudy3 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy3 rdf:type :QuasiExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :computerizedProviderOrderEntrySystem ;
               :evaluatesProduct :CernerSoarianCpoePlatform ;
               :evaluatesApplicationSystemTypeHavingFeature :medication-specificOrderSet ,
@@ -698,7 +698,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy4
-:NamedStudy4 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy4 rdf:type :QuasiExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :computerizedPhysicianOrderEntrySystemWithBasicClinicalDecisionSupportCPOE-CDSS ;
               :evaluatesProduct :Medicator ,
                                                         :Theriak ;
@@ -734,7 +734,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy5
-:NamedStudy5 rdf:type :ValidationStudy ;
+:NamedStudy5 rdf:type :ValidationStudy, :Study ;
               :evaluatesApplicationSystemType :teleconsultationSystem ;
               :evaluatesProduct :TeleDicom ;
               :evaluatesApplicationSystemTypeHavingFeature :interactiveConsultationBetweenTwoOrMoreCenters ,
@@ -770,7 +770,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy6
-:NamedStudy6 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy6 rdf:type :QuasiExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :RIS-PACSSystem ;
               :evaluatesProduct :AgfaPacsImpax ,
                                                         :AgfaRisElefante ;
@@ -798,7 +798,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy7
-:NamedStudy7 rdf:type :QuasiExperimentalStudy ;
+:NamedStudy7 rdf:type :QuasiExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :pictureArchivalAndCommunicationSystem ;
               :evaluatesProduct :GePatchspecdPacs ;
               :evaluatesApplicationSystemTypeHavingFeature :automaticForwardedProcessedImages ,
@@ -823,7 +823,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy8
-:NamedStudy8 rdf:type :NonExperimentalStudy ;
+:NamedStudy8 rdf:type :NonExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :laboratoryInformationSystem ;
               :evaluatesApplicationSystemTypeHavingFeature :emergencyTesting ;
               :evaluatesApplicationSystemTypeHavingUserGroup :physicians ,
@@ -842,7 +842,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy9
-:NamedStudy9 rdf:type :NonExperimentalStudy ;
+:NamedStudy9 rdf:type :NonExperimentalStudy, :Study ;
               :evaluatesApplicationSystemType :operationManagementSystem ;
               :evaluatesApplicationSystemTypeHavingFeature :followingOfThePerioerpativeProcess ,
                                                        :informationAboutTheOperationActivity ,
@@ -875,7 +875,7 @@
 
 
 ###  http://hitontology.eu/ontology/NamedStudy25
-:NamedStudy25 rdf:type :ExperimentalStudyRCT ;
+:NamedStudy25 rdf:type :ExperimentalStudyRCT, :Study ;
                 :evaluatesApplicationSystemTypeHavingFeature :app ,
                                                          :informationSourroundingPatientAgeAndGestationalAgeToGuideTowardAvailableOptions ,
                                                          :reviewScreeningAndTestingOptions ,
