@@ -4,42 +4,42 @@
 @prefix hito: <> .
 
 hito:MySql
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "MySQL"@en .
 
 hito:SQLite
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "SQLite"@en .
 
 hito:OracleDatabase
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "Oracle Database"@en .
 
 hito:MicrosoftSqlServer
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "Microsoft SQL Server"@en .
 
 hito:PostgreSql
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "PostgreSQL"@en .
 
 hito:MongoDb
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "MongoDB"@en .
 
 hito:MariaDb
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "MariaDB"@en .
 
 hito:IbmDb2
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "IBM DB2"@en .
 
 hito:SapHana
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "SAP HANA"@en .
 
 hito:TinyDb
-    a hito:DatabaseSystem;
+    a hito:DatabaseManagementSystem;
     rdfs:label "TinyDB"@en .
 

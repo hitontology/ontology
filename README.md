@@ -26,7 +26,7 @@ Adapt the `doc` script accordingly on other operating systems.
 file					| source of truth	| description
 --						| --				| --
 ontology.ttl			| here				| The HITO ontology
-database.ttl			| here				| instances of hito:DatabaseSystem
+database.ttl			| here				| instances of hito:DatabaseManagementSystem
 programminglibrary.ttl	| here 				| instances of hito:ProgrammingLibrary
 standard.ttl			| here				| instances of hito:Interoperability
 individual.ttl			| here				| journal descriptions

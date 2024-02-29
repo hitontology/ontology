@@ -75,7 +75,7 @@
      ov:defines :Classification;
      ov:defines :Client;
 #    ov:defines :CommunicationStandard;
-     ov:defines :DatabaseSystem;
+     ov:defines :DatabaseManagementSystem;
      ov:defines :EnterpriseFunctionCitation;
      ov:defines :EnterpriseFunctionClassified;
      ov:defines :EnterpriseFunctionCatalogue;
@@ -479,13 +479,13 @@
                            rdfs:comment "The user group catalogue the classified user group belongs to."@en .
 
 
-###  http://hitontology.eu/ontology/databaseSystem
-:databaseSystem rdf:type owl:ObjectProperty ;
+###  http://hitontology.eu/ontology/databaseManagementSystem
+:databaseManagementSystem rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    rdfs:range :DatabaseSystem ;
-                    rdfs:label "database system"@en ;
+                    rdfs:range :DatabaseManagementSystem ;
+                    rdfs:label "database management system"@en ;
                     skos:altLabel "DBMS"@en ;
-                    rdfs:comment "A database system a software product uses."@en .
+                    rdfs:comment "A database management system a software product uses."@en .
 
 
 #################################################################
@@ -646,9 +646,9 @@
 ###  http://hitontology.eu/ontology/WebBased
 :WebBased a :Client; rdfs:label "web-based"@en ; rdfs:comment "web-based client"@en .
 
-###  http://hitontology.eu/ontology/DatabaseSystem
-:DatabaseSystem rdf:type owl:Class ;
-          rdfs:label "Database System"@en ;
+###  http://hitontology.eu/ontology/DatabaseManagementSystem
+:DatabaseManagementSystem rdf:type owl:Class ;
+          rdfs:label "Database Management System"@en ;
           rdfs:comment "Database Management System"@en, "Database Management System, wie z.B. MySQL oder PostgreSQL."@de ;
 		  vann:example :MySql, :PostgreSql, :OracleDatabase .
 
@@ -887,7 +887,7 @@
 	owl:equivalentClass
 	[
 		a owl:Class;
-		owl:unionOf (:Interoperability dbo:Language dbo:ProgrammingLanguage	:programmingLibrary :SoftwareProduct :EnterpriseFunctionClassified :ApplicationSystemType :DatabaseSystem)
+		owl:unionOf (:Interoperability dbo:Language dbo:ProgrammingLanguage	:programmingLibrary :SoftwareProduct :EnterpriseFunctionClassified :ApplicationSystemType :DatabaseManagementSystem)
 	].
 
 :AbstractCompetence a owl:Class;

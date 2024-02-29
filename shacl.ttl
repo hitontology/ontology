@@ -43,7 +43,7 @@
 	[sh:path :client],
 	[sh:path :language],
 	[sh:path :programmingLanguage],
-	[sh:path :databaseSystem],
+	[sh:path :databaseManagementSystem],
 	[sh:path :license],
 	[sh:path :programmingLibrary],
 	[sh:path :homepage; sh:maxCount 1],
@@ -72,7 +72,7 @@
 		:client,
 		:language,
 		:programmingLanguage,
-		:databaseSystem,
+		:databaseManagementSystem,
 		:license,
 		:programmingLibrary,
 		:homepage,
@@ -116,9 +116,9 @@
 	sh:targetObjectsOf :programmingLanguage;
 	sh:class dbo:ProgrammingLanguage.
 
-:databaseSystemRangeShape a sh:NodeShape;
-	sh:targetObjectsOf :databaseSystem;
-	sh:class :DatabaseSystem.
+:databaseManagementSystemRangeShape a sh:NodeShape;
+	sh:targetObjectsOf :databaseManagementSystem;
+	sh:class :DatabaseManagementSystem.
 
 :licenseRangeShape a sh:NodeShape;
 	sh:targetObjectsOf :license;
@@ -233,8 +233,8 @@
 	sh:closed true;
 	sh:ignoredProperties :ignoredProperties.
 
-:DatabaseSystemShape a sh:NodeShape;
-	sh:targetClass :DatabaseSystem;
+:DatabaseManagementSystemShape a sh:NodeShape;
+	sh:targetClass :DatabaseManagementSystem;
 	sh:property :labelShape;
 	sh:pattern "^http://hitontology.eu/ontology/";
 	sh:closed true;

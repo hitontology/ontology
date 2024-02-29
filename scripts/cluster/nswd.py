@@ -26,7 +26,7 @@ SELECT ?source (STR(SAMPLE(?label)) AS ?label) (GROUP_CONCAT(DISTINCT(?target); 
  {
   ?citation ?q ?target.
  }
- UNION {?source :license|:programmingLanguage|:interoperability|:operatingSystem|:client|:databaseSystem|:language ?target.}
+ UNION {?source :license|:programmingLanguage|:interoperability|:operatingSystem|:client|:databaseManagementSystem|:language ?target.}
 
  ?p rdfs:subPropertyOf hito:citation.
  ?q rdfs:subPropertyOf hito:classified.

@@ -233,7 +233,7 @@
 
 :Bahmni
     :client :WebBased ;
-    :databaseSystem :MySql, :PostgreSql ;
+    :databaseManagementSystem :MySql, :PostgreSql ;
     :homepage <https://www.bahmni.org/> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
@@ -1237,7 +1237,7 @@
 
 :Dcm4Che
     :client :Native, :WebBased ;
-    :databaseSystem :IbmDb2, :MicrosoftSqlServer, :MySql, :OracleDatabase, :PostgreSql ;
+    :databaseManagementSystem :IbmDb2, :MicrosoftSqlServer, :MySql, :OracleDatabase, :PostgreSql ;
     :homepage <https://www.dcm4che.org> ;
     :interoperability :DICOM, <http://hitontology.eu/ontology/HL7_V2.x>, :IHE_XDS, :IHE_XDS_I, :WADO ;
     :language dbr:English_language ;
@@ -1398,7 +1398,7 @@
 
 :Dhis2
     :client :WebBased ;
-    :databaseSystem :PostgreSql ;
+    :databaseManagementSystem :PostgreSql ;
     :homepage <https://www.dhis2.org/> ;
     :interoperability :HL7_FHIR, :IHE, :LOINC, :REST, :SNOMED_CT ;
     :language dbr:English_language, dbr:French_language, dbr:Norwegian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Vietnamese_language ;
@@ -1787,7 +1787,7 @@
 
 :Elexis
     :client :Native ;
-    :databaseSystem :MariaDb, :MySql, :PostgreSql ;
+    :databaseManagementSystem :MariaDb, :MySql, :PostgreSql ;
     :homepage <https://elexis.info> ;
     :interoperability :ICPC2 ;
     :language dbr:English_language, dbr:French_language, dbr:German_language ;
@@ -2093,7 +2093,7 @@
 
 :GnuHealth
     :client :Mobile, :Native, :WebBased ;
-    :databaseSystem :PostgreSql, :TinyDb ;
+    :databaseManagementSystem :PostgreSql, :TinyDb ;
     :homepage <https://www.gnuhealth.org/#/> ;
     :interoperability :HL7, :HL7_FHIR, :ICD10, :ICD9, :ICPM ;
     :language dbr:Chinese_language, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Greek_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language ;
@@ -2880,7 +2880,7 @@
 
 :IPath
     :client :WebBased ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://www.ipathnetwork.org/> ;
     :interoperability :DICOM ;
     :language dbr:English_language ;
@@ -2991,7 +2991,7 @@
 
 :Medkey
     :client :WebBased ;
-    :databaseSystem :MySql, :PostgreSql ;
+    :databaseManagementSystem :MySql, :PostgreSql ;
     :homepage <https://medkey.org/en/> ;
     :interoperability :HL7, :OpenEHR ;
     :language dbr:English_language, dbr:Russian_language ;
@@ -3205,7 +3205,7 @@
 
 :Odoo
     :client :Mobile, :Native, :WebBased ;
-    :databaseSystem :PostgreSql ;
+    :databaseManagementSystem :PostgreSql ;
     :homepage <https://www.odoo.com> ;
     :interoperability :XML ;
     :language dbr:English_language ;
@@ -3427,7 +3427,7 @@
 
 :OpenDental
     :client :Native ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://opendental.com> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000004> ;
@@ -3705,7 +3705,7 @@
 
 :OpenEObs
     :client :Mobile ;
-    :databaseSystem :PostgreSql ;
+    :databaseManagementSystem :PostgreSql ;
     :homepage <https://opusvl.com/solutions/open-eobs> ;
     :language dbr:English_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000070> ;
@@ -3796,7 +3796,7 @@
 
 :OpenElis
     :client :Native ;
-    :databaseSystem :PostgreSql ;
+    :databaseManagementSystem :PostgreSql ;
     :homepage <https://sites.google.com/site/openelisglobal/> ;
     :interoperability :HL7_FHIR, <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language ;
@@ -3983,7 +3983,7 @@
 
 :OpenEmr
     :client :WebBased ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://www.open-emr.org> ;
     :interoperability :CDA, :DICOM, :HL7, :HL7_FHIR, :REST, :SMART ;
     :language dbr:English_language ;
@@ -4275,7 +4275,7 @@
 
 :OpenHospital
     :client :Native ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://sourceforge.net/projects/openhospital/> ;
     :language dbr:Arabic, dbr:English_language, dbr:French_language, dbr:German_language, dbr:Italian_language, dbr:Portuguese_language, dbr:Spanish_language, dbr:Swahili_language ;
     :license <http://www.ebi.ac.uk/swo/license/SWO_1000047> ;
@@ -4584,7 +4584,7 @@
     rdfs:label "Health Financing Process Management"@en .
 
 :OpenMaxims
-    :databaseSystem :MicrosoftSqlServer ;
+    :databaseManagementSystem :MicrosoftSqlServer ;
     :homepage <http://www.imsmaxims.com/solutions/opensource/> ;
     :interoperability :HL7 ;
     :language dbr:English_language ;
@@ -4608,7 +4608,7 @@
 
 :OpenMrs
     :client :Native, :WebBased ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://openmrs.org> ;
     :interoperability :CDA, :HL7, :HL7_CCD, :HL7_FHIR ;
     :language dbr:English_language ;
@@ -4762,7 +4762,7 @@
 
 :Orthanc
     :client :WebBased ;
-    :databaseSystem :MySql, :PostgreSql ;
+    :databaseManagementSystem :MySql, :PostgreSql ;
     :homepage <https://www.orthanc-server.com/> ;
     :interoperability :DICOM, :REST ;
     :language dbr:English_language ;
@@ -4937,7 +4937,7 @@
 
 :OscarEmr
     :client :WebBased ;
-    :databaseSystem :MySql ;
+    :databaseManagementSystem :MySql ;
     :homepage <https://oscar-emr.com/oscar/> ;
     :interoperability <http://hitontology.eu/ontology/HL7_V2.x> ;
     :language dbr:English_language, dbr:French_language, dbr:Spanish_language ;
