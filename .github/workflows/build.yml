@@ -1,25 +1,24 @@
 name: build
- 
+
 on:
   workflow_dispatch:
   push:
     branches:
       - master
- 
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: |
-          sudo apt-get install -y raptor2-utils
+        run: sudo apt-get install -y raptor2-utils
 
       - name: Build
-        run: ./build
-     
+        run: scripts/combine | tee $GITHUB_STEP_SUMMARY
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

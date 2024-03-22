@@ -6,6 +6,7 @@ scripts/cluster/*.svg
 scripts/cluster/tree
 *.pdf
 dist/hito.ttl
+dist/hito.nt
 dist/shacl.ttl
 dist/all.ttl
 .env

@@ -1,7 +1,0 @@
-#/bin/sh
-# Combine all of HITO into one file.
-FT="./dist/hito.ttl"
-#cat dbpedia/os.nt >> $F
-cat *.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > $FT
-cat $FT dist/dbpedia.ttl dist/swo.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > ./dist/all.ttl
-cp shacl.ttl dist/shacl.ttl

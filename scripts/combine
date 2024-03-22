@@ -1,0 +1,31 @@
+#/bin/sh
+# Combine all of HITO into one file.
+
+MYPATH=`dirname "$0"`
+MYPATH=`( cd "$MYPATH" && pwd )`
+DISTPATH=$MYPATH/../dist
+mkdir -p $DISTPATH
+
+#cat dbpedia/os.nt >> $F
+cd $MYPATH/..
+cat *.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > $DISTPATH/hito.ttl
+cp shacl.ttl dist/shacl.ttl
+
+cd $DISTPATH
+cat hito.ttl dbpedia.ttl swo.ttl | rapper -i turtle -o turtle - http://hitontology.eu/ontology/ > all.ttl
+rapper -i turtle -o ntriples hito.ttl > hito.nt
+
+echo "hito.ttl and hito.nt contain the HITO ontology, instances and SHACL shapes."
+printf "all.ttl additionally contains externally referenced resources from DBpedia and the Software Ontology (SWO).\n\n"
+echo "|  Filename   |  triples    | bytes        |   KiB     |   MiB   |    KB     |    MB  |"
+echo "|  ---------  |  -------    | -----        |   ---     |   ---   |    --     |    --  |"
+# "command ls" in case it is aliased to eza or something else, we need the exact ls output format
+command ls -l *.nt *.ttl | tr -s ' ' | cut -f5,9 -d ' ' | while read -r size filename; do 
+  triples=$(rapper -i turtle -c "$filename" 2>&1 | grep -o "[0-9]*")
+  kib=$((size / 1000))
+  mib=$((size / 1000000))
+  kb=$((size / 1024))
+  mb=$((size / 1024 / 1024))
+  #echo "$size $filename"
+  printf "| %11s | %11s | %12s | %9s | %7s | %9s |%7s |\n" $filename $triples $size $kib $mib $kb $mb
+done
