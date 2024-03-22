@@ -17,15 +17,24 @@ rapper -i turtle -o ntriples hito.ttl > hito.nt
 
 echo "hito.ttl and hito.nt contain the HITO ontology, instances and SHACL shapes."
 printf "all.ttl additionally contains externally referenced resources from DBpedia and the Software Ontology (SWO).\n\n"
+
+if type awk > /dev/null 2>&1; then
+	echo "|  Filename  |  bytes    |   KiB    |   MiB    |    KB    |    MB    |"
+	echo "|  --------  |  -----    |   ---    |   ---    |    --    |    --    |"
+	# "command ls" in case it is aliased to eza or something else, we need the exact ls output format
+	LC_ALL=C command ls -l *.nt *.ttl | awk '{printf("|%11s |%10s |%9s |%9s |%9s |%9s |\n", $9, $5, $5/1024, $5/1024^2, $5/1000, $5/1000^2)}'
+fi
+
+printf "\n## Rounded\n\n"
 echo "|  Filename   |  triples    | bytes        |   KiB     |   MiB   |    KB     |    MB  |"
 echo "|  ---------  |  -------    | -----        |   ---     |   ---   |    --     |    --  |"
 # "command ls" in case it is aliased to eza or something else, we need the exact ls output format
 command ls -l *.nt *.ttl | tr -s ' ' | cut -f5,9 -d ' ' | while read -r size filename; do 
   triples=$(rapper -i turtle -c "$filename" 2>&1 | grep -o "[0-9]*")
-  kib=$((size / 1000))
-  mib=$((size / 1000000))
-  kb=$((size / 1024))
-  mb=$((size / 1024 / 1024))
+  kb=$((size / 1000))
+  mb=$((size / 1000000))
+  kib=$((size / 1024))
+  mib=$((size / 1024 / 1024))
   #echo "$size $filename"
   printf "| %11s | %11s | %12s | %9s | %7s | %9s |%7s |\n" $filename $triples $size $kib $mib $kb $mb
 done
