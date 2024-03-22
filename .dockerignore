@@ -2,6 +2,7 @@
 .gitignore
 .github
 scripts
+!scripts/combine
 limes
 dist/all.ttl
 dist/hito.ttl

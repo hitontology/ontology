@@ -3,7 +3,7 @@ FROM alpine as builder
 RUN apk add raptor2
 WORKDIR /ontology   
 COPY . .
-RUN ./build && rm dist/all.ttl
+RUN ./scripts/combine && rm dist/all.ttl
 
 # "from scratch" causes "no command specified"
 FROM busybox
