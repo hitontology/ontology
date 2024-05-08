@@ -57,6 +57,7 @@
      ov:defines :OrganizationalUnitCatalogue;
      ov:defines :OrganizationalUnitClassified;
      ov:defines :OrganizationalUnitCitation;
+     ov:defines :OutcomeCriteriaCatalogue;
      ov:defines :OutcomeCriteriaClassified;
      ov:defines :OutcomeCriteriaCitation;
      ov:defines :QuasiExperimentalStudy;
@@ -769,6 +770,13 @@
                             rdfs:label "Organizational Unit Citation"@en ;
 							vann:example :spUsedInOuCit, :GnuHealthOrgHospitalEnvironment, :ElexisOrgArztpraxis, :MedkeyOrgDentalClinic ;
 							rdfs:comment "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en, "Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet."@de .
+
+
+###  http://hitontology.eu/ontology/OutcomeCriteriaCatalogue
+:OutcomeCriteriaCatalogue rdf:type owl:Class ;
+                           rdfs:label "Outcome Criteria Catalogue"@en ;
+						   vann:example :AmmenwerthOutcomeCriteriaCatalogue ;
+						   rdfs:comment "A collection of classified outcome criteria."@en, "Eine Sammlung von klassifizierten Ergebniskriterien."@de .
 
 
 ###  http://hitontology.eu/ontology/OutcomeCriteriaClassified
