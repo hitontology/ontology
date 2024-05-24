@@ -253,7 +253,8 @@
 ###  http://hitontology.eu/ontology/firstAuthor
 :firstAuthor rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Study ;
-                rdfs:range xsd:String ;
+                #rdfs:range xsd:String ;
+                rdfs:range :FirstAuthor;
                 rdfs:label "first author"@en ;
 				#skos:example "AllainTJ", "AmmenwerthE";
 				rdfs:comment "The surname and the initials of the first author of the modelled evaluation study."@en .
@@ -269,7 +270,8 @@
 ###  http://hitontology.eu/ontology/pmid
 :pmid rdf:type owl:ObjectProperty ;
          rdfs:domain :Study ;
-         rdfs:range rdfs:Resource ;
+         #rdfs:range rdfs:Resource ;
+         rdfs:range :Pmid ;
          rdfs:label "has PMID"@en .
 
 
@@ -283,10 +285,11 @@
 ###  http://hitontology.eu/ontology/homepage
 :homepage rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-					skos:closeMatch doap:homepage ;
-                    rdfs:range rdfs:Resource;
+                    skos:closeMatch doap:homepage ;
+                    #rdfs:range rdfs:Resource ;
+                    rdfs:range :Homepage ;
                     rdfs:label "homepage"@en ;
-					rdfs:comment "The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository."@en .
+                    rdfs:comment "The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository."@en .
 
 
 
@@ -333,8 +336,9 @@
 ###  http://hitontology.eu/ontology/repository
 :repository rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareProduct ;
-                    skos:closeMatch doap:repository;
-                    rdfs:range rdfs:Resource;
+                    skos:closeMatch doap:repository ;
+                    #rdfs:range rdfs:Resource ;
+                    rdfs:range :Repository ;
                     rdfs:label "repository"@en ;
 					rdfs:comment "A storage location for software-code, along with relevant metadata."@en .
 
@@ -525,7 +529,8 @@
 :publishedInYear rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Study ;
-                 rdfs:range xsd:gYear ;
+                 #rdfs:range xsd:gYear ;
+                 rdfs:range :PublishedInYear;
                  rdfs:label "published in year"@en .
 
 
@@ -958,6 +963,12 @@
 	skos:altLabel "plans use of"@en, "develops"@en, "provides trainings for"@en;
 	rdfs:label "creates"@en.
 
+################### Datatypes
+:Homepage rdfs:subClassOf rdfs:Resource; rdfs:label "homepage"@en .
+:Repository rdfs:subClassOf rdfs:Resource; rdfs:label "repository"@en .
+:FirstAuthor a rdfs:Datatype; rdfs:subClassOf xsd:String; rdfs:label "first author"@en .
+:Pmid rdfs:subClassOf rdfs:Resource; rdfs:label "PubMed ID"@en .
+:PublishedInYear a rdfs:Datatype; rdfs:subClassOf xsd:gYear; rdfs:label "published in year"@en .
 
 ################### Labels for external resources
 yago:OperatingSystem106568134 rdfs:label "Operating System"@en .
