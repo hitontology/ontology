@@ -1,0 +1,1227 @@
+<http://hitontology.eu/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/ApplicationSystemTypeCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/ApplicationSystemTypeClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Classification> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Client> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/DatabaseManagementSystem> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/EnterpriseFunctionCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/ExperimentalStudyRCT> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/FeatureCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Interoperability> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Journal> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/LabStudy> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/NonExperimentalStudy> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OrganizationalUnitCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OrganizationalUnitCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OrganizationalUnitClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OutcomeCriteriaCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/OutcomeCriteriaClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/QuasiExperimentalStudy> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/StudyMethod> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/Terminology> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/UserGroupCatalogue> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/UserGroupCitation> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/UserGroupClassified> .
+<http://hitontology.eu/ontology/> <http://open.vocab.org/terms/defines> <http://hitontology.eu/ontology/ValidationStudy> .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/abstract> "The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT. Our motivation is that information management professionals have a strong need to share and compare knowledge about health IT in several situations. These situations are, among others, to describe the components of a health information system as part of its strategic or operational management, to select a new software product, to learn about available evidence regarding an application, or to hire or train health IT specialists."@en .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/contributor> "<a href=''http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider>Birgit Schneider</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/contributor> "<a href='https://github.com/ThomasPause'>Thomas Pause</a>, formerly <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/contributor> "<a href='https://www.imise.uni-leipzig.de/en/Mitarbeiter/Maryam_Ghalandari'>Maryam Ghalandari</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/created> "2022-10-20"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "<a href='http://www.imise.uni-leipzig.de/Mitarbeiter/Franziska_Jahn'>Franziska Jahn</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "<a href='http://www.people.imise.uni-leipzig.de/alfred.winter/'>Prof. Alfred Winter</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "<a href='https://github.com/KonradHoeffner'>Konrad Höffner</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "<a href='https://iig.umit-tirol.at/index.php/de/staff/30-verena-dornauer'>Verena Dornauer</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "<a href='https://www.umit.at/page.cfm?vpath=departments/technik/iig/'>Prof. Elske Ammenwerth</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/creator> "Michelle Bindel, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>" .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/publisher> <https://www.imise.uni-leipzig.de/> .
+<http://hitontology.eu/ontology/> <http://purl.org/dc/terms/title> "A Health IT Ontology to describe health IT systems in a comparable way"@en .
+<http://hitontology.eu/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "hito" .
+<http://hitontology.eu/ontology/> <http://purl.org/vocab/vann/preferredNamespaceURI> <http://hitontology.eu/ontology/> .
+<http://hitontology.eu/ontology/> <http://usefulinc.com/ns/doap#repository> <https://github.com/hitontology/ontology> .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT." .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Health IT Ontology"@en .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://hitontology.eu> .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://hitontology.eu/ontology/> .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "22.10" .
+<http://hitontology.eu/ontology/> <http://www.w3.org/2004/02/skos/core#altLabel> "HITO"@en .
+<http://hitontology.eu/ontology/> <http://xmlns.com/foaf/0.1/homepage> <https://hitontology.eu/> .
+<http://hitontology.eu/ontology/> <http://xmlns.com/foaf/0.1/logo> <https://hitontology.eu/public/hito.svg> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://open.vocab.org/terms/defines
+<http://open.vocab.org/terms/defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceURI
+<http://purl.org/vocab/vann/preferredNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#repository
+<http://usefulinc.com/ns/doap#repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://hitontology.eu/ontology/FirstAuthor
+<http://hitontology.eu/ontology/FirstAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://hitontology.eu/ontology/PublishedInYear
+<http://hitontology.eu/ontology/PublishedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://hitontology.eu/ontology/astCitClassifiedAs
+<http://hitontology.eu/ontology/astCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/astCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/astCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/ApplicationSystemTypeCitation> .
+<http://hitontology.eu/ontology/astCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeClassified> .
+<http://hitontology.eu/ontology/astCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/astClaFrom
+<http://hitontology.eu/ontology/astClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/astClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/astClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/ApplicationSystemTypeClassified> .
+<http://hitontology.eu/ontology/astClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> .
+<http://hitontology.eu/ontology/astClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/astClaSupportsEfCla
+<http://hitontology.eu/ontology/astClaSupportsEfCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/astClaSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/ApplicationSystemTypeClassified> .
+<http://hitontology.eu/ontology/astClaSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/astClaSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# 
+# http://hitontology.eu/ontology/catalogue
+<http://hitontology.eu/ontology/catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/catalogue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/catalogue> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/catalogue> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/citation
+<http://hitontology.eu/ontology/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/citation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/citation> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/citation> <http://www.w3.org/2000/01/rdf-schema#label> "citation"@en .
+# 
+# http://hitontology.eu/ontology/classified
+<http://hitontology.eu/ontology/classified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/classified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/classified> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/classified> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/client
+<http://hitontology.eu/ontology/client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/client> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/client> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Client> .
+<http://hitontology.eu/ontology/client> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of hardware and software environment on which a software product is able to be run."@en .
+<http://hitontology.eu/ontology/client> <http://www.w3.org/2000/01/rdf-schema#label> "client"@en .
+# 
+# http://hitontology.eu/ontology/competenceLevel
+<http://hitontology.eu/ontology/competenceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/ImPosition> .
+<http://hitontology.eu/ontology/competenceLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "competence level superproperty"@en .
+<http://hitontology.eu/ontology/competenceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "competence level"@en .
+# 
+# http://hitontology.eu/ontology/competenceLevel1
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/competenceLevel2
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/competenceLevel3
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/competenceLevel4
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/competenceLevel5
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/competenceLevel6
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/competenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ConcreteCompetence> .
+# 
+# http://hitontology.eu/ontology/databaseManagementSystem
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/DatabaseManagementSystem> .
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A database management system a software product uses."@en .
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "database management system"@en .
+<http://hitontology.eu/ontology/databaseManagementSystem> <http://www.w3.org/2004/02/skos/core#altLabel> "DBMS"@en .
+# 
+# http://hitontology.eu/ontology/efCitClassifiedAs
+<http://hitontology.eu/ontology/efCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/efCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/efCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/EnterpriseFunctionCitation> .
+<http://hitontology.eu/ontology/efCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/efCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/efClaFrom
+<http://hitontology.eu/ontology/efClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/efClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/efClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/efClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> .
+<http://hitontology.eu/ontology/efClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/evaluatesApplicationSystemType
+<http://hitontology.eu/ontology/evaluatesApplicationSystemType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemType> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeCitation> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemType> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+# 
+# http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+# 
+# http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/UserGroupCitation> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates application system or software product used by"@en .
+# 
+# http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OrganizationalUnitCitation> .
+<http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates application system or software product used in"@en .
+# 
+# http://hitontology.eu/ontology/evaluatesProduct
+<http://hitontology.eu/ontology/evaluatesProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/evaluatesProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/evaluatesProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/evaluatesProduct> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+# 
+# http://hitontology.eu/ontology/fCitClassifiedAs
+<http://hitontology.eu/ontology/fCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/fCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/fCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/fCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/fCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/fClaFrom
+<http://hitontology.eu/ontology/fClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/fClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/fClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/fClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureCatalogue> .
+<http://hitontology.eu/ontology/fClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/homepage
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Homepage> .
+<http://hitontology.eu/ontology/Homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository."@en .
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/2000/01/rdf-schema#label> "homepage"@en .
+<http://hitontology.eu/ontology/homepage> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://usefulinc.com/ns/doap#homepage> .
+# 
+# http://hitontology.eu/ontology/implements
+<http://hitontology.eu/ontology/implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/implements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/implements> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeCitation> .
+<http://hitontology.eu/ontology/implements> <http://www.w3.org/2000/01/rdf-schema#comment> "If installed and customized, a software product implements a certain application system."@en .
+<http://hitontology.eu/ontology/implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements"@en .
+# 
+# http://hitontology.eu/ontology/interoperability
+<http://hitontology.eu/ontology/interoperability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/interoperability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/interoperability> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Interoperability> .
+<http://hitontology.eu/ontology/interoperability> <http://www.w3.org/2000/01/rdf-schema#label> "interoperability"@en .
+# 
+# http://hitontology.eu/ontology/language
+<http://hitontology.eu/ontology/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Language> .
+<http://dbpedia.org/ontology/Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/language> <http://www.w3.org/2000/01/rdf-schema#comment> "The language supported by a software product. A software product can offer multiple languages the user can choose from."@en .
+<http://hitontology.eu/ontology/language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+# 
+# http://hitontology.eu/ontology/license
+<http://hitontology.eu/ontology/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/license> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/license> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ebi.ac.uk/swo/SWO_0000002> .
+<http://www.ebi.ac.uk/swo/SWO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/license> <http://purl.org/vocab/vann/example> <http://www.ebi.ac.uk/swo/license/SWO_1000046> .
+<http://hitontology.eu/ontology/license> <http://purl.org/vocab/vann/example> <http://www.ebi.ac.uk/swo/license/SWO_9000084> .
+<http://hitontology.eu/ontology/license> <http://purl.org/vocab/vann/example> <http://www.ebi.ac.uk/swo/license/SWO_9000085> .
+<http://hitontology.eu/ontology/license> <http://www.w3.org/2000/01/rdf-schema#comment> "The license under which a software product is distributed."@en .
+<http://hitontology.eu/ontology/license> <http://www.w3.org/2000/01/rdf-schema#label> "license"@en .
+# 
+# http://hitontology.eu/ontology/ocCitClassifiedAs
+<http://hitontology.eu/ontology/ocCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/ocCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/ocCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/OutcomeCriteriaCitation> .
+<http://hitontology.eu/ontology/ocCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OutcomeCriteriaClassified> .
+<http://hitontology.eu/ontology/ocCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/ocClaFrom
+<http://hitontology.eu/ontology/ocClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/ocClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/ocClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/OutcomeCriteriaClassified> .
+<http://hitontology.eu/ontology/ocClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> .
+<http://hitontology.eu/ontology/ocClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/ocEvaluatesOcCit
+<http://hitontology.eu/ontology/ocEvaluatesOcCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/ocEvaluatesOcCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/ocEvaluatesOcCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OutcomeCriteriaCitation> .
+<http://hitontology.eu/ontology/ocEvaluatesOcCit> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+# 
+# http://hitontology.eu/ontology/operatingSystem
+<http://hitontology.eu/ontology/operatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/operatingSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/operatingSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OperatingSystem> .
+<http://hitontology.eu/ontology/operatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The operating system a software uses. A software product might be able to run on a variety of operating systems."@en .
+<http://hitontology.eu/ontology/operatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "operating system"@en .
+# 
+# http://hitontology.eu/ontology/ouCitClassifiedAs
+<http://hitontology.eu/ontology/ouCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/ouCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/ouCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/OrganizationalUnitCitation> .
+<http://hitontology.eu/ontology/ouCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OrganizationalUnitClassified> .
+<http://hitontology.eu/ontology/ouCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/ouClaFrom
+<http://hitontology.eu/ontology/ouClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/ouClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/ouClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/OrganizationalUnitClassified> .
+<http://hitontology.eu/ontology/ouClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OrganizationalUnitCatalogue> .
+<http://hitontology.eu/ontology/ouClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# http://hitontology.eu/ontology/pmid
+<http://hitontology.eu/ontology/pmid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/pmid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/pmid> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Pmid> .
+<http://hitontology.eu/ontology/Pmid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/pmid> <http://www.w3.org/2000/01/rdf-schema#label> "has PMID"@en .
+# 
+# http://hitontology.eu/ontology/programmingLanguage
+<http://hitontology.eu/ontology/programmingLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/class/yago/WikicatProgrammingLanguages> .
+<http://dbpedia.org/class/yago/WikicatProgrammingLanguages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/JavaScript> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/Java_(programming_language)> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/Python_(programming_language)> .
+<http://hitontology.eu/ontology/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "The programming language used to develop a software product."@en .
+<http://hitontology.eu/ontology/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "programming language"@en .
+# 
+# http://hitontology.eu/ontology/programmingLibrary
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ProgrammingLibrary> .
+# 
+# http://hitontology.eu/ontology/publishedInJournal
+<http://hitontology.eu/ontology/publishedInJournal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/publishedInJournal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/publishedInJournal> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Journal> .
+<http://hitontology.eu/ontology/publishedInJournal> <http://www.w3.org/2000/01/rdf-schema#comment> "The journal the evaluation study is published in."@en .
+<http://hitontology.eu/ontology/publishedInJournal> <http://www.w3.org/2000/01/rdf-schema#label> "published In Journal"@en .
+# 
+# http://hitontology.eu/ontology/repository
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Repository> .
+<http://hitontology.eu/ontology/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/2000/01/rdf-schema#comment> "A storage location for software-code, along with relevant metadata."@en .
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/2000/01/rdf-schema#label> "repository"@en .
+<http://hitontology.eu/ontology/repository> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://usefulinc.com/ns/doap#repository> .
+# 
+# http://hitontology.eu/ontology/softwareProductComponent
+<http://hitontology.eu/ontology/softwareProductComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/softwareProductComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/softwareProductComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/softwareProductComponent> <http://www.w3.org/2000/01/rdf-schema#label> "software product component"@en .
+# 
+# http://hitontology.eu/ontology/spIsOfAstCit
+<http://hitontology.eu/ontology/spIsOfAstCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spIsOfAstCit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/citation> .
+<http://hitontology.eu/ontology/spIsOfAstCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spIsOfAstCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeCitation> .
+<http://hitontology.eu/ontology/spIsOfAstCit> <http://www.w3.org/2000/01/rdf-schema#label> "is of"@en .
+# 
+# http://hitontology.eu/ontology/spIsOfAstCla
+<http://hitontology.eu/ontology/spIsOfAstCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spIsOfAstCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spIsOfAstCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/ApplicationSystemTypeClassified> .
+<http://hitontology.eu/ontology/spIsOfAstCla> <http://www.w3.org/2000/01/rdf-schema#comment> "A classified application system type of the software product."@en .
+<http://hitontology.eu/ontology/spIsOfAstCla> <http://www.w3.org/2000/01/rdf-schema#label> "is of"@en .
+# 
+# http://hitontology.eu/ontology/spOffersFCit
+<http://hitontology.eu/ontology/spOffersFCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spOffersFCit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/citation> .
+<http://hitontology.eu/ontology/spOffersFCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spOffersFCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/spOffersFCit> <http://www.w3.org/2000/01/rdf-schema#label> "offers"@en .
+# 
+# http://hitontology.eu/ontology/spOffersFCla
+<http://hitontology.eu/ontology/spOffersFCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spOffersFCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spOffersFCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/spOffersFCla> <http://www.w3.org/2000/01/rdf-schema#comment> "A classified feature offered by the software product."@en .
+<http://hitontology.eu/ontology/spOffersFCla> <http://www.w3.org/2000/01/rdf-schema#label> "offers"@en .
+# 
+# http://hitontology.eu/ontology/spSupportsEfCit
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/citation> .
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionCitation> .
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/2000/01/rdf-schema#comment> "Enterprise function citation supported by the software product."@en .
+<http://hitontology.eu/ontology/spSupportsEfCit> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# 
+# http://hitontology.eu/ontology/spSupportsEfCla
+<http://hitontology.eu/ontology/spSupportsEfCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/spSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#comment> "A classified enterprise function supported by the software product."@en .
+<http://hitontology.eu/ontology/spSupportsEfCla> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# 
+# http://hitontology.eu/ontology/spUsedByUserCit
+<http://hitontology.eu/ontology/spUsedByUserCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spUsedByUserCit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/citation> .
+<http://hitontology.eu/ontology/spUsedByUserCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spUsedByUserCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/UserGroupCitation> .
+<http://hitontology.eu/ontology/spUsedByUserCit> <http://www.w3.org/2000/01/rdf-schema#label> "offers"@en .
+# 
+# http://hitontology.eu/ontology/spUsedByUserCla
+<http://hitontology.eu/ontology/spUsedByUserCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spUsedByUserCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spUsedByUserCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/UserGroupClassified> .
+<http://hitontology.eu/ontology/spUsedByUserCla> <http://www.w3.org/2000/01/rdf-schema#comment> "A user group of the software product."@en .
+<http://hitontology.eu/ontology/spUsedByUserCla> <http://www.w3.org/2000/01/rdf-schema#label> "used by"@en .
+# 
+# http://hitontology.eu/ontology/spUsedInOuCit
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/citation> .
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OrganizationalUnitCitation> .
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/2000/01/rdf-schema#comment> "The organizational unit where the software product is used."@en .
+<http://hitontology.eu/ontology/spUsedInOuCit> <http://www.w3.org/2000/01/rdf-schema#label> "used in"@en .
+# 
+# http://hitontology.eu/ontology/spUsedInOuCla
+<http://hitontology.eu/ontology/spUsedInOuCla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/spUsedInOuCla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/spUsedInOuCla> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/OrganizationalUnitClassified> .
+<http://hitontology.eu/ontology/spUsedInOuCla> <http://www.w3.org/2000/01/rdf-schema#comment> "An organizational unit using the software product."@en .
+<http://hitontology.eu/ontology/spUsedInOuCla> <http://www.w3.org/2000/01/rdf-schema#label> "used in"@en .
+# 
+# http://hitontology.eu/ontology/studyMethod
+<http://hitontology.eu/ontology/studyMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/studyMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/studyMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/StudyMethod> .
+<http://hitontology.eu/ontology/studyMethod> <http://www.w3.org/2000/01/rdf-schema#label> "study method"@en .
+# 
+# http://hitontology.eu/ontology/subClassifiedOf
+<http://hitontology.eu/ontology/subClassifiedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/subClassifiedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/subClassifiedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/subClassifiedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a subordinate to the object classified in a hierachy. Whether this is a part-of, specialization or other type of hierarchy depends on the catalogue authors. Generic property only used as a superproperty."@en .
+<http://hitontology.eu/ontology/subClassifiedOf> <http://www.w3.org/2000/01/rdf-schema#label> "subclassified of"@en .
+# 
+# http://hitontology.eu/ontology/subFeatureOf
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/subClassifiedOf> .
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a subordinate of another classified software feature."@en .
+<http://hitontology.eu/ontology/subFeatureOf> <http://www.w3.org/2000/01/rdf-schema#label> "subfeature of"@en .
+# 
+# http://hitontology.eu/ontology/subFunctionOf
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/subClassifiedOf> .
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is subordinate of another classified enterprise function"@en .
+<http://hitontology.eu/ontology/subFunctionOf> <http://www.w3.org/2000/01/rdf-schema#label> "subfunction of"@en .
+# 
+# http://hitontology.eu/ontology/subInteroperabilityOf
+<http://hitontology.eu/ontology/subInteroperabilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/subInteroperabilityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Interoperability> .
+<http://hitontology.eu/ontology/subInteroperabilityOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/Interoperability> .
+<http://hitontology.eu/ontology/subInteroperabilityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a child of another interoperability standard."@en .
+<http://hitontology.eu/ontology/subInteroperabilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "subinteroperability of"@en .
+# 
+# http://hitontology.eu/ontology/supportedByFeatureCitation
+<http://hitontology.eu/ontology/supportedByFeatureCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/supportedByFeatureCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/EnterpriseFunctionCitation> .
+<http://hitontology.eu/ontology/supportedByFeatureCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/supportedByFeatureCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Feature citation supporting the enterprise function."@en .
+<http://hitontology.eu/ontology/supportedByFeatureCitation> <http://www.w3.org/2000/01/rdf-schema#label> "supported by feature citation"@en .
+# 
+# http://hitontology.eu/ontology/supportsFunction
+<http://hitontology.eu/ontology/supportsFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/supportsFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/FeatureCitation> .
+<http://hitontology.eu/ontology/supportsFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionCitation> .
+<http://hitontology.eu/ontology/supportsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "the software feature supports function citation"@en .
+<http://hitontology.eu/ontology/supportsFunction> <http://www.w3.org/2000/01/rdf-schema#label> "supports function citation"@en .
+# 
+# http://hitontology.eu/ontology/supportsFunctionClassified
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/subClassifiedOf> .
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/FeatureClassified> .
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "The classified enterprise function supported by the software feature."@en .
+<http://hitontology.eu/ontology/supportsFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#label> "supports classified function"@en .
+# 
+# http://hitontology.eu/ontology/userCitClassifiedAs
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/classified> .
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/UserGroupCitation> .
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/UserGroupClassified> .
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "A classified user group the user group citation is classified as."@en .
+<http://hitontology.eu/ontology/userCitClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as"@en .
+# 
+# http://hitontology.eu/ontology/userClaFrom
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hitontology.eu/ontology/catalogue> .
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/UserGroupClassified> .
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/UserGroupCatalogue> .
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The user group catalogue the classified user group belongs to."@en .
+<http://hitontology.eu/ontology/userClaFrom> <http://www.w3.org/2000/01/rdf-schema#label> "from catalogue"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://hitontology.eu/ontology/certification
+<http://hitontology.eu/ontology/certification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/certification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/SoftwareProduct> .
+<http://hitontology.eu/ontology/certification> <http://www.w3.org/2000/01/rdf-schema#label> "certification"@en .
+# 
+# http://hitontology.eu/ontology/competenceLevelNumber
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/firstAuthor
+<http://hitontology.eu/ontology/firstAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/firstAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/firstAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/FirstAuthor> .
+<http://hitontology.eu/ontology/firstAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "The surname and the initials of the first author of the modelled evaluation study."@en .
+<http://hitontology.eu/ontology/firstAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "first author"@en .
+# 
+# http://hitontology.eu/ontology/internalId
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "@en .
+<http://hitontology.eu/ontology/internalId> <http://www.w3.org/2000/01/rdf-schema#label> "internal identifier"@en .
+# 
+# http://hitontology.eu/ontology/publishedInYear
+<http://hitontology.eu/ontology/publishedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/publishedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hitontology.eu/ontology/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://hitontology.eu/ontology/PublishedInYear> .
+<http://hitontology.eu/ontology/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#label> "published in year"@en .
+# 
+# http://hitontology.eu/ontology/spUsedByUserCitSctid
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/UserGroupClassified> .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/2000/01/rdf-schema#comment> "SNOMED CT identifier of a user group"@en .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/2000/01/rdf-schema#label> "SCTID of a user group"@en .
+<http://hitontology.eu/ontology/spUsedByUserCitSctid> <http://www.w3.org/2000/01/rdf-schema#label> "group SCTID"@en .
+# 
+# http://hitontology.eu/ontology/spUsedInOuCitSctid
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hitontology.eu/ontology/OrganizationalUnitClassified> .
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/2000/01/rdf-schema#comment> "SNOMED CT identifier of an organizational unit"@en .
+<http://hitontology.eu/ontology/spUsedInOuCitSctid> <http://www.w3.org/2000/01/rdf-schema#label> "unit SCTID"@en .
+# 
+# http://hitontology.eu/ontology/vancouverReference
+<http://hitontology.eu/ontology/vancouverReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hitontology.eu/ontology/vancouverReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://hitontology.eu/ontology/vancouverReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a publication in Vancouver style."@en .
+<http://hitontology.eu/ontology/vancouverReference> <http://www.w3.org/2000/01/rdf-schema#label> "Vancouver reference"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/class/yago/WikicatProgrammingLanguages
+# 
+# http://dbpedia.org/ontology/Language
+<http://dbpedia.org/ontology/Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en .
+<http://dbpedia.org/ontology/Language> <http://www.w3.org/2000/01/rdf-schema#label> "Sprache."@de .
+# 
+# http://dbpedia.org/ontology/ProgrammingLanguage
+<http://dbpedia.org/ontology/ProgrammingLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/ProgrammingLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Programmiersprache."@de .
+<http://dbpedia.org/ontology/ProgrammingLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Programming Language"@en .
+# 
+# http://hitontology.eu/ontology/AbstractCompetence
+<http://hitontology.eu/ontology/AbstractCompetence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/AbstractCompetence> <http://www.w3.org/2000/01/rdf-schema#label> "abstract competence in"@en .
+# 
+# http://hitontology.eu/ontology/ApplicationSystemType
+<http://hitontology.eu/ontology/ApplicationSystemType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiSystemCategoryApplicationSystemTypeCatalogue> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified application systems."@en .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Anwendungssystemen"@de .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Application System Type Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/ApplicationSystemTypeCitation
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BahmniAppHospitalSystem> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/EChasquiLaboratoryInformationSystem> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff, den ein Autor für einen Anwendungssystemtyp verwendet."@de .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The natural language term an author uses for an application system type."@en .
+<http://hitontology.eu/ontology/ApplicationSystemTypeCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Application System Type Citation"@en .
+# 
+# http://hitontology.eu/ontology/ApplicationSystemTypeClassified
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://purl.org/dc/terms/source> <https://www.doi.org/10.1007/978-1-84996-441-8> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbDialysisInformationSystem> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbDigitalDictationSystem> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiElectronicMedicalRecord> .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff für einen Anwendungssystemtyp, der in der Klassifizierung von Anwendungssystemen verwendet wird."@de .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "The term for an application system type, which is used in the classification of application systems."@en .
+<http://hitontology.eu/ontology/ApplicationSystemTypeClassified> <http://www.w3.org/2000/01/rdf-schema#label> "Application System Type Classified"@en .
+# 
+# http://hitontology.eu/ontology/Catalogue
+<http://hitontology.eu/ontology/Catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Catalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Collection> .
+<https://ontologies.semanticarts.com/gist/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Catalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue> .
+<http://hitontology.eu/ontology/Catalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbFeatureCatalogue> .
+<http://hitontology.eu/ontology/Catalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbFunctionCatalogue> .
+<http://hitontology.eu/ontology/Catalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedUserGroupCatalogue> .
+<http://hitontology.eu/ontology/Catalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classifieds of the same type from the same source."@en .
+<http://hitontology.eu/ontology/Catalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Begriffen der gleichen Art aus der gleichen Quelle"@de .
+<http://hitontology.eu/ontology/Catalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/Certification
+<http://hitontology.eu/ontology/Certification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Certification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Category> .
+<https://ontologies.semanticarts.com/gist/Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Certification> <http://purl.org/dc/terms/source> <https://www.doi.org/10.1007/978-1-84996-441-8> .
+<http://hitontology.eu/ontology/Certification> <http://www.w3.org/2000/01/rdf-schema#comment> "Certificate of a software product to assess the compliance with quality management standards."@en .
+<http://hitontology.eu/ontology/Certification> <http://www.w3.org/2000/01/rdf-schema#comment> "Zertifikat eines Softwareproduktes zur Bewertung der Einhaltung der Normen des Qualitätsmanagements"@de .
+<http://hitontology.eu/ontology/Certification> <http://www.w3.org/2000/01/rdf-schema#label> "Certification"@en .
+# 
+# http://hitontology.eu/ontology/Citation
+<http://hitontology.eu/ontology/Citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Citation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Tag> .
+<https://ontologies.semanticarts.com/gist/Tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Citation> <http://www.w3.org/2000/01/rdf-schema#comment> "Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite."@de .
+<http://hitontology.eu/ontology/Citation> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural language description of a software product from that products documentation, such as a web page."@en .
+<http://hitontology.eu/ontology/Citation> <http://www.w3.org/2000/01/rdf-schema#label> "Citation"@en .
+# 
+# http://hitontology.eu/ontology/Classification
+<http://hitontology.eu/ontology/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Collection> .
+<http://hitontology.eu/ontology/Classification> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Bb> .
+<http://hitontology.eu/ontology/Classification> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/EhrSfm> .
+<http://hitontology.eu/ontology/Classification> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Snomed> .
+<http://hitontology.eu/ontology/Classification> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhi1-0> .
+<http://hitontology.eu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of catalogues of different catalogue types from the same source."@en .
+<http://hitontology.eu/ontology/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification"@en .
+# 
+# http://hitontology.eu/ontology/Classified
+<http://hitontology.eu/ontology/Classified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Classified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Category> .
+<http://hitontology.eu/ontology/Classified> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."@en .
+<http://hitontology.eu/ontology/Classified> <http://www.w3.org/2000/01/rdf-schema#comment> "Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion."@de .
+<http://hitontology.eu/ontology/Classified> <http://www.w3.org/2000/01/rdf-schema#label> "Classified"@en .
+# 
+# http://hitontology.eu/ontology/Client
+<http://hitontology.eu/ontology/Client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Client> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/System> .
+<https://ontologies.semanticarts.com/gist/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Client> <http://www.w3.org/2000/01/rdf-schema#comment> "Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann."@de .
+<http://hitontology.eu/ontology/Client> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of hardware and software environment on which a software product is able to be run."@en .
+<http://hitontology.eu/ontology/Client> <http://www.w3.org/2000/01/rdf-schema#label> "Client"@en .
+# 
+# http://hitontology.eu/ontology/Competence
+<http://hitontology.eu/ontology/Competence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Competence> <http://www.w3.org/2000/01/rdf-schema#comment> "competence of a person"@en .
+<http://hitontology.eu/ontology/Competence> <http://www.w3.org/2000/01/rdf-schema#label> "competence"@en .
+# 
+# http://hitontology.eu/ontology/CompetenceLevel
+<http://hitontology.eu/ontology/CompetenceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/CompetenceLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "competence level class"@en .
+<http://hitontology.eu/ontology/CompetenceLevel> <http://www.w3.org/2000/01/rdf-schema#label> "competence level"@en .
+# 
+# http://hitontology.eu/ontology/ConcreteCompetence
+<http://hitontology.eu/ontology/ConcreteCompetence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ConcreteCompetence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/programmingLibrary> .
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/SoftwareProduct> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/Interoperability> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/EnterpriseFunctionClassified> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/DatabaseManagementSystem> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hitontology.eu/ontology/ApplicationSystemType> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dbpedia.org/ontology/ProgrammingLanguage> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dbpedia.org/ontology/Language> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ConcreteCompetence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Competence> .
+<http://hitontology.eu/ontology/ConcreteCompetence> <http://www.w3.org/2000/01/rdf-schema#label> "concrete competence in"@en .
+# 
+# http://hitontology.eu/ontology/DatabaseManagementSystem
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/MySql> .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OracleDatabase> .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/PostgreSql> .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Database Management System"@en .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Database Management System, wie z.B. MySQL oder PostgreSQL."@de .
+<http://hitontology.eu/ontology/DatabaseManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Database Management System"@en .
+# 
+# http://hitontology.eu/ontology/EnterpriseFunctionCatalogue
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbFunctionCatalogue> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFunctionCatalogue> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified enterprise functions."@en .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Unternehmensfunktionen."@de .
+<http://hitontology.eu/ontology/EnterpriseFunctionCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Function Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/EnterpriseFunctionCitation
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://purl.org/dc/terms/source> <https://www.doi.org/10.1007/978-1-84996-441-8> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BahmniFuncBilling> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BikaLimsFuncQualityControl> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/ElexisFuncAbrechnungssystem> .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird."@de .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."@en .
+<http://hitontology.eu/ontology/EnterpriseFunctionCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Enterprise Function Citation"@en .
+# 
+# http://hitontology.eu/ontology/EnterpriseFunctionClassified
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbAdministrativeAdmission> .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiCertifyBirthEvent> .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört."@de .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification"@en .
+<http://hitontology.eu/ontology/EnterpriseFunctionClassified> <http://www.w3.org/2000/01/rdf-schema#label> "Enterprise Function Classified"@en .
+# 
+# http://hitontology.eu/ontology/ExperimentalStudyRCT
+<http://hitontology.eu/ontology/ExperimentalStudyRCT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ExperimentalStudyRCT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/ExperimentalStudyRCT> <http://www.w3.org/2000/01/rdf-schema#comment> "Experimentelle Studie mit randomisiertem Kontrollversuch."@de .
+<http://hitontology.eu/ontology/ExperimentalStudyRCT> <http://www.w3.org/2000/01/rdf-schema#comment> "experimental study with randomized control trial"@en .
+<http://hitontology.eu/ontology/ExperimentalStudyRCT> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental Study RCT"@en .
+# 
+# http://hitontology.eu/ontology/FeatureCatalogue
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbFeatureCatalogue> .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/EhrSfmFeatureCatalogue> .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFeatureCatalogue> .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified software features."@en .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Softwarefeatures."@de .
+<http://hitontology.eu/ontology/FeatureCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/FeatureCitation
+<http://hitontology.eu/ontology/FeatureCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/FeatureCitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/FeatureCitation> <http://purl.org/dc/terms/source> <https://www.snik.eu/ontology/bb/Feature> .
+<http://hitontology.eu/ontology/FeatureCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."@en .
+<http://hitontology.eu/ontology/FeatureCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt."@de .
+<http://hitontology.eu/ontology/FeatureCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Citation"@en .
+# 
+# http://hitontology.eu/ontology/FeatureClassified
+<http://hitontology.eu/ontology/FeatureClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/FeatureClassified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/FeatureClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/BbAdmitPatientsToTheWard> .
+<http://hitontology.eu/ontology/FeatureClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/EhrSfmManageClinicalDocumentation> .
+<http://hitontology.eu/ontology/FeatureClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/WhoDhiRegisterBirthEvent> .
+<http://hitontology.eu/ontology/FeatureClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört."@de .
+<http://hitontology.eu/ontology/FeatureClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification"@en .
+<http://hitontology.eu/ontology/FeatureClassified> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Classified"@en .
+# 
+# http://hitontology.eu/ontology/FirstAuthor
+<http://hitontology.eu/ontology/FirstAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/FirstAuthor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://hitontology.eu/ontology/Homepage
+<http://hitontology.eu/ontology/Homepage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Homepage> <http://www.w3.org/2000/01/rdf-schema#label> "homepage"@en .
+# 
+# http://hitontology.eu/ontology/ImPosition
+<http://hitontology.eu/ontology/ImPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ImPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "description of required competencies for a position in a job offer"@en .
+<http://hitontology.eu/ontology/ImPosition> <http://www.w3.org/2000/01/rdf-schema#label> "information management position"@en .
+# 
+# http://hitontology.eu/ontology/Interoperability
+<http://hitontology.eu/ontology/Interoperability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Interoperability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Category> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/dc/terms/source> <https://www.doi.org/10.1007/978-1-84996-441-8> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/dc/terms/source> <https://www.himss.org/resources/interoperability-healthcare> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/HL7> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/HL7_FHIR> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/HL7_V2.x> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/HL7_V3.0> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/ICD10> .
+<http://hitontology.eu/ontology/Interoperability> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OpenEHR> .
+<http://hitontology.eu/ontology/Interoperability> <http://www.w3.org/2000/01/rdf-schema#comment> "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE."@en .
+<http://hitontology.eu/ontology/Interoperability> <http://www.w3.org/2000/01/rdf-schema#comment> "Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter."@de .
+<http://hitontology.eu/ontology/Interoperability> <http://www.w3.org/2000/01/rdf-schema#label> "Interoperability Standard"@en .
+# 
+# http://hitontology.eu/ontology/Journal
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Artifact> .
+<https://ontologies.semanticarts.com/gist/Artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://hitontology.eu/ontology/LabStudy
+<http://hitontology.eu/ontology/LabStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/LabStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/LabStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Laboratory Study"@en .
+<http://hitontology.eu/ontology/LabStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Laborstudie."@de .
+<http://hitontology.eu/ontology/LabStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Lab Study"@en .
+# 
+# http://hitontology.eu/ontology/NonExperimentalStudy
+<http://hitontology.eu/ontology/NonExperimentalStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/NonExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/NonExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Nicht-experimentelle Studie."@de .
+<http://hitontology.eu/ontology/NonExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "study without an independent variable"@en .
+<http://hitontology.eu/ontology/NonExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Non Experimental Study"@en .
+# 
+# http://hitontology.eu/ontology/OperatingSystem
+<http://hitontology.eu/ontology/OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OperatingSystem> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/Linux> .
+<http://hitontology.eu/ontology/OperatingSystem> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/MacOS> .
+<http://hitontology.eu/ontology/OperatingSystem> <http://purl.org/vocab/vann/example> <http://dbpedia.org/resource/Microsoft_Windows> .
+<http://hitontology.eu/ontology/OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."@en .
+<http://hitontology.eu/ontology/OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Operating System"@en .
+# 
+# http://hitontology.eu/ontology/OrganizationalUnitCatalogue
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue> .
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified organizational units."@en .
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Organisationseinheiten."@de .
+<http://hitontology.eu/ontology/OrganizationalUnitCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Organizational Unit Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/OrganizationalUnitCitation
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/ElexisOrgArztpraxis> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/GnuHealthOrgHospitalEnvironment> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/MedkeyOrgDentalClinic> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/spUsedInOuCit> .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet."@de .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."@en .
+<http://hitontology.eu/ontology/OrganizationalUnitCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Organizational Unit Citation"@en .
+# 
+# http://hitontology.eu/ontology/OrganizationalUnitClassified
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedCardiologyDepartmentEnvironment> .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedMedicalCenterEnvironment> .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedRadiologyDepartmentEnvironment> .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International."@en .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International."@de .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/2000/01/rdf-schema#label> "Organizational Unit Classified"@en .
+<http://hitontology.eu/ontology/OrganizationalUnitClassified> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://browser.ihtsdotools.org/> .
+# 
+# http://hitontology.eu/ontology/OutcomeCriteriaCatalogue
+<http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/AmmenwerthOutcomeCriteriaCatalogue> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified outcome criteria."@en .
+<http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Sammlung von klassifizierten Ergebniskriterien."@de .
+<http://hitontology.eu/ontology/OutcomeCriteriaCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome Criteria Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/OutcomeCriteriaCitation
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/softwareStability> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/strengthsAndWeaknessesOfIntervention> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/timeForProducingImages> .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet."@de .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The term an author uses for the outcome criteria of the evaluation study."@en .
+<http://hitontology.eu/ontology/OutcomeCriteriaCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome Criteria Citation"@en .
+# 
+# http://hitontology.eu/ontology/OutcomeCriteriaClassified
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Communication> .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/EconomicOutcome> .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OutcomeCriteriaClassified> .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Classified catalogue entry of an outcome criteria."@en .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Klassifizierter Katalogeintrag eines Ergebniskriteriums."@de .
+<http://hitontology.eu/ontology/OutcomeCriteriaClassified> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome Criteria Classified"@en .
+# 
+# http://hitontology.eu/ontology/Pmid
+<http://hitontology.eu/ontology/Pmid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://hitontology.eu/ontology/Pmid> <http://www.w3.org/2000/01/rdf-schema#label> "PubMed ID"@en .
+# 
+# http://hitontology.eu/ontology/ProgrammingLibrary
+<http://hitontology.eu/ontology/ProgrammingLibrary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ProgrammingLibrary> <http://www.w3.org/2000/01/rdf-schema#comment> "A programming library is a collection of reusable code."@en .
+<http://hitontology.eu/ontology/ProgrammingLibrary> <http://www.w3.org/2000/01/rdf-schema#label> "Programming Library"@en .
+# 
+# http://hitontology.eu/ontology/PublishedInYear
+<http://hitontology.eu/ontology/PublishedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/PublishedInYear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://hitontology.eu/ontology/QuasiExperimentalStudy
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy22> .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy3> .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy4> .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Empirische Interventionsstudie ohne Randomisierung."@de .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "empirical interventional study without randomization"@en .
+<http://hitontology.eu/ontology/QuasiExperimentalStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Quasi Experimental Study"@en .
+# 
+# http://hitontology.eu/ontology/Repository
+<http://hitontology.eu/ontology/Repository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://hitontology.eu/ontology/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "repository"@en .
+# 
+# http://hitontology.eu/ontology/SoftwareProduct
+<http://hitontology.eu/ontology/SoftwareProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://purl.org/dc/terms/source> <https://www.snik.eu/ontology/bb/SoftwareProduct> .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Bahmni> .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/GnuHealth> .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Orthanc> .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "A software product is an acquired or self-developed piece of software that can be installed on a computer system."@en .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann."@de .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Software Product"@en .
+<http://hitontology.eu/ontology/SoftwareProduct> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://usefulinc.com/ns/doap#Project> .
+# 
+# http://hitontology.eu/ontology/Study
+<http://hitontology.eu/ontology/Study> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Study> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/IntellectualProperty> .
+<https://ontologies.semanticarts.com/gist/IntellectualProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/Study> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy1> .
+<http://hitontology.eu/ontology/Study> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy2> .
+<http://hitontology.eu/ontology/Study> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/NamedStudy3> .
+<http://hitontology.eu/ontology/Study> <http://www.w3.org/2000/01/rdf-schema#comment> "An evaluation study"@en .
+<http://hitontology.eu/ontology/Study> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Evaluationsstudie."@de .
+<http://hitontology.eu/ontology/Study> <http://www.w3.org/2000/01/rdf-schema#label> "Study"@en .
+# 
+# http://hitontology.eu/ontology/StudyMethod
+<http://hitontology.eu/ontology/StudyMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/StudyMethod> <http://purl.org/dc/terms/source> <http://dx.doi.org/10.1007/s10916-006-7397-9> .
+<http://hitontology.eu/ontology/StudyMethod> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Qualitative> .
+<http://hitontology.eu/ontology/StudyMethod> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/Quantitative> .
+<http://hitontology.eu/ontology/StudyMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "The study method, qualitative or quantitative."@en .
+<http://hitontology.eu/ontology/StudyMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Study Method"@en .
+# 
+# http://hitontology.eu/ontology/UserGroupCatalogue
+<http://hitontology.eu/ontology/UserGroupCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/UserGroupCatalogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Catalogue> .
+<http://hitontology.eu/ontology/UserGroupCatalogue> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedUserGroupCatalogue> .
+<http://hitontology.eu/ontology/UserGroupCatalogue> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of classified user groups."@en .
+<http://hitontology.eu/ontology/UserGroupCatalogue> <http://www.w3.org/2000/01/rdf-schema#label> "User Group Catalogue"@en .
+# 
+# http://hitontology.eu/ontology/UserGroupCitation
+<http://hitontology.eu/ontology/UserGroupCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Citation> .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OpenDentalUserDentist> .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OpenMrsUserAdministrativeStaff> .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/OrthancUserNetworkEngineer> .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet."@de .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "The natural language term an author uses for the user group of an application system."@en .
+<http://hitontology.eu/ontology/UserGroupCitation> <http://www.w3.org/2000/01/rdf-schema#label> "User Group Citation"@en .
+# 
+# http://hitontology.eu/ontology/UserGroupClassified
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Classified> .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedProfessionalNurseOccupation> .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedRadiologistOccupation> .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://purl.org/vocab/vann/example> <http://hitontology.eu/ontology/SnomedResearcherOccupation> .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [zitiert 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/?"@de .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/2000/01/rdf-schema#comment> "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"@en .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/2000/01/rdf-schema#label> "User Group Classified"@en .
+<http://hitontology.eu/ontology/UserGroupClassified> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://browser.ihtsdotools.org/> .
+# 
+# http://hitontology.eu/ontology/ValidationStudy
+<http://hitontology.eu/ontology/ValidationStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hitontology.eu/ontology/ValidationStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hitontology.eu/ontology/Study> .
+<http://hitontology.eu/ontology/ValidationStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Compares the accuracy of a measure with a gold standard measure."@en .
+<http://hitontology.eu/ontology/ValidationStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Vergleicht die Genauigkeit einer Messung mit einer Standardmessung."@de .
+<http://hitontology.eu/ontology/ValidationStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Study"@en .
+# 
+# http://hitontology.eu/ontology/programmingLibrary
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Content> .
+<https://ontologies.semanticarts.com/gist/Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ebi.ac.uk/swo/SWO_0000002
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+# 
+# http://www.w3.org/2002/07/owl#DatattypeProperty
+<http://www.w3.org/2002/07/owl#DatattypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontologies.semanticarts.com/gist/Artifact
+# 
+# https://ontologies.semanticarts.com/gist/Category
+# 
+# https://ontologies.semanticarts.com/gist/Collection
+# 
+# https://ontologies.semanticarts.com/gist/Content
+# 
+# https://ontologies.semanticarts.com/gist/IntellectualProperty
+# 
+# https://ontologies.semanticarts.com/gist/System
+# 
+# https://ontologies.semanticarts.com/gist/Tag
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Academic_journal
+<http://dbpedia.org/resource/Academic_journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Academic_journal> <http://www.w3.org/2002/07/owl#sameAs> <http://hitontology.eu/ontology/Journal> .
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://hitontology.eu/ontology/Journal
+# 
+# http://hitontology.eu/ontology/Journal
+# 
+# http://hitontology.eu/ontology/Mobile
+<http://hitontology.eu/ontology/Mobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/Mobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/Client> .
+<http://hitontology.eu/ontology/Mobile> <http://www.w3.org/2000/01/rdf-schema#comment> "mobile client"@en .
+<http://hitontology.eu/ontology/Mobile> <http://www.w3.org/2000/01/rdf-schema#label> "mobile"@en .
+# 
+# http://hitontology.eu/ontology/Native
+<http://hitontology.eu/ontology/Native> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/Native> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/Client> .
+<http://hitontology.eu/ontology/Native> <http://www.w3.org/2000/01/rdf-schema#comment> "native client"@en .
+<http://hitontology.eu/ontology/Native> <http://www.w3.org/2000/01/rdf-schema#label> "native"@en .
+# 
+# http://hitontology.eu/ontology/Qualitative
+<http://hitontology.eu/ontology/Qualitative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/Qualitative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/StudyMethod> .
+<http://hitontology.eu/ontology/Qualitative> <http://hitontology.eu/ontology/vancouverReference> "Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." .
+<http://hitontology.eu/ontology/Qualitative> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualitative Study Method"@en .
+<http://hitontology.eu/ontology/Qualitative> <http://www.w3.org/2000/01/rdf-schema#label> "Qualitative"@en .
+# 
+# http://hitontology.eu/ontology/Quantitative
+<http://hitontology.eu/ontology/Quantitative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/Quantitative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/StudyMethod> .
+<http://hitontology.eu/ontology/Quantitative> <http://hitontology.eu/ontology/vancouverReference> "Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p." .
+<http://hitontology.eu/ontology/Quantitative> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantitative Study Method"@en .
+<http://hitontology.eu/ontology/Quantitative> <http://www.w3.org/2000/01/rdf-schema#label> "Quantitative"@en .
+# 
+# http://hitontology.eu/ontology/WebBased
+<http://hitontology.eu/ontology/WebBased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/WebBased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/Client> .
+<http://hitontology.eu/ontology/WebBased> <http://www.w3.org/2000/01/rdf-schema#comment> "web-based client"@en .
+<http://hitontology.eu/ontology/WebBased> <http://www.w3.org/2000/01/rdf-schema#label> "web-based"@en .
+# 
+# http://hitontology.eu/ontology/competenceLevel1
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel1> <http://hitontology.eu/ontology/competenceLevelNumber> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevel2
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel2> <http://hitontology.eu/ontology/competenceLevelNumber> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevel3
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel3> <http://hitontology.eu/ontology/competenceLevelNumber> "3"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevel4
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel4> <http://hitontology.eu/ontology/competenceLevelNumber> "4"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevel5
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel5> <http://hitontology.eu/ontology/competenceLevelNumber> "5"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevel6
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hitontology.eu/ontology/CompetenceLevel> .
+<http://hitontology.eu/ontology/competenceLevel6> <http://hitontology.eu/ontology/competenceLevelNumber> "6"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://hitontology.eu/ontology/competenceLevelNumber
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatattypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://dbpedia.org/class/yago/License106549661> <http://www.w3.org/2000/01/rdf-schema#label> "License"@en .
+<http://dbpedia.org/class/yago/License106549661> <http://www.w3.org/2000/01/rdf-schema#label> "Lizenz"@de .
+# 
+<http://dbpedia.org/class/yago/OperatingSystem106568134> <http://www.w3.org/2000/01/rdf-schema#label> "Operating System"@en .
+# 
+<http://hitontology.eu/ontology/FirstAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "first author"@en .
+# 
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "Academic Journal"@en .
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "Wissenschaftliche Zeitschrift."@de .
+<http://hitontology.eu/ontology/Journal> <http://www.w3.org/2000/01/rdf-schema#label> "Journal"@en .
+# 
+<http://hitontology.eu/ontology/PublishedInYear> <http://www.w3.org/2000/01/rdf-schema#label> "published in year"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/2000/01/rdf-schema#label> "knows"@en .
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/2004/02/skos/core#altLabel> "has basic knowledge of"@en .
+<http://hitontology.eu/ontology/competenceLevel1> <http://www.w3.org/2004/02/skos/core#altLabel> "is interested in"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/2000/01/rdf-schema#label> "understands"@en .
+<http://hitontology.eu/ontology/competenceLevel2> <http://www.w3.org/2004/02/skos/core#altLabel> "has advanced knowledge about"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2000/01/rdf-schema#label> "applies"@en .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2004/02/skos/core#altLabel> "basic/advanced/expert skills in"@en .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2004/02/skos/core#altLabel> "experienced with... at basic/advanced/master level"@en .
+<http://hitontology.eu/ontology/competenceLevel3> <http://www.w3.org/2004/02/skos/core#altLabel> "practical/hands-on experience with"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/2000/01/rdf-schema#label> "analyzes"@en .
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/2004/02/skos/core#altLabel> "selects"@en .
+<http://hitontology.eu/ontology/competenceLevel4> <http://www.w3.org/2004/02/skos/core#altLabel> "tests"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+<http://hitontology.eu/ontology/competenceLevel5> <http://www.w3.org/2004/02/skos/core#altLabel> "assesses the use of"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2000/01/rdf-schema#label> "creates"@en .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2004/02/skos/core#altLabel> "develops"@en .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2004/02/skos/core#altLabel> "plans use of"@en .
+<http://hitontology.eu/ontology/competenceLevel6> <http://www.w3.org/2004/02/skos/core#altLabel> "provides trainings for"@en .
+# 
+<http://hitontology.eu/ontology/competenceLevelNumber> <http://www.w3.org/2000/01/rdf-schema#label> "competence level number"@en .
+# 
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#comment> "Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code."@de .
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#comment> "Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner."@en .
+<http://hitontology.eu/ontology/programmingLibrary> <http://www.w3.org/2000/01/rdf-schema#label> "programming library or toolkit"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

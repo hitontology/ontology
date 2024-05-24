@@ -1,0 +1,2075 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://hitontology.eu/ontology/"
+     xml:base="http://hitontology.eu/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:terms1="http://open.vocab.org/terms/"
+     xmlns:ontology="http://hitontology.eu/ontology/">
+    <owl:Ontology rdf:about="http://hitontology.eu/ontology/">
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Classification"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Client"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/DatabaseManagementSystem"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/ExperimentalStudyRCT"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/FeatureCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Interoperability"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Journal"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/LabStudy"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/NonExperimentalStudy"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/QuasiExperimentalStudy"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/StudyMethod"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/Terminology"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/UserGroupCatalogue"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/UserGroupCitation"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/UserGroupClassified"/>
+        <terms1:defines rdf:resource="http://hitontology.eu/ontology/ValidationStudy"/>
+        <terms:abstract xml:lang="en">The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT. Our motivation is that information management professionals have a strong need to share and compare knowledge about health IT in several situations. These situations are, among others, to describe the components of a health information system as part of its strategic or operational management, to select a new software product, to learn about available evidence regarding an application, or to hire or train health IT specialists.</terms:abstract>
+        <terms:contributor>&lt;a href=&apos;&apos;http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider&gt;Birgit Schneider&lt;/a&gt;, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:contributor>
+        <terms:contributor>&lt;a href=&apos;https://github.com/ThomasPause&apos;&gt;Thomas Pause&lt;/a&gt;, formerly &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:contributor>
+        <terms:contributor>&lt;a href=&apos;https://www.imise.uni-leipzig.de/en/Mitarbeiter/Maryam_Ghalandari&apos;&gt;Maryam Ghalandari&lt;/a&gt;, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022-10-20</terms:created>
+        <terms:creator>&lt;a href=&apos;http://www.imise.uni-leipzig.de/Mitarbeiter/Franziska_Jahn&apos;&gt;Franziska Jahn&lt;/a&gt;, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:creator>
+        <terms:creator>&lt;a href=&apos;http://www.people.imise.uni-leipzig.de/alfred.winter/&apos;&gt;Prof. Alfred Winter&lt;/a&gt;, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:creator>
+        <terms:creator>&lt;a href=&apos;https://github.com/KonradHoeffner&apos;&gt;Konrad Höffner&lt;/a&gt;, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:creator>
+        <terms:creator>&lt;a href=&apos;https://iig.umit-tirol.at/index.php/de/staff/30-verena-dornauer&apos;&gt;Verena Dornauer&lt;/a&gt;, &lt;a href=&apos;https://www.umit-tirol.at&apos;&gt;UMIT Tirol, Austria&lt;/a&gt;</terms:creator>
+        <terms:creator>&lt;a href=&apos;https://www.umit.at/page.cfm?vpath=departments/technik/iig/&apos;&gt;Prof. Elske Ammenwerth&lt;/a&gt;, &lt;a href=&apos;https://www.umit-tirol.at&apos;&gt;UMIT Tirol, Austria&lt;/a&gt;</terms:creator>
+        <terms:creator>Michelle Bindel, &lt;a href=&apos;https://www.imise.uni-leipzig.de/en&apos;&gt;IMISE Leipzig, Germany&lt;/a&gt;</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:publisher rdf:resource="https://www.imise.uni-leipzig.de/"/>
+        <terms:title xml:lang="en">A Health IT Ontology to describe health IT systems in a comparable way</terms:title>
+        <vann:preferredNamespacePrefix>hito</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceURI rdf:resource="http://hitontology.eu/ontology/"/>
+        <doap:repository rdf:resource="https://github.com/hitontology/ontology"/>
+        <rdfs:comment>The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT.</rdfs:comment>
+        <rdfs:label xml:lang="en">Health IT Ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://hitontology.eu"/>
+        <rdfs:seeAlso rdf:resource="https://hitontology.eu/ontology/"/>
+        <owl:versionInfo>22.10</owl:versionInfo>
+        <skos:altLabel xml:lang="en">HITO</skos:altLabel>
+        <foaf:homepage rdf:resource="https://hitontology.eu/"/>
+        <foaf:logo rdf:resource="https://hitontology.eu/public/hito.svg"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://open.vocab.org/terms/defines -->
+
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceURI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceURI"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#repository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#repository"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hitontology.eu/ontology/FirstAuthor -->
+
+
+    <rdfs:Datatype rdf:about="http://hitontology.eu/ontology/FirstAuthor"/>
+    
+
+
+    <!-- http://hitontology.eu/ontology/PublishedInYear -->
+
+
+    <rdfs:Datatype rdf:about="http://hitontology.eu/ontology/PublishedInYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hitontology.eu/ontology/astCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/astCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeClassified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/astClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/astClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/astClaSupportsEfCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/astClaSupportsEfCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:label xml:lang="en">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/catalogue -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/catalogue">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/citation -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/citation">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <rdfs:label xml:lang="en">citation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/classified -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/classified">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/client -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/client">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Client"/>
+        <rdfs:comment xml:lang="en">The type of hardware and software environment on which a software product is able to be run.</rdfs:comment>
+        <rdfs:label xml:lang="en">client</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/ImPosition"/>
+        <rdfs:comment xml:lang="en">competence level superproperty</rdfs:comment>
+        <rdfs:label xml:lang="en">competence level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel1 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel1">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel2 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel2">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel3 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel3">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel4 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel4">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel5 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel5">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel6 -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/competenceLevel6">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/competenceLevel"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ConcreteCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/databaseManagementSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/databaseManagementSystem">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/DatabaseManagementSystem"/>
+        <rdfs:comment xml:lang="en">A database management system a software product uses.</rdfs:comment>
+        <rdfs:label xml:lang="en">database management system</rdfs:label>
+        <skos:altLabel xml:lang="en">DBMS</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/efCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/efCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/efClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/efClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCatalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/evaluatesApplicationSystemType -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/evaluatesApplicationSystemType">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCitation"/>
+        <rdfs:label xml:lang="en">evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <rdfs:label xml:lang="en">evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/UserGroupCitation"/>
+        <rdfs:label xml:lang="en">evaluates application system or software product used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCitation"/>
+        <rdfs:label xml:lang="en">evaluates application system or software product used in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/evaluatesProduct -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/evaluatesProduct">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:label xml:lang="en">evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/fCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/fCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/fClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/fClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureCatalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/homepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/homepage">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Homepage"/>
+        <rdfs:comment xml:lang="en">The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository.</rdfs:comment>
+        <rdfs:label xml:lang="en">homepage</rdfs:label>
+        <skos:closeMatch rdf:resource="http://usefulinc.com/ns/doap#homepage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/implements">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCitation"/>
+        <rdfs:comment xml:lang="en">If installed and customized, a software product implements a certain application system.</rdfs:comment>
+        <rdfs:label xml:lang="en">implements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/interoperability -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/interoperability">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Interoperability"/>
+        <rdfs:label xml:lang="en">interoperability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/language -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/language">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Language"/>
+        <rdfs:comment xml:lang="en">The language supported by a software product. A software product can offer multiple languages the user can choose from.</rdfs:comment>
+        <rdfs:label xml:lang="en">language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/license">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <vann:example rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000046"/>
+        <vann:example rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_9000084"/>
+        <vann:example rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_9000085"/>
+        <rdfs:comment xml:lang="en">The license under which a software product is distributed.</rdfs:comment>
+        <rdfs:label xml:lang="en">license</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ocCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/ocCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaClassified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ocClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/ocClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaCatalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ocEvaluatesOcCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/ocEvaluatesOcCit">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaCitation"/>
+        <rdfs:label xml:lang="en">evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/operatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/operatingSystem">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OperatingSystem"/>
+        <rdfs:comment xml:lang="en">The operating system a software uses. A software product might be able to run on a variety of operating systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">operating system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ouCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/ouCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitClassified"/>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ouClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/ouClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCatalogue"/>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/pmid -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/pmid">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Pmid"/>
+        <rdfs:label xml:lang="en">has PMID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/programmingLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/programmingLanguage">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/class/yago/WikicatProgrammingLanguages"/>
+        <vann:example rdf:resource="http://dbpedia.org/resource/JavaScript"/>
+        <vann:example rdf:resource="http://dbpedia.org/resource/Java_(programming_language)"/>
+        <vann:example rdf:resource="http://dbpedia.org/resource/Python_(programming_language)"/>
+        <rdfs:comment xml:lang="en">The programming language used to develop a software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">programming language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/programmingLibrary -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/programmingLibrary">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ProgrammingLibrary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/publishedInJournal -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/publishedInJournal">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Journal"/>
+        <rdfs:comment xml:lang="en">The journal the evaluation study is published in.</rdfs:comment>
+        <rdfs:label xml:lang="en">published In Journal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/repository -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/repository">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Repository"/>
+        <rdfs:comment xml:lang="en">A storage location for software-code, along with relevant metadata.</rdfs:comment>
+        <rdfs:label xml:lang="en">repository</rdfs:label>
+        <skos:closeMatch rdf:resource="http://usefulinc.com/ns/doap#repository"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/softwareProductComponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/softwareProductComponent">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:label xml:lang="en">software product component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spIsOfAstCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spIsOfAstCit">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/citation"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeCitation"/>
+        <rdfs:label xml:lang="en">is of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spIsOfAstCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spIsOfAstCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/ApplicationSystemTypeClassified"/>
+        <rdfs:comment xml:lang="en">A classified application system type of the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">is of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spOffersFCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spOffersFCit">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/citation"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <rdfs:label xml:lang="en">offers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spOffersFCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spOffersFCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:comment xml:lang="en">A classified feature offered by the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">offers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spSupportsEfCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spSupportsEfCit">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/citation"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCitation"/>
+        <rdfs:comment xml:lang="en">Enterprise function citation supported by the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spSupportsEfCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spSupportsEfCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:comment xml:lang="en">A classified enterprise function supported by the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedByUserCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spUsedByUserCit">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/citation"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/UserGroupCitation"/>
+        <rdfs:label xml:lang="en">offers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedByUserCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spUsedByUserCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/UserGroupClassified"/>
+        <rdfs:comment xml:lang="en">A user group of the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedInOuCit -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spUsedInOuCit">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/citation"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitCitation"/>
+        <rdfs:comment xml:lang="en">The organizational unit where the software product is used.</rdfs:comment>
+        <rdfs:label xml:lang="en">used in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedInOuCla -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/spUsedInOuCla">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitClassified"/>
+        <rdfs:comment xml:lang="en">An organizational unit using the software product.</rdfs:comment>
+        <rdfs:label xml:lang="en">used in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/studyMethod -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/studyMethod">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/StudyMethod"/>
+        <rdfs:label xml:lang="en">study method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/subClassifiedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/subClassifiedOf">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <rdfs:comment xml:lang="en">The subject is a subordinate to the object classified in a hierachy. Whether this is a part-of, specialization or other type of hierarchy depends on the catalogue authors. Generic property only used as a superproperty.</rdfs:comment>
+        <rdfs:label xml:lang="en">subclassified of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/subFeatureOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/subFeatureOf">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/subClassifiedOf"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:comment xml:lang="en">The subject is a subordinate of another classified software feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">subfeature of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/subFunctionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/subFunctionOf">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/subClassifiedOf"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:comment xml:lang="en">The subject is subordinate of another classified enterprise function</rdfs:comment>
+        <rdfs:label xml:lang="en">subfunction of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/subInteroperabilityOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/subInteroperabilityOf">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Interoperability"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/Interoperability"/>
+        <rdfs:comment xml:lang="en">The subject is a child of another interoperability standard.</rdfs:comment>
+        <rdfs:label xml:lang="en">subinteroperability of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/supportedByFeatureCitation -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/supportedByFeatureCitation">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <rdfs:comment xml:lang="en">Feature citation supporting the enterprise function.</rdfs:comment>
+        <rdfs:label xml:lang="en">supported by feature citation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/supportsFunction -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/supportsFunction">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/FeatureCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionCitation"/>
+        <rdfs:comment xml:lang="en">the software feature supports function citation</rdfs:comment>
+        <rdfs:label xml:lang="en">supports function citation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/supportsFunctionClassified -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/supportsFunctionClassified">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/subClassifiedOf"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/FeatureClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+        <rdfs:comment xml:lang="en">The classified enterprise function supported by the software feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">supports classified function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/userCitClassifiedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/userCitClassifiedAs">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/classified"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/UserGroupCitation"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/UserGroupClassified"/>
+        <rdfs:comment xml:lang="en">A classified user group the user group citation is classified as.</rdfs:comment>
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/userClaFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://hitontology.eu/ontology/userClaFrom">
+        <rdfs:subPropertyOf rdf:resource="http://hitontology.eu/ontology/catalogue"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/UserGroupClassified"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/UserGroupCatalogue"/>
+        <rdfs:comment xml:lang="en">The user group catalogue the classified user group belongs to.</rdfs:comment>
+        <rdfs:label xml:lang="en">from catalogue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hitontology.eu/ontology/certification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/certification">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/SoftwareProduct"/>
+        <rdfs:label xml:lang="en">certification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevelNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/competenceLevelNumber">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/firstAuthor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/firstAuthor">
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/FirstAuthor"/>
+        <rdfs:comment xml:lang="en">The surname and the initials of the first author of the modelled evaluation study.</rdfs:comment>
+        <rdfs:label xml:lang="en">first author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/internalId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/internalId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. </rdfs:comment>
+        <rdfs:label xml:lang="en">internal identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/publishedInYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/publishedInYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:range rdf:resource="http://hitontology.eu/ontology/PublishedInYear"/>
+        <rdfs:label xml:lang="en">published in year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedByUserCitSctid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/spUsedByUserCitSctid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/UserGroupClassified"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">SNOMED CT identifier of a user group</rdfs:comment>
+        <rdfs:label xml:lang="en">SCTID of a user group</rdfs:label>
+        <rdfs:label xml:lang="en">group SCTID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/spUsedInOuCitSctid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/spUsedInOuCitSctid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://hitontology.eu/ontology/OrganizationalUnitClassified"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">SNOMED CT identifier of an organizational unit</rdfs:comment>
+        <rdfs:label xml:lang="en">unit SCTID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hitontology.eu/ontology/vancouverReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://hitontology.eu/ontology/vancouverReference">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Reference to a publication in Vancouver style.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vancouver reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/class/yago/WikicatProgrammingLanguages -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/class/yago/WikicatProgrammingLanguages"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Language -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:label xml:lang="de">Sprache.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ProgrammingLanguage -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ProgrammingLanguage">
+        <rdfs:label xml:lang="de">Programmiersprache.</rdfs:label>
+        <rdfs:label xml:lang="en">Programming Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/AbstractCompetence -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/AbstractCompetence">
+        <rdfs:label xml:lang="en">abstract competence in</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ApplicationSystemType -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ApplicationSystemType"/>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiSystemCategoryApplicationSystemTypeCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified application systems.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Anwendungssystemen</rdfs:comment>
+        <rdfs:label xml:lang="en">Application System Type Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ApplicationSystemTypeCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ApplicationSystemTypeCitation">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BahmniAppHospitalSystem"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/EChasquiLaboratoryInformationSystem"/>
+        <rdfs:comment xml:lang="de">Der Begriff, den ein Autor für einen Anwendungssystemtyp verwendet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The natural language term an author uses for an application system type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Application System Type Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ApplicationSystemTypeClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ApplicationSystemTypeClassified">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <terms:source rdf:resource="https://www.doi.org/10.1007/978-1-84996-441-8"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbDialysisInformationSystem"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbDigitalDictationSystem"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiElectronicMedicalRecord"/>
+        <rdfs:comment xml:lang="de">Der Begriff für einen Anwendungssystemtyp, der in der Klassifizierung von Anwendungssystemen verwendet wird.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The term for an application system type, which is used in the classification of application systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">Application System Type Classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Catalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Catalogue">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Collection"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbFeatureCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbFunctionCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedUserGroupCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classifieds of the same type from the same source.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Begriffen der gleichen Art aus der gleichen Quelle</rdfs:comment>
+        <rdfs:label xml:lang="en">Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Certification -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Certification">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Category"/>
+        <terms:source rdf:resource="https://www.doi.org/10.1007/978-1-84996-441-8"/>
+        <rdfs:comment xml:lang="en">Certificate of a software product to assess the compliance with quality management standards.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zertifikat eines Softwareproduktes zur Bewertung der Einhaltung der Normen des Qualitätsmanagements</rdfs:comment>
+        <rdfs:label xml:lang="en">Certification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Citation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Citation">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Tag"/>
+        <rdfs:comment xml:lang="de">Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Natural language description of a software product from that products documentation, such as a web page.</rdfs:comment>
+        <rdfs:label xml:lang="en">Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Classification -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Classification">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Collection"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Bb"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/EhrSfm"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Snomed"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhi1-0"/>
+        <rdfs:comment xml:lang="en">Collection of catalogues of different catalogue types from the same source.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Classified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Classified">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Category"/>
+        <rdfs:comment xml:lang="en">Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Client -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Client">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/System"/>
+        <rdfs:comment xml:lang="de">Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The type of hardware and software environment on which a software product is able to be run.</rdfs:comment>
+        <rdfs:label xml:lang="en">Client</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Competence -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Competence">
+        <rdfs:comment xml:lang="en">competence of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">competence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/CompetenceLevel -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/CompetenceLevel">
+        <rdfs:comment xml:lang="en">competence level class</rdfs:comment>
+        <rdfs:label xml:lang="en">competence level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ConcreteCompetence -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ConcreteCompetence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://dbpedia.org/ontology/Language"/>
+                    <rdf:Description rdf:about="http://dbpedia.org/ontology/ProgrammingLanguage"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/ApplicationSystemType"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/DatabaseManagementSystem"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/EnterpriseFunctionClassified"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/Interoperability"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/SoftwareProduct"/>
+                    <rdf:Description rdf:about="http://hitontology.eu/ontology/programmingLibrary"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Competence"/>
+        <rdfs:label xml:lang="en">concrete competence in</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/DatabaseManagementSystem -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/DatabaseManagementSystem">
+        <vann:example rdf:resource="http://hitontology.eu/ontology/MySql"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OracleDatabase"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/PostgreSql"/>
+        <rdfs:comment xml:lang="en">Database Management System</rdfs:comment>
+        <rdfs:comment xml:lang="de">Database Management System, wie z.B. MySQL oder PostgreSQL.</rdfs:comment>
+        <rdfs:label xml:lang="en">Database Management System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/EnterpriseFunctionCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/EnterpriseFunctionCatalogue">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbFunctionCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFunctionCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified enterprise functions.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Unternehmensfunktionen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Function Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/EnterpriseFunctionCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/EnterpriseFunctionCitation">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <terms:source rdf:resource="https://www.doi.org/10.1007/978-1-84996-441-8"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BahmniFuncBilling"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BikaLimsFuncQualityControl"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/ElexisFuncAbrechnungssystem"/>
+        <rdfs:comment xml:lang="de">Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Enterprise Function Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/EnterpriseFunctionClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/EnterpriseFunctionClassified">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbAdministrativeAdmission"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiCertifyBirthEvent"/>
+        <rdfs:comment xml:lang="de">Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification</rdfs:comment>
+        <rdfs:label xml:lang="en">Enterprise Function Classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ExperimentalStudyRCT -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ExperimentalStudyRCT">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:comment xml:lang="de">Experimentelle Studie mit randomisiertem Kontrollversuch.</rdfs:comment>
+        <rdfs:comment xml:lang="en">experimental study with randomized control trial</rdfs:comment>
+        <rdfs:label xml:lang="en">Experimental Study RCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/FeatureCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/FeatureCatalogue">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbFeatureCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/EhrSfmFeatureCatalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFeatureCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified software features.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Softwarefeatures.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/FeatureCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/FeatureCitation">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <terms:source rdf:resource="https://www.snik.eu/ontology/bb/Feature"/>
+        <rdfs:comment xml:lang="en">Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/FeatureClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/FeatureClassified">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/BbAdmitPatientsToTheWard"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/EhrSfmManageClinicalDocumentation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/WhoDhiRegisterBirthEvent"/>
+        <rdfs:comment xml:lang="de">Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature Classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/FirstAuthor -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/FirstAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Homepage -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Homepage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">homepage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ImPosition -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ImPosition">
+        <rdfs:comment xml:lang="en">description of required competencies for a position in a job offer</rdfs:comment>
+        <rdfs:label xml:lang="en">information management position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Interoperability -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Interoperability">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Category"/>
+        <terms:source rdf:resource="https://www.doi.org/10.1007/978-1-84996-441-8"/>
+        <terms:source rdf:resource="https://www.himss.org/resources/interoperability-healthcare"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/HL7"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/HL7_FHIR"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/HL7_V2.x"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/HL7_V3.0"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/ICD10"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OpenEHR"/>
+        <rdfs:comment xml:lang="en">Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interoperability Standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Journal -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Journal">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/LabStudy -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/LabStudy">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:comment xml:lang="en">Laboratory Study</rdfs:comment>
+        <rdfs:comment xml:lang="de">Laborstudie.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lab Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/NonExperimentalStudy -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/NonExperimentalStudy">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:comment xml:lang="de">Nicht-experimentelle Studie.</rdfs:comment>
+        <rdfs:comment xml:lang="en">study without an independent variable</rdfs:comment>
+        <rdfs:label xml:lang="en">Non Experimental Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OperatingSystem -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OperatingSystem">
+        <vann:example rdf:resource="http://dbpedia.org/resource/Linux"/>
+        <vann:example rdf:resource="http://dbpedia.org/resource/MacOS"/>
+        <vann:example rdf:resource="http://dbpedia.org/resource/Microsoft_Windows"/>
+        <rdfs:comment xml:lang="en">DBpedia instances bundled under this HITO class because DBpedia didn&apos;t provide a good fit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Operating System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OrganizationalUnitCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OrganizationalUnitCatalogue">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified organizational units.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Organisationseinheiten.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organizational Unit Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OrganizationalUnitCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OrganizationalUnitCitation">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/ElexisOrgArztpraxis"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/GnuHealthOrgHospitalEnvironment"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/MedkeyOrgDentalClinic"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/spUsedInOuCit"/>
+        <rdfs:comment xml:lang="de">Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The natural language term an author uses for the organizational unit where the evaluation of the application system takes place.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organizational Unit Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OrganizationalUnitClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OrganizationalUnitClassified">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedCardiologyDepartmentEnvironment"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedMedicalCenterEnvironment"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedRadiologyDepartmentEnvironment"/>
+        <rdfs:comment xml:lang="en">Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organizational Unit Classified</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://browser.ihtsdotools.org/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OutcomeCriteriaCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OutcomeCriteriaCatalogue">
+        <vann:example rdf:resource="http://hitontology.eu/ontology/AmmenwerthOutcomeCriteriaCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified outcome criteria.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Sammlung von klassifizierten Ergebniskriterien.</rdfs:comment>
+        <rdfs:label xml:lang="en">Outcome Criteria Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OutcomeCriteriaCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OutcomeCriteriaCitation">
+        <vann:example rdf:resource="http://hitontology.eu/ontology/softwareStability"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/strengthsAndWeaknessesOfIntervention"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/timeForProducingImages"/>
+        <rdfs:comment xml:lang="de">Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The term an author uses for the outcome criteria of the evaluation study.</rdfs:comment>
+        <rdfs:label xml:lang="en">Outcome Criteria Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/OutcomeCriteriaClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/OutcomeCriteriaClassified">
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Communication"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/EconomicOutcome"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OutcomeCriteriaClassified"/>
+        <rdfs:comment xml:lang="en">Classified catalogue entry of an outcome criteria.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Klassifizierter Katalogeintrag eines Ergebniskriteriums.</rdfs:comment>
+        <rdfs:label xml:lang="en">Outcome Criteria Classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Pmid -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Pmid">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">PubMed ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ProgrammingLibrary -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ProgrammingLibrary">
+        <rdfs:comment xml:lang="en">A programming library is a collection of reusable code.</rdfs:comment>
+        <rdfs:label xml:lang="en">Programming Library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/PublishedInYear -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/PublishedInYear">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/QuasiExperimentalStudy -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/QuasiExperimentalStudy">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy22"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy3"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy4"/>
+        <rdfs:comment xml:lang="de">Empirische Interventionsstudie ohne Randomisierung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">empirical interventional study without randomization</rdfs:comment>
+        <rdfs:label xml:lang="en">Quasi Experimental Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Repository -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Repository">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/SoftwareProduct -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/SoftwareProduct">
+        <terms:source rdf:resource="https://www.snik.eu/ontology/bb/SoftwareProduct"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Bahmni"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/GnuHealth"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Orthanc"/>
+        <rdfs:comment xml:lang="en">A software product is an acquired or self-developed piece of software that can be installed on a computer system.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann.</rdfs:comment>
+        <rdfs:label xml:lang="en">Software Product</rdfs:label>
+        <skos:closeMatch rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Study -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/Study">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/IntellectualProperty"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy1"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy2"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/NamedStudy3"/>
+        <rdfs:comment xml:lang="en">An evaluation study</rdfs:comment>
+        <rdfs:comment xml:lang="de">Eine Evaluationsstudie.</rdfs:comment>
+        <rdfs:label xml:lang="en">Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/StudyMethod -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/StudyMethod">
+        <terms:source rdf:resource="http://dx.doi.org/10.1007/s10916-006-7397-9"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Qualitative"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/Quantitative"/>
+        <rdfs:comment xml:lang="en">The study method, qualitative or quantitative.</rdfs:comment>
+        <rdfs:label xml:lang="en">Study Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/UserGroupCatalogue -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/UserGroupCatalogue">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Catalogue"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedUserGroupCatalogue"/>
+        <rdfs:comment xml:lang="en">A collection of classified user groups.</rdfs:comment>
+        <rdfs:label xml:lang="en">User Group Catalogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/UserGroupCitation -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/UserGroupCitation">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Citation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OpenDentalUserDentist"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OpenMrsUserAdministrativeStaff"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/OrthancUserNetworkEngineer"/>
+        <rdfs:comment xml:lang="de">Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The natural language term an author uses for the user group of an application system.</rdfs:comment>
+        <rdfs:label xml:lang="en">User Group Citation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/UserGroupClassified -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/UserGroupClassified">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Classified"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedProfessionalNurseOccupation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedRadiologistOccupation"/>
+        <vann:example rdf:resource="http://hitontology.eu/ontology/SnomedResearcherOccupation"/>
+        <rdfs:comment xml:lang="de">Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [zitiert 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/?</rdfs:comment>
+        <rdfs:comment xml:lang="en">The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?</rdfs:comment>
+        <rdfs:label xml:lang="en">User Group Classified</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://browser.ihtsdotools.org/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/ValidationStudy -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/ValidationStudy">
+        <rdfs:subClassOf rdf:resource="http://hitontology.eu/ontology/Study"/>
+        <rdfs:comment xml:lang="en">Compares the accuracy of a measure with a gold standard measure.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vergleicht die Genauigkeit einer Messung mit einer Standardmessung.</rdfs:comment>
+        <rdfs:label xml:lang="en">Validation Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hitontology.eu/ontology/programmingLibrary -->
+
+
+    <owl:Class rdf:about="http://hitontology.eu/ontology/programmingLibrary">
+        <rdfs:subClassOf rdf:resource="https://ontologies.semanticarts.com/gist/Content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
+
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#String -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#String"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DatattypeProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DatattypeProperty"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/Artifact -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/Artifact"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/Category -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/Category"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/Collection -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/Collection"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/Content -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/Content"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/IntellectualProperty -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/IntellectualProperty"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/System -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/System"/>
+    
+
+
+    <!-- https://ontologies.semanticarts.com/gist/Tag -->
+
+
+    <owl:Class rdf:about="https://ontologies.semanticarts.com/gist/Tag"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Academic_journal -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Academic_journal">
+        <owl:sameAs rdf:resource="http://hitontology.eu/ontology/Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Journal -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Journal"/>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Journal -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Journal"/>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Mobile -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Mobile">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/Client"/>
+        <rdfs:comment xml:lang="en">mobile client</rdfs:comment>
+        <rdfs:label xml:lang="en">mobile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Native -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Native">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/Client"/>
+        <rdfs:comment xml:lang="en">native client</rdfs:comment>
+        <rdfs:label xml:lang="en">native</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Qualitative -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Qualitative">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/StudyMethod"/>
+        <vancouverReference>Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p.</vancouverReference>
+        <rdfs:comment xml:lang="en">Qualitative Study Method</rdfs:comment>
+        <rdfs:label xml:lang="en">Qualitative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/Quantitative -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/Quantitative">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/StudyMethod"/>
+        <vancouverReference>Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p.</vancouverReference>
+        <rdfs:comment xml:lang="en">Quantitative Study Method</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantitative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/WebBased -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/WebBased">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/Client"/>
+        <rdfs:comment xml:lang="en">web-based client</rdfs:comment>
+        <rdfs:label xml:lang="en">web-based</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel1">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel2">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel3">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel4">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel5">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevel6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevel6">
+        <rdf:type rdf:resource="http://hitontology.eu/ontology/CompetenceLevel"/>
+        <competenceLevelNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</competenceLevelNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hitontology.eu/ontology/competenceLevelNumber -->
+
+
+    <owl:NamedIndividual rdf:about="http://hitontology.eu/ontology/competenceLevelNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatattypeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://dbpedia.org/class/yago/License106549661">
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <rdfs:label xml:lang="de">Lizenz</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/class/yago/OperatingSystem106568134">
+        <rdfs:label xml:lang="en">Operating System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/FirstAuthor">
+        <rdfs:label xml:lang="en">first author</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/Journal">
+        <rdfs:comment xml:lang="en">Academic Journal</rdfs:comment>
+        <rdfs:comment xml:lang="de">Wissenschaftliche Zeitschrift.</rdfs:comment>
+        <rdfs:label xml:lang="en">Journal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/PublishedInYear">
+        <rdfs:label xml:lang="en">published in year</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel1">
+        <rdfs:label xml:lang="en">knows</rdfs:label>
+        <skos:altLabel xml:lang="en">has basic knowledge of</skos:altLabel>
+        <skos:altLabel xml:lang="en">is interested in</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel2">
+        <rdfs:label xml:lang="en">understands</rdfs:label>
+        <skos:altLabel xml:lang="en">has advanced knowledge about</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel3">
+        <rdfs:label xml:lang="en">applies</rdfs:label>
+        <skos:altLabel xml:lang="en">basic/advanced/expert skills in</skos:altLabel>
+        <skos:altLabel xml:lang="en">experienced with... at basic/advanced/master level</skos:altLabel>
+        <skos:altLabel xml:lang="en">practical/hands-on experience with</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel4">
+        <rdfs:label xml:lang="en">analyzes</rdfs:label>
+        <skos:altLabel xml:lang="en">selects</skos:altLabel>
+        <skos:altLabel xml:lang="en">tests</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel5">
+        <rdfs:label xml:lang="en">evaluates</rdfs:label>
+        <skos:altLabel xml:lang="en">assesses the use of</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevel6">
+        <rdfs:label xml:lang="en">creates</rdfs:label>
+        <skos:altLabel xml:lang="en">develops</skos:altLabel>
+        <skos:altLabel xml:lang="en">plans use of</skos:altLabel>
+        <skos:altLabel xml:lang="en">provides trainings for</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/competenceLevelNumber">
+        <rdfs:label xml:lang="en">competence level number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hitontology.eu/ontology/programmingLibrary">
+        <rdfs:comment xml:lang="de">Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner.</rdfs:comment>
+        <rdfs:label xml:lang="en">programming library or toolkit</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

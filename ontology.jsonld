@@ -1,0 +1,2472 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://dbpedia.org/ontology/Language"
+    }, {
+      "@id" : "http://dbpedia.org/ontology/ProgrammingLanguage"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/ApplicationSystemType"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/DatabaseManagementSystem"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/Interoperability"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+    }, {
+      "@id" : "http://hitontology.eu/ontology/programmingLibrary"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/class/yago/License106549661",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "License"
+  }, {
+    "@language" : "de",
+    "@value" : "Lizenz"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/class/yago/OperatingSystem106568134",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operating System"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/class/yago/WikicatProgrammingLanguages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Language"
+  }, {
+    "@language" : "de",
+    "@value" : "Sprache."
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/ProgrammingLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Programmiersprache."
+  }, {
+    "@language" : "en",
+    "@value" : "Programming Language"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Academic_journal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://hitontology.eu/ontology/Journal"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://open.vocab.org/terms/defines" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Classification"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Client"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/DatabaseManagementSystem"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ExperimentalStudyRCT"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/FeatureCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Interoperability"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Journal"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/LabStudy"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/NonExperimentalStudy"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/QuasiExperimentalStudy"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/StudyMethod"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Terminology"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCitation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/UserGroupClassified"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ValidationStudy"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT. Our motivation is that information management professionals have a strong need to share and compare knowledge about health IT in several situations. These situations are, among others, to describe the components of a health information system as part of its strategic or operational management, to select a new software product, to learn about available evidence regarding an application, or to hire or train health IT specialists."
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "<a href=''http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider>Birgit Schneider</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  }, {
+    "@value" : "<a href='https://github.com/ThomasPause'>Thomas Pause</a>, formerly <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  }, {
+    "@value" : "<a href='https://www.imise.uni-leipzig.de/en/Mitarbeiter/Maryam_Ghalandari'>Maryam Ghalandari</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "@value" : "2022-10-20"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "<a href='http://www.imise.uni-leipzig.de/Mitarbeiter/Franziska_Jahn'>Franziska Jahn</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  }, {
+    "@value" : "<a href='http://www.people.imise.uni-leipzig.de/alfred.winter/'>Prof. Alfred Winter</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  }, {
+    "@value" : "<a href='https://github.com/KonradHoeffner'>Konrad Höffner</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  }, {
+    "@value" : "<a href='https://iig.umit-tirol.at/index.php/de/staff/30-verena-dornauer'>Verena Dornauer</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>"
+  }, {
+    "@value" : "<a href='https://www.umit.at/page.cfm?vpath=departments/technik/iig/'>Prof. Elske Ammenwerth</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>"
+  }, {
+    "@value" : "Michelle Bindel, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.imise.uni-leipzig.de/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "A Health IT Ontology to describe health IT systems in a comparable way"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hito"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceURI" : [ {
+    "@id" : "http://hitontology.eu/ontology/"
+  } ],
+  "http://usefulinc.com/ns/doap#repository" : [ {
+    "@id" : "https://github.com/hitontology/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Health IT Ontology (HITO) allows systematically describing application systems and software products in health IT."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health IT Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://hitontology.eu"
+  }, {
+    "@id" : "https://hitontology.eu/ontology/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "22.10"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "HITO"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://hitontology.eu/"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://hitontology.eu/public/hito.svg"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/AbstractCompetence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abstract competence in"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ApplicationSystemType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiSystemCategoryApplicationSystemTypeCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified application systems."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Anwendungssystemen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Application System Type Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BahmniAppHospitalSystem"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EChasquiLaboratoryInformationSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff, den ein Autor für einen Anwendungssystemtyp verwendet."
+  }, {
+    "@language" : "en",
+    "@value" : "The natural language term an author uses for an application system type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Application System Type Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.doi.org/10.1007/978-1-84996-441-8"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbDialysisInformationSystem"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/BbDigitalDictationSystem"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiElectronicMedicalRecord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff für einen Anwendungssystemtyp, der in der Klassifizierung von Anwendungssystemen verwendet wird."
+  }, {
+    "@language" : "en",
+    "@value" : "The term for an application system type, which is used in the classification of application systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Application System Type Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Catalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbApplicationSystemTypeCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/BbFeatureCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/BbFunctionCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SnomedUserGroupCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classifieds of the same type from the same source."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Begriffen der gleichen Art aus der gleichen Quelle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Collection"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Certification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.doi.org/10.1007/978-1-84996-441-8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Certificate of a software product to assess the compliance with quality management standards."
+  }, {
+    "@language" : "de",
+    "@value" : "Zertifikat eines Softwareproduktes zur Bewertung der Einhaltung der Normen des Qualitätsmanagements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Certification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Category"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Citation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite."
+  }, {
+    "@language" : "en",
+    "@value" : "Natural language description of a software product from that products documentation, such as a web page."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Tag"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/Bb"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EhrSfm"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Snomed"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhi1-0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collection of catalogues of different catalogue types from the same source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Collection"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Classified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Classifies an entry of a catalogue, such as a feature or an enterprise function. Generic class that is only used as a superclass."
+  }, {
+    "@language" : "de",
+    "@value" : "Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Category"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Client",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann."
+  }, {
+    "@language" : "en",
+    "@value" : "The type of hardware and software environment on which a software product is able to be run."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/System"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Competence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "competence of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "competence"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/CompetenceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "competence level class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "competence level"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ConcreteCompetence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "concrete competence in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Competence"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/DatabaseManagementSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/MySql"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OracleDatabase"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/PostgreSql"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Database Management System"
+  }, {
+    "@language" : "de",
+    "@value" : "Database Management System, wie z.B. MySQL oder PostgreSQL."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Database Management System"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbFunctionCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFunctionCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified enterprise functions."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Unternehmensfunktionen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Function Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.doi.org/10.1007/978-1-84996-441-8"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BahmniFuncBilling"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/BikaLimsFuncQualityControl"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ElexisFuncAbrechnungssystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird."
+  }, {
+    "@language" : "en",
+    "@value" : "Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Enterprise Function Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbAdministrativeAdmission"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiCertifyBirthEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört."
+  }, {
+    "@language" : "en",
+    "@value" : "The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Enterprise Function Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ExperimentalStudyRCT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Experimentelle Studie mit randomisiertem Kontrollversuch."
+  }, {
+    "@language" : "en",
+    "@value" : "experimental study with randomized control trial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Experimental Study RCT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/FeatureCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbFeatureCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EhrSfmFeatureCatalogue"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiHealthSystemManagerFeatureCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified software features."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Softwarefeatures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/FeatureCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.snik.eu/ontology/bb/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers."
+  }, {
+    "@language" : "de",
+    "@value" : "Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/FeatureClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/BbAdmitPatientsToTheWard"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EhrSfmManageClinicalDocumentation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/WhoDhiRegisterBirthEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört."
+  }, {
+    "@language" : "en",
+    "@value" : "The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/FirstAuthor",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "first author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "homepage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ImPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "description of required competencies for a position in a job offer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "information management position"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Interoperability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.doi.org/10.1007/978-1-84996-441-8"
+  }, {
+    "@id" : "https://www.himss.org/resources/interoperability-healthcare"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/HL7"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/HL7_FHIR"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/HL7_V2.x"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/HL7_V3.0"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/ICD10"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OpenEHR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. Interoperability standards in the context of HITO also include interoperability frameworks such as IHE."
+  }, {
+    "@language" : "de",
+    "@value" : "Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interoperability Standard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Category"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Journal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Academic Journal"
+  }, {
+    "@language" : "de",
+    "@value" : "Wissenschaftliche Zeitschrift."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Journal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Artifact"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/LabStudy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Laboratory Study"
+  }, {
+    "@language" : "de",
+    "@value" : "Laborstudie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lab Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Mobile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/Client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "mobile client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mobile"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Native",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/Client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "native client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "native"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/NonExperimentalStudy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Nicht-experimentelle Studie."
+  }, {
+    "@language" : "en",
+    "@value" : "study without an independent variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non Experimental Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OperatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://dbpedia.org/resource/Linux"
+  }, {
+    "@id" : "http://dbpedia.org/resource/MacOS"
+  }, {
+    "@id" : "http://dbpedia.org/resource/Microsoft_Windows"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operating System"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/SnomedEnvironmentOrganizationalUnitCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified organizational units."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Organisationseinheiten."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organizational Unit Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/ElexisOrgArztpraxis"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/GnuHealthOrgHospitalEnvironment"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/MedkeyOrgDentalClinic"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/spUsedInOuCit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet."
+  }, {
+    "@language" : "en",
+    "@value" : "The natural language term an author uses for the organizational unit where the evaluation of the application system takes place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organizational Unit Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/SnomedCardiologyDepartmentEnvironment"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SnomedMedicalCenterEnvironment"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SnomedRadiologyDepartmentEnvironment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International."
+  }, {
+    "@language" : "de",
+    "@value" : "Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organizational Unit Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://browser.ihtsdotools.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/AmmenwerthOutcomeCriteriaCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified outcome criteria."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Sammlung von klassifizierten Ergebniskriterien."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outcome Criteria Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/softwareStability"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/strengthsAndWeaknessesOfIntervention"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/timeForProducingImages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet."
+  }, {
+    "@language" : "en",
+    "@value" : "The term an author uses for the outcome criteria of the evaluation study."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outcome Criteria Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/Communication"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/EconomicOutcome"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Classified catalogue entry of an outcome criteria."
+  }, {
+    "@language" : "de",
+    "@value" : "Klassifizierter Katalogeintrag eines Ergebniskriteriums."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outcome Criteria Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Pmid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PubMed ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ProgrammingLibrary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A programming library is a collection of reusable code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Programming Library"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/PublishedInYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "published in year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Qualitative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/vancouverReference" : [ {
+    "@value" : "Forrestal E, Watzlaf VJ. Health informatics research methods: principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/StudyMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Qualitative Study Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Qualitative"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Quantitative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/vancouverReference" : [ {
+    "@value" : "Forrestal E, Watzlaf VJ. Health informatics research method : principles and practice. 2nd Edition. American Health Information Management Association; 2017. 360 p."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/StudyMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Quantitative Study Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quantitative"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/QuasiExperimentalStudy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy22"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy3"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Empirische Interventionsstudie ohne Randomisierung."
+  }, {
+    "@language" : "en",
+    "@value" : "empirical interventional study without randomization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quasi Experimental Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Repository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "repository"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/SoftwareProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://www.snik.eu/ontology/bb/SoftwareProduct"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/Bahmni"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/GnuHealth"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Orthanc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A software product is an acquired or self-developed piece of software that can be installed on a computer system."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Software Product"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://usefulinc.com/ns/doap#Project"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/Study",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy1"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy2"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/NamedStudy3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An evaluation study"
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Evaluationsstudie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/IntellectualProperty"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/StudyMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "http://dx.doi.org/10.1007/s10916-006-7397-9"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/Qualitative"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/Quantitative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The study method, qualitative or quantitative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Study Method"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/UserGroupCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/SnomedUserGroupCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of classified user groups."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "User Group Catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/UserGroupCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/OpenDentalUserDentist"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OpenMrsUserAdministrativeStaff"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/OrthancUserNetworkEngineer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet."
+  }, {
+    "@language" : "en",
+    "@value" : "The natural language term an author uses for the user group of an application system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "User Group Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/UserGroupClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://hitontology.eu/ontology/SnomedProfessionalNurseOccupation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SnomedRadiologistOccupation"
+  }, {
+    "@id" : "http://hitontology.eu/ontology/SnomedResearcherOccupation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [zitiert 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/?"
+  }, {
+    "@language" : "en",
+    "@value" : "The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "User Group Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://browser.ihtsdotools.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ValidationStudy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Compares the accuracy of a measure with a gold standard measure."
+  }, {
+    "@language" : "de",
+    "@value" : "Vergleicht die Genauigkeit einer Messung mit einer Standardmessung."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Validation Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/WebBased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/Client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "web-based client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "web-based"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/astCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/astClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/astClaSupportsEfCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/catalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/certification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "certification"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/citation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/classified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/client",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The type of hardware and software environment on which a software product is able to be run."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Client"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "competence level superproperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/ImPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "competence level"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "knows"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "has basic knowledge of"
+  }, {
+    "@language" : "en",
+    "@value" : "is interested in"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "understands"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "has advanced knowledge about"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "basic/advanced/expert skills in"
+  }, {
+    "@language" : "en",
+    "@value" : "experienced with... at basic/advanced/master level"
+  }, {
+    "@language" : "en",
+    "@value" : "practical/hands-on experience with"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "analyzes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "selects"
+  }, {
+    "@language" : "en",
+    "@value" : "tests"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "assesses the use of"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevel6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hitontology.eu/ontology/competenceLevelNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "creates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ConcreteCompetence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/competenceLevel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "develops"
+  }, {
+    "@language" : "en",
+    "@value" : "plans use of"
+  }, {
+    "@language" : "en",
+    "@value" : "provides trainings for"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/competenceLevelNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#DatattypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/CompetenceLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "competence level number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/databaseManagementSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A database management system a software product uses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "database management system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/DatabaseManagementSystem"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "DBMS"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/efCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/efClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/evaluatesApplicationSystemType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/evaluatesApplicationSystemTypeHavingUserGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates application system or software product used by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/evaluatesApplicationSystemTypeUsedInUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates application system or software product used in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/evaluatesProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/fCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/fClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/firstAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The surname and the initials of the first author of the modelled evaluation study."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "first author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FirstAuthor"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The website on which a software product is described or where its code can be downloaded. Is represented through an URL that links to the repository."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "homepage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Homepage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://usefulinc.com/ns/doap#homepage"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If installed and customized, a software product implements a certain application system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/internalId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Internal identifier of a member of a catalogue. Unique inside a catalogue but duplicates may exist across different catalogues. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "internal identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/interoperability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "interoperability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Interoperability"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The language supported by a software product. A software product can offer multiple languages the user can choose from."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Language"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://www.ebi.ac.uk/swo/license/SWO_1000046"
+  }, {
+    "@id" : "http://www.ebi.ac.uk/swo/license/SWO_9000084"
+  }, {
+    "@id" : "http://www.ebi.ac.uk/swo/license/SWO_9000085"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The license under which a software product is distributed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "license"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ebi.ac.uk/swo/SWO_0000002"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ocCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ocClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ocEvaluatesOcCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OutcomeCriteriaCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/operatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The operating system a software uses. A software product might be able to run on a variety of operating systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "operating system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OperatingSystem"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ouCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/ouClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/pmid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has PMID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Pmid"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/programmingLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "http://dbpedia.org/resource/JavaScript"
+  }, {
+    "@id" : "http://dbpedia.org/resource/Java_(programming_language)"
+  }, {
+    "@id" : "http://dbpedia.org/resource/Python_(programming_language)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The programming language used to develop a software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "programming language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatProgrammingLanguages"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/programmingLibrary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code."
+  }, {
+    "@language" : "en",
+    "@value" : "Programming toolkits are utility programs that are used to develop and maintain software. Programming libraries are a collection of prewritten functions that are ready to be used in coding. Both help programmers in developing software in a fast and safe manner."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "programming library or toolkit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ProgrammingLibrary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Content"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/publishedInJournal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The journal the evaluation study is published in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "published In Journal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Journal"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/publishedInYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "published in year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/PublishedInYear"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/repository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A storage location for software-code, along with relevant metadata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "repository"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Repository"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://usefulinc.com/ns/doap#repository"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/softwareProductComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "software product component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spIsOfAstCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spIsOfAstCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A classified application system type of the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/ApplicationSystemTypeClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spOffersFCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spOffersFCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A classified feature offered by the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spSupportsEfCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Enterprise function citation supported by the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spSupportsEfCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A classified enterprise function supported by the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedByUserCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedByUserCitSctid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMED CT identifier of a user group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SCTID of a user group"
+  }, {
+    "@language" : "en",
+    "@value" : "group SCTID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedByUserCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A user group of the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "used by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedInOuCit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The organizational unit where the software product is used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "used in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/citation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedInOuCitSctid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMED CT identifier of an organizational unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "unit SCTID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/spUsedInOuCla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organizational unit using the software product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/SoftwareProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "used in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/OrganizationalUnitClassified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/studyMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "study method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/StudyMethod"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/subClassifiedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subject is a subordinate to the object classified in a hierachy. Whether this is a part-of, specialization or other type of hierarchy depends on the catalogue authors. Generic property only used as a superproperty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subclassified of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/subFeatureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subject is a subordinate of another classified software feature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subfeature of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/subClassifiedOf"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/subFunctionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subject is subordinate of another classified enterprise function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subfunction of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/subClassifiedOf"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/subInteroperabilityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subject is a child of another interoperability standard."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/Interoperability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subinteroperability of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/Interoperability"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/supportedByFeatureCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Feature citation supporting the enterprise function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supported by feature citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/supportsFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the software feature supports function citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supports function citation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionCitation"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/supportsFunctionClassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The classified enterprise function supported by the software feature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/FeatureClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supports classified function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/EnterpriseFunctionClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/subClassifiedOf"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/userCitClassifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A classified user group the user group citation is classified as."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/classified"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/userClaFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The user group catalogue the classified user group belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupClassified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from catalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hitontology.eu/ontology/UserGroupCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hitontology.eu/ontology/catalogue"
+  } ]
+}, {
+  "@id" : "http://hitontology.eu/ontology/vancouverReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference to a publication in Vancouver style."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vancouver reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://open.vocab.org/terms/defines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://usefulinc.com/ns/doap#repository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ebi.ac.uk/swo/SWO_0000002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#DatattypeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Artifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/IntellectualProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Tag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

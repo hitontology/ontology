@@ -1,0 +1,27 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "A Health IT Ontology to describe health IT systems in a comparable way";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2022-10-20";
+.
+:agent0 a prov:Agent; foaf:name "<a href='http://www.imise.uni-leipzig.de/Mitarbeiter/Franziska_Jahn'>Franziska Jahn</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent1 a prov:Agent; foaf:name "<a href='http://www.people.imise.uni-leipzig.de/alfred.winter/'>Prof. Alfred Winter</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent2 a prov:Agent; foaf:name "<a href='https://github.com/KonradHoeffner'>Konrad Höffner</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent3 a prov:Agent; foaf:name "<a href='https://iig.umit-tirol.at/index.php/de/staff/30-verena-dornauer'>Verena Dornauer</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>".
+:agent4 a prov:Agent; foaf:name "<a href='https://www.umit.at/page.cfm?vpath=departments/technik/iig/'>Prof. Elske Ammenwerth</a>, <a href='https://www.umit-tirol.at'>UMIT Tirol, Austria</a>".
+:agent5 a prov:Agent; foaf:name "Michelle Bindel, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent6 a prov:Agent; foaf:name "<a href=''http://www.imise.uni-leipzig.de/Mitarbeiter/Birgit_Schneider>Birgit Schneider</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent7 a prov:Agent; foaf:name "<a href='https://github.com/ThomasPause'>Thomas Pause</a>, formerly <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
+:agent8 a prov:Agent; foaf:name "<a href='https://www.imise.uni-leipzig.de/en/Mitarbeiter/Maryam_Ghalandari'>Maryam Ghalandari</a>, <a href='https://www.imise.uni-leipzig.de/en'>IMISE Leipzig, Germany</a>".
