@@ -9,15 +9,21 @@ jobs:
     outputs:
       upload_url: ${{ steps.create-release.outputs.upload_url }}
     steps:
-      - name: Changelog
+      - name: Build Changelog
         id: changelog
         uses: mikepenz/release-changelog-builder-action@v5
         with:
-          commitMode: true
+          mode: "COMMIT"
           configurationJson: |
             {
               "pr_template": "- #{{TITLE}}",
-              "template": "#{{UNCATEGORIZED}}"
+              "template": "#{{UNCATEGORIZED}}",
+              "tag_resolver": {
+                "method": "sort",
+                "filter": {
+                  "pattern": "[2-9][0-9]\\.[0-9][0-9]"
+                }
+              }
             }
 
       - name: Checkout code
