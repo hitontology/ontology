@@ -1,0 +1,1666 @@
+@base <http://dbpedia.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://hitontology.eu/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dbo: <ontology/> .
+@prefix yago: <class/yago/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swo: <http://www.ebi.ac.uk/swo/> .
+@prefix swol: <http://www.ebi.ac.uk/swo/license/> .
+@prefix dbr: <resource/> .
+@prefix ui: <http://www.w3.org/ns/ui#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix medfloss: <https://wwww.medfloss.org/node/> .
+
+<resource/.NET_Framework>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label ".NET Framework"@en .
+
+<resource/4690_Operating_System>
+    a :OperatingSystem ;
+    rdfs:label "4690 Operating System"@en ;
+    ui:sortPriority 12 .
+
+dbr:Abkhaz_language
+    a dbo:Language ;
+    rdfs:label "Abkhaz language"@en .
+
+<resource/Ada_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Ada (programming language)"@en .
+
+dbr:Afar_language
+    a dbo:Language ;
+    rdfs:label "Afar language"@en .
+
+dbr:Afrikaans
+    a dbo:Language ;
+    rdfs:label "Afrikaans"@en .
+
+dbr:Akan_language
+    a dbo:Language ;
+    rdfs:label "Akan language"@en .
+
+dbr:Albanian_language
+    a dbo:Language ;
+    rdfs:label "Albanian language"@en .
+
+dbr:Amharic
+    a dbo:Language ;
+    rdfs:label "Amharic"@en .
+
+dbr:AmigaOS
+    a :OperatingSystem ;
+    rdfs:label "AmigaOS"@en ;
+    ui:sortPriority 43 .
+
+<resource/Android_(operating_system)>
+    a :OperatingSystem ;
+    rdfs:label "Android (operating system)"@en ;
+    ui:sortPriority 1410 .
+
+dbr:Android_10
+    a :OperatingSystem ;
+    rdfs:label "Android 10"@en ;
+    ui:sortPriority 97 .
+
+dbr:Android_11
+    a :OperatingSystem ;
+    rdfs:label "Android 11"@en ;
+    ui:sortPriority 79 .
+
+dbr:Android_Gingerbread
+    a :OperatingSystem ;
+    rdfs:label "Android Gingerbread"@en ;
+    ui:sortPriority 14 .
+
+dbr:Android_Ice_Cream_Sandwich
+    a :OperatingSystem ;
+    rdfs:label "Android Ice Cream Sandwich"@en ;
+    ui:sortPriority 11 .
+
+dbr:Android_Jelly_Bean
+    a :OperatingSystem ;
+    rdfs:label "Android Jelly Bean"@en ;
+    ui:sortPriority 33 .
+
+dbr:Android_KitKat
+    a :OperatingSystem ;
+    rdfs:label "Android KitKat"@en ;
+    ui:sortPriority 24 .
+
+dbr:Android_Lollipop
+    a :OperatingSystem ;
+    rdfs:label "Android Lollipop"@en ;
+    ui:sortPriority 71 .
+
+dbr:Android_Marshmallow
+    a :OperatingSystem ;
+    rdfs:label "Android Marshmallow"@en ;
+    ui:sortPriority 63 .
+
+dbr:Android_Nougat
+    a :OperatingSystem ;
+    rdfs:label "Android Nougat"@en ;
+    ui:sortPriority 52 .
+
+dbr:Android_One
+    a :OperatingSystem ;
+    rdfs:label "Android One"@en ;
+    ui:sortPriority 18 .
+
+dbr:Android_Oreo
+    a :OperatingSystem ;
+    rdfs:label "Android Oreo"@en ;
+    ui:sortPriority 50 .
+
+dbr:Android_Pie
+    a :OperatingSystem ;
+    rdfs:label "Android Pie"@en ;
+    ui:sortPriority 56 .
+
+dbr:Android_version_history
+    a :OperatingSystem ;
+    rdfs:label "Android version history"@en ;
+    ui:sortPriority 17 .
+
+dbr:Arabic
+    a dbo:Language ;
+    rdfs:label "Arabic"@en .
+
+dbr:Aragonese_language
+    a dbo:Language ;
+    rdfs:label "Aragonese language"@en .
+
+dbr:ArcaOS
+    a :OperatingSystem ;
+    rdfs:label "ArcaOS"@en ;
+    ui:sortPriority 27 .
+
+dbr:Armenian_language
+    a dbo:Language ;
+    rdfs:label "Armenian language"@en .
+
+dbr:AspectJ
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "AspectJ"@en .
+
+dbr:Assamese_language
+    a dbo:Language ;
+    rdfs:label "Assamese language"@en .
+
+dbr:Assembly_language
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Assembly language"@en .
+
+dbr:Atari_TOS
+    a :OperatingSystem ;
+    rdfs:label "Atari TOS"@en ;
+    ui:sortPriority 11 .
+
+dbr:Avar_language
+    a dbo:Language ;
+    rdfs:label "Avar language"@en .
+
+dbr:Avestan
+    a dbo:Language ;
+    rdfs:label "Avestan"@en .
+
+dbr:Aymara_language
+    a dbo:Language ;
+    rdfs:label "Aymara language"@en .
+
+dbr:Azerbaijani_language
+    a dbo:Language ;
+    rdfs:label "Azerbaijani language"@en .
+
+dbr:BASIC
+    a :OperatingSystem ;
+    rdfs:label "BASIC"@en ;
+    ui:sortPriority 14 .
+
+dbr:Bambara_language
+    a dbo:Language ;
+    rdfs:label "Bambara language"@en .
+
+dbr:Bashkir_language
+    a dbo:Language ;
+    rdfs:label "Bashkir language"@en .
+
+dbr:Basque_language
+    a dbo:Language ;
+    rdfs:label "Basque language"@en .
+
+dbr:BeOS
+    a :OperatingSystem ;
+    rdfs:label "BeOS"@en ;
+    ui:sortPriority 20 .
+
+dbr:Belarusian_language
+    a dbo:Language ;
+    rdfs:label "Belarusian language"@en .
+
+dbr:Berkeley_Software_Distribution
+    a :OperatingSystem ;
+    rdfs:label "Berkeley Software Distribution"@en ;
+    ui:sortPriority 47 .
+
+dbr:Bislama
+    a dbo:Language ;
+    rdfs:label "Bislama"@en .
+
+dbr:BlackBerry
+    a :OperatingSystem ;
+    rdfs:label "BlackBerry"@en ;
+    ui:sortPriority 13 .
+
+dbr:BlackBerry_10
+    a :OperatingSystem ;
+    rdfs:label "BlackBerry 10"@en ;
+    ui:sortPriority 16 .
+
+dbr:BlackBerry_OS
+    a :OperatingSystem ;
+    rdfs:label "BlackBerry OS"@en ;
+    ui:sortPriority 35 .
+
+dbr:Bokmål
+    a dbo:Language ;
+    rdfs:label "Bokmål"@en .
+
+dbr:Bolivian_Spanish
+    a dbo:Language ;
+    rdfs:label "Bolivian Spanish"@en .
+
+dbr:Bosnian_language
+    a dbo:Language ;
+    rdfs:label "Bosnian language"@en .
+
+dbr:Breton_language
+    a dbo:Language ;
+    rdfs:label "Breton language"@en .
+
+<resource/C++>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "C++"@en .
+
+dbr:CLIST
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "CLIST"@en .
+
+<resource/CP/M>
+    a :OperatingSystem ;
+    rdfs:label "CP/M"@en ;
+    ui:sortPriority 61 .
+
+<resource/CP/M-86>
+    a :OperatingSystem ;
+    rdfs:label "CP/M-86"@en ;
+    ui:sortPriority 13 .
+
+<resource/C_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "C (programming language)"@en .
+
+<resource/C_Sharp_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "C Sharp (programming language)"@en .
+
+dbr:Campidanese_Sardinian
+    a dbo:Language ;
+    rdfs:label "Campidanese Sardinian"@en .
+
+dbr:Catalan_language
+    a dbo:Language ;
+    rdfs:label "Catalan language"@en .
+
+dbr:CentOS
+    a :OperatingSystem ;
+    rdfs:label "CentOS"@en ;
+    ui:sortPriority 14 .
+
+dbr:Central_American_Spanish
+    a dbo:Language ;
+    rdfs:label "Central American Spanish"@en .
+
+dbr:Chamorro_language
+    a dbo:Language ;
+    rdfs:label "Chamorro language"@en .
+
+dbr:Chechen_language
+    a dbo:Language ;
+    rdfs:label "Chechen language"@en .
+
+dbr:Chewa_language
+    a dbo:Language ;
+    rdfs:label "Chewa language"@en .
+
+dbr:Chinese_language
+    a dbo:Language ;
+    rdfs:label "Chinese language"@en .
+
+dbr:Chrome_OS
+    a :OperatingSystem ;
+    rdfs:label "Chrome OS"@en ;
+    ui:sortPriority 37 .
+
+dbr:Church_Slavonic
+    a dbo:Language ;
+    rdfs:label "Church Slavonic"@en .
+
+dbr:Classic_Mac_OS
+    a :OperatingSystem ;
+    rdfs:label "Classic Mac OS"@en ;
+    ui:sortPriority 59 .
+
+dbr:Colombian_Spanish
+    a dbo:Language ;
+    rdfs:label "Colombian Spanish"@en .
+
+dbr:Commodore_DOS
+    a :OperatingSystem ;
+    rdfs:label "Commodore DOS"@en ;
+    ui:sortPriority 11 .
+
+dbr:Common_Lisp
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Common Lisp"@en .
+
+dbr:Contemporary_Latin
+    a dbo:Language ;
+    rdfs:label "Contemporary Latin"@en .
+
+dbr:Cornish_language
+    a dbo:Language ;
+    rdfs:label "Cornish language"@en .
+
+dbr:Corsican_language
+    a dbo:Language ;
+    rdfs:label "Corsican language"@en .
+
+dbr:Costa_Rican_Spanish
+    a dbo:Language ;
+    rdfs:label "Costa Rican Spanish"@en .
+
+dbr:Croatian_language
+    a dbo:Language ;
+    rdfs:label "Croatian language"@en .
+
+dbr:Cross-platform_software
+    a :OperatingSystem ;
+    rdfs:label "Cross-platform software"@en ;
+    ui:sortPriority 582 .
+
+dbr:Czech_language
+    a dbo:Language ;
+    rdfs:label "Czech language"@en .
+
+dbr:DOS
+    a :OperatingSystem ;
+    rdfs:label "DOS"@en ;
+    ui:sortPriority 90 .
+
+dbr:DR-DOS
+    a :OperatingSystem ;
+    rdfs:label "DR-DOS"@en ;
+    ui:sortPriority 10 .
+
+dbr:Dalian_dialect
+    a dbo:Language ;
+    rdfs:label "Dalian dialect"@en .
+
+dbr:Danish_language
+    a dbo:Language ;
+    rdfs:label "Danish language"@en .
+
+dbr:Debian
+    a :OperatingSystem ;
+    rdfs:label "Debian"@en ;
+    ui:sortPriority 34 .
+
+dbr:Dominican_Spanish
+    a dbo:Language ;
+    rdfs:label "Dominican Spanish"@en .
+
+dbr:DragonFly_BSD
+    a :OperatingSystem ;
+    rdfs:label "DragonFly BSD"@en ;
+    ui:sortPriority 11 .
+
+dbr:Dutch_language
+    a dbo:Language ;
+    rdfs:label "Dutch language"@en .
+
+dbr:Dzongkha
+    a dbo:Language ;
+    rdfs:label "Dzongkha"@en .
+
+dbr:EComStation
+    a :OperatingSystem ;
+    rdfs:label "EComStation"@en ;
+    ui:sortPriority 23 .
+
+dbr:Ecuadorian_Spanish
+    a dbo:Language ;
+    rdfs:label "Ecuadorian Spanish"@en .
+
+dbr:Emacs_Lisp
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Emacs Lisp"@en .
+
+dbr:English_language
+    a dbo:Language ;
+    rdfs:label "English language"@en .
+
+dbr:Esperanto
+    a dbo:Language ;
+    rdfs:label "Esperanto"@en .
+
+dbr:Estonian_language
+    a dbo:Language ;
+    rdfs:label "Estonian language"@en .
+
+dbr:Ewe_language
+    a dbo:Language ;
+    rdfs:label "Ewe language"@en .
+
+dbr:Faroese_language
+    a dbo:Language ;
+    rdfs:label "Faroese language"@en .
+
+<resource/Fedora_(operating_system)>
+    a :OperatingSystem ;
+    rdfs:label "Fedora (operating system)"@en ;
+    ui:sortPriority 15 .
+
+dbr:Fijian_language
+    a dbo:Language ;
+    rdfs:label "Fijian language"@en .
+
+dbr:Finnish_language
+    a dbo:Language ;
+    rdfs:label "Finnish language"@en .
+
+dbr:Fire_OS
+    a :OperatingSystem ;
+    rdfs:label "Fire OS"@en ;
+    ui:sortPriority 12 .
+
+dbr:Flemish
+    a dbo:Language ;
+    rdfs:label "Flemish"@en .
+
+dbr:FlexOS
+    a :OperatingSystem ;
+    rdfs:label "FlexOS"@en ;
+    ui:sortPriority 21 .
+
+dbr:Fortran
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Fortran"@en .
+
+dbr:FreeBSD
+    a :OperatingSystem ;
+    rdfs:label "FreeBSD"@en ;
+    ui:sortPriority 265 .
+
+dbr:FreeDOS
+    a :OperatingSystem ;
+    rdfs:label "FreeDOS"@en ;
+    ui:sortPriority 35 .
+
+dbr:French_language
+    a dbo:Language ;
+    rdfs:label "French language"@en .
+
+dbr:Fula_language
+    a dbo:Language ;
+    rdfs:label "Fula language"@en .
+
+dbr:Galician_language
+    a dbo:Language ;
+    rdfs:label "Galician language"@en .
+
+dbr:Gascon_language
+    a dbo:Language ;
+    rdfs:label "Gascon language"@en .
+
+dbr:Georgian_language
+    a dbo:Language ;
+    rdfs:label "Georgian language"@en .
+
+dbr:German_language
+    a dbo:Language ;
+    rdfs:label "German language"@en .
+
+<resource/Go_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Go (programming language)"@en .
+
+dbr:Greek_language
+    a dbo:Language ;
+    rdfs:label "Greek language"@en .
+
+dbr:Greenlandic_language
+    a dbo:Language ;
+    rdfs:label "Greenlandic language"@en .
+
+dbr:Guatemalan_Spanish
+    a dbo:Language ;
+    rdfs:label "Guatemalan Spanish"@en .
+
+dbr:HP-UX
+    a :OperatingSystem ;
+    rdfs:label "HP-UX"@en ;
+    ui:sortPriority 37 .
+
+dbr:HTC_Sense
+    a :OperatingSystem ;
+    rdfs:label "HTC Sense"@en ;
+    ui:sortPriority 14 .
+
+<resource/Haiku_(operating_system)>
+    a :OperatingSystem ;
+    rdfs:label "Haiku (operating system)"@en ;
+    ui:sortPriority 22 .
+
+<resource/Haskell_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Haskell (programming language)"@en .
+
+dbr:Hausa_language
+    a dbo:Language ;
+    rdfs:label "Hausa language"@en .
+
+dbr:Hebrew_language
+    a dbo:Language ;
+    rdfs:label "Hebrew language"@en .
+
+dbr:Hindi
+    a dbo:Language ;
+    rdfs:label "Hindi"@en .
+
+dbr:Hindustani_language
+    a dbo:Language ;
+    rdfs:label "Hindustani language"@en .
+
+dbr:Hiri_Motu
+    a dbo:Language ;
+    rdfs:label "Hiri Motu"@en .
+
+dbr:Honduran_Spanish
+    a dbo:Language ;
+    rdfs:label "Honduran Spanish"@en .
+
+dbr:Hungarian_language
+    a dbo:Language ;
+    rdfs:label "Hungarian language"@en .
+
+dbr:Høgnorsk
+    a dbo:Language ;
+    rdfs:label "Høgnorsk"@en .
+
+dbr:IBM_AIX
+    a :OperatingSystem ;
+    rdfs:label "IBM AIX"@en ;
+    ui:sortPriority 38 .
+
+dbr:IBM_PC_DOS
+    a :OperatingSystem ;
+    rdfs:label "IBM PC DOS"@en ;
+    ui:sortPriority 34 .
+
+dbr:IBM_i
+    a :OperatingSystem ;
+    rdfs:label "IBM i"@en ;
+    ui:sortPriority 48 .
+
+dbr:IOS
+    a :OperatingSystem ;
+    rdfs:label "IOS"@en ;
+    ui:sortPriority 694 .
+
+dbr:IOS_11
+    a :OperatingSystem ;
+    rdfs:label "IOS 11"@en ;
+    ui:sortPriority 13 .
+
+dbr:IOS_12
+    a :OperatingSystem ;
+    rdfs:label "IOS 12"@en ;
+    ui:sortPriority 10 .
+
+dbr:IOS_7
+    a :OperatingSystem ;
+    rdfs:label "IOS 7"@en ;
+    ui:sortPriority 11 .
+
+dbr:IOS_8
+    a :OperatingSystem ;
+    rdfs:label "IOS 8"@en ;
+    ui:sortPriority 10 .
+
+dbr:IPadOS
+    a :OperatingSystem ;
+    rdfs:label "IPadOS"@en ;
+    ui:sortPriority 46 .
+
+dbr:IRIX
+    a :OperatingSystem ;
+    rdfs:label "IRIX"@en ;
+    ui:sortPriority 16 .
+
+dbr:Icelandic_language
+    a dbo:Language ;
+    rdfs:label "Icelandic language"@en .
+
+dbr:Ido
+    a dbo:Language ;
+    rdfs:label "Ido"@en .
+
+dbr:Igbo_language
+    a dbo:Language ;
+    rdfs:label "Igbo language"@en .
+
+dbr:Indonesian_language
+    a dbo:Language ;
+    rdfs:label "Indonesian language"@en .
+
+<resource/Inferno_(operating_system)>
+    a :OperatingSystem ;
+    rdfs:label "Inferno (operating system)"@en ;
+    ui:sortPriority 44 .
+
+dbr:Interlingua
+    a dbo:Language ;
+    rdfs:label "Interlingua"@en .
+
+dbr:Interlingue
+    a dbo:Language ;
+    rdfs:label "Interlingue"@en .
+
+dbr:International_English
+    a dbo:Language ;
+    rdfs:label "International English"@en .
+
+dbr:Inuinnaqtun
+    a dbo:Language ;
+    rdfs:label "Inuinnaqtun"@en .
+
+dbr:Inuktitut
+    a dbo:Language ;
+    rdfs:label "Inuktitut"@en .
+
+dbr:Inuvialuktun
+    a dbo:Language ;
+    rdfs:label "Inuvialuktun"@en .
+
+dbr:Irish_language
+    a dbo:Language ;
+    rdfs:label "Irish language"@en .
+
+dbr:Italian_language
+    a dbo:Language ;
+    rdfs:label "Italian language"@en .
+
+dbr:Iñupiaq_language
+    a dbo:Language ;
+    rdfs:label "Iñupiaq language"@en .
+
+dbr:JavaScript
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "JavaScript"@en .
+
+<resource/Java_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Java (programming language)"@en .
+
+dbr:Kannada
+    a dbo:Language ;
+    rdfs:label "Kannada"@en .
+
+dbr:Kanuri_language
+    a dbo:Language ;
+    rdfs:label "Kanuri language"@en .
+
+dbr:Kashmiri_language
+    a dbo:Language ;
+    rdfs:label "Kashmiri language"@en .
+
+dbr:Kazakh_language
+    a dbo:Language ;
+    rdfs:label "Kazakh language"@en .
+
+dbr:Khmer_language
+    a dbo:Language ;
+    rdfs:label "Khmer language"@en .
+
+dbr:Kikuyu_language
+    a dbo:Language ;
+    rdfs:label "Kikuyu language"@en .
+
+dbr:Kinyarwanda
+    a dbo:Language ;
+    rdfs:label "Kinyarwanda"@en .
+
+dbr:Kirundi
+    a dbo:Language ;
+    rdfs:label "Kirundi"@en .
+
+dbr:KolibriOS
+    a :OperatingSystem ;
+    rdfs:label "KolibriOS"@en ;
+    ui:sortPriority 18 .
+
+dbr:Komi_language
+    a dbo:Language ;
+    rdfs:label "Komi language"@en .
+
+dbr:Kongo_language
+    a dbo:Language ;
+    rdfs:label "Kongo language"@en .
+
+dbr:Korean_dialects
+    a dbo:Language ;
+    rdfs:label "Korean dialects"@en .
+
+dbr:Korean_language
+    a dbo:Language ;
+    rdfs:label "Korean language"@en .
+
+dbr:Kurdish_languages
+    a dbo:Language ;
+    rdfs:label "Kurdish languages"@en .
+
+dbr:Kurmanji
+    a dbo:Language ;
+    rdfs:label "Kurmanji"@en .
+
+dbr:Kwanyama_dialect
+    a dbo:Language ;
+    rdfs:label "Kwanyama dialect"@en .
+
+dbr:Lao_language
+    a dbo:Language ;
+    rdfs:label "Lao language"@en .
+
+dbr:Latin
+    a dbo:Language ;
+    rdfs:label "Latin"@en .
+
+dbr:Latvian_language
+    a dbo:Language ;
+    rdfs:label "Latvian language"@en .
+
+dbr:Lhasa_Tibetan
+    a dbo:Language ;
+    rdfs:label "Lhasa Tibetan"@en .
+
+dbr:Limburgish
+    a dbo:Language ;
+    rdfs:label "Limburgish"@en .
+
+dbr:Lingala
+    a dbo:Language ;
+    rdfs:label "Lingala"@en .
+
+dbr:Linux
+    a :OperatingSystem ;
+    rdfs:label "Linux"@en ;
+    ui:sortPriority 1902 .
+
+dbr:Linux_kernel
+    a :OperatingSystem ;
+    rdfs:label "Linux kernel"@en ;
+    ui:sortPriority 22 .
+
+dbr:Lithuanian_language
+    a dbo:Language ;
+    rdfs:label "Lithuanian language"@en .
+
+dbr:Logudorese_Sardinian
+    a dbo:Language ;
+    rdfs:label "Logudorese Sardinian"@en .
+
+<resource/Lua_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Lua (programming language)"@en .
+
+dbr:Luba-Katanga_language
+    a dbo:Language ;
+    rdfs:label "Luba-Katanga language"@en .
+
+dbr:Luganda
+    a dbo:Language ;
+    rdfs:label "Luganda"@en .
+
+dbr:Luxembourgish
+    a dbo:Language ;
+    rdfs:label "Luxembourgish"@en .
+
+dbr:MIUI
+    a :OperatingSystem ;
+    rdfs:label "MIUI"@en ;
+    ui:sortPriority 33 .
+
+dbr:MS-DOS
+    a :OperatingSystem ;
+    rdfs:label "MS-DOS"@en ;
+    ui:sortPriority 134 .
+
+dbr:MSX-DOS
+    a :OperatingSystem ;
+    rdfs:label "MSX-DOS"@en ;
+    ui:sortPriority 38 .
+
+dbr:MacOS
+    a :OperatingSystem ;
+    rdfs:label "MacOS"@en ;
+    ui:sortPriority 1375 .
+
+dbr:Mac_OS_8
+    a :OperatingSystem ;
+    rdfs:label "Mac OS 8"@en ;
+    ui:sortPriority 14 .
+
+dbr:Mac_OS_9
+    a :OperatingSystem ;
+    rdfs:label "Mac OS 9"@en ;
+    ui:sortPriority 22 .
+
+dbr:Mac_OS_X_Leopard
+    a :OperatingSystem ;
+    rdfs:label "Mac OS X Leopard"@en ;
+    ui:sortPriority 10 .
+
+dbr:Mac_OS_X_Lion
+    a :OperatingSystem ;
+    rdfs:label "Mac OS X Lion"@en ;
+    ui:sortPriority 10 .
+
+dbr:Mac_OS_X_Snow_Leopard
+    a :OperatingSystem ;
+    rdfs:label "Mac OS X Snow Leopard"@en ;
+    ui:sortPriority 14 .
+
+dbr:Mac_OS_X_Tiger
+    a :OperatingSystem ;
+    rdfs:label "Mac OS X Tiger"@en ;
+    ui:sortPriority 12 .
+
+dbr:Macedonian_language
+    a dbo:Language ;
+    rdfs:label "Macedonian language"@en .
+
+dbr:Macintosh
+    a :OperatingSystem ;
+    rdfs:label "Macintosh"@en ;
+    ui:sortPriority 25 .
+
+dbr:Macintosh_operating_systems
+    a :OperatingSystem ;
+    rdfs:label "Macintosh operating systems"@en ;
+    ui:sortPriority 35 .
+
+dbr:Maemo
+    a :OperatingSystem ;
+    rdfs:label "Maemo"@en ;
+    ui:sortPriority 10 .
+
+dbr:Malagasy_language
+    a dbo:Language ;
+    rdfs:label "Malagasy language"@en .
+
+dbr:Malayalam
+    a dbo:Language ;
+    rdfs:label "Malayalam"@en .
+
+dbr:Maldivian_language
+    a dbo:Language ;
+    rdfs:label "Maldivian language"@en .
+
+dbr:Maltese_language
+    a dbo:Language ;
+    rdfs:label "Maltese language"@en .
+
+dbr:Marathi_language
+    a dbo:Language ;
+    rdfs:label "Marathi language"@en .
+
+dbr:Marshallese_language
+    a dbo:Language ;
+    rdfs:label "Marshallese language"@en .
+
+dbr:MeeGo
+    a :OperatingSystem ;
+    rdfs:label "MeeGo"@en ;
+    ui:sortPriority 11 .
+
+dbr:Mexican_Spanish
+    a dbo:Language ;
+    rdfs:label "Mexican Spanish"@en .
+
+dbr:Microsoft_Windows
+    a :OperatingSystem ;
+    rdfs:label "Microsoft Windows"@en ;
+    ui:sortPriority 2331 .
+
+dbr:Modern_Greek
+    a dbo:Language ;
+    rdfs:label "Modern Greek"@en .
+
+dbr:Modern_Hebrew
+    a dbo:Language ;
+    rdfs:label "Modern Hebrew"@en .
+
+dbr:Modern_Norwegian
+    a dbo:Language ;
+    rdfs:label "Modern Norwegian"@en .
+
+dbr:Moldovan_language
+    a dbo:Language ;
+    rdfs:label "Moldovan language"@en .
+
+dbr:MorphOS
+    a :OperatingSystem ;
+    rdfs:label "MorphOS"@en ;
+    ui:sortPriority 14 .
+
+dbr:Moselle_Franconian_language
+    a dbo:Language ;
+    rdfs:label "Moselle Franconian language"@en .
+
+dbr:Māori_language
+    a dbo:Language ;
+    rdfs:label "Māori language"@en .
+
+dbr:Nauruan_language
+    a dbo:Language ;
+    rdfs:label "Nauruan language"@en .
+
+dbr:Navajo_language
+    a dbo:Language ;
+    rdfs:label "Navajo language"@en .
+
+dbr:Ndonga_dialect
+    a dbo:Language ;
+    rdfs:label "Ndonga dialect"@en .
+
+dbr:NetBSD
+    a :OperatingSystem ;
+    rdfs:label "NetBSD"@en ;
+    ui:sortPriority 74 .
+
+dbr:New_High_German
+    a dbo:Language ;
+    rdfs:label "New High German"@en .
+
+dbr:New_Latin
+    a dbo:Language ;
+    rdfs:label "New Latin"@en .
+
+dbr:New_Persian
+    a dbo:Language ;
+    rdfs:label "New Persian"@en .
+
+dbr:Nicaraguan_Spanish
+    a dbo:Language ;
+    rdfs:label "Nicaraguan Spanish"@en .
+
+dbr:Northern_Ndebele_language
+    a dbo:Language ;
+    rdfs:label "Northern Ndebele language"@en .
+
+dbr:Northern_Sami
+    a dbo:Language ;
+    rdfs:label "Northern Sami"@en .
+
+dbr:Norwegian_language
+    a dbo:Language ;
+    rdfs:label "Norwegian language"@en .
+
+dbr:Nuosu_language
+    a dbo:Language ;
+    rdfs:label "Nuosu language"@en .
+
+dbr:Nynorsk
+    a dbo:Language ;
+    rdfs:label "Nynorsk"@en .
+
+dbr:OS-9
+    a :OperatingSystem ;
+    rdfs:label "OS-9"@en ;
+    ui:sortPriority 21 .
+
+<resource/OS/2>
+    a :OperatingSystem ;
+    rdfs:label "OS/2"@en ;
+    ui:sortPriority 101 .
+
+<resource/OS/8>
+    a :OperatingSystem ;
+    rdfs:label "OS/8"@en ;
+    ui:sortPriority 12 .
+
+dbr:Odia_language
+    a dbo:Language ;
+    rdfs:label "Odia language"@en .
+
+dbr:Ojibwe_language
+    a dbo:Language ;
+    rdfs:label "Ojibwe language"@en .
+
+dbr:Old_Church_Slavonic
+    a dbo:Language ;
+    rdfs:label "Old Church Slavonic"@en .
+
+dbr:One_UI
+    a :OperatingSystem ;
+    rdfs:label "One UI"@en ;
+    ui:sortPriority 12 .
+
+dbr:OpenBSD
+    a :OperatingSystem ;
+    rdfs:label "OpenBSD"@en ;
+    ui:sortPriority 82 .
+
+dbr:OpenSUSE
+    a :OperatingSystem ;
+    rdfs:label "OpenSUSE"@en ;
+    ui:sortPriority 13 .
+
+dbr:OpenSolaris
+    a :OperatingSystem ;
+    rdfs:label "OpenSolaris"@en ;
+    ui:sortPriority 10 .
+
+dbr:OpenVMS
+    a :OperatingSystem ;
+    rdfs:label "OpenVMS"@en ;
+    ui:sortPriority 33 .
+
+dbr:Oracle_Solaris
+    a :OperatingSystem ;
+    rdfs:label "Oracle Solaris"@en ;
+    ui:sortPriority 77 .
+
+dbr:Oromo_language
+    a dbo:Language ;
+    rdfs:label "Oromo language"@en .
+
+dbr:OxygenOS
+    a :OperatingSystem ;
+    rdfs:label "OxygenOS"@en ;
+    ui:sortPriority 11 .
+
+dbr:PHP
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "PHP"@en .
+
+dbr:POSIX
+    a :OperatingSystem ;
+    rdfs:label "POSIX"@en ;
+    ui:sortPriority 28 .
+
+dbr:PTS-DOS
+    a :OperatingSystem ;
+    rdfs:label "PTS-DOS"@en ;
+    ui:sortPriority 15 .
+
+dbr:Pali
+    a dbo:Language ;
+    rdfs:label "Pali"@en .
+
+dbr:Palm_OS
+    a :OperatingSystem ;
+    rdfs:label "Palm OS"@en ;
+    ui:sortPriority 38 .
+
+dbr:Panamanian_Spanish
+    a dbo:Language ;
+    rdfs:label "Panamanian Spanish"@en .
+
+dbr:Papuan_languages
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Papuan languages"@en .
+
+dbr:Paraguayan_Spanish
+    a dbo:Language ;
+    rdfs:label "Paraguayan Spanish"@en .
+
+dbr:Pashto
+    a dbo:Language ;
+    rdfs:label "Pashto"@en .
+
+dbr:Perl
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Perl"@en .
+
+dbr:Persian_language
+    a dbo:Language ;
+    rdfs:label "Persian language"@en .
+
+dbr:Peruvian_Spanish
+    a dbo:Language ;
+    rdfs:label "Peruvian Spanish"@en .
+
+dbr:Plan_9_from_Bell_Labs
+    a :OperatingSystem ;
+    rdfs:label "Plan 9 from Bell Labs"@en ;
+    ui:sortPriority 61 .
+
+dbr:PlayStation_3
+    a :OperatingSystem ;
+    rdfs:label "PlayStation 3"@en ;
+    ui:sortPriority 11 .
+
+dbr:Polish_language
+    a dbo:Language ;
+    rdfs:label "Polish language"@en .
+
+dbr:Portuguese_language
+    a dbo:Language ;
+    rdfs:label "Portuguese language"@en .
+
+dbr:Punjabi_language
+    a dbo:Language ;
+    rdfs:label "Punjabi language"@en .
+
+<resource/Python_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Python (programming language)"@en .
+
+dbr:QNX
+    a :OperatingSystem ;
+    rdfs:label "QNX"@en ;
+    ui:sortPriority 12 .
+
+dbr:RISC_OS
+    a :OperatingSystem ;
+    rdfs:label "RISC OS"@en ;
+    ui:sortPriority 28 .
+
+dbr:RSX-11
+    a :OperatingSystem ;
+    rdfs:label "RSX-11"@en ;
+    ui:sortPriority 10 .
+
+dbr:RT-11
+    a :OperatingSystem ;
+    rdfs:label "RT-11"@en ;
+    ui:sortPriority 14 .
+
+<resource/R_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "R (programming language)"@en .
+
+dbr:Rarhi_dialect
+    a dbo:Language ;
+    rdfs:label "Rarhi dialect"@en .
+
+dbr:ReactOS
+    a :OperatingSystem ;
+    rdfs:label "ReactOS"@en ;
+    ui:sortPriority 57 .
+
+dbr:Red_Hat_Enterprise_Linux
+    a :OperatingSystem ;
+    rdfs:label "Red Hat Enterprise Linux"@en ;
+    ui:sortPriority 20 .
+
+dbr:Riksmål
+    a dbo:Language ;
+    rdfs:label "Riksmål"@en .
+
+dbr:Rioplatense_Spanish
+    a dbo:Language ;
+    rdfs:label "Rioplatense Spanish"@en .
+
+<resource/Ruby_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Ruby (programming language)"@en .
+
+dbr:Russian_language
+    a dbo:Language ;
+    rdfs:label "Russian language"@en .
+
+<resource/S60_(software_platform)>
+    a :OperatingSystem ;
+    rdfs:label "S60 (software platform)"@en ;
+    ui:sortPriority 10 .
+
+dbr:SISNE_plus
+    a :OperatingSystem ;
+    rdfs:label "SISNE plus"@en ;
+    ui:sortPriority 25 .
+
+dbr:SQL
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "SQL"@en .
+
+dbr:Sailfish_OS
+    a :OperatingSystem ;
+    rdfs:label "Sailfish OS"@en ;
+    ui:sortPriority 15 .
+
+dbr:Salvadoran_Spanish
+    a dbo:Language ;
+    rdfs:label "Salvadoran Spanish"@en .
+
+dbr:Samoan_language
+    a dbo:Language ;
+    rdfs:label "Samoan language"@en .
+
+dbr:Samsung_Experience
+    a :OperatingSystem ;
+    rdfs:label "Samsung Experience"@en ;
+    ui:sortPriority 14 .
+
+dbr:Sango_language
+    a dbo:Language ;
+    rdfs:label "Sango language"@en .
+
+dbr:Sanskrit
+    a dbo:Language ;
+    rdfs:label "Sanskrit"@en .
+
+dbr:Sardinian_language
+    a dbo:Language ;
+    rdfs:label "Sardinian language"@en .
+
+<resource/Scala_(programming_language)>
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Scala (programming language)"@en .
+
+dbr:Scottish_Gaelic
+    a dbo:Language ;
+    rdfs:label "Scottish Gaelic"@en .
+
+dbr:Serbo-Croatian
+    a dbo:Language ;
+    rdfs:label "Serbo-Croatian"@en .
+
+dbr:Series_40
+    a :OperatingSystem ;
+    rdfs:label "Series 40"@en ;
+    ui:sortPriority 50 .
+
+dbr:Shona_language
+    a dbo:Language ;
+    rdfs:label "Shona language"@en .
+
+dbr:Shtokavian
+    a dbo:Language ;
+    rdfs:label "Shtokavian"@en .
+
+dbr:Sinclair_BASIC
+    a :OperatingSystem ;
+    rdfs:label "Sinclair BASIC"@en ;
+    ui:sortPriority 17 .
+
+dbr:Sindhi_language
+    a dbo:Language ;
+    rdfs:label "Sindhi language"@en .
+
+dbr:Sinhala_language
+    a dbo:Language ;
+    rdfs:label "Sinhala language"@en .
+
+dbr:Slovene_language
+    a dbo:Language ;
+    rdfs:label "Slovene language"@en .
+
+dbr:Sotho_language
+    a dbo:Language ;
+    rdfs:label "Sotho language"@en .
+
+dbr:Southern_Ndebele_language
+    a dbo:Language ;
+    rdfs:label "Southern Ndebele language"@en .
+
+dbr:Spanish_language
+    a dbo:Language ;
+    rdfs:label "Spanish language"@en .
+
+dbr:Spanish_language_in_the_United_States
+    a dbo:Language ;
+    rdfs:label "Spanish language in the United States"@en .
+
+dbr:Standard_Persian
+    a dbo:Language ;
+    rdfs:label "Standard Persian"@en .
+
+dbr:Standard_Zhuang
+    a dbo:Language ;
+    rdfs:label "Standard Zhuang"@en .
+
+dbr:Swahili_language
+    a dbo:Language ;
+    rdfs:label "Swahili language"@en .
+
+dbr:Swazi_language
+    a dbo:Language ;
+    rdfs:label "Swazi language"@en .
+
+dbr:Swedish_language
+    a dbo:Language ;
+    rdfs:label "Swedish language"@en .
+
+dbr:SymbOS
+    a :OperatingSystem ;
+    rdfs:label "SymbOS"@en ;
+    ui:sortPriority 10 .
+
+dbr:Symbian
+    a :OperatingSystem ;
+    rdfs:label "Symbian"@en ;
+    ui:sortPriority 39 .
+
+dbr:System_6
+    a :OperatingSystem ;
+    rdfs:label "System 6"@en ;
+    ui:sortPriority 15 .
+
+dbr:System_7
+    a :OperatingSystem ;
+    rdfs:label "System 7"@en ;
+    ui:sortPriority 59 .
+
+dbr:Tajik_language
+    a dbo:Language ;
+    rdfs:label "Tajik language"@en .
+
+dbr:Tamil_language
+    a dbo:Language ;
+    rdfs:label "Tamil language"@en .
+
+dbr:Tatar_language
+    a dbo:Language ;
+    rdfs:label "Tatar language"@en .
+
+dbr:Telugu_language
+    a dbo:Language ;
+    rdfs:label "Telugu language"@en .
+
+dbr:Tigrinya_language
+    a dbo:Language ;
+    rdfs:label "Tigrinya language"@en .
+
+dbr:Tizen
+    a :OperatingSystem ;
+    rdfs:label "Tizen"@en ;
+    ui:sortPriority 28 .
+
+dbr:Tongan_language
+    a dbo:Language ;
+    rdfs:label "Tongan language"@en .
+
+dbr:TouchWiz
+    a :OperatingSystem ;
+    rdfs:label "TouchWiz"@en ;
+    ui:sortPriority 20 .
+
+dbr:Tru64_UNIX
+    a :OperatingSystem ;
+    rdfs:label "Tru64 UNIX"@en ;
+    ui:sortPriority 10 .
+
+dbr:Tsonga_language
+    a dbo:Language ;
+    rdfs:label "Tsonga language"@en .
+
+dbr:Tswana_language
+    a dbo:Language ;
+    rdfs:label "Tswana language"@en .
+
+dbr:TvOS
+    a :OperatingSystem ;
+    rdfs:label "TvOS"@en ;
+    ui:sortPriority 17 .
+
+dbr:Twi
+    a dbo:Language ;
+    rdfs:label "Twi"@en .
+
+dbr:Ubuntu
+    a :OperatingSystem ;
+    rdfs:label "Ubuntu"@en ;
+    ui:sortPriority 33 .
+
+dbr:Ukrainian_language
+    a dbo:Language ;
+    rdfs:label "Ukrainian language"@en .
+
+dbr:Unix
+    a :OperatingSystem ;
+    rdfs:label "Unix"@en ;
+    ui:sortPriority 342 .
+
+dbr:Unix-like
+    a :OperatingSystem ;
+    rdfs:label "Unix-like"@en ;
+    ui:sortPriority 618 .
+
+dbr:Urdu
+    a dbo:Language ;
+    rdfs:label "Urdu"@en .
+
+dbr:Uruguayan_Spanish
+    a dbo:Language ;
+    rdfs:label "Uruguayan Spanish"@en .
+
+dbr:Uzbek_language
+    a dbo:Language ;
+    rdfs:label "Uzbek language"@en .
+
+<resource/V_(operating_system)>
+    a :OperatingSystem ;
+    rdfs:label "V (operating system)"@en ;
+    ui:sortPriority 17 .
+
+dbr:Venda_language
+    a dbo:Language ;
+    rdfs:label "Venda language"@en .
+
+dbr:Venezuelan_Spanish
+    a dbo:Language ;
+    rdfs:label "Venezuelan Spanish"@en .
+
+dbr:Vietnamese_language
+    a dbo:Language ;
+    rdfs:label "Vietnamese language"@en .
+
+dbr:Visual_Basic
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Visual Basic"@en .
+
+dbr:Visual_Basic_for_Applications
+    a dbo:ProgrammingLanguage ;
+    rdfs:label "Visual Basic for Applications"@en .
+
+dbr:Volapük
+    a dbo:Language ;
+    rdfs:label "Volapük"@en .
+
+dbr:Walloon_language
+    a dbo:Language ;
+    rdfs:label "Walloon language"@en .
+
+dbr:WatchOS
+    a :OperatingSystem ;
+    rdfs:label "WatchOS"@en ;
+    ui:sortPriority 25 .
+
+dbr:Wear_OS
+    a :OperatingSystem ;
+    rdfs:label "Wear OS"@en ;
+    ui:sortPriority 10 .
+
+dbr:WebOS
+    a :OperatingSystem ;
+    rdfs:label "WebOS"@en ;
+    ui:sortPriority 10 .
+
+dbr:Web_application
+    a :OperatingSystem ;
+    rdfs:label "Web application"@en ;
+    ui:sortPriority 23 .
+
+dbr:Web_browser
+    a :OperatingSystem ;
+    rdfs:label "Web browser"@en ;
+    ui:sortPriority 10 .
+
+dbr:Welsh_language
+    a dbo:Language ;
+    rdfs:label "Welsh language"@en .
+
+dbr:Windows_10
+    a :OperatingSystem ;
+    rdfs:label "Windows 10"@en ;
+    ui:sortPriority 168 .
+
+dbr:Windows_10_Mobile
+    a :OperatingSystem ;
+    rdfs:label "Windows 10 Mobile"@en ;
+    ui:sortPriority 31 .
+
+dbr:Windows_10_editions
+    a :OperatingSystem ;
+    rdfs:label "Windows 10 editions"@en ;
+    ui:sortPriority 11 .
+
+dbr:Windows_11
+    a :OperatingSystem ;
+    rdfs:label "Windows 11"@en ;
+    ui:sortPriority 24 .
+
+dbr:Windows_2000
+    a :OperatingSystem ;
+    rdfs:label "Windows 2000"@en ;
+    ui:sortPriority 69 .
+
+<resource/Windows_3.1x>
+    a :OperatingSystem ;
+    rdfs:label "Windows 3.1x"@en ;
+    ui:sortPriority 13 .
+
+dbr:Windows_7
+    a :OperatingSystem ;
+    rdfs:label "Windows 7"@en ;
+    ui:sortPriority 221 .
+
+dbr:Windows_8
+    a :OperatingSystem ;
+    rdfs:label "Windows 8"@en ;
+    ui:sortPriority 96 .
+
+<resource/Windows_8.1>
+    a :OperatingSystem ;
+    rdfs:label "Windows 8.1"@en ;
+    ui:sortPriority 66 .
+
+dbr:Windows_95
+    a :OperatingSystem ;
+    rdfs:label "Windows 95"@en ;
+    ui:sortPriority 32 .
+
+dbr:Windows_98
+    a :OperatingSystem ;
+    rdfs:label "Windows 98"@en ;
+    ui:sortPriority 19 .
+
+dbr:Windows_9x
+    a :OperatingSystem ;
+    rdfs:label "Windows 9x"@en ;
+    ui:sortPriority 13 .
+
+dbr:Windows_Embedded_Compact
+    a :OperatingSystem ;
+    rdfs:label "Windows Embedded Compact"@en ;
+    ui:sortPriority 18 .
+
+dbr:Windows_Mobile
+    a :OperatingSystem ;
+    rdfs:label "Windows Mobile"@en ;
+    ui:sortPriority 64 .
+
+dbr:Windows_NT
+    a :OperatingSystem ;
+    rdfs:label "Windows NT"@en ;
+    ui:sortPriority 30 .
+
+<resource/Windows_NT_4.0>
+    a :OperatingSystem ;
+    rdfs:label "Windows NT 4.0"@en ;
+    ui:sortPriority 14 .
+
+dbr:Windows_Phone
+    a :OperatingSystem ;
+    rdfs:label "Windows Phone"@en ;
+    ui:sortPriority 89 .
+
+dbr:Windows_Phone_8
+    a :OperatingSystem ;
+    rdfs:label "Windows Phone 8"@en ;
+    ui:sortPriority 25 .
+
+<resource/Windows_Phone_8.1>
+    a :OperatingSystem ;
+    rdfs:label "Windows Phone 8.1"@en ;
+    ui:sortPriority 23 .
+
+dbr:Windows_Server
+    a :OperatingSystem ;
+    rdfs:label "Windows Server"@en ;
+    ui:sortPriority 19 .
+
+dbr:Windows_Server_2003
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2003"@en ;
+    ui:sortPriority 37 .
+
+dbr:Windows_Server_2008
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2008"@en ;
+    ui:sortPriority 23 .
+
+dbr:Windows_Server_2008_R2
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2008 R2"@en ;
+    ui:sortPriority 20 .
+
+dbr:Windows_Server_2012
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2012"@en ;
+    ui:sortPriority 16 .
+
+dbr:Windows_Server_2012_R2
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2012 R2"@en ;
+    ui:sortPriority 13 .
+
+dbr:Windows_Server_2016
+    a :OperatingSystem ;
+    rdfs:label "Windows Server 2016"@en ;
+    ui:sortPriority 12 .
+
+dbr:Windows_Vista
+    a :OperatingSystem ;
+    rdfs:label "Windows Vista"@en ;
+    ui:sortPriority 130 .
+
+dbr:Windows_XP
+    a :OperatingSystem ;
+    rdfs:label "Windows XP"@en ;
+    ui:sortPriority 214 .
+
+dbr:Wolof_language
+    a dbo:Language ;
+    rdfs:label "Wolof language"@en .
+
+dbr:World_Wide_Web
+    a :OperatingSystem ;
+    rdfs:label "World Wide Web"@en ;
+    ui:sortPriority 13 .
+
+dbr:Xbox_One
+    a :OperatingSystem ;
+    rdfs:label "Xbox One"@en ;
+    ui:sortPriority 13 .
+
+dbr:Xhosa_language
+    a dbo:Language ;
+    rdfs:label "Xhosa language"@en .
+
+dbr:Yiddish
+    a dbo:Language ;
+    rdfs:label "Yiddish"@en .
+
+dbr:Yoruba_language
+    a dbo:Language ;
+    rdfs:label "Yoruba language"@en .
+
+<resource/Z/OS>
+    a :OperatingSystem ;
+    rdfs:label "Z/OS"@en ;
+    ui:sortPriority 15 .
+
+dbr:Zhuang_languages
+    a dbo:Language ;
+    rdfs:label "Zhuang languages"@en .
+
+dbr:Zigong_dialect
+    a dbo:Language ;
+    rdfs:label "Zigong dialect"@en .
+
+dbr:Zulu_language
+    a dbo:Language ;
+    rdfs:label "Zulu language"@en .
+
